@@ -1,0 +1,150 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00231385 - 문서 분석 리포트</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        .report-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #c00;
+            border-bottom: 3px solid #c00;
+            padding-bottom: 10px;
+            font-size: 24px;
+            text-align: center;
+        }
+        h2 {
+            color: #222;
+            border-left: 5px solid #c00;
+            padding-left: 10px;
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+        th {
+            background-color: #f5f5f5;
+            font-weight: bold;
+            width: 25%;
+        }
+        ul {
+            margin: 5px 0 15px 20px;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #c00;
+        }
+    </style>
+</head>
+<body>
+
+<div class="report-container">
+    <h1>R26BD00231385 - 문서 분석 리포트</h1>
+
+    <h2>1. 사업의 주요 핵심 주제 및 목적</h2>
+    <p>
+        본 사업은 법무부 난민심의과가 주관하는 <strong>'국가정황정보(COI) DB 및 통합관리시스템 구축(2차)'</strong> 사업입니다. 
+        급증하는 국내 난민 신청 및 다각화되는 난민 신청 사유에 대응하여, 객관적 판단 근거인 국가정황정보의 수집·가용성을 확대하고 난민 심사의 신속성과 정확성을 제고하는 지능형 통합관리시스템 고도화를 목적으로 합니다.
+    </p>
+
+    <h2>2. 주요 예산, 기간 및 기초 사실</h2>
+    <table>
+        <tr>
+            <th>사업명</th>
+            <td>국가정황정보 DB 및 통합관리시스템 구축(2차)</td>
+        </tr>
+        <tr>
+            <th>주관기관</th>
+            <td>법무부 난민심의과</td>
+        </tr>
+        <tr>
+            <th>총 예산</th>
+            <td><span class="highlight">1,723,000,000원</span> (약 17.2억 원)</td>
+        </tr>
+        <tr>
+            <th>사업 세부 금액</th>
+            <td>
+                - 사업비: 997,246,600원 (통합발주 H/W, 부가세 포함)<br>
+                - 직접구매 SW: 625,753,400원<br>
+                - 감리비용: 100,000,000원
+            </td>
+        </tr>
+        <tr>
+            <th>사업 기간</th>
+            <td>계약일로부터 6개월 (180일)</td>
+        </tr>
+        <tr>
+            <th>계약 방법</th>
+            <td>제한경쟁입찰 (협상에 의한 계약)</td>
+        </tr>
+        <tr>
+            <th>배경 수치</th>
+            <td>
+                - 난민 신청 건수 폭증: 2012년 1,143건 → 2025년 14,622건 (약 13배 증가)<br>
+                - 출신 국가 확대: 2012년 약 40개국 → 2025년 약 140개국 (약 3.5배 증가)
+            </td>
+        </tr>
+    </table>
+
+    <h2>3. 주요 요구사항 및 기술 사양</h2>
+    <ul>
+        <li><strong>조사 의뢰 및 회신 프로세스 고도화:</strong> 수작업 중심에서 1차로 전환된 전자적 방식을 고도화하여 실무 현착화 유도</li>
+        <li><strong>정보 수집 환경 개선 및 가용성 확대:</strong> 국가정보자원관리원(NIRS)의 특수한 보안 정책 제약을 극복하고 수집 대상 사이트 및 데이터 자산 확보</li>
+        <li><strong>안정적인 대용량 인프라 구축:</strong> 대규모 비정형 국가정황 데이터 처리를 위한 안정적인 DB 및 고성능 인프라 환경 구축</li>
+    </ul>
+
+    <h2>4. Red Hat 주요 제품 제안 가능 포인트 분석</h2>
+    <ul>
+        <li>
+            <span class="highlight">Red Hat Enterprise Linux (RHEL)</span>: 
+            국가정보자원관리원(NIRS) 입주 환경에 최적화된 높은 보안 표준과 안정성을 제공하는 OS 환경으로 제안. 대규모 DB 및 통합 관리 애플리케이션의 핵심 안정성 보장.
+        </li>
+        <li>
+            <span class="highlight">Red Hat OpenShift (RHOCP)</span>: 
+            다양한 국가정황정보 수집 엔진 및 마이크로서비스 아키텍처(MSA) 기반의 조회·회신 시스템을 유연하고 신속하게 확장 및 배포할 수 있는 컨테이너 플랫폼으로 제안.
+        </li>
+        <li>
+            <span class="highlight">Red Hat JBoss Enterprise Application Platform (EAP)</span>: 
+            대내외 포털 연계 및 전자적 의뢰·회신 업무 시스템의 신뢰성 높은 미들웨어 엔진으로 제안하여 보안 및 트랜잭션 처리 최적화.
+        </li>
+        <li>
+            <span class="highlight">Red Hat Ansible Automation Platform</span>: 
+            국가정보자원관리원의 엄격한 보안 정책 하에서 이기종 인프라 및 다수의 수집 사이트 관련 설정 관리, OS 패치 및 반복적인 배포 작업을 자동화하여 운영 효율화 달성.
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
+```

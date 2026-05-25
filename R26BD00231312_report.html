@@ -1,0 +1,126 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R26BD00231312 - 문서 분석 리포트</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .report-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 6px solid #cc0000; /* Red Hat Brand Color Accent */
+        }
+        h1 {
+            color: #111;
+            font-size: 28px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #cc0000;
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 4px solid #cc0000;
+            padding-left: 10px;
+        }
+        p, li {
+            font-size: 14px;
+            color: #555;
+        }
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #222;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            font-size: 13px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+            font-weight: bold;
+        }
+        .proposals {
+            background-color: #fdf5f5;
+            border: 1px solid #f9e1e1;
+            padding: 15px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="report-container">
+    <h1>R26BD00231312 - 문서 분석 리포트</h1>
+    <p style="text-align: right; font-size: 12px; color: #888;">작성일: 2026. 03</p>
+
+    <h2>1. 프로젝트 개요 및 목적</h2>
+    <p>본 사업은 <strong>'한국예술종합학교 가상화 시스템 구축 2차 사업'</strong>으로, 학내 노후 서버를 통합하고 가상화 인프라를 고도화하여 가용성과 확장성을 극대화하는 것을 목적으로 합니다. 궁극적으로 개별 운영 중인 시스템을 통합 인프라로 전환하여 향후 <strong>최종 클라우드 시스템으로의 단계적 전환</strong>을 위한 안정적인 기반을 마련하고자 합니다.</p>
+
+    <h2>2. 핵심 사업 정보 (수치 및 예산)</h2>
+    <ul>
+        <li><span class="highlight">발주 기관:</span> 한국예술종합학교 (예술정보관 주관)</li>
+        <li><span class="highlight">소요 예산:</span> 583,000,000원 (금오억팔천삼백만 원, 부가가치세 포함)</li>
+        <li><span class="highlight">사업 기간:</span> 계약 후 90일 (M+3)</li>
+        <li><span class="highlight">입찰 방식:</span> 제한경쟁입찰 (협상에 의한 계약, 기술 90% / 가격 10% 평가)</li>
+    </ul>
+
+    <h2>3. 주요 요구사항 및 기술 사양</h2>
+    <ul>
+        <li><span class="highlight">가상화 컴퓨팅 자원 확장:</span> 기존 1차 사업에서 구축된 2노드 가상화 플랫폼에 가상화 서버 1대를 추가 도입하여 <strong>총 3노드 클러스터</strong>로 확장 (부하 분산 및 고가용성 보장).</li>
+        <li><span class="highlight">기존 시스템 연계:</span> 도입되는 가상화 소프트웨어는 기존 구축된 가상화 솔루션(Contrabass Enterprise) 및 플랫폼 인프라와 원활하게 연계되어야 함.</li>
+        <li><span class="highlight">통합 백업 체계 구축:</span> 가상화 환경에 최적화된 통합 백업 SW 및 OS 백업 SW 도입, 외부망 백업 서버 및 어플라이언스(1식) 구축.</li>
+        <li><span class="highlight">안정성 및 유연성 확보:</span> 장애 시 VM 자동 재기동(HA), 스냅샷 및 롤백 기능 보장, 공동 자원 활용 극대화.</li>
+    </ul>
+
+    <h2>4. Red Hat 제품 제안 포인트 (Value Proposition)</h2>
+    <div class="proposals">
+        <ul>
+            <li>
+                <span class="highlight">Red Hat Enterprise Linux (RHEL):</span> 
+                현재 가상화 인프라(Contrabass 및 Ubuntu 기반)의 상위 OS 레이어 및 신규 백업 서버의 기본 운영체제로 RHEL을 제안하여, 공공기관에 필수적인 고도의 보안성과 상용 벤더 수준의 고품질 기술 지원 체계를 확보할 수 있습니다.
+            </li>
+            <li>
+                <span class="highlight">Red Hat OpenShift Virtualization:</span> 
+                본 사업의 최종 목표인 '최종 클라우드 시스템으로의 단계적 전환'을 달성하기 위한 핵심 제안 포인트입니다. 기존 VM 가상화 환경을 컨테이너 기반 클라우드 플랫폼인 OpenShift 내에서 통합 운영 및 관리할 수 있도록 가이드함으로써, 미래 지향적인 하이브리드 클라우드 로드맵을 제시합니다.
+            </li>
+            <li>
+                <span class="highlight">Red Hat Ansible Automation Platform:</span> 
+                3노드로 확장되는 가상화 클러스터 및 다수의 VM, 신규 통합 백업 시스템의 구성 관리와 패치, 반복적인 운영 업무를 자동화하여 운영 인력이 부족한 대학 환경 내 관리 효율성을 극대화할 수 있습니다.
+            </li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
+```
