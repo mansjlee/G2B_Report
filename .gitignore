@@ -1,0 +1,9 @@
+# Ignore markdown and google doc files
+*.md
+*.gdoc
+
+# Ignore system files
+desktop.ini
+
+# Ignore all directories, since we only want to track the HTML reports
+*/
