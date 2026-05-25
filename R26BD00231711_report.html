@@ -1,0 +1,134 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00231711 - 문서 분석 리포트</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid #e0e0e0;
+            padding: 30px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #c00px;
+            border-bottom: 2px solid #cc0000;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 24px;
+        }
+        h2 {
+            color: #1a1a1a;
+            border-left: 4px solid #cc0000;
+            padding-left: 10px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+        th {
+            background-color: #f5f5f5;
+            font-weight: bold;
+            width: 25%;
+        }
+        ul {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>R26BD00231711 - 문서 분석 리포트</h1>
+    
+    <h2>1. 사업 기본 정보</h2>
+    <table>
+        <tr>
+            <th>사업명</th>
+            <td>차세대 통합정보시스템 고도화 사업</td>
+        </tr>
+        <tr>
+            <th>주관기관</th>
+            <td>국가수리과학연구소 (NIMS)</td>
+        </tr>
+        <tr>
+            <th>사업 예산</th>
+            <td><span class="highlight">약 800백만원</span> (부가세 포함)</td>
+        </tr>
+        <tr>
+            <th>사업 기간</th>
+            <td>계약 체결일로부터 <span class="highlight">6개월</span> (발행시기: 2026년 5월)</td>
+        </tr>
+    </table>
+
+    <h2>2. 주요 핵심 주제 및 목적</h2>
+    <ul>
+        <li><strong>디지털 업무 환경 혁신:</strong> 기관의 규모 및 역할 확대에 발맞춰 내부 통제 시스템(자산, 감사, 계약 등)을 확장하고 전산화 미비로 인한 비효율 개선</li>
+        <li><strong>데이터 기반 의사결정:</strong> 분산된 업무 데이터를 통합하여 신뢰성 높은 데이터를 확보하고, 경영지원 의사결정 시스템(EIS)을 구축하여 데이터 중심의 디지털 경영 체계 확립</li>
+        <li><strong>미래 기술 도입 및 인프라 현대화:</strong> 생성형 AI를 활용한 행정 자동화 구현 및 데이터 증가에 탄력적으로 대응할 수 있는 고가용성(HA) 가상화 인프라 확보</li>
+    </ul>
+
+    <h2>3. 요구사항 및 주요 기술 사양</h2>
+    <ul>
+        <li><strong>신규 시스템 구축 및 고도화:</strong> 경영자정보시스템(EIS) 대시보드 구축, e-감사시스템 전산화, 자산관리 및 전자계약 시스템 Life-cycle 고도화</li>
+        <li><strong>생성형 AI 연계 업무 최적화:</strong> 자연어 기반 질의를 통해 휴가·출장 신청 자동 생성, 규정 검증, 인사 정보 연계 및 전자결재까지 일괄 처리하는 지능형 서비스 구축</li>
+        <li><strong>인프라 및 네트워크 고도화:</strong> 
+            <ul>
+                <li>가상화 서버 확충 및 전산실 인프라 정비</li>
+                <li>GPU 워크스테이션 도입 및 외부 네트워크 이중화를 통한 고가용성(HA) 확보</li>
+                <li>MIS, PMS, 그룹웨어, 포털 등 현행 시스템(현 Linux 기반 Apache/Tomcat 환경)과의 유기적 연계</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>4. Red Hat 주요 제품 제안 가능 포인트 분석</h2>
+    <ul>
+        <li><strong>Red Hat Enterprise Linux (RHEL):</strong> 
+            현재 기관의 주요 시스템(MIS, PMS, GW 등)이 Linux 환경에서 구동 중이므로, 신규 가상화 서버 및 GPU 워크스테이션 도입 시 보안 표준화와 일관된 성능 관리를 위해 가장 안정적인 상용 OS인 RHEL 제안 필수.
+        </li>
+        <li><strong>Red Hat OpenShift &amp; OpenShift Virtualization:</strong> 
+            가상화 서버 확충 및 생성형 AI 애플리케이션 탑재에 있어 기존 가상 머신(VM) 환경과 신규 컨테이너 환경을 통합 관리할 수 있는 OpenShift Virtualization을 제안하여 레거시 시스템 연계 및 마이크로서비스 아키텍처(MSA) 전환 기반 제공.
+        </li>
+        <li><strong>Red Hat JBoss Web Server (JWS):</strong> 
+            현행 웹/WAS 환경이 Apache 및 오픈소스 Tomcat 기반이므로, 향후 대내외 연계 시스템 증가에 따른 성능 병목 해결 및 엔터프라이즈 급 보안 패치와 기술 지원을 위해 JBoss Web Server로의 업그레이드 제안.
+        </li>
+        <li><strong>Red Hat Ansible Automation Platform:</strong> 
+            방화벽, 백본/층간 스위치 등 다수의 신규 네트워크 장비 도입 및 이중화 구성 시, 인프라의 설정 오류를 방지하고 자동화된 구성 관리(IaC)를 실현하기 위해 Ansible 도입 제안.
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
+```

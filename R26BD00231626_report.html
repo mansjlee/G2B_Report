@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00231626 - 문서 분석 리포트</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fbfbfb;
+        }
+        h1 {
+            color: #004b8d;
+            border-bottom: 2px solid #004b8d;
+            padding-bottom: 10px;
+            font-size: 24px;
+            text-align: center;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 18px;
+            margin-top: 25px;
+            border-left: 4px solid #004b8d;
+            padding-left: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .table-info {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .table-info th, .table-info td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            font-size: 14px;
+        }
+        .table-info th {
+            background-color: #f2f2f2;
+            width: 30%;
+        }
+        .rh-suggest {
+            background-color: #f9f2f2;
+            border: 1px solid #d9534f;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .rh-suggest h3 {
+            margin-top: 0;
+            color: #c9302c;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>R26BD00231626 - 문서 분석 리포트</h1>
+
+    <h2>1. 주요 핵심 주제와 목적</h2>
+    <p>
+        본 문서는 <strong>중앙선거관리위원회</strong>가 주관하는 <strong>'제4회 전국동시조합장선거 정보시스템 개선 및 위탁운영 사업'</strong>의 제안요청서(RFP)입니다. 
+        대국민 신뢰도가 직결되는 선거 업무의 특성상, 정보시스템의 안정적인 운영 체계를 확보하고 성능 진단 및 소프트웨어 보안 강화를 통해 무결점 선거 관리 환경을 조성하는 것을 핵심 목적으로 합니다.
+    </p>
+
+    <h2>2. 중요 수치 및 사업 개요</h2>
+    <table class="table-info">
+        <tr>
+            <th>사업명</th>
+            <td>제4회 전국동시조합장선거 정보시스템 개선 및 위탁운영 사업</td>
+        </tr>
+        <tr>
+            <th>사업 예산</th>
+            <td><span class="highlight">1,573백만 원</span> (부가세 포함)</td>
+        </tr>
+        <tr>
+            <th>사업 기간</th>
+            <td>계약일로부터 ~ 2027년 4월 30일까지 (약 10개월)</td>
+        </tr>
+        <tr>
+            <th>선거일</th>
+            <td><span class="highlight">2027년 3월 3일</span> (제4회 전국동시조합장선거)</td>
+        </tr>
+        <tr>
+            <th>개선 완료 기한</th>
+            <td>2026년 12월까지 시스템 개선 완료 예정</td>
+        </tr>
+        <tr>
+            <th>대상 시스템</th>
+            <td>동시조합장 통합명부시스템, 선거관리시스템, 선거통계시스템 등 총 8개 시스템</td>
+        </tr>
+    </table>
+
+    <h2>3. 요구사항 및 기술 사양</h2>
+    <ul>
+        <li><strong>선거 안정성 확보:</strong> 주요 선거 기간 중 24시간 장애대응체계 가동 및 전국 단위 모의시험(투·개표 보고 등) 지원</li>
+        <li><strong>성능 및 품질 관리:</strong> 외부 전문업체를 통한 시스템 정밀 성능 진단 및 인프라 최적화</li>
+        <li><strong>보안성 극대화:</strong> 소프트웨어 개발보안(Secure Coding) 가이드 준수 및 취약점 진단·조치</li>
+        <li><strong>운영 지원:</strong> 사용자 접근성 개선, 제도/지침 변경사항 실시간 반영 및 헬프데스크(상담/원격 지원) 상주 운영</li>
+    </ul>
+
+    <h2>4. Red Hat 주요 제품 제안 가능 포인트 분석</h2>
+    <div class="rh-suggest">
+        <h3>Red Hat 솔루션을 통한 선거 시스템 현대화 및 안정성 제안</h3>
+        <ul>
+            <li>
+                <strong>Red Hat Enterprise Linux (RHEL):</strong> 
+                통합명부 및 선거관리 등 고도의 보안과 중단 없는 서비스가 필수적인 핵심 WAS/DB 서버의 OS 표준으로 제안. 선거 기간 중 보안 패치 및 긴급 기술 지원 보장.
+            </li>
+            <li>
+                <strong>Red Hat OpenShift & OpenShift Virtualization:</strong> 
+                선거 당일 및 개표 진행 시 급증하는 트래픽 유입에 탄력적으로 대응하기 위해 선거통계시스템의 컨테이너화 제안. 기존 가상화 자산(VM)과 컨테이너 환경을 단일 플랫폼에서 효율적으로 통합 운영 가능.
+            </li>
+            <li>
+                <strong>JBoss Enterprise Application Platform (JBoss EAP):</strong> 
+                조합명부 전산파일 전송 및 선거정보 제공 서비스 등 대용량 트랜잭션의 실시간 처리가 필요한 미들웨어 영역에 경량화되고 고성능인 Enterprise WAS로 전환 제안.
+            </li>
+            <li>
+                <strong>Red Hat Ansible Automation Platform:</strong> 
+                전국 투·개표소 및 지부 시스템의 신속한 환경 설정 배포, 모의시험 환경 자동 구성, 선거 당일 비상 장애 발생 시 1클릭 복구 시나리오 자동화를 통해 운영 인력의 실수(Human Error) 방지 및 운영 효율 극대화.
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
