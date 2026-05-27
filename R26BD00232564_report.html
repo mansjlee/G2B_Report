@@ -1,65 +1,9 @@
-```html
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>R26BD00232564 분석 리포트</title>
-    <style>
-        body {
-            font-family: 'Malgun Gothic', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 20px;
-            background-color: #f9f9f9;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        }
-        h1 {
-            color: #c00;
-            border-bottom: 2px solid #c00;
-            padding-bottom: 10px;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px 15px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-            color: #333;
-            width: 25%;
-            font-weight: bold;
-        }
-        td {
-            background-color: #ffffff;
-        }
-        ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        li:last-child {
-            margin-bottom: 0;
-        }
-        strong {
-            color: #111;
-        }
-    </style>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
 </head>
 <body>
     <div class="container">
@@ -70,8 +14,9 @@
                 <th>사업 개요 및 목적</th>
                 <td>
                     <ul>
-                        <li><strong>사업 목표</strong>: 해군 부대 경계 및 안전 강화를 목적으로 NPU(신경망처리장치) 기반의 고성능 지능형 영상감시체계 시범 구축</li>
-                        <li><strong>추진 배경</strong>: 기존 영상 분석의 한계를 극복하고 AI 기반 고성능 가속기(NPU)를 도입하여 실시간 지능형 감시 알고리즘 및 위협 감지 체계 고도화</li>
+                        <li><strong>사업명</strong>: NPU 기반 지능형 영상감시체계 시범 구축(해군) 사업</li>
+                        <li><strong>추진 배경 및 필요성</strong>: 기존 영상감시체계의 한계를 극복하고 신기술인 NPU(Neural Processing Unit, 신경망처리장치) 기반의 고속·고효율 지능형 영상감시 시스템을 시범 구축하여 경계 작전의 완전성을 보장하고자 함.</li>
+                        <li><strong>사업 목적</strong>: 국산 고성능 NPU 기술을 군에 선제적으로 도입하여 군 감시 역량을 획기적으로 향상시키고, 오탐율을 최소화하여 장병의 피로도를 경감하며 신속하고 정확한 상황 판단 지원 체계를 수립하는 것임.</li>
                     </ul>
                 </td>
             </tr>
@@ -79,9 +24,9 @@
                 <th>주요 정보</th>
                 <td>
                     <ul>
-                        <li><strong>사업 예산</strong>: 입력 텍스트 내 미기재 (공고 및 상세 RFP 확인 필요)</li>
-                        <li><strong>사업 기간</strong>: 2026년 5월 추진 개시</li>
-                        <li><strong>사업 범위</strong>: NPU 기반 지능형 영상분석 인프라 구축, 기능 및 성능 검증, 타 시스템 연동 및 보안 체계 수립</li>
+                        <li><strong>사업 예산</strong>: 본문 미표기 (조달청 나라장터 입찰공고서 및 상세 내역서 추가 확인 필요)</li>
+                        <li><strong>사업 기간</strong>: 2026년도 시범 구축 사업 (계약일로부터 일정 기간, 상세 제안요청서 일정 참조)</li>
+                        <li><strong>사업 범위</strong>: NPU 기반 지능형 영상분석 시스템 아키텍처 설계, NPU 가속기 및 전용 서버 도입, 영상 감시 분석 소프트웨어 탑재 및 학습/추론 모델 적용, 시범 연동 테스트 및 성능 검증</li>
                     </ul>
                 </td>
             </tr>
@@ -89,8 +34,8 @@
                 <th>담당자 정보</th>
                 <td>
                     <ul>
-                        <li><strong>해군본부</strong>: 이영준 대위 (042-553-5134 / lyj950213@navy.mil.kr)</li>
-                        <li><strong>한국지능정보사회진흥원(NIA)</strong>: 김종우 책임 (053-230-1786 / hippowoo@nia.or.kr)</li>
+                        <li><strong>수요기관 (해군본부)</strong>: 대위 이영준 (042-553-5134 / lyj950213@navy.mil.kr)</li>
+                        <li><strong>전문기관 (한국지능정보사회진흥원, NIA)</strong>: 책임 김종우 (053-230-1786 / hippowoo@nia.or.kr)</li>
                     </ul>
                 </td>
             </tr>
@@ -98,28 +43,30 @@
                 <th>핵심 요구사항</th>
                 <td>
                     <ul>
-                        <li><strong>시스템 인프라 요구사항</strong>: NPU 칩 및 전용 하드웨어 가속 솔루션을 탑재한 시스템 장비 구성 및 환경 구축</li>
-                        <li><strong>기능 및 알고리즘</strong>: 딥러닝 기반 실시간 지능형 영상 감시 알고리즘 탑재 및 연동 인터페이스 개발</li>
-                        <li><strong>보안 및 품질 요구사항</strong>: 군 특수 정보 보호를 위한 엄격한 망 분리 및 국방 보안 규정 준수</li>
+                        <li><strong>NPU 기반 지능형 분석</strong>: NPU 하드웨어 가속 인프라를 활용하여 실시간 CCTV 영상 속 객체 인식, 상황 분석 및 알람 기능 구현</li>
+                        <li><strong>시스템 인프라 구축</strong>: 고속 추론 및 분석에 최적화된 NPU 가속기 탑재 서버 등 시스템 장비 구성 요구</li>
+                        <li><strong>상호 운용성 및 연동</strong>: 해군 내 기존 영상 감시 하드웨어 및 운영 체계와의 유기적인 데이터 인터페이스 연동</li>
+                        <li><strong>엄격한 군 보안 요구사항</strong>: 군망 가이드라인을 준수하는 강력한 보안 아키텍처 적용 및 안정적 기술 지원</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Red Hat 제안 불가능 포인트</th>
+                <th>Red Hat 제안 불가능 요소</th>
                 <td>
                     <ul>
-                        <li><strong>NPU 하드웨어 연계 이슈</strong>: 특정 국산 NPU 하드웨어 제조사가 자체 개발한 전용 SDK 및 커스텀 OS(특정 버전의 Ubuntu 또는 비표준 리눅스 배포판)만 지원하는 경우, 상용 RHEL 배포가 어려울 수 있음</li>
-                        <li><strong>클라우드(CSP) 환경 제약</strong>: NIA 공공 클라우드 시범 사업 성격상 공공 CSP(KT, 네이버, NHN 등)의 클라우드 인프라가 강제될 경우, Red Hat 솔루션의 독립적 공급 기회가 제한될 가능성 존재</li>
+                        <li><strong>하드웨어 공급 한계</strong>: Red Hat은 순수 소프트웨어 벤더로서, 국산 NPU 반도체 및 분석 서버 등 물리적 장비 자체는 하드웨어 파트너사(OEM/국산 NPU 제조사)의 솔루션에 의존해야 함.</li>
+                        <li><strong>오프라인 서브스크립션 관리 제약</strong>: 해군 군사 폐쇄망 환경 특성상 인터넷 연결을 통한 Red Hat CDN 직접 업데이트가 원칙적으로 불가하므로, 오프라인 상태에서 패치 및 라이선스를 관리할 수 있는 Red Hat Satellite 등의 추가 아키텍처 설계가 강제됨.</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Red Hat 제안 가능 포인트</th>
+                <th>Red Hat 제안 가능 요소</th>
                 <td>
                     <ul>
-                        <li><strong>Red Hat Enterprise Linux (RHEL) 제안</strong>: NPU 구동 서버의 안정적인 베어메탈 인프라 환경 구축을 위해, 국방 보안 검증(CC 인증 등)을 통과한 엔터프라이즈 등급의 RHEL 도입 제안</li>
-                        <li><strong>Red Hat OpenShift (OCP) / OpenShift AI 제안</strong>: AI 모델 배포 및 라이프사이클 관리를 위해, 컨테이너 환경에서 NPU 하드웨어 자원을 최적화하여 오케스트레이션할 수 있는 쿠버네티스 플랫폼(OpenShift) 제안</li>
-                        <li><strong>Red Hat Ansible Automation Platform 제안</strong>: 군 부대 곳곳에 분산 구축될 지능형 영상감시 에지(Edge) 인프라 및 전용 노드들의 보안 설정, 패치 관리 및 설정 자동화를 위한 Ansible 솔루션 제안</li>
+                        <li><strong>Red Hat Enterprise Linux (RHEL) 제안</strong>: NPU 제조사들이 제공하는 드라이버 및 지능형 분석 소프트웨어의 표준 운영체제(OS) 환경으로 RHEL을 제공하여 군이 요구하는 엔터프라이즈급 최고 수준의 보안성과 고성능 연산 안정성을 보장할 수 있음.</li>
+                        <li><strong>Red Hat OpenShift (OCP) 제안</strong>: 지능형 영상감시 분석 모델(AI/ML 워크로드)을 마이크로서비스 아키텍처(MSA) 및 컨테이너 환경에서 효율적으로 관리할 수 있으며, NPU 칩셋 제조사별 전용 Operator를 활용해 하드웨어 자원을 컨테이너 환경에서 유연하게 할당 및 가속화할 수 있음.</li>
+                        <li><strong>Red Hat Ansible Automation Platform 제안</strong>: 지능형 영상감시 시스템 확산 시, 전방부대 및 초소에 분산 구축될 다수의 영상 분석 장비(Edge 기기)와 서버들에 대한 원격 구성 관리, OS 패치 및 보안 설정 자동화를 통합 지원함으로써 군 인력의 운영 및 유지보수 효율성을 대폭 개선 가능.</li>
+                        <li><strong>Red Hat OpenShift AI (RHOAI) 연계</strong>: 군 영상 데이터셋을 기반으로 AI 모델 개발 및 파인튜닝, NPU 타겟 컴파일을 신속히 수행할 수 있는 AI 엔드투엔드 파이프라인 플랫폼 제공 가능.</li>
                     </ul>
                 </td>
             </tr>
@@ -127,4 +74,3 @@
     </div>
 </body>
 </html>
-```
