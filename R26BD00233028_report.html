@@ -1,0 +1,81 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00233028 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>한국방송통신대학교_가상실험실습 학습콘텐츠 공유 플랫폼 구축 2차 사업 - 분석 리포트</h1>
+        
+        <table>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li><strong>사업명:</strong> 가상실험실습 학습콘텐츠 공유 플랫폼 구축 2차 사업</li>
+                        <li><strong>추진 배경:</strong> AI 및 가상현실(XR) 기술 발전에 따른 양방향·실험 중심 교육 패러다임 변화 및 개별 기관에 산재된 가상실험실습 콘텐츠의 통합 공유 필요성 증대</li>
+                        <li><strong>핵심 목표:</strong> 다수 대학/기관의 가상실험실습 콘텐츠를 공동 활용할 수 있는 장을 마련하고, 데이터 수집·분석·공유 환경(LRS, API) 및 클라우드 기반 인프라 구축</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산:</strong> 금 674,000,000 원 (부가세 포함)</li>
+                        <li><strong>사업 기간:</strong> 계약 후 240일 이내 (1년간 운영 지원 및 기술지원 포함)</li>
+                        <li><strong>계약 방법:</strong> 제한경쟁입찰 (협상에 의한 계약, 하도급 불가)</li>
+                        <li><strong>주요 범위:</strong> xAPI 기반 LRS(학습활동 데이터 저장소) 도입, 데이터 공유/개방 관리 기능 개발, Open API 구현, 분석 결과 대시보드 구축, 클라우드 기반 인프라 구축</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>담당 부서:</strong> 한국방송통신대학교 OpenVLab 구축 사업단</li>
+                        <li><strong>담당자 1:</strong> 조성일 (070-4649-5130, one2one@mail.knou.ac.kr)</li>
+                        <li><strong>담당자 2:</strong> 배성환 (070-4649-5135, cano7200@mail.knou.ac.kr)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>LRS(Learning Record Store) 구축:</strong> xAPI 표준 기반의 빅데이터 수집, 처리, 저장 및 다형성 결과 도출을 위한 쿼리 지원</li>
+                        <li><strong>데이터 개방 및 공유 관리:</strong> Open API 개발 및 관리 기능 구현, 데이터셋 목록 관리 및 신청/승인 프로세스 구축</li>
+                        <li><strong>대시보드 구현:</strong> 수집된 빅데이터 분석 결과를 시각화하여 대시보드로 제공하고, 지속적 확장 방안 제시</li>
+                        <li><strong>클라우드 인프라 구성:</strong> 학습분석 시스템의 안정적 운영을 위한 최적의 클라우드 기반 인프라 환경 설계 및 구축</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>예산 제약에 따른 대규모 솔루션 제안 한계:</strong> 총사업 예산이 약 6.7억 원으로 소프트웨어 개발비가 상당 부분 차지할 것으로 예상됨에 따라, 고가의 Red Hat Full Stack(Premium OpenShift 등) 도입은 예산 압박이 존재함</li>
+                        <li><strong>하도급 불가 조건:</strong> 보안 강화를 위해 하도급이 금지되므로, 제안사가 Red Hat 솔루션 구축 기술력을 자체 보유하고 있거나 Red Hat 전문 파트너사가 주사업자로 참여해야 함</li>
+                        <li><strong>특정 SaaS/CSP 종속 가능성:</strong> 공공 클라우드(CSP) 인프라 위에서 네이티브 PaaS나 오픈소스 무료 OS(Rocky Linux, Ubuntu 등)를 직접 구축하려 할 경우 상용 기술지원 솔루션의 제안이 배제될 위험이 있음</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>Red Hat Enterprise Linux (RHEL):</strong> 빅데이터 수집(LRS), DB 및 API 서버의 고가용성과 안정성 보장 및 공공 보안 가이드 준수를 위한 신뢰성 높은 최적의 OS 플랫폼으로 제안 가능</li>
+                        <li><strong>Red Hat OpenShift (OCP):</strong> "클라우드 기반 학습분석 시스템 인프라 구축" 요구사항에 맞추어, 컨테이너 기반의 LRS 및 API 마이크로서비스 유연한 확장(Auto-scaling)과 안정적 관리를 위한 Kubernetes 플랫폼으로 제안 가능 (비용 최적화 모델인 OKE 또는 소규모 서브스크립션 제안 전략 필요)</li>
+                        <li><strong>Red Hat 3scale API Management:</strong> "데이터 개방·공유를 위한 Open API 개발 및 API 관리 기능 구현" 요구사항에 부합하여, API 인증, 트래픽 제어, 키 발급 정책 등을 손쉽게 관리할 수 있는 최적의 솔루션으로 소구 가능</li>
+                        <li><strong>Red Hat Ansible Automation Platform:</strong> 향후 1년간의 인프라 운영 지원 시 클라우드 프로비저닝, 패치 및 대규모 구성 관리 자동화를 통해 한정된 운영 인력의 효율성을 극대화하는 방안으로 제안 가능</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+```
