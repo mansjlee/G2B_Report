@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00233262 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>제주특별자치도_제주 디지털 통합 신원인증 체계 구축 - 분석 리포트</h1>
+        
+        <table>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 정의:</strong> 블록체인 DID(분산신원증명) 및 NFC 기술을 기반으로 전 도민과 관광객을 아우르는 '제주 신원확인 디지털 지갑' 플랫폼 구축</li>
+                        <li><strong>추진 배경:</strong> 모바일 기기 보편화 및 데이터 주권(MyData) 개념의 부상, 정부의 모바일 신분증 활성화 정책에 선제적으로 부응</li>
+                        <li><strong>도입 필요성:</strong> 기존 플라스틱 카드 중심의 파편화된 실물 증명서(명예도민, 재외도민, 4.3유족 등) 휴대 불편 해소 및 대면 확인에 따른 자격 검증 행정 비효율 혁신</li>
+                        <li><strong>기대 효과:</strong> 신원확인과 공공시설(유료 공영관광지 33개소 등) 서비스 혜택을 연계한 원스톱 행정 생태계 구현 및 개인정보 최소 노출을 통한 안전한 디지털 환경 보장</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li>**사업 예산**: 1,500,000천 원 (금일십오억 원, 부가가치세 포함)</li>
+                        <li>**사업 기간**: 계약일로부터 2026년 12월 20일까지 (적정 사업기간 산정 기준 적용)</li>
+                        <li>**계약 방식**: 제한경쟁입찰 (협상에 의한 계약)</li>
+                        <li>**사업 범위**: 블록체인 DID 기반 디지털 지갑 앱 구축, 이기종 자격 인증 연동 개발, 클라우드 인프라 기반 시스템 연동 등</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>담당 부서:</strong> 제주특별자치도 디지털혁신과</li>
+                        <li><strong>과장:</strong> 안혜영 (TEL: 064-710-2340)</li>
+                        <li><strong>팀장:</strong> 부지선 (TEL: 064-710-2341)</li>
+                        <li><strong>주무관:</strong> 송형민 (TEL: 064-710-2343)</li>
+                        <li><strong>이메일 주소:</strong> 제안요청서 내 미기재 (추후 제안 설명회 또는 질의를 통해 확보 필요)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>분산신원증명(DID) 환경 구축:</strong> 제주도지사가 발급하는 다양한 자격을 스마트폰에 안전하게 저장하고 사용자 주도로 선택 제출할 수 있는 DID 기술 적용</li>
+                        <li><strong>시스템 연동 및 호환성 확보:</strong> 기존 클라우드 인프라 상에서 가동 중인 제주도 홈페이지(Web, WAS, DB) 환경과의 연계 로그인 및 유료 공영관광지 연동 개발</li>
+                        <li><strong>보안 및 위·변조 방지:</strong> 대외 신뢰성을 보장하기 위해 강력한 데이터 보안, 키 관리 및 개인정보 위·변조 차단 기술 체계 구축</li>
+                        <li><strong>대국민 확장성 확보:</strong> 향후 1,300만 명 규모의 제주 관광객 및 명예·재외도민까지 수용할 수 있는 고가용성 인프라 구성</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>응용 프로그램 개발 중심의 사업:</strong> 단순 상용 S/W 패키지 공급이 아닌, DID 블록체인 구축 및 하이브리드 모바일 앱 자체를 신규 개발하는 SI(System Integration) 영역이 주를 이루고 있어 Red Hat 단독 제안은 불가능함 (SI 주사업자와의 컨소시엄 필요)</li>
+                        <li><strong>DID 및 NFC 특화 솔루션의 부재:</strong> Red Hat 제품군 중 모바일 DID 발급/검증 엔진 및 NFC 통신 등 도메인 특화 기술 라이선스를 직접 공급하는 제품은 없으므로, 관련 블록체인/DID 전문 파트너 솔루션과의 패키징 제안이 필수적임</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>CentOS EOL 대응을 위한 RHEL 전환 제안 (최우선 포인트):</strong> 현재 연동 대상인 도 홈페이지 하드웨어 현황을 보면 Web, WAS, DB 서버 전반(총 6식)이 기술 지원이 종료(EOL)된 <strong>CentOS 7.9(64bit)</strong>로 가동 중임. 이를 강력한 엔터프라이즈 보안과 공공기관 컴플라이언스를 만족하는 <strong>Red Hat Enterprise Linux (RHEL)</strong>로 마이그레이션하는 방안을 핵심 제안 가능</li>
+                        <li><strong>클라우드 네이티브 환경을 위한 OpenShift 제안:</strong> 다수의 외부 기관 및 관광지 시스템과의 API 연동, 고성능 처리가 필요한 DID 모바일 플랫폼을 컨테이너 기반으로 기민하게 관리하기 위해 <strong>Red Hat OpenShift Container Platform(OCP)</strong> 적용 제안 가능</li>
+                        <li><strong>안정적 미들웨어 환경을 위한 JBoss EAP 제안:</strong> 도 홈페이지 WAS 레이어 및 신규 연동 WAS의 성능 병목 현상을 해결하고, 상용 수준의 안정성 및 신속한 기술 지원을 보장하는 엔터프라이즈 WAS 솔루션으로 <strong>Red Hat JBoss EAP</strong> 제안 가능</li>
+                        <li><strong>자동화 및 형상관리를 위한 Ansible Automation 제안:</strong> 분산되어 설치될 신원인증 서버 및 다중 클라우드 가상 머신들의 표준 보안 가이드라인 일괄 적용과 패치 자동화를 위해 <strong>Ansible Automation Platform</strong> 도입 권장</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

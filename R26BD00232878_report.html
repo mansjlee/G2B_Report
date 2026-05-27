@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00232878 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>방위사업청_통합 연계 고도화 구축 - 분석 리포트</h1>
+        
+        <table>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li><strong>사업명:</strong> 통합 연계 고도화 구축 사업 (주관기관: 방위사업청)</li>
+                        <li><strong>추진 배경:</strong> 노후화된 연계 아키텍처로 인한 데이터 처리 한계 직면 및 대용량 파일 전송(국방규격, 도면 등) 시 업무 지연 발생</li>
+                        <li><strong>핵심 목적:</strong> 
+                            <ul>
+                                | 클라우드 미적용에 따른 전산자원 용량 한계를 극복하고 유연한 자원 할당 체계 마련<br>
+                                | 망간 파일 연계 시 악성코드 유입을 차단하는 보안 취약점 개선<br>
+                                | 수작업 기반의 연계 업무를 자동화하고 사용자 중심의 통합연계 정보서비스 포털 구축
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산:</strong> 16,268,300,810원 (부가세 포함)
+                            <ul>
+                                <li>개발비: 6,502,702,730원 (연차별 예산 한도 내 지급)</li>
+                                <li>인프라 도입비: 9,765,598,080원 ('27년 개발 완료 후 리스계약 집행 예정)</li>
+                            </ul>
+                        </li>
+                        <li><strong>사업 기간:</strong> 계약 체결 후 500일 (장기계속계약 / 1차: 계약 후 169일, 2차: 계약 후 331일)</li>
+                        <li><strong>사업 범위:</strong> 
+                            <ul>
+                                <li>연계 정보 표준화 및 패턴 간소화</li>
+                                <li>MSA 설계가 적용된 통합연계 업무 포털 구축</li>
+                                <li>인피니밴드 기술 기반 대량/대용량 전송 아키텍처 고도화 및 이중화</li>
+                                <li>망중계 구간 CDR 솔루션 도입 등 보안 아키텍처 개선</li>
+                                <li>자료교환체계 망중계 이관 통합 및 통합연계 테스트 환경 구축</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>담당 부서:</strong> 방위사업청 정보화데이터담당관</li>
+                        <li><strong>부서 과장:</strong> 조화 과장 (☎ 02-2079-6760)</li>
+                        <li><strong>사업 담당자:</strong> 
+                            <ul>
+                                <li>최윤식 담당 (☎ 02-2079-6780)</li>
+                                <li>전성택 담당 (☎ 02-2079-6768)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>디지털플랫폼정부 정책 수용:</strong> 애플리케이션을 독립적인 서비스로 분리하여 개발·운영하는 MSA(Micro Services Architecture) 설계 및 적용</li>
+                        <li><strong>고성능 연계 인프라 구축:</strong> 대용량 파일 전송 속도 개선을 위한 인피니밴드 기술 도입 및 향후 10년간의 전산자원 수요를 고려한 확장성 확보</li>
+                        <li><strong>안정성 및 가용성 확보:</strong> 분산처리 및 무중단 아키텍처 설계를 통한 연계서버 이중화 구현</li>
+                        <li><strong>강력한 망간 보안성:</strong> 망중계 구간 CDR(Content Disarm and Reconstruction) 도입을 통한 파일 무해화 및 망중계 서버 바이러스 체크 누락 취약점 보완</li>
+                        <li><strong>테스트 환경 구축:</strong> 신규 정보시스템 연계 테스트 및 DT/OT 평가 지원을 위한 SW 및 인프라 환경 별도 구축</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>특화 하드웨어 및 전용 보안 솔루션:</strong> 요구사항에 명시된 인피니밴드 대용량 네트워크 전송 장비 및 CDR(콘텐츠 무해화) 솔루션, 백신 등은 Red Hat의 제품 포트폴리오 영역 외 제품군으로 직접 제안 불가능</li>
+                        <li><strong>단독 응찰 한계:</strong> 대규모 HW 인프라 도입(약 97.6억 원 규모) 및 타사 솔루션 통합, 리스 계약 수행 프로세스가 포함된 사업 특성상 Red Hat 단독 제안은 불가하며 대형 SI 주사업자와의 컨소시엄 구성이 필수적임</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>Red Hat OpenShift (Container Platform) 도입 제안:</strong>
+                            <ul>
+                                <li>본 사업의 핵심 요구사항인 **MSA(Micro Services Architecture)** 설계 및 연계 애플리케이션의 고가용성 분산처리를 위해 가장 검증된 컨테이너 표준 플랫폼인 OpenShift 제안 가능</li>
+                                <li>컨테이너 기반의 무중단 아키텍처 구성 및 자원의 유연한 동적 할당(클라우드 미적용 한계 극복)에 최적</li>
+                            </ul>
+                        </li>
+                        <li><strong>Red Hat Enterprise Linux (RHEL) 표준화 제안:</strong>
+                            <ul>
+                                <li>통합연계 서버 증설 및 신규 테스트 인프라 환경 구축 시 시스템 안정성과 보안성을 보장하는 고성능 엔터프라이즈 OS 표준으로 RHEL 제안</li>
+                            </ul>
+                        </li>
+                        <li><strong>Red Hat Ansible Automation Platform 기반 자동화 제안:</strong>
+                            <ul>
+                                <li>통합 연계 서버 이중화 관리, 체계별 연계 테스트 환경의 신속한 프로비저닝 및 SW 구성 관리 자동화(IaC)를 실현하여 군 운영 담당자의 업무 효율성 극대화</li>
+                            </ul>
+                        </li>
+                        <li><strong>Red Hat Middleware (JBoss EAP / Quarkus) 제안:</strong>
+                            <ul>
+                                <li>통합연계 업무 포털 및 백엔드 관리 API를 클라우드 네이티브 환경에 맞춰 효율적으로 구동할 수 있도록 안정적인 기업용 WAS 스택 제공</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
