@@ -1,149 +1,152 @@
+```html
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>국민건강보험공단_2026년 노후 인프라 교체 및 정보시스템 고도화 사업 - 분석 리포트</title>
+    <title>R26BD00232085 분석 리포트</title>
     <style>
         body {
-            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            font-family: 'Malgun Gothic', sans-serif;
             line-height: 1.6;
-            color: #333333;
+            color: #333;
             margin: 20px;
-            padding: 20px;
-            border: 1px solid #dddddd;
-            border-radius: 8px;
-            background-color: #fafafa;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
         }
         h1 {
-            color: #0056b3;
-            border-bottom: 2px solid #0056b3;
+            color: #cc0000; /* Red Hat Brand Color */
+            border-bottom: 2px solid #cc0000;
             padding-bottom: 10px;
             font-size: 24px;
-        }
-        h2 {
-            color: #333333;
-            border-left: 5px solid #0056b3;
-            padding-left: 10px;
-            margin-top: 25px;
-            font-size: 18px;
-        }
-        h3 {
-            color: #555555;
-            font-size: 16px;
-            margin-top: 15px;
-        }
-        p, li {
-            font-size: 14px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 10px;
-            margin-bottom: 15px;
+            margin-top: 20px;
         }
         th, td {
-            border: 1px solid #cccccc;
-            padding: 10px;
+            border: 1px solid #ddd;
+            padding: 12px;
             text-align: left;
-            font-size: 14px;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #f5f5f5;
+            color: #333;
+            width: 25%;
             font-weight: bold;
         }
-        .warning-box {
-            background-color: #fff3cd;
-            border-left: 5px solid #ffc107;
-            padding: 10px 15px;
-            margin: 15px 0;
+        td ul {
+            margin: 0;
+            padding-left: 20px;
         }
-        .success-box {
-            background-color: #d4edda;
-            border-left: 5px solid #28a745;
-            padding: 10px 15px;
-            margin: 15px 0;
+        td li {
+            margin-bottom: 8px;
+        }
+        td li strong {
+            color: #111;
         }
     </style>
 </head>
 <body>
-
-    <h1>국민건강보험공단_2026년 노후 인프라 교체 및 정보시스템 고도화 사업 - 분석 리포트</h1>
-
-    <h2>1. 사업 개요 및 목적</h2>
-    <p>본 사업은 국민건강보험공단의 안정적인 서비스 제공을 방해하는 장애 발생 요소를 사전에 제거하기 위해 추진됩니다. 제조사의 부품 생산 및 기술지원이 중단(EOSL)된 노후 전산장비를 적기에 교체하고, 기존 정보시스템을 고도화하여 시스템의 안정성, 보안성 및 운영 효율성을 극대화하는 데 그 목적이 있습니다.</p>
-
-    <h2>2. 사업 일정 및 범위</h2>
-    <table>
-        <tr>
-            <th>구분</th>
-            <th>주요 내용</th>
-        </tr>
-        <tr>
-            <td><strong>사업 예산</strong></td>
-            <td>본 사업 제안요청서 예산 기준 적용 (세부 예산은 조달 공고 및 본문 참조)</td>
-        </tr>
-        <tr>
-            <td><strong>사업 범위</strong></td>
-            <td>
-                <ul>
-                    <li>노후 장비(통신, 보안, 서버 등) 교체</li>
-                    <li>정보시스템 고도화 및 라이선스 도입/갱신</li>
-                    <li>정보시스템 운영 절차 및 정보보호체계 강화</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>사업 기간</strong></td>
-            <td>계약일로부터 본 사업 지정 기한 내 (적정 사업기간 산정서 기준 준수)</td>
-        </tr>
-    </table>
-
-    <h2>3. 담당자 및 문의처</h2>
-    <table>
-        <tr>
-            <th>부서</th>
-            <th>직위/성명</th>
-            <th>연락처 (TEL)</th>
-            <th>이메일</th>
-        </tr>
-        <tr>
-            <td rowspan="2">정보관리실 정보기획부</td>
-            <td>조승현 팀장</td>
-            <td>033-736-2127</td>
-            <td>shcho2013@nhis.or.kr</td>
-        </tr>
-        <tr>
-            <td>윤주희 과장</td>
-            <td>033-736-2124</td>
-            <td>minions@nhis.or.kr</td>
-        </tr>
-    </table>
-
-    <h2>4. 주요 요구사항 및 기술 특이 사항</h2>
-    <ul>
-        <li><strong>노후 인프라의 전면 교체:</strong> EOSL 도래 서버, 통신, 보안 장비에 대한 중단 없는 마이그레이션 요구</li>
-        <li><strong>상호운용성 및 보안 검증:</strong> 신규 시스템 도입 시 기존 이기종 시스템과의 연계 안정성 및 보안성 확보 필수</li>
-        <li><strong>소프트웨어 라이선스 최적화:</strong> 기존 라이선스의 갱신 및 신규 라이선스 최적 도입을 통한 예산 효율화 필요</li>
-    </ul>
-
-    <h2>5. Red Hat 제품 제안 불가능 포인트 분석</h2>
-    <div class="warning-box">
-        <ul>
-            <li><strong>단독 S/W 공급 사업이 아님:</strong> 본 사업은 하드웨어 교체, 통신/보안 장비 구축 및 정보시스템 고도화가 결합된 통합 구축(SI) 사업으로, Red Hat 소프트웨어 단독 공급 제안으로는 사업 수주가 불가능합니다.</li>
-            <li><strong>CSP(Cloud Service Provider) 사업 제약:</strong> 공공 클라우드 전환 가이드라인 및 특정 CSP 사업 환경이 전제될 경우, 온프레미스 중심의 레거시 솔루션 제안이 제한될 수 있습니다.</li>
-            <li><strong>경쟁 솔루션 및 대체 OS 명시:</strong> 기존 가상화 인프라인 <strong>VMware</strong> 및 국산 대안 가상화 플랫폼인 <strong>Contrabass</strong>가 영향력을 발휘하고 있으며, OS 부문에서도 오픈소스 및 대안 리눅스인 <strong>Ubuntu</strong>, <strong>Oracle Linux</strong>, <strong>Rocky Linux</strong> 등이 도입 비용 절감 카드로 검토되거나 명시되어 있어 강력한 가격 경쟁이 예상됩니다.</li>
-        </ul>
+    <div class="container">
+        <h1>국민건강보험공단_2026년 노후 인프라 교체 및 정보시스템 고도화 사업 - R26BD00232085 분석 리포트</h1>
+        
+        <table>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li><strong>노후 인프라 교체</strong>: 제조사의 부품 생산 및 기술지원 중단(EOSL)으로 인한 장애 발생 요소를 사전에 차단하기 위해 노후 전산장비(서버, 통신, 보안 장비 등) 교체</li>
+                        <li><strong>정보시스템 고도화</strong>: 노후화된 정보시스템을 최신 아키텍처로 고도화하여 업무 처리 효율성 및 시스템 안정성 확보</li>
+                        <li><strong>안정성 및 보안 강화</strong>: 정보시스템 운영 절차를 강화하고 안정적인 기술지원 체계를 구축하여 대국민 서비스 중단 및 정보유출 리스크 방지</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 제안요청서 본문 내 미명시 (나라장터 입찰 공고의 기초금액 확인 필요)</li>
+                        <li><strong>사업 기간</strong>: 2026년 수행 사업 (착수일로부터 상세 기간 설정 예정)</li>
+                        <li><strong>사업 범위</strong>:
+                            <ul>
+                                <li>노후 장비(통신, 보안, 서버 등) 교체</li>
+                                <li>주요 정보시스템 고도화 및 아키텍처 개선</li>
+                                <li>정보시스템 운영 절차 및 정보보호체계 강화</li>
+                                <li>상용 소프트웨어 라이선스 도입 및 신규 갱신</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>담당 부서</strong>: 국민건강보험공단 정보관리실 정보기획부</li>
+                        <li><strong>담당자</strong>:
+                            <ul>
+                                <li>조승현 팀장 (TEL: 033-736-2127 / Email: shcho2013@nhis.or.kr)</li>
+                                <li>윤주희 과장 (TEL: 033-736-2124 / Email: minions@nhis.or.kr)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>인프라 현대화 및 U2L(Unix-to-Linux) 요구</strong>: EOSL 대비 노후 서버 교체 과정에서 최신 리눅스 운영체제 기반의 고성능, 고신뢰성 인프라 아키텍처 설계 및 데이터 마이그레이션 안정성 확보</li>
+                        <li><strong>시스템 고도화 및 클라우드 준비도 확보</strong>: 유연한 정보시스템 운영을 위해 가상화 및 클라우드 네이티브 아키텍처 검토 반영</li>
+                        <li><strong>운영 프로세스 및 보안 자동화</strong>: 대규모 장비 도입에 따른 효율적인 자원 관리, 형상 관리, 가시성 확보 및 운영 자동화 체계 수립</li>
+                        <li><strong>S/W 라이선스 최적화</strong>: 노후 장비 교체에 최적화된 상용 S/W(OS, WAS, DBMS 등) 라이선스 갱신 및 신규 최적 도입</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 불가능 포인트</th>
+                <td>
+                    <ul>
+                        <li><strong>물리적 하드웨어 공급 불가</strong>: 본 사업은 물리적 서버, 통신 장비, 보안 네트워크 장비 등 HW 교체가 주를 이루므로, 해당 장비 자체는 Red Hat 포트폴리오 영역 밖임 (주요 HW 파트너사 및 MSP 사업자와 컨소시엄 형태로 참여 필수)</li>
+                        <li><strong>기존 폐쇄형 독점 소프트웨어 갱신</strong>: 기존에 사용 중인 특정 제조사(Oracle, 가상화 벤더 등)의 고유 라이선스 단순 연장 갱신 건은 Red Hat 제품으로 직접 대치 불가 (다만, 대안 솔루션 제안을 통한 윈백 기회 모색은 가능)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 가능 포인트</th>
+                <td>
+                    <ul>
+                        <li><strong>Red Hat Enterprise Linux (RHEL) 제안</strong>:
+                            <ul>
+                                <li>노후 서버 교체 시 OS 표준 플랫폼으로 RHEL 제안</li>
+                                <li>기존 Unix 시스템 교체 요구(U2L) 발생 시, 검증된 마이그레이션 방법론과 안정성이 보장된 RHEL 기반 전환 제안</li>
+                            </ul>
+                        </li>
+                        <li><strong>Red Hat OpenShift (컨테이너 플랫폼) 제안</strong>:
+                            <ul>
+                                <li>'정보시스템 고도화' 영역 내 마이크로서비스 아키텍처(MSA) 및 클라우드 네이티브 인프라 전환 요구사항 반영</li>
+                                <li>개발, 배포, 운영의 일관성을 제공하는 엔터프라이즈 대표 쿠버네티스 플랫폼인 OpenShift 제안</li>
+                            </ul>
+                        </li>
+                        <li><strong>Red Hat Ansible Automation Platform 제안</strong>:
+                            <ul>
+                                <li>'정보시스템 운영 절차 강화' 요구사항에 대응하여 대규모 인프라의 설정 관리, 패치, 준수성 검사를 자동화할 수 있는 솔루션으로 제안</li>
+                                <li>운영자 실수 방지 및 관리 비용 절감을 위한 핵심 운영 자동화 도구로 포지셔닝</li>
+                            </ul>
+                        </li>
+                        <li><strong>Red Hat JBoss Enterprise Application Platform (EAP) 제안</strong>:
+                            <ul>
+                                <li>노후 WAS 교체 및 라이선스 도입/갱신 영역에서 상용 무거운 WAS 대비 성능이 우수하고 표준을 준수하는 JBoss EAP로의 비용 효율적 대안 제안</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
     </div>
-
-    <h2>6. Red Hat 제품 제안 가능 포인트 분석</h2>
-    <div class="success-box">
-        <ul>
-            <li><strong>안정적인 OS 표준화 (Red Hat Enterprise Linux - RHEL):</strong> 노후 서버 교체 시, 미션 크리티컬한 건강보험 시스템의 안정성 및 보안 보장을 위해 <strong>Red Hat Enterprise Linux</strong>를 핵심 표준 OS로 제안하여 Oracle Linux 및 Rocky Linux 대비 체계적인 기술지원 체계(EOSL 방지)의 우위성을 강조합니다.</li>
-            <li><strong>기존 VMware 대체를 위한 비용 효율적 가상화 제안:</strong> VMware 라이선스 정책 변화에 대응하여, 무제한 가상화 환경을 지원하는 <strong>Red Hat Virtual Data Center (VDC)</strong> 또는 컨테이너와 가상머신을 단일 플랫폼에서 통합 관리할 수 있는 <strong>OpenShift Virtualization Engine</strong>을 대안으로 제안합니다.</li>
-            <li><strong>정보시스템 고도화 및 클라우드 네이티브 전환:</strong> 시스템 고도화 영역에 공공 표준 PaaS 플랫폼인 <strong>Red Hat OpenShift</strong>를 제안하여 마이크로서비스 아키텍처(MSA) 기반의 유연한 고도화를 지원합니다.</li>
-            <li><strong>미들웨어 고도화 및 운영 자동화:</strong> 웹 애플리케이션 서버(WAS) 효율화를 위한 <strong>JBoss</strong> 미들웨어 도입 및 대규모 인프라의 효율적 관리를 위한 <strong>Ansible</strong> 자동화 플랫폼 제안을 통해 운영 절차 강화 요구사항을 충족시킬 수 있습니다.</li>
-        </ul>
-    </div>
-
 </body>
 </html>
+```

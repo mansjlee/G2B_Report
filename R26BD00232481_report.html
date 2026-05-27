@@ -3,134 +3,80 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>한국국토정보공사_2026년 주소지능정보 확장 실증사업 - 분석 리포트</title>
-    <style>
-        body {
-            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 20px;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #0056b3;
-            border-bottom: 2px solid #0056b3;
-            padding-bottom: 10px;
-            font-size: 24px;
-        }
-        h2 {
-            color: #333;
-            border-left: 5px solid #0056b3;
-            padding-left: 10px;
-            margin-top: 30px;
-            font-size: 18px;
-        }
-        h3 {
-            color: #555;
-            font-size: 15px;
-            margin-top: 15px;
-            margin-bottom: 5px;
-        }
-        p {
-            margin: 10px 0;
-            font-size: 14px;
-        }
-        ul {
-            margin: 5px 0 15px 20px;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 5px;
-            font-size: 14px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            font-size: 14px;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-            font-weight: bold;
-        }
-        .highlight-red {
-            color: #c0392b;
-            font-weight: bold;
-        }
-        .highlight-green {
-            color: #27ae60;
-            font-weight: bold;
-        }
-    </style>
+    <title>R26BD00232481 분석 리포트</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>한국국토정보공사 - 2026년 주소지능정보 확장 실증사업 분석 리포트</h1>
-
-    <h2>1. 사업개요 및 목적</h2>
-    <p>본 사업은 행정안전부의 「제1차 주소정보 활용 기본계획(’22∼’26)」에 따라 추진되는 위탁 사업으로, 분산된 주소지능정보의 통합 관리 및 이동지능망 기반 구축을 목적으로 합니다. 드론, 로봇, 자율주차 등 모빌리티 기술과 연계한 주소정보 DB의 고도화 및 실증을 통해 국가 주소정책을 지원하고 민간 파생 서비스 확산 체계를 마련하고자 합니다.</p>
-
-    <h2>2. 사업 예산 및 일정</h2>
-    <table>
-        <tr>
-            <th>사업명</th>
-            <td>2026년 주소지능정보 확장 실증사업</td>
-            <th>사업 예산</th>
-            <td>700,000,000 원 (부가세 포함)</td>
-        </tr>
-        <tr>
-            <th>사업 기간</th>
-            <td>계약 후 210일 이내</td>
-            <th>입찰 방식</th>
-            <td>제한경쟁입찰 (협상에 의한 계약)</td>
-        </tr>
-    </table>
-
-    <h2>3. 담당자 및 문의처</h2>
-    <ul>
-        <li><strong>수요기관:</strong> 한국국토정보공사 (LX) 주소정보활용지원센터</li>
-        <li><strong>담당자:</strong> 김정준</li>
-        <li><strong>연락처:</strong> 044-715-5595</li>
-        <li><strong>이메일:</strong> jeongjun@lx.or.kr</li>
-    </ul>
-
-    <h2>4. 주요 요구사항 및 기술 특이 사항</h2>
-    <h3>[주요 요구사항]</h3>
-    <ul>
-        <li><strong>주소지능정보 구축:</strong> '이동지능망 Core' 통합 데이터 모델 설계 및 기존 이기종 데이터 매핑/변환 툴 개발</li>
-        <li><strong>서비스 모델 개발 및 실증:</strong> 수원역, 환승센터, 지하상가 등 대상지 내 재난·안전·국민편의 분야 실증 시나리오 개발(분야별 3개 이상) 및 실증(2개 이상 서비스 연계)</li>
-        <li><strong>표준화 및 개방:</strong> 실증 데이터 검증, 공간데이터마켓(geomarket.kr) 등록 및 전국 확산을 위한 표준 모델 정립</li>
-    </ul>
-    <h3>[기술 특이 사항]</h3>
-    <ul>
-        <li>이종 모빌리티(로봇, 드론 등)에서 생성되는 다양한 포맷(GeoJson, CSV 등)의 공간 데이터 및 환경 정보의 실시간 처리 및 정합성 검증 필요</li>
-        <li>다양한 주체 간 데이터 연계 및 수직적 데이터 통합 모델 구축 필요</li>
-    </ul>
-
-    <h2>5. Red Hat 제품 제안 불가능 포인트 분석 (리스크 요인)</h2>
-    <ul>
-        <li><span class="highlight-red">비(非) S/W 공급 사업:</span> 본 사업은 단순한 S/W 패키지 도입 사업이 아닌 <strong>데이터 구축, 매핑 툴 개발, 실증 서비스 시나리오 설계 및 운영 위주의 용역 사업</strong>이므로 Red Hat 제품의 단독 라이선스 공급 제안이 어렵습니다.</li>
-        <li><span class="highlight-red">CSP(Cloud Service Provider) 사업 형태:</span> 인프라를 직접 구축하기보다는 기존 공공 클라우드(CSP) 환경 또는 가상 인프라 상에 배포될 가능성이 커, 클라우드 기본 탑재 OS나 번들 환경을 사용할 가능성이 높습니다.</li>
-        <li><span class="highlight-red">경쟁 제품 명시 및 무료 OS 선호:</span> 가상화 인프라 구축 시 기존 <strong>VMware</strong>나 국산 가상화인 <strong>Contrabass</strong>가 제안될 수 있으며, OS 환경으로는 예산 절감을 위해 오픈소스인 <strong>Ubuntu, Rocky Linux</strong> 또는 기존 시스템 연계를 위한 <strong>Oracle Linux</strong>가 경쟁 제품으로 선점하고 있을 리스크가 존재합니다.</li>
-    </ul>
-
-    <h2>6. Red Hat 제품 제안 가능 포인트 분석 (기회 요인)</h2>
-    <ul>
-        <li><span class="highlight-green">Red Hat Enterprise Linux (RHEL):</span> 실증지 데이터 변환 툴 및 통합 DB 모델의 고안정성 확보를 위해, 신뢰할 수 없는 커뮤니티 OS(Rocky Linux, Ubuntu 등) 대신 공공 표준 운영체제인 RHEL 제안을 통한 데이터 무결성 및 보안성 확보.</li>
-        <li><span class="highlight-green">Red Hat OpenShift & OpenShift Virtualization Engine:</span> 이기종 모빌리티(드론, 로봇 등) 연계 서비스 앱 및 시뮬레이션 프로그램의 신속한 배포 및 관리를 위해 클라우드 네이티브 기반 컨테이너 플랫폼(OpenShift) 제안 가능. 특히, 기존 가상 머신(VM)과 컨테이너를 통합 관리하기 위해 VMware 대안으로서 OpenShift Virtualization을 강력 제안할 수 있음.</li>
-        <li><span class="highlight-green">Red Hat Virtual Data Center (VDC):</span> 실증 단말 및 내부 검증용 가상화 클러스터 구축이 필요한 경우 무제한 가상 머신 OS 라이선스를 제공하는 RHEL VDC 모델을 통해 비용 효율적인 가상 인프라 구축 제안.</li>
-        <li><span class="highlight-green">JBoss:</span> 공간데이터마켓 연계 및 외부 기관 시스템 연계용 고성능 미들웨어/API 게이트웨이 환경으로 JBoss EAP 제안 가능.</li>
-        <li><span class="highlight-green">Ansible:</span> 여러 실증 대상지(수원역, 지하상가 등)에 배포되는 가상 서버, 데이터 변환 툴, 실증 서비스 프로그램의 일괄 배포 및 설정 자동화를 위해 Ansible Automation Platform 제안 가능.</li>
-    </ul>
-
+    <div class="container">
+        <h1>한국국토정보공사_2026년 주소지능정보 확장 실증사업 - 분석 리포트</h1>
+        
+        <table>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li><strong>정부 정책 지원:</strong> 「제1차 주소정보 활용 기본계획('22~'26)」에 따른 행정안전부 주소정책의 안정적 지원 및 위탁 수행</li>
+                        <li><strong>이동지능망 기반 마련:</strong> 주소정보 활용 이동지능망(K-AIX) 생태계 조성을 위한 기반을 구축하고, 민간 파생 서비스 확산을 위한 DB 갱신 및 지원 체계 마련</li>
+                        <li><strong>데이터 통합 및 검증:</strong> 드론, 로봇, 자율주차 등 분산된 주소지능정보를 통합 관리하고 산업적 활용도를 실제 환경에서 검증</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산:</strong> 700,000,000 원 (부가세 포함)</li>
+                        <li><strong>사업 기간:</strong> 계약 후 210일 이내</li>
+                        <li><strong>입찰 및 계약 방법:</strong> 제한경쟁입찰 / 협상에 의한 계약</li>
+                        <li><strong>주요 과업 범위:</strong> 주소지능정보 통합 DB 모델 개발, 실증지 조성(수원역, 환승센터, 지하상가 등), 데이터변환 툴 개발, 서비스 모델 개발 및 실증, DB 표준화 및 개방(geomarket.kr 등록)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>담당 부서:</strong> 주소정보활용지원센터 (한국국토정보공사 위탁 운영)</li>
+                        <li><strong>담당자 및 직급:</strong> 김정준 담당</li>
+                        <li><strong>연락처:</strong> 044-715-5595</li>
+                        <li><strong>이메일:</strong> jeongjun@lx.or.kr</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>통합 DB 모델 정의:</strong> 국가주소정보체계와 개별 도메인(드론, 로봇, 주차 등)을 연계하는 '이동지능망 Core' 수직적 통합 데이터 모델 설계</li>
+                        <li><strong>전용 데이터 변환 툴 개발:</strong> 기존 개별 데이터와 통합 DB 모델 간 매핑 테이블 정의 및 데이터 변환 기능 구현</li>
+                        <li><strong>실증 서비스 개발 및 연계:</strong> 재난, 안전, 국민편의 분야별 시나리오 정의(각 3개 이상) 및 2개 이상의 서비스를 연계한 통합 실증 수행</li>
+                        <li><strong>데이터 표준화 및 개방:</strong> 실증 데이터를 공간데이터마켓(geomarket.kr)에 등록 가능한 표준 구조로 정제 및 개방</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 불가능 포인트</th>
+                <td>
+                    <ul>
+                        <li><strong>물리적 장비 및 현장 실증 제약:</strong> 로봇, 드론 등 하드웨어 기체 운용, 현장 점검, 오프라인 시연회 등 Red Hat S/W 솔루션 영역을 벗어난 물리적 과업 중심 요구사항</li>
+                        <li><strong>디바이스 임베디드 OS 제약:</strong> 서비스 기체(로봇, 드론) 자체에 탑재되는 OS는 ROS(Robot Operating System) 호환을 위해 Ubuntu 등 경량 오픈소스 위주로 구성될 가능성이 높아 RHEL 제안 범위에서 제외 필요</li>
+                        <li><strong>제한된 예산 규모:</strong> 총 사업 예산이 7억 원 수준으로 데이터 구축, 실증비, 앱 개발비 등이 포함되어 있어 고가의 Red Hat 상용 솔루션 풀 스택 도입을 위한 라이선스 예산 확보가 어려울 수 있음</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 가능 포인트</th>
+                <td>
+                    <ul>
+                        <li><strong>데이터 변환 및 연계 플랫폼 (Red Hat Integration / OpenShift):</strong> '이동지능망 Core' 모델의 이기종 데이터 매핑 및 변환 툴 개발 시, 컨테이너 기반 마이크로서비스 아키텍처(MSA)를 적용하여 안정적이고 유연한 API 연계 환경 제공</li>
+                        <li><strong>안정적인 통합 DB 운영 환경 (RHEL):</strong> 수집된 데이터(GeoJson, CSV 등)를 저장하고 처리하는 중심 통합 DB 서버의 고신뢰성 보장 및 보안 강화를 위해 Red Hat Enterprise Linux(RHEL) 서브스크립션 제안</li>
+                        <li><strong>실증 서비스 컨테이너화 및 모니터션 (Red Hat OpenShift):</strong> 개발 예정인 재난·안전·편의 서비스 모델(앱, 프로그램)을 다중 클라우드나 지자체 인프라에 손쉽게 배포하고 확장할 수 있도록 OpenShift 기반의 클라우드 네이티브 환경 제안</li>
+                        <li><strong>자동화된 배포 및 테스트 환경 구축 (Red Hat Ansible):</strong> 가변적인 실증 대상지 인프라 환경에 맞춰 서비스 앱 및 데이터 수집 에이전트를 신속하고 정합성 있게 반복 배포하기 위해 Ansible Automation Platform 활용 제안</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
 ```
