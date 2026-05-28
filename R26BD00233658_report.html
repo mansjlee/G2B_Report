@@ -1,0 +1,101 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00233658 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>인천광역시교육청 AI융합교육원_2026 인천광역시교육청 CBT 기반 온라인 문항제공 서비스 운영 및 확대 - 분석 리포트</h1>
+        
+        <table>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li><strong>기 구축 서비스의 안정적 운영</strong>: 2025년에 구축된 CBT(Computer Based Testing) 기반 온라인 문항제공 서비스의 무중단 및 안정적인 운영 체계 확립</li>
+                        <li><strong>학습 데이터 활용 극대화</strong>: 서비스 이용 과정에서 발생하는 학습 데이터를 체계적으로 수집, 분석하여 교육 현장에 유용한 데이터 기반 인사이트 제공</li>
+                        <li><strong>AI 맞춤형 교육 실현</strong>: 인공지능(AI) 기반의 맞춤형 피드백 제공 기능을 고도화하여 개별 학생 맞춤형 교수·학습 지원 및 서비스 영역 확대</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 금 650,000,000 원 (부가가치세 포함)</li>
+                        <li><strong>사업 기간</strong>: 
+                            <ul>
+                                <li><strong>구축 기간</strong>: 계약 체결일로부터 30일 이내 (초기 빠른 안정화 필요)</li>
+                                <li><strong>운영 기간</strong>: 구축 완료 후 365일 (장기 안정적 운영 및 유지관리)</li>
+                            </ul>
+                        </li>
+                        <li><strong>사업 범위</strong>: CBT 기반 온라인 문항제공 시스템 운영, 시스템 확대 구축 및 AI 기반 피드백 기능 고도화</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>담당 기관</strong>: 인천광역시교육청 AI융합교육원 기획운영부</li>
+                        <li><strong>담당자</strong>: 교육연구사 주성룡</li>
+                        <li><strong>연락처/이메일</strong>: 제안요청서상 미표기 (주관기관 대표번호를 통한 기획운영부 유선 문의 필요)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>시스템 안정성 및 고가용성 보장</strong>: 시험 평가 시 대규모 동시 접속자가 몰리는 CBT 서비스 특성상 인프라의 과부하 방지 및 무중단 운영 체계 필수 요구</li>
+                        <li><strong>데이터 수집 및 AI 분석 아키텍처</strong>: 대량의 평가/학습 데이터를 실시간으로 수집하고 AI 분석 엔진과 연계할 수 있는 유연한 데이터 파이프라인 필요</li>
+                        <li><strong>신속한 인프라 확장성</strong>: 단 30일 이내에 서비스 확대 및 환경 구축을 완료해야 하므로 신속한 배포 및 표준 인프라 환경 구성이 관건</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>기존 아키텍처 종속성</strong>: 2025년 기 구축된 시스템이 특정 퍼블릭 클라우드(CSP)의 독점적 PaaS/SaaS 서비스 위주로 설계되어 있을 경우, 인프라 소프트웨어(OS/미들웨어) 직접 제안 범위가 축소될 수 있음</li>
+                        <li><strong>운영 위주의 단기 예산</strong>: 전체 예산(6.5억 원) 중 상당 부분이 인프라 라이선스 구매보다는 고도화 개발 및 운영 인건비(M&O)로 편성되어 있어, 신규 대규모 라이선스 도입 예산 확보에 제약이 있을 수 있음</li>
+                        <li><strong>무상 오픈소스 선호성</strong>: 이전 사업에서 개발 비용 절감을 위해 Rocky Linux, CentOS 등 커뮤니티 OS를 사용했을 경우, RHEL 서브스크립션 도입에 대한 공공기관 예산 절감 논리 대응 필요</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>Red Hat Enterprise Linux (RHEL) 기반 표준화</strong>: 
+                            <ul>
+                                <li>CBT 시험 중 시스템 장애는 교육청 신뢰도에 치명적이므로, 기술 지원이 보장되지 않는 커뮤니티 OS에서 미션 크리티컬 환경에 검증된 RHEL로의 전환 제안 (안정적 SLA 보장)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Red Hat OpenShift (RHOCP)를 통한 서비스 확장 및 MSA 구현</strong>:
+                            <ul>
+                                <li>CBT 평가 기간 동안 급증하는 트래픽 부하에 유연하게 대응할 수 있도록 컨테이너 기반의 오토스케일링 인프라 제안</li>
+                                <li>AI 학습 분석 모듈과 평가 시스템을 마이크로서비스(MSA)로 분리 운영하여 장애 전파 방지 및 고가용성 확보</li>
+                            </ul>
+                        </li>
+                        <li><strong>Red Hat Ansible Automation Platform을 통한 30일 이내 고속 구축</strong>:
+                            <ul>
+                                <li>30일이라는 매우 짧은 확대 구축 기간 내에 인프라 구성, 보안 설정, 애플리케이션 배포를 자동화하여 휴먼 에러를 방지하고 구축 일정을 완벽히 준수할 수 있는 자동화 방안 제안</li>
+                            </ul>
+                        </li>
+                        <li><strong>Red Hat JBoss EAP를 통한 고성능 미들웨어 표준화</strong>:
+                            <ul>
+                                <li>안정적인 트랜잭션 처리와 대규모 세션 관리가 필요한 CBT 웹 애플리케이션 서버(WAS)용 엔터프라이즈급 미들웨어 제안</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+```

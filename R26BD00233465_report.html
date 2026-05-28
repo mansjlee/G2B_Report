@@ -1,0 +1,97 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00233465 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>법무부 인천공항출입국·외국인청_출입국심사 여권 판독 고도화 - 분석 리포트</h1>
+        
+        <table>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li><strong>사업명:</strong> 출입국심사 여권 판독 고도화</li>
+                        <li><strong>발주기관:</strong> 법무부 인천공항출입국·외국인청</li>
+                        <li><strong>사업 목적:</strong> 
+                            <ul>
+                                <li>정교해지는 여권 위·변조 기술에 대응하기 위해 여권 판독 및 감식 역량 강화</li>
+                                <li>신속하고 정확한 출입국 심사 서비스를 제공하여 심사 프로세스의 효율성 및 공항 보안성 제고</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산:</strong> 제안요청서 본문 내 미표기 (조달청 입찰공고 및 조달 시스템 확인 필요)</li>
+                        <li><strong>사업 기간:</strong> 계약일로부터 180일(6개월) 이내</li>
+                        <li><strong>사업 범위:</strong> 여권 판독 고도화 시스템 구축, 상용 SW 및 HW 도입, 기존 출입국 심사 시스템과의 연계 테스트 등</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>책임자:</strong> 감식과 과장 조홍남 (전화: 032-740-7094 / FAX: 032-740-7110)</li>
+                        <li><strong>사업 담당자:</strong> 감식과 주무관 이자빈</li>
+                        <li><strong>정보관리 담당자:</strong> 정보관리과 주무관 박철</li>
+                        <li><strong>계약 담당자:</strong> 총무과 주무관 양솔이 (전화: 032-740-7027 / FAX: 032-740-7015)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>위·변조 여권 감식 고도화:</strong> 최신 여권 보안 요소 판독 및 이미지 분석 기술 적용</li>
+                        <li><strong>시스템 안정성 및 성능 보장:</strong> 출입국 심사 대기 시간 최소화를 위한 고성능 및 고가용성 아키텍처 요구</li>
+                        <li><strong>상용 SW 직접구매 준수:</strong> 조달 규정에 따른 상용 소프트웨어 직접구매 제도 준수 대상 확인 및 적용</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>도메인 특화 애플리케이션 영역:</strong> 여권 OCR 판독 알고리즘, 여권 스캐너 전용 드라이버 및 판독 소프트웨어 등은 Red Hat 포트폴리오 외 영역으로 직접 제안 불가 (인프라 및 플랫폼 레이어에 집중 필요)</li>
+                        <li><strong>하드웨어 공급 영역:</strong> 여권 인식용 전용 리더기/스캐너 등 단말 하드웨어 장비는 제안 불가능</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>Red Hat Enterprise Linux (RHEL):</strong>
+                            <ul>
+                                <li>국가 중요 보안 시설인 인천공항 출입국 시스템의 핵심 운영체제로 제안</li>
+                                <li>SELinux 기반의 강력한 보안 정책을 제공하여 여권 개인정보 및 감식 데이터 보호 요구사항 충족</li>
+                            </ul>
+                        </li>
+                        <li><strong>Red Hat Ansible Automation Platform:</strong>
+                            <ul>
+                                <li>인천공항 내 다수의 여권 판독 단말 및 연계 서버들의 구성 관리, OS 패치 및 보안 컴플라이언스 점검 자동화 도구로 제안</li>
+                                <li>운영 인력의 관리 공수를 획기적으로 절감하고 일관된 보안 설정 유지 가능</li>
+                            </ul>
+                        </li>
+                        <li><strong>Red Hat OpenShift (RHOCP):</strong>
+                            <ul>
+                                <li>여권 판독/감식 시스템 고도화 시 AI/ML 기반의 판독 모델이나 마이크로서비스 아키텍처(MSA)를 적용할 경우, 이를 가장 안정적으로 수용할 수 있는 엔터프라이즈 컨테이너 플랫폼으로 제안</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+```
