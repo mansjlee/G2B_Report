@@ -1,0 +1,100 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00233999 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>인천공항세관_2026년 인천공항세관 노후 전산장비 교체사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제품명 또는<br>연상문구 유무</th>
+                <td><font color=red>X</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>인천공항세관의 내용연수가 경과된 노후 전산장비(서버, 스토리지, 네트워크 등)를 교체하여 24시간/365일 무중단 여행자 업무 서비스의 안정적이고 지속적인 운영 기반 마련</li>
+                        <li>인천국제공항 4단계 확장 및 항공수요 증가에 따른 정보화 자원 증설 필요성에 선제적으로 대응하고 업무 효율성 향상</li>
+                        <li>노후 장비로 인한 유지보수 어려움, 보안 취약점, 성능 저하 및 관리비용 증가 문제 해결</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 1,790,000,000원 (VAT 포함)</li>
+                        <li><strong>사업 기간</strong>: 계약 후 150일</li>
+                        <li><strong>사업 범위</strong>:
+                            <ul>
+                                <li>H/W: 서버 9식, 스토리지 1식, L2/L4 스위치, 라우터, 마이다스(키오스크) 11대 등 노후 장비 교체</li>
+                                <li>S/W: 기존 운영 상용SW(Oracle, Weblogic 등) 이전 설치 및 업그레이드, 신규 서버보안 SW 1식 도입</li>
+                                <li>기타: 시스템 설치, 데이터 이관, 안정화 및 기술지원</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>계약 담당</strong>: 세관운영과 정진만 (T: 032-722-4073)</li>
+                        <li><strong>업무 담당</strong>: 전산정보관리과 이명진 (T: 032-722-4795, E: mjlee3@korea.kr)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>핵심 기술 및 비즈니스 요구사항</strong>:
+                            <ul>
+                                <li>도입되는 모든 서버(9식)의 운영체제(OS)로 Linux 도입 (ECR-002)</li>
+                                <li>x86 운영체제 구축 시 오픈소스 설치 기술지원 요구 (ECR-011)</li>
+                                <li>기존 운영 중인 모든 SW(응용프로그램, 상용SW, 공개SW)를 신규 장비로 이관, 설치, 테스트, 커스터마이징 수행(사업자 부담)</li>
+                                <li>기존 Oracle DBMS 및 Weblogic WAS의 업그레이드 및 데이터 마이그레이션 수행</li>
+                                <li>24시간 365일 무중단 운영을 위한 시스템 안정성 및 향후 확장성 보장</li>
+                            </ul>
+                        </li>
+                        <li><strong>통합발주 구매 S/W 목록</strong>:
+                            <ul>
+                                <li>서버보안(Secuve Tos): 1 식 (신규 도입)</li>
+                                <li>DBMS(Oracle) 업그레이드: 2 식 (각 8core)</li>
+                                <li>WAS(Weblogic) 업그레이드: 2 식 (각 8core)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>경쟁 제품 명시</strong>: DBMS(Oracle), WAS(Weblogic)의 업그레이드가 명시되어 있어, JBoss EAP 등 Red Hat 미들웨어 제품을 제안하기 매우 어렵습니다. 제안 시 '윈백'에 해당하여 어플리케이션 수정 및 기존 SW 교체 비용을 모두 제안사가 부담해야 하는 리스크가 존재합니다.</li>
+                        <li><strong>사업 성격</strong>: 신규 시스템 개발이 아닌 기존 Oracle 기반 시스템의 노후 장비 교체 및 S/W 마이그레이션/업그레이드 사업으로, 아키텍처 변경(예: 컨테이너화) 제안이 어렵습니다.</li>
+                        <li><strong>기존 솔루션 의존성</strong>: DB성능관리(Maxguage), DB접근제어(DB Safer) 등 다수의 상용 솔루션이 Oracle 기반으로 운영되고 있어, DBMS 변경 제안은 사실상 불가능합니다.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>RHEL (Red Hat Enterprise Linux)</strong>: 신규 도입되는 x86 서버 9식의 OS로 'Linux'가 명시되어 있고, '오픈소스 설치 기술지원'이 요구사항(ECR-011)에 포함되어 있습니다. 이는 안정성, 보안성, 기술지원이 보장되는 RHEL을 제안할 최적의 기회입니다. 특히 24/7 무중단 운영이 필수적인 공항 세관 업무에 RHEL의 가용성과 신뢰성을 강조하여 제안 가능합니다.</li>
+                        <li><strong>Ansible Automation Platform</strong>: 9대의 신규 서버 구축, OS 설치, 패치, 보안 설정 및 Weblogic, Oracle 등 다양한 S/W 구성 작업을 자동화하는 데 Ansible을 제안할 수 있습니다. 이를 통해 150일의 짧은 사업 기간 내에 신속하고 일관된 표준 구성 관리, 운영 효율화, 휴먼 에러 감소 등의 가치를 제공 가능합니다.</li>
+                        <li><strong>Win-back 가능성 언급</strong>: 제안요청서에 '윈백(Winback)' 조항이 있으므로, 장기적인 관점에서 TCO 절감 및 기술 표준화를 위해 Weblogic을 JBoss EAP로 전환하는 방안을 추가적으로 제시할 수 있습니다. 단, 이는 메인 제안이 아닌 부가적인 제안으로 포지셔닝하여 리스크를 최소화해야 합니다.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+```
