@@ -1,43 +1,10 @@
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-}
-.container {
-    max-width: 800px;
-    margin: auto;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-h1 {
-    color: #EE0000; /* Red Hat Red */
-    border-bottom: 2px solid #EE0000;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-    text-align: left;
-}
-th {
-    background-color: #333333;
-    color: #ffffff;
-    width: 25%;
-    vertical-align: top;
-}
-td ul {
-    padding-left: 20px;
-    margin: 0;
-}
-li {
-    margin-bottom: 8px;
-}
+body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; margin: 20px; background-color: #f4f4f4; }
+.container { max-width: 1000px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+h2 { text-align: center; color: #333; border-bottom: 2px solid #E60000; padding-bottom: 10px; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+th { background-color: #f8f8f8; font-weight: bold; color: #333; width: 20%; }
+ul { margin: 0; padding-left: 20px; }
+li { margin-bottom: 8px; line-height: 1.6; }
+font[color=red] { font-weight: bold; }
+font[color=blue] { font-weight: bold; }
