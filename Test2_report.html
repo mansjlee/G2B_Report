@@ -4,7 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <title>국가정보자원관리원_2026년 제1차 정보자원 통합구축 HW2 - 분석 리포트</title>
-    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+    <style>
+        body { font-family: 'Malgun Gothic', sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { max-width: 1000px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h2 { color: #333; border-bottom: 2px solid #cc0000; padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; vertical-align: top; }
+        th { background-color: #f8f8f8; font-weight: bold; width: 25%; color: #444; }
+        ul { margin: 0; padding-left: 20px; }
+        li { margin-bottom: 8px; line-height: 1.6; }
+        font[color=red] { font-weight: bold; }
+        b, strong { color: #333; }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -12,13 +23,30 @@
         
         <table>
             <tr>
+                <th>레드햇 제품명 또는 연상문구 유무 여부</th>
+                <td><font color=red>O</font>
+                    <ul>
+                        <li>상용SW 직접구매 제외(통합발주) 품목으로 Red Hat 제품군이 명시됨.</li>
+                        <li>운영체제 (RHEL) 150조</li>
+                        <li>공개기반 WAS (JBoss EAP) 68조</li>
+                        <li>공개기반 가상화 SW (Redhat Openshift Virtualization Engine) 58조</li>
+                        <li>공개기반 가상화 SW (Kubernetes Engine) 32조</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
                 <th>사업 개요 및 목적</th>
                 <td>
                     <ul>
-                        <li>공정거래위원회 등 20개 기관의 53개 노후 업무시스템을 통합 구축하여 정보자원의 효율적 관리 및 공동 활용 강화</li>
-                        <li>부처별 개별 구매에 따른 중복 투자를 해소하고 대규모 통합 구매를 통해 비용 절감</li>
-                        <li>클라우드 컴퓨팅, 네이티브 클라우드 등 최신 기술을 적용하여 국가 IT 인프라를 고도화하고, '스마트 클라우드 전문기관'으로 도약</li>
-                        <li>고비용 제품에 대한 종속성을 완화하고 유지관리 효율성을 제고</li>
+                        <li><strong>사업 개요</strong>: 공정거래위원회 등 20개 기관의 53개 노후 업무시스템을 클라우드 기반으로 통합 구축.</li>
+                        <li><strong>사업 목적</strong>:
+                            <ul>
+                                <li>노후 정보자원의 적기 교체를 통한 서비스 안정성 확보.</li>
+                                <li>부처별 개별 구매에 따른 중복투자 해소 및 비용 절감.</li>
+                                <li>클라우드 컴퓨팅 및 네이티브 기술을 적용하여 효율적인 국가 IT 인프라 구축.</li>
+                                <li>고비용 특정 제품의 종속성을 완화하고 공개SW 기반으로 전환하여 유지관리 효율성 제고.</li>
+                            </ul>
+                        </li>
                     </ul>
                 </td>
             </tr>
@@ -26,10 +54,9 @@
                 <th>주요 정보</th>
                 <td>
                     <ul>
-                        <li><strong>사업 예산</strong>: 총 41,463,000,000원</li>
-                        <li><strong>사업 기간</strong>: 계약일 ~ 2026년 12월 11일</li>
-                        <li><strong>사업 범위</strong>: 20개 기관 53개 업무시스템 통합 구축, G-클라우드 인프라 확충 및 S2존(컨테이너 기반 네이티브풀 포함) 신규 구축</li>
-                        <li><strong>주요 일정</strong>: 계약 후 3Q~4Q 내 장비 도입, 설치, 업무 이관 및 서비스 개시. 이후 3개월 이상 안정화 기간 운영</li>
+                        <li><strong>사업 예산</strong>: 41,463,000,000원</li>
+                        <li><strong>사업 기간</strong>: 계약일 ~ 2026년 12월 11일 (이후 안정화 기간 3개월 이상)</li>
+                        <li><strong>사업 범위</strong>: 20개 기관 53개 업무시스템 클라우드 전환 및 통합 구축, 관련 H/W(x86서버, 스토리지 등) 및 S/W 도입, 지능형 클라우드(S2존) 인프라 보강.</li>
                     </ul>
                 </td>
             </tr>
@@ -41,7 +68,6 @@
                         <li><strong>과장</strong>: 김석태 (TEL: 042-250-5900)</li>
                         <li><strong>사무관</strong>: 동훈 (TEL: 042-250-5950)</li>
                         <li><strong>주무관</strong>: 문종현 (TEL: 042-250-5932)</li>
-                        <li>(이메일 주소는 제안요청서에 명시되지 않음)</li>
                     </ul>
                 </td>
             </tr>
@@ -51,21 +77,21 @@
                     <ul>
                         <li><strong>핵심 기술 및 비즈니스 요구사항</strong>:
                             <ul>
-                                <li>지능형 클라우드 서비스(G-클라우드) 고도화 및 S2존 신규 자원풀 구축</li>
-                                <li><strong>네이티브풀(컨테이너)</strong>과 공개기반풀(VM)을 물리적으로 분리하여 구축 (CCR-005)</li>
-                                <li>AI 행정서비스 수요 확대에 따른 GPU 풀 구축</li>
-                                <li>기존 클라우드 인프라와의 완벽한 연동 및 상호운용성 보장</li>
-                                <li>노후화된 53개 업무 시스템의 안정적인 클라우드 전환 및 데이터 이관</li>
+                                <li>지능형 클라우드 인프라(S2존) 신규 자원풀 구축 (CCR-005).</li>
+                                <li>공개기반풀(VM)과 네이티브풀(컨테이너)을 분리하여 구축하고, 네이티브 전환 대상 업무의 컨테이너 환경 제공.</li>
+                                <li>이기종 가상화(VMware, Xen, KVM 등) 환경 및 기존 G-클라우드 자원풀과의 상호운용성 및 연계 보장.</li>
+                                <li>고비용 제품 종속성 완화 및 공개SW 기반의 효율적인 인프라 구축.</li>
                             </ul>
                         </li>
-                        <li><strong>통합발주 S/W 구매 목록 (직접구매 제외)</strong>:
+                        <li><strong>구매 명시 S/W (통합발주)</strong>:
                             <ul>
-                                <li>운영체제 (<strong>RHEL</strong>): 150식</li>
-                                <li>공개기반 WAS (<strong>JBoss EAP</strong>): 68식</li>
-                                <li>공개기반 가상화 SW (<strong>Redhat Openshift Virtualization Engine</strong>): 58식</li>
-                                <li>공개기반 가상화 SW (<strong>Kubernetes Engine</strong>): 32식</li>
-                                <li>DBMS (Oracle DB, RAC, Partitioning 등): 다수 (기존 시스템 증설분)</li>
-                                <li>SRM (FLETA): 1식 (기존 시스템 증설분)</li>
+                                <li>운영체제 (RHEL): 150조</li>
+                                <li>공개기반 WAS (JBoss EAP): 68조</li>
+                                <li>공개기반 가상화 SW (Redhat Openshift Virtualization Engine): 58조</li>
+                                <li>공개기반 가상화 SW (Kubernetes Engine): 32조</li>
+                                <li>공개기반 DBMS (MariaDB): 1조</li>
+                                <li>DBMS (Oracle DB/RAC/Partitioning): 총 13조</li>
+                                <li>SRM (FLETA): 1조</li>
                             </ul>
                         </li>
                     </ul>
@@ -75,13 +101,9 @@
                 <th>Red Hat 제안 불가능 요소</th>
                 <td>
                     <ul>
-                        <li><strong>경쟁 제품 명시</strong>:
-                            <ul>
-                                <li><strong>Contrabass Ent (58조)</strong>: 조달쇼핑몰 직접구매 대상으로 명시되어, 해당 물량에 대한 OpenShift 제안이 불가능. 이는 본 사업 외 별도 컨테이너 플랫폼 수요가 존재함을 시사합니다.</li>
-                                <li><strong>Oracle DBMS</strong>: 국토교통부, 통일부 등 다수 기관의 기존 시스템 증설용으로 Oracle 제품(DB, RAC, Partitioning)이 명시되어 있어, 해당 업무에 대한 신규 데이터베이스 솔루션 제안이 어렵습니다.</li>
-                                <li><strong>기타 DBMS</strong>: PostgreSQL(eXperDB), ALTIBASE, MariaDB 등 다수의 국산/오픈소스 기반 DBMS가 직접구매 또는 통합발주(증설) 대상으로 지정되어 있어 신규 DBMS 시장 진입 기회가 제한적입니다.</li>
-                            </ul>
-                        </li>
+                        <li><strong>단순 CSP 사업 여부</strong>: 아님. HW/SW를 포함한 On-premise 클라우드 인프라 구축 사업임.</li>
+                        <li><strong>경쟁 제품 명시</strong>: Oracle DBMS가 다수 '증설'로 명시되어 있어 EDB Postgres 등 타 DBMS 제안이 사실상 불가능함. 또한 'Contrabass Ent'가 직접구매 대상으로 포함되어 있어, 컨테이너 플랫폼 시장에서 경쟁이 예상됨.</li>
+                        <li><strong>기타 제안 어려운 조건</strong>: 명시된 Red Hat 제품(RHEL, JBoss, OpenShift)이 모두 '증설' 물량임. 이는 기존 인프라 확장에 따른 추가 구매 성격이 강하여, 경쟁사를 대체하는 신규 제안(Win-back) 기회는 제한적임.</li>
                     </ul>
                 </td>
             </tr>
@@ -89,21 +111,10 @@
                 <th>Red Hat 제안 가능 요소</th>
                 <td>
                     <ul>
-                        <li><strong>Red Hat 기술 스택 도입 기회</strong>:
-                            <ul>
-                                <li><strong>RHEL</strong>: '운영체제(RHEL)' 150식이 통합발주 대상으로 명시되었고, 제외 사유로 '기존 클라우드 풀과의 호환성'이 언급되어 도입이 사실상 확정적입니다. 서버 요구사항의 'Unlimited Guest OS' 조건은 RHEL for Virtual Datacenters 제안에 최적화되어 있습니다.</li>
-                                <li><strong>OpenShift</strong>: '공개기반 가상화 SW'로 'Redhat Openshift Virtualization Engine (58식)' 및 'Kubernetes Engine (32식)'이 명시되어, OpenShift Virtualization과 OpenShift Container Platform을 포함한 포괄적인 클라우드 네이티브 플랫폼 구축을 목표로 하고 있습니다. 특히 '네이티브풀(컨테이너)' 구축 요구사항(CCR-005)은 OpenShift가 본 사업의 핵심 솔루션임을 명확히 합니다.</li>
-                                <li><strong>JBoss EAP</strong>: '공개기반 WAS (JBoss EAP)' 68식이 클라우드 풀 증설 물량으로 명시되어 도입이 확실시됩니다.</li>
-                                <li><strong>Ansible Automation Platform</strong>: 구매 목록에 없으나, 100대 이상의 신규 서버와 클라우드 인프라 구축, 53개 시스템 마이그레이션 등 대규모 사업의 복잡성을 해결할 핵심 솔루션으로 제안이 가능합니다. 자동화, 표준화를 통한 운영 효율성 향상 방안을 제시하여 기술 경쟁력을 확보할 수 있습니다.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Red Hat 솔루션 강점과 일치하는 요구사항</strong>:
-                            <ul>
-                                <li><strong>클라우드 네이티브 전환</strong>: 사업의 핵심 목표인 '네이티브 클라우드 기술 적용' 및 '컨테이너 풀 구성'은 OpenShift의 핵심 가치와 정확히 일치합니다.</li>
-                                <li><strong>하이브리드 클라우드 기반</strong>: 다양한 G-클라우드 환경(VM, 컨테이너)을 통합 관리해야 하는 요구사항은 RHEL, OpenShift, Ansible로 구성된 Red Hat의 일관된 하이브리드 클라우드 플랫폼 전략의 강점을 부각시킬 수 있습니다.</li>
-                                <li><strong>제조사 종속성 탈피</strong>: '고비용 제품 종속 완화', '경쟁풀 확대' 등의 사업 목표는 오픈소스 기반의 Red Hat 솔루션을 통해 달성 가능한 핵심 가치로, 제안서에서 강력하게 어필할 수 있습니다.</li>
-                            </ul>
-                        </li>
+                        <li><strong>RHEL, OpenShift, JBoss 제안</strong>: RHEL 150조, JBoss EAP 68조, Redhat Openshift Virtualization 58조, Kubernetes Engine 32조가 통합발주 S/W로 명시되어 있어 사실상 수주가 확정적임. 특히 모든 x86 서버에 '최신 버전 OS 제공(Linux, Unlimited Guest OS)' 요구사항은 RHEL VDC 구독 모델 제안에 최적의 조건임.</li>
+                        <li><strong>OpenShift 플랫폼 확장 제안</strong>: '네이티브 서비스를 위한 컨테이너 풀 구성'(CCR-005) 요구사항은 OpenShift Container Platform의 핵심 가치와 정확히 일치함. 'Redhat Openshift Virtualization Engine' 구매는 VM과 컨테이너를 단일 플랫폼에서 통합 관리하려는 고객의 요구로, 이는 OpenShift Virtualization의 특장점임. 이를 기반으로 고급 기능(ODF, ACM, ACS)을 포함한 OpenShift Platform Plus로의 업셀링(Upselling) 제안이 가능함.</li>
+                        <li><strong>Ansible Automation Platform 추가 제안</strong>: 명시되지는 않았으나, 대규모(x86서버 110대 이상) 인프라의 신속한 구축, 클라우드 환경 프로비저닝 자동화, 네트워크 장비 구성 관리 등 사업 목표 달성을 위해 Ansible Automation Platform의 가치를 부각하여 추가 제안이 매우 유효함.</li>
+                        <li><strong>고객 전략 부합</strong>: '고비용 제품 종속 완화' 및 '공개SW 기반' 클라우드 구축이라는 사업의 핵심 목표는 엔터프라이즈 오픈소스 리더인 Red Hat의 솔루션 및 가치 제안과 완벽하게 일치하여 강력한 파트너십 제안이 가능함.</li>
                     </ul>
                 </td>
             </tr>

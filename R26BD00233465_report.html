@@ -1,19 +1,10 @@
+```html
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>법무부 인천공항출입국·외국인청_출입국심사 여권 판독 고도화 - 분석 리포트</title>
-    <style>
-        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; margin: 0; padding: 20px; background-color: #f4f4f9; color: #333; }
-        .container { max-width: 1000px; margin: auto; background: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px; }
-        h2 { color: #cc0000; border-bottom: 2px solid #cc0000; padding-bottom: 10px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; vertical-align: top; }
-        th { background-color: #f2f2f2; font-weight: bold; width: 25%; color: #444; }
-        ul { margin: 0; padding-left: 20px; }
-        li { margin-bottom: 8px; line-height: 1.6; }
-        strong { color: #000; }
-    </style>
+    <title>R26BD00233465 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
 </head>
 <body>
     <div class="container">
@@ -21,13 +12,21 @@
         
         <table>
             <tr>
+                <th>레드햇 제품명 또는 연상문구 유무 여부</th>
+                <td><font color=red>O</font>
+                    <ul>
+                        <li>도입 S/W 내역에 OS로 "Redhat Linux 1y 이상 제공 5식"이 통합 발주 품목으로 명시되어 있음.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
                 <th>사업 개요 및 목적</th>
                 <td>
                     <ul>
-                        <li>노후화된 전자여권판독시스템을 전면 재구축하여 출입국심사 업무의 신뢰성, 안정성, 효율성을 제고하는 것을 목표로 함.</li>
-                        <li>ICAO 등 최신 국제 기술 표준을 시스템에 반영하여 전자여권 판독의 정확성을 확보.</li>
-                        <li>일부 국가의 비표준 전자여권에 대한 유연한 처리 로직을 구현하여 판독 실패 사례를 감소.</li>
-                        <li>향후 디지털여행증명(DTC) 도입 등 미래 국경관리 강화를 위한 디지털 기술 확장 기반을 마련.</li>
+                        <li>2009년에 구축된 노후 전자여권판독시스템의 하드웨어 및 소프트웨어를 전면 재구축하여 운영 신뢰성을 확보하는 것을 목표로 함.</li>
+                        <li>부정확한 전자여권 검증, 장비 안정성 부족, 최신 기술 표준 미반영 등의 문제를 해결.</li>
+                        <li>ICAO 국제 표준을 준수하고, 비표준 전자여권에 대한 유연한 처리 능력을 확보하여 출입국·외국인 행정의 정확성과 신속성을 제고.</li>
+                        <li>향후 DTC(디지털여행증명) 도입, 재외공관 및 유관기관 연계 등 디지털 기술 확장 기반을 마련.</li>
                     </ul>
                 </td>
             </tr>
@@ -35,11 +34,17 @@
                 <th>주요 정보</th>
                 <td>
                     <ul>
-                        <li><strong>사업 예산</strong>: 2,489,594,000원 (VAT 포함)</li>
-                        <li><strong>사업 기간</strong>: 계약일로부터 150일 (5개월) 이내</li>
-                        <li><strong>사업 범위</strong>: 전자여권판독시스템 재구축(아키텍처 설계, 서비스 개발), Local PKD 구축 및 ICAO PKD 연계, 인프라 도입, 보안 강화 등 전반적인 시스템 고도화</li>
-                        <li><strong>계약 방법</strong>: 일반경쟁입찰 (협상에 의한 계약)</li>
-                        <li><strong>참여 자격</strong>: 중소/중견기업 참여 가능 (대기업 참여 제한)</li>
+                        <li><b>사업 예산</b>: 2,489,594,000원 (부가가치세 포함)</li>
+                        <li><b>사업 기간</b>: 계약일로부터 150일 (5개월) 이내</li>
+                        <li><b>사업 범위</b>:
+                            <ul>
+                                <li>전자여권판독시스템 아키텍처 재설계 및 서비스 개발</li>
+                                <li>신규 인프라(서버, 스토리지, S/W 등) 도입 및 구축</li>
+                                <li>ICAO PKD 연동 및 Local PKD 재구축</li>
+                                <li>국정원 보안심사 및 개인정보 영향평가 수행</li>
+                            </ul>
+                        </li>
+                         <li><b>추진 일정</b>: 분석/설계, 개발, 시험운영, 시스템 오픈 및 안정화 (5개월)</li>
                     </ul>
                 </td>
             </tr>
@@ -47,16 +52,10 @@
                 <th>담당자 정보</th>
                 <td>
                     <ul>
-                        <li><strong>주관기관</strong>: 법무부 인천공항출입국·외국인청</li>
-                        <li><strong>담당부서 및 담당자</strong>:
-                            <ul>
-                                <li>감식과: 이자빈 주무관 (사업 문의)</li>
-                                <li>정보관리과: 박철 주무관</li>
-                                <li>총무과(계약): 양솔이 주무관</li>
-                            </ul>
-                        </li>
-                        <li><strong>연락처</strong>: 032-740-7094 (이자빈 주무관)</li>
-                        <li><strong>이메일</strong>: apple648@korea.kr (이자빈 주무관)</li>
+                        <li><b>담당 부서</b>: 인천공항출입국·외국인청 감식과</li>
+                        <li><b>담당자</b>: 이자빈 주무관</li>
+                        <li><b>연락처</b>: 032-740-7094</li>
+                        <li><b>이메일</b>: apple648@korea.kr</li>
                     </ul>
                 </td>
             </tr>
@@ -64,22 +63,22 @@
                 <th>핵심 요구사항</th>
                 <td>
                     <ul>
-                        <li><strong>핵심 기술 요구사항</strong>:
+                        <li><b>핵심 기술 요구사항</b>:
                             <ul>
-                                <li>최신 국제 표준(ICAO Doc 9303, BSI TR-03110 등) 기반 시스템 구현</li>
-                                <li>PACE, EAC, AA 등 최신 보안 프로토콜 지원</li>
-                                <li>자체 공개키 디렉터리(Local PKD) 구축 및 ICAO PKD와 연동</li>
-                                <li>전자여권 데이터 정밀 분석 및 실시간 모니터링 기능 개발</li>
-                                <li>전자정부 표준 프레임워크 기반 개발</li>
+                                <li>노후화된 전자여권판독시스템 전면 재설계 및 구축</li>
+                                <li>최신 ICAO 기술 표준(PACE, EAC-TA, ISO/IEC 39794 등)을 지원하는 판독/인증 기능 개발</li>
+                                <li>비표준 전자여권의 유연한 처리를 위한 결함처리 로직 개발</li>
+                                <li>향후 서비스 확장(재외공관 연계 등)을 고려한 확장성 있는 인프라 설계</li>
+                                <li>ICAO PKD 및 Local PKD 동기화 연계 구축</li>
                             </ul>
                         </li>
-                        <li><strong>통합발주 S/W</strong>:
+                        <li><b>구매 명시 S/W (통합발주)</b>:
                             <ul>
-                                <li>OS: Redhat Linux 1y 이상 제공 (5식)</li>
-                                <li>ICAO PKD 중계 S/W (2식)</li>
-                                <li>로컬 PKD 관리 S/W (1식)</li>
-                                <li>PKD LDAP S/W (2식)</li>
-                                <li>단말용 전자여권 판독 모듈 S/W (1,500식)</li>
+                                <li>OS (Redhat Linux 1y 이상 제공): 5식</li>
+                                <li>전자여권판독 시스템 ICAO PKD 중계: 2식</li>
+                                <li>로컬 PKD 관리: 1식</li>
+                                <li>PKD LDAP: 2식</li>
+                                <li>단말용 전자여권 판독 모듈: 1,500식</li>
                             </ul>
                         </li>
                     </ul>
@@ -89,8 +88,8 @@
                 <th>Red Hat 제안 불가능 요소</th>
                 <td>
                     <ul>
-                        <li><strong>직접 제안 불가</strong>: 본 사업은 「소프트웨어진흥법」에 따라 사업금액 40억 미만 사업으로 대기업 참여가 제한됨. Red Hat은 주사업자로 직접 제안할 수 없음.</li>
-                        <li><strong>대응 전략</strong>: 역량 있는 중소/중견 SI 파트너사를 통해 Red Hat 제품과 기술을 공급하는 형태로 사업에 참여해야 함.</li>
+                        <li><b>대기업 참여 제한</b>: 사업금액 20억 이상 40억 미만 사업으로, 「소프트웨어 진흥법」에 따라 대기업 참여가 제한됨. Red Hat은 주 사업자로 직접 참여가 불가능하며, 반드시 자격을 갖춘 중소/중견 파트너사를 통해 제안해야 함.</li>
+                        <li><b>경쟁 제품 명시 없음</b>: VMware, Ubuntu 등 경쟁 OS가 명시되지 않아 직접적인 경쟁은 없으나, 파트너사가 제안 가격 경쟁력을 위해 다른 OS를 고려할 가능성은 존재함. (단, RHEL이 명시되어 가능성은 낮음)</li>
                     </ul>
                 </td>
             </tr>
@@ -98,10 +97,30 @@
                 <th>Red Hat 제안 가능 요소</th>
                 <td>
                     <ul>
-                        <li><strong>RHEL (Red Hat Enterprise Linux)</strong>: 제안요청서의 'H/W 구성 요구사항'에 OS로 'Redhat Linux 1y 이상 제공 (5식)'이 명시되어 있어 제안이 필수적임. 안정성과 보안성이 높은 RHEL은 국경관리 핵심 시스템의 OS로 최적의 솔루션임.</li>
-                        <li><strong>OpenShift Container Platform</strong>: 노후 시스템을 현대화하고 향후 서비스 확장성(재외공관 연계, DTC 도입 등)을 확보해야 하는 요구사항에 부합함. PKD 연계, 관리, 모니터링 등 각 기능을 마이크로서비스로 개발하여 OpenShift에 배포함으로써 민첩성, 확장성, 고가용성을 확보할 수 있음을 제안.</li>
-                        <li><strong>Ansible Automation Platform</strong>: 신규 도입되는 서버(5식) 및 시스템 전반의 구성, 배포, 관리를 자동화하여 운영 효율성을 높이고 인적 실수를 최소화할 수 있음. 일관된 시스템 구성을 통해 보안 및 안정성을 강화하는 데 기여 가능.</li>
-                        <li><strong>Red Hat Runtimes (JBoss EAP 등)</strong>: 전자정부 표준 프레임워크가 Java 기반이므로, 개발되는 전자여권 판독 및 인증 애플리케이션의 런타임으로 JBoss EAP를 제안 가능. 검증된 성능과 보안성으로 미션 크리티컬 업무에 적합함.</li>
+                        <li><b>RHEL (Red Hat Enterprise Linux)</b>:
+                            <ul>
+                                <li><b>제안 포인트</b>: 제안요청서의 도입 H/W 요구사항에 "OS: Redhat Linux 1y 이상 제공 5식"이 명시되어 있어, RHEL은 사실상 지정 제품임. 파트너사 선정 시 RHEL 공급은 확정적.</li>
+                                <li><b>근거</b>: [참고1] H/W 구성 요구사항 세부내용 - OS 규격 명시</li>
+                            </ul>
+                        </li>
+                        <li><b>OpenShift Container Platform</b>:
+                            <ul>
+                                <li><b>제안 포인트</b>: 노후 시스템을 전면 재구축하고, 향후 재외공관 연계 등 '확장성'을 주요 요건으로 요구하고 있음. 다양한 서비스(판독, 인증, 분석, 모니터링)를 개발해야 하므로, MSA(마이크로서비스 아키텍처) 기반의 현대적인 애플리케이션 플랫폼인 OpenShift를 제안하여 시스템의 안정성, 확장성, 관리 용이성을 극대화할 수 있음.</li>
+                                <li><b>근거</b>: "확장성을 고려한 전자여권 판독 모듈 및 시스템 인프라 설계", "향후 재외공관 등 전자여권 판독 확대 적용" 등 확장성 요구사항 다수 존재.</li>
+                            </ul>
+                        </li>
+                         <li><b>Ansible Automation Platform</b>:
+                             <ul>
+                                 <li><b>제안 포인트</b>: 신규 서버 5대 및 네트워크, 스토리지 등 새로운 인프라를 도입하고 구성해야 함. Ansible을 통해 OS 및 애플리케이션의 설치, 구성, 관리를 자동화하여 구축 기간을 단축하고, 일관성 있는 운영 환경을 보장할 수 있음을 제안.</li>
+                                 <li><b>근거</b>: 신규 H/W 도입 및 S/W 구성이 사업의 핵심 범위에 포함됨.</li>
+                             </ul>
+                         </li>
+                        <li><b>Red Hat Application Runtimes (JBoss EAP, Quarkus 등)</b>:
+                            <ul>
+                                <li><b>제안 포인트</b>: 전자여권 판독, 인증, 모니터링 등 다수의 신규 애플리케이션 기능 개발이 필요함. OpenShift 기반의 클라우드 네이티브 환경에 최적화된 경량 런타임(Quarkus) 또는 안정적인 Java EE 애플리케이션 서버(JBoss EAP)를 제안하여 개발 생산성과 운영 효율성을 높일 수 있음.</li>
+                                <li><b>근거</b>: "사용자 기능 개발", "분석관 기능 개발", "관리자 기능 개발" 등 다수의 애플리케이션 개발 요구사항.</li>
+                            </ul>
+                        </li>
                     </ul>
                 </td>
             </tr>
@@ -109,3 +128,4 @@
     </div>
 </body>
 </html>
+```
