@@ -3,24 +3,30 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>R26BD00236590 분석 리포트</title>
+    <title>한국자산관리공사_행정재산 상시조사 IT환경 구축(R26BD00236590) - 분석 리포트</title>
     <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
 </head>
 <body>
     <div class="container">
-        <h2>한국자산관리공사_행정재산 상시조사 IT환경 구축 - 분석 리포트</h2>
+        <h2>한국자산관리공사_행정재산 상시조사 IT환경 구축(R26BD00236590) - 분석 리포트</h2>
         
         <table>
             <tr>
                 <th>레드햇 제품명 또는<br>연상문구 유무</th>
-                <td><font color=red>X</font></td>
+                <td><font color=red>O</font>
+                    <ul>
+                        <li>AI 학습 및 상시조사 데이터 관리용 워크스테이션의 OS 요구사항에 RHEL이 명시됨 (ECR-HW-003, p.32)</li>
+                    </ul>
+                </td>
             </tr>
             <tr>
                 <th>사업 개요 및 목적</th>
                 <td>
                     <ul>
-                        <li>한국자산관리공사(KAMCO)의 행정재산에 대한 상시 조사를 지원하기 위한 IT 환경을 신규로 구축하는 것을 목표로 함.</li>
-                        <li>효율적인 행정재산 관리 및 조사 업무 프로세스를 지원하는 시스템 마련.</li>
+                        <li>기존 5년 주기 총조사를 상시조사 체계로 전환하여 행정재산 가치 제고 및 관리체계 개선</li>
+                        <li>항공조사, 모바일 현장조사, AI 변화탐지를 유기적으로 연계한 IT환경 구축</li>
+                        <li>증강현실(AR), GIS 기술을 활용하여 조사의 효율성 및 정확성 향상</li>
+                        <li>국정원 보안 가이드라인을 준수하는 안전한 모바일 업무 환경 구축</li>
                     </ul>
                 </td>
             </tr>
@@ -28,9 +34,9 @@
                 <th>주요 정보</th>
                 <td>
                     <ul>
-                        <li><strong>사업 예산</strong>: 제안요청서 내 확인 불가</li>
-                        <li><strong>사업 기간</strong>: 계약일로부터 2026년 6월까지 (예상)</li>
-                        <li><strong>사업 범위</strong>: 행정재산 상시조사 IT 환경(H/W, S/W) 구축 전반</li>
+                        <li><strong>사업 예산</strong>: 1,795,746,000원 (VAT 포함)</li>
+                        <li><strong>사업 기간</strong>: 계약체결일로부터 330일</li>
+                        <li><strong>사업 범위</strong>: 상시조사 시스템 구축, 모바일 어플 개발 및 단말기(100대) 공급, 국유재산 관리시스템(국유In) 기능 연계, AI 변화탐지 모델 활용, 보안 모바일 인프라 구축 등</li>
                     </ul>
                 </td>
             </tr>
@@ -38,13 +44,8 @@
                 <th>담당자 정보</th>
                 <td>
                     <ul>
-                        <li><strong>수요기관</strong>: 한국자산관리공사 (KAMCO)</li>
-                        <li><strong>담당부서/성명</strong>: 국유재산지원부 / 김민경 (추정)</li>
-                        <li><strong>연락처</strong>: 051-794-3304</li>
-                        <li><strong>이메일</strong>: mink7304@kamco.or.kr</li>
-                        <li><strong>실무담당/성명</strong>: 정보시스템실 / 정창우 (추정)</li>
-                        <li><strong>연락처</strong>: 051-794-4431</li>
-                        <li><strong>이메일</strong>: cwjung@kamco.or.kr</li>
+                        <li><strong>계약</strong>: 디지털시스템실 과장 박민규 (051-794-3304, mink7304@kamco.or.kr)</li>
+                        <li><strong>사업</strong>: 국유재산사업처 차장 정치원 (051-794-4431, cwjung@kamco.or.kr)</li>
                     </ul>
                 </td>
             </tr>
@@ -52,15 +53,22 @@
                 <th>핵심 요구사항</th>
                 <td>
                     <ul>
-                        <li><strong>핵심 기술/비즈니스 요구사항</strong>:
+                        <li><strong>핵심 기술 및 비즈니스 요구사항</strong>:
                             <ul>
-                                <li>행정재산의 효율적인 상시 조사를 위한 IT 인프라 및 응용 시스템 구축</li>
-                                <li>(제공된 텍스트가 문서 목차 수준으로, 상세 기술 요구사항 파악 불가)</li>
+                                <li>GIS 기반의 상시 항공조사 시스템 구축</li>
+                                <li>Android OS 기반 모바일 실태조사 어플 개발 및 MDM 연계</li>
+                                <li>RTK-GPS를 활용한 증강현실(AR) 기능으로 사진 촬영 시 지적도 자동 표출</li>
+                                <li>기 구축된 AI 변화탐지 모델을 활용하고, 학습/데이터 관리를 위한 워크스테이션 도입</li>
+                                <li>국정원 보안 가이드라인을 준수하는 별도의 모바일 DMZ 영역 등 신규 인프라 구축</li>
                             </ul>
                         </li>
-                        <li><strong>도입 S/W 목록</strong>:
+                        <li><strong>구매 명시 S/W (분리발주)</strong>:
                             <ul>
-                                <li>제공된 텍스트 내에서 구매 대상 S/W 목록을 확인할 수 없음.</li>
+                                <li>모바일 단말기 관리 솔루션(MDM) 연동모듈: 1식</li>
+                                <li>어플 위변조 방지 솔루션 클라이언트: 1식</li>
+                                <li>가상 키패드 보안 솔루션 클라이언트: 1식</li>
+                                <li>모바일 구간 암복호화 솔루션 클라이언트: 1식</li>
+                                <li>모바일 백신: 50Copy</li>
                             </ul>
                         </li>
                     </ul>
@@ -70,8 +78,13 @@
                 <th>Red Hat 제안 <br>불가능 요소</th>
                 <td>
                     <ul>
-                        <li><strong>경쟁 제품 명시</strong>: 제공된 텍스트에서는 VMware, Oracle 등 특정 경쟁사 제품이 명시되었는지 확인할 수 없음.</li>
-                        <li><strong>기타 제약사항</strong>: 텍스트 훼손이 심하여 Red Hat 제품 제안을 제약하는 특별한 조건은 식별되지 않음.</li>
+                        <li><strong>경쟁 제품 명시</strong>: AI 워크스테이션의 운영체제(OS)로 RHEL 외에 Ubuntu가 경쟁 제품으로 함께 명시되어 있습니다.</li>
+                        <li><strong>기타 제안 어려운 조건</strong>:
+                            <ul>
+                                <li>모바일 앱 개발은 '안드로이드' 기반으로 특정되어 있습니다.</li>
+                                <li>분리발주로 구매하는 S/W(MDM, 모바일 보안 솔루션 등)는 Red Hat의 직접적인 제품군에 해당하지 않습니다.</li>
+                            </ul>
+                        </li>
                     </ul>
                 </td>
             </tr>
@@ -79,9 +92,10 @@
                 <th>Red Hat 제안 <br>가능 요소</th>
                 <td>
                     <ul>
-                        <li><strong>기반 인프라 구축</strong>: 신규 IT 환경 구축 사업으로, 서버 OS로 Red Hat Enterprise Linux (RHEL) 제안 가능성이 높음. 공공기관에서 요구하는 안정성, 보안성 및 기술지원 요구사항을 충족.</li>
-                        <li><strong>애플리케이션 플랫폼</strong>: 웹 기반 시스템 구축 시, 미들웨어로 JBoss EAP 또는 클라우드 네이티브 아키텍처 기반 구축 시 Red Hat OpenShift Container Platform 제안 가능.</li>
-                        <li><strong>자동화</strong>: 시스템 구축 및 운영 자동화를 위해 Red Hat Ansible Automation Platform을 제안하여 인프라 관리 효율성 증대 가능.</li>
+                        <li><strong>RHEL</strong>: AI 워크스테이션용 OS로 명시되어 직접적인 제안 기회가 있습니다. 또한, 신규로 구축되는 모바일 DMZ 및 내부망 서버의 표준 운영체제로 제안하여 보안성과 관리 효율성을 높일 수 있습니다.</li>
+                        <li><strong>OpenShift</strong>: 신규 상시조사 시스템 및 모바일 백엔드 서비스를 위한 애플리케이션 플랫폼으로 제안할 수 있습니다. 특히, 국정원 보안 가이드라인을 준수하는 컨테이너 기반의 격리된 모바일 인프라 구축에 최적의 솔루션입니다.</li>
+                        <li><strong>Ansible Automation Platform</strong>: 신규 도입되는 워크스테이션(RHEL) 및 서버 인프라의 구성 자동화, 애플리케이션 배포 및 운영 관리를 위해 제안하여 시스템 구축 및 유지보수의 효율성을 극대화할 수 있습니다.</li>
+                        <li><strong>솔루션 강점 일치</strong>: RHEL은 AI/ML 워크로드에 대한 높은 안정성과 하드웨어 호환성을 제공하며, OpenShift는 공공기관의 높은 보안 요구사항을 충족하는 클라우드 네이티브 개발/운영 환경을 제공합니다.</li>
                     </ul>
                 </td>
             </tr>
