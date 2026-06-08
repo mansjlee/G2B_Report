@@ -1,0 +1,103 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00237428 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>외교부_저속 위성통신 공관 외교정보전용망 증속 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td><font color=red>낮음</font><br>네트워크 회선 및 장비 도입/임대 사업으로 S/W 제안 기회 없음.</td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>위성통신 방식의 저속회선을 사용하는 5개 재외공관에 유선 전용회선을 신규 구축하여 통신 속도를 증속하고 회선 가용성 확보.</li>
+                        <li>장기계속계약을 통해 안정적인 외교정보전용망 운영 및 유지관리 체계 구축.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 총 1,500,000,000원 (17개월, 부가세 포함)</li>
+                        <li><strong>사업 기간</strong>: 2026년 8월 1일 ~ 2027년 12월 31일 (17개월)</li>
+                        <li><strong>사업 범위</strong>: 5개 재외공관 유선 전용회선 구축, 네트워크 장비(라우터, 스위치 등) 임대 설치, 외교정보전용망 운영 및 유지관리.</li>
+                        <li><strong>주요 일정</strong>: 2026년 6월 입찰 공고, 6-7월 사업자 선정, 2027년 12월 31일 사업 종료.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>담당 부서</strong>: 외교정보보안담당관실</li>
+                        <li><strong>담당자</strong>: 오세영</li>
+                        <li><strong>연락처</strong>: 02-2100-7886</li>
+                        <li><strong>이메일</strong>: syoh19@mofa.go.kr</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>기술 및 비즈니스 요구사항</strong>:
+                            <ul>
+                                <li>5개 재외공관 대상 최소 증속 대역폭 이상의 유선 이더넷 전용회선 구축.</li>
+                                <li>데이터라우터, 보이스라우터, 메인스위치 등 네트워크 장비 일체를 임대 형태로 제공.</li>
+                                <li>라우터, L3스위치 이상 장비는 보안적합성 검증(유효한 보안기능확인서 보유)된 제품 사용.</li>
+                                <li>24시간 365일 망 관리(NMS) 및 장애 대응 헬프데스크 운영.</li>
+                                <li>운영인력(네트워크 엔지니어) 2인 이상 발주기관 내 상주.</li>
+                                <li>입찰 참가 자격: 전기통신사업법상의 기간통신사업자.</li>
+                            </ul>
+                        </li>
+                        <li><strong>구매 명시 S/W</strong>:
+                            <ul>
+                                <li>본 사업은 네트워크 회선 및 장비(라우터, 스위치) 임대/구축이 주 내용으로, 조달을 통해 구매가 명시된 상용 S/W는 없음.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>S/W 공급 미포함</strong>: 본 사업은 서버, OS, 플랫폼 등 S/W 도입이 아닌 국제 전용회선 및 네트워크 장비(라우터, 스위치) 임대 및 운영에 초점이 맞춰져 있음.</li>
+                        <li><strong>입찰 참가 자격 제한</strong>: 주 사업자는 '기간통신사업자'로 자격이 제한되어 Red Hat이 직접 참여 불가능.</li>
+                        <li><strong>경쟁 제품 명시</strong>: 제안 범위에 Red Hat 솔루션이 고려될 여지가 없어 경쟁 제품(VMware, Ubuntu 등)이 언급되지 않음.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>Ansible Automation Platform (파트너사를 통한 간접 제안)</strong>:
+                            <ul>
+                                <li>요구사항(ECR-002, MPR-001)에 명시된 다수 해외 공관 네트워크 장비의 OS 펌웨어 업그레이드, 보안 패치, 구성 변경, 장애 복구 등을 효율적으로 수행하기 위한 방안으로 파트너사(기간통신사업자)에게 Ansible 제안 가능.</li>
+                                <li>파트너사가 Ansible을 활용하여 네트워크 운영을 자동화함으로써, 운영 효율성을 높이고 SLA(서비스 수준 협약)를 안정적으로 준수하는 차별화된 제안 전략으로 활용 가능 (Sell-to a Partner).</li>
+                            </ul>
+                        </li>
+                        <li><strong>RHEL / OpenShift 등</strong>:
+                            <ul>
+                                <li>본 사업 범위 내 서버 또는 애플리케이션 플랫폼 구축 요구사항이 없어 직접적인 제안 기회 없음.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+```
