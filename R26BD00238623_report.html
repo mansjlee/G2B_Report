@@ -8,36 +8,52 @@
 </head>
 <body>
     <div class="container">
-        <h2>통합대학_학사행정정보시스템 인프라 도입 사업 - 분석 리포트</h2>
+        <h2>충북대학교_통합대학 학사행정정보시스템 인프라 도입 사업 - 분석 리포트</h2>
         
         <table>
             <tr>
                 <th>레드햇 제안 가능성</th>
-                <td id="AI-summary"><font color=orange>중간</font><br>인프라 도입 사업으로 OS, Middleware 등 제안 기회 예상</td>
+                <td id="AI-summary"><font color=red>높음</font><br>컨테이너(Kubernetes) 및 Linux OS 요구사항 명시</td>
             </tr>
             <tr>
                 <th>사업 개요 및 목적</th>
-                <td><ul><li>통합대학의 차세대 학사행정정보시스템 운영을 위한 신규 인프라(서버, S/W 등)를 도입하여 안정적이고 효율적인 학사 업무 환경을 구축하는 것을 목적으로 함.</li></ul></td>
+                <td><ul><li>통합대학 체제 전환에 따른 사용자 및 처리량 증가에 대비하여, 대규모 접속자와 복잡한 학사 프로세스를 유연하게 처리할 수 있는 차세대 학사·행정 인프라 환경 구축</li><li>양 대학의 방대한 학사 데이터를 통합 관리하기 위한 고성능 데이터 처리 기반 마련</li></ul></td>
             </tr>
             <tr>
                 <th>주요 정보</th>
-                <td><ul><li><strong>사업 예산</strong>: [입력 텍스트 손상으로 확인 불가]</li><li><strong>사업 기간</strong>: [입력 텍스트 손상으로 확인 불가]</li><li><strong>사업 범위</strong>: 학사행정정보시스템 운영에 필요한 서버, 스토리지, 네트워크, 보안장비 및 상용 S/W 도입 및 설치 (파일명 기반 추정)</li></ul></td>
+                <td><ul><li><strong>사업 예산</strong>: 1,668,000,000원 (VAT 포함)</li><li><strong>사업 기간</strong>: 계약일로부터 50일 이내</li><li><strong>사업 범위</strong>:
+                    <ul>
+                        <li>운영 서버(DMZ, Internal) 5대 신규 도입</li>
+                        <li>NAS 스토리지 2식, DB 어플라이언스 1식 신규 도입</li>
+                        <li>기존 HCI 서버(Dell VxRail) 메모리 96개 증설</li>
+                    </ul>
+                </li></ul></td>
             </tr>
             <tr>
                 <th>담당자 정보</th>
-                <td><ul><li><strong>수요기관</strong>: 통합대학 (연락처 국번 043으로 보아 충북대학교로 추정)</li><li><strong>연락처</strong>: 043-261-2118, 043-261-2117</li><li><strong>담당 부서/이름/이메일</strong>: [입력 텍스트 손상으로 확인 불가]</li></ul></td>
+                <td><ul><li><strong>담당 부서</strong>: 충북대학교 정보화본부</li><li><strong>담당자</strong>: 조용현 팀장</li><li><strong>연락처</strong>: 043-261-2118</li><li><strong>이메일</strong>: yongh22@cbnu.ac.kr</li></ul></td>
             </tr>
             <tr>
                 <th>핵심 요구사항</th>
-                <td><ul><li><strong>핵심 기술 및 비즈니스 요구사항</strong>: [입력 텍스트 손상으로 세부 요구사항 파악 불가. 다만, 학사행정 시스템 인프라 사업 특성상 고가용성, 안정성, 보안성이 핵심일 것으로 예상됨]</li><li><strong>구매 명시 S/W</strong>: [입력 텍스트 손상으로 구매 대상 S/W 목록 확인 불가]</li></ul></td>
+                <td><ul><li><strong>핵심 기술 요구사항</strong>:
+                    <ul>
+                        <li>컨테이너 기반 가상화(Kubernetes 등) 환경의 원활한 확장을 고려한 컴퓨팅 노드 사양 및 운영 체계 구성</li>
+                        <li>가상화 환경에 최적화된 서버 인프라 구축</li>
+                        <li>무중단 DB 클러스터링 구현</li>
+                    </ul>
+                </li><li><strong>구매 명시 S/W</strong>:
+                    <ul>
+                        <li>DB 어플라이언스 1식 (H/W 및 DBMS S/W 통합 발주)</li>
+                    </ul>
+                </li></ul></td>
             </tr>
             <tr>
                 <th>Red Hat 제안 <br>불가능 요소</th>
-                <td><ul><li>[텍스트 손상으로 확인 불가] 경쟁 제품(예: VMware, Oracle Linux, 특정 상용 WAS 등)이 필수로 지정되었을 가능성을 배제할 수 없음.</li><li>[텍스트 손상으로 확인 불가] 사업 범위가 H/W 납품에만 국한되고 S/W는 기존 라이선스를 활용하는 경우 제안이 어려울 수 있음.</li></ul></td>
+                <td><ul><li><strong>DB 어플라이언스</strong>: 특정 벤더(예: Oracle Exadata)의 H/W-S/W 일체형 장비일 경우, 해당 장비의 OS는 Red Hat Enterprise Linux(RHEL)가 아닌 벤더 종속적인 OS(예: Oracle Linux)일 가능성이 높아 제안이 어려울 수 있습니다.</li><li><strong>기존 HCI 환경</strong>: 기존에 운영 중인 HCI 장비(Dell VxRail)는 VMware 기반일 가능성이 매우 높습니다. 메모리 증설 외에 해당 환경에 대한 추가적인 Red Hat 솔루션 제안은 제한될 수 있습니다.</li></ul></td>
             </tr>
             <tr>
                 <th>Red Hat 제안 <br>가능 요소</th>
-                <td><ul><li><strong>RHEL</strong>: 신규 도입 서버의 운영체제(OS)로 제안 가능. 학사행정 시스템의 안정적인 운영 기반 제공.</li><li><strong>JBoss EAP</strong>: 학사행정 어플리케이션 구동을 위한 미들웨어(WAS)로 제안 가능. 전자정부프레임워크 환경과 호환성이 높음.</li><li><strong>Ansible Automation Platform</strong>: 도입되는 다수 인프라의 구성 및 운영 자동화를 위해 제안 가능. 인프라 관리 효율성 증대.</li><li><strong>OpenShift</strong>: 향후 마이크로서비스 아키텍처(MSA) 또는 클라우드 네이티브 환경으로의 전환을 고려 시, 컨테이너 플랫폼(PaaS)으로 제안 가능.</li></ul></td>
+                <td><ul><li><strong>Red Hat OpenShift</strong>: 제안요청서에 '컨테이너 기반 가상화(Kubernetes 등) 환경' 구성이 명시되어 있어, 엔터프라이즈 쿠버네티스 플랫폼인 OpenShift Container Platform 제안에 매우 유리합니다.</li><li><strong>Red Hat Enterprise Linux (RHEL)</strong>: 신규 도입되는 운영 서버(DMZ 2대, Internal 3대)의 운영체제로 제안할 수 있습니다. 기술지원체계 문서(p.37)에 Linux가 명시되어 있어 RHEL 도입의 타당성이 높습니다.</li><li><strong>Red Hat Ansible Automation Platform</strong>: 신규 인프라(서버, 스토리지 등)의 도입, 구성, 운영 및 관리를 자동화하는 솔루션으로 제안하여 시스템의 안정성과 운영 효율성을 높이는 가치를 제공할 수 있습니다.</li></ul></td>
             </tr>
         </table>
     </div>
