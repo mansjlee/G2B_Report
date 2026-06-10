@@ -1,0 +1,102 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00238892 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>평택시_탄소중립 도시통합 데이터허브 구축사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음</font><br>클라우드, MSA, 오픈소스 기반 사업</td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li><b>개요</b>: 평택시의 탄소중립 및 스마트시티 구현을 위해 도시 데이터를 수집, 저장, 분석, 시각화하는 통합 데이터허브 플랫폼을 구축하는 사업입니다.</li>
+                        <li><b>목적</b>:
+                            <ul>
+                                <li>프라이빗 클라우드 기반의 확장성 및 활용성 높은 데이터허브 구축</li>
+                                <li>순환 구조의 데이터 가치 사슬(Value Chain) 서비스 제공</li>
+                                <li>국가 R&D 성과인 오픈소스 기반 데이터허브 기술을 활용하여 평택시 및 경기도 데이터 허브 구축</li>
+                                <li>데이터 융합을 통한 신규 비즈니스 모델 생성 및 스마트시티 운영 지속성 확보</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><b>사업 예산</b>: 2,146,000,000원 (부가세 별도)</li>
+                        <li><b>사업 기간</b>: 착수일 ~ 2026년 12월 31일</li>
+                        <li><b>사업 범위</b>: 평택시 탄소중립 도시통합 데이터허브 시스템(데이터 수집, 코어, 분석, 보안, 외부연계, 시민 포털) 구축, 경기도 광역 데이터 허브 연계 등</li>
+                        <li><b>주요 일정</b>: 2026년 M+1~M+2 설계, M+2~M+4 구축, M+4 이후 테스트 (RFP 8p. 기준)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><b>과제 책임자</b>: 대지정공(주) 박성길 부장 (031-336-1151, skpark@daejicar.com)</li>
+                        <li><b>과제 담당자</b>: 대지정공(주) 배동식 차장 (031-336-1151, dsbae@daejicar.com)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><b>주요 기술 및 비즈니스 요구사항</b>:
+                            <ul>
+                                <li><b>클라우드 기반 구축</b>: 프라이빗 클라우드 기반으로 확장성, 활용성, 보안성 높은 서비스 구축 요구 (PLR-005)</li>
+                                <li><b>MSA 아키텍처</b>: 외부연계 시스템은 MSA(Micro Service Architecture) 기반으로 구축 (SFR-010)</li>
+                                <li><b>오픈소스 활용</b>: 국가 R&D 성과인 데이터허브 기술(S/W 오픈소스) 활용 명시</li>
+                                <li><b>데이터 분석/MLOps 환경</b>: 사용자별 데이터 분석 환경(샌드박스) 및 기계학습 모델 개발/관리 기능 요구 (SFR-008)</li>
+                                <li><b>개방형 표준 준수</b>: 데이터 모델링 및 인터페이스는 ETSI NGSI-LD 표준 기반으로 구축</li>
+                                <li><b>통합 인증(SSO)</b>: OAuth 2.0 표준 기반 SSO 기능 제공 요구 (SFR-010)</li>
+                            </ul>
+                        </li>
+                        <li><b>구매 명시 S/W</b>:
+                            <ul>
+                                <li>제안요청서 내에 특정 상용 S/W 제품명과 수량이 명시된 구매 목록은 없으며, 기능/성능 요구사항을 충족하는 최적의 S/W 스택을 제안해야 합니다.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><b>S/W 공급 미포함 사업</b>: 아니오, 데이터허브 시스템 구축을 위한 S/W 도입 및 개발이 포함된 사업입니다.</li>
+                        <li><b>경쟁 제품 명시</b>: 아니오, VMware, 특정 상용 DBMS 등 경쟁 제품이 명시되지 않았습니다.</li>
+                        <li><b>기타 제약 조건</b>: '클라우드 별도 구축' (p.6) 언급으로 보아 기반 IaaS는 사업 범위에서 제외될 수 있으나, 본 사업의 핵심인 PaaS/SaaS 플랫폼 구축에는 영향이 없습니다.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><b>OpenShift Container Platform</b>: MSA, 컨테이너 기반 클라우드 플랫폼 요구사항(SFR-010)을 충족하는 최적의 솔루션입니다.</li>
+                        <li><b>OpenShift Data Science</b>: 데이터 분석 샌드박스 및 MLOps 환경 요구사항(SFR-008)에 대해 차별화된 가치를 제공할 수 있습니다.</li>
+                        <li><b>RHEL & Ansible Automation Platform</b>: 프라이빗 클라우드 환경의 표준 OS로서 안정성을 제공하고, 시스템 구축 및 운영 자동화를 구현합니다.</li>
+                        <li><b>Red Hat Middleware & SSO</b>: 데이터 연계, API 관리, NGSI-LD 데이터 스트리밍 및 OAuth 2.0 기반 SSO(SFR-010) 요구사항을 충족합니다.</li>
+                        <li><b>강점 부합</b>: '오픈소스 활용' 명시, 클라우드 네이티브 아키텍처 요구 등은 엔터프라이즈 오픈소스 리더인 Red Hat의 가치 제안과 완벽하게 일치합니다.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+```
