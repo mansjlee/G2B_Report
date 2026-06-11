@@ -1,0 +1,58 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>한국교육학술정보원_2026년도 독서로 서비스 기능 고도화 - 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국교육학술정보원_2026년도 독서로 서비스 기능 고도화 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange">중간</font><br>경쟁제품 미언급, AI/DB 개선 포함</td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>사용자 중심의 맞춤형 독서 서비스 기반 마련을 위한 기능 개선 및 서비스 개편</li><li>최신 정보기술(AI 챗봇, 어휘력 보조 도구 등)을 적용한 디지털 기반 독서 활동 서비스 확대</li><li>나이스(NEIS), 책이음 등 유관 시스템과 연계를 확대하여 독서 이력의 체계적 관리 및 전국 도서관 활성화 기반 조성</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 750,000,000원 (VAT 포함)</li><li><strong>사업 기간</strong>: 2026년 7월 계약일로부터 150일 이내</li><li><strong>사업 범위</strong>: 사용자 맞춤형 DLS 기능 개선, 대국민 서비스 기능 개선, AI 보조도구 구축 및 DB 체계 개선, 유관 시스템 연계 고도화</li><li><strong>주요 일정</strong>: 사업 공고('26.6~7), 사업자 선정('26.7), 사업 수행('26.7~12월 예상)</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>소속</strong>: 한국교육학술정보원 AI교육혁신본부 (AI교육서비스부)</li><li><strong>부장</strong>: 김상우 (053-714-0311, swkim@keris.or.kr)</li><li><strong>담당</strong>: 장성혁 (053-714-0156, js04107@keris.or.kr)</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>핵심 기술/비즈니스 요구사항</strong>:
+                            <ul>
+                                <li>AI 기반 맞춤형 보조도구(어휘력 보조, AI챗봇, 개인 맞춤형 독서활동 추천) 도입 및 이를 위한 DB 구조 개선</li>
+                                <li>독서로-나이스(NEIS) 시스템 간 독서활동 이력 및 학적 정보 연계 기능 고도화</li>
+                                <li>독서로-책이음 시스템 간 서지 데이터 및 이용증 연계 기능 개발</li>
+                                <li>4,000명 동시 접속자를 수용할 수 있는 안정적인 서비스 성능 확보</li>
+                            </ul>
+                        </li>
+                        <li><strong>구매 명시 S/W</strong>: 제안요청서 내 구매가 명시된 S/W 없음. (상용SW 직접구매 해당 없음 명시)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li>S/W 제품 구매가 명시되지 않은 시스템 개발 및 고도화 용역 사업임.</li><li>경쟁사(VMware, Oracle/Rocky Linux 등) 제품이 명시적으로 언급되지 않았으나, 기존 운영 시스템의 기술 스택을 그대로 유지해야 할 가능성이 있음.</li><li>기존 시스템이 운영되는 클라우드 인프라 환경이 정해져 있어, 새로운 플랫폼(OS, 미들웨어) 제안에 제약이 있을 수 있음.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>OpenShift</strong>: 신규로 구축되는 'AI 기반 맞춤형 보조도구'는 마이크로서비스 아키텍처(MSA)에 최적화되어 있어 OpenShift Container Platform 제안에 유리함. OpenShift AI를 활용한 AI/ML 워크로드 운영 효율화 제안 가능.</li><li><strong>RHEL</strong>: AI 서비스 등 신규 기능 구현을 위한 서버 증설 시, 안정성과 보안성이 검증된 Red Hat Enterprise Linux 제안 가능.</li><li><strong>JBoss EAP</strong>: 대국민 서비스의 안정적인 운영과 4,000명 동시 접속자 처리를 위한 고성능, 경량 웹 애플리케이션 서버로 JBoss EAP 제안 가능.</li><li><strong>Ansible</strong>: 기능 고도화 및 다수 시스템 연계로 복잡해진 인프라 운영 및 배포 자동화를 위해 Ansible Automation Platform을 제안하여 운영 효율성 증대 강조 가능.</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+```
