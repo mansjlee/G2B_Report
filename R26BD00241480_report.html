@@ -8,51 +8,48 @@
 </head>
 <body>
     <div class="container">
-        <h2>수요기관 불명_AI 관련 사업(R26BD00241480) - 분석 리포트</h2>
+        <h2>부산경찰청_AI 영상분석을 통한 보행안전 시스템 구축사업 - 분석 리포트</h2>
         
         <table>
             <tr>
                 <th>레드햇 제안 가능성</th>
-                <td id="AI-summary"><font color=red>낮음</font><br>입력 텍스트 손상으로 사업 내용 파악 불가</td>
+                <td id="AI-summary"><font color=red>중간<br>서버 OS가 '최신 OS'로 명시되어 제안 가능.</font></td>
             </tr>
             <tr>
                 <th>사업 개요 및 목적</th>
-                <td><ul><li>텍스트 손상으로 명확한 파악은 불가능하나, 'AI' 키워드를 통해 AI 관련 시스템을 구축하는 사업으로 추정됨.</li></ul></td>
+                <td><ul><li>AI 영상분석 기술을 활용하여 횡단보도 및 인도에서 발생하는 이륜차의 보행자 안전 위협 행위를 자동 단속하는 시스템을 구축하는 것을 목표로 함.</li><li>증가하는 이륜차 관련 보행자 사고를 예방하고, 경찰의 단속 업무 효율성을 증대시켜 보행자 안전을 확보하고자 함.</li></ul></td>
             </tr>
             <tr>
                 <th>주요 정보</th>
-                <td><ul><li><strong>사업 예산</strong>: 파악 불가</li><li><strong>사업 기간</strong>: 파악 불가 (문서 내 '2026. 04. 01.' 날짜가 식별되나 용도 불명)</li><li><strong>사업 범위</strong>: 파악 불가</li><li><strong>주요 일정</strong>: 파악 불가</li></ul></td>
+                <td><ul><li><strong>사업 예산</strong>: 금 550,000,000원 (부가세 포함)</li><li><strong>사업 기간</strong>: 계약일로부터 120일</li><li><strong>사업 범위</strong>: AI 영상분석 기반 현장 단속 시스템(CCTV, AI Box 등) 및 관제 센터 시스템(서버, 운영 S/W) 구축</li></ul></td>
             </tr>
             <tr>
                 <th>담당자 정보</th>
-                <td><ul><li><strong>담당 부서</strong>: 파악 불가</li><li><strong>담당자명</strong>: 파악 불가</li><li><strong>연락처</strong>: 051-899-2452</li><li><strong>이메일</strong>: 파악 불가</li></ul></td>
+                <td><ul><li><strong>수요기관</strong>: 부산경찰청</li><li><strong>담당부서</strong>: 생활안전부 교통과</li><li><strong>담당자</strong>: 경위 최성호</li><li><strong>연락처</strong>: 051-899-2452</li></ul></td>
             </tr>
             <tr>
                 <th>핵심 요구사항</th>
-                <td>
-                    <ul>
-                        <li><strong>핵심 기술 및 비즈니스 요구사항</strong>: 제안요청서 텍스트가 심하게 손상되어 핵심 요구사항을 파악할 수 없음.</li>
-                        <li><strong>구매 명시 S/W</strong>: 텍스트 손상으로 구매 대상 S/W 내역 파악이 불가능함.</li>
-                    </ul>
-                </td>
+                <td><ul><li><strong>핵심 기술 및 비즈니스 요구사항</strong>:
+                        <ul>
+                            <li>CCTV 영상을 통한 이륜차 및 보행자 AI 자동 분석 및 위반 행위 감지</li>
+                            <li>위반 차량 번호판 자동 인식 및 증거자료(영상, 이미지) 자동 생성</li>
+                            <li>관제 센터에서 단속 데이터 통합 관리, 검색, 통계 분석 기능 제공</li>
+                        </ul>
+                    </li>
+                    <li><strong>도입 S/W 목록</strong>:
+                        <ul>
+                            <li>센터시스템 서버 OS: 최신 OS 1식</li>
+                        </ul>
+                    </li>
+                </ul></td>
             </tr>
             <tr>
                 <th>Red Hat 제안 <br>불가능 요소</th>
-                <td>
-                    <ul>
-                        <li><strong>정보 부재</strong>: 제안요청서 텍스트가 대부분 손상되어 사업의 목적, 범위, 예산, 기술 요구사항 등 제안에 필요한 핵심 정보를 전혀 파악할 수 없음.</li>
-                        <li><strong>경쟁 제품 명시 여부 불투명</strong>: 텍스트 손상으로 인해 경쟁 솔루션(VMware, Contrabass, Ubuntu 등)의 명시 여부를 확인할 수 없음.</li>
-                    </ul>
-                </td>
+                <td><ul><li>제안요청서에 특정 상용 OS 구매가 명시되지 않아, 사업자가 비용 절감을 위해 무료 오픈소스 OS(Rocky Linux, Ubuntu 등)를 선택할 가능성이 존재함.</li><li>전체 사업 예산(5.5억)에서 하드웨어 및 개발 용역 비중이 높아, 상대적으로 OS 도입 예산이 낮게 책정될 수 있음.</li></ul></td>
             </tr>
             <tr>
                 <th>Red Hat 제안 <br>가능 요소</th>
-                <td>
-                    <ul>
-                        <li><strong>AI 사업 연관성 (추정)</strong>: 사업이 'AI'와 관련된 것으로 추정되어, AI/ML 워크로드 및 데이터 처리를 위한 인프라로 OpenShift(컨테이너 플랫폼) 및 RHEL(OS) 제안 기회를 잠재적으로 탐색해볼 수 있음.</li>
-                        <li><strong>담당자 연락처 확보</strong>: 담당자 연락처(051-899-2452)가 확보되어, 직접 연락을 통해 사업의 구체적인 내용을 파악하고 제안 기회를 모색할 수 있음.</li>
-                    </ul>
-                </td>
+                <td><ul><li><strong>RHEL 제안</strong>: 관제 센터 서버의 OS로 '최신 OS'가 요구되므로, 안정성과 보안성이 중요한 경찰청 단속 시스템에 RHEL(Red Hat Enterprise Linux) 제안이 가능함.</li><li><strong>Ansible 제안</strong>: 시스템 구성 및 배포 자동화를 위해 Ansible Automation Platform을 추가로 제안하여 운영 효율성 및 일관성을 확보할 수 있음을 강조할 수 있음.</li><li><strong>강점 부각</strong>: 법규 위반 증거를 다루는 시스템의 특성상 장기적인 기술지원과 강력한 보안(CC인증 등)이 필수적이므로, Red Hat 구독의 가치를 부각하여 제안할 수 있음.</li></ul></td>
             </tr>
         </table>
     </div>
