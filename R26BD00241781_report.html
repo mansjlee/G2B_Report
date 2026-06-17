@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00241781 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국지능정보사회진흥원_2026년 공공 재해복구시스템(DR) 구축 ISP 사업(7차) - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>후속 DR구축 ISP 설계영향</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국정자원 대전센터 화재('25.9.26) 및 대통령 지시에 따른 국가정보관리시스템 근본적 재설계·이중운영체계 구축 대응</li>
+                    <li>행정안전부 6개·보건복지부 11개, 총 17개 핵심 정보시스템의 Active-Active(A-A) 및 Active-Standby(A-S) 재해복구(DR) 구축을 위한 적용범위 도출 및 상세설계(ISP) 수립</li>
+                    <li>서비스 기능 개선이 아닌 DR 전환·운영 관점의 현황분석, 목표모델 설계, 이행계획, 소요예산 산정 및 후속 DR 구축사업 제안요청서(RFP) 작성이 핵심 과업</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 4,696,000,000원 (약 47억원)</li>
+                    <li><strong>사업 기간</strong>: 계약일로부터 ~ 2027년 1월 28일</li>
+                    <li><strong>사업 범위</strong>: 행정안전부 6개(A-A 4·A-S 2), 보건복지부 11개(A-A 3·A-S 8) 시스템 DR ISP; 현황조사·목표모델·이행계획·예산산정·후속 RFP 작성; DR센터(국정자원 공주센터) 입주 로드맵 포함</li>
+                    <li><strong>주요 일정</strong>: 계약 후 M~M+6(약 7개월) — ①현황분석(M~M+1) ②목표모델(M+1~M+3) ③이행계획(M+3~M+5) ④예산·RFP(M+5~M+6); 협상에 의한 계약체결, 기술평가 90%+가격 10%</li>
+                    <li><strong>입찰방식</strong>: 공개경쟁입찰(협상계약), 소프트웨어사업자(1468) 등록, 40억원 이상 중소 SW사업자 지원 대상</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 한국지능정보사회진흥원(NIA) 정보자원기반관리TF팀</li>
+                    <li><strong>사업책임자</strong>: 설동광 팀장 / 053-230-4381</li>
+                    <li><strong>사업담당자</strong>: 이병석 수석 / 053-230-4388 / bslee@nia.or.kr</li>
+                    <li><strong>사업담당자</strong>: 이재훈 선임 / 053-230-4392</li>
+                    <li><strong>총괄기관</strong>: 행정안전부 정보자원관리혁신과</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>사업 유형</strong>: 정보화전략계획수립사업(컨설팅) — 컨설팅 요구사항 7건, 아키텍처 5건, 데이터품질 10건, 보안 9건, 품질 3건, 제약 6건, PM 5건, 지원 3건 등 총 48건</li>
+                    <li><strong>핵심 기술 요구</strong>: A-A/A-S DR 아키텍처 상세설계, 주·DR센터 동일 3Tier(WEB/WAS/DB) 구성, 데이터 실시간 복제·동기화, GSLB/DNS 라우팅, 통합관제·보안관제 확대, BIA·RTO/RPO 산정, N2SF 보안 적용, BYOL(기존 라이선스 재활용) 기반 SW 설계, 후속 DR 구축 RFP·소요예산 산출</li>
+                    <li><strong>대상 17개 시스템 DR 유형</strong>: A-A — 간편인증, GPKI, 모바일신분증 플랫폼, 주민등록증 모바일확인, 사회서비스 전자바우처, 차세대사회보장정보; A-S — 모바일신분증 진위확인, 정부디지털지갑, 외부사회서비스 바우처결제, 복지로, 국가아동학대정보, 디지털돌봄, 본인진료기록열람, 사회복지공제회, 연명의료, 자활정보, 정신건강사례관리</li>
+                    <li><strong>통합발주 S/W 구매 명시</strong>: 본 ISP(컨설팅) 사업 RFP에 수량·품명이 명시된 통합발주 S/W 구매 항목 없음. 상용SW는 BYOL 재활용 및 후속 DR 구축사업 RFP 도출 시 산정·명시하는 구조</li>
+                    <li><strong>현행 OS/DB 현황(대상 시스템)</strong>: Oracle Linux, AIX, Solaris, RHEL 8.x, Linux 혼재 / DBMS — Tibero, Oracle(10g~19c), PostgreSQL, Altibase, Cubrid, OpenSQL 등</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 공급 미포함</strong>: 본 사업은 ISP 컨설팅 전용으로 Red Hat 제품(RHEL, OpenShift, Ansible 등)의 직접 납품·라이선스 계약 대상이 아님</li>
+                    <li><strong>경쟁 스택 우세</strong>: 대상 17개 시스템 다수가 Oracle Linux, Oracle DB, Tibero, AIX, Solaris 기반으로 운영 중이며, DR센터는 주센터와 동일 구성 원칙 적용</li>
+                    <li><strong>BYOL 원칙</strong>: "라이선스 재활용(BYOL)"을 설계 기준으로 명시 — 신규 Red Hat 대량 도입보다 기관 보유 라이선스 활용 우선</li>
+                    <li><strong>직접구매 분리</strong>: 계약특수조건상 상용SW 직접구매는 후속 DR 구축사업에서 별도 진행 — 본 ISP 계약 범위에서 SW 공급자(SW 등 공급자) 역할 불가</li>
+                    <li><strong>특정 가상화/DBMS 지정 없음</strong>: Red Hat 전용 요구 없으나, 기존 Oracle·Tibero·Solaris 환경 전환 없이 DR 복제 설계가 기본 방향</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>기 RHEL 운영 시스템</strong>: 모바일신분증 플랫폼(RHEL 8.6/8.8/8.9), 모바일신분증 진위확인(RHEL 8.x), 연명의료정보처리(RHEL 8.9), 정부 디지털지갑(RHEL 포함) — DR2센터 동일 OS 구성 설계 시 RHEL 확장·증설 검토 가능</li>
+                    <li><strong>Ansible</strong>: A-A/A-S DR 운영 자동화, 장애 시 자동 전환, 구성정보 동기화, 모의훈련 자동화 등 CNR-001·ACR-004 통합관제·운영자동화 설계에 Red Hat Ansible Automation Platform 제안 가능</li>
+                    <li><strong>RHEL</strong>: DR 목표모델·인프라 아키텍처 설계(CNR-004, ACR-002) 및 후속 RFP 작성(CNR-006) 단계에서 Linux 표준화·보안 강화 OS로 RHEL BYOL/신규 라이선스 산정 반영 가능</li>
+                    <li><strong>OpenShift</strong>: 민간 클라우드 적합성 검토, 컨테이너·가상화 통합 자원풀(SDC) 설계(ACR-005) 시 DR 환경 PaaS·컨테이너 DR 아키텍처 대안 제시 가능</li>
+                    <li><strong>후속 사업 선점</strong>: 본 ISP 산출물(목표모델, 소요예산, DR 구축 RFP)이 실제 DR 구축 발주의 직접 입력 — Red Hat 기술을 ISP 설계안·경제성 대안(2개 이상)에 반영 시 후속 구축사업 진입 기회 창출</li>
+                    <li><strong>파트너 협업</strong>: 컨설팅 수행사·SI 파트너와 공동 제안 시 DR 아키텍처·운영자동화·컨테이너 DR 영역 기술 자문·설계 지원 형태로 Red Hat 역량 투입 가능</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
