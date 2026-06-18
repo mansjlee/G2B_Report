@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00242693 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>(재)강릉과학산업진흥원_AI 및 멀티소스 다중 센서 기반 연안 그린인프라 자원 생육 서비스 개발 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>Ubuntu OS 명시, RHEL 요구 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>2026 스마트빌리지 보급 및 확산 사업의 하위 과제로, 이종 센서 네트워크와 AI 기술을 활용한 연안·해양환경 의사결정 서비스를 실증·구축하는 용역 사업이다.</li>
+                    <li>강릉시 연안(주문진항 남측~사천진항 북측) 지역을 대상으로 IoT·UAV·CCTV 기반 멀티소스 데이터 수집, 연안침식 AI 예측·시뮬레이션, 의사결정 지원 웹/앱 서비스를 개발하여 기후변화에 따른 연안 복합재해(침식·침수) 대응 체계를 마련하는 것이 핵심 목표이다.</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 금 1,902,000,000원(부가세 포함, 1차년도 634,000,000원 × 3년, 장기계속계약)</li>
+                    <li><strong>사업 기간</strong>: 계약체결일로부터 2028. 12. 31.까지(상위 사업기간 2026. 3. 30. ~ 2028. 12. 31.)</li>
+                    <li><strong>사업 범위</strong>: IoT 센서·UAV·CCTV 기반 연안·해양환경 모니터링 플랫폼 구축, AI 데이터 추출·침식 예측·시뮬레이션, 의사결정 지원 시스템, 웹/앱 대시보드, 디지털 트윈 기반 그린인프라 자원 관리, H/W·S/W 일괄 또는 분할 공급</li>
+                    <li><strong>입찰·계약 방식</strong>: 제한경쟁입찰, 전자입찰, 협상에 의한 계약(기술능력 90% + 가격 10%), 하도급 원칙 불가, 중소 SW사업자만 참여 가능(20억 미만 SW사업)</li>
+                    <li><strong>주요 일정</strong>: 입찰공고·접수 '26. 6월 중 → 제안서 발표·평가·협상·계약 '26. 7월 중 → 착수·수행 '26. 7월~12월, 하자보수 1년</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주기관</strong>: (재)강릉과학산업진흥원</li>
+                    <li><strong>사업 담당</strong>: 강릉정보문화진흥센터 어원희 대리 / TEL: 033-650-3362 / eowori1212@gsipa.or.kr</li>
+                    <li><strong>계약 담당</strong>: 경영지원본부 원현석 팀장 / TEL: 033-650-3335 / hswon@gsipa.or.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>기술·기능 요구</strong>: IoT 센서 실시간 수집·엣지 전처리, UAV/CCTV 영상 수집·3D 지형 구축, 영상기반 파랑·해안선·해빈류 AI 추출, 연안침식 단·중·장기 예측, 해안선 변화 시뮬레이션, 인과추론 기반 의사결정, 디지털 트윈, 통합 웹 대시보드·사용자 앱, API·DB 연계, NVIDIA A100급 GPU AI 학습·추론 서버</li>
+                    <li><strong>비즈니스 요구</strong>: 용역사업자가 명시 H/W·상용 S/W 일체 납품·설치(C-01), 3년 장기계속계약·연차평가, KPI 기반 성과관리, 사후 1년 하자보수, 해양·공간정보·SW·영상제작 등 복합 자격 요건</li>
+                    <li><strong>통합발주 명시 S/W(장비 도입내역 D-01 기준)</strong>:
+                        <ul>
+                            <li>Ubuntu OS — DB/Web 서버(기구축 제안업체) 1식, AI 학습·추론 서버(제안 업체) 1식</li>
+                            <li>MariaDB 또는 PostgreSQL — DB/Web 서버 1식</li>
+                            <li>Windows 11 — 통합관제 PC 1식</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>경쟁 OS 명시</strong>: DB/Web 서버·AI 학습·추론 서버 OS가 Ubuntu OS로 고정 지정되어 RHEL 직접 대체 제안이 제약된다.</li>
+                    <li><strong>타사 S/W 지정</strong>: DBMS는 MariaDB 또는 PostgreSQL, 통합관제 PC는 Windows 11로 명시되어 JBoss·OpenShift 등 Red Hat 제품 직접 구매 항목이 없다.</li>
+                    <li><strong>직접 입찰·공급 구조</strong>: Red Hat은 소프트웨어사업자 자격·중소기업 참여 제한·하도급 원칙 불가 조건으로 본 용역의 직접 수행·S/W 공급 주체가 될 수 없다.</li>
+                    <li><strong>사업 성격</strong>: AI 모델 개발·IoT 센서·해양 관측·시뮬레이션 등 맞춤형 연구개발 용역 중심으로, RHEL/OpenShift/Ansible 등 상용 인프라 SW 조달이 핵심 과업이 아니다.</li>
+                    <li><strong>기타</strong>: VMware, Contrabass 등은 미명시이나 Ubuntu 기반 GPU AI 서버 구성이 전제되어 Red Hat 컨테이너·K8s 플랫폼 직접 제안 여지가 제한적이다.</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>간접 파트너 영업</strong>: 입찰 참여 중소 SW·해양 SI 파트너의 백엔드 인프라·운영 자동화 레이어로 Ansible Automation Platform 제안 가능(단, RFP OS·DB 명시와 하도급 제한으로 실질 반영은 제한적).</li>
+                    <li><strong>AI·컨테이너 워크로드</strong>: NVIDIA A100 GPU 기반 AI 학습·추론 환경에 OpenShift AI/컨테이너 플랫폼을 대안 아키텍처로 기술 제안할 여지가 있으나, Ubuntu OS 명시로 채택 가능성은 낮다.</li>
+                    <li><strong>엣지·IoT 운영</strong>: IoT 센서·엣지 컴퓨팅 다수 노드의 구성·배포·패치 자동화에 Ansible 또는 RHEL Edge 적용 논점은 존재하나, RFP에 엣지 OS가 Ubuntu 전제로 암시되어 직접 매출 기회는 미미하다.</li>
+                    <li><strong>차기 사업 연계</strong>: 사업 종료 후 운영·유지관리·성능개선은 별도 계약 가능하므로, 플랫폼 안정화 단계에서 RHEL·OpenShift·Ansible 유지보수·구독 제안을 후속 영업 포인트로 검토할 수 있다.</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
