@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00243742 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>구미시_공간정보 플랫폼 활용 고도화 개발 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>SW미공급·Ubuntu고정</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>구미시 기구축 공간정보 플랫폼(디지털트윈·3D/2D GIS)의 활용 범위를 행정업무 전반으로 확대하고, 공간정보 현행화·데이터 추가 구축을 통해 사용자 편의성을 고도화하는 맞춤형 개발 용역</li><li>상·하수관리시스템 전환 통합, 공유재산·하천·농업시설·부서별 특화 활용, 도시침수 가상모의 고도화, AI 기반 3D 실체형 건물 수시갱신 타당성 실증 등 플랫폼 기반 업무지원체계를 완성하는 것이 핵심 목표</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 1,200,000,000원(금일십이억원, 부가세 포함)</li><li><strong>사업 기간</strong>: 착수일로부터 20개월</li><li><strong>사업 범위</strong>: 기구축 공간정보 플랫폼 운영 인프라·SW 활용 기반 기능 고도화, 데이터 가공·탑재, 상·하수관리 전환개발, 부서별 특화 서비스, 운영관리 고도화, AI 3D 건물 수시갱신 실증</li><li><strong>계약방식</strong>: 제한경쟁입찰(협상에 의한 계약)</li><li><strong>주요 일정</strong>: 수요·환경조사 → 운영기획·설계 → 개발·운영환경 구축 → UI/UX → 데이터 구축·연계 → 기능개발 → 테스트 → 교육·운영지원(착수·중간·자문·이관·완료 보고 포함, 주·월간 정기보고)</li><li><strong>하자보수</strong>: 최종 산출물 인도 후 1년</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>주관기관</strong>: 경상북도 구미시 토지정보과</li><li><strong>지적팀장</strong>: 박종원 / 054-480-6371 / pjw0489@korea.kr</li><li><strong>주무관</strong>: 이정배 / 054-480-6373 / wjdqo2061@korea.kr</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>기술·기능</strong>: 플랫폼 포털·구미 3D 지도·대장 필터링·3D 모델 배치·공사현황 기능 개선, 도시침수 가상모의(SWMM 연계·지표수 유출 모델), 공유재산 연계, 상·하수관리 전환개발, 하천·농업시설·부서별 특화(CCTV·주차·수변시설·행사시설·재난안전·스토리텔링·환경·공원녹지), 운영관리 고도화, AI 3D 건물 수시갱신 실증(LOD 2.5, 연 210건)</li><li><strong>데이터</strong>: 3D 실체형 건물·정사영상·LOD1·상·하수 3D·4대 지하시설물 3D·공사현황·하천·농업시설·부서별 특화 공간정보 가공·탑재</li><li><strong>성능</strong>: 응답 3초 이내, 동시 사용자 200명 이상, 최대 1,000명 접속 유지, 연 가용성 99.9%</li><li><strong>제약</strong>: 전자정부 표준프레임워크, OGC 표준, 기구축 Ubuntu 24.0 서버·플랫폼 SW 호환 필수, 시스템 장비·공간정보 SW 추가 공급 없음</li><li><strong>구매 명시 통합발주 S/W</strong>: 본 RFP(ECR-001, ECR-002)상 시스템 장비 및 공간정보 관련 S/W 추가 공급·구매 항목 없음. 기구축·활용 대상 SW만 명시됨 — Cesium ion 서버(3D Tiles), GeoServer(2D 웹맵), PostgreSQL+PostGIS(DBMS), TerriaJS(CesiumJS·Leaflet 기반 포털), SWMM(미국 EPA 오픈소스, SFR-002 도입·사용, 수량 미명시)</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>S/W 공급 미포함</strong>: ECR-001「시스템 장비를 공급하는 것은 없이」기구축 인프라 이용, ECR-002「공간정보 관련 소프트웨어를 추가로 공급하는 것은 없이」기구축 플랫폼 SW 이용 — Red Hat 제품 납품·라이선스 판매 경로 없음</li><li><strong>경쟁/대체 스택 명시</strong>: 운영체제 Ubuntu 24.0(Linux) 고정, DB PostgreSQL+PostGIS, 3D Cesium ion·CesiumJS, 2D GeoServer·Leaflet, 포털 TerriaJS — RHEL·OpenShift·JBoss 등 Red Hat 스택 미요구</li><li><strong>오픈소스·상용 GIS 플랫폼 종속</strong>: 상업용 공간정보 플랫폼 기반 맞춤개발 사업으로 기존 기술요소(Cesium ion, GeoServer 등) 호환·확장이 필수 조건</li><li><strong>용역 중심 사업</strong>: 중소 SW사업자 대상 12억원 개발 용역, 하드웨어·상용SW 직접구매 없음, eGovFrame·Java 등 전자정부 표준 기술 적용 의무</li><li><strong>SWMM 등 특정 OSS 지정</strong>: 도시침수 앱에 EPA SWMM 모델 연계가 기능 요구사항(SFR-002)으로 명시되어 대체 S/W 제안 여지 제한</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>직접 제품 제안</strong>: 본 사업 범위 내 Red Hat 제품(RHEL, OpenShift, Ansible, JBoss 등)의 공식 구매·도입 요구사항 없음 — 제품 직접 제안 가능성 극히 낮음</li><li><strong>간접·파트너 관점</strong>: PostgreSQL+PostGIS 운영 DB가 핵심 구성요소이나 Ubuntu 환경 고정으로 RHEL 전환 제안은 RFP 제약(COR-001, ECR-002)과 충돌</li><li><strong>Ansible</strong>: PMR-005에 개발환경·형상관리 도구 제시 요구는 있으나 특정 제품 지정 없음 — 다만 SW 공급·인프라 변경이 범위 외라 용역사 자체 도구로만 활용 가능, Red Hat 매출 기회로 연결 어려움</li><li><strong>OpenShift/컨테이너</strong>: 컨테이너·K8s 플랫폼 요구 없음, 기구축 자가구축형 단일 서버(64코어·256GB·GPU) 운영 전제</li><li><strong>추가 제안(별지 25)</strong>: 정성 평가 '기타·추가 제안'(6점) 항목 존재하나, 기본 과업·호환성 제약을 벗어난 Red Hat 스택 도입은 실현성·적합성 측면에서 불리</li><li><strong>결론</strong>: Red Hat은 GIS·공간정보 SI 파트너사를 통한 간접 참여(하도급·공동수급) 형태만 검토 가능하며, Red Hat 제품 단독 제안 기회는 사실상 없음</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

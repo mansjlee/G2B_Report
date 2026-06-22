@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00243322 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국지능정보사회진흥원(NIA)_디지털배움터 플랫폼 'AI 실습' 기능 개발 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>Linux·K8s·IaC 요구</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>공고번호 R26BD00243322, 수요기관 한국지능정보사회진흥원(NIA), 주무부처 과학기술정보통신부</li>
+                    <li>디지털배움터 플랫폼에 생성형 AI 기반 'AI 실습' 기능을 추가·고도화하여 전 국민 대상 AI·디지털 기본역량 함양 및 생성형 AI 접근성을 확대</li>
+                    <li>AI 리터러시 함양을 위한 실습 중심 교육 환경 구축, AI·디지털 격차 해소 및 포용적 AI 교육 생태계 구축</li>
+                    <li>국정과제 21번(AI·디지털 보편교육) 및 디지털포용법(2026.1.22 시행)에 부합하는 국가 차원 AI 교육 기반 마련</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 2,997,991,352원(부가세 포함), 총사업비 30억 원(VAT 포함) 범위 내 구축·운영 제약(COR-003). 직접구매 상용SW 대략 금액: 제니퍼X5.0 211백만원, HIWARE TAM v6.2 90백만원, IJB GATHER V2.0 40백만원, 사이버리즌 EDR 4백만원. 통합발주(제외) 품목: BotfenderAI V2.0 49백만원, MetaDefender Core 64백만원</li>
+                    <li><strong>사업 기간</strong>: 계약일로부터 120일. 「소프트웨어사업 계약 및 관리감독에 관한 지침」 제10조 및 소프트웨어 개발사업 적정 사업기간 산정 기준 적용. 하자담보책임기간: 검사 완료 후 1년</li>
+                    <li><strong>계약방식</strong>: 협상에 의한 계약</li>
+                    <li><strong>사업 범위</strong>: AI 실습형 서비스(7종 이상 생성형 AI 멀티모델 통합·지능형 라우팅, RAG, FinOps, 보안 가드레일, SSO·데이터 연동, 취약계층 UI/UX, 차년도 디지털배움터 완전 이관 설계), 시범운영(부하·안정성 검증), 디지털배움터 개선(디지털 에셋 자동 생성·표준 API, 게시판 AI 답변, 강좌 큐레이션, 통합 관리자 대시보드), 클라우드 운영비 및 본인 인증 비용 포함</li>
+                    <li><strong>주요 일정</strong>(M=8월 기준): M(8월) 사업 착수·요구사항 상세화 → M+1(9월) 시스템 구축·기능 개발 → M+2(10월) 시험·검증·안정화·시범운영 → M+3~M+4(11~12월) 운영 전환·결과 정리·완료보고. 상용소프트웨어 구매시기: 2026.09</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>담당 부서</strong>: 디지털포용본부 디지털역량개발팀(사업문의), 조달청 입찰담당(입찰문의)</li>
+                    <li><strong>이상욱</strong> 팀장, TEL 053-230-1331</li>
+                    <li><strong>유영선</strong> 선임(사업문의 담당), TEL 053-230-1392</li>
+                    <li><strong>송형욱</strong> 책임, TEL 053-230-1340</li>
+                    <li><strong>이메일</strong>: 해당 없음(공고문 미명시)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>핵심 기술·비즈니스 요구사항</strong>
+                        <ul>
+                            <li>생성형 AI 7종 이상 통합(텍스트 2+, 이미지 2+, 음성 1+, 영상 1+; 국내 1+·국외 1+; 계약기간 중 신규 API 1+ 추가). 예시: ChatGPT, Gemini, HyperCLOVA X, Claude, 뤼튼 등</li>
+                            <li>지능형 멀티 LLM 오케스트레이션·하이브리드 라우팅·시맨틱 캐싱·FinOps(토큰·예산 모니터링)</li>
+                            <li>Enterprise RAG, sLLM(vLLM, Ollama, Llama 3, Mistral 등 7B~14B)</li>
+                            <li>디지털배움터 SSO·간편인증(네이버, 카카오, PASS, 디지털원패스), 멀티테넌트(17개 시·도·기관), 통합 권한관리</li>
+                            <li>동시 접속 15,000명 이상, QPS 1,500+, TPS 3,000+, 연간 200만 명 교육·토큰 예산 운영</li>
+                            <li>AI 에이전트 설계·개발 플랫폼(노코드/로우코드), 카드형 UI, 프롬프트 템플릿 500종+</li>
+                            <li>멀티채널(PC·모바일·태블릿·키오스크), 웹 접근성·KRDS·범정부 UI/UX 가이드</li>
+                            <li>망분리·DLP·AI 가드레일·개인정보 즉시 파기·데이터 주권, 국가정보원 보안성 검토 대상</li>
+                            <li>MSA·모듈형·차년도 NCP(NAVER CLOUD)·디지털배움터.kr 이관 설계</li>
+                            <li>인프라: Linux 계열 OS(ECR-001), Kubernetes(NKS/AKS 등), Docker, PostgreSQL, Redis, Vector DB, Kafka/RabbitMQ, Terraform·Ansible(IaC), 전자정부 표준 프레임워크 5.x 이상</li>
+                            <li>클라우드: NAVER CLOUD(NCP) 공공 리전, CSAP 인증, VPC Multi-AZ, Auto Scaling, CDN, CSPM, KMS/HSM</li>
+                            <li>요구사항 총 180건(ECR 1, SFR 27, SIR 6, SYS 12, PER 7, DAR 18, SER 44, QUR 7, UIR 17, TER 11, COR 15, PMR 20, PSR 2)</li>
+                            <li>과업심의위원회 개최, 전문가위원회 10인 이상(AI, UI/UX, 교육, 정보보안 등), NIA AI윤리 교육 필수 이수</li>
+                            <li>공동수급(공동이행방식, 5개 이하, 구성원별 최소 10%), 하도급 발주기관 사전승인·50% 초과 불가, 지식재산권 발주기관·계약상대자 공동소유</li>
+                        </ul>
+                    </li>
+                    <li><strong>구매·통합발주 S/W</strong>(별지 제11호, SW 분리발주·설계 과정 중 변경 가능)
+                        <ul>
+                            <li><strong>직접구매</strong>
+                                <ul>
+                                    <li>시스템 성능관리(APM) 제니퍼X5.0 License — 60식 (211백만원, 구매시기 2026.09)</li>
+                                    <li>서버 접근제어 및 감사 HIWARE TAM v6.2 — 매니저 2식, 노드 50식 (90백만원, 2026.09)</li>
+                                    <li>이상행위 탐지시스템(UEBA) IJB GATHER V2.0 — 매니저 1식, Agent 30식 (40백만원, 2026.09)</li>
+                                    <li>엔드포인트 위협탐지 사이버리즌 EDR — 80식 (4백만원, 2026.09)</li>
+                                </ul>
+                            </li>
+                            <li><strong>통합발주(수행사업 포함)</strong>
+                                <ul>
+                                    <li>실시간 악성 봇 탐지/방어 BotfenderAI V2.0 — 매니저 1식, 서비스 3식 (49백만원, 2026.09). 제외사유: NCP 클라우드 인프라(VPC/LB)와 실시간 API 연동 필수, 분리 발주 시 인터페이스·장애 책임 규명 곤란</li>
+                                    <li>랜섬웨어/악성코드 탐지 차단 MetaDefender Core — 2식 (64백만원, 2026.09). 제외사유: 대국민 서비스 업로드 모듈·스토리지 엔진과 유기적 결합 필요, 별도 구매 시 성능·공정 지연 우려</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 공급 미포함 사업 여부</strong>: 해당 없음. 본 사업은 SW 개발·통합 구축 사업이며 상용SW 직접구매·통합발주 품목이 명시되어 있으나 Red Hat 제품은 구매 대상에 포함되지 않음</li>
+                    <li><strong>경쟁 제품·타 벤더 명시</strong>: Red Hat, RHEL, OpenShift 등 Red Hat 브랜드 직접 명시 없음. VMware, Ubuntu, Oracle/Rocky Linux 등 경쟁 Linux 배포판 지정·배제 문구 없음. 다만 NAVER CLOUD(NCP) 공공 리전·NKS 기반 구축·차년도 NCP·디지털배움터.kr 이관이 핵심 방향으로 명시되어 NCP 종속 설계가 주류</li>
+                    <li><strong>보안·APM 등 타사 S/W 선점</strong>: APM(제니퍼X5.0), 서버 접근제어(HIWARE TAM), UEBA(IJB GATHER), EDR(사이버리즌), 봇탐지(BotfenderAI), 악성코드 차단(MetaDefender Core) 등 보안·운영 S/W가 타사 제품으로 직접구매·통합발주 지정</li>
+                    <li><strong>오픈소스 우선 정책</strong>: PostgreSQL, Redis 등 오픈소스 우선(SYS-008), 특정 상용·클라우드 전용 종속 배제 요구로 상용 Linux·플랫폼 라이선스 제안 시 정합성 입증 필요</li>
+                    <li><strong>Red Hat 제품 제안 어려운 기타 조건</strong>: Kubernetes는 NKS/AKS 등 CSP 매니지드 서비스 중심 명시; Ansible은 Terraform과 병기된 일반 IaC 도구 예시로 Red Hat 전용 요구 아님; 클라우드 운영비(시범운영 1~2주+정식 5개월)가 입찰금액 포함으로 Red Hat 라이선스 비용 반영 여지 제한적</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>제안 가능 포인트</strong>
+                        <ul>
+                            <li><strong>RHEL</strong>: ECR-001 Linux 계열 운영 환경 요구(인증/세션·AI 오케스트레이션·Redis·벡터·DB·메시지·배치·망연계·DLP·SIEM·IDS/IPS·SOAR·형상관리·관리자 콘솔 등 Linux 기반 서버 다수). 배포판·벤더 미지정으로 RHEL을 플랫폼 OS로 제안 가능</li>
+                            <li><strong>OpenShift</strong>: Kubernetes·Docker 컨테이너 기반 실행, MSA·모듈형 아키텍처, vGPU·Auto Scaling, 멀티 AZ 고가용성, 15,000+ 동시접속 대응 요구와 부합. NCP 위 또는 하이브리드 멀티클라우드 컨테이너 플랫폼으로 LLM·RAG·AI 에이전트 워크로드 오케스트레이션 제안 가능</li>
+                            <li><strong>Ansible Automation Platform</strong>: SYS-007 IaC 도구로 Terraform·Ansible 등 명시. 인프라 자동화·구성관리·배포 파이프라인, 멀티테넌트(17개 시·도·기관) 환경 표준화에 Ansible 기반 IaC·GitOps 제안 가능</li>
+                            <li><strong>기술 요구사항 정합성</strong>: Enterprise RAG·sLLM(vLLM/Ollama) GPU 워크로드, FinOps·토큰 모니터링, 망분리·DLP·가드레일 등 엔터프라이즈급 보안·운영 요구는 Red Hat OpenShift·RHEL의 컨테이너 보안(SCC, 네트워크 정책)·엔터프라이즈 Linux 지원 강점과 일치</li>
+                            <li><strong>차년도 이관 설계</strong>: MSA·모듈형·차년도 NCP·디지털배움터.kr 완전 이관 설계 요구에 OpenShift 기반 표준화·이식성 아키텍처를 제안서 차별화 포인트로 활용 가능</li>
+                        </ul>
+                    </li>
+                    <li><strong>제안 불가능 포인트(기회 제한)</strong>
+                        <ul>
+                            <li>Red Hat 제품명·브랜드가 RFP에 직접 명시되지 않아 필수 요건이 아니며, 평가 가점 근거로 활용하려면 NCP·오픈소스 우선 정책과의 정합성 입증 필요</li>
+                            <li>APM·접근제어·UEBA·EDR·봇탐지·악성코드 차단 등 보안·운영 S/W 영역은 타사 제품이 구매·통합발주로 확정되어 Red Hat 제품 대체 불가</li>
+                            <li>NCP(NKS) 중심 클라우드 네이티브 설계로 OpenShift Container Platform 별도 도입 시 CSP 매니지드 K8s(NKS)와의 역할 중복·비용 정당화 필요</li>
+                            <li>JBoss 등 미들웨어: 전자정부 표준 프레임워크 5.x·RESTful API·LangChain 중심 AI 스택이 주류로 JBoss 직접 적용 요구 없음</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
