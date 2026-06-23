@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00243944 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국방과학연구소_풍동실험 데이터 통합 시스템 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>RHEL for HPC 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>국방과학연구소(국과연) 풍동실험실에 축적된 유도무기체계 풍동실험 데이터 및 향후 획득 데이터를 통합 관리하는 시스템 구축</li><li>유도무기 및 비행체의 데이터 기반 공력 모델링·분석 활용을 지원하기 위한 HPC 클러스터 및 데이터 통합 플랫폼 일체 구축</li><li>2027년 12월 31일 이내 제작·납품 후 국과연 풍동실험실 현장 설치 및 시운전 수행</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li>**사업 예산**: 20억원 미만(소프트웨어 진흥법상 중소 SW 사업자 참여 대상), 구체적 예산액은 제안요청서 본문 미기재</li><li>**사업 기간**: 계약 체결 후 수행, 최종 납품일 2027년 10월 29일, 2027년 12월 31일 이내 제작·납품·설치·시운전 완료</li><li>**사업 범위**: HPC 클러스터(마스터·계산·스토리지 노드, InfiniBand 네트워크, 원격접속 단말), 운영체제, STAR-CCM+ CFD SW, 풍동실험 데이터 통합 관리 응용시스템(WEB/WAS/DB), 과거 데이터 표준화·적재, 성능·보안·검수·하자보증(1년)</li><li>**주요 일정**: 계약 후 10일 이내 사업수행계획서 제출, 계약 후 1개월 이내 제작구매착수회의·사업계획서 제출, 분기 정기 기술검토회의, 납품 1개월 전 수락검사, 계약 완료 15일 전 최종보고, 2027.10.29 납품</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li>제안요청서 본문 내 담당 부서·담당자명·연락처·이메일 미기재 (입찰공고문 및 나라장터 e-발주 공고 참조 필요)</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li>HPC 클러스터 구축: 마스터노드 1대, 계산노드 4대, 스토리지노드 2대(Active-Standby 이중화), InfiniBand NDR 400Gb 스위치 1대 및 케이블 3개 이상, 원격접속용 GPU 단말 1대 이상</li><li>고성능 병렬연산·대용량 데이터 처리·InfiniBand 기반 고속 클러스터 통신 및 확장성·안정성 확보</li><li>풍동실험 데이터 통합 관리 기능: 메타데이터·템플릿·실험데이터·미디어·무기체계 CAD/라벨링 데이터 관리, 조회·시각화, 과거 데이터 표준화·적재</li><li>응용시스템: 사용자 중심 UX/UI, 웹표준·웹접근성·시큐어코딩, 공개 SW 중심 WEB/WAS/DB 환경, 대용량 파일 업로드, 3초 이내 검색 응답(대용량 제외)</li><li>방위산업기술보호법·국과연 보안예규 준수, 원격개발 보안대책, 지식재산권 국과연 귀속</li><li>**통합발주 명시 S/W**: Red Hat Enterprise Linux for HPC (또는 동급 이상) — HeadNode 1 License, ComputeNode 4 License (ECR-006, 1년 무상보증)</li><li>**통합발주 명시 S/W**: STAR-CCM+ 1 License (계산노드 ECR-003, 기본교육 및 기술지원 포함)</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li>응용시스템 WEB/WAS/DB는 「공개 SW 중심」으로 구성 명시 — JBoss EAP, Red Hat Single Sign-On 등 상용 미들웨어 직접 지정 기회 없음</li><li>STAR-CCM+(Siemens CFD) 1 License가 계산노드 요구사항에 명시 — Red Hat 대체 불가 영역</li><li>풍동실험 데이터 통합 관리 응용 SW는 맞춤 개발 중심 — OpenShift·Ansible 등 추가 Red Hat SW는 RFP에 미명시</li><li>VMware, Contrabass, Ubuntu, Oracle/Rocky Linux 등 경쟁 OS 직접 지정 없으나, 「RHEL for HPC 또는 동급 이상」 조건으로 타 OS(Rocky 등) 대체 제안 가능</li><li>20억원 미만 SW 사업으로 중소 SW 사업자만 입찰 참가 가능 — Red Hat은 직접 용역 수행사로 입찰 불가, 파트너·라이선스 공급 형태로만 참여</li><li>스토리지노드 2대에 Linux OS 설치 요구 있으나 ECR-006 OS 라이선스는 Head 1 + Compute 4만 명시 — 스토리지 OS 라이선스 범위 불명확</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li>ECR-006에 Red Hat Enterprise Linux for HPC가 HeadNode 1 + ComputeNode 4 License로 직접 명시 — RHEL for HPC 정품·제조사 기술지원·정품인증서 제출 요건 충족 제안 가능</li><li>마스터·계산·스토리지 노드 전반 Linux OS, HPC 클러스터 관리·병렬연산·InfiniBand 드라이버 지원 요구 — RHEL for HPC 핵심 강점과 일치</li><li>고성능 연산·대용량 데이터 처리·클러스터 확장성·안정성 요구 — RHEL HPC 생태계(SLURM/PBS 등) 및 엔터프라이즈 지원 체계로 차별화 제안 가능</li><li>3년 H/W 무상보증 + OS 1년 무상보증 — Red Hat Subscription 연장·유지보수 제안으로 후속 매출 기회</li><li>수행사 제안 시 Red Hat 정품 라이선스·A/S 확약서·협약서 등 제조사 증빙 제출 요건 — Red Hat 채널 파트너 협력으로 입찰사 지원 가능</li><li>Ansible은 RFP 미명시이나 HPC 클러스터·다수 Linux 노드 구성·운영 자동화 보조 솔루션으로 선택적 부가 제안 여지</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
