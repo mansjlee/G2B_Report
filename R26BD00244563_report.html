@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00244563 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국립보건연구원_연구목적 시체제공기관 통합관리 정보시스템 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>SW분리발주·용역중심</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>시체해부법 제9조의8에 근거하여 연구목적 시체유래물의 국가단위 통합·일원화 수집·관리·분양 체계를 구축하는 정보화 사업이다.</li><li>시체제공기관(12개소), 연구자, 대국민(기증자·유가족)을 대상으로 시체기반 연구자원 통합플랫폼을 설계·구축하여 업무 효율화, 데이터 활용성 증대, 기증 활성화를 목표로 한다.</li><li>국정과제 '의료AI·제약·바이오헬스 강국' 및 보건복지부 시체제공기관 협력체계 구축·관리 의무 이행을 위한 핵심 기반 시스템이다.</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 총 1,163백만원(부가세 포함), 1차년 430백만원(5개월), 2차년 733백만원(10개월) — '26~'27년 2개년 다년간 계약</li><li><strong>사업 기간</strong>: 계약일로부터 15개월</li><li><strong>사업 범위</strong>: 시체기반 연구자원 통합플랫폼 설계, 대국민 컨텐츠 모듈, 시체제공기관별 운영지원모듈, 연구자용 모듈, 통합플랫폼 관리모듈 구축(기능·성능·보안 등 요구사항 104건)</li><li><strong>계약·입찰</strong>: 제한경쟁입찰(협상에 의한 계약), 기술평가 90%·가격평가 10%, 중소·소상공인 SW사업자 대상</li><li><strong>주요 일정</strong>: 1차년(2026) — 착수·설계·운영지원모듈 구축·테스트·교육·감리 / 2차년(2027) — 대국민·연구자·통합관리모듈 구축·안정화·종료감리</li><li><strong>운영 환경</strong>: 민간클라우드 기반 통합플랫폼 설계(클라우드·SW는 분리 발주), nih.go.kr/biobank 하위디렉토리 배치</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>발주기관</strong>: 국립보건연구원 미래의료연구부 바이오뱅크과</li><li><strong>정지원</strong> 보건연구관 / 043-719-6550 / intranova@korea.kr</li><li><strong>정진국</strong> 보건연구관 / 043-719-6543 / jkjung0411@korea.kr</li><li><strong>김대성</strong> 선임연구원 / 043-719-6511 / namoman1@korea.kr</li><li><strong>문의</strong>: 국립보건연구원 바이오뱅크과 043-719-6511</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>기술·비즈니스 요구사항</strong>: 전자정부 표준프레임워크 기반 개발(COR-008), 민간클라우드(CSAP) 기반 확장형 통합플랫폼, 정부 통합인증(Any-ID)·모바일 신분증 연계(SFR-016), 공동·간편인증 로그인, 반응형 웹·웹표준·접근성 준수, 개인정보·민감정보(고유식별·건강정보) 암호화, KBN-CDM V2.1 참조 데이터 표준, 동시접속 50명·응답 3초 이내 성능, 24×365 가용성, 무상 하자보수 12개월</li><li><strong>기능 모듈</strong>: 시체제공기관 운영지원(기관·기증자·연구·분양 관리), 연구자용(검색·분양·연구관리), 대국민(홍보·검색·통계·기증), 통합플랫폼 관리(회원·권한·행정·통합관리) — 총 16개 기능요구사항</li><li><strong>구매 명시 S/W(통합발주)</strong>: 본 RFP 범위 내 통합발주 대상 상용 S/W 명칭·수량 명시 없음. SFR-001에 "민간클라우드 및 클라우드 운영을 위한 SW 구매는 분리 발주"로 명시되어 있으며, ECR-001은 기존 운영 인프라 환경에 맞춘 개발·이관만 요구함.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>S/W 공급 미포함</strong>: 본 사업은 애플리케이션 설계·구축 용역(SI) 중심이며, 클라우드·인프라 SW는 별도 분리 발주로 Red Hat 직접 납품 기회가 RFP상 존재하지 않음.</li><li><strong>경쟁·대체 기술 명시</strong>: COR-008에 전자정부 표준프레임워크(Java 기반) 의무 적용. 기술적용계획표에 Linux·Windows Server·UNIX 등 OS가 개방형으로 기재되어 있으나 RHEL 등 특정 배포판 지정 없음. VMware, Contrabass, Ubuntu, Oracle/Rocky Linux 등 경쟁 제품 직접 지정은 없음.</li><li><strong>직접 입찰 불가</strong>: 소프트웨어사업자·중소기업 자격 요건의 SI 용역 입찰로, Red Hat이 단독 사업자로 참여하기 어려운 구조.</li><li><strong>타 시스템 연계 없음</strong>: 상호운용성 기술평가표 기준 타 시스템 연계·통합·공동활용 데이터 대상 해당 없음으로, 연계 기반 미들웨어 수요도 제한적.</li><li><strong>추가 제약</strong>: 추가 제안 불허, 기술평가 85% 미만 협상 제외, 산출물 IP 공동소유 등으로 라이선스·제품 번들 제안 여지가 좁음.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>채널 파트너(SI) 협력</strong>: 입찰 SI사의 제안서·기술평가 '수행기반(개발환경)'·'제약사항' 항목에 Red Hat 솔루션을 간접 제안할 수 있음(기술 90% 비중).</li><li><strong>RHEL</strong>: 기술적용계획표 'Linux' 적용 항목 및 COR-009(OS 비종속·확장성) 요건에 부합하는 서버 OS 대안으로 제안 가능(분리 발주 클라우드·인프라 사업 연계).</li><li><strong>OpenShift</strong>: 민간클라우드(IaaS/PaaS/SaaS) 기반 통합플랫폼·컨테이너 확장 설계(SFR-001)에 PaaS·컨테이너 플랫폼으로 간접 제안 가능(CSAP 인증 CSP 연동).</li><li><strong>Ansible</strong>: PMR-009 침해사고 예방·SER-011 비상대책, PER-006 부하테스트·환경 구축, DEV/TEST/운영 환경 일관성 요구에 자동화·구성관리 솔루션으로 제안 가능.</li><li><strong>강점 일치 요소</strong>: 24×365 가용성(QUR-004), 4시간 이내 장애복구(TER-007), 보안·접근통제·암호화(SER/DAR), 클라우드 네이티브 확장성 — Red Hat 엔터프라이즈 Linux·OpenShift·Ansible 스택과 정합성 있으나, 반드시 SI 파트너 또는 분리 발주 SW 사업과 연계해야 함.</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
