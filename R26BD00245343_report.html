@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00245343 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>금융감독원_AI 기반 불공정거래 대응체계 마련 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>AI GPU 인프라·자동화 여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>금융감독원 불공정거래 조사시스템에 생성형 AI·머신러닝을 전면 도입하여 ATS 출범 등으로 복잡해진 자본시장 불공정거래를 신속 적발하고 조사업무를 재정립·고도화하는 2단계 SW 개발 및 AI 인프라 구축 사업</li><li>1단계: 시장감시·혐의자 연계성·보고서 작성 AI 모델 개발 및 조사 프로세스 재설계</li><li>2단계: AI 서비스 통합, GPU 서버 도입, 기존 조사시스템 연동·고도화(매매재현 시뮬레이션, 과징금 산정 등)</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 총 4,485백만원(부가세 포함) — 개발비 3,212백만원, 공구기구집기 726백만원, SW 514백만원, 전산임차료 33백만원 / 1차 898백만원, 2차 3,587백만원</li><li><strong>사업 기간</strong>: 계약일('26.8.24.)부터 약 15개월(휴지기 제외, ~'28.1.6.) / 1차 6개월('26.8~'27.2), 2차 9개월('27.4~'27.12) / 협상에 의한 2년 장기계속계약</li><li><strong>사업 범위</strong>: AI 불공정거래 조사시스템 구축, 조사 특화 LLM·ML 모델 개발, RAG·AI Agent, GPU On-Premise 인프라, 現 불공정거래 조사시스템 UI·기능 통합, Datalake·DART 연계, 매매분석 시뮬레이션·과징금 산정 고도화</li><li><strong>주요 일정</strong>: 사업설명회 '26.7.15. 14:00 / 제안서 제출 '26.8.13. 15:00 / 제안설명회 '26.8.14. 15:00 / 기술·가격 협상·개찰 '26.8.18. 15:00 / 1차 검사 '27.2.19. / 2차 협상·계약 '27.3.4. / 최종 검사 '27.12.27.</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>발주기관</strong>: 금융감독원 정보화전략국(입찰공고: 26-감독정보시스템2팀)</li><li><strong>사업 담당</strong>: 정보화전략국 감독정보시스템2팀 김헌 / ☎ 02-3145-5403</li><li><strong>업무 담당</strong>: 조사1국 최준 선임조사역 / ☎ 02-3145-5543</li><li><strong>계약 담당</strong>: 정보화전략국 김수영 선임조사역 / ☎ 02-3145-5392</li><li><strong>이메일</strong>: 제안요청서 내 명시 없음</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>기술·비즈니스 요구</strong>: On-Premise 생성형 AI(한국어 상용 LLM 30B+ 2종, MCP·Function Calling, 64K+ 컨텍스트), RAG(하이브리드·Advanced RAG), AI Agent·Agentic RAG, 시장감시·연계성분석·보고서·판례·STT·제보민원 Scoring AI 서비스, 現 조사시스템 SSO·권한 연동, 프롬프트 인젝션 방지, AI 응답 90% 3초 이내·동시 100건+, Oracle 19c·전자정부FW·넥사크로 기반 개발</li><li><strong>통합발주 S/W(구매 명시)</strong>:</li><li>LLM 소프트웨어 — 1식 (ECR-008, 운영·개발 서버 설치 수량에 맞는 라이선스, 한국어 상용 파운데이션 모델 30B 이상 2종 이상)</li><li>GPU 서버(H200 NVL GPU × 4ea, CPU 16Core×2, RAM DDR5 64GB×8, NVMe OS 960GB×2+DATA 1.92TB×5) — 2대 (ECR-007, LLM 2대 운영 구성)</li><li>GPU 서버 3Y TCE(Tech Care Essential Service) — GPU 서버 2대분 (ECR-007)</li><li>GPU 서버 설치용 표준랙(42U) — GPU 서버 구성에 포함 (ECR-007)</li><li><strong>기술적용계획표·As-Is 표준 S/W(호환·준수)</strong>: Oracle 19c, WebtoB 5, JEUS 8 이상, 프로리눅스 8 이상, 넥사크로 17, Dev-Eye, SVN, SPARROW, erwin, Enterprise Architect</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>S/W 공급 중심 아님</strong>: 본 사업은 AI 모델·조사시스템 개발 용역이 주체이며, Red Hat 제품 단독 납품 구조가 아님 — 수행사가 HW·상용 SW 일체를 포함 제안·납품</li><li><strong>경쟁·고정 스택 명시</strong>: OS 프로리눅스 8+(티맥스), DBMS Oracle 19c, WAS WebtoB 5·JEUS 8+, UI 넥사크로 17 — JBoss·RHEL 전면 대체 전략과 충돌</li><li><strong>LLM S/W 직접 지정</strong>: ECR-008에서 LLM 1식을 한국어 상용 파운데이션 모델 2종으로 명시, 오픈소스 파인튜닝 모델·외부 API(ChatGPT·Gemini) 제안 불가 — Red Hat AI/InstructLab 단독 LLM 공급 직접 해당성 낮음</li><li><strong>GPU·LLM 벤더 종속</strong>: NVIDIA H200 GPU 서버 및 국내 검증 LLM 중심 설계로 AI 플랫폼 선점 여지 제한</li><li><strong>개발 프레임워크 고정</strong>: 금감원 표준·전자정부 프레임워크·기존 불공정거래 조사시스템 완벽 호환(SSO 포함) 필수 — 기존 미들웨어·OS 교체 시 발주처 교체 요구·리스크 큼</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>RHEL</strong>: 2단계 신규 GPU 서버 2대 OS로 RHEL 제안 가능(ECR-001 윈백·동급 이상 제안 허용, AI·CUDA 워크로드 레퍼런스 활용) — 現 애플리케이션 서버는 프로리눅스 유지 전제</li><li><strong>OpenShift/OpenShift AI</strong>: On-Premise LLM·RAG·다중 모델 동시 운영, GPU 스케줄링, MLOps·모델 서비스 API(SFR-AIS-014) 인프라로 제안 — 컨테이너 기반 AI 서비스 통합·확장성(ECR-001 수평·수직 확장) 요구와 부합</li><li><strong>Ansible</strong>: GPU·LLM·벡터DB·RAG 파이프라인 배포·구성 자동화, 이중화·장애복구 절차(SFR-AIS-001) 및 다수 서버 라이선스·패치 관리에 적합</li><li><strong>기술 요구 정합</strong>: AI Agent·REST API·권한·로그·성능 모니터링(SFR-AIS-016), Kubernetes/IaaS/PaaS 개방형 기술(기술적용계획표), On-Premise 보안·접근통제(SER-004) — Red Hat 플랫폼 강점과 일치하는 AI 인프라·운영 자동화 레이어</li><li><strong>제안 전략</strong>: SI·GPU·LLM 주계약자와 파트너십으로 AI 인프라·컨테이너 플랫폼·자동화 하위 공급 또는 기술지원 확약서 제출(ECR-001, PMR-004) 형태 접근</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
