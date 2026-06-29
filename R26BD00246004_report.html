@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00246004 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>제주국제자유도시개발센터 JDC 사내 생성형 AI 언어모델(sLLM) 구축 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>Rocky Linux OS 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>제주국제자유도시개발센터(JDC) 내부 전산망에 생성형 AI 언어모델(sLLM) 기반 인프라·서비스를 구축하여, 보안·개인정보 제약으로 외부 공개 AI를 사용할 수 없는 기관 자료를 활용한 AI 업무 지원 체계를 마련하는 사업</li><li>전자결재·전사 ECM 등 내부 산출물(약 3.8TB) 기반 RAG 문서검색, 도메인별 업무 챗봇, AI 에이전트 서비스를 구현하고 업무 효율·정확성·생산성을 제고하는 것이 핵심 목표</li><li>과업목표: "JDC에 최적화된 생성형 AI를 통한 업무 효율화" — 추론·임베딩 서버 구축, 도메인 특화 모델, 레거시 연동, Agent 확장 기반 조성</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li>**사업 예산**: 799,720,000원(부가세 포함), 20억 미만 SW사업, 대기업·중견기업 참여 제한</li><li>**사업 기간**: 계약체결일로부터 6개월(착수~M+5 안정화, 1차 시범운영 착수 후 4개월 내, 하자보수 1년)</li><li>**사업 범위**: GPU 추론·임베딩 서버, WEB/WAS/DB 서버, RAG 파이프라인, LLMOps, 도메인 챗봇, AI 에이전트, ECM·SSO·SIEM 연동, 보안·모니터링 체계</li><li>**계약방법**: 제한경쟁입찰, 협상에 의한 계약체결(기술 90% + 가격 10%)</li><li>**설치 장소**: 발주기관 전산실(목동 KT IDC), WEB/WAS/DB는 발주처 클라우드 자원 활용</li><li>**주요 일정**: M(착수·인프라 발주) → M+1~M+2(인프ra·sLLM 구축) → M+3(포털·시범오픈) → M+4(시험·연동) → M+5(안정화), '26년 내 서비스 오픈 목표</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li>주관기관: 제주국제자유도시개발센터(JDC)</li><li>김형범 차장 / 스마트융합처(시스템운영팀) / 064-797-5771(팩스 064-797-5502) / heroed@jdcenter.com</li><li>김동철 과장 / 스마트융합처(시스템운영팀) / 064-797-5554(문의 064-797-5475) / dckim@jdcenter.com</li><li>사업 책임자: 스마트융합처장, 사업 관리: 스마트융합처(시스템운영팀), 보안 지원: 스마트융합처(사이버보안팀)</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li>**기술·기능 요구**: RAG 기반 지능형 검색, 30B 이상·120B 이상 한국어 sLLM 2종 이상, LLMOps·GPU 오케스트레이션, 도메인별 챗봇(개발·면세·예산·안전·계약·인사 등), MCP 기반 AI 에이전트·Agent Builder, ECM·SSO·DRM·SIEM 연동, OCR·멀티모달, Context 128K 이상</li><li>**성능 요구**: 동시 사용자 40명+, 20TPS, TTFT p95 2초, 월간 가용성 99.5%, GPU 효율 60%+, RAG Faithfulness 0.9+, 환각률 5% 이하, F1 0.8+</li><li>**통합발주 S/W(수량)** — ECR 기준 명시 품목:
+                    <ul>
+                        <li>Linux Rocky 9.X 이상 (LLM 추론 서버 OS): 1식</li>
+                        <li>Linux Rocky 9.X 이상 (임베딩 서버 OS): 1식</li>
+                        <li>Linux Rocky 9.X 이상 (WEB 서버 OS): 2식</li>
+                        <li>Linux Rocky 9.X 이상 (WAS 서버 OS): 2식</li>
+                        <li>Linux Rocky 9.X 이상 (DB 서버 OS): 2식</li>
+                        <li>PostgreSQL 18.X 또는 MySQL 8.4 LTS (DBMS): 2식</li>
+                        <li>LLM 학습·운영 SW 일체(DL 프레임워크, GPU 관련 SW, 노코딩 LLMOps 솔루션 등): 과업 범위 포함(수량 별도 미기재)</li>
+                        <li>한글 형태소 분석기, 토크나이저·임베딩 모델, OCR 엔진: 과업 범위 포함(수량 별도 미기재)</li>
+                    </ul>
+                </li><li>**직접구매 제외**: 붙임5에 따라 '생성형 AI 언어모델(sLLM) 1식'은 분리발주 제외·통합발주 대상(AI 구성요소 통합 필요 사유)</li><li>**H/W 주요 규격**: LLM 추론서버(NVIDIA H200 141GB×2, 512GB RAM), 임베딩서버(NVIDIA RTX PRO 6000 96GB×2), WEB×2, WAS×2, DB×2</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li>**경쟁 OS 명시**: ECR-005·006·007에서 모든 서버 OS를 'Linux Rocky 9.X 이상'으로 명시 — Rocky Linux는 RHEL 호환 재빌드 배포판으로 RHEL 직접 납품·구독과 경쟁 관계</li><li>**DBMS 지정**: PostgreSQL 18.X 또는 MySQL 8.4 LTS만 명시, Red Hat DB/JBoss 미요구</li><li>**통합발주 구조**: 소프트웨어 분리발주 예외 사업으로 AI 플랫폼·LLM·LLMOps·서버 SW가 용역사 통합 제안·납품 대상 — Red Hat 단독 S/W 조달쇼핑몰·직접구매 경로 없음</li><li>**사업 성격**: 핵심 과업은 자체 sLLM·RAG·Agent 플랫폼 구축(커스텀 AI 솔루션)으로, Red Hat 미들웨어·JBoss 중심 사업 아님</li><li>**가상화 언급**: GPU 서버 요구에 VMware 등 OS 호환성 언급 — Red Hat OpenShift Virtualization 등과 무관한 범용 호환 요건</li><li>**평가 초점**: LLMOps 구체성, 모델 성능·GPU 효율, RAG 품질 등 AI 역량 중심 평가 — Red Hat 제품 단독 납품 평가 항목 없음</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li>**RHEL 대체 제안**: ECR-001 "동등 이상 보장" 및 COR 특정규격 명시 금지에 근거, Rocky 9.X 대신 RHEL 9 구독·기술지원·하자보수 확약서 제출 형태로 OS 대체 제안 가능(단, 발주처 협의 필요)</li><li>**Ansible**: GPU·WEB·WAS·DB 다계층 인프라 자동 배포, Dev/Test/Prod 환경 분리(ECR-004), 패치·보안취약점 조치(SER-003), 장애 대응·백업(PSR-003) 자동화에 Ansible Automation Platform 적용 가능</li><li>**OpenShift / OpenShift AI**: SFR-002 AI 모델 오케스트레이션·GPU 스케줄링, SFR-007 AI 플랫form 운영·모니터링, SFR-008 LLM-hub·Agent 서비스, LLMOps·컨테이너 기반 MLOps 요구와 OpenShift AI·Model Serving·GPU 공유 아키텍처 부합</li><li>**엔터프라이즈 Linux 지원**: PER-004 2년 SW 기술 최신성·라이선스·하자보수 요구에 RHEL 서브스크립션·RHSA 보안패치 체계로 대응 가능</li><li>**제안 전략**: Red Hat 단독 입찰보다 AI SI·GPU HW 벤더·LLM 솔루션사와 공동수급(최대 5사) 또는 하도급(50% 이내) 형태로 인프라·자동화·컨테이ner 플랫폼 레이어 공급이 현실적</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
