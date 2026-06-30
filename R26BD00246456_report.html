@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00246456 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>㈜유엔이_데이터 밸류체인 플랫폼 구축 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>쿠버네티스·RHEL 적용 여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>「2023년 목포시 강소형 스마트시티 조성사업」의 일환으로, 목포벤처문화산업지원센터에 데이터 밸류체인 플랫폼(HW·서버실·SW)을 통합 구축하는 용역이다.</li><li>스마트시티 운영 서비스(전기셔틀·버스관제·탄소중립형 버스쉼터·업사이클링 등) 및 공공데이터를 NGSI-LD 기반으로 수집·연계·분석·개방하고, 해남 광역 데이터 허브와 연계하여 도시문제 해결 및 정책 활용 기반을 마련하는 것이 핵심 목표이다.</li><li>해양환경·기후위기·지역소멸 등 목포시 도시과제를 데이터 기반으로 체계화하고, 친환경 스마트 해양도시 조성을 지원한다.</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li>**사업 예산**: 금 18억 9,805만 원(￦1,898,050,000, VAT 포함)</li><li>**사업 기간**: 계약체결일 ~ 2026. 11. 30.(시스템 구축 120일, 시범운영 30일 포함)</li><li>**사업 범위**: 목포벤처문화산업지원센터 장비실(UPS·소화·공조) 구축, 서버·네트워크·보안 장비 구매·설치, 데이터 밸류체인 플랫폼 SW 개발(코어·API Gateway·통합보안·수집·마켓플레이스·광역허브 연계), 통합 모니터링·대시보드</li><li>**계약방법**: 제한(총액)경쟁, 협상에 의한 계약(기술 90점·가격 10점)</li><li>**주요 일정**: 계약 후 착수보고 → 시스템 구축(120일) → 테스트·시범운영(30일) → 완료·검수(2026.11.30.까지)</li><li>**입찰참가**: 중소·소상공인, SW·정통·기계설비·소방 면허 등 복합 자격, 대기업·중견 SW사업자 참여 불가, 공동수급 3사 이내 가능</li><li>**유지보수**: SW 하자담보 1년, 무상 유지보수 3년(제안금액 포함), H/W 하자보증 36개월</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li>발주기관: ㈜유엔이(「2023년 목포시 강소형 스마트시티 조성사업」 수행기관)</li><li>과제 책임자: 사업관리팀 이사 이경한 / 010-9967-5884 / kyran@unes.co.kr</li><li>과제 담당자: 사업관리팀 과장 원승혁 / 010-8555-0591, 070-4105-6900 / minewo@unes.co.kr</li><li>입찰·계약 문의: 사업관리팀 원승혁 과장(070-4105-6900, minewo@unes.co.kr)</li><li>전자입찰: 조달청 1588-0800 / http://www.pps.go.kr</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li>**기술·기능 요구**: NGSI-LD 기반 데이터 코어, API Gateway(라우팅·토큰검증), OAuth 2.0/JWT 통합 인증·인가, Open API·oneM2M·FIWARE Context Broker·스마트시티 통합플랫폼 API 데이터 수집, 데이터 마켓플레이스·통합 대시보드, 해남 광역 데이터 허브 연계, HTML5·웹표준·웹접근성 준수</li><li>**인프라·플랫폼 요구(SFR-011)**: 표준 쿠버네티스 기반 컨테이너·오케스트레이션, 멀티/하이브리드 클러스터 통합관리, Helm 차트, PV·Ingress·HPA·롤링업데이트, 오프라인 설치, RBAC·감사로그, 통합 모니터링·로그 분석(GS/CNCF 인증 산출물 요구)</li><li>**서버·장비**: 외부팜·내부팜·DB 서버 각 3대(고사양 x86), L3·집선 스위치, IPS·방화벽·VPN·WAF·DDoS 등 보안장비, 서버 OS는 제안사가 Ubuntu·Redhat·Oracle 중 제안</li><li>**품질·보안**: TTA 스마트시티 데이터허브 시험인증서, OWASP·국정원 8대 취약점, CC/GS 인증 보안장비, 전자정부 표준프레임워크·Spring Boot 등 호환</li><li>**통합발주 S/W(직접구매 제외, 수량 명시)**:
+                    <ul>
+                        <li>유닉스/리눅스 서버용 보안솔루션(3년): 45조(copy)</li>
+                        <li>패치관리솔루션(3년): 3조(copy)</li>
+                        <li>PC백신(3년): 3조(copy)</li>
+                        <li>Windows 11 Home(운영체제): 1조</li>
+                    </ul>
+                </li><li>본 사업은 SW개발·장비구매·정통공사가 혼재된 통합발주이며, 상기 S/W는 조달쇼핑몰 직접구매가 아닌 용역 일괄구축 대상이다.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li>**S/W 공급 구조**: Red Hat 제품 단독 조달 사업이 아니라, 중소 SW·정통·설비 업체가 수행하는 통합 구축·개발 용역이다. Red Hat은 납품 S/W가 아닌 제안사 선정 OS·플랫폼 후보로만 등장한다.</li><li>**경쟁·대체 OS 명시**: ECR-003에서 서버 OS를 "Ubuntu, Redhat, Oracle" 중 제안사가 선택하도록 규정하여 특정 Red Hat 제품(RHEL) 지정이 없다.</li><li>**상용 보안 S/W 고정**: 유닉스/리눅스 서버용 보안솔루션 45조, 패치관리 3조, PC백신 3조, Windows 11 Home 1조 등은 통합발주 품목으로 명시되어 Red Hat 보안·관리 제품(Ansible 외 별도 S/W) 직접 대체·납품 경로가 제한적이다.</li><li>**플랫폼·미들웨어**: NGSI-LD·FIWARE·Spring OAuth/JWT·전자정부 표준프레임워크 등 자체/오픈소스 기반 커스텀 개발이 중심이며, JBoss EAP 등 미들웨어 지정은 없다.</li><li>**입찰 참가 제약**: 20억 미만 SW사업으로 대기업·중견 SW사업자 참여 불가 → Red Hat은 직접 입찰 주체가 아니며, 파트너(중소 SI) 경유 간접 제안만 가능하다.</li><li>**평가 가점**: TTA 스마트시티 데이터허브 인증(3점) 등 Red Hat 인증과 무관한 정량 항목이 있어, Red Hat 단독으로 평가 우위 확보가 어렵다.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li>**RHEL**: DB·외부팜·내부팜 서버 9대 + OS 라이선스 제안 필요(ECR-003). RHEL을 안정적 엔터프라이즈 Linux로 제안 가능하며, Ubuntu·Oracle Linux와 경쟁한다.</li><li>**Red Hat OpenShift**: SFR-011의 쿠버네티스·멀티클러스터·Helm·RBAC·오프라인 설치·통합 모니터링·GS/CNCF 인증 요구와 높은 정합성. OpenShift Container Platform 또는 OpenShift Kubernetes Engine으로 플랫폼 레이어 제안 가능.</li><li>**Red Hat Ansible Automation Platform**: 클러스터 설치 자동화, 노드 증설·교체, 보안패치·설정관리, 폐쇄망 오프라인 배포 등 SFR-011·운영 요구에 부합하는 자동화 레이어로 제안 가능(단, RFP의 패치관리솔루션 3조와 역할 구분 필요).</li><li>**컨테이너·DevOps**: BaseImage(Linux), Java·Python·Node.js, Spring Boot 호환, 프라이빗 레지스트리·이미지 취약점 점검 요구 → OpenShift + Quay(또는 레드햇 레지스트리) 연계 제안 가능.</li><li>**제안 전략**: 중소 SW·정통 공동수급 SI 파트너와 RHEL+OpenShift(+Ansible) 번들 제안, TTA 데이터허브 인증·NGSI-LD 연계 아키텍처에서 Red Hat 기반 PaaS 레퍼런스를 차별화 포인트로 활용 가능.</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

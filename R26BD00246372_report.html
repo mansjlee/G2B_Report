@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00246372 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>우정정보관리원_2026년 우편 업무용 전산장비 도입 및 설치 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>Windows PC·주변기기 HW 납품 사업</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>우정 관서에서 운용 중인 노후화된 우편 전산장비를 신규 장비로 교체·보급하여 우편정보시스템(PostNet, ePost 등) 기반 우편서비스 안정성을 확보하는 사업</li><li>창구·집배 현장의 고객 대응 및 직원 근무환경 개선을 위한 전산장비(데스크톱, 모니터, 전자저울, 결제단말기, 각종 프린터 등) 도입, 설치, 철거 및 1년 유지관리 수행</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li>**사업 예산**: 4,132,000,000원 (우편업무정보화 임차료, VAT 포함)</li><li>**사업 기간**: 계약일로부터 2026년 12월 10일까지 (유지관리 1년 포함)</li><li>**사업 범위**: 설치 8종 8,622대(데스크톱 164, 모니터 4,814, 전자저울 1,328, 결제서명통합패드 331, 기표지프린터 766, 국명표프린터 46, 영수증프린터 122, 통합프린터 1,051), 철거 10종 9,452대, 미사용·재사용 장비 재배치</li><li>**주요 일정**: 입찰공고 2026년 7월, 사업자 선정·계약 2026년 8월, 사업 완료 2026년 12월 10일</li><li>**입찰 방식**: 협상에 의한 계약체결 (기술평가 90%, 가격평가 10%, KTL BMT 시험결과서 필수)</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li>**담당 부서**: 우정정보관리원 정보기반과 정보자원관리팀</li><li>**담당자**: 황영아 주무관</li><li>**연락처**: TEL 061-338-2164, FAX 0505-005-1033</li><li>**이메일**: hya21@korea.kr</li><li>**KTL 시험 문의**: 강병일 선임연구원 (031-500-0433, bmt@ktl.re.kr)</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li>**기술 요구사항**: 데스크톱(14Core CPU, DDR5 16GB, Q870/X870E, 512GB NVMe SSD), 모니터(24인치 FHD), 전자저울(PostNet 연동), 결제서명통합패드(VAN·여신금융협회 인증), 각종 프린터(PostNet·ePost 연동) 등 KTL 규격·성능 시험 합격 필수</li><li>**인터페이스**: 우편정보시스템(PostNet, 인터넷우체국, 계약고객전용시스템) 연계, ActiveX 제거·웹표준 준수, 기존 장비·OS 환경 호환</li><li>**운영·관리**: 전국 우체국 설치·철거, ITRMS 연동, 장애처리 3시간 이내, 예비장비 확보(데스크톱 1%, 통합프린터·결제패드 5%, 기타 3%), 반기 정기점검, 콜센터 운영</li><li>**구매 S/W (통합발주, 수량 명시)**:
+                    <ul>
+                        <li>한글 Windows 11 Pro 64bit: 164식 (데스크톱 IR-ECR-001 납품 OS, 세부버전 별도협의)</li>
+                    </ul>
+                </li><li>**발주자 제공 S/W (수주자 구매 아님)**: V3 Internet Security, APC(Ahnlab Policy Agent), NAC, DLP, 내PC지키미, 우편 업무 프로그램(PostNet 등), 한컴오피스, 아크로벳리더, MS오피스 호환기능팩</li><li>**프린터 지원 OS (호환 요건, 별도 S/W 구매 수량 미명시)**: 기표지·국명표·영수증 프린터 Windows 11, 통합프린터 Windows 10/11</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li>**S/W 공급 중심 사업 아님**: 본 사업은 전산장비(HW) 도입·설치·철거·유지관리가 핵심이며, Red Hat이 주력하는 서버 OS·컨테이너·미들웨어·자동화 플랫폼 구매·구축 과업이 없음</li><li>**Windows OS 명시**: 데스크톱 OS는 '한글 Windows 11 Pro 64bit'로 규격 고정(IR-ECR-001), RHEL·Rocky Linux 등 Linux 데스크톱 대체 불가</li><li>**경쟁/대체 제품 환경**: Microsoft Windows 11/10, AhnLab V3·APC 보안SW, MS오피스 호환, 한컴오피스 등 Microsoft·AhnLab 생태계 기반 클라이언트 환경</li><li>**서버·클라우드·미들웨어 요구 없음**: OpenShift, Ansible Automation Platform, JBoss EAP, RHEL 서버 등 Red Hat 제품군이 적용될 인프라·애플리케이션 플랫폼 요구사항 부재</li><li>**입찰 참가 자격**: 소프트웨어사업자(1468) 및 정보통신공사업(0036) 자격, KTL BMT 시험·장비 제조/공급 역량이 핵심 평가 요소(장비구성 10점, KTL 시험 5점)</li><li>**기술적용계획표 Linux 항목**: Linux는 서버용(개방형) OS 참고 기술로만 언급되며, 실제 납품 장비 OS는 Windows로 확정</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li>**직접 제안 가능성 극히 제한**: Red Hat 제품을 독립 과업으로 제안할 수 있는 RFP 요구사항·구매 품목·평가 항목이 존재하지 않음</li><li>**간접 협력 가능성(매우 낮음)**: HW·SI 수행사와 공동수급·하도급 형태로 IT프로젝트관리·기술지원 인력 투입은 가능하나, Red Hat 제품 판매·라이선스 공급과는 무관</li><li>**향후 확장 시나리오**: 우편정보시스템 고도화 시 API·펌웨어 연동 지원 요구(IR-PSR-001)가 있으나, 이는 주변기기 제조사·수주자 영역이며 Red Hat 스택과 직접 연관 없음</li><li>**Ansible**: 대규모 PC·프린터 설치 자동화에 이론적 활용 가능하나, RFP에 자동화 도구·Red Hat Ansible 요구사항 미명시로 제안 근거 부족</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
