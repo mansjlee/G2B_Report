@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00248738 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국부동산원_2026년 부동산공시가격산정시스템 유지관리 및 기능개선 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>유지관리용역, S/W신규구매 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>국토교통부 위탁사업인 부동산공시가격산정시스템(KOREPS)의 안정적 유지관리, 전산지원센터 운영, 기능개선 용역</li><li>KRAS에서 분리·개편된 KOREPS(2024.1 정식운영)의 전국 개별공시지가·개별주택가격 공시업무(산정·검증·민원) 지원</li><li>법·제도·지침 변경사항 즉시 반영, 시스템 오류·장애 즉시 조치, 공시가격 정확성·신뢰성 제고</li><li>지자체 공시업무 담당자 및 국토교통부·한국부동산원 등 사용자·관리자 교육·운영 지원</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 1,081,300,000원(VAT 포함, 기초금액 동일), 국토교통부 재위탁 사업</li><li><strong>사업 기간</strong>: 2026년 1월 1일 ~ 2026년 12월 31일(계약 지연 시 일할 연장 가능)</li><li><strong>사업 범위</strong>: 사업·운영관리 지원, 시스템·데이터 유지관리, 전산지원센터 운영·교육, 시스템 기능개선·구조개선(SFR 14건 등 총 115건 요구사항)</li><li><strong>주요 일정</strong>: 2025.12~2026.1 사업자 선정·계약, 2026.1~12 사업 수행(유지관리·기능개선·전산지원·교육·법제도 반영), 착수·중간·완료 보고회</li><li><strong>입찰방식</strong>: 제한경쟁입찰, 협상에 의한 계약, 기술(90%):가격(10%), 대기업 참여 제한, SW분리발주 미대상</li><li><strong>투입인력</strong>: PM 상주 필수, 유지관리 7M/M 이상·전산지원 3M/M 이상(PM 제외 월평균)</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>주관기관</strong>: 한국부동산원</li><li><strong>부장 배성완</strong>: 053-663-8210, k25503@reb.or.kr</li><li><strong>팀장 김태운</strong>: 053-663-8214, ktw4528@reb.or.kr</li><li><strong>과장 김옥산</strong>: 053-663-8216, k25859@reb.or.kr</li><li><strong>대리 김남이</strong>: 053-663-8218, k26580@reb.or.kr</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>기능요구(SFR 14건)</strong>: 시·도단위 조회·산정기능 개선, DB구조변경(동기화 솔루션), 공시업무 일정관리, 대용량 작업 배치 전환, 영문 확인서 발급, 주택·공시지가·GIS·연계 기능 개선 등</li><li><strong>비기능 요구</strong>: 보안(SER 25), 품질(QUR 10), 프로젝트관리(PMR 12), 유지관리(MPR 14), 데이터(DAR 8), 성능(PER 6), 테스트(TER 4) 등 합계 115건</li><li><strong>운영·SLA</strong>: 24시간 무중단 운영, 1급 장애 6시간·2급 3시간 내 복구, 온라인 3초·배치 3분 응답, 하자보수 1년</li><li><strong>기술 제약</strong>: 전자정부표준프레임워크, 운영중 시스템 호환, COR-013, G-클라우드 인프라 증설·분리 대응, Jenkins 배포자동화, GitHub 형상관리</li><li><strong>현행 유지관리 대상 S/W(수량)</strong>:</li><li>JBoss EAP 7대, JBoss EWS 24대</li><li>Tibero 4대, PostgreSQL 2대</li><li>ESB MI(MIGW·Advance·Manage) 11대</li><li>RealGrid 1식, PrivacyDB 1식, GeoServer 2식, ERS 8.0 2식</li><li>Jenkins 1식, GitHub 1식, Scouter 1식, Maxgauge(DPM) 4식</li><li>Midas Integration ESB v7.0 5식</li><li><strong>현행 OS/HW</strong>: Linux CentOS 8(웹·WAS·GISDB·연계DB), UNIX IBM AIX(DB 2대), Hitachi 스토리지 등 총 121대</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>S/W 공급 미포함</strong>: 본 사업은 유지관리·기능개선 용역으로 신규 S/W 조달·통합발주 항목 없음, 상용 S/W 유지관리 지원만 요구</li><li><strong>경쟁·기존 스택 고정</strong>: CentOS 8, IBM AIX, Tibero, PostgreSQL, JBoss EAP/EWS, Jenkins, GitHub 등 현행 구성 유지·운영 전제</li><li><strong>SW분리발주 미대상</strong>: 기술대가 90% 용역 중심 사업으로 Red Hat 제품 단독 납품·라이선스 발주 구조 아님</li><li><strong>표준프레임워크·호환성 제약</strong>: COR-012 전자정부표준프레임워크, COR-013 운영중 시스템 호환 의무로 기존 아키텍처 변경·대체 제한</li><li><strong>하도급·참여 제한</strong>: 대기업 참여 제한, 하도급 50% 초과 불가, 물품(상용SW) 구매는 하도급 산정 제외</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>JBoss EAP/EWS</strong>: 현행 WAS 31대(JBoss EAP 7 + EWS 24) 운영·패치·장애 대응 구간에서 Red Hat 미들웨어 구독·기술지원 연계 가능(간접)</li><li><strong>Ansible</strong>: MPR-004·MPR-007 배포자동화(Jenkins), 서버 증설·분리 시 구성관리·배포 프로세스 개선 제안 여지</li><li><strong>RHEL 전환</strong>: CentOS 8 EOL 대응, G-클라우드 Linux 서버 48대 유지관리 맥락에서 RHEL 마이그레이션·서브스크립션은 별도 과제로 접근 가능(본 RFP 직접 구매 아님)</li><li><strong>Linux 운영 역량</strong>: HW·SW 유지관리, 취약점 점검(SER-025, QUR-004), 24시간 가용성·장애복구 요구와 RHEL 운영·보안 강점 부합(용역 수행 역량 제안)</li><li><strong>간접 채널</strong>: 낙찰 SI사업자·하도급 파트너로 JBoss/RHEL/Ansible 기술지원·교육·컨설팅 공급(본 입찰 Red Hat 직접 참여는 불가)</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

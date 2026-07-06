@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00248857 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국에너지공단_2026년 에너지바우처 시스템 기능개발 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>앱개발용역 SW미포함</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>한국에너지공단이 주관하는 에너지바우처(행복이음·전자바우처·업무포털) 관련 시스템의 기능 개발 및 고도화 용역으로, 2026년 제도개선(연탄전환 지원, 등유·LPG 확대, 자동전환, 사전 예외지급 등)을 IT 시스템에 반영하고 민원 최소화·개인정보보호 강화·운영환경 최적화를 목표로 함</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 1,061,870,000원(부가가치세 포함)</li><li><strong>사업 기간</strong>: 계약체결일로부터 360일 이내</li><li><strong>사업 범위</strong>: 연탄전환·등유/LPG 지원 시스템 개발, 카드사(현대카드) 추가·정산방식 변경, 자동전환·예외지급·통계·챗봇·보안 기능 개발, 시스템 운영지원 및 교육(연 1회 이상)</li><li><strong>계약방법</strong>: 제한경쟁(총액) / 협상에 의한 계약</li><li><strong>주요 일정</strong>: M+1 용역업체 선정·계약·요구사항 분석 → M+3~M+9 기능개선·테스트·적용·안정화 → M+11 데이터 품질관리·운영지원·최종 결과보고</li><li><strong>평가</strong>: 기술능력 90% + 입찰가격 10%(기술 85% 미만 협상 제외), 하도급 불허, 중소 SW사업자만 참가 가능(20억 미만)</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>담당부서</strong>: 에너지복지처</li><li><strong>직위/성명</strong>: 차장 김만영</li><li><strong>전화번호</strong>: 052-920-0543</li><li><strong>이메일</strong>: 제안요청서에 명시되지 않음</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>기능(SFR 10건)</strong>: 연탄전환 지원 통합시스템, 대상자·지자체 소통(문자·알림·학습형 챗봇), 신규 카드사 연계, 바우처 정산·고지서 차감 방식 개편, 자동전환 자동화, 등유/LPG 확대 지원, 통계·홈페이지·포털 개선, 운영지원, 신청·사용정보 연계</li><li><strong>기술·개발</strong>: 전자정부 표준프레임워크·공통컴포넌트, Java/JSP(HTML5), 기존 시스템(행복이음·전자바우처·업무포털) 호환, SSO·타기관(행복이음·전자바우처·인사DB 등) 연계, RESTful/SOAP 웹서비스, Oracle DB, 3초 이내 응답·동시사용자 100명 이상</li><li><strong>보안·품질</strong>: 개인정보 암호화·GPKI/I-PIN/SSL, 시큐어코딩, PSM 이상탐지, 접근권한·중복로그인 방지, 웹표준·웹접근성(K-WAH 95% 이상), 24시간 운영·백업·장애복구</li><li><strong>데이터·관리</strong>: 범정부·기후부 데이터 표준, ERD·데이터 이관·품질관리, EA 산출물(BA/AA/DA/TA), SW사업정보·기능점수 제출, 감리 대응</li><li><strong>통합발주 S/W(현행 시스템 기준, 수량)</strong>: WebToB5 2식, JEUS8 2식, ORACLE 19c 1식 ※본 용역은 SW 신규 구매가 아닌 기존 플랫폼 위 기능개발·운영지원 중심</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>S/W 공급 미포함</strong>: 본 사업은 정보시스템 기능개발·고도화·운영지원 용역이며, Red Hat 제품(RHEL·OpenShift·Ansible 등)의 조달·도입·라이선스 공급 범위가 명시되지 않음</li><li><strong>경쟁·기존 스택 고정</strong>: 현행 시스템에 JEUS8(WAS), WebToB5(웹서버), ORACLE 19c(DBMS)가 명시되어 있어 Tmax·Oracle 기반 유지가 전제됨</li><li><strong>개발 제약</strong>: COR-004에 웹은 JSP, 연계는 JAVA(HTML5), COR-002에 전자정부 표준프레임워크 적용 원칙 → 기존 공공 SI 아키텍처 변경 여지 없음</li><li><strong>기존 호환 의무</strong>: PER-001·COR-006에 기존 시스템 구조·호환성·운영 영향 최소화 요구 → 미들웨어·DB·OS 전환 제안 곤란</li><li><strong>하도급 불허·중소 SW사업자 제한</strong>: Red Hat이 직접 SI 수행 주체가 될 수 없고, 대형 통합 SI가 아닌 중소 SW업체 대상 사업</li><li><strong>인프라 변경 없음</strong>: HW는 웹/WAS/DB 가상서버 및 L4(RADWARE ALTEON)로 기재되어 있으나 본 과업은 애플리케이션 기능개발에 한정</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>간접·제한적</strong>: 기술적용계획표에 Linux·클라우드(IaaS/PaaS/SaaS) 항목이 '적용'으로 표기되어 있으나, 현행 JEUS·Oracle·WebToB 구성과 충돌하며 본 RFP 과업범위에 OS·컨테이너·클라우드 전환 요구는 없음</li><li><strong>Ansible</strong>: 자동전환·배치·운영 자동화 등 운영 효율화를 제안서 부가 기술로 언급 가능하나, RFP 필수 요구사항·평가항목에 포함되지 않아 실질 채택 가능성 낮음</li><li><strong>RHEL/OpenShift</strong>: 가상화 서버 OS·컨테이너 플랫폼 전환 시 Red Hat 스택 적용 여지는 이론상 존재하나, 기존 JEUS·Oracle 호환·무중단 운영 제약으로 본 사업 범위 내 직접 제안은 부적합</li><li><strong>JBoss</strong>: COR-004의 JAVA/JSP 개발 환경과 WAS 교체 시 대안 가능성은 있으나, JEUS8 현행 운영 및 기존시스템 호환 요구로 교체 제안은 현실성 낮음</li><li><strong>결론</strong>: Red Hat 제품 직접 판매·라이선스 제안 기회는 거의 없으며, 협력사(SI) 경유 간접 기술 자문·아키텍처 제안 수준만 검토 가능</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

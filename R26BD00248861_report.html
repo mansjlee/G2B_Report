@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00248861 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국산업인력공단_직업훈련 AI 심사평가시스템 구축 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>AI·컨테이너·Linux 선택 여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>한국산업인력공단의 사업주 직업훈련 심사평가 업무를 생성형 AI 기반으로 자동화·지원하는 「직업훈련 AI 심사평가시스템」을 신규 구축하는 소프트웨어 개발 사업이다.</li><li>과정심사, NCS 분류, 훈련대상·직무·인프라 적정성 판단, 실시신고·수료·출결·비용지급 심사 등 반복 업무를 LLM/VLM/RAG로 자동화하고 AI-전문가 협업 체계를 구현하는 것이 핵심 목표이다.</li><li>국가정보자원관리원 대구센터 클라우드(PPP) 환경에 맞춰 전자정부프레임워크 기반 웹/WAS/DB·AI 플랫폼을 구축하고, HRD-Net·고용보험 DB 등 외부 연계와 국정원·공단 보안정책을 준수하는 내부 구축형 생성형 AI를 도입한다.</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 998,442천원(VAT 포함, 약 9.98억원)</li><li><strong>사업 기간</strong>: 계약체결 후 착수일로부터 150일(5개월)</li><li><strong>사업 범위</strong>: AI 심사플랫폼(23개 기능), 클라우드 AI 인프라, 대규모 LLM(70B+ 권장), RAG·벡터DB·온톨로지·지식그래프, 문서 분석·VLM, 데이터 통합·연계(HRD-Net 등), 보안·감리·하자보수(12개월) 포함 총 96건 요구사항</li><li><strong>입찰·계약</strong>: 제한경쟁입찰, 협상에 의한 계약체결, 기술평가 90% + 가격 10%, 20억원 미만·중소 SW사업자 참여 제한</li><li><strong>주요 일정</strong>: 계약 후 10일 이내 착수·수행계획서(WBS) 제출 → 사업준비·착수보고 → 분석/설계 → AI심사시스템·LLM·AI인프라 구축 → 중간보고 → 완료보고·검수(14일) → 서비스 개시·감리</li><li><strong>운영 환경</strong>: 국가정보자원관리원 클라우드(대구센터) PPP, 3개 분과(집체·원격·사업주) 표준 아키텍처/API/데이터 표준 준수</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>주관기관</strong>: 한국산업인력공단 기업지원부</li><li><strong>이상민</strong> (기업지원부) / TEL: 052-714-8272</li><li><strong>황자은</strong> (기업지원부) / TEL: 052-714-8249</li><li><strong>협업기관</strong>: 한국고용정보원(능력개발서비스팀), 고용노동부 기업훈련지원과</li><li><strong>문의</strong>: 제안요청 설명회·입찰 일정은 입찰공고문 및 나라장터(www.g2b.go.kr) 게시문 참조(이메일 주소는 제안요청서 본문에 명시되지 않음)</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>기술·기능</strong>: 생성형 AI(LLM 70B+·한국어 특화·파인튜닝), VLM, RAG(Advanced RAG·벡터DB·임베딩), 온톨로지-LLM 지식추론(SPARQL·트리플스토어), Docker 기반 컨테이너·오토스케일·롤링/블루그린 배포, AI API·모델관리·XAI·AI 고지·워터마크, 전자정부표준프레임워크·Python/TypeScript·웹표준·SSO 연계</li><li><strong>성능</strong>: LLM 동시 50건+, 일 1만건+, 가용성 99.5%, RTO 30분, 웹 응답 3초 이내, VLM OCR A4 3초·인식률 95%+</li><li><strong>보안</strong>: 내부망 분리·외부 API 차단, 국가정보원·클라우드 보안가이드, 생성형 AI 신뢰성 인증, 개인정보 영향평가, 시큐어코딩·취약점 점검</li><li><strong>데이터·연계</strong>: HRD-Net(일 1회+실시간), 고용보험 DB(월 1회), NCS·법령·KECO 초기 구축, 벡터DB·그래프DB·통합DB</li><li><strong>통합발주 S/W(명시 품목·수량)</strong>: 본 제안요청서 추출본에는 조달쇼핑몰 직접구매가 아닌 통합발주 대상 S/W를 품명·수량과 함께 기재한 조달 목록이 포함되어 있지 않다. ECR-003은 제안사가 Linux/Windows 등 호환 SW를 선정·제안하도록 규정하고, SFR-014는 Docker 기반 컨테이너 오케스트레이션을 요구하나 특정 상용제품·수량은 미명시한다. SSO는 「산업인력공단 기 활용 중인 SSO 라이선스 활용」(SFR-001)으로 기존 라이선스 재활용이며 신규 구매 수량 없음. AI 심사시스템 H/W(PPP) 구성 목록은 행안부 고시 제17조에 따라 담당자 입회 하 열람(제안요청서 Ⅲ-2절)하며, 붙임末尾에 SW는 분리발주 후 낙찰자에게 제공 예정이라고만 명시되어 있다.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>S/W 공급 중심 사업 아님</strong>: 본 사업은 소프트웨어 개발·구축 용역(996개 요구사항 중 기능·데이터·보안·PM 중심)으로, Red Hat 제품을 발주처가 직접 조달하는 형태가 아니라 수행사가 인프라·SW를 제안·납품하는 구조이다. 다만 PMR-010에 따라 H/W·S/W·사무기기는 사업자 부담으로 확보한다.</li><li><strong>경쟁·대체 기술 명시</strong>: SFR-014에 Docker 기반 컨테이너 오케스트레이션이 명시되어 OpenShift 대신 Docker/Kubernetes 생태계 일반 솔루션이 직접 대응 가능하다. COR-006은 Python·TypeScript·LLM 오케스트레이션(SaaS LLM 연동 아키텍처)을 기본으로 하여 JBoss 등 전통 미들웨어 중심 제안과는 거리가 있다.</li><li><strong>특정 OS/DB 미지정</strong>: RHEL·Rocky·Ubuntu·Oracle 등 특정 Linux 배포판이나 VMware 등 가상화 제품이 의무 지정되지 않았고, ECR-003은 Linux/Windows 호환 SW를 제안사가 선정하도록 열어두었다.</li><li><strong>분리발주 SW</strong>: 일부 SW는 계약 후 분리발주로 선정·제공될 예정(붙임末尾)이므로, 해당 품목에 Red Hat이 포함되지 않으면 직접 납품 기회가 제한될 수 있다.</li><li><strong>평가·시연 초점</strong>: 기술평가 10점이 제안 LLM/sLLM 성능·시연에 배정되어 Red Hat 인프라만으로는 가점 확보가 어렵고, AI 모델·RAG 품질이 핵심 평가항목이다.</li><li><strong>예산·기간 제약</strong>: 약 10억원·5개월 내 LLM·VLM·RAG·온톨로지·96건 요구사항 전체 구축으로, Red Hat 구독·OpenShift·Ansible 전면 도입 시 라이선스·구축 비용 대비 사업 규모 대비 부담 가능.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>RHEL</strong>: ECR-001~003, QUR-004에 클라우드 WEB/WAS/DB·OS 환경 튜닝·다중화 요구. 대구 PPP Linux VM에 RHEL을 표준 OS로 제안 가능(COR-006 개방형 OS, 기술적용계획표 Linux 적용). 행정기관 클라우드·국가 클라우드 보안 가이드 준수 시 RHEL 보안·FIPS·SELinux 강점 활용 가능.</li><li><strong>Red Hat OpenShift</strong>: SFR-014 컨테이너 기반 AI 운영, 오토스케일, 헬스체크, 롤링/블루그린 배포, 모델 서빙·CI/CD(SFR-015) 요구와 부합. 행안부 네이티브 전환 이행실태 점검 대비 자료 생성 요구에 Kubernetes/OpenShift 기반 제안 근거 제시 가능.</li><li><strong>Red Hat Ansible Automation Platform</strong>: AI 플랫폼·다중 WEB/WAS/DB 구성, 클라우드 SW 설치·호환성 검증·최적화(ECR-001~003), DR·백업·장애복구(QUR-005, DAR-009), 99.5% 가용성·RTO 30분 요구에 인프라 자동화·설정관리·패치 자동화로 대응 가능.</li><li><strong>오픈소스 구독·기술지원</strong>: ECR-003「오픈소스 SW Subscription·기술지원 비용은 사업 예산 포함, 검수 시까지 사업자 부담」— RHEL/OpenShift/Ansible 구독·TAM을 예산 내 정당화 가능.</li><li><strong>보안·컴플라이언스</strong>: SER-001~014, 클라우드컴퓨팅 보안(SER-012), 생성형 AI 보안(SER-011) 요구에 Red Hat 보안 패치·CVE 대응·컨테이너 보안(OpenShift) 스토리텔링 가능.</li><li><strong>JBoss/Quarkus</strong>: 직접 필수는 아니나 COR-006 Java·개방형 웹 기술, 전자정부프레임워크 연계 WAS 계층에서 JBoss EAP 또는 Quarkus 기반 마이크로서비스·API(SFR-019) 보조 제안 여지는 있으나 평가 비중은 AI·RAG·LLM에 집중되어 있다.</li><li><strong>제안 전략</strong>: SI/수행사 컨소시엄·하도급(50% 이내) 채널로 RHEL/OpenShift/Ansible 번들 제안, 범정부 AI공통기반 플랫폼(ECR-003) 연계 검토서에 Red Hat AI/OpenShift AI 호환·보완 방안 기술, 클라우드(대구) 호환성·LLM 시연과 병행한 인프라 표준화·운영 자동화 차별화.</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
