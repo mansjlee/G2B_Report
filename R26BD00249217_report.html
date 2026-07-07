@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00249217 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국교육학술정보원(KERIS)_K-에듀파인 운영환경 고도화 및 재해복구 체계 구축 - 어플리케이션 분산처리체계 구축을 통한 K-에듀파인 현대화 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>RHEL 통합발주 수량 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>공고번호 R26BD00249217, 수요기관 시도교육청 및 한국교육학술정보원(KERIS), 사업 대상 19개 기관(16개 시도교육청 정보원, 2개 재해복구센터, 총괄센터)</li>
+                    <li>전국 81만 교직원 필수 업무시스템(K-에듀파인)의 무중단·안정적 서비스 제공 및 국가 핵심 정보시스템 재해복구(DRS) 체계 미흡 보완</li>
+                    <li>운영 한계(성능·용량·보안) 해소, 클라우드 네이티브 기반 운영환경 고도화, 마이크로서비스 분산처리체계를 통한 K-에듀파인 현대화</li>
+                    <li>Zero Trust 통합 보안체계, 웹 기반 전자문서 관리(ODF·웹기안기·그룹웨어), 17개 프라이빗 클라우드 센터 및 2개 DR센터 구축, 선도교육청 시범 후 3단계(업무관리→교특회계→학교회계) 전환</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li>**사업 예산**: 총 217,363,043천원(VAT 포함), 1차년도('26) 86,945,217천원, 2차년도('27) 76,077,065천원, 3차년도('28) 54,340,761천원(직접구매 SW 비용은 본 사업금액 미포함)</li>
+                    <li>**사업 기간**: 계약체결일 ~ 2028.12.31(장기계속계약), 하자담보 1년, 안정화 기간 주관기관 협의</li>
+                    <li>**사업 범위**: 클라우드 네이티브 운영환경(MSA·컨테이너·API Gateway·CI/CD), 재해복구 체계(세종 DR·대구 KERIS), SDDC 기반 IaaS/PaaS/CMP, Zero Trust 보안, 응용SW 고도화, 대내 9·대외 22기관 48시스템 연계, 요구사항 총 241건</li>
+                    <li>**선정 방식**: 일반 경쟁 입찰, 협상에 의한 계약, 기술평가(90)+가격평가(10) 조달청 평가</li>
+                    <li>**주요 일정**: 구축사업자 선정 '26.2~3분기 발주·'26.3~4분기 선정, 응용SW '26.3분기~'28.2분기, 인프라(클라우드) '26.3분기~'27.2분기, DR '27.3분기 중순~'28.2분기, 통합테스트 '27.3분기~'28.1분기 중순, 전환·안정화 '27.4분기~'28.4분기</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li>**담당 부서**: 교육재정본부(재정시스템고도화부), 주관기관 한국교육학술정보원(KERIS)</li>
+                    <li>**부장**: 서영석, Tel 02-6329-3095, Email ys.seo@keris.or.kr, FAX 070-7001-2200</li>
+                    <li>**담당**: 김원근 연구위원, Tel 02-6329-3090, Email wkkim@keris.or.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li>**핵심 기술·비즈니스 요구**: 클라우드 네이티브 4대 구성(MSA·Container·DevOps·CI/CD), Kubernetes·Docker·Service Mesh(Istio/Linkerd), API Gateway·메시지 브로커, Saga 패턴 분산 트랜잭션, GitOps(ArgoCD/Flux)·IaC, Blue/Green·Canary 무중단 배포, DevSecOps(SAST/DAST/SCA)·SBOM, Zero Trust(RBAC·UEBA·CNAPP), RTO/RPO·자동 Failover/Failback·DR 모의훈련, SDDC(SDC/SDS/SDN), 전자정부 표준프레임워크·Java JDK, ODF(ODT)·KWCAG 2.2 웹기안기, 성능(동시접속 144,128명·TPS 11,568), Oracle 정형 DB 유지·업그레이드·비정형 약 20억건 이관, ISO22301 BCP·DRS, COR-GEN-003 개방형·벤더 종속 금지</li>
+                    <li>**통합발주 S/W(시도교육청·총괄센터·재해복구센터 통합 합계)**:
+                        <ul>
+                            <li>RDBMS(Enterprise) 843 Core, RDBMS(Standard) 76 Core, RDBMS(RAC) 843 Core, RDBMS(Partitioning) 843 Core</li>
+                            <li>연계 ESB 256 Core, Adapter 160 EA</li>
+                            <li>검색엔진 592 vCore</li>
+                            <li>웹기안기 71 식, 그룹웨어(업무관리시스템) 71 식</li>
+                            <li>UI/UX 개발플랫폼 1,872 vCore</li>
+                            <li>DB동기화(CDC) 843 Core</li>
+                            <li>연계 API Gateway 84 vCore</li>
+                            <li>메시지 브로커 32 Set</li>
+                            <li>DRM Server 108, Client 559,605</li>
+                            <li>클라우드 플랫폼 163 Server</li>
+                            <li>OS 운영체제 406 Server</li>
+                            <li>DB암호화 843 Core</li>
+                            <li>DB접근제어 Server 35, Agent(Core) 851</li>
+                            <li>통합보안관리(ESM) Server 14, Agent 988</li>
+                            <li>CNAPP(CIEM) Manager 16, Agent 777</li>
+                            <li>CNAPP(CSPM) Manager 16, Agent 777</li>
+                            <li>CNAPP(CWPP) Manager 16, Agent 889</li>
+                            <li>DevSecOps(SAST/DAST/SCA) Manager 1, Agent 70</li>
+                            <li>재해복구자동화 1 식</li>
+                            <li>Red Hat Enterprise Linux for Virtual Datacenters Server: 서울 9, 전남광주 9, 부산 7, 대구 7, 인천 7, 대전 6, 울산 6, 세종 6, 경기 12, 강원 6, 충북 6, 충남 7, 전북 7, 경북 7, 경남 7, 제주 6, 총괄 11, DR1(세종) 12, DR2(대구) 6</li>
+                            <li>Red Hat Enterprise Linux Subscription Server: 서울 13, 전남광주 13, 부산 11, 대구 11, 인천 11, 대전 10, 울산 10, 세종 10, 경기 16, 강원 10, 충북 10, 충남 11, 전북 11, 경북 11, 경남 11, 제주 10, 총괄 16, DR1(세종) 16, DR2(대구) 10</li>
+                            <li>Oracle Linux Support Subscription Server: 기관별 7(총괄 14, DR1 13, DR2 7 포함, 19개 기관)</li>
+                        </ul>
+                    </li>
+                    <li>**직접구매 S/W(28종, 종합쇼핑몰·낙착자 통합 구매, 수량 미기재)**: WEB, WAS, 원격지원, 통합배포관리, 리포팅툴, 출력물위변조방지, 개인정보필터, 원격접근제어, SSO, PMS, 보안취약점진단, 웹쉘탐지, 개인정보접속기록관리, 키관리, SMS, NMS, DMS, APM, 통합대시보드, 통합계정관리, 분배관리, 메타솔루션, 첨부파일보안, 전자문서유통, 범정부정보시스템예방점검관리, 망연계, 로그저장, Web DRM</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li>**제안 불가능 포인트**: Oracle Linux Support Subscription이 RHEL과 동등 항목(ECR-SWA-019)으로 병행 명시되어 OS 영역 경쟁 불가피, Oracle RDBMS가 현행·To-BE 정형 DB로 명시(Enterprise/Standard/RAC/Partitioning 843 Core급), RDBMS·ESB·검색엔진·DRM·CNAPP·DevSecOps 등 대부분 미들웨어·보안 S/W는 통합발주 수량 확정·Win-Back 허용이나 Red Hat 제품군(JBoss EAP, RHEL DB 등) 직접 지정 없음</li>
+                    <li>**S/W 공급 범위**: 직접구매 28종(WEB·WAS·SSO·APM 등)은 본 사업금액 미포함·낙착자 직접구매로 Red Hat 간접 제안만 가능, OpenShift·Ansible은 구매 목록·명칭 미명시</li>
+                    <li>**경쟁 제품 명시**: Oracle Linux Support Subscription(기관별 7~14 Server), Oracle DB(현행 유지·업그레이드), 상용 RDBMS(Oracle·DB2·MS-SQL·MySQL·Tibero·PostgreSQL 등), Kubernetes·Service Mesh는 오픈소스 일반 요구(특정 배포판 미지정)</li>
+                    <li>**기타 제약**: x86 서버 호환 OS는 제조사 기반 정품·유지보수 필수, 클라우드 플랫폼 특정 HW 종속 금지, 방화벽·VPN 등 일부 보안 장비는 제안사 부담, AI 업무지원(SFR-GEN-007) 구독료 제안사 부담</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li>**제안 가능 포인트(RHEL)**: Red Hat Enterprise Linux for Virtual Datacenters·Subscription이 19개 기관 To-BE 수량으로 통합발주 명시(합계 OS 406 Server), OS 요구사항이 "오픈소스 기반 호환성 확보 최신 엔터프라이즈급 OS·5년 이상 EOS·CVE 패치"로 특정 제조사 강제 없음, Oracle Linux와 병행 제안 가능</li>
+                    <li>**제안 가능 포인트(OpenShift)**: Kubernetes 기반 컨테이너 오케스트레이션·PaaS·클라우드 네이티브 MSA·17+2 프라이빗 클라우드·Auto-Scaling·멀티테넌트 DR(최대 3개 교육청 동시 운영) 요구와 부합, Kubernetes 특정 벤더 미지정으로 OpenShift Container Platform 제안 여지</li>
+                    <li>**제안 가능 포인트(Ansible)**: GitOps(ArgoCD/Flux)·IaC·CI/CD 무중단 배포·163 Server 클라우드 플랫폼·19개 센터 SDDC 운영 자동화에 Ansible Automation Platform 적용 가능</li>
+                    <li>**기술 적합성**: Zero Trust·RBAC·DevSecOps·SBOM·DR 자동 Failover/Failback·재해복구자동화 1식 등 Red Hat 클라우드·보안·자동화 스택 강점 영역, COR-GEN-003 개방형 기술·벤더 종속 금지 원칙과 부합, RHEL은 CSAP·국가주요정보통신기반시설 보안 요구 대응 가능</li>
+                    <li>**영업 전략**: OS(144+221 Server급 RHEL 라이선스) 직접 입찰 + OpenShift/Ansible은 클라우드 플랫폼·CI/CD·DR 자동화 아키텍처 제안서 내 기술 제안으로 Win-Back 경쟁, 통합사업자(낙착자) 파트너십 통해 RHEL 공급 및 플랫폼 레이어 확장</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
