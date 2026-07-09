@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00250426 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>기후에너지환경부_기후부 사이버안전센터 통합 구축(인프라) - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>서버 OS RHEL 호환 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>정부조직개편('25.10)에 따른 에너지·환경 분야 사이버안전센터를 세종 청암빌딩으로 이전·통합 구축하는 인프라 사업</li><li>통합보안관제(SIEM), 위협관리(TMS), 정보공유(SCMS), 대국민웹서비스통합관제(K-WATCH) 등 보안관제 플랫폼 및 전산망·네트워크·보안장비 도입</li><li>기후부 본부·소속·산하기관 55개 기관과의 보안관제 수집망 통합 재구축 및 (구)환경부·산업부 관제 자산 이전·연계·정상화</li><li>54개 회원기관(에너지 21개, 환경 33개) 실시간 로그 연동 무중단 수행 및 국정원 3선 보안관제 업무 연속성 확보</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 300,673만원 (부가가치세 포함) ※ 상용SW·중기간경쟁제품·기반환경 공사 분리발주</li><li><strong>사업 기간</strong>: 계약체결일로부터 2026년 12월 31일까지</li><li><strong>사업 범위</strong>: 통합보안관제시스템·전산망 구축, 에너지·환경 보안관제수집망 통합, (구)환경부 정보자원 이전 연계·정상화, 종합상황관제 기반환경(관제실 LED·영상·음향), KVM·NTP 등 부대장비, 성능·정합성 검증·시험운영</li><li><strong>계약방법</strong>: 제한경쟁입찰, 협상에 의한 계약 (기술평가 90점 + 가격평가 10점, 기술 76.5점 미만 협상제외)</li><li><strong>주요 일정</strong>: 7~8월 입찰·계약·분리발주 공사/조달, 8~11월 장비 제조·납기·설치, 10~12월 연동테스트·기관연동·시범운영·검수</li><li><strong>센터 위치</strong>: 세종특별자치시 한누리대로 499, 청암빌딩 402호 (604.8㎡)</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>담당 부서</strong>: 기후에너지환경부 정보보호담당관</li><li><strong>정지영</strong> 사무관 / TEL (044)201-6416 / FAX (044)201-6426</li><li><strong>김만수</strong> 주무관 / TEL (044)201-6415</li><li><strong>자료열람</strong>: 정부세종청사 6동 673호 정보보호담당관실 (사전 협의, 재직증명서·신분증 지참)</li><li><strong>설명회 연락</strong>: 김만수 주무관 044-201-6415</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>핵심 기술·비즈니스 요구</strong>: 통합 SIEM(일 1TB+ 저장·검색, 50개+ 기관 멀티테넌시, Scale-Out HA), TMS 4제조사별 최상위 연동, SCMS 통합DB 이관(PL/SQL·스키마), 650대+ 보안장비 연동, 24×365 무중단 운영, 기존 산업부 SIEM·SCMS·LLM 보안관제 어시스턴트 무변환 이식, Rocky Linux 9+ 또는 RHEL 호환 OS, 10G 기반 네트워크·망분리·회원기관 55개 표준 토폴로지 연동</li><li><strong>통합발주 S/W (직접구매 제외)</strong>:</li><li>통합보안관제플랫폼 SW(SIEM) 1식 — 일 1TB+ 용량기반, 사용자 무제한, CC인증/보안기능확인서, 기존 산업부 SIEM·SCMS·LLM 어시스턴트 연속 이식</li><li>관계형 DBMS(2 CPU 서버용) 1식 — 2소켓 CPU 라이선스, 사용자 무제한, 기존 SCMS Oracle DB·PL/SQL·스키마 무손실 이관</li><li><strong>조달 직접구매 S/W (참고, 통합발주 아님)</strong>: PC용 백신 50 + 서버용 30 = 80, 이메일훈련 Server 1식(훈련대상 10,000명), 개인정보노출탐지 3, Windows Server 2025 1, DB암호화 1</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>핵심 S/W 직접 공급 제한</strong>: SIEM·DBMS는 통합발주 대상이나 Red Hat 제품군이 아님(SIEM은 Splunk류 상용 SIEM, DBMS는 Oracle PL/SQL 이관 요건으로 Oracle DB 지정에 가까움)</li><li><strong>경쟁·타사 제품 명시</strong>: TMS — 윈스 SNIPER TMSPlus 4000급 1식, 코닉글로리 TESS CTMX급 1식, 시큐아이 BLUEMAX TAMS 1100급 1식, 안랩 Ahnlab TMS 15000C급 1식(제조사·모델 고정, 하위모델 불가)</li><li><strong>IPS/FW/WAF</strong>: NCSC SNORT/YARA 수용 국내 IPS 제조사군 한정, 기존 장비 호환 필수(국내 보안벤더)</li><li><strong>SAN 스위치</strong>: Brocade G610과 동일 제조사(Brocade) FC 32Gb 24Port+ 1식 — 기존 패브릭 이중화 호환 사유로 제조사 고정</li><li><strong>Windows Server</strong>: 모의해킹 서버 Windows Server 2025 Standard 2Core 16 + User CAL 4 (분리발주)</li><li><strong>기타</strong>: 통합제어시스템 Windows 11 Pro, 백신·DB암호화·개인정보노출탐지 등 전용 상용SW 분리발주, VMware/Contrabass 등 가상화 플랫폼 미명시·OpenShift 요건 없음</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>RHEL</strong>: ECR-01 — "도입 서버 기본 OS는 Rocky Linux 9(최신 마이너) 이상 또는 동등한 RHEL 호환 오픈소스" 명시, 계약자가 전 솔루션 정상동작 검증·보증. 검색서버 3대·저장서버 7대·SCMS DB서버 1대·K-WATCH 1대 등 신규 서버 및 재활용 서버 OS 재설치(ERR-05)에 RHEL 9 제안 가능</li><li><strong>Ansible Automation Platform</strong>: NCSC 라우터 NETCONF/YANG·Python 기반 프로그래머블 자동화, 55개 회원기관 표준 네트워크 토폴로지 일괄 구성, SIEM 수집 에이전트 중앙 배포·무중단 롤링 업그레이드(SFR-01) 요건과 부합하는 인프라 자동화·구성관리 제안 여지</li><li><strong>Red Hat Satellite</strong>: Linux 서버 OS·패치 중앙관리, SER-01 보안취약점 제거·SER-02 네트워크 보안강화(최신 패치·불필요 포트 차단) 요건 지원</li><li><strong>협력·번들 기회</strong>: SIEM/DBMS/TMS 주사업자(통합 SI) 파트너로 RHEL·Ansible·Satellite 서브라이선스 공급, 또는 Rocky Linux 대비 엔터프라이즈 지원·FIPS/CC 연계 RHEL 제안</li><li><strong>제한사항</strong>: OpenShift·JBoss·AMQ 등 PaaS/미들웨어 요건 없음, 본 사업 단독 수주 시 Red Hat 직접 매출은 OS·자동화 보조 범위에 한정</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
