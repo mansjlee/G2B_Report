@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00251090 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국지능정보사회진흥원_모두의 AI 실험실 온라인 플랫폼 고도화 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>용역 중심·S/W 직접구매 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>국민 누구나 AI 서비스를 체험·개발할 수 있는 통합환경을 제공하는 '모두의 AI실험실' 온라인 플랫폼(舊 DPG통합테스트베드) 고도화 사업이다.</li><li>기존 개발자 중심 개발·실증 환경을 국민 누구나 아이디어를 제안하고 AI 서비스로 구현·확산할 수 있는 대국민 참여형 AI 서비스 창출 플랫폼으로 전면 개편하는 것이 핵심 목표이다.</li><li>주요 과업은 ① 포털 구축(UI/UX 개편, 문제제기·아이디어 발굴, 우수 서비스 선정·확산), ② 시스템 고도화(AI 개발지원·관리 환경, 바이브코딩 지원체계), ③ 홍보 지원으로 구성된다.</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 2,999,578,692원(부가세 포함, 약 30억원)</li><li><strong>사업 기간</strong>: 계약체결일 ~ 2026년 12월 18일(약 4개월)</li><li><strong>사업 범위</strong>: 모두의 AI실험실 포털 신규 구축·UI/UX 전면 개편, 커뮤니티·참여형 기능 구현, GPU·토큰·클라우드 자원 관리 고도화, LLM Gateway·자체 Code Assistant·바이브코딩 토큰 지원체계 구축, 홍보 지원, 통합·성능·보안 시험 및 안정화</li><li><strong>주요 일정</strong>: M(착수/분석) → M+1(설계) → M+2(개발·구현) → M+3(시험, 이행·안정화, 완료보고)</li><li><strong>계약방식</strong>: 협상에 의한 계약(기술능력 90% + 가격 10%), 조달청 전문평가, 업종코드 1468(컴퓨터관련서비스사업)</li><li><strong>주관기관</strong>: 한국지능정보사회진흥원(NIA), 주무부처 과학기술정보통신부</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>담당 부서</strong>: 인공지능혁신지원단 AI혁신사업팀</li><li><strong>팀장</strong>: 김진일 (TEL: 053-230-1691)</li><li><strong>책임</strong>: 김우리 (TEL: 053-230-1689)</li><li><strong>선임</strong>: 정다빈 (TEL: 053-230-1637)</li><li><strong>이메일</strong>: 제안요청서에 명시되지 않음</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>기술·기능 요구</strong>: 총 77건(장비 2, 시스템기능 27, 성능 8, 인터페이스 4, 데이터 8, 테스트 2, 클라우드 3, 보안 8, 품질 3, PM 3, 지원 3, 제약 6)</li><li><strong>포털·커뮤니티</strong>: UI/UX 전면 재설계, 문제발굴·아이디어 등록, 펀딩·참여형 평가, 팀빌딩·프로젝트 전환, SNS 확산, CMS, 운영자 통합 대시보드</li><li><strong>AI 개발지원</strong>: 유저별 GPU 자원 할당·관리(MIG 기반 분할/병합), 자원 사용 대시보드, 미터링·빌링, LLM Gateway(AI 프록시), 자체 오픈소스 Code Assistant(vLLM·B200 GPU), 바이브코딩 토큰 지원(연간 약 3,000억 토큰 수준)</li><li><strong>인프라·장비</strong>: NVIDIA B200 GPU 2대, vLLM 추론 서빙, GPU 노드 K8s 클러스터 통합(운영사업단 진행), 스토리지 확장</li><li><strong>보안·품질</strong>: 국가클라우드컴퓨팅보안가이드라인 4.0, 국정원 보안성 검토, K8s 컨테이너 보안(NetworkPolicy), 웹접근성·웹표준, 성능(검색 3초 이내 등)</li><li><strong>구매 명시 S/W(통합발주)</strong>: RFP 본문에 수량과 함께 직접 구매가 명시된 통합발주 S/W 항목은 없음. 본 사업은 SW 개발·구축 용역 중심이며, 하드웨어(GPU·스토리지)는 운영사업단에서 구성. 바이브코딩 연동 대상으로 Cursor(Anysphere), Copilot(MS), Claude Code(Anthropic), ChatGPT(OpenAI), Gemini(Google) 등이 기능 요구사항(SFR-024)에 명시되었으나 수량·구매 방식 미기재(주관기관 협의 확정). 자체 Code Assistant는 vLLM 기반 오픈소스 모델 서빙으로 정의.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>S/W 공급 미포함</strong>: 본 사업은 포털·플랫폼 SW 개발·구축 용역이 핵심이며, Red Hat 제품(RHEL, OpenShift, Ansible 등)의 직접 조달·공급 요구가 RFP에 명시되어 있지 않다.</li><li><strong>경쟁·대체 기술 명시</strong>: 바이브코딩 도구로 Microsoft Copilot, Google Gemini, OpenAI ChatGPT, Anthropic Claude Code, Cursor 등 상용 SaaS가 직접 명시. LLM 서빙은 vLLM+오픈소스 모델, GPU는 NVIDIA B200, 컨테이너는 일반 K8s로 기술(특정 배포판·벤더 미지정).</li><li><strong>인프라 구성 주체 분리</strong>: GPU 서버·K8s 클러스터·스토리지 확장은 "시스템 구성은 운영사업단에서 진행"으로 명시되어, 본 고도화 용역 범위 밖에서 인프라가 구축된다.</li><li><strong>대기업 참여 제한</strong>: 40억원 미만 SW 사업으로 중소·중견기업(설립 5년 이내)을 제외한 대기업 참여 불가. Red Hat이 직접 입찰 주체로 참여하기 어려운 구조이며, SI/중소 SW사업자와의 공동수급·하도급 형태 검토 필요.</li><li><strong>하도급 제한</strong>: 하도급 비율 50% 초과 불가, 재하도급 원칙 불허. 상용 S/W 물품구매금액 제외 기준 적용.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>OpenShift/K8s</strong>: ECR-001 GPU 노드 K8s 클러스터 통합, CSR-001 컨테이너 플랫폼 보안(독립 K8s, NetworkPolicy) 요구와 부합. 운영사업단·수행사업자 간 기술적용계획(COR-006) 제안 시 OpenShift 기반 GPU 스케줄링·MIG 관리 아키텍처 제안 가능.</li><li><strong>RHEL</strong>: 기술적용계획표 플랫폼 분야 Linux 서버 OS 적용 항목 존재. GPU 추론·LLM Gateway·프록시 서버 등 Linux 기반 워크로드에 RHEL 제안 여지.</li><li><strong>Ansible</strong>: GPU 자원 프로비저닝, 다중 환경(IaaS/SaaS/API) 자동화, DevOps·CI/CD, 인프라 구성 자동화(SFR-021, CSR-002) 요구와 연계한 자동화·구성관리 솔루션 제안 가능.</li><li><strong>클라우드 네이티브·보안</strong>: 컨테이너 보안, RBAC, 감사 로그, CSP 환경 보안(CSAP·국가 클라우드 가이드) 요구에 Red Hat 보안·컴플라이언스 역량 활용 가능.</li><li><strong>제안 전략</strong>: 직접 S/W 납품보다는 공동수급·하도급·기술적용계획·GPU/K8s 운영 아키텍처 컨설팅, DevSecOps·플랫폼 운영 자동화 관점에서 Red Hat 파트너/SI와 협력 제안이 현실적.</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

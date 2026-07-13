@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00250810 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국에너지공단_한국형 그린버튼 플랫폼 서버 인프라 고도화 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>가상화·OS 제안여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>한국에너지공단의 한국형 그린버튼(GreenButton) 에너지 빅데이터 플랫폼 서버 인프라를 고도화하여, 전력·열·가스 통합 에너지 데이터의 수집·저장·관리 HW 인프라 기능을 강화하고 실시간 AMI 데이터 수집·분석 및 OpenAPI 기반 데이터 서비스 운영을 위한 AI·가상화 기반 인프라를 구축·안정화하는 것이 핵심 목표임</li><li>1~3차년도('23~'25)에 구축된 그린버튼 플랫폼 인프라를 기반으로 서버 인프라 성능 향상, 운영 안정성 확보, 기존 플랫폼과의 연계·호환을 통해 에너지 빅데이터 개방·공유 플랫폼 운영 기반을 마련하는 사업임</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 543,000,000원(부가가치세 포함), 20억원 미만 중소 SW사업자 대상 사업</li><li><strong>사업 기간</strong>: 계약체결일로부터 90일 이내</li><li><strong>사업 범위</strong>: AI·가상화 기반 서버 운영환경 설정, 기존 플랫폼 환경 분석 및 시스템 연계, 데이터 저장·전송 환경 설정, 시스템 성능 진단·최적화, 시험운영·안정성 검증, 운영자 기술지원, AI 분석환경·가상화 운영환경·저장·백업환경 HW 구축</li><li><strong>계약방법</strong>: 제한경쟁(총액) / 협상에 의한 계약, 하도급 불허</li><li><strong>주요 일정</strong>: M(착수보고·업무분석) → M+1(납품·설치, 연계·수집망 구성) → M+2(단위·통합 테스트, 완료보고·검수)</li><li><strong>평가방식</strong>: 기술능력 90% + 입찰가격 10%, 기술점수 85% 미만 시 협상대상 제외</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>담당 부서</strong>: AI데이터처</li><li><strong>담당자</strong>: 이진호 주임</li><li><strong>연락처</strong>: 052-920-0638</li><li><strong>이메일</strong>: 제안요청서 내 명시 없음</li><li><strong>수요기관</strong>: 한국에너지공단</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>핵심 기술·비즈니스 요구사항</strong>: AI 기반 데이터 분석 환경 및 가상화 서버 운영환경 구축, 기존 그린버튼 플랫폼과의 호환·연계, 대용량 데이터 저장·전송·백업 체계 구축, 동시 사용자 100명 이상·평균 응답 3초 이내 성능, 24시간 운영·장애복구 체계, SSO·타 업무시스템(인사DB·전자결재·전자메일) 연계, 범정부·기후에너지환경부 데이터 표준 준수, 개인정보보호·시큐어코딩·내외부망 분리 등 보안 요구사항 이행, 단위·통합·시험운영 및 사용자·관리자 교육</li><li><strong>신규 도입 HW(통합발주)</strong>: AI 서버 1식(3.6GHz 8Core×2, MEM 256GB+, SSD 960GB×2, GPU 96GB×2), AI 개발 서버 1식(Intel Core Ultra 9급+, MEM 64GB+, NVMe SSD 2TB+, GPU 16GB×2), 가상화 관리 서버 2식(3.65GHz 16Core+, MEM 128GB+, SAS 1.2TB×2, GPU 24GB+, 32Gb FC HBA×2), 가상화 서버 3식(3.65GHz 16Core+, MEM 256GB+, SAS 1.2TB×2, 32Gb FC HBA×2), SAN Switch 1식(32Gb FC 24Port+), 백업 환경 1식</li><li><strong>현행 시스템 HW</strong>: 웹서버 가상화 2, WAS서버 가상화 2, DB서버 가상화 1, L4 Switch RADWARE ALTEON 1</li><li><strong>구매 명시 S/W(통합발주·현행 기준, 직접구매 제외)</strong>: WebToB 5 — 2, JEUS 8 — 2, ORACLE 19c — 1</li><li><strong>S/W 라이선스 일반 요구</strong>: 신규 도입 서버의 상용SW 라이선스는 서버 CPU 수량에 맞게 제안·제공, CPU 추가 시 라이선스 동시 제공, 모든 라이선스 원본 제출</li><li><strong>개발·적용 기술 제약</strong>: JAVA/JSP 기반 개발, 전자정부 표준프레임워크·공통컴포넌트 적용, HTML5·RESTful API, RDBMS(ORDBMS) 활용, Linux·Windows Server 등 개방형 OS 선택 가능(기술적용계획표)</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li>본 사업은 HW 납품·설치 및 인프라 구축·기술지원 중심 용역으로, Red Hat 제품 단독 S/W 공급이 사업 범위의 핵심이 아님</li><li>현행 및 호환 대상 미들웨어·DBMS로 WebToB 5, JEUS 8, ORACLE 19c가 명시되어 Tmax·Oracle 스택 유지가 전제됨</li><li>JEUS·WebToB·Oracle DB를 Red Hat JBoss·RHEL DB 등으로 대체하라는 요구는 없으며, 기존 시스템 호환(COR-006)이 핵심 제약</li><li>서버·SAN Switch·L4·GPU 등 물리 HW 및 RADWARE ALTEON 등 네트워크 장비는 Red Hat 공급 범위 외</li><li>입찰참가자격에 「중소기업제품 구매촉진 및 판로지원에 관한 법률」 직접생산증명서(정보인프라구축서비스, 8111179901) 및 중소·소상공인 확인서가 요구되어 Red Hat 단독 S/W 벤더가 직접 수주하기 어려운 구조</li><li>하도급 불허로 Red Hat이 SI 파트너를 통한 간접 참여 없이는 사업 참여 경로가 제한됨</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li>기술적용계획표에서 Linux가 서버용 개방형 OS로 적용 가능 항목으로 명시되어, AI 서버·가상화 관리/운영 서버의 게스트·호스트 OS로 RHEL 제안 가능</li><li>ECR-003 가상화 운영환경 구축 요구에 대해 RHEL KVM 또는 Red Hat OpenShift Virtualization 기반 가상화·통합관리 방안 제시 가능</li><li>AI 분석환경(AI 서버·AI 개발 서버) 구축 시 RHEL + GPU 드라이버·컨테이너 런타임 환경, 또는 OpenShift AI 기반 MLOps 플랫폼 연계 제안 가능</li><li>보안·패치·접근통제·장비 보안관리(SER-006~008) 요구에 Ansible Automation Platform 기반 구성관리·보안 패치 자동화, Red Hat Satellite 기반 OS·패키지 관리 제안 가능</li><li>24시간 운영·백업·장애복구(QUR-001) 요구에 RHEL High Availability, Ansible 기반 DR·백업 자동화 연계 제안 가능</li><li>신규 서버 CPU 수량 연동 상용SW 라이선스 제안 요구(ECR-001)에 RHEL 서버·AI·가상화 호스트용 구독 라이선스를 SI 파트너 제안서 내 통합 S/W로 포함 가능</li><li>특정 가상화 제품(VMware, Contrabass 등) 강제 규격은 없어, 동등 이상 성능·호환성 입증 시 Red Hat 가상화 스택 경쟁 제안 여지 존재</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
