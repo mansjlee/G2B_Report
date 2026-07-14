@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00251769 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>주택도시보증공사_AI 기반 업무 혁신 플랫폼 구축 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>K8s·OS 제안여지 있음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>주택도시보증공사(HUG)의 DX·AX 전략에 따라 내부 구축형(On-premise) 생성형 AI 인프라 및 플랫폼을 구축하고, 직원용 지식검색·전세이행 업무지원·지능형 민원처리 등 3대 AI 서비스를 개발하여 대국민 서비스 및 업무 방식 혁신을 선도하는 것이 핵심 목표임</li><li>공사 보유 GPU 서버(3식, Ubuntu 24.04/H200)와 가상화 인프라를 활용하여 Kubernetes·Docker 기반 클라우드 네이티브 환경을 구성하고, N2SF 및 개인정보 보호를 고려한 폐쇄망 AI 플랫폼을 구축함</li><li>Post 차세대시스템·SSO·HR 등 기존 시스템과 연계하며, RAG 기반 검색·질의응답, OCR/VLM 문서인식, LLMOps 등을 통합 제공하는 공통 AI 기반 마련이 목적임</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li>**사업 예산**: 1,990,454천원 (VAT 포함, 직접구매 소프트웨어 금액 제외), 약 19.9억원 규모</li><li>**사업 기간**: 계약체결일로부터 9개월 (안정화 2개월 포함), 2026년 9월~2027년 5월 추진 예정</li><li>**사업 범위**: ① AI 인프라 및 플랫폼 구축(GPU 자원관리, K8s/Docker, 생성형 AI 관리·API) ② 데이터 및 모델 개선(도메인 특화 데이터, RAG, 벡터검색) ③ AI 서비스 3종(직원용 지식검색, 전세이행 업무지원, 지능형 민원처리) ④ 사용자 UI 및 시스템 연계 개발</li><li>**계약방법**: 제한경쟁입찰, 협상에 의한 계약체결 (기술평가 90점, 가격평가 10점)</li><li>**주요 일정**: M1~M2 사전준비·요구사항 정의 → M2~M6 인프라 구축 및 3대 AI 서비스 개발·검증 → M6~M7 시스템 통합·시범운영 → M7~M9 평가·안정화, 직접구매 SW는 '26년 10월 도입, 감리 3단계 및 개인정보영향평가 병행</li><li>**서버 구성**: K8s Control Plane 3식, Worker 4식, Object Storage 3식, 데이터수집 1식, Web/WAS 1식, 연계 1식, DB 2식, GPU Bare Metal 3식 등 최소 구성 요구</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li>**주관기관**: 주택도시보증공사</li><li>**담당 부서**: AX기획처</li><li>**담당자**: 김재욱 팀장 (TEL: 051-955-5870), 김덕용 차장 (TEL: 051-955-5465)</li><li>**이메일**: 제안요청서 내 명시 없음</li><li>**이의제기 담당**: 윤리경영 담당 팀장 (TEL: 051-955-5871)</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li>**기술·비즈니스 요구사항**: 총 73개 요구사항(SFR 8, PER 9, ECR 9, INR 4, DAR 2, TER 3, SER 6, QUR 7, COR 7, PMR 10, PSR 8), 컨테이너 기반 전 서비스 배포, 30B 이상 LLM(영구 라이선스·전직원 사용), RAG·벡터검색, GPU MIG 스케줄링, N2SF·개인정보보호, Post 차세대·SSO 연계, 시범운영 60일 이상 및 2개월 안정화 지원</li><li>**인프라 핵심**: Bare Metal GPU + Kubernetes(CAPI, CNCF 인증 Upstream K8s, Velero 백업), Docker, NVIDIA GPU Operator, NVIDIA Enterprise AI Factory 인증 플랫폼·스토리지, S3 호환 오브젝트 스토리지, Harbor 내부 레지스트리, Prometheus/Grafana 모니터링, CI/CD 자동배포</li><li>**통합발주 S/W (직접구매 제외, 수행사 일괄공급 대상)**:
+                    <ul>
+                        <li>이미지 문자 인식(OCR 또는 VLM) 솔루션: 1식 (ECR-004)</li>
+                        <li>대화형 생성형 AI Agent 솔루션: 1식 (ECR-005)</li>
+                        <li>LLMOps 솔루션(RAG 기능 포함): 1식 (ECR-006)</li>
+                        <li>Kubernetes Control Plane VM: 3식, Worker VM: 4식, Object Storage Controller VM: 3식, 데이터 수집서버: 1식, 서비스 서버(Web/WAS): 1식, 연계서버: 1식, DB 서버: 2식 (서버별 OS·플랫폼 SW 라이선스 수행사 산정·도입)</li>
+                        <li>생성형 AI 플랫폼 SW, AI 스토리지 SW, 내부 컨테이너 레지스트리(Harbor 등), Linux/Python 패키지 저장소, 모니터링·로깅 스택(Prometheus, AlertManager, Grafana, Fluent-bit, Loki 등) — 수량은 제안서에서 서버 스펙 기준 산정</li>
+                    </ul>
+                </li><li>**직접구매 S/W (조달쇼핑몰, 수행사 공급 대상 아님)**: 서버 모니터링(SMS) 18식, 통합 로그관리(5GB/1day) 1식, 서버 보안 18식, 서버 보안(계정관리) 18식, 데이터 암호화 2식, DB 접근제어 2식, 개인정보 접속이력 관리 1식, SSO 1식</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li>**경쟁 OS 명시**: 보유 GPU 서버 OS가 Ubuntu 24.04 LTS로 고정 명시되어 있으며, ECR-002에서 RHEL·Ubuntu·Rocky Linux 등 복수 OS 지원 요구하나 GPU 서버는 Ubuntu 전제</li><li>**전용 AI 상용SW 지정**: OCR/VLM 1식, 대화형 생성형 AI Agent 1식, LLMOps(RAG) 1식 등 핵심 AI 응용 S/W가 통합발주 대상으로 명시되어 Red Hat 제품(OpenShift AI 등) 직접 대체 제안이 제한적</li><li>**NVIDIA 생태계 종속**: NVIDIA Enterprise AI Factory Design Guide 인증 플랫폼·스토리지·Agentic AI Platform, NVIDIA GPU Operator, MIG, NIM 등 NVIDIA 기술 스택이 요구사항에 직접 명시</li><li>**Upstream Kubernetes 요구**: 벤더 종속 방지를 위해 CNCF 인증 Upstream Kubernetes 소스 기반 바닐라 K8s 요구 — OpenShift 등 상용 배포판 단독 제안 시 제약 가능</li><li>**직접구매 S/W**: SMS, 통합로그, 서버보안, DB암호화, DB접근제어, 개인정보접속이력, SSO 등 8종은 발주처가 조달청 쇼핑몰 직접구매하여 수행사에 제공, Red Hat이 해당 영역에 직접 공급 불가</li><li>**하도급 불허·중소기업 우대**: 20억 미만 사업으로 대기업·중견기업 참여 제한, 공동수급 3개 이하·하도급 불가로 Red Hat 단독 수행 구조 부적합</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li>**RHEL**: ECR-002에서 K8s Control Plane·Worker 등 VM 노드 OS로 RHEL 명시적 지원, 최소 17식 VM + GPU 외 서버에 OS 라이선스 수행사 산정·도입 필요 — RHEL Standard/Premium 제안 가능</li><li>**OpenShift Container Platform**: CNCF 인증 Upstream K8s 기반 요구와 부합하는 컨테이너 오케스트레이션·GPU 워크로드 관리·Auto Scaling·롤링 업데이트 제안 가능 (NVIDIA GPU Operator 연동)</li><li>**OpenShift AI / Red Hat AI**: LLMOps·RAG·모델 배포·MLOps 요구와 연계한 AI 플랫폼 레이어 제안 가능하나, ECR-005·006의 전용 상용SW 1식씩 요구와 경합 관계이므로 보완·연계 또는 인프라 기반 제안 형태 필요</li><li>**Ansible Automation Platform**: CI/CD·배포 자동화, K8s 클러스터 배포(CAPI 연계), 폐쇄망 패키지·설정 관리, 인프라 프로비저닝 자동화에 적용 가능</li><li>**Red Hat 스토리지/레지스트리 연계**: 오브젝트 스토리지(S3), 내부 레지스트리, 백업/DR 요구에 Red Hat OpenShift Data Foundation, Quay 등 연계 제안 가능</li><li>**강점 일치 요구사항**: 폐쇄망(에어갭) 운영, 컨테이너 기반 확장성, GPU 자원 효율화, 보안·취약점 패치, 엔터프라이즈 기술지원·구독 모델, Linux 계열 OS 호환성 요구와 Red Hat 포트폴리오 강점 일치</li><li>**제안 전략**: 시스템 통합사업자(SI) 파트너십을 통한 RHEL·OpenShift·Ansible 공급, AI Agent/LLMOps 상용SW와의 공존 아키텍처 제안, Ubuntu GPU 서버와 RHEL 기반 K8s 클러스터 하이브리드 구성 방안 제시</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
