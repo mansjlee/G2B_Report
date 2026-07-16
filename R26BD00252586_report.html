@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00252586 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>안양시_24시간 민원응대 시스템 고도화 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>동일제조사 AICC 통합구축</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>안양시 AI전략사업단 주관으로 24시간 365일 AI 기반 민원응대 체계를 구축하는 용역사업이다.</li><li>AI 챗봇·콜봇, AI 당직응대, RAG 기반 공개문서·민원정보 자동 반영, 고독사 위험 대상자 AI 안부전화, 수도요금 조회·납부 연계 등을 통해 민원 편의와 행정 효율을 제고하는 것이 핵심 목표이다.</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 579,029천원(부가세 포함, 약 5.79억원)</li><li><strong>사업 기간</strong>: 계약 후 6개월(180일)</li><li><strong>사업 범위</strong>: IPCC(전화교환·CTI·IVR·녹취·오토콜), STT/TTS, LLM 기반 콜봇·챗봇, RAG 지식관리, AICC 통합관리, 기존 콜센터 연계, 하드웨어 일괄 납품·설치</li><li><strong>계약방식</strong>: 제한경쟁입찰, 협상에 의한 계약(기술 90% + 가격 10%)</li><li><strong>입찰 자격</strong>: 중소 소프트웨어사업자, 하도급 불가, 공동수급 가능(5개사 이하)</li><li><strong>주요 일정</strong>: M~M+5(착수·설계·구축·연계·테스트·교육), 하자보증 12개월</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>주관기관</strong>: 안양시 AI전략사업단</li><li><strong>팀장</strong>: 정형준 (031-8045-5310)</li><li><strong>주무관</strong>: 김홍준 (031-8045-5066, hjkim724@korea.kr)</li><li><strong>문의처</strong>: 안양시청 AI전략사업단 AI시민비서팀</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>기술 요구사항</strong>: AI 챗봇·콜봇(각 5채널, 24x7), LLM·SLM·OpenAI API 연동, Vector DB 기반 RAG, STT(인식률 90%+, 3초 이내), TTS, IP-PBX·CTI·IVR·녹취·오토콜(5채널), 상담원 15석, 동시접속 25·동시 AI연산 5, 전자정부 표준프레임워크 기반 웹 개발, REST API/WebSocket 연계</li><li><strong>통합발주 S/W(붙임4 분리발주 제외, 제안사 일괄 공급)</strong>: 본 RFP는 상용 S/W 제품명을 직접 명시하지 않고 기능·규격 중심으로 요구하며, 아래 항목을 수행사가 통합 제안·납품해야 한다.<ul><li>IP-PBX(전화교환시스템) S/W — 2식(하드웨어 2식 연동)</li><li>CTI 미들웨어 — 1식(17user 콜센터 연동)</li><li>IVR 자동응답 시스템 — 1식</li><li>통화 녹취 시스템 — 1식(3년 이상 보관)</li><li>LLM 기반 콜봇 시스템 — 5채널(증설 2배 이내)</li><li>LLM 기반 챗봇 시스템 — 5채널(증설 2배 이내)</li><li>STT(Speech-to-Text) 시스템 — 5채널</li><li>TTS(Text-to-Speech) 시스템 — 5채널</li><li>지식관리 RAG 시스템(Vector DB 포함) — 1식</li><li>AICC 통합 관리자 S/W — 1식</li><li>오토콜(PDS) 기능 — 5채널</li></ul></li><li><strong>서버 OS</strong>: STT·콜봇·RAG 서버 OS는 Linux 명시(제품명 미지정), 챗봇·중계 서버는 Windows/Linux 선택 가능</li><li><strong>핵심 제약</strong>: IPCC와 AI 제품(콜봇·챗봇 등)은 동일 제조사 제품이어야 하며, 컨택센터 구축 업력 10년 이상 업체 요건</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li>IP-PBX, CTI, IVR, 녹취, STT, TTS, 콜봇·챗봇, AICC 관리 등 핵심 S/W는 수행사가 통합 납품해야 하며, Red Hat 단독으로 해당 기능군을 제공할 수 없다.</li><li>SFR-001에 IPCC와 AI 제품(콜봇·챗봇 등)을 동일 제조사 제품으로 제공해야 한다는 요건이 있어, Red Hat은 AICC 통합 솔루션 주사업자로 참여하기 어렵다.</li><li>외부 LLM(OpenAI 등) 및 SLM API 연동이 명시되어 있어 AI 엔진은 Red Hat 제품이 아닌 외부·전문 AI 플랫폼 중심이다.</li><li>붙임4에 IP-PBX, CTI, IVR, 녹취, 콜봇/챗봇, STT, TTS가 분리발주 제외 대상으로 지정되어, Red Hat S/W 단독 조달 경로가 없다.</li><li>RHEL, OpenShift, Ansible, JBoss 등 Red Hat 제품명이 RFP에 명시되지 않았으며, OS는 일반 Linux로만 규정되어 있다.</li><li>유사실적 평가 기준이 AI 기술(STT, TTS 등) 포함 민원대응·컨택센터 구축사업으로 한정되어 Red Hat 단독 실적로는 대응이 어렵다.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li>STT·콜봇·RAG·생성형 AI 서버 OS로 Linux가 명시되어 있어, 제안사 파트너십 하에 RHEL을 서버 표준 OS로 제안할 여지는 있다.</li><li>GPU 기반 생성형 AI·RAG 워크로드(NVIDIA RTX PRO 6000)에 OpenShift AI 또는 OpenShift Container Platform 기반 컨테이너 운영 환경을 간접 제안할 수 있다.</li><li>다수 Linux 서버(STT, 콜봇, RAG, 챗봇, 중계)의 배포·패치·설정 자동화에 Ansible Automation Platform 적용 가능성이 있다.</li><li>REST API, WebSocket, JSON 기반 연계 및 확장성 요구(SIR-001, SIR-002)는 Red Hat Middleware·API 관리 솔루션과 부분적으로 정합성이 있으나, RFP에 직접 요구되지는 않는다.</li><li>Red Hat 직접 수주보다는 AICC·AI 전문 SI/ISV의 서브파트너 또는 인프라·플랫폼 공급 파트너로 RHEL·OpenShift·Ansible 간접 제안이 현실적이다.</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
