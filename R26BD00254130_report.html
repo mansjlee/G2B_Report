@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00254130 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>대전광역시 상수도사업본부_2026년 지하시설물(상수도) 정보 수정·갱신 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>GIS 측량·DB 용역 중심</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>대전광역시 상수도 지하시설물(상수관로)의 GIS 위치정보를 정확히 수정·갱신하여 관망 유지관리 효율을 높이고, 타공사에 의한 시설물 파손 및 재난·공사 시 안전사고를 예방하는 것이 핵심 목표임</li><li>조사/이기 상수관로에 대한 현장 조사·탐사·측량, 정위치·구조화 편집, 공공측량 성과심사를 수행하고 구축된 GIS DB를 대전광역시 상수도시설물관리시스템에 탑재·연계하는 공간정보 현행화 사업임</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 금 500,000,000원 (부가세 포함, 5억원)</li><li><strong>사업 기간</strong>: 계약일로부터 120일</li><li><strong>사업 범위</strong>: 대전광역시 일원 / 상수도 지하시설물 조사 34㎞, 탐사 17㎞, 정위치·구조화 편집 각 34㎞, 공공측량 성과심사 1식, 상수도시설물관리시스템 탑재</li><li><strong>입찰방식</strong>: 제한경쟁입찰(협상에 의한 계약), 기술능력 90%·가격 10%, 하도급 불허, 중소 SW사업자만 참가 가능(20억원 미만)</li><li><strong>주요 일정</strong>: 계약 후 20일(작업계획·준비), 40일(조사·탐사·측량), 60~100일(정위치·구조화편집·성과심사), 120일(사업 완료)</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>발주기관</strong>: 대전광역시 상수도사업본부</li><li><strong>담당 부서</strong>: 기술부 급수과</li><li><strong>담당자</strong>: 전하연 주무관</li><li><strong>연락처</strong>: Tel. 042-715-6124 / Fax. 042-270-8673</li><li><strong>이메일</strong>: 제안요청서 내 명시 없음</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>기술·업무 요구사항</strong>: 상수관로 현장 조사·탐사·측량(금속관 ±20㎝/±30㎝, 비금속관 ±20㎝/±40㎝ 허용오차), 정위치·구조화 편집, 공간정보품질관리원 공공측량 성과심사 적합 판정, 데이터 표준·구조·품질관리(KS X ISO 19157), 보안·프로젝트관리·하자보수(1년) 등 총 23건 요구사항(DAR 8, SER 1, QUR 2, COR 2, PMR 5, PSR 5)</li><li><strong>참가자격</strong>: 측지측량업(5021)·공공측량업(5023)·수치지도제작업(5029)·지하시설물측량업(5031) 등록, SW사업자(1468), 공간정보DB구축서비스(8115169901) 직접생산확인, PM은 측량및지형공간정보 기술사 권장</li><li><strong>통합발주 S/W 구매 명시</strong>: 제안요청서에 조달쇼핑몰 직접구매 또는 통합발주 대상 S/W명·수량이 명시되어 있지 않음 (기존 대전광역시 상수도시설물관리시스템에 결과물 업로드·탑재만 요구)</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>S/W 공급 미포함</strong>: 본 사업은 SW 납품·구축이 아닌 지하시설물 조사·탐사·측량·GIS DB 수정·갱신 용역이며, 신규 플랫폼·미들웨어·OS 구매 항목이 없음</li><li><strong>업종·자격 제약</strong>: 측량·지하시설물측량·수치지도제작 등 공간정보 측량 업종 등록이 필수이며, Red Hat 단독 또는 직접 수행 구조와 부합하지 않음</li><li><strong>하도급 불허</strong>: 품질보증 및 유지관리를 위해 하도급을 허용하지 않아, 측량·GIS 전문 수행사와의 협력·하도급 기반 Red Hat 제품 제안 경로가 차단됨</li><li><strong>기존 시스템 활용</strong>: 발주처 운영 중인 상수도시설물관리시스템에 결과물 업로드만 요구하며, RHEL·OpenShift·Ansible 등 Red Hat 스택 도입·교체 요구 없음</li><li><strong>경쟁/대체 기술 환경</strong>: 기술적용계획표상 Linux는 서버 OS 선택지 중 하나로만 언급(구매 대상 아님)이며, 사업 본질은 GIS·측량 장비·공간정보 DB 처리 영역임</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>간접적 Linux 연계 가능성</strong>: 기술적용계획표 플랫폼 분야에서 서버용 Linux가 선택 가능 OS로 표기되어 있으나, 구매·구축 과업이 아니므로 Red Hat 직접 제안 근거는 매우 제한적임</li><li><strong>파트너 협력 시 참고</strong>: GIS·공간정보 SI 또는 측량 용역 수행사의 내부 서버·DB 운영환경이 Linux/RHEL 기반인 경우, 해당 파트너를 통한 간접적 OS·서브스크립션 제안 여지는 있으나 RFP 범위·평가항목(비금속관로탐지·측량실적 등)상 Red Hat 단독 영업 타깃으로 보기 어려움</li><li><strong>Ansible/OpenShift/JBoss</strong>: 자동화·컨테이너·애플리케이션 서버 관련 요구사항·구매 항목 없음, 사업 목적(GIS 좌표 정확도 개선)과도 불일치</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

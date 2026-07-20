@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00253644 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국교육과정평가원(대학수학능력시험본부)_AI 기반 수능 영어 자동 문항 생성 기능 개발 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>AI앱 중심, Linux·CN 여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>한국교육과정평가원(KICE) 대학수학능력시험본부가 수능 영어 영역을 대상으로 AI(LLM·RAG·멀티에이전트) 기반 자동 문항 생성·검증·난이도 예측 시스템을 구축하는 소프트웨어 개발 사업이다.</li><li>인간-AI 협업형 출제 체계 전환, 기출 유사도·성취기준 자동 검증, 출제 업무 효율화 및 수능 평가 공신력 강화가 핵심 목표이며, 향후 수능 전 영역 확장을 고려한 설계가 요구된다.</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 3,150백만원 (부가세 포함, 약 315억원)</li><li><strong>사업 기간</strong>: 계약일로부터 8개월</li><li><strong>사업 범위</strong>: ① AI 기반 수능 문항 생성 서비스(데이터 구축·문항 생성·검토·검사지 구성) ② AI 모델 운영 체계(LLM·에이전트·포털) ③ AI 활용 데이터 구축(벡터DB·학습데이터) ④ AI 서비스 인프라(국정자원 대구센터 PPP 클라우드·GPU·DR·보안)</li><li><strong>계약방법</strong>: 제한경쟁입찰 / 협상에 의한 계약 / 공동수급 허용 / 하도급 불허</li><li><strong>주요 일정</strong>: M(착수)~M+7(종료) 8개월간 분석·설계·구현·데이터 구축·인프라 구축·통합시험·검수·안정화, 단계별 감리 및 착수·중간·종료 보고회 수행</li><li><strong>평가방식</strong>: 기술평가 90% + 가격평가 10%, 기술평가 85% 이상 협상적격</li><li><strong>하자보수</strong>: 검수완료 후 12개월</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>발주기관</strong>: 한국교육과정평가원(KICE) 대학수학능력시험본부</li><li><strong>입찰 문의</strong>: 경영지원본부 구매계약부 / 043-931-0684</li><li><strong>제안 문의</strong>: 대학수학능력시험본부 / 043-931-0779</li><li><strong>담당자 성명·이메일</strong>: 제안요청서에 미기재 (설명회·입찰 공고 시 별도 안내)</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>기술·비즈니스 요구</strong>: NLP·OCR 기반 문항 데이터 구조화, RAG·멀티에이전트 기반 지문·선택지·해설 자동 생성, 유사도·표절·난이도·정답률 예측, 검사지 자동 구성, 범정부 AI 공통기반 LLM 필수 활용, 폐쇄망(VPN) 운영, 전자정부 표준프레임워크 준수, 클라우드 네이티브(MSA·컨테이너·CI/CD·오토스케일링), GPU(H100) 기반 AI 연산, DR·국가 정보보안 기준 준수, 동시접속 100명·응답 3초 이내</li><li><strong>통합발주 S/W (CSR-001 명시, 수량 포함)</strong>:</li><li>WEB/WAS Linux — 8</li><li>Apache HTTP / Tomcat — 8</li><li>PostgreSQL — 3</li><li><strong>참고 (LLM·임베딩, 범정부 AI 공통기반 활용 의무, SFR-013)</strong>: Samsung 2.3 37B_fp8, Llama 3.3 70B_fp8, gpt-oss-120B-tiktoken-v11, Gemma3 27B, sds-embedding-BGE-M3-vllm(임베딩·리랭킹) — 조달쇼핑몰 직접구매가 아닌 공통기반 내 활용 모델로 명시</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>명시 경쟁·대체 S/W</strong>: PostgreSQL 3식, Apache HTTP/Tomcat 8식이 CSR-001에 직접 규격 명시되어 DB·WAS 레이어 직접 대체 제안 불가</li><li><strong>LLM 스택</strong>: 본 사업 모든 LLM은 범정부 AI 공통기반(Samsung·Llama·GPT-OSS·Gemma 등) 활용이 필수(SFR-013)로 Red Hat AI/Openshift AI 직접 공급·대체 불가</li><li><strong>사업 성격</strong>: AI 응용 SW 개발·데이터·모델 운영체계 구축이 중심이며, Red Hat 제품 단독 조달·통합발주 항목은 Linux OS 수준에 한정</li><li><strong>인프라 주체</strong>: 클라우드 인프라는 국가정보자원관리원 대구센터 PPP 클라우드존에 구축되며 인프라 유지관리는 국정자원·인프라 사업자 역할로 분리</li><li><strong>기타 제약</strong>: VMware·Ubuntu·Rocky Linux·Oracle DB 등 경쟁 제품 직접 지정은 없으나, JBoss 등 WAS는 Tomcat 명시로 대체 곤란, OCR·벡터DB 등 AI 솔루션은 제품명 미지정·개발사 선정 영역</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>RHEL</strong>: CSR-001 'WEB/WAS Linux 8'에 OS 브랜드 미고정 — RHEL 8/9 구독·기술지원 확약서를 Linux 8식 대응안으로 제안 가능</li><li><strong>OpenShift Container Platform</strong>: 클라우드 네이티브·MSA·컨테이너·오토스케일링·무중단 배포(CSR-001/002/005) 요구와 부합 — AI 워크로드·개발/운영 클러스터 분리 아키텍처 제안 포인트</li><li><strong>Ansible Automation Platform</strong>: CI/CD·빌드/배포 파이프라인 자동화, Rolling/Blue-Green/Canary 배포(CSR-005), GPU 노드·환경 구성 자동화 제안 가능</li><li><strong>Red Hat 솔루션 강점 연계</strong>: 폐쇄망·고가용·보안 강화 클라우드 운영, 컨테이너 기반 LLM API 서빙 인프라, DevSecOps·형상관리(Git+Jenkins 등) 연계 — 단 LLM 자체는 범정부 공통기반 연동 전제</li><li><strong>제안 전략</strong>: SI 파트너 공동수급(최대 5개사) 통해 인프라·플랫폼 레이어 기술지원·OpenShift 기반 PaaS·Ansible 운영자동화를 차별화 요소로 제안서에 반영</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
