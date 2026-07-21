@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00254175 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국지역정보개발원_재난 예·경보 통합관리 및 데이터 품질관리체계 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>JBoss·Linux 명시, OSS 위주</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>행정안전부 수탁사업으로 한국지역정보개발원이 발주하는 재난 예·경보 통합관리 및 데이터 품질관리체계 구축 사업</li>
+                    <li>전국 지방정부 재난 예·경보 발령·단말기 현황을 NDMS와 연계하여 실시간 통합 모니터링하고, 행안부 재해문자전광판시스템 개편 및 지방정부 표준 플랫폼(9개 시·군)과 연계</li>
+                    <li>재난안전데이터 공유플랫폼의 간접연계(약 600개 데이터, 63개 시스템)를 직접연계로 전환하고, 데이터 품질 모니터링·분류체계 정비·비식별화 체계를 구축하여 AI 학습에 적합한 고품질 데이터 확보</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 2,041,042천원 (약 20.4억원, VAT 포함 추정)</li>
+                    <li><strong>사업 기간</strong>: 계약체결일로부터 7개월 (하자보수 12개월 무상)</li>
+                    <li><strong>사업 범위</strong>: ① 재난 예·경보 통합관리시스템 구축(WEB/WAS/DB/GIS/연계/게이트웨이 서버 12대, NDMS SSO 연계, CAP 표준 준수, GIS 관제, 이중화) ② 재난안전데이터 품질관리체계 구축(연계 전환, API관리, 품질 모니터링, 분류체계 정비, 비식별화)</li>
+                    <li><strong>계약방식</strong>: 일반경쟁입찰(협상에 의한 계약), 기술평가 90% / 가격평가 10%</li>
+                    <li><strong>주요 일정</strong>: M(착수) → M+1~M+5(설계·개발·연계·모니터링) → M+6(최종테스트·검수·안정화·교육·감리), 직접구매 SW 도입예정 ’26년 10월</li>
+                    <li><strong>입찰 제한</strong>: 20억~40억 구간으로 대기업 SW사업자 참여 제한, 중소·중견기업 대상, 직접생산확인증명서(정보시스템개발서비스) 필요</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주기관</strong>: 한국지역정보개발원 (행정안전부 수탁)</li>
+                    <li><strong>사업책임자</strong>: 재난정보관리부 부장 정용훈 / TEL: 02-2031-9420 / FAX: 02-2031-9401</li>
+                    <li><strong>담당자</strong>: 재난정보관리부 수석 김동현 / TEL: 02-2031-9432</li>
+                    <li><strong>담당자</strong>: 재난정보관리부 수석 이서경 / TEL: 02-2031-9431</li>
+                    <li><strong>이메일</strong>: RFP 본문에 명시되지 않음 (설명회·자료열람 시 담당자 문의)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>기술·기능 요구</strong>: NDMS SSO 통합인증 연계, GIS 기반 실시간 재난발령·단말기 모니터링, CAP(v1.5.2+) 및 재난 예·경보 통합플랫폼 연동 가이드라인 준수, 지방정부 9개 시·군 연계, 재해문자전광판시스템 개편, 데이터 품질 검증·연계 전환(간접→직접), API 자동생성·Swagger(OAS 3.0), 대시보드·장애알림, SSL/TLS·시큐어코딩·취약점점검, 웹접근성·전자정부 표준 준수</li>
+                    <li><strong>인프라 요구</strong>: 국가정보자원관리원 자원 통합사업(1차) 장비 할당, Linux OS 서버 12대(WEB 2/WAS 2/DB 2/GIS 2/연계 2/게이트웨이 2), 오픈소스 WEB + JBoss 기반 WAS + NURI2 + GIS 가능 오픈소스 DBMS, 서비스·게이트웨이 이중화</li>
+                    <li><strong>통합발주 S/W (RFP 명시)</strong>:
+                        <ul>
+                            <li>JBoss 기반 WAS 운영환경 (ACR-05, WAS 서버 2식)</li>
+                            <li>오픈소스 기반 웹서버 운영환경 (ACR-05, WEB 서버 2식)</li>
+                            <li>GIS 가능 오픈소스 기반 DBMS 운영환경 (ACR-05, DB 서버 2식, 선정 결과 반영)</li>
+                            <li>Linux OS (ECR-01, 서버 12대 전체)</li>
+                            <li>시스템 모니터링 솔루션 (SFR-04, 국가정보자원관리원 도입 기준 적합 제품, 제안사 제공)</li>
+                            <li>개인정보 비식별화 솔루션 (ECR-02, 3식 — 단, 아래 직접구매 항목과 중복 명시)</li>
+                        </ul>
+                    </li>
+                    <li><strong>직접구매 S/W (붙임7, 조달쇼핑몰·분리발주)</strong>:
+                        <ul>
+                            <li>개인정보비식별화 처리모듈 / 3 (12core) — 도입예정 ’26년 10월, 약 81백만원 이내</li>
+                            <li>개인정보비식별화 작업관리모듈 / 3 (12core) — 도입예정 ’26년 10월, 약 39백만원 이내</li>
+                        </ul>
+                    </li>
+                    <li><strong>API관리 플랫폼 제약</strong>: SFR-18에서 GPL v3 준수·오픈소스 기반·기능 수정·확장 가능한 시스템 요구 (상용 솔루션도 종속 없이 개발·유지관리 가능해야 함)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>직접구매 분리발주</strong>: 개인정보비식별화 처리모듈(3식), 작업관리모듈(3식)은 발주기관 직접구매 대상으로 용역 수행사의 S/W 공급 범위에서 제외</li>
+                    <li><strong>API관리 플랫폼</strong>: GPL v3 준수·오픈소스 라이선스 보유·자유로운 기능 수정 요건으로 Red Hat 상용 API관리(3scale 등) 단독 제안은 제약 존재</li>
+                    <li><strong>DBMS</strong>: “GIS 가능한 오픈소스 기반 DBMS”로 명시되어 PostgreSQL/PostGIS 등 OSS DB가 유력하며 RHEL 전용 DB 제품(RHOV 등) 직접 지정 없음</li>
+                    <li><strong>H/W·기반SW</strong>: 서버·스토리지·네트워크·기존 상용SW는 국가정보자원관리원 별도 관리·할당으로 용역 범위 외</li>
+                    <li><strong>경쟁·대체 기술</strong>: VMware, Contrabass, Ubuntu, Oracle/Rocky Linux 등 특정 경쟁제품은 RFP에 명시되지 않으나, Linux·JBoss·오픈소스 DB·GPL v3 API 플랫폼 등 OSS 스택 중심으로 설계되어 상용 구독 S/W 단독 납품 기회는 제한적</li>
+                    <li><strong>개발 중심 사업</strong>: 본 사업은 SI/개발 용역(기능 100건+)이 주류이며 Red Hat 제품 대량 라이선스 조달 구조가 아님</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>JBoss / Red Hat JBoss EAP</strong>: ACR-05에서 “JBoss 기반 WAS 운영환경 구성”을 명시적으로 요구 — Red Hat JBoss EAP 또는 WildFly 기반 기술 제안·구축·운영 지원 가능</li>
+                    <li><strong>RHEL</strong>: ECR-01 서버 12대 전체 OS가 Linux로 규정 — RHEL Standard/Premium 구독을 WAS·WEB·DB·GIS·연계·게이트웨이 서버 OS로 제안 가능 (국자원 반입 기준 협의 필요)</li>
+                    <li><strong>Ansible Automation Platform</strong>: 12대 서버 구성·배포·이중화 전환·패치·설정관리, 연계 테스트 베드 구축, 하자보수 기간 운영 자동화에 적용 가능</li>
+                    <li><strong>모니터링·장애대응</strong>: SFR-04의 CPU·메모리·스토리지·연계상태 모니터링, 장애 알림·대시보드 요구에 Red Hat 관련 APM/오픈소스 연계 모니터링 스택 제안 가능 (국자원 도입 기준 적합 제품 조건 충족 필요)</li>
+                    <li><strong>보안·컨테이너(부분)</strong>: SSL/TLS, 접근제어, 시큐어코딩, 이중화·무중단 전환 요구에 Red Hat 보안 가이드·RHEL 보안 강화(SELinux 등) 기술 자문 가능</li>
+                    <li><strong>제안 전략</strong>: SI 수행사 파트너십을 통해 JBoss EAP + RHEL + Ansible 번들 기술지원·교육·하자보수(1년) 패키지로 제안하거나, JBoss/WAS 영역 Red Hat 기술지원·마이그레이션 컨설팅 단독 제안 검토</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

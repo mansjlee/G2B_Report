@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00254399 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국조폐공사 재해복구시스템 네트워크 환경 구축 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>Oracle·네트워크 중심</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>재해·재난 및 시스템 장애 등 위기 상황에 대비하여 지급결제 업무의 연속성 확보를 위한 재해복구센터(DR센터) 구축</li><li>데이터 손실 최소화 및 안정적인 지급결제 서비스 제공 기반 마련을 통해 대외 신뢰도 제고</li><li>재해복구센터 네트워크 환경 구축, 중요시스템(DB·파일 등) 실시간 복제 환경 구성, 주센터 네트워크 환경 보완 구축</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 5,365,000천원(부가가치세 포함, 약 536.5억원)</li><li><strong>사업 기간</strong>: 계약일로부터 2026년 12월 31일까지</li><li><strong>사업 범위</strong>: DR센터 네트워크(스위치·보안장비) 구축, 중요시스템 실시간 복제, 주센터 네트워크 보완(노후 장비 교체·트래픽 증가 대응), 총 89식 장비 도입</li><li><strong>입찰방법</strong>: 제한경쟁입찰, 협상에 의한 계약</li><li><strong>주요 일정</strong>: 계약 후 분석·설계(M+1~M+2) → 구축(M+3~M+6) → 안정화(M+7~), 3개월 안정화 기간 포함</li><li><strong>평가방법</strong>: 기술능력평가 90%(정량 10점+정성 80점), 입찰가격평가 10점</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>발주기관</strong>: 한국조폐공사</li><li><strong>담당부서</strong>: ICT개발처</li><li><strong>부장 정정용</strong>: TEL 042-870-1241, e-mail jjyong@komsco.com</li><li><strong>차장 권재형</strong>: TEL 042-870-1244, e-mail jhkwon@komsco.com</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>네트워크 장비</strong>: 라우터(재해복구센터 1식, 주센터 2식), 백본/DMZ/카드사 L3/MGMT/DB/형상관리/보안솔루션 스위치, L4 스위치(FWLB 8식, SLB 4식), SAN 스위치(2식) 등 고성능 네트워크 장비 도입·설치</li><li><strong>보안장비</strong>: DDoS(3식), IPS(3식), 카드사 VPN(1식), 로그수집서버(2식), 백신정책서버(1식), NTP서버(2식)</li><li><strong>DB·스토리지</strong>: IBM Power 기반 통합DB서버(1식), 통합DB 스토리지(1식), LOG 스토리지(1식), HMC관리콘솔(1식), LTO 백업장치(1식), 로그스토리지 확장쉘프(1식)</li><li><strong>데이터 복제</strong>: 주센터-DR센터 간 DB·파일 실시간 복제, 역복제 및 정합성 검증, DR 전환 검증 및 훈련</li><li><strong>보안·품질</strong>: 전자금융기반시설 보안취약점 평가, CC인증·보안적합성 검증, 국가정보보안기본지침 준수, 하자보수(S/W 1년)</li><li><strong>통합발주 S/W(직접구매 제외)</strong>:</li><li>Oracle Active Data Guard 54PL(주센터 서비스B): 1식</li><li>Oracle Active Data Guard 18PL(재해복구센터): 1식</li><li>Oracle Database Enterprise Edition 18PL(재해복구센터): 1식</li><li>Oracle Partitioning 18PL(재해복구센터): 1식</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>S/W 공급 범위 제한</strong>: 본 사업은 네트워크·보안·스토리지·DB 인프라 구축 용역으로, Red Hat 제품(RHEL, OpenShift, Ansible 등) 구매·공급 요구사항이 RFP에 명시되지 않음</li><li><strong>Oracle DBMS 명시</strong>: DBMS 및 복제솔루션이 Oracle Enterprise Edition, Oracle Partitioning, Oracle Active Data Guard로 통합발주 대상으로 명시되어 있으며, 주센터 기존 Oracle 환경과의 호환성이 필수 조건</li><li><strong>IBM Power 서버 지정</strong>: 통합DB서버는 IBM Power E1050 계열(32코어 이상, AIX/Unix 계열) 규격이며, HMC관리콘솔 도입 요건으로 IBM 생태계에 종속</li><li><strong>기존 장비 호환성</strong>: 주센터 사용 중 IBM FS7300·FS5045 스토리지, Lenovo DM3010H, WINs DDoS/IPS, FutureSystem VPN 등 기존 제품과의 호환·연동이 필수</li><li><strong>경쟁 제품·기술 명시</strong>: VMware, Citrix, Hyper-V, OPEN Xen 등 가상화 하이퍼바이저 지원 요건은 스토리지 측면에서만 언급되며 Red Hat 관련 제품은 미명시</li><li><strong>직접구매 제외 S/W</strong>: 붙임15에 Oracle DBMS·Oracle Active Data Guard가 직접구매 제외(통합발주) 품목으로 등재되어 Red Hat 대체 제안 여지 없음</li><li><strong>입찰 참가 자격</strong>: 정보통신공사업(0036) 등록, 해당 제품 제조업체와 기술지원협약서(Certification) 체결 가능 업체 등 네트워크·인프라 SI 업체 중심 자격 요건</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>인력 자격(RHCE)</strong>: PSR-001에 정보시스템 구축 전문인력 투입 시 RHCE 자격 보유자 투입 가능하며, Red Hat은 SI/네트워크 통합업체를 통한 기술자격·교육 지원 형태로 간접 참여 가능</li><li><strong>Linux OS 호환성</strong>: ECR-002·ECR-018·ECR-019에 운영체제 상호운용성 및 Linux OS 지원 요건이 있으나, 제조사 자체 OS 또는 스토리지 관리용 Linux 수준이며 RHEL 지정은 없음</li><li><strong>자동화·프로비저닝(간접)</strong>: 네트워크 장비 ZTP(Zero Touch Provisioning), Telemetry 모니터링 요건이 있어 Ansible Automation Platform 기반 네트워크 자동화를 추가제안(별지서식14) 형태로 제시할 여지는 있으나 필수 요구사항 아님</li><li><strong>DR·고가용성 아키텍처 컨설팅</strong>: DR센터 구축·데이터 복제·전환 훈련 등 Red Hat OpenShift/컨테이너 기반 DR 아키텍처는 현재 Oracle·IBM 기반 요구와 불일치하나, 향후 애플리케이션 현대화 연계 시 Red Hat 솔루션 제안 가능성 존재</li><li><strong>파트너 협력 모델</strong>: Red Hat은 직접 입찰 참가보다 네트워크·인프라 SI 파트너(공동수급·하도급)와의 기술지원협약, RHCE 인력 파견, Linux 기반 관리서버 OS 제안 등 제한적 협력 경로 검토 가능</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

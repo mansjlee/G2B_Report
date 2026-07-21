@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00254249 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국사회보장정보원_2026년 보건소 노쇠예방관리시스템 기능개발 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>응용SW개발·기존체계 확장</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>보건소 노쇠예방관리시스템(PHIS·MPHIS·대민 모바일앱) 기능 개발 사업으로, 고령화 대응 및 장기요양 진입 최소화를 위한 선제적 건강관리 체계 구축이 목적임</li><li>방문건강관리·AI·IoT 어르신건강관리·노쇠예방관리 등 기존 보건사업 연계, 개인 중심 통합 건강관리, 대상자 자가 건강관리 지원, 시범사업 확산 기반 마련을 추진함</li><li>지역보건의료정보시스템(PHIS) 및 모바일 보건소시스템(MPHIS) 기반 기능 확장과 대민용 하이브리드 모바일앱(안드로이드 우선) 신규 개발이 핵심임</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 840백만원(부가세 포함, 약 8.4억원)</li><li><strong>사업 기간</strong>: 계약일로부터 150일(약 5개월)</li><li><strong>사업 범위</strong>: 과제1 기존 서비스 연계·협력 기반, 과제2 PHIS·MPHIS 노쇠예방관리 업무지원 기능, 과제3 대상자 자가 건강관리 모바일앱 개발·시범운영</li><li><strong>입찰방식</strong>: 제한경쟁입찰, 협상에 의한 계약체결, 기술평가 90%·가격평가 10%</li><li><strong>주요 일정</strong>: 착수(M) → 분석·설계(M~M+2) → 개발·시험(M+2~M+3) → 교육·전개·오픈(M+3~M+4) → 검수·종료(M+4)</li><li><strong>요구사항</strong>: 기능 22건, 장비 2건, 성능 4건, 인터페이스 4건, 데이터 11건, 테스트 5건, 보안 16건 등 총 112건</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>주관기관</strong>: 한국사회보장정보원 보건사업정보부</li><li><strong>부장</strong>: 김기현 / TEL: 02-6360-6981</li><li><strong>차장</strong>: 조철행 / TEL: 02-6360-6988</li><li><strong>과장(제안요청 설명회 문의)</strong>: 명노훈 / TEL: 02-6360-6988 → 02-6360-6982 / E-mail: nohun@ssis.or.kr</li><li><strong>사업총괄</strong>: 보건복지부 건강정책과</li><li><strong>관계기관</strong>: 한국건강증진개발원 고령화대응부</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>기능 요구사항(SFR 22건)</strong>: 노쇠평가(K-Frail)·대상자·사전·사후평가·맞춤형 서비스 추천·건강실천 미션·서비스 이력·그룹·건강프로그램·통합 모니터링·푸시·DW·대민앱(로그인·자가평가·건강측정·미션·커뮤니티)·방문·어르신건강관리 통합·통합돌봄 연계·OpenAPI 확장 등</li><li><strong>시스템·인프라(ECR)</strong>: 기존 운영 인프라 환경 기반 구축, PostgreSQL 최신 안정 버전 설치·구성·튜닝·보안·백업</li><li><strong>연계 요구</strong>: 통합돌봄시스템·방문건강관리·어르신건강관리·대민앱 DBtoDB 연계, 행정정보 공동이용서비스·공공데이터포털 연계 검토</li><li><strong>개발 표준</strong>: 전자정부 표준프레임워크 적용, 한국사회보장정보원 SW개발방법론·개발 표준가이드 준수, Java 시큐어코딩, 보건의료데이터 표준(KR CDI·KR Core) 준수</li><li><strong>성능</strong>: 온라인 업무 3초 이내, 온라인 배치 3분 이내, 오류응답 3초 이내</li><li><strong>통합발주 S/W(명시 구매·설치)</strong>:<ul><li>PostgreSQL(오픈소스 DBMS) — ECR-002, 수량 미명시(개발·시험·운영 환경별 설치·구성)</li></ul></li><li><strong>발주기관 나라장터 종합쇼핑몰 별도 구매(수량 미명시)</strong>: 모바일 백신, 모바일 앱 위변조 방지, 모바일 키보드 보안, PUSH 메시지 전송 Server/Client</li><li><strong>기존 상용SW 활용(신규 구매 아님)</strong>: DB암호화, 연계 솔루션, 리포팅 솔루션, UI 개발 플랫폼 등 기 운영 중 솔루션</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>S/W 공급 범위</strong>: 본 사업은 응용 소프트웨어 기능개발·고도화 용역이며, Red Hat 제품 직접 납품·라이선스 공급 과업이 아님</li><li><strong>DBMS 지정</strong>: ECR-002에서 PostgreSQL 설치·구성을 명시적으로 요구하여 RHEL 기반 DB 또는 Red Hat DB 계열 직접 제안 불가</li><li><strong>기존 체계 종속</strong>: PHIS·MPHIS 기존 아키텍처·UI/UX·공통모듈·상용SW(DB암호화·연계·리포팅·UI플랫폼) 활용 필수</li><li><strong>개발 프레임워크 제약</strong>: 전자정부 표준프레임워크 적용 의무(COR-005, COR-008)로 JBoss 등 대체 미들웨어 제안 어려움</li><li><strong>모바일 보안SW</strong>: 모바일 백신·위변조방지·키보드보안·PUSH 송신 SW는 발주기관이 조달쇼핑몰 별도 구매로 수행사업자 S/W 공급 범위 아님</li><li><strong>경쟁·대체 기술</strong>: PostgreSQL(오픈소스 DBMS) 명시, 기존 Linux·Windows Server 등 범용 OS만 기술적용계획표에 언급(RHEL·Rocky 등 특정 배포판 미지정이나 기존환경 준수)</li><li><strong>클라우드·인프라</strong>: 한국사회보장정보원 클라우드센터·유휴 전산자원 활용으로 신규 OpenShift·컨테이너 플랫폼 도입 여지 제한적</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>RHEL 간접 기회</strong>: ECR-001 기존 인프라 환경 기반 구축, 기술적용계획표 Linux 서버 OS 항목 — PHIS 운영 Linux 서버가 RHEL/RHEL 계열인 경우 OS 서브스크립션·패치·보안 컨설팅 제안 가능(확인 필요)</li><li><strong>Ansible</strong>: PMR-001 안정화·PMR-007~012 운영관리, SER-009·SER-016 서버 보안·패치, PostgreSQL·WAS 다중환경 구성 시 자동화·설정관리 도구로 보조 제안 가능</li><li><strong>JBoss/OpenShift</strong>: 직접 적용은 어려우나, 향후 PHIS·MPHIS 마이크로서비스·API 확장(SFR-022 OpenAPI) 시 Red Hat OpenShift 컨테이너 플랫폼 중장기 로드맵 제안은 가능</li><li><strong>보안·컴플라이언스</strong>: SER-006 시큐어코딩·취약점 점검, SER-016 서버 보안, 개인정보보호·감리 대응 — Red Hat Insights·Security Advisory 연계 운영지원 제안 가능</li><li><strong>제안 전략</strong>: 수행사(SI) 파트너십을 통한 RHEL/Ansible 부가 제안, 또는 향후 전국 확산·운영유지관리 단계에서 플랫폼 표준화 제안이 현실적 접근</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
