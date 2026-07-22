@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00254834 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국립생태원_생태정보시스템 최적화 및 G-클라우드 이관 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>G클라우드 Linux·자동화 여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국립생태원 생태정보시스템(EcoBank, 원자료입력시스템, 대표홈페이지 등 6개 시스템)을 국가정보자원관리원 G-클라우드로 이관하고, 노후 인프라를 클라우드 기반으로 전환하여 운영 안정성·성능을 확보하는 사업</li>
+                    <li>EcoBank 서비스 최적화·UI/UX 개편, 원자료입력시스템 경량화 재개발, 모바일 전자야장·굿로드(iOS) 앱 개발 등 기능 개선을 병행</li>
+                    <li>공공분야 클라우드 전환 정책(제4차 클라우드컴퓨팅 기본계획) 이행, 정보시스템 통합·표준화, DB 데이터 안정적 이관 및 2026년 EcoBank 유지관리 지원</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 1,616백만원(금 16억 1,600만원, 부가세 포함)</li>
+                    <li><strong>사업 기간</strong>: 계약일로부터 ~ 2027.02.28.(약 8개월)</li>
+                    <li><strong>사업 범위</strong>: G-클라우드 이관 대상 6개 시스템(대표홈페이지, EcoBank, 생태모방지식서비스플랫폼, 한국외래생물정보시스템, LMO환경안전성센터, 자연환경조사 원자료입력시스템) 최적화·이관·데이터 마이그레이션, 상용 SW 교체·재설치, 통합시험·안정화, EcoBank 데이터 현행화 및 2026년 유지관리</li>
+                    <li><strong>주요 일정</strong>: EcoBank/원자료입력시스템 기능개발, G-클라우드 전환(환경분석→아키텍처 설계→APP·데이터 전환→통합시험·안정화), UI/UX 개선, EcoBank 유지관리 병행 / 착수·요구사항·설계·중간·최종 보고 / G-클라우드 이관 시기는 국가정보자원관리원 일정에 따라 변동 가능</li>
+                    <li><strong>입찰 방식</strong>: 제한경쟁입찰(협상에 의한 계약), 기술평가 90%·가격평가 10%, 중소기업·소상공인만 참여 가능(20억 미만 사업)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 국립생태원 생태빅데이터팀</li>
+                    <li><strong>사업책임자</strong>: 권용수 팀장 / 041-950-5621 / kwonys@nie.re.kr</li>
+                    <li><strong>사업관리자</strong>: 김정철 전임연구원 / 041-950-5624 / jckim@nie.re.kr</li>
+                    <li><strong>제안서 문의</strong>: 김정철 전임연구원 / 041-950-5624 / jckim@nie.re.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>핵심 기술·비즈니스 요구사항</strong>: G-클라우드 전환(TNR 6건), EcoBank·원자료입력시스템 기능개선(SFR 12건), DB 구축·이관(DAR 10건), 전자정부표준프레임워크 기반 개발, Any-ID·SSO 연계, 자연어 대화형 검색, E-GIS 통합, 안드로이드 전자야장·iOS 굿로드 앱 개발, 데이터 표준·품질·개방 관리, HA·SLB 환경 구성, 하자보수 12개월</li>
+                    <li><strong>통합발주 S/W(구매 명시, 수량)</strong>:
+                        <ul>
+                            <li>ClipReport V5 엔진(원자료입력시스템 V4→V5 업그레이드): 4 Core</li>
+                            <li>ClipReport V5 엔진(EcoBank OZ리포팅→ClipReport 전환 신규 증설): 4 Core</li>
+                            <li>통합인증(SSO) 에이전트(원자료입력시스템, G-클라우드 HA·SLB 환경 증설): 8 Core × 7 Agent</li>
+                        </ul>
+                    </li>
+                    <li><strong>기존 S/W 이관(신규 라이선스 구매 없음, 기술지원만)</strong>: 기존 통합뷰어(대표홈페이지), 기존 검색엔진(대표홈페이지) — G-클라우드 이관·최적화 연계 기술지원</li>
+                    <li><strong>기반 SW 환경</strong>: WAS(Tomcat 등), JDK 최신 권장 사양, OS·DBMS·WAS·WEB G-클라우드 환경 재설치, SAML 2.0/OAuth 2.0 기반 SSO, HTML5 Zero-Client 리포팅</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>특정 상용 S/W 지정·고정</strong>: ClipReport V5(8 Core 합계), SSO 에이전트(8 Core×7 Agent) 등 Red Hat 제품이 아닌 제3자 S/W가 ECR 요구사항에 수량까지 명시되어 직접 대체·공급 불가</li>
+                    <li><strong>기존 상용 SW 재사용</strong>: 통합뷰어·검색엔진은 기존 라이선스 G-클라우드 이전 재사용으로 신규 S/W 조달 여지 없음</li>
+                    <li><strong>응용 개발 중심 SI 사업</strong>: 전자정부표준프레임워크·Tomcat/JDK 기반 Java 웹 개발, UI/UX·모바일 앱 개발, 데이터 마이그레이션이 주 과업으로 Red Hat 제품 직접 납품 구조 아님</li>
+                    <li><strong>경쟁·대체 스택</strong>: 기술적용계획표에 Linux·Windows Server·UNIX 등 개방형 OS 병렬 명시, 특정 Linux 배포판(RHEL) 의무 없음 / JBoss·OpenShift 등 Red Hat 미기재</li>
+                    <li><strong>입찰 참가 제한</strong>: 중소기업·소상공인만 참여 가능(20억 미만), Red Hat이 직접 원도급 수주 불가 — SI 파트너 경유 간접 제안만 가능</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>RHEL</strong>: G-클라우드 VM 기반 OS·Tomcat/JDK WAS 환경 구축 시 Linux 서버 OS로 RHEL 제안 가능(기술적용계획표 Linux 적용, TNR-003 오픈소스 기반 S/W스택·벤더 Lock-in 탈피 방안 요구)</li>
+                    <li><strong>Ansible Automation Platform</strong>: 6개 시스템·DB·데이터 단계별 이관, HA·SLB·SSO 연동 환경설정, Cut-over·롤백 시나리오 자동화에 IaC·구성관리 도구로 제안 가능</li>
+                    <li><strong>Red Hat OpenShift</strong>: TNR-003 목표 아키텍처 설계 시 컨테이너·PaaS 전환 및 G-클라우드 IaaS/PaaS 활용 방안으로 간접 제안 여지(기술적용계획표 IaaS·PaaS·SaaS 적용)</li>
+                    <li><strong>강점 일치 요구사항</strong>: HA·부하분산(SLB) 환경, DR·백업(RTO/RPO), 클라우드 보안 가이드 준수, 24×365 상시운영, 성능 튜닝·운영 안정화(TNR-005) — RHEL 구독·지원·패치 관리 체계와 부합</li>
+                    <li><strong>제안 전략</strong>: 원도급 SI 업체(중소 SW사업자)와 공동수급·하도급 파트너십으로 G-클라우드 Linux 표준 OS·이관 자동화·운영 표준화 패키지 제안</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

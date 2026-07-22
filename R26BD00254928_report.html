@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00254928 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국도로교통공단_2026년 정보시스템 재구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>인프라 Linux·WAS 제안 여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>한국도로교통공단 통합경영관리시스템(통경) 등 주요 정보시스템 5개년 재구축 계획 3차년도 사업으로, 정보시스템 표준체계 기반 디지털서비스 전환 및 스마트 행정 실현을 목표로 함</li><li>NonActiveX·HTML5·웹표준 적용, 표준 UI/공통모듈/데이터 표준체계 도입, 내·외부 연계 강화, 인프라(HW/SW) 이중화 및 데이터 표준화·이관을 추진</li><li>예산·회계·자산은 설계까지만 수행하고 개발은 2027년 별도 사업으로 분리; 복지·노사·안전·교통·윤리·홍보·연구·기금·일자리창출 등은 본 사업에서 개발 구현</li><li>AI 기반 통합 모니터링(이상탐지·수요예측·장애대응 챗봇), SSO·전자결재·ESB 연계, 전자정부프레임워크 기반 재구축이 핵심 방향</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li>**사업 예산**: 6,552,598,000원(부가세 포함)</li><li>**사업 기간**: 계약일로부터 180일(무상하자보수 1년)</li><li>**사업 범위**: 현황·요구분석·설계(전체), 개발(예산·회계·자산 제외), 인프라 구축(Web/WAS/DB 서버 이중화, 스토리지, SAN/L4/L2), 데이터 표준화·이관, 테스트·전환, 올바로·메신저·사진검증솔루션·교통사고분석 기능 보완</li><li>**입찰방식**: 일반경쟁입찰(협상에 의한 계약), 기술 90% / 가격 10%, 조달청 오프라인 기술평가</li><li>**주요 일정**: 착수→요구분석→설계→개발·인프라 설치→데이터 이관→통합테스트→시범운영→완료(약 M~M+5, 6개월 내외)</li><li>**요구사항 규모**: 기능 74건, 장비구성 14건, 성능 8건, 인터페이스 9건, 데이터 6건, 테스트 5건, 보안 11건, 품질 4건, 제약 6건, PM 15건, 지원 10건(합계 162건)</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li>**주관기관**: 한국도로교통공단</li><li>**담당 부서**: AI디지털본부 AX혁신처</li><li>**박명진**: 033-749-5259, mjpark@koroad.or.kr</li><li>**최성일**: 033-749-5270, iamssung@koroad.or.kr</li><li>**추진 조직**: 총괄(AI디지털본부장), 사업관리(AX혁신처), 사업지원(AX전략처·디지털운영처·정보보호처), 업무전담(본부·지방 TF), 외부 감리</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li>**기술·개발**: 전자정부 표준프레임워크·HTML5·Java/JSP 기반, e-govFramework 공통모듈 재사용, SSO·통합인증 연계, KRDS·디지털정부 UI/UX 가이드, 웹표준·웹접근성(K-WAH 4.3), 반응형/적응형 웹, ESB 우선 활용 내·외부 연계</li><li>**인프라**: Linux OS 19식, Web/WAS SW 11식 설치; 운영 Web/WAS 7대·운영 DB 3대·개발 Web/WAS 3대·개발 DB 3대·사진검증 DB 1대; SAN/NAS 스토리지, SAN스위치 2대, L4 2대, L2 2대; Active-Active 이중화, NAS 파일 공유(상용SW 가능)</li><li>**AI·모니터링(SFR-72)**: OpenSearch 기반 이상탐지, 시계열 예측, LLM·RAG 장애대응 챗봇, 벡터 DB, 실시간 스트리밍 처리</li><li>**보안**: 시큐어코딩, OWASP·웹 취약점 점검, 개인정보 암호화, DB·서버 접근통제(보안인증 제품), 기본 포트 변경(예: Oracle 1521→임의포트), 외주용역 보안특약</li><li>**통합발주 S/W(수량 명시, SI 수행사 납품·설치)**:
+                    <ul>
+                        <li>Linux 운영체제(OS): 19식</li>
+                        <li>Web/WAS SW: 11식</li>
+                        <li>DBMS SW: 운영 DB서버 3대 + 개발 DB서버 3대 + 사진검증솔루션 운영 DB서버 1대(기존 운영 DBMS와 동일 제품 설치)</li>
+                        <li>이중화 파일 볼륨 공유 SW: Web/WAS Active-Active 구성 시(상용SW 또는 오픈소스, 라이선스 제공 조건)</li>
+                        <li>보안 SW: Web/WAS·DB 서버 등에 설치(제품명·수량은 제안사 제안)</li>
+                        <li>SAN/NAS 스토리지 시스템 관리 SW: SAN/NAS 운영·개발 스토리지 각 1대 규모에 포함</li>
+                        <li>개발·운영 모니터링 SW: 제안사 별도 제공 가능(제품명·수량 미지정)</li>
+                    </ul>
+                </li><li>**공단 직접구매 S/W(별첨1, 조달쇼핑몰·통합발주 외)**: 별첨「직접구매 대상 상용소프트웨어 구매계획」에 따름(※본 추출문서에 품목·수량 상세표 미포함, 운영 호환성 위해 현행 운영 SW 제품 기준 구매, 수량 변동 가능)</li><li>**현행 운영 S/W(호환·연계 기준)**: Oracle 11G(통경), Tibero(올바로·운전면허), e-govFramework, TrustForm/eXBuilder, ESB 연계솔루션, 사진검증솔루션, RFID 물품관리솔루션, 전략예산 상용솔루션</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li>**S/W 공급 범위**: 본 사업은 SI(설계·개발·인프라 구축) 용역 중심이며, Red Hat이 직접 납품 주체가 아닌 구조; 상용 SW 일부는 공단 직접구매(별첨1)로 분리</li><li>**DBMS 고정성**: 통경 Oracle 11G, 올바로·면허 Tibero 운영; 사진검증 DB는 「기존 운영 DBMS와 동일 DBMS」 설치 명시 → Oracle/Tibero 계열 지속, RHEL은 OS로만 접근</li><li>**애플리케이션 스택**: 전자정부 표준프레임워크·Java/JSP·InHouse 개발 고정, JBoss/WildFly 등 WAS 지정 없음; e-gov 표준과 기존 공통모듈 우선</li><li>**경쟁·대체 기술 명시**: SFR-72 AI 모니터링에 OpenSearch 기반 이상탐지 엔진 명시(Elastic/OpenSearch 스택); LLM·벡터 DB는 벤더 비특정이나 Red Hat OpenShift AI 직접 지정 없음</li><li>**회계·예산 솔루션**: 전략예산 상용솔루션 운영, 회계 상용솔루션 벤치마킹·검토 요구 → ERP/회계 패키지 영역은 Red Hat 직접 대응 한계</li><li>**평가 구조**: 기술 90% SI 역량·방법론·기능구현 중심; Red Hat 제품 단독 지정·가점 없음, 국산제품 활용 기여도(2점)는 별지19호서식 기준</li><li>**기타**: VMware·Ubuntu·Rocky Linux 등 특정 경쟁 OS 명시는 없으나, ECR-01에서 「검증된 오픈소스 SW 또는 무상 SW 제안 가능」 → RHEL 유료 구독 대비 무상 Linux 경쟁; 컨테이너·OpenShift는 개선방향 수준 언급, 필수 요구 아님</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li>**RHEL(운영체제)**: ECR-13 Linux OS 19식 설치 요구, 운영·개발 Web/WAS·DB 서버 전체 Linux 기반 → RHEL Standard/Premium 구독 19노드+3년 구독 제안 가능(보안패치·FIPS·SELinux·공공기관 레퍼런스)</li><li>**Red Hat JBoss EAP / Web Server**: ECR-14 Web/WAS SW 11식, Active-Active 이중화·L4 연동·Java/e-govFramework 호환 → JBoss EAP 또는 Tomcat(RHWS) 대안 제안; WAS 표준화·영구/3년 라이선스 조건 충족</li><li>**Red Hat Ansible Automation Platform**: 19대 서버 OS·WAS·DB·보안SW 설치, 포트 변경, 취약점 조치, 이중화 구성 자동화; PMR·QUR 장애대응·백업복구·운영 표준화와 부합</li><li>**Red Hat OpenShift Container Platform**: 문제점「컨테이너 구분 등 기술문제로 운영/개발 취약」, 개선방향「유지보수 적합한 컨테이너 구성」→ 차세대 표준 인프라·CI/CD·DevSecOps 제안 포인트(협의 후 단계적 도입)</li><li>**Red Hat OpenShift AI / Data Foundation**: SFR-72 AI 모니터링·시계열·스트리밍·벡터 DB 요구와 연계해 MLOps·실시간 분석 플랫폼 대안 제시 가능(OpenSearch 연동 아키텍처)</li><li>**Red Hat Satellite**: 19식 Linux·11식 WAS 대규모 패치·보안·라이선스 통합관리, 정보보호처 취약점·이행점검 대응</li><li>**강점 일치 요구**: Active-Active 고가용성, IPv4/IPv6, 보안인증 제품 연동, 2시간 이내 장애복구, 성능·부하 테스트, 표준기술·개방형 기술(COR-02) → RHEL+Ansible+OpenShift 스택의 엔터프라이즈 지원·SLA</li><li>**제안 전략**: SI 주사업자·공동수급체와 파트너십, ECR-02~05 인프라·OS·WAS 조견표에 RHEL/JBoss 명시, 「오픈소스 또는 상용」 선택권 활용, 2027년 예산·회계·자산 개발 사업 선제 연계</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
