@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00256958 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국조폐공사_인터넷전화(IPT) 시스템 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>IPT 전용교환기 중심사업</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>2007년 구축·2015년 EOS된 노후 전화교환기를 교체하고, 본사·화폐본부·제지본부·서울사무소 등 전사(약 1,300명) 인터넷전화(IPT) 시스템을 구축하는 사업</li>
+                    <li>노후 설비로 인한 장애 예방, 통화품질 개선, 본부별 분산 교환기를 본사 중심으로 중앙화하여 관리편의성 및 서비스 연속성을 확보하는 것이 핵심 목표</li>
+                    <li>기존 녹취·컬러링 등 3rd Party 부가장비(SIP) 연동, TTA 인터넷전화·IPv6 인증, VoIP 보안가이드라인 준수가 필수</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 688,845천원 (약 6.9억원, 20억원 미만·대기업 참여 제한 대상)</li>
+                    <li><strong>사업 기간</strong>: 계약체결일로부터 4개월(120일) 이내, 조기 납품 가능</li>
+                    <li><strong>사업 범위</strong>: 콜서버 2대(이중화), 미디어G/W 5식, IP전화기 1,300대(고급형 30·일반형 1,270), L2스위치 5대, VoIP 보안장비, 녹취·컬러링 연동, 본부별 독자생존/Fail-back, 시험운영·교육·안정화 포함</li>
+                    <li><strong>입찰방식</strong>: 제한경쟁입찰, 협상에 의한 계약 (기술 90%·가격 10%)</li>
+                    <li><strong>주요 일정</strong>: M(착수·분석) → M+1(설계·장비수급) → M+2(시스템·네트워크 구축·연동·보안검증) → M+3(시험운영·교육·안정화·최종검수)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 한국조폐공사 / 성과관리처 경영정보부</li>
+                    <li><strong>부장 이정구</strong>: 042-870-1151 / jglee@komsco.com</li>
+                    <li><strong>과장 김영실</strong>: 042-870-1157 / kys4548@komsco.com (제안 관련 문의)</li>
+                    <li><strong>계약 관련 문의</strong>: 경영지원처 물자조달부 계약담당자</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>기술·기능 요구</strong>: SIP/G.711/G.722/G.729, RTP/RTCP, TLS v1.2·sRTP(AES/ARIA), 100,000 BHCC·70 CPS 이상, Active-Active/Standby 이중화, TTA 인터넷전화 Ver.4·IPv6 인증, 본부별 독자생존·자동 Fail-back, 기존 내선/국선 번호체계·부가장비(녹취·컬러링) 연동</li>
+                    <li><strong>보안 요구</strong>: 국가·공공기관 인터넷전화 보안가이드라인, CC EAL3+·TTA Ver.4 VoIP 보안장비, VoIP DoS/DDoS·SPAM 차단, 정보보호제품 CC인증(EAL2+) 및 암호모듈 검증, 보안취약점 점검·제거 후 납품</li>
+                    <li><strong>동일 제조사 연동 제약</strong>: 콜서버·미디어G/W·IP전화기(고급형·일반형)는 동일 제조사 제품 필수</li>
+                    <li><strong>통합발주 S/W (수량)</strong>:
+                        <ul>
+                            <li>IP전화기용 내선 라이선스(교환기 라이선스): 1,300 EA</li>
+                            <li>3rdParty 부가장비 연계용(SIP) 라이선스: 210 EA (녹취 150, 컬러링 60)</li>
+                            <li>녹취 라이선스(녹취서버 연동): 150 EA</li>
+                            <li>Windows 11 (관리 PC OS, 구매증서 제출): 1 EA</li>
+                            <li>VoIP 보안장비 S/W License (가입자·동시호 용량 기반 확장): 1식 (동시 100Call, MAX 8,000세션 증설 가능)</li>
+                        </ul>
+                    </li>
+                    <li><strong>주요 H/W (참고)</strong>: 콜서버(OS: Linux) 2대, 미디어G/W 5식, IP전화기 1,300대, L2스위치 5대, VoIP 보안장비 1대, 관리PC(Windows 11) 1대 등</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li>사업 본질이 Red Hat 제품군이 아닌 <strong>IPT/VoIP 교환기 전용 S/W·H/W 통합 납품</strong>이며, 콜서버·미디어G/W·IP전화기 동일 제조사 제품 의무로 Red Hat 단독 공급 불가</li>
+                    <li>관리 PC에 <strong>Windows 11</strong> 명시(E CR-008), Red Hat Desktop/RHEL 대체 제안 여지 없음</li>
+                    <li>TTA 인터넷전화 Ver.4·IPv6 인증, 100,000 BHCC, SIP 교환·미디어G/W·단말 연동 등은 <strong>전용 VoIP/PBX 벤더 솔루션</strong> 영역으로 OpenShift·JBoss·Ansible 직접 대체 불가</li>
+                    <li>콜서버 OS는 "Linux"로만 규정되어 RHEL/Rocky/Ubuntu 등 특정 배포판 미지정이나, 실질적으로 IPT 벤더가 지정·번들하는 OS를 사용하므로 Red Hat OS 독립 제안 경로 없음</li>
+                    <li>Red Hat이 경쟁하는 VMware·Contrabass·Oracle DB 등은 명시되지 않았으나, Ubuntu/Rocky 등 범용 Linux 대비에도 IPT 스택 일체성 요구로 Red Hat 삽입 여지 극히 제한</li>
+                    <li>중소 SW사업자·정보통신공사업·소프트웨어사업자 자격, 전화교환시스템 구축 실적 등 <strong>IPT SI/통신장비 공급 역량</strong>이 핵심 평가항목(기술 90%)으로 Red Hat 단독 참여 부적합</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>RHEL</strong>: 콜서버 규격에 "OS: Linux" 명시 — IPT 벤더가 RHEL 지원 시 콜서버 2대 OS·서브스크립션 간접 제안 가능하나, 동일 제조사 IPT 스택 번들 구조상 현실적 기회 매우 낮음</li>
+                    <li><strong>Ansible</strong>: 다수 L2스위치·서버·VoIP 장비의 설정 표준화·패치·배포 자동화 보조 도구로 제안사 추가 제안(Ⅷ. 추가제안) 항목에 포함 가능 — 단, 본 사업 핵심 평가는 교환기 기능·장비구성 충족</li>
+                    <li><strong>보안·운영</strong>: Linux 콜서버·VoIP 보안장비 운영환경의 취약점 관리·하드닝·컴플라이언스(SER 요구) 관련 Red Hat Insights 등 부가 서비스 언급 가능 — IPT 벤더 솔루션 하위 레이어에 한정</li>
+                    <li>Red Hat OpenShift·JBoss 등 컨테이너·미들웨어 스택은 RFP 요구사항·평가기준에 부합하는 적용 지점 없음</li>
+                    <li><strong>현실적 접근</strong>: IPT/PBX 전문 SI·통신장비 벤더(또는 공동수급)의 하위 파트너로 RHEL/Ansible 간접 공급 검토가 유일한 진입 경로</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

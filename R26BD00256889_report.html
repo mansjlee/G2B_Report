@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00256889 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국교육학술정보원_2026년 디지털 지식샘터 고도화 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>응용SW 고도화 용역</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>한국교육학술정보원(KERIS)이 운영하는 교원 대상 온라인 지식 공유·연수 플랫폼 '디지털 지식샘터'(educator.edunet.net)의 기능 고도화 사업이다.</li><li>현장 교원의 AI 활용 수업 역량 강화를 위해 사용자 중심 서비스 환경을 개선하고, 동영상 스트리밍·학습관리(LMS) 기능을 구현한다.</li><li>이용자 증가에 대비해 데이터 관리 구조를 개선·고도화하여 확장성과 안정적 서비스 운영 기반을 마련하는 것이 핵심 목표이다.</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 1,100백만원(VAT 포함, 약 11억원)</li><li><strong>사업 기간</strong>: 계약체결일로부터 105일 이내(2026.9. 계약 ~ 2026.12.31., 약 4개월)</li><li><strong>사업 범위</strong>: ① 수강 편의 개선(영상 스트리밍, 다시보기, LMS, 학습 이력·진도 관리, 자료 공유) ② 데이터 관리 구조 개선(DB 재설계, 데이터 이관·정합성 검증, 아키텍처 재설계) ③ 지식샘터 분석 및 관리 구조 최적화</li><li><strong>입찰 방식</strong>: 제한경쟁입찰, 협상에 의한 계약(기술평가 90% / 가격평가 10%)</li><li><strong>주요 일정</strong>: 사전·본 공고 2026.7~8., 제안평가·계약 2026.9., 사업 수행 2026.9~12.</li><li><strong>하자보수</strong>: 사업종료일로부터 12개월</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>수요기관</strong>: 한국교육학술정보원</li><li><strong>담당 부서</strong>: 교원역량개발센터(교원역량기획부)</li><li><strong>부장</strong>: 백성희 / 053-714-0468 / tjdgml100@keris.or.kr</li><li><strong>담당</strong>: 송준열 / 053-714-0504 / sjyeol@keris.or.kr</li><li><strong>FAX</strong>: 053-714-0193</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>기능 요구(5건)</strong>: 영상 녹화·관리(FUR-001), 영상 재생·제어(FUR-002), 학습 이력·진도 관리(FUR-003), 지식샘터 분석·아키텍처 재설계(FUR-004), 관리 구조 최적화(FUR-005)</li><li><strong>성능 요구</strong>: 평시 동시접속 1,000명, 집중 시기 30,000명 보장 / 페이지 응답속도 3초 이하 / 클라우드 인프라 증·감설(오토스케일링) 대응</li><li><strong>기술 제약</strong>: 전자정부 표준프레임워크 적용 필수(COR-001), HTML5·반응형 웹, W3C 웹표준, 웹 접근성 준수, 클라우드 환경 운영</li><li><strong>연계·협력</strong>: KERIS 종합교육연수원·배움누리터·유지관리 사업자·클라우드 임차 사업자와 기술 협업 필수</li><li><strong>보안</strong>: 개인정보(NEIS번호 등) 처리, DB암호화 S/W 적용, SSL/HTTPS 강제, 시큐어코딩·취약점 점검, DRM 또는 스트리밍 방식 영상 보호</li><li><strong>데이터</strong>: DB 재설계·이관, 공공기관 DB 표준화 지침 준수, 데이터 정합성 검증</li><li><strong>통합발주 S/W(구매 명시)</strong>: 본 RFP에 수량과 함께 직접 구매가 명시된 통합발주 S/W는 없음. 「상용SW 직접구매 및 SW품질성능 평가시험(BMT) 해당없음」, 「특정규격 명시 금지」, 「필요 소프트웨어는 사업자가 준비하는 것을 원칙」으로 규정됨. 영상 초상권 처리·DRM·DB암호화 등은 상용 솔루션 도입 여부를 제안사가 제안서에 포함하도록 요구하나, 특정 S/W명·수량은 미지정.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>S/W 공급 미포함</strong>: 본 사업은 시스템 기능 고도화 및 응용SW 수정·보완 용역(SI)이며, Red Hat 제품을 직접 조달·공급하는 항목이 RFP에 존재하지 않는다.</li><li><strong>인프라 운영 주체 분리</strong>: 클라우드 인프라 운영·관리는 별도 '클라우드 임차 서비스 사업 수행사' 및 '유지관리 사업 수행사'가 담당하므로, 본 사업 범위에 OS·플랫폼 라이선스 조달 여지가 제한적이다.</li><li><strong>전자정부 표준프레임워크 의무</strong>: COR-001에 따라 전자정부 표준프레임워크 적용이 필수이며, Java 기반 공공 SI 표준 스택이 우선 적용된다.</li><li><strong>경쟁 제품 직접 명시는 없으나</strong>: VMware, Contrabass, Oracle/Rocky Linux 등 특정 제품 지정은 없으나, 기술적용계획표에서 Linux·Windows Server·UNIX 등 OS를 선택 가능 항목으로만 기재하고 Red Hat/RHEL을 특정하지 않는다.</li><li><strong>중소기업 전용 입찰</strong>: 20억원 미만 사업으로 중소 SW사업자만 입찰 참가 가능(대기업·중견기업 제한)하여 Red Hat 직접 입찰·계약 구조와 부합하지 않는다.</li><li><strong>직접생산증명서 요건</strong>: 정보시스템개발서비스(8111159901) 직접생산증명서 보유 중소기업만 참가 가능하다.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>간접 채널(파트너 SI) 협력</strong>: 낙찰 SI사의 제안서에 클라우드 기반 아키텍처·확장성·오토스케일링(QUR-004) 구현 시 RHEL 또는 OpenShift를 런타임·컨테이너 플랫폼으로 제안 가능하다.</li><li><strong>Linux/RHEL 적용 여지</strong>: 기술적용계획표 플랫form 분야에 Linux·POSIX 서버 OS가 선택 가능 항목으로 명시되어 있어, 클라우드 사업자와 협의 시 RHEL 기반 WAS/DB 서버 구성을 파트너가 제안할 수 있다.</li><li><strong>OpenShift/Kubernetes</strong>: PER-002의 인프라 증·감설·탄력적 운영, FUR-004/FUR-005의 모듈화·확장성 재구조화 요구와 부합하는 컨테이너 플랫폼 제안 포인트가 있다.</li><li><strong>Ansible</strong>: QUR-004의 운영·관리·배포 자동화, 오토스케aling, 장애대응 요구에 Ansible Automation Platform 연계 제안이 가능하다.</li><li><strong>성능·가용성</strong>: 동시접속 3만명, 24시간 무중단, CDN 연계, 부하테스트 요구(PER-001~004)는 Red Hat 오픈소스 인프라 스택의 강점 영역과 기술적으로 정합성이 있다.</li><li><strong>제한적 직접 영업</strong>: Red Hat은 본 입찰의 직접 계약 주체가 될 수 없으며, KERIS·클라우드 사업자·낙찰 SI사를 대상으로 한 파트너 생태계·기술 지원·사전 영업 접근이 현실적 경로이다.</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
