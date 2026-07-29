@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00258285 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국지능정보사회진흥원_범정부 인공지능 공통기반 구현(2차) - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>AI플랫폼·OS 고정 SI</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>중앙·지방정부가 최신 AI 기술을 빠르고 안전하게 공공행정 업무에 도입·활용할 수 있도록 범정부 AI 공통기반을 고도화·확장하는 2차 사업</li>
+                    <li>기존 공통 Agent(연관정보 검색, 문서초안 작성) 고도화 및 신규 Agent(언론동향 파악, 규정기반 검토) 개발</li>
+                    <li>표준화된 단일 공통 RAG 통합 구축, AI 학습·평가데이터 확대, AI Gateway 구현 등 공공 AX 확산 가속</li>
+                    <li>범정부 AI 공통기반의 안정적 운영, 개발시스템 기능 개선, 외부 자료 연계 인프라 구축, 거버넌스 체계 수립 지원</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 6,604,625,403원(부가세 포함)</li>
+                    <li><strong>사업 기간</strong>: 계약체결일 ~ 180일(6개월), AI 공통기반 안정적 운영 과업은 '26.12월까지 수행('27.1월 이후 별도 운영사업 추진 예정)</li>
+                    <li><strong>사업 범위</strong>: AI 공통 Agent 고도화·신규 개발, 공동 활용 AI 자원 확대 / AI 공통기반 운영 및 기능 개선 / 외부 자료 연계 인프라 및 AI 신기술 도입 / 거버넌스 체계 수립 지원</li>
+                    <li><strong>주요 일정</strong>: M(착수)~M+5, 착수·중간·완료 보고회, 감리(분석·구현·종료), 안정화 기간 검사완료 후 2개월</li>
+                    <li><strong>입찰방식</strong>: 공개경쟁입찰(협상에 의한 계약), 기술평가 90% + 가격평가 10%, 공동수급 가능(5개사 이하, 최소지분 10%)</li>
+                    <li><strong>발주기관</strong>: 한국지능정보사회진흥원(NIA) / 총괄: 행정안전부 / 조달: 조달청</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>담당 부서</strong>: 인공지능정부본부 AI정부서비스팀(한국지능정보사회진흥원)</li>
+                    <li><strong>팀장</strong>: 윤억수 / TEL: 053-230-1651</li>
+                    <li><strong>수석(문의)</strong>: 강무정 / TEL: 053-230-1629 / E-mail: kmj@nia.or.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>기능 요구사항(10건)</strong>: 연관자료검색 Agent 고도화, 공통서비스 진단·고도화, 언론동향 파악 Agent, 규정기반 검토 Agent, 단일 공통 RAG 통합, 개발시스템 기능 고도화, AI 업무 도구 사례뱅크, 활용가이드 재정비, 외부 자료 연계 인프라, AI Gateway 구현</li>
+                    <li><strong>AI 공통기반 운영</strong>: 삼성SDS FabriX·네이버 CLOVA Studio for GOV 2개 AI 플랫폼 협업체계 운영, RAG 현행화, 보안관제(N2SF), AI 모델 이용료 지원</li>
+                    <li><strong>데이터 구축</strong>: AI 지시학습데이터 8.4만건, Agent 평가데이터 2만건, 품질·유효성 검증</li>
+                    <li><strong>클라우드·인프라</strong>: 국가정보자원관리원 PPP Zone 민간 클라우드(PaaS), 마이크로서비스, 컨테이너/Pod, DevOps·CI/CD, 오토스케일링, SLA(AI플랫폼 99.9%, 관리자시스템 99.99%)</li>
+                    <li><strong>보안</strong>: N2SF 보안가이드라인, CC인증 보안장비, 시큐어코딩, 취약점 점검, 개인정보보호</li>
+                    <li><strong>통합발주 S/W(직접 구매, MPR-002 기준, CSP: 삼성SDS)</strong>:
+                        <ul>
+                            <li>VM 가상서버(rocky, windows): 21식 (Linux 20, Windows 1)</li>
+                            <li>쿠버네티스 워커노드(ubuntu): 6식 (운영 3, 개발 3)</li>
+                            <li>DBMS(DBAAS-PostgreSQL): 3식 (운영 2, 개발 1)</li>
+                            <li>스토리지 Block HDD: 2,952GB / SSD: 5,744GB / Object: 2,000GB / NAS: 8,600GB</li>
+                            <li>네트워크 공인IP: 12개 / LB: 6개</li>
+                            <li>보안 IPS: 4개 / Direct Connect: 2개 / DB보안(데이터암호화): 3개</li>
+                            <li>서버접근제어: 27개 / DB접근제어: 3개 / 서버백신: 25개 / 서버보안: 27개</li>
+                            <li>백업(2주 보관): 34,592GB</li>
+                            <li>운영관리 모니터링·보안관제(APM): 110 Core / 23개</li>
+                            <li>개인정보접속기록: 6개 / SSO: 6개 / 소스분석: 2개</li>
+                        </ul>
+                    </li>
+                    <li><strong>기구축 AI 플랫폼(1차 사업 도입, 운영 대상)</strong>: 삼성SDS FabriX, 네이버 클라우드 CLOVA Studio for GOV</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 공급 중심 사업 아님</strong>: AI Agent 개발·고도화, RAG 구축, 데이터 가공, 운영·컨설팅, 거버넌스 등 개발·용역(SI) 중심 사업으로 Red Hat 제품 직접 조달 항목 없음</li>
+                    <li><strong>경쟁 OS·플랫폼 명시</strong>: VM OS로 Rocky Linux 20식·Windows 1식, K8s 워커노드 Ubuntu 6식 명시(RHEL 미명시), DB는 PostgreSQL, CSP는 삼성SDS</li>
+                    <li><strong>AI 플랫폼 고정</strong>: 1차 사업에서 도입된 삼성SDS FabriX, 네이버 CLOVA Studio for GOV 2개 민간 AI 플랫폼 기반 운영·협업체계가 전제이며, Red Hat AI/OpenShift AI 대체 여지 없음</li>
+                    <li><strong>상용SW 직접구매 분리발주 대상 아님</strong>: 본 사업은 상용SW 직접구매(구 SW분리발주) 대상이 아님으로 명시</li>
+                    <li><strong>하도급·공동수급 제약</strong>: AI 플랫폼사(삼성SDS, 네이버) 및 CSP와의 협업체계가 사업 구조의 핵심으로, Red Hat 단독 제품 공급 경로 부재</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>컨테이너·K8s·DevOps</strong>: CCR-003에서 DevOps 조직, CI/CD 체계 검증·보완, Pod/Node 탄력적 운영관리 요구 → OpenShift/Ansible을 제안사 MSP·CSP 협력 방안에 간접 포함 가능(단, Ubuntu K8s가 명시되어 직접 대체는 어려움)</li>
+                    <li><strong>클라우드 인프ra 운영·자동화</strong>: 오토스케일링, 24×365 매니지드 서비스, 장애 대응, 모니터링 요구 → Ansible Automation Platform 기반 운영 자동화·패치 관리 제안 가능</li>
+                    <li><strong>마이크로서비스·API Gateway</strong>: AI Gateway(SFR-010), 표준 API 연계, 외부 자료 연계 인프라 구축 → Red Hat 3scale/API Management 또는 Service Mesh 연계 아키텍처를 제안서 기술 방안에 참고 제시 가능</li>
+                    <li><strong>보안·규정 준수</strong>: N2SF, CC인증 보안장비, 제로트러스트 등 보안 요구 → RHEL/OpenShift 보안 강화·컴플라이언스(SCAP, FIPS 등)를 인프라 운영 보완 방안으로 언급 가능</li>
+                    <li><strong>제약 및 현실적 접근</strong>: 본 사업 Red Hat 직접 낙찰 가능성은 낮으나, SI·MSP·CSP 컨소시엄 참여사로 Ansible/OpenShift/RHEL 서브라이선스·기술지원·운영 자동화 역량을 하도급·협력 형태로 제안하는 것이 현실적 접근</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
