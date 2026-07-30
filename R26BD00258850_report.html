@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00258850 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>(재)강원테크노파크_강원형 스마트경로당 건강관리 플랫폼 구축 및 운영 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>맞춤형 SI·Android 중심</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>강원특별자치도 6개 시·군(춘천·원주·홍천·횡성·영월·정선) 경로당 162개소에 의료·헬스케어 기기(체성분계, 디지털 악력계, 신체활동기능 측정기)와 연동된 통합형 키오스크 및 건강관리 플랫폼을 구축·운영하여 어르신 자가건강관리, 건강데이터 수집·모니터링, 근감소증 예방·관리, 보건소·의료기관 연계 기반을 마련하는 사업</li><li>25년 구축 인프라(66개소)와 신규·확대 구축(162개소) 간 연동을 전제로 통합 운영관리체계, 콜센터·현장지원, 거점병원 자문, 공공 건강관리 플랫폼 연계(FHIR 등)를 포함한 디지털 건강거점 역할 수행이 목적</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 1,970,000,000원(19억 7천만원)</li><li><strong>사업 기간</strong>: 계약체결일 ~ 2026년 12월 4일(사업 제공기간 2026.1.1~2026.12.31, HW 유지 3년, SW 유지 1년, 하자보수 12개월)</li><li><strong>사업 범위</strong>: 확대구축 73개소(춘천 29·원주 14·홍천 30) + 신규구축 89개소(횡성 29·영월 20·정선 40), 통합관리 키오스크·헬스케어 장비·데이터센터(건강데이터·포털 서버)·플랫폼·운영지원체계 일괄 구축</li><li><strong>입찰·계약</strong>: 제한경쟁입찰, 협상에 의한 계약, 하도급 불허, 기술평가 90% + 가격 10%</li><li><strong>주요 일정</strong>: 계약 후 5일 이내 착수, 10일 이내 착수보고, 50% 공정 중간보고, 시범운영·장비교육 2개월, 최종 검수·완료보고</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>발주기관</strong>: (재)강원테크노파크</li><li><strong>담당 부서</strong>: 미래사업단 디지털헬스팀</li><li><strong>PM 김상민</strong>: 033-748-8308, smkim@gwtp.or.kr</li><li><strong>주임 오덕기</strong>: 070-4269-7996, odg9327@gwtp.or.kr</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>핵심 기술·비즈니스 요구</strong>: 통합관리 키오스크(안면인식+하이브리드 2채널 인증 95% 이상, Android 10+, 21인치 FHD 터치), IoT 헬스케어 장비 연동, PHR·FHIR 기반 건강데이터 관리, 근감소증 위험군 분석·예측, AI 기반 건강안내, 운영 대시보드·데이터 신뢰성 검증, 이용자·보호자 App/반응형 Web, 개인정보·생체정보 보안, 24×365 무중단, 162개소 NMS·현장지원(4시간 이내 출동), 25년 기구축 시스템 연동 필수, 전자정부 표준프레임워크·KWCAG 2.1 준수</li><li><strong>통합발주 S/W(직접구매 제외, 수량)</strong>:
+                    <ul>
+                        <li>스마트 경로당 서비스 플랫폼: 1식(커스터마이징 통합발주)</li>
+                        <li>WEB: 2식(기 구축 서버 활용, 통합발주)</li>
+                        <li>WAS: 2식(기 구축 서버 활용, 통합발주)</li>
+                        <li>백업 NAS: 1식(통합발주)</li>
+                        <li>DB 암호화 솔루션: 2식(통합발주)</li>
+                        <li>안면인식 솔루션: 1식(통합발주, 구독형 SW 불가)</li>
+                        <li>통합관리시스템(키오스크) SW: 162개소</li>
+                        <li>유헬스케어 게이트웨이(프로그램): 키오스크 연동 필수, 사업기간 내 의료기기 인증필 취득</li>
+                    </ul>
+                </li><li><strong>통합 HW(수량)</strong>: 통합관리시스템(키오스크) 162개소, 체성분계 162개소, 디지털 악력계 162개소, 신체활동기능 측정기 162개소, 데이터 연계·연동 표출 1식, 장비 설치·테스트 162개소, 시범운영·장비교육 162개소, SW/HW 유지보수 12개월(162개소)</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>통합 SI 용역 구조</strong>: WEB·WAS·DB암호화·안면인식·플랫폼 등 상용 S/W 전량 통합발주(직접구매 제외)로 SI 수행사가 일괄 공급·개발해야 하며, Red Hat 단독 S/W 조달 경로 없음</li><li><strong>키오스크 OS 고정</strong>: ECR-003에서 통합관리시스템(키오스크) OS를 Android 10 이상으로 명시 → RHEL/Edge 적용 불가</li><li><strong>경쟁·대체 스택</strong>: Android(키오스크), Linux/Windows Server(서버, RHEL 미지정), 전자정부 표준프레임워크(Java 기반 SI 관행), DB암호화·안면인식·유헬스케어 게이트웨이 등 타사 상용솔루션 통합발주</li><li><strong>의료·인증 제약</strong>: 의료기기 인허가·KC·GS·유헬스케어 게이트웨이 인증필 등 의료 SI 전문 영역으로 Red Hat 제품 단독 제안 곤란</li><li><strong>하도급 불허</strong>: 콜센터·현장지원 등 하도급 불허로 Red Hat이 하위 파트너로 S/W만 납품하기 어려움</li><li><strong>기존 인프라 활용</strong>: WEB·WAS 등 서버 장비 기 구축 활용 예정으로 신규 OS·미들웨어 대량 도입 여지 제한</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>백엔드 Linux 서버</strong>: 기술적용계획표에 서버용 Linux 적용, 데이터센터 건강데이터·포털 서버 구축 명시 → RHEL을 SI 파트너 경유 백엔드·DB 서버 OS로 제안 가능(단, RHEL 미명시·기존장비 활용으로 실익 제한적)</li><li><strong>고가용·운영 자동화</strong>: 24×365 무중단, 162개소 NMS·장애대응, 원격진단 요구 → Ansible Automation Platform 기반 구성·패치·장애대응 자동화를 SI 제안서 내 운영효율화 요소로 제시 가능</li><li><strong>컨테이너·API 플랫폼</strong>: 내·외부 API, FHIR 연계, 공공 건강관리 플랫폼 연계, 확장성 요구 → OpenShift를 통합 플랫폼·마이크로서비스 아키텍처 옵션으로 SI 컨소시엄 참여 시 간접 제안 가능</li><li><strong>데이터·연계 표준</strong>: FHIR, OMOP CDM, SNOMED-CT, RESTful API 등 개방형 연계 요구는 Red Hat Middleware(JBoss/EAP) 및 RHEL 기반 연계 허브 구성과 정합성 있으나, 전자정부 표준프레임워크 우선 적용으로 직접 납품보다 SI 협력 모델에 적합</li><li><strong>제안 전략</strong>: 본 건은 Red Hat 직접 납품보다 의료·헬스케어 SI 수행사(컨소시엄)에 RHEL·Ansible·OpenShift를 백엔드 인프라·DevOps·연계 플랫폼으로 번들 제안하는 간접 영업 접근이 현실적</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
