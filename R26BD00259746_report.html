@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00259746 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국조폐공사_KOMSCO 지급결제플랫폼 운영 및 유지관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>운영유지 O&amp;M, OpenShift 기구축</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>한국조폐공사(KOMSCO)가 주관하는 KOMSCO 지급결제플랫폼(모바일·지류 지역사랑상품권, 오픈뱅킹, 마이데이터, FDS 등)의 응용·상용·공개 SW 및 연계 서비스에 대한 24시간 365일 운영·유지관리 용역</li><li>지역화폐·지급결제 서비스의 안정적 가동, 장애 예방·대응, 기능개선, 법·제도 변경 반영, ISMS-P·전자금융 컴플라이언스 유지, AIOps 기반 지능형 운영체계 정착 및 DR 센터 구축 지원이 핵심 목표</li><li>장기계속계약(24개월) 형태의 협상에 의한 계약이며, 기술평가 90%·가격평가 10%로 수행사 선정</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 총 9,156백만원(부가세 포함, 9,156,425,000원) — 1차년도 4,543,143,000원, 2차년도 4,613,282,000원</li><li><strong>사업 기간</strong>: 착수일로부터 24개월(1차: 2026.11~2027.10, 2차: 2027.11~2028.10, 용역기간 2026.11.1~2028.10.31 기준 투찰)</li><li><strong>사업 범위</strong>: 통합/광역 APP·WEB, 관리자 WEB, 오픈뱅킹/펌뱅킹, FDS, 마이데이터, 통계, 행정정보공동이용, 데이터개방, 블록체인, 대사·정산, 배치 등 9대 시스템군 및 50여 개 대외 연계 운영·유지관리, 서비스데스크, CSR/VOC, 정보보안·개인정보보호</li><li><strong>주요 일정</strong>: 계약 후 14일 이내 사업수행계획서 제출, SLA 협약 1개월 이내, 24개월간 상시 운영·유지관리(주간/월간 보고, 정기·수시 점검, 연 1회 이상 DR·백업복구 훈련)</li><li><strong>투입 인력</strong>: 최소 27명 이상(PM, 품질관리, F/E, 업무별 개발, 대외계, 관리계, 아키텍처/DBA, 고객지원 등)</li><li><strong>입찰 방식</strong>: 일반경쟁입찰, 협상에 의한 계약, 40억~80억원 구간(중소·중견 SW사업자 참여 대상)</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>주관기관</strong>: 한국조폐공사</li><li><strong>담당 부서</strong>: ICT운영처 지역화폐운영부</li><li><strong>부장</strong>: 장석희 — sh.jang@komsco.com — 042-870-1461</li><li><strong>차장</strong>: 김길환 — khkim@komsco.com — 042-870-1462</li><li><strong>제안요청 설명회 문의</strong>: 김길환 차장 — 042-870-1462, 1468</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>기술·운영 요구사항(104건)</strong>: 시스템 공통(SCR), 성능(PER, K8s 운영·HPA·PDB·Observability 포함), 인터페이스(SIR), 테스트(TER), 데이터(DAR), 운영·유지관리(OMR 28건), 인력(MHR), 보안(SER, ISMS-P·전자금융), 품질(QUR), 제약(COR), 프로젝트관리(PMR), 프로젝트지원(PSR)</li><li><strong>핵심 운영 요건</strong>: 24×365 무중단 운영, RTO(업무시간 3h/업무외 5h), SLA 13개 지표 관리, 상품권 발행기간 집중 모니터링, K8s 전담 엔지니어·24h 모니터링, AIOps(벡터DB·이벤트 상관분석) 운영 지원, Oracle 기반 정산·대사, 27명 이상 상주·핵심인력 투입</li><li><strong>통합발주 S/W(유지관리 대상, 수량)</strong>:
+                    <ul>
+                        <li>APM Jennifer5.0 (JAVA EE Edition): 19</li>
+                        <li>APM Jennifer5.0 (JAVA EE Edition): 14</li>
+                        <li>APM Jennifer5.0 (JAVA EE Edition): 17</li>
+                        <li>APM Jennifer5.0 (JAVA EE Edition): 43</li>
+                        <li>APM Jennifer5.0 (JAVA EE Edition): 4</li>
+                        <li>유량제어 NetFUNNEL Std V4 30,000 user + (20,000 user 제공): 1</li>
+                        <li>DB모니터링 Maxgauge for Oracle(Unix): 48</li>
+                        <li>거래추적 모니터링 InterMax 5(EtoE, mAPM): 73</li>
+                        <li>배치관리솔루션 J-Jobs Server 라이선스: 4</li>
+                        <li>DB 암호화 솔루션 MagicDBPlus v2.0 16core: 1</li>
+                        <li>DR DB암호화 솔루션 MagicDBPlus v2.0 4core: 1</li>
+                        <li>DB 암호화 솔루션 MagicDBPlus v2.0 16core: 1</li>
+                        <li>DB 암호화 솔루션 MagicDBPlus v2.0 32core: 1</li>
+                        <li>모바일전자서명 솔루션 Magic XSign 1.2 Server: 2</li>
+                        <li>모바일전자서명 솔루션 Magic XSign 1.2 Client(iOS, AOS): 1</li>
+                        <li>인증 및 웹구간암호화 솔루션 MagicLine V4.0: 2</li>
+                        <li>FIDO서버(생체인증) Magic FIDO V1.0 Server: 3</li>
+                        <li>FIDO클라이언트(생체 인증) Magic FIDO V1.0 Client(iOS, AOS): 3</li>
+                        <li>CA인증서 발급 솔루션 DreamSecurity Magic CA: 2</li>
+                        <li>키관리 Magic KMS: 3</li>
+                        <li>DB접근제어솔루션 Chakra Max V3.0 64Core: 1</li>
+                        <li>DB접근제어솔루션 Chakra Max V4.0 84Core: 1</li>
+                        <li>ITSM E-GENE v5.2 LightningManager: 1</li>
+                        <li>ITSM E-GENE v5.2 LigthtningUser: 1</li>
+                        <li>오케스트레이션 솔루션 Red Hat OpenShift Platform Plus, Preminum(64Core): 1</li>
+                        <li>키보드 보안 솔루션 Open Web nFilter V2.0: 5</li>
+                        <li>앱 무결성 검증 및 Android 앱 난독화 솔루션 AppIron v3.0: 3</li>
+                        <li>앱 무결성 검증 및 iOS 앱 난독화 솔루션 AppIron v3.0 iPlugIn(Annual License): 3</li>
+                        <li>모바일 백신 솔루션 AppIron Vaccine v1.0(Annual License): 6</li>
+                        <li>이상거래탐지 솔루션 Dfinder FDS: 1</li>
+                        <li>VDI 가상화관리 솔루션 Citrix Virtual Desktops On-Premise License: 75</li>
+                        <li>VDI 가상화관리 솔루션 Citrix 유지관리: 1</li>
+                        <li>Socket G/w Strato Gateway: 1</li>
+                        <li>리포팅 툴 UbiReport Smart Edition V4.0: 1</li>
+                        <li>테스트데이터 변환 솔루션 SQL Canvia Trans v4.7: 1</li>
+                        <li>데이터분석 웹UI개발 솔루션 AUD 플랫폼 7 - Enterprise Edition: 1</li>
+                        <li>대외계 통합인터페이스 솔루션 AnyLink7Engine, AnyLink7FullAdapter: 15</li>
+                        <li>대외계 통합인터페이스 솔루션 AnyLink7 Server: 12</li>
+                        <li>공개 S/W Cerebro: 1</li>
+                        <li>공개 S/W Docker Community Edition: 1</li>
+                        <li>공개 S/W Elastic Search: 2</li>
+                        <li>공개 S/W Kibana: 1</li>
+                        <li>공개 S/W Logstash: 1</li>
+                        <li>공개 S/W Metricbeat: 1</li>
+                        <li>공개 S/W Grafana: 1</li>
+                        <li>공개 S/W Eureka: 1</li>
+                        <li>공개 S/W Apache Kafka: 1</li>
+                        <li>공개 S/W Apache Tomcat: 1</li>
+                        <li>공개 S/W Maria DB: 1</li>
+                        <li>공개 S/W Nginx: 1</li>
+                        <li>공개 S/W Postfix: 1</li>
+                        <li>공개 S/W Redis: 2</li>
+                        <li>공개 S/W Ubuntu: 1</li>
+                    </ul>
+                </li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>S/W 공급 미포함</strong>: 본 사업은 신규 SW 구매·도입이 아닌 기 구축 시스템의 운영·유지관리 용역(용역비에 상용SW 라이선스 갱신·기술지원 포함하나, 수행사가 Red Hat 제품을 신규 납품하는 구조가 아님)</li><li><strong>경쟁·기존 스택 고정</strong>: Red Hat OpenShift Platform Plus Premium(64Core) 1식이 이미 취득·운영 중(2025.12)으로 추가 OpenShift 신규 구매 요건 없음; Ubuntu, Docker CE, Oracle(Maxgauge), Citrix VDI(75), MariaDB, Kafka 등 비-Red Hat 스택이 유지관리 대상으로 명시</li><li><strong>직접 입찰·제품 판매 구조 부재</strong>: 조달쇼핑몰/통합발주 SW 구매가 아닌 용역 입찰이며, Red Hat 라이선스는 KOMSCO 보유 자산으로 수행사가 유지관리만 담당</li><li><strong>인프라 분리</strong>: HW·미들웨어·네트워크 유지관리는 별도 인프라 용역 수행사가 담당하며, 본 용역은 SW·응용 중심</li><li><strong>평가 초점</strong>: 기술평가(90%)는 운영·유지관리 수행체계, ISMS-P, K8s 운영 역량 등에 집중되며 Red Hat 제품 신규 제안 항목 없음</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>OpenShift 운영·기술지원</strong>: PER-003·OMR-015·QUR-002 등 K8s(Master/Infra/Router/Worker/Storage Node) 상시 점검, HPA/PDB 튜닝, Prometheus-Grafana 연계, 24h 모니터링, CNF 변경이력 관리 등 OpenShift Platform Plus 기반 운영 역량이 핵심 평가 요소(아키텍처 PL·K8s 전담 인력 필수)</li><li><strong>기존 OpenShift 구독·갱신 협력</strong>: OMR-004/005에 따라 상용SW 라이선스 구매·제조사 기술지원 계약 갱신 수행 — OpenShift EOS·패치·마이너 업그레이드 대응 시 Red Hat 기술지원·구독 연장 기회</li><li><strong>Ansible Automation Platform</strong>: AIOps 지능형 운영체계, 배치·패치관리, CVE 점검·조치, DR Failover/Failback 절차 자동화, 다수 노드·Pod 운영 자동화 요건과 부합 — 용역 수행사 제안서의 차별화·기술지원 파트너십 포인트</li><li><strong>컨테이너·클라우드 네이티브 컨설팅</strong>: 2025.12 K8s 아키텍처 개선 이력, DR 센터 구축 지원(PSR-008), CI/CD·형상관리 자료 제공 요건 — OpenShift·GitOps·Service Mesh 기반 운영 고도화 자문</li><li><strong>Red Hat 파트너 연계</strong>: 용역 수행사(SI/MSP)가 OpenShift·Ansible 전문 Red Hat 파트너와 협력하여 K8s 운영관리 계획서, 성능 튜닝, 장애대응 매뉴얼, 제조사 기술지원확약서(OMR-004) 제출 시 경쟁력 확보 가능</li><li><strong>간접 RHEL 기회</strong>: Ubuntu가 공개SW 유지관리 대상이나, OpenShift 노드 OS·컨테이너 호스트 표준화, CVE·패치관리(Omr-004) 과정에서 RHEL/OpenShift 통합 지원 논의 여지(직접 구매 요건은 없음)</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
