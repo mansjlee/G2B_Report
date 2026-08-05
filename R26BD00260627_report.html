@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00260627 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국교육학술정보원_교육행정데이터통합관리시스템 과학행정 예측·지원 서비스 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>클라우드네이티브·컨테이너 배포 요구</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>교육행정데이터통합관리시스템(교데통)에 수요기반 예측·표준모델 5종, AI 해석·지원 서비스, DW 재구조화, MCP 연계, 개인정보 비식별·합성데이터, Local LLM 운용 기반 등을 구축하여 데이터 기반 과학행정 및 교육정책 결정 지원을 강화하는 응용SW 구축 용역</li><li>나이스·K-에듀파인 등 원천 데이터와 교육통계를 통합·연계하고, 시도교육청 맞춤형 예측모델·민원·법령 상담·보도 검증 등 지능형 서비스를 대내·대민 플랫폼에 제공</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 562,000,000원(부가가치세 포함), 예산 변동 시 상호협의 후 계약변경 가능</li><li><strong>사업 기간</strong>: 2026년 계약체결일로부터 120일 이내</li><li><strong>사업 범위</strong>: 예측모델 5종 개발·웹 서비스, AI 해석·지원(법령·사례 상담, 통계 오보 검증, Local LLM), DW 재구조화·MCP·ABAC, 연계기관 송신 에이전트, 비식별·합성데이터, SR·데이터취합 모바일 알림 등 기능·성능·보안·데이터 요구사항 65건</li><li><strong>계약방법</strong>: 협상에 의한 계약체결(국가계약법 시행령 제43조), 기술능력 90점·입찰가격 10점</li><li><strong>하자보수</strong>: 검수완료 후 1년, 장애 시 2시간 이내 방문·4시간 이내 복구 원칙</li><li><strong>입찰 자격</strong>: 중소·소상공인 SW사업자, 20억 미만 사업으로 대기업·중견기업 참여 제한, 공동수급 5개 이하·지분 10% 이상</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>주관기관</strong>: 한국교육학술정보원(KERIS)</li><li><strong>담당 부서</strong>: 교육학술데이터본부 데이터분석부</li><li><strong>부장</strong>: 이태환 (053-714-0507)</li><li><strong>담당</strong>: 임동신 (053-714-0221)</li><li><strong>제안요청 설명회 담당</strong>: 임동신 연구원 (053-714-0221, dslim@keris.or.kr)</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>기능(SFR 9건)</strong>: 시범운영·시도교육청 확산 표준 모델링, 교직원 법령·사례 상담·민원 답변 초안, 교육통계 오보 검증, 연계기관 설치형 송신 에이전트, DW 재구조화·MCP·ABAC, 예측모델 5종 통합 서비스, 비식별·합성데이터, Local LLM 도입·운용, SR·데이터취합 모바일 알림</li><li><strong>기술·아키텍처</strong>: 인터넷망·업무망 분리, MCP 표준·OAuth, 2-lane LLM 라우팅(외부 상용 LLM·내부 Local LLM), 컨테이너 기반 클라우드 네이티브 배포, GPKI·ABAC·Row-Level Security, Python 예측모델·MSTR BI 연동, vLLM·TGI·Ollama 등 서빙 프레임워크</li><li><strong>보안</strong>: 망분리·망연계, 외부 LLM 데이터 비보존·비식별, 개발보안·취약점 점검, AI 가드레일·grounding, 사업자 부담 외부 LLM 토큰·알림 발송 비용</li><li><strong>통합발주 S/W(물품공급·기술지원협약)</strong>: PRISM 1식 — LLM 기반 대화형 분석 서비스(BI매트릭스, 물품공급·기술지원협약 체결, 낙찰자는 협약금액 확약·공급확약서 발급)</li><li><strong>기존·연동 S/W(구매 명시 외 참조)</strong>: 교데통 BI MicroStrategy(MSTR) 시각화 우선 검토, 오픈소스 시각화 솔루션 협의 가능</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>S/W 공급 미포함</strong>: 본 사업은 응용SW 구축·개발 용역이며, 자가점검표상 「상용SW 직접구매 및 품질성능 평가시험」 해당 없음 — RHEL·OpenShift 등 상용 SW 납품·라이선스 구매 사업이 아님</li><li><strong>경쟁·지정 제품</strong>: PRISM(BI매트릭스) 물품공급·기술지원협약 확정, MSTR BI 시각화 우선 검토, Local LLM은 vLLM·TGI·Ollama 등 벤더 중립 구조, GPU·서버 물적기반은 별도 인프라 사업 제공</li><li><strong>JBoss 등 미요구</strong>: Java EE·미들웨어(JBoss) 명시 없음, 전자정부 표준프레임워크·교데통 개발표준 준수가 핵심</li><li><strong>직접 제안 제약</strong>: 중소·소상공인 대상 SW 용역(5.62억), Red Hat 단독 S/W 공급 구조 아님, 하도급 50% 제한·기술평가 90%로 SI·개발 역량 중심</li><li><strong>LLM·AI 스택</strong>: 외부 상용 LLM(OpenAPI)·자체 Local LLM 선정이 주관기관 협의 대상이며 Red Hat AI/OpenShift AI 직접 지정 없음</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>OpenShift</strong>: SFR-001 시도교육청 확산을 위한 「컨테이너 기반 클라우드 네이티브 배포 구조」 필수 채택 — OpenShift/Kubernetes 플랫폼·GitOps·멀티클러스터 확산 아키텍처 제안 가능</li><li><strong>RHEL</strong>: 기술적용계획표 Linux·클라우드(IaaS/PaaS) 적용, 교데통 연계·송신 에이전트·MCP 게이트웨이 서버 OS로 RHEL 제안 가능(별도 인프라·GPU 환경과 연계)</li><li><strong>Ansible Automation Platform</strong>: 예측모델 자동 갱신·스케줄링, 다채널 배포, 시도교육청 표준 확산, 설정·패치·보안 baseline 자동화에 Ansible 제안 가능</li><li><strong>보안·컴플라이언스</strong>: ABAC·망분리·컨테이너 보안(SCC/OPA), GPKI 연동, 국정원 검증 암호모듈·CC 연계 환경에서 Red Hat 보안 강화 스택 제안</li><li><strong>제안 전략</strong>: SI·개발 파트너(공동수급·하도급)로 OpenShift 기반 MLOps·서비스 메시·외부연계 게이트웨이 표준화를 기술평가 「적용기술·시스템 요구사항·확장성」 항목에 반영, COR-004 개방형·전환 가능 기술 검토 요건 부합</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
