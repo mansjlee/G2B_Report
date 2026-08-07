@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00261584 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국전력거래소_2026~2029년 ERP 유지관리 위탁 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>ERP 유지관리 용역</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>한국전력거래소(KPX)의 차세대 ERP 구축사업 종료('26.10.31)에 대비하여, FN(K system ACE)·HR(Hunel) 이원 구조 ERP 시스템에 대한 전문적·체계적 유지관리 운영체계를 구축하는 위탁 용역</li>
+                    <li>주기적 예방점검, 상시 모니터링, 365일 24시간 장애 대응·복구체계를 통해 중단 없는 ERP 서비스 제공 및 경영환경 변화에 대한 신속한 업무 프로세스 변경 대응</li>
+                    <li>소규모 개선(연간 347 FP) 및 보완개발(연간 148.7 FP), 데이터 품질·보안·성능 관리, Help-Desk·ITSM 기반 운영지원 포함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 추정가격 1,927,118,000원(VAT 제외), 사업비 2,119,829,800원(VAT 포함)</li>
+                    <li><strong>사업 기간</strong>: 계약체결일 ~ 2029.10.31(용역수행: 2026.11.1 ~ 2029.10.31, 계약체결일 ~ 2026.10.31은 업무인수인계 기간)</li>
+                    <li><strong>사업 범위</strong>: 상용·개발 SW(K system ACE 4,965.5 FP, Hunel 포함) 유지관리, 패치/업그레이드, 장애·성능·보안·백업·연계관리, 소규모개선·보완개발, SLA·예방점검·재해복구, ERP Help-Desk 운영</li>
+                    <li><strong>계약방식</strong>: 제한경쟁입찰, 협상에 의한 계약(기술평가 90%, 가격평가 10%), 중소기업·소상공인·중소 SW사업자 대상(20억 미만), 하도급 불허</li>
+                    <li><strong>사업장</strong>: 전라남도 나주시 혁신도시(한국전력거래소 본사)</li>
+                    <li><strong>주요 일정</strong>: 계약 후 10일 이내 사업수행계획서·산출내역서, 30일 이내 SLA·패치업그레이드 계획, 1개월 이내 예방점검·재해복구·기술지원 협력체계 수립</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>담당 부서</strong>: 정보기술처 AX데이터팀</li>
+                    <li><strong>담당자</strong>: 차장 허준형</li>
+                    <li><strong>연락처</strong>: 061-330-8831</li>
+                    <li><strong>이메일</strong>: libehjh@kpx.or.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>핵심 기술·비즈니스 요구사항</strong>: 78건 요구사항(MPR 27, MHR 9, DAR 6, TER 2, SER 4, COR 14, PMR 14, PSR 2) — ERP(FN·HR) 이원구조 유지관리, 24×365 장애대응(통보 후 2시간 내 현장출동, 4시간 내 처리 원칙), SLA 관리, 빌드·배포 자동화·형상관리, FN-HR·대내외 연계 영향분석·통합검증, DB 성능튜닝(분기 1회 이상), SAST/DAST/SCA 보안점검, 전자정부프레임워크·전자정부 웹품질지침 준수, 전력거래소 정보보안지침 준수, 상주인력 투입(C#/Java/JSP/VueJS 2년↑)</li>
+                    <li><strong>통합발주 S/W(유지관리 대상, 수량)</strong>:
+                        <ul>
+                            <li>K system ACE: 1</li>
+                            <li>Hunel V: 1</li>
+                            <li>Oracle Database SE2 Per Processor: 4</li>
+                            <li>Oracle Database SE2 10 User: 1 (Hunel 유지관리)</li>
+                            <li>K-Studio 2.0: 1 (K system 유지관리)</li>
+                            <li>OZ-Report editor 7: 1</li>
+                        </ul>
+                    </li>
+                    <li><strong>참고</strong>: K system DB는 MS SQL Server 2022 사용 중이나 유지관리 대가 산정에서 제외; 개발환경은 FN(C#/.NET), HR(프론트 JSP·VueJS, 백엔드 Java), DBMS는 MS SQL Server Standard·Oracle Database SE2</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 공급 미포함</strong>: 본 사업은 ERP 유지관리·운영 위탁 용역으로, Red Hat 제품(RHEL, OpenShift, Ansible 등)의 신규 조달·공급 요건이 없으며 S/W 라이선스 구매 대상이 아님</li>
+                    <li><strong>경쟁·기존 스택 고정</strong>: Oracle Database SE2(Per Processor 4, 10 User 1), MS SQL Server Standard/2022, Windows Server, C#/.NET, Java/JSP/VueJS, 전자정부프레임워크가 명시·고정되어 RHEL/Rocky Linux 전환 요건 없음</li>
+                    <li><strong>개발·도구 선정 제약</strong>: 보완개발 솔루션(보안·품질·SCA·테스트·빌드/배포·형상관리)은 영림원·HCG(패키지 개발사) 추천 반영, 국정원 인정 도구 우선, 계약 후 발주사·개발사 협의 확정 — Red Hat 제품 지정 없음</li>
+                    <li><strong>기타 제약</strong>: 하도급 불허, 중소 SW사업자만 입찰 가능(대·중견기업 제외), 기존 ERP 패키지(K system/Hunel) 유지관리 전문 역량·실적이 핵심 평가요소(ERP 통합 유지관리 실적 5점), 인프라·미들웨어 교체·마이그레이션 과업 미포함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>Ansible(간접·방법론 수준)</strong>: MPR-CND-CHA-01에서 빌드·배포 자동화 및 배포 오케스트레이션 도구 활용을 요구하나, 특정 제품 지정은 없어 제안서 수행방안에서 Ansible Automation Platform을 DevOps·배포자동화 도구로 제안할 여지는 있으나 제품 공급·조달 기회는 아님</li>
+                    <li><strong>Linux/RHEL(매우 제한적)</strong>: 기술적용계획표에서 서버용 Linux가 부분적용(●)으로 기재되어 있으나, 유지관리 대상 SW·DB가 Oracle/MS SQL·Windows 중심이고 OS 교체·신규 도입 요건이 없어 실질적 RHEL 제안 여지는 극히 낮음</li>
+                    <li><strong>종합 판단</strong>: Red Hat 제품 직접 판매·라이선스 공급 기회는 없으며, 유지관리 용역 수주 시 Ansible 등을 운영 방법론에 포함하는 수준의 간접 언급만 가능. 본 건은 Red Hat 솔루션 영업 관점에서 우선순위가 낮은 사업</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
