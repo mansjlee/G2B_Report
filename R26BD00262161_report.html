@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00262161 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국방과학연구소_참조 아키텍처 검증을 위한 AI/A 소프트웨어 연동 지원 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>Ubuntu OS 명시, 용역 중심</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>MUM-T 체계 적용 AI 및 자율 참조 아키텍처(1단계) 개발 과제에서 개발되는 참조 아키텍처 검증을 위해, 국과연이 개발한 기존 AI/자율(AI/A) 소프트웨어를 참조 아키텍처에 부합하도록 수정·보완하고 플랫폼(임무장비)에 탑재·적용하여 성능시험을 지원하는 일반용역 사업</li><li>시나리오 분석, AI/A SW 적용방안 수립, 참조 아키텍처 기반 SW 구현 및 플랫폼 인터페이스 연동 최적화, 성능시험 지원 및 참조 아키텍처 보완을 통해 AI/자율 기능의 기술 검증을 완료하는 것이 핵심 목표</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 제안요청서 본문에 사업 예산(추정가격) 금액 미기재 — 입찰공고문 및 별지 제안가격 양식 참조 필요</li><li><strong>사업 기간</strong>: 계약일 ~ 2028년 12월 15일 (최종 납품일)</li><li><strong>사업 범위</strong>: 참조 아키텍처 검증을 위한 AI/A SW 연동 지원 1식 — 시나리오 분석, AI/A SW 적용방안 수립(FUN-01), 참조 아키텍처 기반 SW 구현 및 플랫폼 인터페이스 연동 최적화(FUN-02), 시나리오 기반 성능시험 및 참조 아키텍처 보완(FUN-03), 개발/검증환경 구축(ENV-01), 프로젝트·기술·보안·위험 관리(PMR-01~04)</li><li><strong>주요 일정</strong>: '26년 착수 → '27년 성능시험 → '28.12.15 종료; 과제 일정(SRR/PDR/CDR1/중간/CDR2/TRR) 연동; 계약 후 1개월 이내 착수회의·사업계획서 제출; 분기 정기 기술검토회의; 계약 완료 15일 전 최종보고</li><li><strong>계약 방식</strong>: 경쟁입찰(제한경쟁), 협상에 의한 계약; 기술능력 90점 + 비용 10점; 공동계약 불허</li><li><strong>납품지</strong>: 국방과학연구소(대전)</li><li><strong>하자보증</strong>: 납품 완료 후 1년</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>담당 부서</strong>: 국방과학연구소 인공지능원 2부</li><li><strong>담당자</strong>: 김미정 (042-821-4713, katz51@add.re.kr)</li><li><strong>담당자</strong>: 심성대 (042-821-2051, sdsim@add.re.kr)</li><li><strong>문의</strong>: 제안요청서 설명회 미개최, 개별 문의 불응 — 서면 접수 후 일괄 답변</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>기능 요구사항(FUN-01)</strong>: 과제 시나리오 기반 국과연 AI/A SW 적용방안 수립 — 요구기능·성능 도출, SW 커버리지 분석 및 갭 식별, 자율주행 시나리오 도출, 재사용/수정/신규개발 방안 및 우선순위 수립</li><li><strong>기능 요구사항(FUN-02)</strong>: AI/A 참조 아키텍처 기반 SW 구현 및 플랫폼 인터페이스 연동 최적화 — SW 재구조화·미구현 기능 보완, 시뮬레이션 기능 검증, 플랫폼(임무장비) 인터페이스 연동 및 통신 프로토콜/미들웨어 최적화, 연동시험 수행</li><li><strong>기능 요구사항(FUN-03)</strong>: 시나리오 기반 성능시험 지원 및 참조 아키텍처 보완 — 병목 식별·개선안 도출, 구현·시험 결과 기반 참조 아키텍처 보완 제시</li><li><strong>개발/검증환경(ENV-01)</strong>: ARM CPU + 최신 GPU 통합 소형 AI 슈퍼컴퓨팅 시스템 1대(HBM GPU, NVMe 내장), 개발/검증용 노트북 3대(Intel Core Ultra 7, NVIDIA GeForce RTX 5060, RAM 32GB, SSD 2TB) 납품 및 AI SW 학습/추론 환경 구축</li><li><strong>환경 SW 설치 요구</strong>: Ubuntu LTS 기반 NVIDIA 드라이버·CUDA·cuDNN, PyTorch·TensorFlow·TensorRT 등 AI 프레임워크 최적화 환경 설치 및 설치 가이드 제공, 사용자 교육 1회 이상</li><li><strong>프로젝트 관리(PMR)</strong>: 형상관리, 보완요구사항 관리, 방위산업기술보호법 등 보안 준수, 위험관리 및 진척 보고</li><li><strong>납품 산출물</strong>: 참조 아키텍처 개발/검증환경 1조, 참조 아키텍처 기반 AI/A SW 및 개발문서 1조, 적용·연동·성능시험 결과보고서, 수락검사절차서·성적서 각 1부</li><li><strong>통합발주 S/W(구매 명시)</strong>: 별도 상용 S/W 라이선스 구매 항목 없음 — ENV-01 하드웨어 납품 시 Ubuntu LTS, NVIDIA 드라이버, CUDA, cuDNN, PyTorch, TensorFlow, TensorRT 등 오픈소스/무료 AI 개발도구 설치 요구(수량: AI 슈퍼컴퓨팅 시스템 1대 + 노트북 3대에 각 설치)</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>S/W 공급 중심 아닌 용역 사업</strong>: 본 사업은 AI/A SW 수정·보완, 플랫폼 연동, 성능시험 지원 등 개발 용역이 주체이며, Red Hat 상용 S/W(RHEL, OpenShift 등) 라이선스 구매가 RFP 요구사항에 포함되지 않음</li><li><strong>경쟁 OS 명시 — Ubuntu LTS</strong>: ENV-01 개발/검증환경 구축 시 OS/드라이버를 "Ubuntu LTS 기반"으로 명시적으로 요구 — RHEL/Rocky Linux 대체 제안 여지 제한</li><li><strong>경쟁 GPU/AI 스택 명시</strong>: NVIDIA GPU(HBM 통합 가속기, GeForce RTX 5060), CUDA, cuDNN, PyTorch, TensorFlow, TensorRT 등 NVIDIA/Ubuntu 생태계 기반 AI 스택이 요구사항에 직접 명시</li><li><strong>국과연 자체 SW 및 참조 아키텍처</strong>: AI/A SW, 참조 아키텍처, 과제 시나리오 등 핵심 자산은 국과연이 제공 — Red Hat 플랫폼 전환 또는 표준화 요구 없음</li><li><strong>방위 보안·지식재산권 제약</strong>: 방위산업기술보호법·군사기밀 보호 준수, 모든 IP 국과연 귀속, 국과연 지정 시 현장 내 개발 수행 — Red Hat 제품 도입을 위한 별도 인프라 확장 여지 제한</li><li><strong>공동계약 불허</strong>: Red Hat과 SI/용역사 간 공동수급 형태 제안 불가</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>직접 제안 가능성 매우 제한적</strong>: RFP에 RHEL, OpenShift, Ansible, JBoss 등 Red Hat 제품군이 명시되거나 암시되지 않아 직접적인 라이선스/플랫폼 제안 경로 없음</li><li><strong>간접 활용 가능성 — Ansible(매우 제한적)</strong>: PMR-02 형상관리·보완요구사항 관리, PMR-04 위험·변경관리 등 프로젝트 관리 자동화 도구로 Ansible 제안 가능하나, RFP에서 특정 구성관리/자동화 도구를 요구하지 않아 필수 항목 아님</li><li><strong>간접 활용 가능성 — OpenShift(매우 제한적)</strong>: AI/ML 워크로드 컨테이너화·GPU 스케줄링이 제안사 자체 기술 방안으로 제시될 경우 OpenShift AI/OpenShift Container Platform 언급 가능하나, Ubuntu+NVIDIA 네이티브 스택이 명시되어 있어 채택 가능성 낮음</li><li><strong>파트너/SI 경유 간접 기회</strong>: 용역 수행사(SI)가 제안서 제4장 인프라 활용계획·과제관리 계획에서 Red Hat 솔루션을 보조 인프라(개발 CI/CD, 테스트 자동화 등)로 포함할 여지는 있으나, 평가 핵심은 AI/A SW 연동 기술 역량(90점)이므로 Red Hat 제품 비중은 미미</li><li><strong>향후 확장 기회</strong>: MUM-T AI/자율 참조 아키텍처 후속 단계 또는 유사 국방 AI 플랫폼 표준화 과제에서 컨테이너·하이브리드 클라우드 표준 수립 시 OpenShift/RHEL 재검토 가능 — 본 건(R26BD00262161) 직접 대상은 아님</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

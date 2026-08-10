@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00262055 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>자본재공제조합_AI 보증신청 및 챗봇 시스템 개발 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>GPU서버 Linux OS 제안여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>자본재공제조합의 AI 인프라(GPU 서버) 구축을 통해 AI OCR·LLM 기반 서비스 개발 기반을 마련하는 용역 사업</li>
+                    <li>AI OCR 기반 보증신청 서비스 개발로 조합원 편의성 제고 및 계약서 첨부 시 항목 자동완성</li>
+                    <li>계약서 위험 검증(독소조항·모순조항 등) 업무 자동화로 보증발급 심사 효율화</li>
+                    <li>사내 규정·매뉴얼 기반 LLM 챗봇 도입으로 임직원 업무 수행 효율 극대화</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 630,000,000원(부가세 포함, 6억 3천만원 미만), 총액계약·협상에 의한 계약</li>
+                    <li><strong>사업 기간</strong>: 계약체결일로부터 5개월(검수완료 후 12개월 무상 하자보수·기술지원)</li>
+                    <li><strong>사업 범위</strong>: GPU 서버 AI 인프라 구축, AI OCR 보증신청 서비스, 계약서 검증 자동화, 사내 규정·매뉴얼 챗봇, EBIZ·KOINS 연계</li>
+                    <li><strong>주요 일정</strong>: 사전공개 2026.08.10~08.13, 입찰공고·제안서 접수 2026.08.14~08.25 15:00, 제안서 평가 2026.09.01 10:00, 협상 2026.09.07 이후</li>
+                    <li><strong>입찰방법</strong>: 제한경쟁입찰, 기술평가 80점+가격평가 20점, 기술 85% 미만 협상 제외</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>수요기관</strong>: 자본재공제조합 (서울 영등포구 은행로 37 기계회관)</li>
+                    <li><strong>제안 관련 문의</strong>: 사업지원팀 이상수 대리, 02-369-8508</li>
+                    <li><strong>입찰 관련 문의</strong>: 인사총무팀 김형조 과장, 02-369-7914</li>
+                    <li><strong>제안서 제출처</strong>: 인사총무팀, 기계회관 본관 9층 (방문 제출)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>기술·비즈니스 요구</strong>: 고성능 GPU 서버 인프라 구축, AI OCR 모델 개발(추출 신뢰도 95% 이상), 다중 포맷(hwpx·xlsx·pdf) 문서 처리, 계약서 검증 웹페이지, EBIZ·KOINS 화면 연계·자동완성, 계약서 위험 검증(High/Medium/Low), 온프레미스 LLM 2종 이상 도입(영구 라이선스), 지식베이스·온톨로지·Graph DB, 챗봇(응답 정확도 90%·5초 이내), 관리자·모니터링, 동시접속 50명 이상</li>
+                    <li><strong>통합발주 S/W(직접 명시)</strong>:
+                        <ul>
+                            <li>Linux 계열 운영체제 1식 (GPU 서버 포함, ECR-001)</li>
+                            <li>OCR 엔진 1식 (GPU 서버 설치·최적화, 과업범위)</li>
+                            <li>AI 엔진(LLM) 2종 이상 1식 (온프레미스·영구 라이선스, SFR-007, 제안사 선정·제안)</li>
+                        </ul>
+                    </li>
+                    <li><strong>통합발주 H/W(참고)</strong>:
+                        <ul>
+                            <li>LLM 탑재용 GPU 서버(2GPU) 1식</li>
+                            <li>NVIDIA H200 NVL(141GB) GPU 2매 (또는 동등 이상)</li>
+                            <li>4U 랙마운트 서버 1식 (듀얼 Xeon, 1TB RAM, NVMe SSD 등 ECR-001 사양)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li>본 사업은 AI OCR·챗봇·계약서 검증 <strong>개발 용역</strong>이 주체이며, Red Hat S/W 단독 공급·조달 항목으로 명시되지 않음</li>
+                    <li>LLM은 제안사가 2종 이상 직접 선정·제안해야 하며, Red Hat AI/LLM 제품(RHEL AI 등) 지정 또는 필수 요건 없음</li>
+                    <li>VMware, Contrabass, Ubuntu, Oracle/Rocky Linux 등 경쟁·대체 OS/가상화 제품 강제 명시는 없으나, Linux는 '계열' 수준으로만 규정</li>
+                    <li>개발 Tool·S/W·테스트 장비는 개발업체(용역사) 자체 준비 의무(유의사항), 조합 직접구매 S/W 범위에 Red Hat 미포함</li>
+                    <li>JBoss, OpenShift, Ansible 등 Red Hat 미들웨어·플랫폼 요구사항 없음, AI OCR·챗봇은 맞춤형 애플리케이션 개발 중심</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>RHEL</strong>: ECR-001 GPU 서버에 'Linux 계열 운영체제 포함' 요건 → NVIDIA H200 GPU 서버용 RHEL/RHEL AI 제안 가능(제조사·용역사 공동 제안 시)</li>
+                    <li><strong>Red Hat OpenShift AI</strong>: 온프레미스 LLM 2종 도입·모델 활성화/비활성화·모니터링 대시보드(SFR-007, SFR-010) 요건과 부합하는 플랫폼 레이어로 제안 가능</li>
+                    <li><strong>Ansible</strong>: GPU 서버·AI 인프라 구성 자동화, 배포·패치·운영 모니터링 효율화 방안으로 용역 제안서 내 기술 스택 제안 여지</li>
+                    <li>용역사·SI 파트너와 공동 수급(분담이행) 시 GPU 인프라 OS·컨테이너 플랫폼 레이어에 Red Hat 스택 번들 제안 가능</li>
+                    <li>서버 종합 모니터링·로그·통계(SFR-010) 요구에 Red Hat Insights, OpenShift 모니터링 연계 방안 기술 제안 가능</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

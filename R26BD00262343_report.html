@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00262343 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국가정보자원관리원_2026년 제2차 정보자원 통합구축 HW3 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>RHEL·JBoss 증설 SI납품</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국가정보자원관리원(NIRS)이 발주하는 범정부 정보자원 통합구축 사업(HW3)으로, 식품의약품안전처 등 5개 기관 9개 업무시스템의 노후 정보자원 교체·신규 구축 및 G-클라우드(S존) 지능형 클라우드 인프라 확충을 수행한다.</li>
+                    <li>부처별 중복투자를 해소하고 클라우드 기반 정보자원 공동활용을 강화하여 비용 절감, 서비스 안정성 확보, 스마트 클라우드 전문기관으로의 도약을 목표로 한다.</li>
+                    <li>관리원은 HW·시스템SW 구축을 담당하고, 입주기관은 AP 및 기타SW 구축·이관을 담당하는 역할 분담 체계로 운영된다.</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 총 81억 3,400만 원(8,134,000,000원)</li>
+                    <li><strong>사업 기간</strong>: 계약일 ~ 2027년 2월 26일(안정화 기간 3개월 포함, 하자보수 12개월)</li>
+                    <li><strong>사업 범위</strong>: x86/GPU 서버·SAN 스토리지·네트워크·보안 HW 도입, G-클라우드 S존 인프라 보강, 5개 기관 9개 업무시스템 통합구축(데이터 이관·서비스 전환), nTOPS 자산 현행화</li>
+                    <li><strong>주요 일정</strong>: '26년~'26.10 G-클라oud 확충 및 구조설계 → '26.11~12 업무이관·시스템 구축 → '27.1~2 서비스 개시·안정화 / 제안요청 설명회: 2026.9.3.(목) 13시 온라인</li>
+                    <li><strong>선정방식</strong>: 협상에 의한 계약, 기술평가 90% + 가격평가 10%, 공동수급(공동이행) 허용(5개 이하)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주기관</strong>: 행정안전부 국가정보자원관리원 정보자원관리과</li>
+                    <li><strong>과장</strong>: 김석태 / TEL: 042-250-5900 / FAX: 042-250-5969</li>
+                    <li><strong>사무관</strong>: 김재연 / TEL: 042-250-5950</li>
+                    <li><strong>주무관(입찰 문의)</strong>: 김서린 / TEL: 042-250-5932</li>
+                    <li><strong>이메일</strong>: RFP 본문에 이메일 주소 미기재(전화 문의)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>기술·비즈니스 요구사항</strong>: G-클라우드 S존 SDDC 기반 지능형 클라우드 인프라 확충, 5개 기관 9개 업무시스템 클라우드 전환·데이터 이관·서비스 개시, 무중단 구축·HA·DR, nSIMS/nTOPS/G-CMS 연계, 국정자원 기술기준 검증·보안적합성(CC) 준수, 60개 요구사항(ECR 16·CCR 4·APR 10·COR 5·PMR 21·PSR 4)</li>
+                    <li><strong>대상 업무시스템(9개)</strong>: 국정자원 지능형 클라우드인프라·클라우드 스토리지, 국토부 자동차관리·운수종사자·부동산개발사업통합관리, 기후에너지환경부 국가생물다양성 정보공유·생물다양성정보, 산림청 산림유량 실시간관측데이터개방, 식약처 K-NASS</li>
+                    <li><strong>통합발주 S/W(직접구매 제외·증설물량)</strong>:
+                        <ul>
+                            <li>운영체제 RHEL(Guest OS) 증설: 50식 ※ 기존제품: RHEL</li>
+                            <li>공개기반 Web JBoss WS(2CPU, 48Core) 증설: 5식 ※ 기존제품: Jboss-WS</li>
+                            <li>공개기반 WAS JBoss EAP(2CPU, 48Core) 증설: 4식 ※ 기존제품: JBoss-EAP</li>
+                            <li>가상화SW(Virtualization Engine) 증설: 21식</li>
+                            <li>DBMS(MariaDB, 32Core) 증설: 1식(국가생물다양성 정보공유체계)</li>
+                            <li>DBMS(MariaDB, 32Core) 증설: 1식(생물다양성정보시스템)</li>
+                            <li>DBMS(EDB Active, 8Core) 증설: 1식(마약류오남용통합감시시스템)</li>
+                            <li>DBMS(EDB Stand-by, 8Core) 증설: 1식(마약류오남용통합감시시스템)</li>
+                            <li>DBMS(EDB Active, 12Core) 증설: 1식(부동산개발사업통합관리시스템)</li>
+                            <li>DBMS(EDB Stand-by, 12Core) 증설: 1식(부동산개발사업통합관리시스템)</li>
+                            <li>DBMS(EDB Active, 6Core) 증설: 1식(자동차관리정보시스템)</li>
+                            <li>DBMS(EDB Stand-by, 6Core) 증설: 1식(자동차관리정보시스템)</li>
+                            <li>SRM(FLETA, 550TB, Agent 포함) 증설: 1식</li>
+                        </ul>
+                    </li>
+                    <li><strong>조달쇼핑몰 직접구매 S/W(통합발주 아님)</strong>: ACRA Point 737조, Contrabass ENT 34조, Cubrid 120조, PostgreSQL 8조</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>직접 Red Hat 공급 구조 아님</strong>: 본 사업은 HW3 통합구축 SI 과업으로, Red Hat S/W는 낙찰 SI(통합사업 사업자)가 조달·납품·설치하는 구조이며 Red Hat이 End-Customer에 직접 제안·계약하는 형태가 아님</li>
+                    <li><strong>가상화SW</strong>: 가상화SW 21식은 Contrabass ENT(직접구매 34조) 및 기존 Virtualization Engine 증설로 명시되어 RHEV/OpenShift Virtualization 직접 지정 없음</li>
+                    <li><strong>DBMS</strong>: MariaDB·EDB(PostgreSQL 기반) 증설로 명시, Red Hat DB(RHDM 등) 지정 없음</li>
+                    <li><strong>경쟁·대체 제품</strong>: Contrabass(가상화), Cubrid/PostgreSQL/MariaDB/EDB(DB), FLETA(SRM) 등 타사 제품 고정·증설 구조</li>
+                    <li><strong>OpenShift/Ansible 미포함</strong>: 컨테이너·자동화 SW 도입 요구사항 및 직접구매 목록에 Red Hat OpenShift, Ansible Automation Platform 미명시</li>
+                    <li><strong>윈백 제한</strong>: 증설사유 통합발주 SW는 윈백 제안 제외(ECR-016), 기존 RHEL·JBoss 물량은 동종 제품 증설만 가능</li>
+                    <li><strong>참가자격</strong>: 소프트웨어사업자(1468)+정보통신공사업자(0036) 동시 등록, 중소 SW사업자 참여 지원 지침 적용—Red Hat 단독 입찰 불가</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>RHEL</strong>: OS 증설 50식, 기존제품 RHEL 명시, 지능형 클라우드 인프라(대구) S존 Guest OS용—기존 RHEL 환경 호환 증설 확정 수요</li>
+                    <li><strong>JBoss</strong>: JBoss WS 5식(2CPU·48Core), JBoss EAP 4식(2CPU·48Core) 증설, 기존 JBoss-WS·JBoss-EAP와 통합구성·호환성 필수</li>
+                    <li><strong>채널 제휴 기회</strong>: RHEL·JBoss가 상용SW 직접구매 제외(통합발주)로 SI 납품 필수—Red Hat는 낙찰 SI·공동수급체와 파트너 공급·기술지원·라이선스 증서 납품 협력 가능</li>
+                    <li><strong>기술 적합성</strong>: x86 서버 Linux OS·Unlimited Guest OS, RHEV/VMware/Xen/KVM 등 다양한 가상화 지원 기술기준(붙임3), G-클라우드 SDDC·HA·무중단 이관 요구와 RHEL 인프라 강점 일치</li>
+                    <li><strong>증설·라이선스</strong>: ECR-013 라이선스 증서 국정자원 명의 납품, APR-007 할당 자원·라이선스 재활용, 클라우드/비클라우드 SW 분리 관리—RHEL·JBoss Subscription 관리 체계 제안 가능</li>
+                    <li><strong>장기 관계</strong>: 국정자원 G-클라우드 지능형 인프라 핵심 스택(RHEL+JBoss) 증설로 후속 유지보수·패치·TAM 기술지원 영업 기회 존재</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
