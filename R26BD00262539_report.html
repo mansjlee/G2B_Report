@@ -1,1 +1,44 @@
-<h1>R26BD00262539 분석 리포트</h1><h2>분석 실패</h2><p>run_id=run-61641ac3-0813-40f7-beda-77808e70fd8e</p>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00262539 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>해양경찰청_차세대 통합장비관리시스템 구축 사업 2차 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=orange>중간<br>Linux OS 명시, MSA 요구로 OCP 제안 가능</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>해양경찰청의 노후화된 통합장비관리시스템을 개선하고, 물품등록 전자화, 정비문서 통합관리, AI 기반 검색 기능 적용 및 서버 이중화를 통해 업무 효율성 및 시스템 안정성을 확보하는 2차 고도화 사업입니다.</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 880,000,000원 (VAT 포함)</li><li><strong>사업 기간</strong>: 계약일로부터 240일 (8개월)</li><li><strong>사업 범위</strong>: 물품등록시스템 구축, 정비통합관리 문서함 구축, AI 검색 연동, 서버 이중화, 1차 구축 시스템 기능 고도화 및 데이터 이관</li><li><strong>주요 일정</strong>: 계약 후 8개월간 분석/설계, 인프라 구축, 개발, 테스트, 안정화 순으로 진행</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>담당 부서</strong>: 해양경찰청 장비관리과</li><li><strong>담당자</strong>: 경정 김지명 (032-835-2174), 경위 조두원 (032-835-2774)</li><li><strong>이메일</strong>: 명시되지 않음</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>핵심 기술/비즈니스 요구사항</strong>:<ul><li>전자정부 표준프레임워크 기반 시스템 구축 (COR-001)</li><li>안정적 운영을 위한 서버(WEB/WAS/DB) 이중화 구성 (SFR-017)</li><li>향후 확장성을 고려한 모듈화·마이크로서비스(MSA) 기반 인터페이스 설계 (INR-006)</li><li>Linux 운영체제 기반 인프라 구축 (기술적용계획표)</li><li>물품등록 프로세스 전산화, 정비문서 통합 관리, AI 기반 검색 기능 구현</li></ul></li><li><strong>구매 명시 상용 S/W</strong>:<ul><li>DB암호화 솔루션 (HANCOM XDB): 2식</li><li>웹 리포팅 (OZ report 8.0): 1식</li><li>문서 뷰어솔루션 (Docu-GATE v3.0): 1식</li><li>문서 뷰어솔루션 (CAD 도면 열람모듈): 1식</li><li>AI 검색솔루션 (LUXIA-ON): 1식</li></ul></li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li>DB암호화, 리포팅 툴, 문서 뷰어, AI 검색 솔루션 등 주요 상용 S/W가 특정 제품으로 지정되어 있어 해당 영역에 대한 Red Hat 솔루션 제안이 불가능합니다.</li><li>명시된 경쟁사 OS 또는 가상화 솔루션은 없으나, 지정된 상용 S/W 목록으로 인해 제안 범위가 일부 제한됩니다.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>RHEL</strong>: '기술적용계획표'에 서버 OS로 Linux가 명시되어 있어, 공공기관의 안정성 및 기술지원 요구사항을 충족하는 Red Hat Enterprise Linux 제안에 유리합니다.</li><li><strong>OpenShift (OCP)</strong>: '모듈화·마이크로서비스 기반 인터페이스 설계(INR-006)' 요구사항은 컨테이너 기반 아키텍처 도입의 당위성을 제공하며, OpenShift를 최적의 PaaS 플랫폼으로 제안할 수 있는 핵심 기회입니다.</li><li><strong>JBoss EAP</strong>: 전자정부 표준프레임워크(Java/Spring) 환경의 WAS로서 경량화된 오픈소스 기반의 JBoss EAP 제안이 가능합니다.</li><li><strong>Ansible Automation Platform</strong>: 신규 인프라 구축, 이중화 구성, 운영 자동화를 위해 Ansible을 제안하여 시스템 관리 효율성을 강조할 수 있습니다.</li><li><strong>RFP 내 명시된 Red Hat 제품</strong>: 없음.</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

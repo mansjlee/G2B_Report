@@ -1,1 +1,53 @@
-<h1>R26BD00262679 분석 리포트</h1><h2>분석 실패</h2><p>run_id=run-d473298f-92f5-4bf2-94f1-fbdbf67156c7</p>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00262679 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국방과학연구소_참조 아키텍처 검증을 위한 AI/자율 소프트웨어 연동 지원 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>개발/검증 환경 OS로 Ubuntu 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>MUM-T 체계 AI/자율 참조 아키텍처 검증을 위해, 기존 자율기능 SW를 수정·보완하고 플랫폼에 탑재하여 성능 시험을 지원하는 것을 목적으로 함.</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 제안요청서 내 미명시</li><li><strong>사업 기간</strong>: 계약일 ~ 2028년 12월 15일</li><li><strong>사업 범위</strong>: AI/자율 SW 적용 방안 수립, 참조 아키텍처 기반 SW 구현 및 플랫폼 연동 최적화, 시나리오 기반 성능시험 및 참조 아키텍처 보완 지원</li><li><strong>주요 일정</strong>: 계약 후 1개월 내 착수회의, 분기별/주요 시점별 기술검토회의, 계약만료 15일 전 최종보고</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>담당 부서</strong>: 국방과학연구소 인공지능원2부</li><li><strong>담당자</strong>: 김미정 / 심성대</li><li><strong>연락처</strong>: 042-821-4713 / 042-821-2051</li><li><strong>이메일</strong>: katz51@add.re.kr / sdsim@add.re.kr</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>핵심 기술/비즈니스 요구사항</strong>: AI/자율 소프트웨어의 참조 아키텍처 부합을 위한 수정/보완 및 플랫폼 연동 최적화, 시나리오 기반 성능시험 지원, AI 개발/검증용 고성능 H/W 및 S/W 환경 구축 및 납품.</li>
+                    <li><strong>구매 명시 S/W (통합발주)</strong>:
+                        <ul>
+                            <li>Ubuntu LTS 기반 OS: 4식 (AI 슈퍼컴퓨팅 시스템 1대, 노트북 3대)</li>
+                            <li>최신 NVIDIA 드라이버, CUDA, cuDNN: 4식</li>
+                            <li>PyTorch, TensorFlow, TensorRT 등 주요 AI 프레임워크: 4식</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>경쟁 제품 명시</strong>: 개발/검증 환경의 운영체제(OS)로 'Ubuntu LTS'가 명시되어 Red Hat Enterprise Linux(RHEL) 제안이 사실상 불가능합니다.</li><li><strong>S/W 납품 항목 부재</strong>: 순수 Red Hat S/W 구독을 납품하는 사업이 아니며, AI 개발 환경 구축에 필요한 OS가 경쟁사 제품으로 지정되었습니다.</li><li><strong>기술 요구사항 불일치</strong>: 사업의 핵심이 특정 AI 개발 프레임워크(PyTorch, TensorFlow 등)와 NVIDIA GPU 환경에 최적화된 용역으로, Red Hat의 주요 솔루션(OpenShift, Ansible 등)을 제안할 포인트가 없습니다.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>RFP 내 Red Hat 제품 언급</strong>: 제안요청서 전반에 Red Hat 제품 또는 관련 기술 스택(컨테이너, 쿠버네티스 등)에 대한 언급이 없습니다.</li><li><strong>기술적 제안 가능성</strong>: 'Ubuntu LTS 기반'이라는 명시적 요구사항으로 인해 RHEL을 '동급 이상'의 제품으로 제안하는 것은 설득력이 매우 낮아 사실상 제안 기회가 없습니다.</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

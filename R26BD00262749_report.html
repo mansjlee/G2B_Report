@@ -1,1 +1,75 @@
-<h1>R26BD00262749 분석 리포트</h1><h2>분석 실패</h2><p>run_id=run-4aac84ba-39d4-474f-a0d6-bc4461f4d3f9</p>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00262749 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국조폐공사_KOMSCO 지급결제플랫폼 아키텍처(K8s) 고도화 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>OCP 업그레이드 및 증설 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>기존 운영 중인 KOMSCO 지급결제플랫폼(Kubernetes 기반)의 지속적인 트래픽 증가에 대응하기 위해 시스템을 증설하고, AIOps 기반의 자동화된 장애 진단 및 운영 체계를 구축하여 서비스 안정성을 강화하는 것을 목적으로 함.</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 1,029,618,000 원 (VAT 포함)</li><li><strong>사업 기간</strong>: 계약일로부터 10개월</li><li><strong>사업 범위</strong>:
+                    <ul>
+                        <li>H/W 도입: 워커노드 5대, GPU Machine 2대, 10g 트랜시버 20개 증설</li>
+                        <li>S/W 도입: 컨테이너 오케스트레이션 기반 PaaS 플랫폼 5식 증설</li>
+                        <li>AIOps 운영체계 구축: 데이터 수집, 벡터DB 구축, RAG 기반 장애 원인 분석 및 운영 가이드 생성, 자연어 기반 운영 인터페이스 구축</li>
+                    </ul>
+                </li><li><strong>주요 일정</strong>: 착수 및 분석(1개월), 설계 및 구축(6개월), 테스트 및 안정화(2개월)</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>담당 부서</strong>: ICT운영처 지역화폐운영부</li><li><strong>담당자</strong>: 강산 과장</li><li><strong>연락처</strong>: 042-870-1470</li><li><strong>이메일</strong>: rivermountain@komsco.com</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><b>기술 및 비즈니스 요구사항:</b>
+                        <ul>
+                            <li>기존에 도입하여 운영 중인 컨테이너 PaaS 플랫폼과 동일한 제품을 증설하여 시스템 부하 증가에 대응 (ECR-007)</li>
+                            <li>워커노드 5식을 증설하고, 서비스 영향도를 최소화하며 QoS 전략(ResourceQuota, LimitRange)을 제시해야 함 (AR-001)</li>
+                            <li>PaaS 플랫폼의 로그, 메트릭, 트레이스 데이터를 수집하고 벡터DB 및 RAG 기술을 활용한 AIOps 아키텍처를 구축해야 함 (AR-002)</li>
+                            <li>멀티 클러스터 관리, SDS, Service Mesh(Istio), GUI 기반 CI/CD 파이프라인 등 엔터프라이즈급 PaaS 기능 요구 (ECR-007)</li>
+                        </ul>
+                    </li>
+                    <li><b>구매 명시 S/W (통합발주):</b>
+                        <ul>
+                            <li>컨테이너 오케스트레이션 기반 PaaS 플랫폼: 5식</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li>S/W 도입이 포함된 사업으로 제안에 어려움 없음.</li><li>VMware, Ubuntu, Rocky Linux 등 경쟁사 제품이 명시되지 않아 제안에 제약 없음.</li><li>기타 Red Hat 제품 제안에 대한 제약 조건이 없음.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><b>OpenShift (OCP):</b> 추진 일정에 'OCP 업그레이드'가 명시되어 있으며, '기 도입·운영중인 솔루션과 동일 제품 도입' 요구사항은 사실상 OpenShift 증설을 의미함. ECR-007의 상세 요구사항(CRI-O, Service Mesh, CI/CD, 멀티테넌시 등)은 OpenShift의 핵심 기능과 일치함.</li>
+                    <li><b>RHEL:</b> 신규 도입되는 워커노드(Bare Metal) 5대 및 GPU Machine 2대의 운영체제로 OpenShift에 최적화되고 인증된 RHEL 또는 RHCOS 제안이 필수적임.</li>
+                    <li><b>Ansible Automation Platform (AAP):</b> OCP 업그레이드, 워커노드 증설, AIOps 운영체계 구축 등 복잡한 인프라 구성 및 운영 자동화에 AAP를 제안하여 효율성을 높일 수 있음.</li>
+                    <li><b>OpenShift AI:</b> AIOps 구축 시 RAG 기반 모델 개발 및 운영을 위해 GPU 자원을 활용하는 MLOps 플랫폼으로 OpenShift AI(구 ODH) 제안 가능.</li>
+                    <li><b>RFP 명시 Red Hat 제품:</b>
+                        <ul>
+                            <li>OCP (업그레이드)</li>
+                            <li>컨테이너 오케스트레이션 기반 PaaS 플랫폼: 5식 (사실상 OpenShift)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

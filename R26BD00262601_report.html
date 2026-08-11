@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00262601 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>통일부_위성영상 공유시스템 구축 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=orange>중간<br>Linux OS 도입 명시, RHEL 제안 가능</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>국가 유관기관 간 위성영상자료의 신속하고 안전한 공유, 판독, 분석, 저장을 위한 정보시스템을 구축하는 것을 목표로 함.</li><li>대용량 위성영상의 안정적인 송수신 체계를 마련하고, 자료 유통 과정에서의 유출, 훼손 등을 방지하여 정보보안을 강화함.</li><li>수신된 영상자료의 체계적인 등록, 보관 및 분석을 통해 상시 활용 체계를 마련하고자 함.</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 890백만원 (8.9억원, 부가세 및 상용 S/W 구매비 포함)</li><li><strong>사업 기간</strong>: 계약 체결일 ~ 2026년 12월 15일</li><li><strong>사업 범위</strong>: 위성영상 공유시스템 H/W(서버, 스토리지, 네트워크, 보안장비) 및 S/W(시스템, 응용) 도입, 네트워크/전원 공사 등 시스템 구축 일체</li><li><strong>주요 일정</strong>: 착수 보고(계약 후 20일 이내), 중간 보고(사업종료 2개월 전후), 최종보고서 제출(사업종료 15일 이전)</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>소속/부서</strong>: 통일부 위성기반분석과</li><li><strong>성명/직책</strong>: 김덕래 사무관</li><li><strong>연락처</strong>: 02-2100-2355</li><li><strong>이메일</strong>: kimdl@unikorea.go.kr</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul><li><strong>핵심 기술 및 비즈니스 요구사항</strong>:
+                        <ul>
+                            <li>대용량 위성영상(EO, IR, SAR)의 신속·안전한 송수신 및 저장/관리 시스템 구축</li>
+                            <li>국가 안보 수준의 높은 보안 요구사항 충족(암호장비 연동, 서버보안, 망연계, 자료 유출 방지)</li>
+                            <li>리눅스(Linux) 기반 서버 4대(등록, 저장, 웹, 연동) 및 Windows 기반 워크스테이션 3대 도입</li>
+                            <li>영상자료처리, 영상분석, 영상관리 등 관련 응용 소프트웨어 개발 및 탑재</li>
+                        </ul>
+                    </li>
+                    <li><strong>구매 명시 S/W</strong>:
+                        <ul>
+                            <li>Linux 최신버전: 4식 (등록서버 2식, 웹서버 1식, 연동서버 1식)</li>
+                            <li>Windows 11 Pro: 3식</li>
+                            <li>서버보안시스템: 4식</li>
+                            <li>영상분석SW: 3식</li>
+                            <li>UTM(방화벽) with IPS License: 2식</li>
+                            <li>망연계시스템: 1식</li>
+                            <li>영상자료처리 시스템: 1식</li>
+                            <li>영상관리시스템: 1식</li>
+                            <li>서버 백신 (Unix/Linux용): 1식 (서버 4대 대상)</li>
+                            <li>워크스테이션 백신: 3식</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li>워크스테이션 3대의 운영체제로 Windows 11 Pro가 명시되어 있어 해당 부분에 RHEL 제안이 불가능합니다.</li><li>운영체제 요구사항이 'Linux 최신버전'으로만 명시되어, SI 사업자가 비용 절감을 위해 Ubuntu, Rocky Linux 등 무료 배포판을 제안할 가능성이 존재합니다.</li><li>서버 도입 수량이 4대로 소규모 사업이므로 OS 도입에 대한 중요도가 낮게 평가될 수 있습니다.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>Red Hat Enterprise Linux (RHEL)</strong>: 등록서버, 웹서버, 연동서버 등 총 4대의 서버 운영체제로 'Linux 최신버전'이 요구되어 RHEL 제안의 직접적인 기회가 존재합니다.</li><li><strong>보안 및 안정성</strong>: 통일부의 높은 국가/군사 보안 요구사항('최상위 보안')은 FIPS 인증, SELinux 등 강력한 보안 기능을 갖춘 RHEL의 핵심 강점과 부합하여 제안 시 경쟁 우위를 확보할 수 있습니다.</li><li><strong>Ansible Automation Platform</strong>: 다수 서버 및 네트워크 장비의 초기 구성, 보안 설정, 지속적인 형상 관리를 위한 자동화 솔루션으로 제안하여 시스템 구축 및 운영 효율성을 증대시킬 수 있습니다.</li><li><strong>RFP 명시 Red Hat 제품</strong>: 해당 없음</li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
