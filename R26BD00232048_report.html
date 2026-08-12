@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>국가보훈부_독립유공자 포상 기록철 전산화 - 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국가보훈부_독립유공자 포상 기록철 전산화 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>[낮음]<br>S/W 구매가 포함되지 않은 DB 구축 용역</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>독립유공자 포상 기록철의 전산화를 통해 자료 보존성을 높이고 관련 업무 효율성을 증대하는 것을 목표로 함.</li><li>약 5만여 권의 기록철을 스캔하여 이미지 파일과 색인 데이터를 생성하는 데이터베이스 구축 사업임.</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 1,380,000,000원 (VAT 포함)</li><li><strong>사업 기간</strong>: 계약 체결일로부터 2027년 11월 30일까지</li><li><strong>사업 범위</strong>: 독립유공자 포상 기록철 51,285권 전산화 (이미지 스캔, 데이터 입력 등)</li><li><strong>주요 일정</strong>: 계약 후 ~ 2026년 12월(이미지 제작), 2027년 1월 ~ 2027년 11월(데이터 구축)</li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>담당 부서</strong>: 국가보훈부 공훈심사과</li><li><strong>사업 책임자</strong>: 고아름 사무관 (044-202-5456)</li><li><strong>사업 실무자</strong>: 변은숙 주무관 (044-202-5457)</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>핵심 기술 및 비즈니스 요구사항</strong>:
+                            <ul>
+                                <li>포상 기록철 원본(51,285권)을 훼손 없이 스캔하여 300dpi 이상 JPEG 이미지 파일 생성</li>
+                                <li>문서 유형(공적조서, 평생이력서 등)에 따라 텍스트 데이터 및 색인 데이터 제작</li>
+                                <li>최종 산출물은 이미지(JPEG, PDF)와 텍스트(XLSX) 파일 형태로 납품</li>
+                                <li>데이터 품질 순도율 99.9% 이상 달성 및 전문 인력 확보 필수</li>
+                            </ul>
+                        </li>
+                        <li><strong>구매 명시 S/W</strong>:
+                            <ul>
+                                <li>본 사업의 과업 범위 내에서 구매 또는 통합발주가 명시된 S/W는 없음.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>S/W 공급 미포함</strong>: 본 사업은 기록물 스캔 및 데이터 입력을 주로 하는 DB 구축 용역으로, S/W 제품 납품 또는 라이선스 구독이 포함되어 있지 않음.</li><li><strong>사업 범위 한정</strong>: 사업의 범위가 데이터 생성에 한정되어 있어, RHEL, OpenShift 등 인프라 SW를 제안할 기회가 없음.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul><li><strong>직접적인 제안 요소 없음</strong>: 사업의 성격상 Red Hat 솔루션을 직접 제안할 수 있는 포인트가 없음.</li><li><strong>RFP 명시 Red Hat 제품</strong>:<ul><li>기존 운영 시스템 현황에 `JBoss EAP 4식`이 명시되어 있으나, 이는 신규 도입/증설이 아닌 현황 정보에 해당함.</li></ul></li></ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

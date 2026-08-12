@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00263319 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국학중앙연구원_2026년 차세대 행정업무시스템(학사행정) 구축 2차 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=orange>중간<br>기존 RHEL·JBoss 환경, 신규 OS 제안 가능</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul><li>노후화된 기존 학사행정 시스템을 클라우드 기반의 차세대 시스템으로 전환하여 행정 업무의 신속성, 정확성, 지속성을 보장하는 것을 목표로 함.</li><li>개별적으로 운영되던 정보시스템들을 통합 연계하여 업무 확장성, 효율성, 유연성을 확보하고, 부서 간 협업 체계를 강화하여 학사행정의 효율성을 제고하고자 함.</li></ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul><li><strong>사업 예산</strong>: 1,019,656,000원 (부가세 포함)</li><li><strong>사업 기간</strong>: 계약 후 386일</li><li><strong>사업 범위</strong>:
+                    <ul>
+                        <li>CSAP 인증 민간 클라우드 기반 차세대 학사행정시스템 신규 구축</li>
+                        <li>기존 ERP(예산회계/급여) 시스템과 통합 연계</li>
+                        <li>SSO 모듈 구축 및 웹 표준 기반 반응형 웹(태블릿, 노트북 지원) 구현</li>
+                        <li>기존 학사행정 데이터 정제 및 신규 시스템으로 이관</li>
+                        <li>컨설팅(업무 최적화, AS-IS/TO-BE 모델링, 변화관리 등) 포함</li>
+                    </ul>
+                </li><li><strong>주요 일정</strong>:
+                    <ul>
+                        <li>사업 기간: 계약 후 386일</li>
+                        <li>시스템 오픈(예정): 2027년 9월</li>
+                        <li>안정화 기간: 오픈 후 1~4개월</li>
+                    </ul>
+                </li></ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul><li><strong>총괄 부서</strong>: 한국학도서관 정보운영관리실</li><li><strong>총괄 담당</strong>: 최형주 실장 (031-779-2790, apple@aks.ac.kr)</li><li><strong>실무 담당</strong>: 박기석 책임전문위원 (031-779-2791, kspark@aks.ac.kr)</li></ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>핵심 기술 및 비즈니스 요구사항</strong>:
+                        <ul>
+                            <li><b>클라우드 기반 구축</b>: CSAP 인증 민간 클라우드 환경에서 시스템을 구축해야 함 (기존 가비아 CSP 사용 중).</li>
+                            <li><b>시스템 통합 및 연계</b>: 내부 시스템(ERP, 포털) 및 외부 시스템(한국연구자정보 등)과 유기적인 데이터 연계가 가능해야 함 (API 연동).</li>
+                            <li><b>프로세스 혁신(PI)</b>: AS-IS 분석, TO-BE 모델 설계를 포함한 업무 프로세스 개선 컨설팅 수행.</li>
+                            <li><b>개발 표준</b>: 전자정부 표준 프레임워크 기반 개발을 권장하며, 보안성 강화를 위한 시큐어 코딩을 적용해야 함.</li>
+                            <li><b>데이터 이관</b>: 기존 학사행정시스템의 과거 데이터를 신규 시스템으로 안전하게 정제 및 이관해야 함.</li>
+                        </ul>
+                    </li>
+                    <li><strong>구매 명시 S/W (통합발주)</strong>:
+                        <ul>
+                            <li>본 사업에서는 제안사가 조달해야 할 특정 상용 S/W 품목이 명시되어 있지 않음. 제안사가 OS, WAS 등 시스템 구성에 필요한 S/W를 제안해야 함.</li>
+                            <li>참고: 수요기관(한국학중앙연구원)이 직접 구매하는 품목으로 `SSO Agent 1식`이 명시됨.</li>
+                            <li>참고: `Oracle Standard DBMS`, 리포팅툴(`UbiReport`), 문서위변조방지툴(`e-PageSAFER`)은 기존 라이선스를 재활용할 것을 요구함.</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul><li><strong>경쟁 제품 명시</strong>: DBMS로 `Oracle Standard DBMS` 재활용이 명시되어 있어, 데이터베이스 솔루션(EDB Postgres 등) 제안 기회가 제한됨.</li></ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>강력한 기존 환경 기반</strong>: 현행 시스템이 Red Hat 기술 스택으로 구성되어 있어, 차세대 시스템에서도 연속성, 안정성, 기술 지원 용이성을 근거로 Red Hat 제품 제안이 매우 유리함.</li>
+                    <li><strong>RHEL (Red Hat Enterprise Linux)</strong>: 현행 OS가 RedHat Linux 5이므로, 안정성과 보안이 강화된 최신 RHEL 버전으로의 업그레이드 제안이 자연스러움.</li>
+                    <li><strong>JBoss EAP</strong>: 현행 WAS가 JBoss 4.2이므로, 클라우드 환경에 최적화된 최신 JBoss EAP로의 전환을 제안할 수 있음.</li>
+                    <li><strong>OpenShift Container Platform (OCP)</strong>: '차세대', '클라우드 기반' 시스템 구축 요건에 맞추어, 애플리케이션의 민첩성, 확장성, 고가용성을 보장하는 컨테이너 플랫폼으로 OCP 제안 가능.</li>
+                    <li><strong>Ansible Automation Platform (AAP)</strong>: 신규 클라우드 인프라의 구성, 배포, 운영 자동화를 위한 솔루션으로 제안하여 시스템 관리 효율성을 높일 수 있음.</li>
+                    <li><strong>RFP에 명시된 Red Hat 제품</strong>:
+                        <ul>
+                            <li>RedHat Linux 5 (현황 정보시스템 OS) - 1식</li>
+                            <li>JBoss 4.2 (현황 정보시스템 WEB/WAS) - 1식</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
