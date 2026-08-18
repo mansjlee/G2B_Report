@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00264589 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>대한의학회_전공의 수련교육 통합플랫폼 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 미포함 순수 개발 용역</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>전문과목학회별로 상이한 수련교육 및 평가체계를 통합 연계·관리하기 위한 웹·모바일 기반 전공의 수련교육 통합플랫폼(e-portfolio) 구축 사업</li>
+                    <li>모바일 우선 설계를 적용하여 전공의의 수련, 교육, 평가, 피드백 및 역량성취 이력을 통합적으로 관리하는 시스템 개발</li>
+                    <li>일회용 PIN/QR코드, 음성·텍스트 입력을 활용한 현장 WBA(직장기반평가) 수행 환경 구축</li>
+                    <li>기존 학회 수련관리시스템 및 e-portfolio와 SSO·딥링크·API 연계를 통한 상호운용 기반 구축</li>
+                    <li>Multi-tenant 구조로 26개 전문과목학회 확대 및 신규 서비스 연계 기반 마련</li>
+                    <li>AI 기반 음성-문자 변환 및 피드백 구조화 보조 기능 포함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 650,000,000원 (부가가치세 포함)</li>
+                    <li><strong>사업 기간</strong>: 계약체결일 ~ 2026년 12월 31일</li>
+                    <li><strong>사업 범위</strong>: ① 전공의 수련교육 통합포털 및 공통 서비스 구축 ② Logbook·교육이수·모바일 WBA·EPA 매핑·대시보드 등 수련·평가 기능 개발 ③ 학회 SSO·딥링크·API 연계 및 기존 데이터 이관 ④ 시범운영·사용자 교육·운영환경 이관·기술인수인계</li>
+                    <li><strong>주요 일정</strong>: 8~9월 입찰공고·PT심사·계약체결 → 9~11월 요구분석·시스템 개발·커스터마이징·시스템 시연회 및 보완·시스템 포팅 → 12월 전문가 검토 및 최종 검수</li>
+                    <li><strong>계약 방법</strong>: 협상에 의한 계약 (제한경쟁입찰, 중소기업 전용)</li>
+                    <li><strong>설치 장소</strong>: 발주기관(대한의학회)이 지정하는 서버, 클라우드 또는 데이터센터 환경</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주기관</strong>: 대한의학회</li>
+                    <li><strong>담당 부서</strong>: 전공의수련교육원 수련교육팀</li>
+                    <li><strong>연락처</strong>: ☎ 02-6952-9859, 9518</li>
+                    <li><strong>이메일</strong>: RFP 내 별도 명시 없음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>웹·모바일 반응형(HTML5, ECMA Script, CSS3) 기반 Multi-tenant 플랫폼 구축</li>
+                            <li>IMS Global LTI 1.3 표준 준수, SSO·딥링크·REST API 기반 학회 시스템 연계</li>
+                            <li>AI 기반 음성-문자 변환(STT) 및 피드백 구조화 기능</li>
+                            <li>일회용 PIN 및 QR코드를 통한 모바일 WBA 평가 환경</li>
+                            <li>EPA·역량기반 수련평가, Logbook, 수련기록 통합 관리</li>
+                            <li>표준 데이터 모델 수립 및 기존 학회 데이터 이관</li>
+                            <li>DBMS 이중화 구성, DB 백업 서버, 동시 사용자 2,000명 대응 성능 확보</li>
+                            <li>소프트웨어 개발보안 가이드 준수, 개인정보보호법 준수, 보안 취약점 점검</li>
+                            <li>형상관리 S/W는 오픈소스 기반 S/W 활용</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W]</strong>
+                        <ul>
+                            <li>RFP상 구매 또는 통합발주 대상 상용 S/W 품목 <strong>별도 명시 없음</strong></li>
+                            <li>ECR-001에서 "OS, Web server, WAS, DBMS, External connector, 기타 관련 S/W는 최신 버전으로 구성"하도록 요구하고 있으나, 특정 제품명·수량은 미지정이며 제안사 재량으로 제안 가능</li>
+                            <li>데이터베이스 암호화 S/W 도입 언급(SER-011)이 있으나 특정 제품명·수량 미명시</li>
+                            <li>형상관리 S/W는 오픈소스 기반 사용 명시(QUR-002)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>순수 개발 용역 사업</strong>: 본 사업은 시스템 개발·구축 용역으로, 상용 S/W 구매·납품·구독 항목이 별도로 존재하지 않음. 인프라·라이선스 비용의 부담 주체는 계약서에서 결정하도록 명시되어 있으나, 조달쇼핑몰이나 통합발주 방식의 상용 S/W 품목 도입은 확인되지 않음</li>
+                    <li><strong>Red Hat 상용 제품명 전무</strong>: RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 RFP 전체에서 단 한 건도 명시되지 않음</li>
+                    <li><strong>경쟁·대체 제품 미명시</strong>: VMware, Ubuntu, Rocky Linux 등 경쟁 제품도 명시되지 않았으나, OS·플랫폼 선택이 전적으로 제안사 재량으로 열려 있어 특정 스택 제안 근거가 약함</li>
+                    <li><strong>중소기업 전용 입찰</strong>: 소프트웨어 진흥법 제48조에 따라 대기업 및 중견기업 입찰 참여 제한으로 Red Hat Korea가 직접 입찰 참여 불가</li>
+                    <li><strong>형상관리 오픈소스 지정</strong>: 형상관리 S/W는 오픈소스 기반으로 명시(QUR-002)되어 있어 상용 제품 제안 불가</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>OS·미들웨어 미지정</strong>: ECR-001에서 OS, Web server, WAS, DBMS 등을 최신 버전으로 구성하도록 요구하되 특정 제품을 지정하지 않아, 원칙적으로 RHEL(OS), JBoss EAP(WAS) 제안 여지가 존재함. 단, 인프라·라이선스 비용 부담 주체가 계약서에서 결정되므로 실제 상용 S/W 도입 여부는 불확실</li>
+                    <li><strong>컨테이너·클라우드 환경 가능성</strong>: "발주기관이 지정하는 서버 또는 클라우드 환경"에 배포하도록 명시되어 있어, OpenShift 기반 컨테이너 플랫폼 제안 가능성이 이론적으로 존재하나 확정 근거 없음</li>
+                    <li><strong>API Gateway·연계 환경</strong>: API Gateway 기반 통합 연계 환경 구축이 요구되어 있어 Red Hat의 API 관리 솔루션(3scale 등) 제안 여지가 있으나, 역시 상용 제품 지정 근거 없음</li>
+                    <li><strong>RFP에 명시된 Red Hat 제품명</strong>: <strong>없음</strong> — RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품이 품목으로 단 한 건도 명시되지 않음</li>
+                    <li><strong>종합 판단</strong>: 본 사업은 상용 S/W 구매 없는 순수 SI 용역으로, Red Hat 상용 제품 도입이 확정·확실시되는 근거가 없어 직접적인 영업 기회는 낮음. 수주 업체와의 파트너 협력을 통한 간접 제안을 검토할 수 있으나 우선순위는 낮음</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
