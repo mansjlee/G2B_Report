@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00265225 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국석유공사_생성형 AI 플랫폼 구축 및 AX 개발 사업 - 분석 리포트</h2>
+
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>기존 RHEL 9.x 운영 중, 상용 Linux 납품 조건 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>한국석유공사(KNOC)의 전사적 성과 창출 및 에너지 산업 미래 가치 창출을 위한 공사 특화형 생성형 AI 플랫폼 구축</li>
+                    <li>공사 AI 전략 및 로드맵 실행을 위한 내부 AI 인프라 구축 및 AX(AI 전환) 응용 서비스 개발</li>
+                    <li>Multi-Agent 기반 업무지원 Agentic AI 개발(1차년도 AX과제 6건), RAG 기반 전사 지식 활용체계, LLMOps 및 AI 거버넌스 확보</li>
+                    <li>구축 형태: 공사 내부 Private Cloud형 온프레미스(폐쇄망/내부망 중심), 외부 퍼블릭 클라우드 및 외부 LLM API 미사용 원칙</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 13,225,835,150원 (VAT 포함, 설계금액 기준)</li>
+                    <li><strong>사업 기간</strong>: 계약체결일로부터 12개월 이내</li>
+                    <li><strong>사업 범위</strong>:
+                        <ul>
+                            <li>공사 내부 온프레미스 AI 플랫폼 구축 (GPU 클러스터, K8s, LLMOps, RAG, 벡터DB 등)</li>
+                            <li>AI 응용 서비스 6개 과제 개발: 인사·복지 AI, 안전관리 AI, 석유 시추 정보 AI, 석유 지질 정보 AI, 비축설비 정비·운영 AI, 석유시장 보고서 작성 AI</li>
+                            <li>범용 챗봇 및 ML·DL 구동환경 구축</li>
+                            <li>데이터 플랫폼 구축 (데이터 파이프라인, 데이터 마트, 벡터DB 등)</li>
+                            <li>AI 거버넌스 및 LLMOps 체계 수립</li>
+                        </ul>
+                    </li>
+                    <li><strong>주요 일정</strong> (계약체결월 MM 기준):
+                        <ul>
+                            <li>GPU 등 인프라 설치: MM~MM+4</li>
+                            <li>LLM(학습), RAG 구축: MM+2~MM+8</li>
+                            <li>내부업무 AI플랫폼 I/F 구축: MM+4~MM+9</li>
+                            <li>데이터 아키텍처 수립 및 현황 분석: MM~MM+3</li>
+                            <li>데이터 정비, 파이프라인 구축: MM+2~MM+9</li>
+                            <li>AI 응용 서비스 개발: MM+3~MM+10</li>
+                            <li>테스트 및 가동: MM+9~MM+11</li>
+                            <li>AI 거버넌스 체계 수립: MM~MM+9</li>
+                            <li>생성형 AI 시스템 안정화: MM+9~MM+11</li>
+                            <li>고도화(2차년도) 검토: MM+9~MM+11</li>
+                            <li>※ Agile 방법론 적용 (설계·개발·테스트 반복 수행)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>수요기관</strong>: 한국석유공사 (KNOC)</li>
+                    <li><strong>담당 부서</strong>: AX혁신처 (사업 총괄, AI 기반 구축 사업 주관)</li>
+                    <li><strong>담당자 성명</strong>: 명시되지 않음</li>
+                    <li><strong>연락처</strong>: 명시되지 않음</li>
+                    <li><strong>이메일</strong>: jaeho.choi@knoc.co.kr (제안요청 설명회 참가신청서 및 사전질의서 제출처)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>공사 내부 폐쇄망(내부망) 기반 온프레미스 AI 플랫폼 구축 (외부 LLM API 미사용 원칙)</li>
+                            <li>K8s 기반 GPU 클러스터 자원 할당·스케줄링 및 MIG(Multi-Instance GPU) 기반 자원분할</li>
+                            <li>고성능 모델 서빙 프레임워크 도입 (vLLM, TensorRT 등 제안사 선택·벤치마크)</li>
+                            <li>Multi-LLM 통합 운영 (단일 API 인터페이스), LLMOps(모델 배포·모니터링·재학습·이상감지)</li>
+                            <li>Advanced RAG (Multi-Query, Long Context Reorder, 하이브리드 검색), AI Agent (MCP/A2A 표준)</li>
+                            <li>SSO 연동 및 RBAC 기반 접근통제 (사번·부서·직급 기반)</li>
+                            <li>설명 가능한 AI(XAI), AI 가드레일 (프롬프트 인젝션 방지, 콘텐츠 필터링)</li>
+                            <li>N2SF(국가 망 보안체계) 준수, 국정원 AI 정보화사업 보안성검토 전항목 반영</li>
+                            <li>PEFT 기법 등 효율적 모델 학습, LLM 파인튜닝, RLHF, 멀티모달 처리(OCR 포함)</li>
+                            <li>데이터 파이프라인 자동화 (CRUD 발생 시 벡터DB까지 End-to-End 자동 동기화)</li>
+                            <li>시큐어코딩 (행정안전부 소프트웨어 개발보안 가이드 준수), 테스트케이스 기준 90% 이상 정답률</li>
+                        </ul>
+                    </li>
+                    <li><strong>[핵심 비즈니스 요구사항]</strong>
+                        <ul>
+                            <li>전체 사용자 1,300명, 동시 접속자 130명, 동시 응답 13명 기준 시스템 설계</li>
+                            <li>응답 시작 시간 3초 이내(스트리밍), 생성 속도 30 Token/sec 이상, 시스템 가용성 24×365</li>
+                            <li>AI KPI 수립 (비용 절감액, 오류절감, 1인당 처리건수 향상, 직원만족도, 자동화비율 등)</li>
+                            <li>AI 거버넌스 체계·규정·수명주기별 매뉴얼 수립, 2차년도 고도화 방안 수립</li>
+                        </ul>
+                    </li>
+                    <li><strong>[통합발주 S/W 도입 내역]</strong> (INR-DTL-001 및 INR-DTL-004 기준)
+                        <ul>
+                            <li>가상화 솔루션: 1식 (HCI 형태, K8s GPU 자원할당·스케줄링, MIG 자원분할, vGPU 무중단 마이그레이션)</li>
+                            <li>통합인증 솔루션 (SSO Agent): 1식 (CC인증 필수, 기존 INTECH NexessClient 연계 또는 동등 이상)</li>
+                            <li>문서뷰어 솔루션: 1식 (AI 산출물 관련 문서뷰어)</li>
+                            <li>백업 솔루션: 1식 (기존 Veeam Data Platform 연계 또는 동등 이상)</li>
+                            <li>생성형 AI 운영 솔루션: 1식 (LLM, Agent, 파싱, OCR 등 핵심 기능)</li>
+                            <li>생성형 AI 관리 솔루션: 1식 (K8s, PostgreSQL, Elastic Search, Kafka, Redis 등 운영관리)</li>
+                            <li>GraphDB: 16Core (수집 데이터 관리 및 최적화)</li>
+                            <li>데이터모델링 솔루션: 1식</li>
+                            <li>표준(메타) 솔루션: 1식</li>
+                            <li>품질 솔루션: 1식</li>
+                            <li>데이터파이프라인 솔루션: 32Core</li>
+                            <li>외부연계/크롤링 솔루션: 1식</li>
+                            <li>데이터 탐색 및 시각화 솔루션: 8Core (2식, Text Data 시각화·GUI)</li>
+                            <li>데이터 탐색 및 시각화 관리 솔루션: 8Core</li>
+                            <li>WEB SW: 16Core (HTTP/HTTP2/AJP1.3/WebSocket/SSL 지원)</li>
+                            <li>WAS SW: 32Core (OpenJDK 기반, Java EE 8/JSP 2.3/Servlet 4.0, 세션 클러스터링)</li>
+                            <li>DB SW (AI 통합 DB): 24Core (엔터프라이즈급 RDBMS, Active-Active 또는 Active-Standby 이중화, Auto Failover)</li>
+                            <li>DB 암호화 솔루션: 24Core (국정원 검증필 암호모듈, AES/SEED/ARIA/RSA 등 지원)</li>
+                            <li>서버 보안(접근제어) 솔루션: 57식 (CC인증 EAL4 이상, GS인증, 기존 HIWARE TAM 연계·호환)</li>
+                            <li>DB 접근제어 솔루션: 2식 (국정원 CC인증 EAL4 이상)</li>
+                            <li>웹 구간 암호화 솔루션: 6식 (국정원 검증필 암호모듈, Non-ActiveX/HTML5 무설치)</li>
+                            <li>비식별화 솔루션: 1식 (가명정보 처리 가이드라인 준수)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 미포함 여부</strong>: 해당 없음. 통합발주 S/W 품목 다수 포함된 복합 사업</li>
+                    <li><strong>경쟁 제품 명시 여부</strong>: Ubuntu, Rocky Linux, Oracle Linux, VMware 등 명시적 경쟁 OS/가상화 제품은 없음</li>
+                    <li><strong>OpenShift 미명시</strong>: K8s(쿠버네티스) 기반으로만 언급. OpenShift가 직접 명시되지 않아 제안 시 추가 근거 필요</li>
+                    <li><strong>Ansible 미명시</strong>: RFP 내 Ansible 또는 자동화 플랫폼 관련 직접 언급 없음</li>
+                    <li><strong>특정 기술 종속 최소화 원칙</strong>: COR-004에 "부득이한 경우를 제외하고는 특정 기술에 종속되지 않는 개방형 기술로 구현" 명시 → 특정 벤더 의존도 최소화 요건 있음, 제안 시 오픈스탠더드 준수 근거 제시 필요</li>
+                    <li><strong>가상화 솔루션 OEM/ODM 제외</strong>: INR-DTL-003에 "원활한 유지관리를 위해 OEM/ODM 제외" 조항 존재 (가상화 솔루션 한정)</li>
+                    <li><strong>기존 보안 솔루션 연계 조건</strong>: SSO(INTECH NexessClient), 서버 접근제어(HIWARE TAM), 백업(Veeam Data Platform) 등 기존 솔루션과 연계·호환 조건이 있어 신규 RH 보안 제품 진입 제약 가능</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[RFP 명시 Red Hat 제품]</strong>
+                        <ul>
+                            <li>Linux RedHat 9.x: 기존 공사 보유 서버(HPE DL380a Gen12) 2식의 OS로 명시 → RHEL 상용 제품이 현재 운영 중임을 확인</li>
+                        </ul>
+                    </li>
+                    <li><strong>[RHEL 신규 납품 기회]</strong>
+                        <ul>
+                            <li>신규 서버 납품 조건(INR-DTL-001): "정품 라이선스가 포함된 최신 버전의 가상화 운영체제(64bit), 상용 Linux / 3년 워런티 제공" 명시 → RHEL은 대표적 상용 Linux로 해당 요건 충족 가능</li>
+                            <li>신규 HCI 서버 다수(내부망 일반 4식, GPU 1식, 개발망 일반 3식, GPU 2식) 납품 대상 → RHEL 라이선스 동반 제안 가능</li>
+                            <li>INR-007(상용 S/W 도입 일반): "OS 및 상용 S/W는 안정성이 보장된 최신 버전으로 제안" 명시 → RHEL은 상용 OS로 해당됨</li>
+                        </ul>
+                    </li>
+                    <li><strong>[OpenShift 제안 여지]</strong>
+                        <ul>
+                            <li>K8s 기반 GPU 클러스터, 컨테이너 환경(Docker 이미지), Ingress Controller, L4 Load Balancer 등 OpenShift Container Platform 적용 가능한 기술 요구사항 다수</li>
+                            <li>생성형 AI 관리 솔루션 내 K8s, Kafka, Elastic Search, Redis 등 OpenShift 생태계와 정합성 높은 구성 요소 명시</li>
+                            <li>OpenShift AI(RHEL AI) 기반 LLMOps, 모델 서빙(vLLM 통합), Multi-LLM 운영 제안 검토 가능</li>
+                        </ul>
+                    </li>
+                    <li><strong>[기존 RHEL 환경 호환성 강점]</strong>
+                        <ul>
+                            <li>INR-009(호환성 및 상호운영성): 기존 시스템과 안정성 보장 제품으로 구축 요건 → 기존 RHEL 9.x 환경과 동일 플랫폼 유지가 호환성 측면에서 유리</li>
+                        </ul>
+                    </li>
+                    <li><strong>[ML/DL 환경 RHEL 적용 가능성]</strong>
+                        <ul>
+                            <li>FUR-007(ML·DL 구동환경): TensorFlow, PyTorch, Scikit-learn 등 주요 ML/DL 프레임워크 및 CUDA 환경이 적용된 도커 이미지 및 컨테이너 기반 환경 요구 → RHEL 기반 컨테이너 환경 구성 가능</li>
+                        </ul>
+                    </li>
+                    <li><strong>[Ansible 잠재 기회]</strong>
+                        <ul>
+                            <li>대규모 온프레미스 인프라 구축(서버 다수, 보안 솔루션 57식 등) 및 LLMOps 자동화 수요 → Ansible Automation Platform 제안 여지 존재 (단, RFP에 직접 명시는 없음)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

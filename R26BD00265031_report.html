@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00265031 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국방과학연구소_통합연구개발정보체계 고도화(3차) - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 미포함 순수 개발사업</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국방과학연구소의 통합연구개발정보체계(ADD포털 연동 연구계획관리 시스템)에 예산 전주기 관리 기능을 신규·고도화하는 3차 사업</li>
+                    <li>예산 전순기 흐름 추적성 확보 및 총사업비 관리 체계 확립</li>
+                    <li>데이터 기반 자동화된 인건비 관리 환경 구축을 통한 업무 정확도 및 효율성 제고</li>
+                    <li>직관적·신속한 예산 총괄 관리 및 조정 체계 마련, 중기계획/예산편성 관련 행정업무 부담 최소화</li>
+                    <li>예산 전주기 통합 지원, 인력 및 인건비 관리 고도화, 총괄 예산 조정/관리 강화, 사업기구 업무 효율성 확보</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 입찰공고문 참조 (20억원 미만 사업으로 명시 — 중소 소프트웨어 사업자만 입찰 가능)</li>
+                    <li><strong>사업 기간</strong>: 계약일로부터 약 10개월</li>
+                    <li><strong>사업 범위</strong>: ① 예산 계획·조정·시행 전체 프로세스 지원 기능 개선 ② 인건비 작성 및 관리 기능 개선(경상운영 인건비 신규 추가) ③ 중기계획/예산편성 조정 및 총괄관리 기능 강화(Top-down 시뮬레이션 등) ④ 사업기구 관리 기능 개선 / 대상 현행 시스템: 서버 OS UNIX AIX 7.1, DBMS Oracle 11g RAC, WAS Weblogic 11g Clustering, WAS모니터링 Jennifer, 웹리포팅 OZ Report Designer·한글로폼·한글로젠, 기반 프레임워크 전자정부 표준프레임워크 Ver.4.0 이상, PC DRM Fasoo Enterprise DRM 5.0, PC OS Windows 10</li>
+                    <li><strong>주요 일정</strong>: 추진 일정 총 10개월 — 착수보고 → 분석(소프트웨어/시스템 요구사항 분석) → 설계(구조설계·상세설계) → 구현·단위시험 → 통합시험 → 인도·시험평가 → 중간보고 → 결과보고 순으로 진행 / 제안서 발표: 제안서 접수 마감일로부터 3근무일 이내 (발표 30분 + 질의응답 20분)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 국방과학연구소 정보화기술실</li>
+                    <li><strong>담당 조직</strong>: 정보화기술실장 (사업 조정·통제 총괄) / 정보화기술실 (사업 관리, 예산/계획/공정 관리, 요구사항 정리)</li>
+                    <li><strong>구체적 담당자 이름·연락처·이메일</strong>: RFP 본문에 별도 명시 없음 — 입찰공고문 및 문의처(IV장 12항) 참조 필요</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>총 요구사항 수</strong>: 77개 (기능 15, 프로젝트관리 14, 프로젝트지원 2, 보안 5, 품질 5, 제약사항 9, 성능 5, 시스템 1, 인터페이스 9, 데이터 6, 테스트 6)</li>
+                    <li><strong>핵심 기능 요구사항</strong>: 총사업비 관리(SFR-01), F-2년도 집행액·F-1년도 시행액 관리(SFR-02), 사업기구 관리 개선(SFR-03), 인력정원 관리 및 분석(SFR-05), 경상운영 인건비 작성/관리 신규 추가(SFR-12), Top-down 예산 조정 시뮬레이션 및 대시보드(SFR-14), 미래도전사업 관리 메뉴 신설(SFR-15) 등</li>
+                    <li><strong>기술 요구사항 요약</strong>: 전자정부 표준프레임워크 기반 개발(COR-02), Non-ActiveX·Non-Flash 구축(COR-01), 웹표준(HTML5·Chrome 등) 준수(COR-04), 국방표준 소프트웨어 개발공정 적용(PMR-12·PMR-13), 256bit 이상 SSL 적용(SER-03), DB접근 통제(SER-02), 동시사용자 300명 성능 보장(PER-05), 3초 이내 응답시간(PER-02·PER-03)</li>
+                    <li><strong>연동 대상</strong>: ADD포털, 연구지원체계(연구지원예산 자료), 기존 통합연구개발정보체계 내 각 기능 모듈</li>
+                    <li><strong>구매 명시 S/W</strong>: 없음 — 법제도 자가점검표에서 "상용SW 직접구매 및 SW 품질성능평가시험(BMT): 해당사항없음"으로 명시. ROS-01에서 시스템 운영에 필요한 상용 S/W 구축방안 제안을 요청하고 있으나, 구체적인 제품명·수량은 일절 지정되지 않음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 구매·납품 항목 부재</strong>: 법제도 자가점검표에서 "상용SW 직접구매 해당사항없음"으로 명시되어 있어, 별도의 S/W 라이선스 납품이 포함되지 않는 순수 개발·고도화 사업임</li>
+                    <li><strong>현행 인프라 고정 (교체 범위 외)</strong>: 서버 OS가 UNIX AIX 7.1(IBM), DBMS Oracle 11g RAC, WAS Weblogic 11g로 확정되어 있으며, 이번 사업 범위는 애플리케이션 기능 개선이므로 인프라 교체 근거가 없음</li>
+                    <li><strong>Red Hat 상용 제품명 전무</strong>: RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 RFP 본문 어디에도 명시되어 있지 않음</li>
+                    <li><strong>경쟁/비Red Hat 스택 명시</strong>: Oracle DBMS, IBM AIX, BEA/Oracle Weblogic 등 기존 경쟁 벤더 제품이 현행 시스템으로 고정되어 있음</li>
+                    <li><strong>국방 보안 규정 제약</strong>: 외부 PC 반입 시 국방과학연구소 보안 프로그램 설치 의무, 산출물 반출 금지, 신원조사 등 강력한 보안 요구사항이 있어 외부 솔루션 도입 절차가 매우 복잡함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>기술적용계획표 내 Linux 언급</strong>: 플랫폼 및 기반구조 분야의 기술 표준 항목에 "Linux" 서버용 OS가 포함되어 있으나, 이는 국가 정보화 표준 목록의 일부로 이번 사업 내 도입이 확정된 것이 아님 (적용 여부 미정)</li>
+                    <li><strong>ROS-01 상용 S/W 제안 여지</strong>: "시스템 운영에 필요한 항목이 식별될 경우 추가 포함하여 제안"이라는 조건이 있어, 개발·빌드·자동화 도구 측면에서 Ansible 등을 제안할 수 있는 이론적 여지는 있으나 현실성은 매우 낮음</li>
+                    <li><strong>전자정부 표준프레임워크(Java 기반)</strong>: Java 기반 개발이 요구되므로, 이론적으로 JBoss EAP를 WAS 대안으로 제안할 수 있으나 현행 Weblogic 교체가 사업 범위에 포함되지 않아 실질적 제안 기회 없음</li>
+                    <li><strong>종합 평가</strong>: Red Hat 상용 제품의 도입 기회가 없는 전형적인 공공 SI 개발 사업으로, 레드햇 영업 활동의 실질적 기회는 없음</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
