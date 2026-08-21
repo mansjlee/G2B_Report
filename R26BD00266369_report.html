@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00266369 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>여수시(도서관운영과)_여수꿈바다어린이도서관 ICT 시스템 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>Windows Server 2022 명시, RH 제품 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>여수꿈바다어린이도서관(여수시 소라면 죽림리 1248번지)에 어린이 특화 ICT 융합 시스템 및 RFID 도서 자동화시스템을 구축하는 사업</li>
+                    <li>어린이 중심 ICT 융합 서비스 제공으로 오감을 자극하고 책을 다양한 각도에서 직접 경험할 수 있는 몰입형 디지털 콘텐츠 구현</li>
+                    <li>RFID 도서 자동화시스템 구축을 통해 효율적인 도서 관리와 이용자 편의 도모</li>
+                    <li>AI 기반 플랫폼 서비스(도서 추천, 동화구연, 모션 갤러리, 스튜디오 등)와 체험형 인터랙티브 콘텐츠를 융합한 미래지향적 서비스 제공</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 730,000,000원(칠억삼천만원, 부가가치세 및 부대비용 포함)</li>
+                    <li><strong>사업 기간</strong>: 계약일로부터 90일 (발주처 사정에 따라 변경 가능)</li>
+                    <li><strong>사업 범위</strong>: ① ICT 시스템(미디어월, AI 모션 갤러리, AI 키오스크, AI 스테이션 월, 우주놀이터 인터랙티브, AI 도서추천, AI 동화구연, AI 스튜디오, AI 드로잉봇, 안전출입알림, 스마트서비스 통합관리시스템) ② RFID 도서 자동화시스템(사서용 리더/라이터기, 장서점검기, 자가대출반납기, 무인반납기) 구축</li>
+                    <li><strong>주요 일정</strong>: 협상대상자 결정/협상 2026년 9월 중 → 계약체결 2026년 9월 중 → 계약 체결 후 10일 이내 사업수행계획서 제출 → 계약일로부터 90일 이내 사업 완료</li>
+                    <li><strong>입찰 방법</strong>: 제한경쟁입찰 / 협상에 의한 계약</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>수요기관</strong>: 여수시</li>
+                    <li><strong>담당 부서</strong>: 도서관운영과</li>
+                    <li><strong>담당자 성명</strong>: 양현</li>
+                    <li><strong>전화번호</strong>: 061-659-4774</li>
+                    <li><strong>이메일</strong>: ysj0203@korea.kr</li>
+                    <li><strong>제안서 제출 장소</strong>: 여수시이순신도서관 4층 사무실 (여수시 웅천6길 51, 웅천동)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong>
+                        <ul>
+                            <li>MSA(마이크로서비스 아키텍처) 기반 스마트서비스 통합관리시스템 구축</li>
+                            <li>AI 기술(생성형 AI, LLM, 이미지 생성 API 등) 적용 콘텐츠 서비스 구현</li>
+                            <li>LAS(도서관 자동화시스템) 및 RFID 시스템과의 연계·통합</li>
+                            <li>장애인차별금지법 준수(배리어프리, BF 기능) 키오스크 및 RFID 장비 구성</li>
+                            <li>전자정부 프레임워크 및 국정원 검증필 암호모듈(KCMVP) 적용, TLS 1.3 이상 통신 암호화</li>
+                            <li>5초 이내 서비스 응답시간 충족, 4K·8K 고화질 미디어 출력 지원</li>
+                        </ul>
+                    </li>
+                    <li><strong>[통합발주 S/W 목록]</strong>
+                        <ul>
+                            <li>Client Agent (Standard Plus Version): ECR-001(도서관입구 미디어월), ECR-002(꿈마루 미디어월), ECR-003(AI 모션갤러리), ECR-004(AI 인포메이션 키오스크), ECR-005(AI 스테이션 월), ECR-006(우주놀이터), ECR-007(AI 도서추천), ECR-008(AI 동화구연), ECR-009(AI 스튜디오), ECR-010(AI 드로잉봇), ECR-011(안전출입알림) 각 시스템에 탑재 — 총 11개 시스템 적용</li>
+                            <li>Windows Server Standard 2022 X64 KOR 1PK 16CR DSP: 1식 (ECR-012 통합관리서버 탑재용)</li>
+                            <li>Windows CAL 2025 KOR 5 CLT USER CAL DSP: 1식 (ECR-012 통합관리서버용)</li>
+                            <li>RFID 태깅 SW: 사서용 리더/라이터기 3식에 포함 (ECR-013)</li>
+                            <li>무인반납기 내장 OS: Windows 10 이상 LTSC (4GB RAM, 128GB SSD 내장) — 1식 (ECR-013)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[H/W 주요 구성]</strong>
+                        <ul>
+                            <li>LED Wall System 2식 (도서관입구 2,560×1,440mm / 꿈마루 3,840×2,400mm)</li>
+                            <li>Touch LED Wall System 1식 (AI 스테이션 6,400×3,360mm, 1.25mm Pitch 이하)</li>
+                            <li>65" 사이니지 Display 4EA (AI 모션갤러리), 50" LED Display 2식 (AI 키오스크)</li>
+                            <li>24" 정전식 Touch Display: AI 도서추천, AI 동화구연, AI 스튜디오(2식), 안전출입알림 각 1식</li>
+                            <li>HPE ProLiant DL20 Gen11 서버 1식 (통합관리시스템용, Intel Xeon 6333P, 16GB DDR5)</li>
+                            <li>AI 드로잉 로봇 1식 (MAC BOOK 1EA, iPAD 1EA 포함)</li>
+                            <li>RFID 사서용 리더/라이터기 3식, 장서점검기 1식, 자가대출반납기(성인용) 1식, 자가대출반납기(어린이용) 2식, 무인반납기 및 확장 적재함 1식</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>Windows OS 전면 명시</strong>: 모든 운영 PC 및 컨트롤 PC의 OS가 "최신 운영 OS(Win11) 포함"으로 명시되어 있으며, 서버에는 Windows Server Standard 2022가 통합발주 품목으로 지정됨 → RHEL 도입 여지 없음</li>
+                    <li><strong>무인반납기 내장 OS</strong>: Windows 10 이상 LTSC가 ECR-013 요구사항에 명시적으로 지정되어 있어 대체 불가</li>
+                    <li><strong>Red Hat 상용 제품명 전무</strong>: 전체 RFP·과업지시서 어디에도 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 단 한 건도 언급되지 않음</li>
+                    <li><strong>사업 특성</strong>: 본 사업은 도서관 ICT 체험 콘텐츠 구축 및 RFID 시스템 설치 중심이며, 엔터프라이즈 Linux/컨테이너 플랫폼이 개입할 서버 인프라 규모가 HPE DL20 Gen11 단일 서버로 매우 소규모</li>
+                    <li><strong>Client Agent SW 지정</strong>: 콘텐츠 관리 S/W로 "Client Agent (Standard Plus Version)"이 전 시스템에 지정되어 있어 Red Hat 기반 플랫폼 적용 여지 없음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>MSA 아키텍처 요구</strong>: SFR-012(스마트서비스 통합관리시스템)에서 MSA(마이크로서비스 아키텍처) 기반 설계를 명시적으로 요구하고 있으나, 서버 OS가 Windows Server 2022로 고정되어 있어 OpenShift/컨테이너 제안이 사실상 불가</li>
+                    <li><strong>생성형 AI 연계 서비스</strong>: LLM·이미지 생성 API 연동 등 AI 서비스가 요구되나 특정 AI 플랫폼 미지정으로 Red Hat OpenShift AI 언급 여지가 있으나, 전체 스택이 Windows 기반으로 현실적 제안 어려움</li>
+                    <li><strong>결론</strong>: 위 두 항목 모두 서버 OS로 Windows Server 2022가 지정된 상태이므로 실질적 제안 포인트로 활용하기 어려움. RFP 내 Red Hat(또는 동의어) 제품명·수량은 <strong>0건</strong>으로 확인됨</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00265994 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국수출입은행_IT 인프라 안정성 강화를 위한 노후장비 교체 및 증설 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange">중간<br>RHEL·RHOV·OpenShift 기존 환경 확인</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>한국수출입은행의 노후화된 IT 인프라(UNIX 서버, 네트워크 장비, 백업 장비, 통합로그 시스템, 스토리지)를 신규 장비로 교체·증설하는 사업</li>
+                        <li>IT 운영 안정성 확보, 고가용 인프라 도입, 생명주기를 고려한 IT 인프라 최신화를 핵심 목표로 함</li>
+                        <li>IT센터 및 재해복구(DR)센터 양 사이트에 걸쳐 장비 교체 및 이중화 구성 수행</li>
+                        <li>대용량 시스템 백업 및 복구 체계 도입을 통한 IT 시스템 복원력 강화</li>
+                        <li>기존 운영 중인 업무 애플리케이션 및 DBMS 이관·재구성 포함</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 명시되지 않음 (제안서 제출 시 가격 산출 내역 제출 요구; 인건비·S/W·H/W·일반관리비 등으로 구성)</li>
+                        <li><strong>사업 기간</strong>: 2026년 발주 (구체적 기간은 RFP 내 공란 처리, 계약 후 확정)</li>
+                        <li><strong>사업 범위</strong>: ① UNIX 서버 교체(운영 1식, 개발 1식, DR#1 1식, DR#2 1식), IBM E1050 메모리 증설(4식) ② 네트워크 장비 교체(라우터 2식, L2 24Port 스위치 20식, 10G L3 스위치 2식, L3 24Port 3식, L3 48Port 20식, SAN 스위치 6식) ③ 통합로그 분석 장비 교체(1식, 에이전트 89 Device 이관) ④ 백업 PTL 장비 교체(LTO8 테이프 라이브러리 1식) ⑤ 스토리지 증설(Hitachi VSP 5600·E590·G350 등 5식) ⑥ 대용량 백업 장비 도입(운영 노드 4·DR 노드 4, 백업 SW 120TB 라이선스) ⑦ 전 구간 이관·설치·안정화 서비스 포함</li>
+                        <li><strong>주요 일정</strong>: 2026년 8월 제안요청서 발간, 협상에 의한 계약 방식, 검수 완료 후 무상하자보수 1년·유상 2년(총 3년) 유지관리 금액 포함 제안 요구</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>발주기관</strong>: 한국수출입은행</li>
+                        <li><strong>담당 부서</strong>: IT 관련 부서 (구체적 부서명 RFP 내 미기재)</li>
+                        <li><strong>담당자명</strong>: RFP 내 명시 없음</li>
+                        <li><strong>연락처</strong>: Tel 02-6252-3012 (사업 문의처로 명시)</li>
+                        <li><strong>이메일</strong>: RFP 내 명시 없음</li>
+                        <li><strong>나라장터</strong>: http://www.g2b.go.kr (공고 확인 가능)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[핵심 기술 요구사항]</strong></li>
+                        <li>UNIX 서버(IBM Power 계열 RISC/AIX) 운영·개발·DR 환경 신규 도입 및 LPAR/VIO 가상화 구성, 이중화(Fail-Over) 구성 필수</li>
+                        <li>네트워크 전 구간(라우터, L2/L3 스위치, SAN 스위치) 무중단 또는 최소 다운타임 단계별 전환(Cut-over) 실행</li>
+                        <li>통합로그 분석 시스템 신규 장비 교체 및 기존 에이전트 라이선스 이관·업그레이드(89 Device)</li>
+                        <li>대용량 백업 시스템(Scale-Out 구조, 중복제거·압축, 랜섬웨어 방지·Immutable 기능 포함) 도입</li>
+                        <li>스토리지 증설(All-Flash 기반 고성능 아키텍처, RAID6, NVMe SSD) 및 볼륨 복제</li>
+                        <li>IT센터↔DR센터 간 실시간 복제(동기/비동기) 구성, RTO·RPO 단축</li>
+                        <li>모든 H/W는 이중화(전원, NIC, HBA, 디스크) 구성 필수, 프리웨어 제안 불가</li>
+                        <li>검수 완료 후 무상 1년·유상 2년 유지관리 포함, 장애 시 24×7×3hr 방문 지원</li>
+                        <li><strong>[구매 명시 S/W 목록 (통합발주 항목)]</strong></li>
+                        <li>UNIX OS (AIX 기반 64bit UNIX OS Unlimited User License) × 4식 (운영 서버 1, 개발 서버 1, DR#1 서버 1, DR#2 서버 1) — 서버 도입에 포함하여 제안</li>
+                        <li>JDK 8.0 이상 × 4식 (각 UNIX 서버 포함)</li>
+                        <li>IBM E1050 Memory 192GB Activation × 4식 (물리 증설 없는 SW 라이선스 방식)</li>
+                        <li>대용량 백업 솔루션 라이선스 (백업 및 DR 복제용, 총 120TB) × 1식 — Scale-Out 하드웨어 플랫폼과 일괄 제안</li>
+                        <li>통합로그 분석 시스템 S/W (Linux Columnar In-Memory DB 엔진 기반 자체 개발 제품) × 1식, 기존 에이전트 라이선스 89 Device 이관·업그레이드 포함</li>
+                        <li>Hitachi VSP 스토리지 관련 소프트웨어 (Advanced Package 포함) — 스토리지 증설과 일괄 제안</li>
+                        <li>고가용성 솔루션 및 공유 파일 시스템 (서버 이중화 구성용, 세부 제품명 미지정)</li>
+                        <li>※ 직접구매 S/W(조달쇼핑몰)는 당행 직접 구매 처리 예정</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[서버 OS: UNIX/AIX 확정]</strong> 신규 도입 서버가 RISC 아키텍처 기반 UNIX 서버(IBM Power/AIX)로 명시되어 있으며, OS도 "하드웨어 제조사 자체 탑재 OS"(AIX)로 지정 → RHEL 신규 서버 OS 제안 불가</li>
+                        <li><strong>[경쟁/커뮤니티 OS 명시]</strong> 대용량 백업 솔루션의 베어메탈 백업 지원 대상 OS로 CentOS, Rocky Linux가 명시됨 → 경쟁·커뮤니티 OS가 기존 환경에 공존</li>
+                        <li><strong>[경쟁 가상화 플랫폼 공존]</strong> VMware, Hyper-V, Nutanix가 가상화 백업 지원 대상으로 명시 → 다양한 경쟁 하이퍼바이저가 혼재하는 환경</li>
+                        <li><strong>[주요 구매 항목이 HW 중심]</strong> 사업 주요 품목이 UNIX 서버·네트워크 장비·스토리지·백업 어플라이언스 등 HW 위주로 구성되어 있어 Red Hat S/W 단독 제안 포지션 부재</li>
+                        <li><strong>[특정 스토리지 벤더 지정]</strong> 스토리지 증설이 Hitachi VSP 5600, VSP E590, VSP G350 등 특정 벤더·모델로 명시됨 → 해당 품목 대체 제안 불가</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[기존 환경에 Red Hat 상용 제품 존재 확인]</strong> ECR-007 대용량 백업 요구사항에 백업 지원 대상으로 <strong>RHEL</strong>(베어메탈 OS), <strong>RHOV(Red Hat OpenShift Virtualization)</strong>(가상화 환경 에이전트리스 백업), <strong>OpenShift</strong>(컨테이너 환경 백업)가 명시 → 수출입은행 현재 환경에 RHEL, RHOV, OpenShift가 운영 중임을 강력히 시사</li>
+                        <li><strong>[RHEL 서브스크립션 갱신/확장 기회]</strong> RHEL이 백업 대상 OS로 명시되어 있으며, 이번 사업에서 기존 시스템 이관 및 서비스 전환이 수반됨 → 기존 RHEL 서브스크립션 갱신 및 신규 증설 서버에 대한 RHEL 확장 제안 가능</li>
+                        <li><strong>[OpenShift 백업 인프라 강화 제안]</strong> 백업 솔루션이 OpenShift 컨테이너 환경 백업을 명시적으로 지원해야 함 → OpenShift 플랫폼 활용 확대 및 OpenShift Data Foundation 등 연계 제안 가능</li>
+                        <li><strong>[RHOV 확장 제안]</strong> RHOV 가상화 환경에 대한 에이전트리스 백업 지원이 요구됨 → RHOV가 기존 운영 환경에 포함되어 있으며, 이번 인프라 현대화를 계기로 RHOV 라이선스 확장 또는 RHEL 기반 x86 서버 증설 제안 가능</li>
+                        <li><strong>[Ansible Automation Platform 제안 여지]</strong> 복잡한 다중 장비(서버·네트워크·스토리지·백업) 이관 작업, 구성 관리, 이중화 전환 테스트 자동화 관점에서 Ansible Automation Platform 제안 가능</li>
+                        <li><strong>[RFP 내 명시된 Red Hat 제품명 요약]</strong>
+                            <ul>
+                                <li>RHEL — 베어메탈 OS 백업 지원 대상으로 명시 (수량 미특정, 기존 환경)</li>
+                                <li>OpenShift — 컨테이너 환경 백업 지원 대상으로 명시 (수량 미특정, 기존 환경)</li>
+                                <li>RHOV (Red Hat OpenShift Virtualization) — 가상화 환경 에이전트리스 백업 지원 대상으로 명시 (수량 미특정, 기존 환경)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
