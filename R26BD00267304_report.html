@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00267304 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>기상청 국가기상위성센터 - 천리안위성 2A호 지상국 노후시스템(SW) 개선 - 분석 리포트</h2>
+
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange">중간<br>기존 RHEL 7.5 환경 이관, 신규 OS 미지정</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>천리안위성 2A호 지상국의 노후 HW 교체 사업과 연계하여, 기존 서버에서 운영 중인 응용 SW(DPS·INR·PDS·RAP)를 신규 도입 서버 환경으로 안정적으로 이관하고 정합성을 검증하는 것이 핵심 목표</li>
+                        <li>임무 종료('32년)까지 위성자료 처리 서비스의 안정적 운영 보장을 위해, HW 교체(별도 사업)와 병행하여 기존 상용·개발 SW의 신규 환경 이전 및 최적화 추진</li>
+                        <li>1차년도: SW 이관 영향도 분석 및 사전 준비 / 2차년도: 실제 SW 이관 및 통합 테스트</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 총 977백만원 (부가세 포함) — 1차 '26년 325백만원, 2차 '27년 652백만원 (장기계속계약)</li>
+                        <li><strong>사업 기간</strong>: 계약일부터 15개월 (장기계속)</li>
+                        <li><strong>사업 범위</strong>: 천리안위성 2A호 지상국 SW 이관 — 전처리시스템(DPS 16대, INR 4대, PDS 16대) 및 기상자료처리시스템(RAP 15대) 총 51대 서버 대상. 납품장소: 기상청 국가기상위성센터(충북 진천군), 한국항공우주연구원(대전 유성구)</li>
+                        <li><strong>계약 방법</strong>: 일반경쟁 (협상에 의한 계약), 중소기업·소상공인 제한 (사업금액 20억 미만, 대기업·중견기업 참여 제한)</li>
+                        <li><strong>주요 일정</strong>: 1차년도 — SW 이관 영향도 분석보고서 제출 및 이관 시나리오 수립 / 2차년도 — DPS·INR·PDS·RAP SW 이관·설치, 연동테스트, 이중화 테스트, 최적화, 14일 병행운영 정합성 검증 후 최종 검수</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>수요기관</strong>: 기상청 국가기상위성센터</li>
+                        <li><strong>담당 부서</strong>: 위성운영과</li>
+                        <li><strong>기상연구관</strong>: 이병일 / TEL: 043-717-0244</li>
+                        <li><strong>방송통신주사 (문의처)</strong>: 신동욱 / TEL: 043-717-0276 / E-mail: nejma@korea.kr</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[SW 이관 요구사항]</strong> 신규 HW 인프라와 기존 HW 간 환경 격차 분석보고서 제출, OS 커널/컴파일러/라이브러리 의존성 전수 조사, 필요 시 VM·컨테이너 기반 구동환경 확보, 단계별 무중단 이관 시나리오 및 롤백 계획 수립, 폐쇄망 오프라인 라이선스 인증 체계 구축 필수</li>
+                        <li><strong>[기능 요구사항]</strong> 신규 서버 코어 수에 맞춘 분산 실행, 로그 데이터 지정 경로 기록, 마운트 포인트 표준화 및 논리경로 자동 복구, 데이터 수신-처리-저장-배포 전 과정 기존 방식 연동 유지</li>
+                        <li><strong>[성능 요구사항]</strong> 365일 24시간 무중단 운영, 신규 HW 대비 처리 속도 개선, InfiniBand 대역폭 최대 활용</li>
+                        <li><strong>[데이터 요구사항]</strong> 이관 전후 산출물(L1B) 정합성 100% 보장, 이관 전후 파일크기·디렉토리 구조 전수 비교</li>
+                        <li><strong>[테스트 요구사항]</strong> 개별 테스트(처리시간 편차 5% 이하), 통합 테스트(1개월 이상 반복, 성공률 100%), 인수 테스트, 30분 이내 복구 시연(3회 중 전회 성공)</li>
+                        <li><strong>[구매 명시 SW]</strong> 본 RFP는 신규 상용 SW 통합발주 구매 목록이 별도로 명시되지 않은 순수 SW 이관 용역 사업임. 기존 운영 SW로는 WF엔진, MNG엔진(DPS), ElasticSearch 5.5.1(INR), Intel Parallel Studio 2017XE(INR/PDS), Intel Performance Libraries, PBS pro 14.2.6, OpenMPI 1.10.1(RAP)이 현황 목록에 기재되어 있으나, 이는 이관 대상 기존 SW이며 신규 구매 품목이 아님. 계약상대자는 기존 하드웨어에 종속된 전체 라이선스 확인 및 신규 HW로의 라이선스 리호스팅 완수를 요구함</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[순수 용역 사업]</strong> 본 사업은 기존 SW를 신규 HW로 이관하는 용역 사업으로, 별도의 신규 상용 SW(RHEL 라이선스 포함) 납품·구독 구매 항목이 RFP에 명시되어 있지 않음. Red Hat 상용 제품이 통합발주 품목으로 확정되지 않음</li>
+                        <li><strong>[RAP 서버 CentOS 7.3]</strong> RAP 기상자료처리시스템(15대) 서버의 현행 OS가 CentOS 7.3으로 명시되어 있어, 해당 영역에서 RHEL 상용 제품 도입이 당장 확정된 상황이 아님</li>
+                        <li><strong>[신규 HW OS 별도 결정]</strong> 신규 서버의 OS는 분리 발주된 HW 교체 사업에서 결정되므로, 본 SW 이관 RFP 단독으로 OS 선택권 확보가 제한적임</li>
+                        <li><strong>[폐쇄망 환경]</strong> 완전 폐쇄망 운영 요건으로 인해 외부 클라우드 기반 Red Hat 서비스(예: OpenShift Dedicated, RHEL AI 클라우드 서비스 등) 적용 불가</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[기존 RHEL 7.5 환경]</strong> DPS(16대), INR(4대), PDS(16대) 서버의 현행 OS가 <strong>Red Hat Enterprise Linux 7.5</strong>로 명시되어 있으며, 이관 시 동일 OS 환경 유지 또는 최신 RHEL(8/9)로 업그레이드 제안 가능. 신규 HW 환경에서 RHEL 신규 구독 라이선스 제안 기회 존재</li>
+                        <li><strong>[RAP CentOS → RHEL 전환 제안]</strong> RAP 서버(15대)의 현 OS가 CentOS 7.3으로, CentOS는 이미 EOL 상태임. 이관 사업을 계기로 RHEL로 전환 제안 가능 (CentOS 7.3 → RHEL 8/9 마이그레이션 제안 여지)</li>
+                        <li><strong>[컨테이너/VM 활용 명시]</strong> MIG-01 요구사항에 "필요시 가상화 환경(VM, 컨테이너 등) 이용 검토"가 명시되어 있어, Red Hat OpenShift 또는 Podman 기반 컨테이너 환경 제안 여지 존재</li>
+                        <li><strong>[라이선스 리호스팅 기회]</strong> MIG-02에서 "기존 하드웨어에 종속된 전체 라이선스 확인 및 신규 하드웨어로의 라이선스 리호스팅 완수" 요구 — 기존 RHEL 라이선스 리호스팅 또는 신규 구독으로의 전환 영업 기회</li>
+                        <li><strong>[RHEL AI / Satellite 제안]</strong> RHEL 7.5 → RHEL 9 업그레이드 시 Red Hat Satellite를 통한 패치·구성 관리 자동화 제안, 폐쇄망 환경에서의 오프라인 패치 관리 솔루션으로 Satellite 적합성 강조 가능</li>
+                        <li><strong>[RFP에 명시된 Red Hat 제품 현황]</strong> Red Hat Enterprise Linux 7.5 — DPS용 서버 16대, INR용 서버 4대, PDS용 서버 16대 (총 36대) 현 운영 OS로 명시. 신규 구매 수량은 본 RFP에 미확정</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
