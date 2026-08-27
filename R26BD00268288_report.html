@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00268288 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국산업은행(KDB)_리스크관리 고도화를 위한 자체 BIS비율 산출시스템 개발 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 납품 없는 순수 개발 용역</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>한국산업은행(KDB)의 리스크관리 고도화를 위한 자체 BIS(Bank for International Settlements) 비율 산출시스템을 개발하는 사업</li>
+                    <li>금융감독 규제 대응 및 자본적정성 지표(BIS 비율)의 자체 산출 역량 강화가 핵심 목표로 추정됨</li>
+                    <li>원문 텍스트가 OCR 추출 과정에서 심하게 손상되어 세부 목적의 완전한 파악에 한계가 있음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 입력 텍스트에서 확인 불가 (원문 손상)</li>
+                    <li><strong>사업 기간</strong>: 입력 텍스트에서 확인 불가 (원문 손상)</li>
+                    <li><strong>사업 범위</strong>: 리스크관리 고도화를 위한 자체 BIS비율 산출시스템 개발 (소프트웨어 개발 용역 성격으로 추정)</li>
+                    <li><strong>주요 일정</strong>: 입력 텍스트에서 확인 불가 (원문 손상)</li>
+                    <li><strong>수행 기관</strong>: 한국산업은행(KDB), KDB Digital Square (주소: 서울 여의도 177번지)</li>
+                    <li><strong>공고 사이트</strong>: http://www.kdb.co.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>IT 부서 (IT 담당)</strong>: 대표번호 02-787-4505 / 담당자 02-787-4561</li>
+                    <li><strong>BIS 관련 부서 (리스크·BIS 담당)</strong>: 대표번호 02-787-7637 / 담당자 02-787-7648</li>
+                    <li><strong>돛85 부서 (기타 담당)</strong>: 대표번호 02-787-4805 / 담당자 02-787-4883</li>
+                    <li><strong>입찰 문의</strong>: 1588-0800 (공공조달 헬프데스크 추정)</li>
+                    <li>담당자 이름 및 이메일: 입력 텍스트에서 확인 불가 (원문 손상)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>기술 요구사항</strong>: BIS 비율 자체 산출 기능 구현 (바젤 규제 기반 자본적정성 계산 로직 개발 추정)</li>
+                    <li><strong>비즈니스 요구사항</strong>: 금융감독원 규제 대응을 위한 리스크관리 시스템 고도화</li>
+                    <li><strong>구매 명시 S/W</strong>: 입력 텍스트 손상으로 통합발주 S/W 품목 및 수량 확인 불가. 별도 첨부파일(RFP, 과업지시서 등) 검토 필요</li>
+                    <li><strong>기타</strong>: 원문 OCR 손상으로 세부 기술 요건 파악 불가 — 원본 HWP 파일 직접 확인 권장</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li>입찰공고서 원문이 OCR 손상으로 판독 불가능한 수준이며, S/W 구매·납품 항목이 전혀 확인되지 않음</li>
+                    <li>사업 성격이 BIS비율 산출시스템 <strong>개발 용역</strong>으로 추정되어, S/W 라이선스 납품보다는 순수 개발·구축에 초점이 맞춰진 것으로 보임</li>
+                    <li>Red Hat 상용 제품명(RHEL, OpenShift, Ansible, JBoss EAP 등)이 문서 내 전혀 확인되지 않음</li>
+                    <li>경쟁 제품(VMware, Ubuntu, Oracle Linux 등)도 언급되지 않으나, 전반적으로 S/W 도입 항목 자체가 불명확함</li>
+                    <li>금융권 내부 시스템 개발 특성상 특정 상용 OS/미들웨어가 별도 공고 없이 기존 인프라를 활용할 가능성이 높음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li>금융권(은행) BIS 리스크 산출 시스템은 일반적으로 Linux 기반 서버 환경에서 운영되므로, RHEL 제안 여지가 간접적으로 존재할 수 있음</li>
+                    <li>신규 시스템 개발 시 컨테이너 기반(OpenShift) 또는 자동화(Ansible) 아키텍처 도입을 제안할 여지가 있으나, 현재 RFP에서 명시적 요구 확인 불가</li>
+                    <li>JBoss EAP(엔터프라이즈 Java 미들웨어) 기반의 금융 애플리케이션 제안 가능성 있으나, 근거 텍스트 없음</li>
+                    <li><strong>RFP 내 Red Hat 제품명·수량 명시: 없음</strong> (원문 손상으로 추가 확인 필요)</li>
+                    <li>※ 원본 과업지시서 및 제안요청서 첨부파일 검토 후 재평가 권장</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

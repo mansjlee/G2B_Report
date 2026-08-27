@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00268426 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국과학창의재단_AI기반 학교 현장 지원 플랫폼 통합구축 및 운영 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>Rocky Linux OS 명시, RH 상용SW 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>한국과학창의재단이 발주하는 2개 플랫폼 통합 발주 사업으로, ①AI·융합교육 플랫폼 통합 구축·운영과 ②현장체험학습 통합지원 플랫폼 구축·운영을 단일 계약으로 추진</li>
+                    <li>기존 STEAM 사이트(steam.kosac.re.kr)와 AI플랫폼(School AI, sai.software.kr)을 통합·개편하여 RAG 기반 생성형 AI 검색·추천·교수학습 설계지원 기능을 갖춘 공교육 특화 플랫폼 고도화</li>
+                    <li>창의교육넷(크레존, crezone.net)을 MSA 기반 클라우드 네이티브 구조로 전면 재구축하여 전국 현장체험학습 지원 플랫폼(체험처 탐색, 보조인력 구인·구직, 커뮤니티 등)으로 서비스 구조 전환</li>
+                    <li>정부 클라우드 네이티브 정책 부합 및 AI·디지털 전환 교육 수요 대응을 핵심 목표로 함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 2,562,000,000원 (부가가치세 포함)</li>
+                    <li><strong>사업 기간</strong>: 계약체결일 ~ 2027년 6월 30일</li>
+                    <li><strong>사업 범위</strong>: ①AI·융합교육 플랫폼 통합 구축·운영(콘텐츠 현황조사·재분류·표준화, RAG 시스템 구축, 생성형 AI 검색·추천·교수학습 설계지원, 대시보드 개발, 리브랜딩·홍보) / ②현장체험학습 통합지원 플랫폼 구축·운영(창의교육넷 전면 재구축, Open API 기반 체험처 자동수집·메타데이터 태깅, 보조인력 구인·구직·교육·인증, 커뮤니티, 정보보호 및 보안진단)</li>
+                    <li><strong>주요 일정</strong>: 사전규격공개·공고(2026.8~9월) → 제안요청설명회(2026.9.3.) → 선정심사(2026.9월) → 계약체결(2026.10월) → 플랫폼 구축(2026.10~12월) → 신규 사이트 오픈(2026.12월) → 운영·안정화(2026.12~2027.6월) → 중간평가(2026.12월말) → 최종평가·검수(2027.6월)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주기관</strong>: 한국과학창의재단</li>
+                    <li><strong>사업 책임자</strong>: AI융합교육실장 / 연락처: 02-559-3872</li>
+                    <li><strong>사업 실무자(1)</strong>: 담당 연구원 / 연락처: 02-559-3936</li>
+                    <li><strong>사업 실무자(2)</strong>: 담당 연구원 / 연락처: 02-559-3928</li>
+                    <li><strong>이메일</strong>: RFP 내 명시 없음</li>
+                    <li><strong>기술 총괄 관리</strong>: 정보화지원실</li>
+                    <li><strong>개인정보보호·정보보안</strong>: 정보보호팀</li>
+                    <li><strong>계약·조달 업무</strong>: 안전총무실</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>RAG 파이프라인 구축: 멀티모달 콘텐츠 전처리(문서형 PDF/PPT 파싱, 영상형 STT, 실습형 구조 추출) → 청킹 → 한국어·교육 도메인 특화 임베딩 → 벡터DB 색인 → BM25+벡터 하이브리드 검색 → 재순위(reranking) → 근거 기반 응답 생성</li>
+                            <li>생성형 AI 기반 대화형 챗봇 서비스(할루시네이션 억제·응답 안전정책 포함)</li>
+                            <li>RAG 기반 수업 활용 콘텐츠 추천 및 교수학습지도안 초안 자동 생성</li>
+                            <li>MSA(마이크로서비스) 기반 클라우드 네이티브 아키텍처, Kubernetes 컨테이너 오케스트레이션(HPA, 롤링 업데이트, 블루/그린 배포), DevOps(CI/CD) 파이프라인</li>
+                            <li>Open API 기반 전국 체험처 자동 수집·분류 및 AI 메타데이터 자동 태깅</li>
+                            <li>지도 API(네이버/카카오맵) 연동 경로 패키지 설계·공유</li>
+                            <li>보조인력 구인·구직 단계별 심사 프로세스 및 재단 연수원 LMS 연동 교육·인증</li>
+                            <li>사용자별 대시보드 4종(학생/운영기관/시도교육청/교육부) 개발 (재단 BI 솔루션 i-CANVAS 5.0 연계)</li>
+                            <li>Service Mesh 적용(mTLS, 트래픽 제어, Circuit Breaker), API Composition 패턴(Database-per-service)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W - 통합발주 포함]</strong>
+                        <ul>
+                            <li>AI검색엔진 1식 (직접구매 대상)</li>
+                            <li>시각화 솔루션 1식 (직접구매 대상)</li>
+                            <li>LMS 시스템 1식 (통합발주 - 기존 재단 LMS 연계 필수로 직접구매 제외)</li>
+                            <li>자동화 솔루션 1식 (통합발주 - 수집 대상 변동성 및 개발 포털 연동성으로 직접구매 제외)</li>
+                            <li>기존 보유 상용SW 연계 활용: i-STEAM 2.0(분석 및 과학용 소프트웨어) 1식, i-CANVAS 5.0(공공기관 전용 BI솔루션) 1식</li>
+                            <li>WEB 미들웨어 LENA WEB (vCPU당 라이선스), WAS 미들웨어 LENA WAS (vCPU당 라이선스)</li>
+                            <li>DB암호화 D'Amo 개발 1식·운영 1식, 모니터링 Whatap 개발 1식·운영 1식</li>
+                            <li>웹방화벽 AIWAF 운영 1식, 통합보안 Ahnlab CPP(방화벽·IPS) 운영 1식, 시스템·DB접근제어 NGS 운영 1식</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>Rocky Linux 9 OS 명시</strong>: ECR-001 장비구성 요건에 응용서버(VM) OS로 <strong>Rocky Linux 9</strong>가 명시되어 있음. Rocky Linux는 Red Hat Enterprise Linux(RHEL)의 커뮤니티 대체(다운스트림) 배포판으로, Red Hat의 경쟁·대체 OS에 해당하며 판정 규칙상 낮음 기준 적용</li>
+                    <li><strong>발주기관 제공 클라우드(Naver Cloud) 고정</strong>: 인프라는 재단에서 운영 중인 네이버 클라우드 공공 환경(NKS, Cloud DB for MySQL 등)이 기 확정되어 있으며, 제안사는 해당 환경 위에서 아키텍처 설계·구현만 담당. RHEL/OpenShift 등 별도 인프라 도입 여지 없음</li>
+                    <li><strong>Naver Kubernetes Service(NKS) 컨테이너 플랫폼 지정</strong>: 컨테이너 오케스트레이션은 NKS로 명시되어 OpenShift Container Platform 제안 불가</li>
+                    <li><strong>RFP 내 Red Hat 상용 제품 전혀 없음</strong>: RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 문서 어디에도 명시되지 않음</li>
+                    <li><strong>현행 시스템 SW 스택 비Red Hat</strong>: 현재 운영 중인 시스템은 Apache Web Server, Apache Tomcat WAS, JAVA/eFovFramework 기반으로 JBoss/EAP 계열 없음. SSO도 TouchEn Wiseaccess 사용 중</li>
+                    <li><strong>순수 SW 개발 용역 성격</strong>: 사업의 핵심은 플랫폼 개발·구축·운영 용역이며, 상용 SW 납품 범위가 AI검색엔진·시각화솔루션 등 특정 분야에 한정됨</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>Kubernetes/MSA 구조 요구</strong>: INR-004 및 ECR-001에서 Kubernetes 기반 MSA 아키텍처, Service Mesh(mTLS·트래픽 제어·Circuit Breaker), API Gateway/BFF 구성 등을 요구하고 있어 이론적으로 OpenShift 또는 Ansible Automation Platform 제안 여지가 있으나, NKS(Naver Kubernetes Service)가 이미 지정되어 있어 실질적 진입 불가</li>
+                    <li><strong>DevOps/CI·CD 파이프라인 요구</strong>: ECR-001에 Git 기반 형상관리, Jenkins/Tekton 등 CI/CD 파이프라인, 컨테이너 이미지 레지스트리 구축이 요구되어 Ansible Automation Platform 또는 OpenShift 제안 이론적 가능성 존재. 단, 특정 도구(Jenkins/Tekton)가 언급되어 있고 발주기관 클라우드 환경 내 구현이 전제됨</li>
+                    <li><strong>RFP 내 Red Hat 제품명·수량 명시 없음</strong>: 문서 전반에 걸쳐 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 단 한 건도 명시되지 않음. 제안 기회 부재</li>
+                    <li><strong>종합 평가</strong>: Rocky Linux 9 OS 명시, NKS 컨테이너 플랫폼 고정, 발주기관 제공 Naver Cloud 환경 전제 등 복합적 제약으로 인해 Red Hat 제품의 실질적 제안 가능성은 매우 낮음</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
