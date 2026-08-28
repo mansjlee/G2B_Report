@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00268516 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>교육부_2026년도 보육통합정보시스템 기능개선 - 분석 리포트</h2>
+
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>JBoss WAS 운영 중, 버전 변경 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>교육부가 주관하는 보육통합정보시스템(아이사랑포털, 어린이집지원시스템 등)의 연간 기능개선 사업으로, 보육 관련 법·제도 개정 반영 및 노후 서버의 클라우드 전환을 통한 안정적 시스템 운영 기반 조성이 핵심 목적</li>
+                    <li>국정과제 '정부책임형 유보통합 추진(101-3)' 이행을 위한 틈새돌봄(시간제보육) 이용 편의 개선, 보육교직원 보수교육 체계 개편 지원, 무단결석 아동 관리 기능 신설, 클라우드 서버 단계적 이관(B존→S존) 등 10개 핵심 과제 추진</li>
+                    <li>행정안전부 공공 마이데이터 연계를 통한 어린이집 입소 서류 간소화, 어린이집 입소 집중 신청 시기(11월) 성능 안정화(동시접속 3만명 수용, TPS 2,000 이상) 등 대국민 서비스 품질 향상 포함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 1,120,000,000원 (부가세 포함)</li>
+                    <li><strong>사업 기간</strong>: 계약일로부터 210일 (약 7개월)</li>
+                    <li><strong>사업 범위</strong>: 보육통합정보시스템 전반 기능개선 — 어린이집지원시스템, 행정지원시스템, 보육정책DW시스템, 바우처지원시스템, 예탁자금관리시스템, 임신육아종합포털(아이사랑), 아이사랑모바일, 육아종합지원센터, 어린이집정보공개포털, 자격관리포털, ARS시스템 등 다수 시스템 대상. 클라우드 이관(국가정보자원관리원 광주센터 B존→S존) 및 이전 불가 상용SW 기능 재개발 포함</li>
+                    <li><strong>주요 일정</strong>: 사업발주·입찰공고 2026년 8월 → 계약체결·사업착수 2026년 10월 → 사업수행(요건분석·설계·개발·시험·오픈) 2026.10월~2027.4월 → 안정화 지원 2027년 5월</li>
+                    <li><strong>계약 방법</strong>: 조달청을 통한 제한경쟁(중소기업 간 경쟁), 협상에 의한 계약체결</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 교육부 영유아안전정보과</li>
+                    <li><strong>과장</strong>: 이소영</li>
+                    <li><strong>사무관</strong>: 송현민</li>
+                    <li><strong>주무관</strong>: 윤소미</li>
+                    <li><strong>전화</strong>: 044-203-7025 | <strong>팩스</strong>: 044-203-6456</li>
+                    <li><strong>사업관리 수행기관</strong>: 한국사회보장정보원 보육서비스운영팀 ☎ 02-6360-4661</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[10대 기능 요구사항]</strong>
+                        <ul>
+                            <li>SFR-001: 시간제보육 이용 방식 및 아동 관리 기능 개선 — 형제아 동시예약(최대 3명), 1:N 아동 등록 구조 전환, ARS 단건·다건 결제 개발, 메시지 큐 도입(고가용성, 2개 이상 구성)</li>
+                            <li>SFR-002: 보육교직원 보수교육 관리·운영 기능 강화 — 실시간 화상교육 확대, 인정과정 이수시간 관리, 수료증 발급 기능 개선</li>
+                            <li>SFR-003: 보육교직원 인사경력 관리 기능 개선 — 대체교사 임용·면직 동시 입력, 직위변경 기능 신설, 경력 산정 과다 방지</li>
+                            <li>SFR-004: 교사 대 아동 비율 개선 지원금 지급관리 기능 확대 개편</li>
+                            <li>SFR-005: 보육통합정보시스템 서버 클라우드 단계적 전환 — B존→S존 이관, JBoss 버전 변경·마이그레이션, 세션 클러스터링 설정, 메일·PUSH·리포팅 기능 재개발</li>
+                            <li>SFR-006: 무단결석 아동 관리 기능 신설 — 조치결과 관리대장 전산화</li>
+                            <li>SFR-007: 보육교직원 행정처분 정보 시스템 연동 — 지자체→진흥원 자격관리 자동 연동</li>
+                            <li>SFR-008: 보육교직원 교육명령 대상 및 이수 관리 기능 개선</li>
+                            <li>SFR-009: 시군구별 특성을 반영한 집행추계 모형 적용</li>
+                            <li>SFR-010: 어린이집 입소(등록대기) 서비스 서류 간소화 — 공공 마이데이터 11종 연계, 우선순위 점수 자동 산정</li>
+                        </ul>
+                    </li>
+                    <li><strong>[통합발주 S/W 현황]</strong>
+                        <ul>
+                            <li>기존 라이선스 유지 이전 설치: 통합검색 Konan Search 1식, 작업스케줄링 Control-M 1식, 데이터모델관리 ERwin 1식</li>
+                            <li>이전 불가 → 기능 재개발: 메일발송 기능(기존 EON AP 대체) 1식, 출력(리포팅) 기능(기존 ERS 7.0 대체) 1식, 알림(PUSH) 발송 기능(기존 Smart Push Enterprise Package 대체) 1식</li>
+                            <li>※ ECR-001: 기타 상용SW는 특정 제품·제조사 지정 없이 동등 이상 제품이면 제안 가능</li>
+                        </ul>
+                    </li>
+                    <li><strong>[현행 기술 스택]</strong>: WAS — JEUS / <strong>JBoss</strong>, DBMS — Oracle 10g / Sybase, WEB — WebToB / Apache, 개발언어 — JSP/Java, APM — Jennifer, 스케줄링 — Control-M, 통합검색 — Konan Search(DOCRUZER1C1G), EAI — MegaTier, OLAP — MicroStrategy(MSTR), ETL — Informatica 등</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>SW 납품 비중 낮음</strong>: 본 사업은 주로 기능개선 개발 용역 중심 사업으로, 신규 상용SW를 대량 통합발주 도입하는 구조가 아님. 기존 라이선스 유지 이전 설치가 주를 이룸</li>
+                    <li><strong>DBMS 경쟁제품 운영 중</strong>: Oracle 10g 및 Sybase(DW)를 DBMS로 운영 중이며 RFP상 교체 계획 없음 → Red Hat 관련 DB 스택 제안 여지 없음</li>
+                    <li><strong>JEUS(경쟁 WAS) 병행 운영</strong>: 티맥스소프트 JEUS를 JBoss와 함께 WAS로 운영 중으로, 특정 WAS로 단일화 요건 없음</li>
+                    <li><strong>이전 불가 SW 재개발 시 공개SW 우선 검토</strong>: SFR-005에서 재개발 모듈에 공개소프트웨어(GPL, Apache, MIT 등) 활용 시 라이선스 검토 후 선정 명시 → Red Hat 상용 제품 대신 오픈소스 선택 가능</li>
+                    <li><strong>중소기업 간 경쟁</strong>: Red Hat Korea가 직접 입찰 불가. SI 사업자를 통한 제품 공급 구조로, 직접 제안 채널 제한</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>JBoss WAS 기존 운영 및 버전 변경 명시 (핵심 기회)</strong>: 현재 보육통합정보시스템 WAS로 JBoss를 운영 중이며, SFR-005(클라우드 전환) 과업에서 "JBoss 버전 변경에 따른 설정 마이그레이션"이 명시적으로 요구됨. JBoss EAP 최신 버전 업그레이드 및 클라우드 환경 라이선스 전환 제안 기회 존재</li>
+                    <li><strong>클라우드 전환 아키텍처 설계 기회</strong>: 국가정보자원관리원 클라우드(S존) 이관 시 Web/WAS 다층구조·이중화 설계 요구 → RHEL 기반 서버 OS 및 JBoss EAP 최신 버전 적용 제안 가능</li>
+                    <li><strong>메시지 큐 도입 요구 (SFR-001)</strong>: 시간제보육 예약 처리 순서 보장을 위해 "고가용성 메인+서브 2개 이상 메시지 큐" 도입이 명시됨 → Red Hat AMQ(ActiveMQ Artemis) 제안 가능</li>
+                    <li><strong>PUSH/메일 발송 기능 재개발 기회</strong>: 이전 불가 Smart Push Enterprise Package 및 EON AP(대용량 메일) 기능 재개발 시 Red Hat AMQ Streams(Kafka 기반) 또는 AMQ를 활용한 고가용성 메시징·발송 아키텍처 제안 가능</li>
+                    <li><strong>Ansible 자동화 기회</strong>: 클라우드 이관, JBoss 마이그레이션 설정 자동화, 병행 운영 전환 등 복잡한 인프라 자동화 과정에 Ansible Automation Platform(AAP) 활용 제안 가능</li>
+                    <li><strong>RFP 내 Red Hat 관련 제품명 명시 현황</strong>: JBoss — 현행 WAS로 운영 중(소프트웨어 현황 표 명시), SFR-005에서 "JBoss 버전 변경에 따른 설정 마이그레이션" 과업으로 명시</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
