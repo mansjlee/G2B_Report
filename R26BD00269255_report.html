@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00269255 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>기술보증기금_지식재산공제시스템 통합 유지관리 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>RHEL 유지관리 대상 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>기술보증기금이 운영하는 지식재산공제시스템(대외 홈페이지, 내부 업무시스템, 기간계·채널계 등)의 하드웨어, 상용 소프트웨어, 응용 프로그램을 통합 유지관리하는 용역 사업</li>
+                    <li>지식재산공제시스템의 안정적 운영 및 원활한 서비스 제공</li>
+                    <li>사용자 개선 의견의 신속한 반영 등 프로그램 관리 수행</li>
+                    <li>SLA 기반 서비스 수준 관리를 통한 체계적 시스템 운영 및 관리</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 총 1,076백만원 (연 538백만원, 부가가치세 포함) / 20억원 미만으로 중소 SW사업자만 입찰 참여 가능</li>
+                    <li><strong>사업 기간</strong>: 2027.1.1 ~ 2028.12.31 (2년)</li>
+                    <li><strong>사업 범위</strong>: ① 하드웨어 유지관리(서버·스토리지·네트워크 장비 등) ② 프로그램 유지관리(대외 홈페이지·모바일웹, 기간계·채널계 내부 업무시스템) ③ 상용 소프트웨어 유지관리(Web·WAS·DBMS·보안 SW 등) ④ 품질관리·교육·SLA 운영</li>
+                    <li><strong>주요 일정</strong>: 사전공개(D-57) → 입찰공고(D-51, 공고기간 40일) → 제안서 접수(D-10) → 제안서 평가(D-8) → 협상대상자 선정(D-7) → 기술·가격협상(D-3) → 계약(D) → 업무인수인계(계약일로부터 3주) → 사업 수행(2027.1.1~2028.12.31)</li>
+                    <li><strong>계약 방법</strong>: 제한경쟁입찰 (협상에 의한 계약), 기술평가 90% + 가격평가 10%</li>
+                    <li><strong>투입 인력</strong>: 상주 3명 (내부업무시스템 개발/유지관리, 홈페이지 개발/유지관리, 상용SW·HW 유지관리) + PM 겸 개발자 1명</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>소속</strong>: 기술보증기금 지식재산공제부 공제기획팀</li>
+                    <li><strong>이진규 부부장</strong> / ☎ 051-606-7333 / ✉ jkle@kibo.or.kr</li>
+                    <li><strong>최지은 대리</strong> / ☎ 051-606-7368 / ✉ 2755@kibo.or.kr</li>
+                    <li><strong>제안서 제출처</strong>: 부산광역시 남구 문현금융로 33, 기술보증기금 6층 지식재산공제부</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong>
+                        <ul>
+                            <li>Oracle 19c, Tmax ProObject(JAVA), WebSquare5, OZ 기반 내부 업무시스템 개발·유지관리</li>
+                            <li>JSP/JAVA, 전자정부프레임워크, Tibero, CMS, iOS/Android, HTML5/CSS3/jQuery 기반 홈페이지 개발·유지관리</li>
+                            <li>가상화 서버(HCI: Cisco HXAF220C), Dell Unity 스토리지, 네트워크 장비 유지관리</li>
+                            <li>상용 SW 정기점검(월 1회 또는 분기 1회), 현장 방문 점검(중요 SW), 패치·업그레이드 지원</li>
+                            <li>24시간×365일 Help Desk 운영, 장애 발생 1시간 내 착수·4시간 내 완료</li>
+                            <li>SLA 체계 수립 및 ITSM 프로세스 기반 서비스 요청·작업·SLA 관리</li>
+                            <li>보안취약점 방지(SQL Injection, XSS 등), 공개 홈페이지 취약점 평가 연 2회, 소프트웨어 개발보안 가이드 준수</li>
+                        </ul>
+                    </li>
+                    <li><strong>[통합발주·상용 SW 유지관리 대상 목록]</strong>
+                        <ul>
+                            <li>가상화 SW: VMware vSphere 6 Standard 10식, VMware vCenter Server 6 Standard for vSphere 1식</li>
+                            <li>Web 서버: WebtoB std v5 (2CPU*4Core) 4식, WebtoB std v5 (1CPU*4Core) 2식</li>
+                            <li>WAS: Jeus v8 (2CPU*8core) 3식, Jeus v8 (1CPU*8core) 1식</li>
+                            <li>DBMS: Tibero v6 Enterprise (2CPU*4Core) 2식, Tibero v6 Standard (2CPU) 1식</li>
+                            <li>APM: Jennifer v5.0 JAVA EE Edition 12식</li>
+                            <li>위변조방지: e-Page SAFER for Zero Client 2식</li>
+                            <li>암호화: Vormetric Transparent Encryption Agent 3식</li>
+                            <li>DB접근제어: DBSAFER License (Active 8Core) 1식, DBSAFER License (StandBy 8Core) 1식</li>
+                            <li>형상관리: SoftManager v5 Client(1), DeployAgent(6) 1식</li>
+                            <li>망간 파일전송: CrossNet DataTransfer Server Agent 2식</li>
+                            <li>보고서: OzReport V7 (8Core) 2식</li>
+                            <li>EMS 모니터링: WatchAll 11 SMS Agent 11식, WatchAll 11 DBMS Agent 2식</li>
+                            <li>키보드보안: nProtect Online Security V1.0 (Win_IE, Win_Multi) 2식</li>
+                            <li>가상키보드: nProtect KeyCrypt 2식</li>
+                            <li>PKI: SignKorea NA Toolkit for Windows (1Server) 1식</li>
+                            <li>파일백업: Veeam Standard (10 Socket) 1식</li>
+                            <li><strong>운영체제: Red Hat Enterprise Linux Server, Standard (1-2 sockets) 8식 [중요SW 해당]</strong></li>
+                            <li>TSA: Magic TSA 2식</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>[경쟁 제품 명시]</strong> VMware vSphere 6 Standard 10식 및 VMware vCenter Server 6 Standard 1식이 가상화 SW로 현재 운영 중이며, 유지관리 대상으로 명시됨 → OpenShift Virtualization, RHEV 제안 여지 없음</li>
+                    <li><strong>[국산 SW 스택 고착]</strong> WAS는 Jeus v8, Web 서버는 WebtoB v5, DBMS는 Tibero v6로 구성되어 JBoss EAP, RHEL-based 오픈소스 전환 여지 없음</li>
+                    <li><strong>[유지관리 용역 성격]</strong> 본 사업은 기존 시스템의 유지관리가 목적으로, 신규 SW 구매·납품·증설보다는 기존 라이선스에 대한 점검·패치·장애처리 지원이 핵심임 → 신규 Red Hat 제품 추가 도입 기회는 제한적</li>
+                    <li><strong>[Ansible·OpenShift 적용 여지 없음]</strong> 컨테이너, Kubernetes, 자동화 플랫폼 관련 요구사항 없음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[RFP 명시 Red Hat 상용 제품]</strong>
+                        <ul>
+                            <li><strong>Red Hat Enterprise Linux Server, Standard (1-2 sockets) 8식</strong> — 중요SW로 분류, 상용 소프트웨어 현황표에 명시, 유지관리 의무 대상</li>
+                        </ul>
+                    </li>
+                    <li><strong>[RHEL 유지관리 기회]</strong> RHEL 8식이 "중요SW 해당"으로 분류되어 현장 방문 정기점검(MAR-004 준수) 의무가 있음 → Red Hat 또는 공식 파트너를 통한 RHEL 유지관리 서비스(서브스크립션 갱신, 패치·업그레이드 지원) 제안 가능</li>
+                    <li><strong>[서브스크립션 갱신 영업 기회]</strong> 현재 RHEL Standard 서브스크립션 8식이 운영 중이며, 2027~2028년 사업 기간 내 서브스크립션 만료 시점이 도래할 경우 갱신 영업 연계 가능</li>
+                    <li><strong>[SI 사업자 대상 파트너 협력]</strong> 본 사업은 시스템 통합사업자(SI)가 낙찰받아 RHEL 유지관리를 수행하는 구조이므로, Red Hat 파트너 또는 공인 유지보수 채널을 통해 사업자에게 RHEL 서비스 제공 가능</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

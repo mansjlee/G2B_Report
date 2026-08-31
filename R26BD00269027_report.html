@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00269027 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>중앙노동위원회_AI 디지털노동위원회 구축 2차 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>RH 상용 제품 미명시, AI·Java 용역 중심</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>중앙노동위원회의 노동분쟁 지원 정보시스템 고도화 사업으로, AI 디지털노동위원회 1차 사업('25.7~'26.7)에서 구축된 <strong>노사마루</strong> 및 <strong>AI 노동위원회</strong>의 기능을 확장하여 신속·편리·공정한 노동분쟁 지원 시스템 구현</li>
+                    <li>3대 추진 전략: ① AI 기반 업무 구조화(지식 플랫폼 구축, 직권조사 계획서 자동 작성, 판정서 오류 검증), ② AI 노동위원회 성능·운영 고도화(LLM/VLM 고도화, 문서초안 확장), ③ 업무시스템 고도화(유관기관 연계, 통계 강화, 사용자 개선)</li>
+                    <li>ISP 산출물 기반으로 3단계 추진 방안 마련(컨설팅 포함), 2026년 8월 기준 RFP 발행, 대기업·중견기업 입찰 참여 불가(총예산 20억 미만)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 1,135백만원 (부가세 포함)</li>
+                    <li><strong>사업 기간</strong>: 계약체결일로부터 10개월</li>
+                    <li><strong>사업 범위</strong>: AI 기반 업무 구조화(Graph DB 지식그래프, 직권조사·화해·조정 AI 지원, 판정서 오류 검증, 비정형 문서 전처리, LLM/VLM 고도화, 내부 지식 위키 구축), 업무시스템 고도화(유관기관 EAI 연계, 통계 강화, 전자결재 템플릿화, 사건기록관리, 사용자 개선의견 반영), 디지털 플랫폼 기반 강화(모바일공무원증 인증, 출력물 보안, 비정상접근 방지)</li>
+                    <li><strong>계약 방법</strong>: 일반경쟁입찰(협상에 의한 계약), 기술평가 90% + 가격평가 10%</li>
+                    <li><strong>주요 일정</strong>: 2026년 8월 RFP 발행 → 사업자 선정·계약 → 착수보고(계약 후 1개월 이내) → 설계·개발(M+1~M+7) → 감리(설계·종료) → 통합테스트 및 시범운영(M+8~M+9) → 완료(M+10), 하자보수 12개월</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>담당 기관</strong>: 중앙노동위원회 기획총괄과</li>
+                    <li><strong>하병수</strong> (총괄) | 전화: 044-202-8355 | 팩스: 044-202-8138 | 이메일: byoungsu@korea.kr</li>
+                    <li><strong>주현우</strong> (담당) | 전화: 044-202-8376 | 팩스: 044-202-8138 | 이메일: hwju91@korea.kr</li>
+                    <li><strong>송은옥</strong> (담당) | 전화: 044-202-8377 | 팩스: 044-202-8138 | 이메일: iwiner2@korea.kr</li>
+                    <li>제안요청 설명회 문의: 주현우 주무관 (044-202-8138), 송은옥 주무관 (044-202-8733)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>LLM 고도화(추론 성능 향상, 대용량 컨텍스트 지원, 응답 정확도 향상) 및 VLM 기반 비정형 문서(사진·표·스캔본) 전처리·구조 분석</li>
+                            <li>Graph DB 기반 지식그래프 구축(판정서·조사보고서 개체·속성·관계 자동 추출, 문서초안 작성 연계)</li>
+                            <li>AI 기반 직권조사 계획서·화해·조정·소송문서 초안 자동 작성 기능 구현</li>
+                            <li>판정서 기초정보·법령·판례 인용 오류 자동 검증</li>
+                            <li>유관기관 EAI 연계: 노사마루 ↔ 고용노동부 노사누리(대리인 자격정보, 사건정보, 노동조합 정보)</li>
+                            <li>내부 시스템 간 실시간 DB 연계: Oracle Golden Gate(OGG) 활용 명시</li>
+                            <li>전자정부 표준프레임워크(최신 버전) 기반 개발, JAVA/.NET/JavaScript 범용 언어 사용</li>
+                            <li>넥사크로 기반 UI 통합, 반응형 웹(Edge·Chrome·Safari 지원), 1차 사업 대비 AI 응답속도 30% 이상 단축</li>
+                            <li>대용량 첨부파일 처리: 1회 최대 10개 이상, 총 1GB 이상(현행 7개·500MB 제한 개선)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 예정 S/W — 통합발주 (붙임9 직접구매 제외 항목)]</strong>
+                        <ul>
+                            <li>AI 에이전트 빌더 — 수량: 1식 (통합발주, 직접구매 제외)</li>
+                            <li>온톨로지 솔루션 — 수량: 1식 (통합발주, 직접구매 제외)</li>
+                            <li>비전 언어 모델(VLM) — 수량: 1식 (통합발주, 직접구매 제외)</li>
+                            <li>파서 솔루션 — 수량: 1식 (통합발주, 직접구매 제외)</li>
+                            <li>비식별화 솔루션 — 수량: 1식 (통합발주, 직접구매 제외)</li>
+                            <li>※ 제외 사유: 1차 사업 구축 시스템·SW 간 상호연계성이 높아 안정적인 연계·통합 구축을 위해 일괄 발주 필요</li>
+                        </ul>
+                    </li>
+                    <li><strong>[기존 활용 상용 S/W (신규 구매 아님, ECR-001 기존 설치 현황)]</strong>
+                        <ul>
+                            <li>DB암호화솔루션, OTP, 웹필터, 검색엔진, PDF변환서버, PDF뷰어, 출력물보안, 리포팅툴, 웹기안기, 한컴변환기, 개인정보이력관리, 데이터연동, 설문시스템, 시각화솔루션, 위·변조방지, 전자서명, 데이터모델링, OCR, STT, 비식별화</li>
+                            <li>※ 사업자는 기존 상용 S/W를 최대한 활용하여야 함</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>Red Hat 상용 제품 전무</strong>: RFP 전체 문서(제안요청서, ECR, SFR, 기술적용계획표, 붙임9 등) 어디에도 RHEL, OpenShift, Ansible, JBoss/EAP, AAP, Satellite, Quay 등 Red Hat 상용 제품이 품목으로 명시되어 있지 않음</li>
+                    <li><strong>기존 인프라 최대 활용 원칙</strong>: "별도의 H/W 자원 확장 없이 현행 시스템 자원을 활용" 명시(기술성 평가 항목), 신규 OS·서버·미들웨어 도입 계획 없음</li>
+                    <li><strong>Oracle 생태계 기반</strong>: 내부 시스템 간 DB 실시간 연계에 Oracle Golden Gate(OGG) 사용이 명시되어 있어 Oracle DB 환경임이 확인됨</li>
+                    <li><strong>AI/LLM 특화 솔루션 중심 발주</strong>: 통합발주 S/W가 AI 에이전트 빌더·온톨로지·VLM·파서·비식별화 등 Red Hat 제품군과 무관한 AI 특화 솔루션만 해당</li>
+                    <li><strong>컨테이너·자동화 요구사항 없음</strong>: OpenShift·Kubernetes·Ansible 등을 활용하는 컨테이너 플랫폼·자동화 요구사항이 RFP 내 명시되지 않음</li>
+                    <li><strong>전자정부 표준프레임워크(Java) 중심</strong>: 개발 언어 및 프레임워크가 전자정부 표준프레임워크(Java/.NET/JavaScript)로 확정되어 JBoss/EAP 등의 제안 여지가 낮음</li>
+                    <li><strong>중소기업 입찰 전용 사업</strong>: 총예산 20억 미만으로 대기업·중견기업 입찰 불가 — Red Hat Korea의 직접 입찰 불가하며 파트너 채널을 통한 간접 기회도 제한적</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>Linux 서버 환경</strong>: 기술적용계획표 '플랫폼 및 기반구조 분야'에 Linux가 서버 운영체제로 명시(○ 적용)되어 있어, 기존 인프라 OS가 Linux 계열임을 확인할 수 있으나 신규 OS 구매 계획은 없음</li>
+                    <li><strong>GPU 서버 환경 기존 보유</strong>: 1차 사업에서 구축된 LLM 모델 운영용 GPU 서버 환경이 있으며, 2차 사업에서도 동일 환경에서 모델 고도화 수행 예정 — 향후 RHEL for AI 또는 RHEL AI 제안 가능성의 씨앗이 될 수 있으나 현 RFP에서는 OS 구독 갱신 요구사항 없음</li>
+                    <li><strong>유관 정보 수집 권고</strong>: 입찰 참가자가 요청 시 보안서약서 작성 후 H/W·S/W·N/W 구성도 열람 가능 — 실제 OS 환경(RHEL 여부) 확인을 통해 유지보수 기회 탐색 가능</li>
+                    <li><strong>3차 사업 대비 포지셔닝</strong>: 본 RFP(2차)에서 컨설팅 요구사항(CSR-001)으로 3단계 사업 추진 방안 마련이 포함되어 있어, 3차 사업에서 AI 인프라 확장 시 OpenShift AI, RHEL AI 제안 기회가 생길 수 있음 — 현 사업 수주사와의 관계 구축 필요</li>
+                    <li><strong>RFP 내 Red Hat 제품명 명시: 없음</strong></li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
