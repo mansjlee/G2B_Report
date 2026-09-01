@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00269663 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>부산대학교 - AI 기반 맞춤형 교육지원시스템 (3단계) 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=orange>중간<br>컨테이너/K8s 지원 명시, OS 미지정</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>부산대학교 AX·정보화혁신본부가 발주하는 AI 기반 맞춤형 교육지원시스템 3단계 구축 사업으로, 학생 성장 전 주기 지원과 AI Native University 실현을 목표로 함</li>
+                    <li><strong>학생성공 플랫폼 구축</strong>: 학생의 학습·경험·상담·역량 데이터를 통합하여 AI 기반 맞춤형 진로설계, 위기학생 조기예측, E-Portfolio 자동생성 등 개인 성장 내비게이션 체계 구축</li>
+                    <li><strong>AX 포털 고도화</strong>: AX 마스터플랜 A.U.R.A. 실현을 위한 학내 AI 시스템 통합 허브 역할의 AX 포털 고도화 및 AI Native University 기반 강화</li>
+                    <li>소형언어모델(SLLM) 서비스, RAG·에이전트 플랫폼을 온프레미스로 구축하여 특정 상용 LLM에 종속되지 않는 자체 AI 생태계 마련</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 1,120,000,000원 (부가세 포함) / 20억 미만 중소기업 전용 사업</li>
+                    <li><strong>사업 기간</strong>: 계약일로부터 360일 이내</li>
+                    <li><strong>사업 범위</strong>: ① 학생성공 플랫폼 구축 (학생 맞춤형 성장관리 체계, AI 기반 학생성공 지원 서비스, 상담·비교과·취업 통합지원 체계) ② AX 포털 고도화 (AI Native University 구현, AIQ 심화 진단, AX 샌드박스 고도화)</li>
+                    <li><strong>주요 일정</strong>: 사업계획 수립 → 계약요청(나라장터) → 사업 수행(M~M+9) → 사업 완료 및 보고(M+10~M+11) → 시스템 오픈. 제안서 평가: 기술평가 90%, 가격평가 10%</li>
+                    <li><strong>계약 방식</strong>: 일반경쟁입찰 (협상에 의한 계약) / 하도급 및 공동수급 불허 / 상호출자제한기업집단 및 대기업·중견기업 입찰 참여 제한</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 부산대학교 AX·정보화혁신본부</li>
+                    <li><strong>팀장</strong>: 이호원 / ☏ 051-510-7439 / leehowon@pusan.ac.kr</li>
+                    <li><strong>주무관</strong>: 조진영 / ☏ 051-510-7462 / jinyoungjoh@pusan.ac.kr</li>
+                    <li><strong>문의처 (제안서 제출)</strong>: 부산대학교 AX·정보화혁신본부 이호원 ☏ (051) 510-7239</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기능 요구사항 주요 항목]</strong>
+                        <ul>
+                            <li>CSR-008: 컨테이너 기반 배포(Docker/Kubernetes) 환경 지원, 확장 가능한 개방형 포털 설계, 7대 영역 독립 서비스 분리 배포</li>
+                            <li>CSR-017: 위기학생 관리 신호등 체계 (L0~L3 4단계, 웹소켓 실시간 알림)</li>
+                            <li>CSR-020: 소형언어모델(SLLM) 서비스 - 산지니 AI(부산대 자체 LLM), 오픈소스 Gemma·Llama 운영, 온프레미스 서빙 원칙, 특정 상용 LLM API 종속 금지, LLMOPS 파이프라인 구축</li>
+                            <li>CSR-021: RAG·에이전트 플랫폼 - Vector DB 기반 임베딩 파이프라인, 도메인별 7개 에이전트 개발, MCP(Model Context Protocol) 기반 학사시스템 연동, 다중 에이전트 협업 체계</li>
+                            <li>CSR-010: SLLM 기반 핵심역량 진단 결과 자동 해설 및 개인화 리포트 생성</li>
+                            <li>CSR-015: 3종 알고리즘 삼각측량(LightGCN + 카이제곱 + 단순통계) 기반 전공 적합도 산출</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W]</strong>: 본 RFP는 순수 소프트웨어 개발 용역 사업으로, 통합발주 또는 조달쇼핑몰 직접구매 형태의 상용 SW 품목(수량 포함)이 명시되어 있지 않음. 도입 기술로 오픈소스(Gemma, Llama, Docker, Kubernetes, Vector DB 등)가 언급되나 납품 품목으로 확정된 상용 SW 목록은 없음.</li>
+                    <li><strong>[성능 요구사항]</strong>: 동시 사용자 300명 이상 지원, CPU 평균 사용률 90% 미만, 메모리 평균 사용률 75% 미만, 온라인 배치 업무 3분 내 처리</li>
+                    <li><strong>[보안 요구사항]</strong>: 시큐어 코딩 적용, TLS/HTTPS 통신 구간 암호화, 프롬프트 보안(민감 정보 유출 방지), 2단계 인증(2FA) 지원</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>[상용 SW 납품 미포함]</strong>: 본 사업은 소프트웨어 개발 용역 사업으로, RFP 전문에 걸쳐 RHEL, OpenShift, Ansible, JBoss 등 Red Hat 상용 제품명이 구매·납품 품목으로 명시된 항목이 전혀 없음</li>
+                    <li><strong>[LLM 상용 종속 금지 조건]</strong>: CSR-020에서 "특정 업체(상용 LLM API)에 종속되지 않도록 제공" 및 "온프레미스 서빙 원칙, 외부 송신 금지"를 명시하여, 외부 상용 AI 서비스(클라우드 형태) 적용이 원칙적으로 제한됨</li>
+                    <li><strong>[오픈소스 우선 원칙]</strong>: 기술적용계획표(붙임 6호) COR-002에서 "부득이한 경우를 제외하고는 특정기술에 종속되지 않는 오픈소스 기술로 구현하도록 검토"를 명시하여 상용 SW 도입에 불리한 조건</li>
+                    <li><strong>[경쟁·대체 OS 명시 없음]</strong>: Ubuntu, Rocky Linux, Oracle Linux, VMware 등 명시적 경쟁 제품은 없으나, Red Hat 상용 제품도 부재</li>
+                    <li><strong>[중소기업 전용 사업]</strong>: 20억 미만 중소기업 전용 입찰로 Red Hat Korea 직접 입찰 불가, SI 파트너를 통한 간접 영업만 가능</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[OpenShift 제안 가능 - CSR-008]</strong>: "컨테이너 기반 배포(Docker/Kubernetes) 환경을 지원하여야 함" 및 "7대 영역을 독립 서비스로 분리하여 배포"를 명시. Kubernetes 기반 플랫폼인 OpenShift Container Platform 제안 가능</li>
+                    <li><strong>[RHEL 제안 가능 - 플랫폼 OS]</strong>: 기술적용계획표 서버용 운영체제로 "Linux" 계열이 포함되어 있으며 특정 배포판 미지정. 온프레미스 서빙 환경의 서버 OS로 RHEL 제안 기회 존재</li>
+                    <li><strong>[OpenShift AI / RHEL AI 제안 가능 - CSR-020·021]</strong>: 온프레미스 SLLM 서빙(Gemma, Llama), RAG 파이프라인, 에이전트 플랫폼, LLMOPS 구축 요구 → OpenShift AI(구 RHODS) 또는 RHEL AI를 기반으로 한 AI 워크로드 운영 플랫폼 제안 가능</li>
+                    <li><strong>[Ansible 제안 가능]</strong>: 다중 에이전트 협업 및 LLMOPS 파이프라인 자동화, 시스템 구축·운영 자동화 요구사항에 Ansible Automation Platform 적용 검토 가능</li>
+                    <li><strong>[Red Hat 명시 제품 없음]</strong>: RFP 본문에 Red Hat 또는 동의어 제품명·수량이 명시된 항목 없음. 상기 제안 요소는 모두 영업 기회(Potential) 관점의 접근임</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
