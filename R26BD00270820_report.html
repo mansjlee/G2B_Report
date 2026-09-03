@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00270820 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>충남테크노파크_충남 AX 실무 인재 양성 교육 및 LMS 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange">중간<br>OS 미지정 클라우드 네이티브, RHEL 제안여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>중소벤처기업부 주관 「지역 주도형 AI 대전환 사업」의 일환으로, 충남 지역 제조 현장의 AI대전환(AX) 실무 인재를 양성하고 전용 학습관리시스템(LMS)을 구축하는 사업</li>
+                    <li>충남 주력산업(디스플레이·반도체·모빌리티 등) 중소기업 재직자, 청년, 구직자 대상 현장 맞춤형 AX 교육 3개 과정 운영</li>
+                    <li>Cloud Native 기반 전용 LMS를 구축하여 교육 이력·학습 행동 데이터를 체계적으로 적재·관리하고, 2차년도에 지능형 AI 엔진으로 고도화</li>
+                    <li>충남 지역 내 디지털 격차 해소 및 AX 실무 전문가 육성을 최종 목표로 함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 780백만원(부가세 포함) — 1차년도 370백만원(교육 150 + LMS구축 220), 2차년도 410백만원(교육 260 + LMS고도화 150)</li>
+                    <li><strong>사업 기간</strong>: 계약체결일 ~ 2027.11.30. (1·2차년도 통합발주, 장기계속계약)</li>
+                    <li><strong>사업 범위</strong>: ① AX 실무 교육 3개 과정 기획·운영(목표 이수인원 260명), ② Cloud Native 기반 LMS 구축(1차년도 기본구축·해커톤 모듈, 2차년도 지능형 AI 엔진 고도화 및 안정화)</li>
+                    <li><strong>주요 일정</strong>: AX 교육 수행기관 선정·1차 운영('26.7~12) → LMS 기본구축 및 조기 오픈('26.8~12) → 2차년도 교육 운영·지능형 엔진 고도화('27.1~6) → 통합운영 안정화·기술이관·성과이관('27.7~11)</li>
+                    <li><strong>선정 방법</strong>: 일반경쟁입찰(협상에 의한 계약), 기술능력평가 90점 + 가격평가 10점, 단독이행만 허용(컨소시엄 불허)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주기관</strong>: ㈜마음AI (참여기관 — 인재양성 교육 및 LMS 구축 실질 발주)</li>
+                    <li><strong>주관기관</strong>: 충남테크노파크 (사업 총괄 관리 및 준공)</li>
+                    <li><strong>전담기관</strong>: 중소벤처기업진흥공단 (사업 수행·관리 전반 지도·감독)</li>
+                    <li><strong>광역지자체</strong>: 충청남도 (사업 수행결과 이행 감독)</li>
+                    <li><strong>담당자 이름·연락처·이메일</strong>: RFP에 구체적으로 명시되지 않음 — 질의는 E-Mail·유선을 통해 ㈜마음AI로 문의 가능(입찰공고문 확인 필요)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술·비즈니스 요구사항]</strong>
+                        <ul>
+                            <li>AX 실무 교육 3개 과정 운영: ① 노코드 기반 AI 운영관리(AIOps/MLOps) 심화(48H, 목표 100명), ② 영상기반 AI 품질관리·비전기반 AI 산업안전 데이터 분석(96H, 목표 60명), ③ 노코드 제조품질 AI 코파일럿(40H, 목표 100명)</li>
+                            <li>Cloud Native 인프라 기반 LMS 구축: 동시접속 100~200명 지원, 응답 3초 이내, 가용성 99.5% 이상</li>
+                            <li>Web/WAS/DB 서버 이중화 이상, 세션 클러스터링, 로드밸런싱 필수</li>
+                            <li>Next.js/React 기반 W3C 웹표준 준수, 반응형 UI/UX(PC·모바일·태블릿)</li>
+                            <li>보안: 시큐어코딩(47개 취약점 배제), OWASP Top 10 대응, SSL/TLS 1.3, RBAC, SHA-256 개인정보 암호화, WAF·IPS·방화벽 적용</li>
+                            <li>해커톤 모듈(팀 빌딩, 대용량 산출물 접수, 실시간 심사·채점), 칸반보드, 역량 종단분석 AI 리포트</li>
+                            <li>오픈소스 기술스택 중심 설계 (상용 라이선스 종속 금지, COR-001)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[통합발주 구매 S/W 및 인프라 — ECR-001 서버 구성 예시]</strong>
+                        <ul>
+                            <li>OS S/W: 운영 서버(WEB/WAS, DB) 및 개발서버용 — 제품명 미지정 (수량: 운영 WEB/WAS 1식, DB 1식, 개발서버 1식)</li>
+                            <li>WEB: Apache WEB 서버 기술지원 — 1식</li>
+                            <li>DBMS: DBMS 기술지원 — 1식 (제품명 미지정)</li>
+                            <li>보안 시스템: 침입방지시스템(IPS) 1식, 방화벽(F/W) 1식, 웹방화벽(WAF) 1식, 시스템 접근제어 1식, DB 접근제어(유지보수 포함) 1식, DB 암호화 1식</li>
+                            <li>운영 관리: 로드밸런서(1개월/720시간 기준) 1식, 통합운영관리 1식</li>
+                            <li>저장소: NAS Storage 3TB 이상 1식, 스냅샷 Backup 1식, DB Backup Storage 500GB 1식</li>
+                            <li>※ 위 구성은 서비스 스펙 예시이며, 최종 구성은 계약 시 운영기관 요구사항에 따라 확정</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>Red Hat 상용 제품명 전혀 미명시</strong>: RFP 전문에 RHEL, OpenShift, Ansible, JBoss 등 Red Hat 상용 제품명이 단 한 건도 명시되지 않음</li>
+                    <li><strong>오픈소스 중심 아키텍처 제약 (COR-001)</strong>: "특정 SW·DBMS·UI 컴포넌트 공급업체 상용 라이선스 종속 방지, 오픈소스 기술스택 중심 설계" 명시 — 상용 Red Hat 구독 제안 시 발주처 사전협의 필요</li>
+                    <li><strong>교육·용역·개발 중심 사업</strong>: 사업의 핵심은 교육 운영 및 LMS 개발 용역으로, S/W 통합발주 규모가 크지 않고 구매 품목은 인프라 서비스 예시 수준</li>
+                    <li><strong>경쟁 제품 미명시지만 오픈소스 선호 기조</strong>: Ubuntu, Rocky Linux 등 경쟁 OS가 직접 명시된 것은 아니나, 오픈소스 라이선스 무비용 요건으로 인해 RHEL 유료 구독 도입 명분 확보가 어려움</li>
+                    <li><strong>단독이행·하도급 불허</strong>: 컨소시엄 구성 불가, 핵심 과업 하도급 금지로 Red Hat 단독 참여는 불가하며 영업 채널(파트너사) 통해서만 공급 가능</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>OS S/W 미지정 → RHEL 제안 가능</strong>: ECR-001 서버 구성에서 OS S/W가 명시되어 있으나 특정 제품이 지정되지 않아, 엔터프라이즈 수준의 안정성·보안 지원이 필요한 운영 서버(WEB/WAS, DB) 환경에 RHEL 제안 가능</li>
+                    <li><strong>Cloud Native 인프라 요건 → OpenShift 제안 여지</strong>: "Cloud Native 인프라 기반 LMS 구축", "가상화·이중화 구성", "컨테이너화 가능 아키텍처" 요구 → OpenShift Container Platform 또는 RHEL 기반 컨테이너 환경 제안 검토 가능</li>
+                    <li><strong>보안·안정성 요건 → RHEL 강점 부합</strong>: OWASP, 시큐어코딩, 공공 정보보안 기술지침 준수, 99.5% 가용성 요구 등 엔터프라이즈 OS 수준의 보안 패치·기술지원 필요성 존재</li>
+                    <li><strong>형상관리(Git) 명시</strong>: PMR-005에서 Git 기반 형상관리 명시 — Quay(컨테이너 레지스트리) 또는 OpenShift GitOps 연계 제안 여지 있음</li>
+                    <li><strong>RFP 내 Red Hat 제품명·수량 명시 없음</strong>: RFP 전문에 Red Hat 또는 동의어(RHEL, OCP, Ansible 등)로 직접 명시된 제품·수량은 없음 — 파트너사를 통한 SI 납품 구조로 영업 접근 필요</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

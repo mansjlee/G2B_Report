@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00271085 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>인천광역시 연수구_AI·GPR 활용 스마트 지반조사 체계 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>Linux OS 미지정 서버 구축 포함</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>인천광역시 연수구의 도심지 지반침하(싱크홀) 사고 예방을 위한 지능형 지하안전 관리체계 구축 사업</li>
+                        <li>3D GPR(지표투과레이더) 및 AI 자동분석 기술 도입을 통한 탐사 정밀도 향상 및 효율성 극대화</li>
+                        <li>연수구 자체 지반조사 장비·시스템 확보를 통한 상시 점검 체계 구축 및 지하정보 통합 관리 역량 강화</li>
+                        <li>탐사 장비, AI 분석 시스템, GIS 기반 관리 체계를 연계한 현장 중심의 지능형 지반조사 체계 마련</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 780,000천원 (7억 8천만원)</li>
+                        <li><strong>사업 기간</strong>: 착수일로부터 6개월</li>
+                        <li><strong>사업 범위</strong>:
+                            <ul>
+                                <li>차량형 광대역 3D GPR 탐사장비(일체형) 개발 및 제작</li>
+                                <li>AI 기반 데이터 자동분석 프로그램 개발 및 GPU 서버 구축</li>
+                                <li>GIS 연계 지하정보 통합관리 플랫폼 구축</li>
+                                <li>인천광역시 연수구 관내 주요 도로 대상 현장 실증 및 운영 교육</li>
+                            </ul>
+                        </li>
+                        <li><strong>추진 방법</strong>: 제한경쟁입찰 (협상에 의한 계약), 공동수급 허용(분담이행 방식, 엔지니어링 60% / 차량제작 10% / SW개발 30%)</li>
+                        <li><strong>주요 일정</strong>: 착수보고(M) → 요구사항 분석 및 설계(M~M+1) → GPR 장비 개발·제작(M~M+3) → AI 분석 프로그램 및 서버 구축(M+1~M+4) → GIS 통합관리 시스템 구축(M+1~M+4) → 현장 실증 및 성능 검증(M+3~M+5) → 시스템 오픈/안정화(M+5)</li>
+                        <li><strong>하자보수</strong>: 최종 검수 완료 후 12개월</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>수요 기관</strong>: 인천광역시 연수구</li>
+                        <li><strong>담당 부서</strong>: 스마트혁신과 공간지반정보팀</li>
+                        <li><strong>담당자 성명</strong>: 성재학 주무관</li>
+                        <li><strong>연락처</strong>: 032-749-7323</li>
+                        <li><strong>이메일</strong>: wogkrdl216@korea.kr</li>
+                        <li><strong>소재지</strong>: 인천광역시 연수구 연구단지로 14, 연수구 제2청사</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>시스템 장비구성 요구사항(ECR)</strong>:
+                            <ul>
+                                <li>차량형 광대역 3D GPR 탐사장비: 20채널 이상, 탐사폭 1.7~1.8m, RTK 내장 GPS, FHD급 4채널 카메라, 1,000pixel 이상 라인스캔 카메라 등 일체형 구성</li>
+                                <li>AI 분석 서버 및 운영환경: GPU 자원 활용 AI 연산 서버 구축, AI 자동분석·GIS 시각화·데이터 저장·사용자 서비스 통합 운영, 확장형 구조 요구</li>
+                            </ul>
+                        </li>
+                        <li><strong>기능 요구사항(SFR)</strong>: 차량형 GPR 탐사 기능, 탐사데이터 취득 및 동기화, AI 기반 공동 자동탐지·분석, GIS 기반 통합관리 시스템, 지도 기반 시각화 및 중첩조회, 조사이력·통계·보고서 기능, 관리자 운영관리 기능</li>
+                        <li><strong>성능 요구사항(PER)</strong>: 지하 2m 이상 심도 공동 정밀탐지, 2D AI 모델 Recall 0.95 이상·Precision 0.85 이상, 3D AI 모델 Recall 0.90 이상·Precision 0.85 이상</li>
+                        <li><strong>인터페이스 요구사항(SIR)</strong>: GPS·라인스캔·주변영상카메라·GPR 센서 간 연계, GIS 및 외부 지하시설물 정보 연계, 인천시 도로굴착복구시스템·지하안전정보시스템 연계</li>
+                        <li><strong>데이터 요구사항(DAR)</strong>: GPR·GPS·영상데이터 수집·관리, AI 학습데이터셋 구축(공동 라벨링, 학습/검증 분리), 데이터 표준·메타데이터 관리, 백업 및 복구 체계</li>
+                        <li><strong>통합발주/구매 명시 S/W</strong>: RFP 내 별도 통합발주 또는 상용 S/W 품목 목록이 명시되지 않음. 본 사업은 장비 제작·AI 프로그램 개발·GIS 플랫폼 개발 중심의 복합 개발 용역으로, 제안사가 필요 S/W 비용을 부담하도록 규정함.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>상용 S/W 납품 품목 미명시</strong>: RFP 및 기술적용계획표 내 통합발주 또는 구매 목록으로 명시된 상용 S/W 품목이 없음. 필요한 소프트웨어 비용은 제안사 부담으로 규정되어 있어 Red Hat 상용 제품의 별도 납품·구독 기회가 직접 명시되지 않음.</li>
+                        <li><strong>Red Hat 상용 제품명 전혀 미명시</strong>: RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 RFP 전체에 걸쳐 단 한 차례도 언급되지 않음.</li>
+                        <li><strong>경쟁·대체 제품 확정 없음</strong>: Ubuntu, VMware, Oracle Linux, Rocky Linux 등 경쟁 제품도 명시되지 않아 직접적인 배제 요소는 없으나, 반대로 RH 제품이 유리하게 지정된 조건도 없음.</li>
+                        <li><strong>GIS 및 AI 프레임워크 중심 개발</strong>: 사업의 핵심이 GPR 장비 제작, AI 딥러닝 모델 개발(Python 기반 추정), GIS 플랫폼 구축으로, Red Hat 제품과의 직접적 연관성이 낮음.</li>
+                        <li><strong>중소기업 제한</strong>: 본 사업은 중소기업 참여 제한 조건이 있으며, 공동수급(분담이행) 방식으로 엔지니어링사업자(토질·지질), 차량제작업체, SW사업자 컨소시엄 형태로 진행됨. Red Hat이 직접 입찰하기 어려운 구조.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>AI 분석 서버 OS 미지정 — RHEL 제안 가능</strong>: ECR-003에서 GPU 서버 및 AI 자동분석 운영 서버 구축이 명시되어 있으며, 기술적용계획표에 서버용 운영체제로 'Linux'가 적용 가능 항목으로 포함됨. 특정 Linux 배포판이 지정되지 않아 RHEL 제안 여지 존재.</li>
+                        <li><strong>서버 기반 플랫폼 구축 — OpenShift/컨테이너 제안 여지</strong>: AI 자동분석·GIS 시각화·데이터 저장·사용자 서비스를 통합 운영하는 서버 인프라 구축이 요구되며, 확장형 구조(ECR-003) 및 향후 모델 고도화 대비 요건이 있어 컨테이너 플랫폼(OpenShift) 제안 가능성 존재.</li>
+                        <li><strong>인프라 자동화 — Ansible 제안 여지</strong>: AI 학습 데이터 지속 수집, 모델 고도화, 서버 환경 관리 자동화 요건(DAR-002, ECR-003)이 있어 Ansible Automation Platform 적용 검토 가능.</li>
+                        <li><strong>RFP 내 Red Hat(동의어) 제품명·수량 명시</strong>: 없음 — RFP 전문에 걸쳐 Red Hat 상용 제품명 또는 동의어(RHEL, OpenShift, Ansible, JBoss 등)가 품목으로 명시된 사례 없음.</li>
+                        <li><strong>개방형 기술 적용 원칙</strong>: COR-001에서 "특정 기술에 종속되지 않는 개방형 기술로 구현"을 원칙으로 명시하고 있어, 개방형 엔터프라이즈 Linux인 RHEL이 기술적 요건에 부합할 수 있음.</li>
+                        <li><strong>영업 전략 제안</strong>: 수주 SI 파트너(SW개발 분야 참여사)를 통해 RHEL 서버 OS, Ansible 자동화, 컨테이너 기반 AI 서빙 플랫폼(OpenShift) 등을 간접 제안하는 채널 영업 접근이 현실적.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
