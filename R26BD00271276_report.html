@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00271276 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국은행_통합 업무정보관리 시스템(ECM) 구축 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>RHEL 품목 명시(ECR-010)</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>한국은행이 현재 사용 중인 MS SharePoint 기반 Digiworks 플랫폼을 고도화·대체하는 통합 업무정보관리 시스템(ECM, Enterprise Content Management) 구축 사업</li>
+                    <li>비정형 데이터(문서·영상·이미지 등)의 체계적 보안등급 부여, 메타데이터 관리, 유통 통제 등 정보 생애주기 전반을 관리하는 기반 시스템 구축</li>
+                    <li>생성형 AI 학습용 데이터 파이프라인 구성, 부서 간 자료공유 확대, 총무업무 효율화 등 당행 주요 디지털전환 사업을 다층적으로 지원하는 것이 핵심 목적</li>
+                    <li>쿠버네티스 기반 On-Premise 환경으로 구축하며, 향후 클라우드 전환 용이성(cloud-agnostic) 확보</li>
+                    <li>기존 결재시스템(BOIS), SSO, ElasticSearch, AI 저장소 등 기존 시스템과의 연계 포함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: ￦6,295,340,000 이내 (VAT 포함)</li>
+                    <li><strong>사업 기간</strong>: 계약체결일로부터 10개월 이내 (안정화 기간 최소 2개월 포함)</li>
+                    <li><strong>사업 범위</strong>: ECM 솔루션 도입 및 추가개발, 서버·스토리지·네트워크 장비 일체 통합발주(H/W·S/W·N/W 포함), On-Premise 설치, 기존 시스템 연계, 데이터 이관, 교육 및 기술이전</li>
+                    <li><strong>계약 방법</strong>: 제한경쟁 총액입찰(협상에 의한 계약) — 전년도 매출액 8천억원 이상 대기업 참여 불가</li>
+                    <li><strong>입찰 참가 자격</strong>: 최근 5년 이내 단일계약 5억원 이상 ECM시스템 구축 주사업자 실적, 또는 정부·공공·금융기관 대상 단일 40억원 이상 정보시스템 구축 실적 보유업체</li>
+                    <li><strong>주요 일정</strong>: 착수보고회(계약일로부터 14일 이내), 최종보고회(계약완료일로부터 14일 이내), 사업수행계획서 제출(계약일로부터 10일 이내)</li>
+                    <li><strong>설치 위치</strong>: 한국은행 주IT센터(경기본부) + DR용 장비는 재해복구센터(대전세종충남본부)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주 부서</strong>: 한국은행 디지털혁신실 업무혁신추진반</li>
+                    <li><strong>담당자 성명</strong>: RFP 내 미기재 (입찰 담당자 문의 필요)</li>
+                    <li><strong>연락처·이메일</strong>: RFP 내 미기재 (한국은행 디지털혁신실로 직접 문의)</li>
+                    <li><strong>비고</strong>: 업무 현황 세부사항 및 스토리지 호환성 등은 입찰 담당자 또는 한국은행 디지털혁신실 방문 열람 필요</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>ECM 메인 솔루션은 쿠버네티스 환경에서 운영(COR-005), Docker 및 CRI-O 멀티 런타임 호환성 보장(ECR-002)</li>
+                            <li>쿠버네티스 외 서버는 VMware 가상화 환경 우선 구성(ECR-002, ECR-012)</li>
+                            <li>전직원 3,000명 동시접속 기준 파일 접속 평균 3초·최대 10초 이내 성능 보장(PER-002)</li>
+                            <li>ElasticSearch와 연계한 전문검색 기능(커넥터/API 개발 포함)(SFR-014)</li>
+                            <li>한국은행 내부AI 시스템 연계 및 AI학습용 문서 변환·송신 자동화(SFR-017)</li>
+                            <li>통합로그인(SSO) 및 기존 결재시스템(BOIS), BOIS 메일 등과의 연계(INR-001, INR-004)</li>
+                            <li>파일 보안등급(C/S/O) 기반 유통통제·클립보드통제·화면캡처통제·출력물 관리(SFR-009~012)</li>
+                            <li>메타데이터 관리체계, 개인정보 탐지·암호화(ARIA-256, SEED, AES-256)(SFR-015~016)</li>
+                            <li>On-Premise 설치, 영구 라이선스 제공 원칙(COR-004, COR-010)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[통합발주 S/W 목록]</strong>
+                        <ul>
+                            <li><strong>운영체제(ECR-010)</strong>: Red Hat Enterprise Server — 필요수량</li>
+                            <li><strong>가상화 SW(ECR-012)</strong>: VMware vSphere Foundation (VMware vCenter Server Standard 포함) — 필요수량</li>
+                            <li><strong>SSO(ECR-013)</strong>: 한컴SSO — WAS당 1본(필요수량)</li>
+                            <li><strong>서버보안(ECR-013)</strong>: Secuve TOS Agent — 필요수량</li>
+                            <li><strong>종합통제(ECR-013)</strong>: DX Unified Infrastructure Management Agent — 필요수량</li>
+                            <li><strong>K8s 백업(ECR-013)</strong>: Commvault Agent 및 Manager — 필요수량(최소 쿠버네티스 환경 백업용 이상)</li>
+                            <li><strong>운영 스토리지(ECR-006)</strong>: NetApp AFF C30 동등 이상(NVMe All-Flash, Snapshot·SnapMirror·SnapVault 라이선스 포함) — 2식(active-standby)</li>
+                            <li><strong>백업용 스토리지(ECR-006)</strong>: NetApp FAS8300 증설(NetApp DS460C) — 각 1식(주IT센터·재해복구센터), 총 2식</li>
+                            <li><strong>WAS(ECR-011)</strong>: 제안사 선택(기존 시스템과 호환 가능한 WAS — 필요수량)</li>
+                            <li><strong>DBMS(ECR-011)</strong>: Oracle Exadata 12c(기존 디지털혁신실 자원 활용 예정 — 별도 도입 가능)</li>
+                            <li><strong>ECM 솔루션</strong>: 제안사 선택(영구 라이선스, 3,000명 이상)</li>
+                            <li><strong>발주사 직접구매 SW(ECR-013)</strong>: 서버 성능모니터링, 통합로그관리, VM백업 SW (본 사업 통합발주 제외)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>[가상화 SW 경쟁 제품 명시]</strong>: ECR-012에서 "VMware vSphere Foundation (VMware vCenter Server Standard 포함)"이 가상화 소프트웨어로 명시·지정됨. Red Hat Virtualization(RHEV) 또는 OpenShift Virtualization으로 대체 제안 가능성 낮음</li>
+                    <li><strong>[DBMS 경쟁 제품 명시]</strong>: ECR-011에서 Oracle Exadata 12c(Active-Active)가 기존 DBMS로 지정되어 있으며, 기존 자원 활용 예정. Red Hat Data Grid 등 DB 레이어 제안 여지 제한적</li>
+                    <li><strong>[쿠버네티스 환경의 특수성]</strong>: 현재 디지털혁신실 운영 중인 쿠버네티스 환경을 확장하는 형태로 구성해야 하므로, 신규 OpenShift 플랫폼 독립 도입보다는 기존 환경에 종속된 구성이 요구됨</li>
+                    <li><strong>[통합발주 구조]</strong>: SI 통합사업자가 H/W·S/W 일체 납품 책임 — Red Hat이 직접 입찰하기보다 SI 협력사를 통한 제안 필요</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[RHEL 품목 명시 — 높음 판정 근거]</strong>: ECR-010(운영체제 요건)에 "리눅스 — Red Hat Enterprise Server, 수량: 필요수량"이 도입 품목으로 명시됨. 상용 RHEL 라이선스 납품이 사실상 확정된 사업임. 영구 라이선스 제공 원칙(COR-010)에 따라 영구 라이선스 또는 다년 구독 형태 제안 가능</li>
+                    <li><strong>[RHEL 수량]</strong>: ECM 메인 서버 3대 이상(쿠버네티스 워커노드), 개발서버 2대 이상, 기타 서버(필요수량) 등 전체 서버에 RHEL 적용 예상. 마스터 노드(VMware 환경 가능)에도 Linux OS 필요</li>
+                    <li><strong>[OpenShift 제안 여지]</strong>: COR-005 및 ECR-002에서 쿠버네티스 환경 운영이 의무화되어 있으며, CNCF 표준 규격 지원 환경 구성 요구. CRI-O 런타임 전환 예정(ECR-002)으로 OpenShift와의 기술적 정합성 높음. 단, 기존 디지털혁신실 쿠버네티스 환경 확장 형태로 제안해야 하므로 별도 OCP 독립 구성보다는 기존 환경 호환 강조 필요</li>
+                    <li><strong>[Ansible 제안 여지]</strong>: 다수 서버 환경 구성 자동화, VMware·K8s 환경 통합 관리, 보안패치 자동화 등 인프라 자동화 수요 존재. Ansible Automation Platform 도입 제안 가능</li>
+                    <li><strong>[JBoss EAP 제안 여지]</strong>: ECR-011에서 WAS는 제안사가 선택하도록 되어 있어 JBoss EAP 제안 가능. 단, 기존 한국은행 환경과 호환성 확인 필요</li>
+                    <li><strong>[기술 스택 적합성]</strong>: CRI-O 런타임 전환 계획, 전자정부 표준프레임워크(Java/JSP 기반), CNCF 표준 쿠버네티스 환경 요구 등은 Red Hat 기술 스택(RHEL + OpenShift + Ansible)과 높은 정합성을 가짐</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
