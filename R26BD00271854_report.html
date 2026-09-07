@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00271854 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>충남테크노파크_AIOps 서비스 인프라 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>중간<br>OS 미지정·컨테이너·K8s 제안여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>충청남도 지역 주도형 AI 대전환 사업의 일환으로, 충남지역 제조 중소기업이 제조·업무데이터를 활용하여 별도의 코딩 없이 AI 모델을 개발·학습·평가·배포·추론·운영할 수 있는 <strong>노코드 기반 제조 AIOps 서비스 환경 구축</strong></li>
+                    <li>고성능 GPU 및 AI 학습 인프라 확보가 어려운 중소 제조기업을 위한 공용 AIOps 플랫폼 제공</li>
+                    <li>MLOps 모델 거버넌스 체계 구축 및 컨테이너·쿠버네티스 기반의 안정적 AI 운영환경 조성</li>
+                    <li>제조 AI 프리셋 및 R&D 참조모델 개발, 충남TP 테스트베드 고도화를 통한 지역 제조기업의 AI 활용 역량 강화</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 2,950,000,000원 (부가가치세 포함) / 1차년도: 1,400,000,000원 · 2차년도: 1,550,000,000원</li>
+                    <li><strong>사업 기간</strong>: 계약 체결일로부터 1차년도 60일 이내 완료, 2차년도 1차년도 완료일 다음날부터 270일 이내 완료 (총 약 13개월)</li>
+                    <li><strong>사업 범위</strong>: ① 노코드 기반 AIOps 플랫폼 구축 ② 제조 AI 프리셋 3종 및 R&D 참조모델 3종 개발 ③ 충남TP 테스트베드 제조 AI 운영환경 조성 ④ R&D 지원 인프라 및 수요기업 지원환경 구축 ⑤ 교육·운영 이관</li>
+                    <li><strong>주요 일정</strong>: 착수(M1) → 요구사항 분석(M1~M2) → 플랫폼 구축·AI 모델 개발(M2~M9) → 단위/통합 테스트(M9~M11) → 교육 및 시범운영(M11~M12) → 사업 검수 및 안정화(M12~M13)</li>
+                    <li><strong>입찰 방식</strong>: 제한 경쟁 입찰 / 협상에 의한 계약 / SW 분리발주 미적용 / 대기업 참여 제한 / 기술능력평가 90% + 가격평가 10%</li>
+                    <li><strong>주관기관</strong>: (재)충남테크노파크</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>소속</strong>: 디지털혁신단 제조혁신센터</li>
+                    <li><strong>구분</strong>: 계약담당 / 사업담당</li>
+                    <li><strong>성명</strong>: 차은배</li>
+                    <li><strong>연락처</strong>: 041-336-9004</li>
+                    <li><strong>이메일</strong>: chaeunbae@ctp.or.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>컨테이너 및 쿠버네티스 기반 실행환경 구성 (ECR-002, ECR-003): 발주기관 제공 인프라에 컨테이너·K8s 기반 배포·운영환경 구축</li>
+                            <li>GPU 자원관리 환경 구성 (ECR-005): CPU·GPU·메모리·스토리지를 워크스페이스·프로젝트 단위로 할당·세분화 관리</li>
+                            <li>OPC UA 기반 설비·공정 데이터 주기 수집 (SFR-007)</li>
+                            <li>AAS(Asset Administration Shell) 기반 제조 자산정보 관리 (SFR-010)</li>
+                            <li>노코드 AI 모델 개발·학습·평가·배포·추론·운영 통합 플랫폼 구축</li>
+                            <li>MLOps 모델 거버넌스 체계 (등록·버전관리·승인·배포·운영이력 관리)</li>
+                            <li>자연어 기반 AI 결과 조회 챗봇 기능 (SFR-025)</li>
+                            <li>테스트베드 리트로핏·데이터 연계 및 통합 시연 환경 구축</li>
+                        </ul>
+                    </li>
+                    <li><strong>[RFP 명시 구매 S/W]</strong>: 본 RFP는 SW 분리발주 미적용 사업으로, 조달쇼핑몰 직접구매 또는 통합발주 형태의 특정 상용 S/W 품목이 별도로 명시되지 않음. 수행사가 플랫폼 구축에 사용하는 상용·오픈소스·자체개발 소프트웨어는 구성정보 관리 대상(명칭·버전·라이선스 문서화)으로만 규정됨 (ECR-001)</li>
+                    <li><strong>[제조 AI 프리셋 3종 및 R&D 참조모델 3종]</strong> 개발 납품 요구 (경영·영업 및 진동분석 등 참조모델, 제조 AI 프리셋)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 구매 품목 미포함</strong>: SW 분리발주 미적용 사업으로, RFP·과업지시서·구매목록 어디에도 Red Hat 상용 제품(RHEL, OpenShift, Ansible 등)이 구매 품목으로 명시되지 않음 → 높음 판정 불가</li>
+                    <li><strong>기존 인프라 활용 조건</strong>: 발주기관(충남TP)이 제공하는 기보유 서버·네트워크·스토리지·AI 인프라를 활용하도록 명시되어, 신규 인프라 OS·플랫폼 구매 범위가 제한적</li>
+                    <li><strong>순수 소프트웨어 개발 사업 성격</strong>: 본 사업은 노코드 AIOps 플랫폼 소프트웨어를 설계·구축·납품하는 SI 사업으로, 상용 SW 라이선스 납품보다 플랫폼 개발·구현이 주 목적</li>
+                    <li><strong>경쟁 제품 명시 없음</strong>: Ubuntu, Rocky Linux, VMware 등 경쟁 제품이 명시된 바 없으나, 특정 Red Hat 상용 제품도 명시되지 않음</li>
+                    <li><strong>대기업 참여 제한</strong>: 중소기업 참여 제한 사업으로 Red Hat Korea 직접 입찰 불가, SI 파트너를 통한 간접 공급 구조</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>컨테이너·쿠버네티스 기반 환경 필수 요구 → OpenShift 제안 가능</strong>: ECR-002(컨테이너 기반 실행환경), ECR-003(쿠버네티스 기반 배포환경)이 핵심 요구사항으로 명시. OpenShift Container Platform(OCP)이 최적 솔루션으로 제안 가능</li>
+                    <li><strong>OS 미지정 → RHEL 제안 가능</strong>: 운영체제(OS)가 특정 제품으로 명시되지 않아 RHEL(Red Hat Enterprise Linux) 제안 여지 존재</li>
+                    <li><strong>AI 인프라·GPU 자원관리 → OpenShift AI 제안 가능</strong>: ECR-005, SFR-005에서 GPU 연산자원·메모리 세분화 할당, 쿠버네티스 기반 AI 워크로드 관리가 요구되어 OpenShift AI(RHOAI) 제안 적합</li>
+                    <li><strong>MLOps 플랫폼 구축 → Red Hat OpenShift AI 강점 일치</strong>: 모델 개발·학습·평가·배포·서빙 전 주기 관리(MLOps) 요구사항이 OpenShift AI의 핵심 기능과 직접 연계</li>
+                    <li><strong>인프라 자동화·운영 → Ansible Automation Platform 제안 가능</strong>: 다수 참여기업 워크스페이스·프로젝트 환경 구성 자동화, 컨테이너·K8s 운영 자동화 수요에 Ansible 제안 여지</li>
+                    <li><strong>RFP 내 Red Hat(동의어 포함) 제품명 명시 현황</strong>: 없음 (RFP 전문에 RHEL, OpenShift, Ansible, JBoss 등 Red Hat 상용 제품명 직접 기재 없음)</li>
+                    <li><strong>파트너 영업 전략</strong>: 본 사업에 참여하는 중소 SI 사업자(수행사) 대상으로 OpenShift·RHEL·OpenShift AI를 플랫폼 구축 기반으로 제안하는 파트너 동반 영업 기회 존재</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

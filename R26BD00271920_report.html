@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00271920 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>교육부_국립대학 통합기록관리시스템 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>Rocky·Oracle Linux OS 확정, RH 상용품 미포함</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>「공공기록물법」 시행령 개정('20.3.)에 따라 공공기관 기록관리시스템 구축이 의무화됨에 따라, 기록관리시스템이 미구축된 국립대학(21개교 포함 총 36개교)을 대상으로 클라우드 기반 통합기록관리시스템을 구축</li>
+                    <li>코러스(KORUS) 업무관리와 연계하여 기록물 생산부터 영구보존까지 생애주기 관리 환경을 일원화하고, 기존 전자기록물(약 62백만건, 53TB)의 안전한 이관 및 보존 체계 마련</li>
+                    <li>검색엔진 기반 통합검색 서비스, 전자기록물 보안 강화, 대내외 서비스 확대를 통해 기록관리 업무 효율성 극대화</li>
+                    <li>36개 대학 개별 구축 대비 약 30% 비용 절감 효과를 목표로 하는 통합 클라우드 인프라 구성</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 8,865,000,000원 (팔십팔억육천오백만원, 부가가치세 포함)</li>
+                    <li><strong>사업 기간</strong>: 계약일로부터 550일(18개월) 이내</li>
+                    <li><strong>사업 범위</strong>: ① 국립대학 통합기록관리시스템 기능 개발(RAMP 모듈 기반) ② 클라우드 기반 인프라 구축(HCI 서버 10식, 스토리지 650TB 이상) ③ 코러스(KORUS) 업무관리 연계 개발 ④ 기존 전자기록물 데이터 전환(약 62백만건, 53TB) ⑤ 유관시스템 연계(SSO, 국가기록원 전자서명 장기검증시스템 등) ⑥ 시스템 교육 및 안정화 지원 / 발주기관: 교육부 / 입찰방법: 제한경쟁입찰(협상에 의한 계약)</li>
+                    <li><strong>주요 일정</strong>: M(착수보고) → M+3(요구사항 감리) → M+8(설계 감리) → M+11(중간보고) → M+16(종료 감리) → M+17(완료보고) ※ 응용SW 개발(분석→설계→개발→테스트), 데이터 마이그레이션, 인프라·상용SW 도입이 병행 추진</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>사업 책임자</strong>: 교육부 사업추진TF팀 팀장 유재상 / ☎ 044-203-6116</li>
+                    <li><strong>사업 실무자</strong>: 교육부 사업추진TF팀 선임행정관 오창기 / ☎ 044-203-6982</li>
+                    <li><strong>문의처(제안 관련)</strong>: 교육부 사업추진TF팀 오창기 (☎ 044-203-6982) — 질의는 제안서 제출 마감일 전날까지 서면 또는 이메일로 가능</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술·비즈니스 요구사항]</strong>
+                        <ul>
+                            <li>국가기록원 RAMP 모듈 기반 기록관리시스템 기능 개발(인수·등록, 기준관리, 보존, 검색, 평가, 통계, 시스템관리 등 37개 기능요구사항)</li>
+                            <li>HCI(하이퍼컨버지드) 기반 클라우드 인프라 구축: 서버 10식(CPU 16Core×2/노드, Memory 384GB, SSD 7.68TB×4, HDD 20TB×8), 스토리지 650TB 이상, 네트워크(L3스위치) 2식, 방화벽 2식</li>
+                            <li>DBMS: Oracle 19c 이상 / Multi-tenant, Active-Active 이중화 / 500 NUP 이상 구성</li>
+                            <li>서버 OS: Linux OS – Rocky 8버전 이상, DBMS OS – Oracle Linux 8버전 이상</li>
+                            <li>WAS: 오픈소스 기반 WildFly 사용, 형상관리: 오픈소스 Git/SVN</li>
+                            <li>코러스(KORUS) 업무관리와의 논리적 이관 연계, 단위과제 연계, 기록관리기준표 연동 구현</li>
+                            <li>검색엔진 기반 통합검색 서비스(발주기관 제공 정보검색 소프트웨어 활용)</li>
+                            <li>보안: 시큐어코딩, CC인증 보안제품 적용, 소스코드 취약점 진단, 모의해킹, 개인정보보호 적용</li>
+                            <li>동시접속 6만명 이상 처리 / 응답시간 3초 이내 / Active-Active 이중화 구성</li>
+                        </ul>
+                    </li>
+                    <li><strong>[직접구매(통합발주) 상용 S/W 품목 — 발주기관이 직접 구매하는 항목]</strong>
+                        <ul>
+                            <li>정보검색 소프트웨어: 20식</li>
+                            <li>파일 전송 소프트웨어: 2식</li>
+                            <li>문서 변환 소프트웨어: 18식</li>
+                            <li>콘텐츠 악성코드 차단 소프트웨어: 2식</li>
+                            <li>전자문서상태검증 소프트웨어: 1식</li>
+                        </ul>
+                    </li>
+                    <li><strong>[통합발주 제외(사업자 조달) 주요 S/W — 코러스 환경 호환성 이유로 제품 고정]</strong>
+                        <ul>
+                            <li>시스템 접근제어 소프트웨어: Secuve TOS 1식</li>
+                            <li>시스템 관리 소프트웨어: 애플망고 1식</li>
+                            <li>보안 취약점 진단 소프트웨어: SolidStep CCE4.0 1식</li>
+                            <li>통합로그 관리 소프트웨어: eysCloudSIM 2.5 1식</li>
+                            <li>서버 백신 소프트웨어: Ahnlab V3 1식</li>
+                            <li>계정·패스워드 관리 소프트웨어: HI-TAM 1식</li>
+                            <li>DB암호화 소프트웨어: D'Amo v5.0 1식</li>
+                            <li>DB접근제어 소프트웨어: DB-i v6.1 1식</li>
+                            <li>웹어플리케이션서버: WildFly(오픈소스) 2식</li>
+                            <li>서버용 OS(Linux): Rocky 8 이상(오픈소스) 2식</li>
+                            <li>서버용 OS(DBMS): Oracle Linux 8 이상 2식</li>
+                            <li>데이터베이스 관리 소프트웨어: Oracle 19c 호환 2식</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>경쟁·커뮤니티 OS 확정</strong>: 서버 Linux OS로 Rocky OS 8버전 이상(오픈소스 커뮤니티 배포판)이 명시적으로 지정되어 있으며, DBMS OS로는 Oracle Linux 8버전 이상(Red Hat의 직접 경쟁 제품)이 확정 지정됨 — RHEL 제안 여지 없음</li>
+                    <li><strong>WildFly(커뮤니티 WAS) 명시</strong>: WAS로 오픈소스 WildFly가 명시 지정(SW 직접구매 제외 사유: 오픈소스). JBoss EAP 등 Red Hat 상용 WAS 제품 도입 여지 없음</li>
+                    <li><strong>Oracle DBMS 종속 환경</strong>: 코러스(KORUS) 기존 환경인 Oracle 19c 멀티테넌트와의 100% 호환을 요구하며, DB암호화(D'Amo), DB접근제어(DB-i) 등도 Oracle 환경에 종속된 제품으로 고정됨</li>
+                    <li><strong>코러스 기존 보안 솔루션 전제품 고정</strong>: 시스템 접근제어(Secuve TOS), 시스템 관리(애플망고), 취약점진단(SolidStep), 로그관리(eysCloudSIM), 백신(AhnLab V3), 계정관리(HI-TAM), DB암호화(D'Amo), DB접근제어(DB-i) 등 모두 기존 코러스 환경과 동일 제품 증설로 확정되어 Red Hat 보안 솔루션 진입 불가</li>
+                    <li><strong>Red Hat 상용 제품 구매 품목 전무</strong>: RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품이 직접구매 목록 또는 통합발주 품목 어디에도 명시되지 않음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>HCI 하이퍼바이저 인증 요건에 Red Hat 언급</strong>: ECR-004에서 HCI 가상화 소프트웨어(하이퍼바이저)가 "Red Hat CertifiedHypervisor" 프로그램에 등재된 제품이어야 한다고 명시 — HCI 벤더 선택 시 Red Hat 인증 하이퍼바이저 활용 가능성 존재 (단, 제품 구매가 아닌 인증 요건)</li>
+                    <li><strong>RHEV 지원 요건 명시</strong>: ECR-004 기술지원 항목에 "다양한 가상화 SW(RHEV, VMware, Xen, KVM 등)에 대한 원활한 기술 지원을 보장해야 함"이라고 명시 — RHEV(Red Hat Enterprise Virtualization)가 지원 대상으로 포함되어 있어 인프라 벤더와 협력 시 간접 언급 가능</li>
+                    <li><strong>Rocky Linux → RHEL 전환 제안 여지 (중장기)</strong>: Rocky Linux는 RHEL 호환 커뮤니티 배포판으로, 향후 사업 유지·운영 단계에서 상용 지원이 필요한 경우 RHEL로의 전환을 제안할 수 있는 간접적 여지 있음 (단, 본 사업 RFP 내에서는 확정 불가)</li>
+                    <li><strong>클라우드·컨테이너 아키텍처 요구</strong>: 클라우드 기반 인프라, 가상머신 기반 마이크로서비스 구조 요구로 중장기적으로 OpenShift 등 컨테이너 플랫폼 제안 여지가 있으나 현 RFP에서는 해당 제품 구매 항목 없음</li>
+                    <li><strong>RFP에 명시된 Red Hat(동의어 포함) 상용 제품명·수량</strong>: 없음 — RHEV, Red Hat CertifiedHypervisor는 기술 요건 참조로만 언급되었으며 구매·납품 품목으로 명시된 사례 없음</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
