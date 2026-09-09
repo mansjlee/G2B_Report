@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00273043 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>서울대학교병원 강남센터 - 콜센터 서비스 계약 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>콜센터 전용솔루션, RH 기술 스택 무관</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>서울대학교병원 강남센터의 노후화된 콜센터 인프라를 클라우드 기반(가산IDC BESTCloud + GFC)으로 재구축하여 보안성 및 운영 안정성 확보</li>
+                    <li>All-IP 기반 콜센터 시스템(IP-PBX, CTI, IVR 등) 임대 서비스를 통해 고객 응대 품질 향상 및 업무 연속성 보장</li>
+                    <li>HIS(병원정보시스템) 등 유관 시스템과의 연계를 통해 상담 업무 효율성 및 생산성 향상</li>
+                    <li>전용회선 추가 설치로 음성·데이터 분리 및 전용 방화벽 구축을 통한 네트워크 보안 강화</li>
+                    <li>TTS, 녹취, 양방향 문자서비스, ACS해피콜, 카카오 메시지 등 부가 서비스 도입으로 고객 만족도 향상</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 총 971,816,400원(VAT 포함) / 연 323,938,800원(VAT 포함), 장기계속계약(3년)</li>
+                    <li><strong>사업 기간</strong>: 3년 (2026년 11월 20일 ~ 2029년 11월 19일, 발주기관 사정에 따라 변경 가능)</li>
+                    <li><strong>사업 범위</strong>: ① 콜센터 시스템 및 관련 장비 임대 서비스(IPCC), ② 회선 서비스(기업용 인터넷·전용회선·인터넷전화 42회선·전국대표번호), ③ 전화사용료(시내/시외/이동/팩스/문자(SMS·LMS·MMS)·알림톡 등), ④ HIS 등 유관 시스템 연계 개발, ⑤ 보안장비(UTM방화벽) 임대</li>
+                    <li><strong>주요 일정</strong>: 계약 후 M+1개월 연동개발 착수 → M+2~3개월 시스템·회선 구축 → M+3~4개월 테스트 및 안정화 → M+4개월 서비스 오픈 목표. 계약 후 15일 이내 수행계획서 제출 및 착수 완료 필요</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>계약담당자</strong>: 서울대학교병원 재무회계과 김우정, Tel: 02-2072-2756</li>
+                    <li><strong>업무담당자</strong>: 서울대학교병원 강남센터 이무영, Tel: 02-2112-5581</li>
+                    <li><strong>발주기관</strong>: 서울대학교병원 (행정팀 사업 총괄)</li>
+                    <li><strong>제안서 평가 장소</strong>: 서울대학교병원 강남센터 39층 대회의실 (일자 추후 별도 통보)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>All-IP 기반 콜센터 솔루션: IP-PBX, CTI, IVR은 반드시 동일 회사 제품이어야 하며, SIP 방식 지원, TTA Verified Ver.4 인증 필수</li>
+                            <li>클라우드 이중화 구성: IP-PBX·WEB·WAS·DB·NAS를 GFC와 가산IDC(BESTCloud)에 분리 구축, 가상화 서버(VM)는 전체 이중화</li>
+                            <li>HIS(병원정보시스템) 연계 API 제공 필수 (CTI 연동, ACS해피콜 연동, 양방향 예약확인서비스 연동)</li>
+                            <li>UTM방화벽(CC인증 EAL4 이상) 구성으로 병원망과 외부망으로부터 콜센터 시스템 보호</li>
+                            <li>음성·데이터 전용회선 분리 수용, GFC이너텔(02-2112-5500) 연계 서비스 제공</li>
+                            <li>통합 메시지 서비스(UMS): 가산IDC 구축, TLS/AES128 암호화 적용, 카카오알림톡·친구브랜드메시지·양방향문자 포함</li>
+                            <li>녹취 시스템: IP 기반, 파일 암호화 저장, GFC 대면녹취 시스템과 호환·통합 관리</li>
+                            <li>시큐어코딩 등 SW 개발보안 준수, 보안 취약점 점검(모의해킹 포함) 의무 수행</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매·임대 포함 S/W 및 장비 목록]</strong> (통합발주 기준)
+                        <ul>
+                            <li>IP기반 교환기(IP-PBX) 2식 — OS: Linux 또는 Unix, DBMS: AltiBase(이중화), CPU 4Core 3.4GHz↑, Mem 16GB×2, HDD 1.2TB×2(RAID)</li>
+                            <li>미디어게이트웨이 1식 — PRI/R2/E&M 인터페이스, DID/DOD 1E1</li>
+                            <li>UTM방화벽 2식 — CC인증 EAL4↑, 8Gbps Throughput↑, NIC 8Port↑</li>
+                            <li>L2 스위치 2식 — 24포트, Gigabit Uplink 2포트</li>
+                            <li>L2 PoE 스위치 6식 — 24포트, PoE 전원공급</li>
+                            <li>상담원 IP전화기(IP단말기) 42식</li>
+                            <li>상담원 헤드셋 42식 — QD 규격, 소음차단</li>
+                            <li>서버 마운트용 랙 1식 — 19인치 표준랙 42U</li>
+                            <li>콜센터 임대서비스(IPCC) 기본료 1식 — CTI, IVR, 녹취, TTS, ACS해피콜, 양방향문자, 콜백서비스, 전광판, 상담원·관리자 애플리케이션 포함</li>
+                            <li>보안장비 임대서비스 2식</li>
+                            <li>인터넷전화 42회선, 전국대표번호(1811-6500) 1회선, 기업용인터넷(상하향 500Mbps) 1회선, 전용회선 3회선(기존 2, 신규 1)</li>
+                            <li>발신정보알리미(기업형) 1식</li>
+                            <li>메시지 서비스: SMS 1,168건/LMS/MMS 17,496건/알림톡 39,991건/친구브랜드메시지 354건/양방향문자 1식 (월 단가 기준)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>Red Hat 상용 제품명 전무</strong>: RFP 전문에 걸쳐 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 단 한 건도 명시되어 있지 않음</li>
+                    <li><strong>콜센터 전용 솔루션 중심 사업</strong>: 핵심 시스템이 IP-PBX·CTI·IVR·녹취 등 콜센터 전용 통신 솔루션이며, Red Hat 기술 스택(컨테이너/K8s/자동화/PaaS)과 무관한 도메인</li>
+                    <li><strong>임대(서비스) 계약 구조</strong>: 하드웨어·소프트웨어 모두 '임대 서비스' 형태로 공급되어 OS·미들웨어 라이선스 선택권이 사실상 서비스 제공 사업자에게 귀속됨. Red Hat이 직접 SW 구독 납품하는 구조가 아님</li>
+                    <li><strong>DBMS 경쟁 제품 명시</strong>: IP-PBX 서버 DBMS로 AltiBase(이중화)가 구체적으로 명시되어 있어 Red Hat Data Grid 등 제안 불가</li>
+                    <li><strong>컨테이너·자동화·PaaS 요구사항 없음</strong>: OpenShift, Ansible Automation Platform, Quay 등 Red Hat 핵심 제품을 적용할 수 있는 기술적 요구사항(K8s, 컨테이너화, 인프라 자동화 등)이 RFP에 전혀 없음</li>
+                    <li><strong>중소기업 직접생산 의무</strong>: 입찰참가자격에 '정보인프라구축서비스(8111179901)' 직접생산확인증명서 보유 중소기업으로 제한되어 있어 대기업 참여 불가 (SW사업 20억 미만)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>IP-PBX 서버 OS 미지정</strong>: 규격-01에서 IP기반 교환기(2식)의 OS를 "Linux 또는 Unix"로만 명시하고 특정 배포판을 지정하지 않음. 이론적으로 RHEL 제안 여지가 있으나, 임대 서비스 구조상 실제 납품 기회로 연결되기 어려움</li>
+                    <li><strong>가상화 서버(VM) 이중화 구성 요구</strong>: 가산IDC(BESTCloud)에 구성되는 VM을 전체 이중화로 구성해야 함. RHEL의 고가용성(HA) 기능 및 가상화 안정성을 어필할 수 있는 여지가 있으나, VM 플랫폼 선택권이 서비스 사업자에게 있어 실질적 기회는 제한적</li>
+                    <li><strong>보안성 강화 요구</strong>: 시큐어코딩, 접근제어, 암호화, 취약점 점검 등 높은 수준의 보안 요구사항이 다수 포함되어 있음. RHEL의 SELinux 등 내장 보안 기능을 간접적으로 어필할 수 있으나 제안 포인트로서의 실효성은 낮음</li>
+                    <li><strong>향후 인프라 확장 시 전략적 접근 가능</strong>: 3년 장기계속계약 과정에서 병원 IT 인프라 담당자와의 관계 구축을 통해, 향후 병원 본원 또는 강남센터의 별도 인프라 사업(서버 OS, 컨테이너 플랫폼 등)에 대한 파이프라인으로 활용 가능</li>
+                    <li><strong>※ RFP 내 Red Hat(또는 동의어) 제품명·수량 명시 없음</strong>: 본 RFP에는 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 전혀 명시되어 있지 않음</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
