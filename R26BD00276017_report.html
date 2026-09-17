@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00276017 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국립환경과학원_2027년~2029년도 통합환경허가시스템(IEPS) 유지관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>RHEL 상용 OS 8대 라이센스 유지 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국립환경과학원이 운영 중인 <strong>통합환경허가시스템(IEPS)</strong> 및 최적가용기법 기준서 운영 시스템(BREFOS)의 3년간 유지관리 사업</li>
+                    <li>통합환경관리 관련 법령 제·개정에 따른 시스템 변경사항 반영 및 응용 프로그램 기능·성능 유지</li>
+                    <li>상용 소프트웨어 라이센스 유지를 통한 안정적 서비스 제공</li>
+                    <li>Help Desk 운영을 통한 사용자 기술 지원 및 민원 처리</li>
+                    <li>시스템 보안 취약점 점검 및 개인정보보호 체계 유지</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 531,000,000원 (VAT 포함, 연 177,000,000원 × 3년, 추정금액)</li>
+                    <li><strong>사업 기간</strong>: 2027.1.1. ~ 2029.12.31. (3년, 장기계속계약)</li>
+                    <li><strong>사업 범위</strong>: ① IEPS 상용 S/W 유지보수 및 라이센스 관리 ② Help Desk 운영 ③ 시스템 장애복구 및 오류처리 ④ BREFOS 유지보수 ⑤ 시스템 보안 및 취약점 점검 ⑥ 월간 정기점검</li>
+                    <li><strong>계약 방법</strong>: 제한경쟁입찰 (협상에 의한 계약), 중소 소프트웨어사업자만 참여 가능 (총 사업금액 20억원 미만)</li>
+                    <li><strong>주요 일정</strong>: 계약요청·공고 2026년 7월 → 사업자 선정 2026년 9월 → 계약체결 2026년 11월 → 사업 착수 2027년 1월 1일</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>수요기관</strong>: 국립환경과학원 (인천 서구 환경로 42, 종합환경연구단지)</li>
+                    <li><strong>감독공무원</strong>: 통합환경관리연구과 / 환경연구사 / 김용준 / Tel: 032-560-7682</li>
+                    <li><strong>검사공무원</strong>: 통합환경관리연구과 / 환경연구관 / 유은진 / Tel: 032-560-7585</li>
+                    <li><strong>제안 설명회 및 규격 문의</strong>: 김용준 연구사 (032-560-7682)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong> 인프라 구성요소(H/W·상용S/W) 안정적 운영, 응용프로그램 기능·성능 유지, Help Desk 운영, BREFOS 기능 유지, 개인정보접속기록관리시스템 운영, 전자정부 표준프레임워크(eGovFramework 3.7) 기반 준수, 웹 표준·접근성(KADO WAH 4.4) 준수, 보안취약점 점검 및 시큐어코딩 적용</li>
+                    <li><strong>[통합발주 S/W - 통합환경허가시스템(IEPS)]</strong>
+                        <ul>
+                            <li>Tibero5 (DBMS) - 인터넷망 1식</li>
+                            <li><strong>RedHat Enterprise Linux 8.1 x86_64 (OS) - 인터넷망 5, 내부망 3 (총 8식)</strong></li>
+                            <li>VMWare GuestOS → CityCloud (가상화솔루션) - 1식</li>
+                            <li>AI Report5 HTML (개발도구) - 인터넷망 2, 내부망 1</li>
+                            <li>RealGridJS V1.0 (개발도구) - 인터넷망 2, 내부망 1</li>
+                            <li>Silhouette Enterprise v2.0 (개발도구) - 2식</li>
+                            <li>Clip Report 5 (개발도구) - 1식</li>
+                            <li>Cross Editor 4 (개발도구) - 1식</li>
+                            <li>MCCS v4 for Linux (네트워크관리) - 인터넷망 1, 내부망 1</li>
+                            <li>jeus6 (미들웨어) - 인터넷망 2, 내부망 1</li>
+                            <li>webtob5 (미들웨어) - 인터넷망 2, 내부망 1</li>
+                            <li>D'Amo V3.0.5.9 (보안) - 1식</li>
+                            <li>ePapyrus PDF SDK (보안) - 인터넷망 2, 내부망 1</li>
+                            <li>KSignCASE for Web (보안) - 2식</li>
+                            <li>WEEDS Trace 시리즈 (보안) - 1식</li>
+                            <li>jenifer6 (성능진단) - 2식</li>
+                        </ul>
+                    </li>
+                    <li><strong>[BREFOS 시스템 S/W - 오픈소스 위주]</strong>
+                        <ul>
+                            <li>Apache 2.4 (오픈소스, WEB Server) - 1식</li>
+                            <li>Tomcat 8.5 (오픈소스, WAS) - 1식</li>
+                            <li>Cubrid 10.1.2 (DB) - 1식</li>
+                            <li>Clip Report 5.0 (리포팅 툴) - 1식</li>
+                            <li>Cross Editor 4.0 (스마트에디터) - 1식</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>[신규 납품 아님]</strong> 본 사업은 기존 구축 시스템의 유지관리 사업으로, 신규 S/W 도입·납품이 아닌 라이센스 유지보수 및 기술지원이 주요 내용임. 단, 기존 RHEL 라이센스 유지 자체가 Red Hat 영업 기회에 해당</li>
+                    <li><strong>[경쟁 DBMS 확정]</strong> DBMS는 Tibero5(TmaxSoft)로 확정 운영 중이며 교체 여지 없음</li>
+                    <li><strong>[경쟁 미들웨어 확정]</strong> WAS/WEB은 jeus6 및 webtob5(TmaxSoft)로 확정 운영 중</li>
+                    <li><strong>[VMware 관련]</strong> 가상화솔루션으로 VMWare GuestOS → CityCloud 전환 중인 항목이 있어 Red Hat Virtualization 제안 여지는 낮음</li>
+                    <li><strong>[하도급 불허]</strong> 본 사업은 하도급을 불허하며 중소 소프트웨어사업자만 참여 가능, Red Hat 직접 수주 불가</li>
+                    <li><strong>[컨테이너·OpenShift 수요 없음]</strong> RFP 내 Kubernetes, 컨테이너, PaaS 등 클라우드 네이티브 전환 관련 수요 없음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[RHEL 라이센스 유지보수 명시 - 핵심 기회]</strong> 상용 소프트웨어 목록에 <strong>RedHat Enterprise Linux 8.1 x86_64</strong>가 OS 항목으로 명시되어 있으며 인터넷망 5식, 내부망 3식 총 <strong>8식</strong>의 라이센스 유지가 사업 범위에 포함됨</li>
+                    <li><strong>[라이센스 갱신 수요]</strong> RFP 추진목표에 "상용 프로그램의 라이센스 유지를 통한 응용 프로그램의 안정된 동작 보장"이 명시되어 있어 RHEL 구독 갱신 수요 확실</li>
+                    <li><strong>[버전 업그레이드 가능성]</strong> 현재 RHEL 8.1이 사용 중이며, 보안 강화 및 OS 취약점 패치 요구사항이 명시되어 있어 RHEL 최신 버전(8.x 유지 또는 RHEL 9.x 업그레이드) 제안 기회 존재</li>
+                    <li><strong>[보안패치 의무화]</strong> "운영체제·응용프로그램에 대한 적시 보안패치 실시" 요구사항이 명시되어 있어 RHEL Extended Update Support(EUS) 또는 Satellite를 통한 패치 관리 솔루션 추가 제안 여지 있음</li>
+                    <li><strong>[사업 수행사 통한 간접 영업]</strong> 직접 입찰은 불가하나, 사업 수주 예정 SI 업체에 RHEL 라이센스 공급사로서 협력 영업 가능</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
