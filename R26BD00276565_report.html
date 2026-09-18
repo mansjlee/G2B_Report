@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00276565 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국세청_'27년 국세통계시스템 운영 및 유지관리 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 미포함 운영용역, RH 제품 전혀 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국세청이 구축·운영 중인 <strong>국세통계시스템</strong>의 안정적 운영 및 유지관리를 전문 사업자에게 위탁하는 사업</li>
+                    <li>일반 국민 대상 통계정보(Macrodata) 공표 서비스 및 전문 연구기관 대상 통계기초자료(Microdata) 제공 서비스의 연속성 확보</li>
+                    <li>시스템 기능 개선, 장애 예방, 성능 최적화, 보안 관리 등을 통해 수요자 중심의 국세통계 서비스 제공 환경 유지</li>
+                    <li>납세자 개인정보 보호를 최우선으로 하며, 세정환경 변화 및 법·제도 개정사항에 신속 대응</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 1,513,000,000원 (부가가치세 포함)</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (1년, 차년도 사업자 미선정 시 연장 가능)</li>
+                    <li><strong>사업 범위</strong>: ① 통계자료 수집시스템 ② 통계자료 처리분석시스템 ③ 통계자료 관리시스템 ④ 통계메타정보 관리시스템 ⑤ 국세통계포털(대민/대내복제) ⑥ 국세통계센터(대민 온라인) ⑦ 통계업무포털(대내) ⑧ 통계서비스 관리시스템 ⑨ 국세통계센터(세종본청·서울청) H/W·S/W 유지관리 포함</li>
+                    <li><strong>주요 일정</strong>: 사업자 선정 및 계약 '26.11월~'26.12월 / 사업 수행 '27.1.1~'27.12.31 / 입찰방식: 제한경쟁입찰, 협상에 의한 계약 / 평가비율: 기술 90%, 가격 10%</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관 기관</strong>: 국세청 기획조정관실 국세데이터담당관실</li>
+                    <li><strong>사업 총괄</strong>: 국세데이터담당관 정필규 / TEL: 044-204-2367</li>
+                    <li><strong>담당 사무관</strong>: 이종민</li>
+                    <li><strong>사업 문의(기술)</strong>: 국세청 국세데이터담당관실 최학규 조사관 / TEL: 044-204-2369</li>
+                    <li><strong>계약 발주</strong>: 정보화기획담당관실 (조달청 통해 입찰 진행)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>전자정부 표준프레임워크 기반 응용프로그램 운영·유지관리 (화면 613본, 보고서 9본, 배치 24본)</li>
+                            <li>DB2 DBA 5년 이상 유경험자 상주 필수 (DB 관리, 튜닝, 백업/복구, 정합성 검증)</li>
+                            <li>응용프로그램 성능 최적화: 웹 페이지 응답시간 3초 이내 보장</li>
+                            <li>ETL 기반 원천데이터 수집·적재 및 Micro/Macro 통계데이터 생산 지원</li>
+                            <li>보안취약점 진단·조치, 소프트웨어 개발보안 가이드 준수, DB 암호화 운영</li>
+                            <li>오픈소스 통계프로그램(R 등) 분기별 업데이트 지원, stata 프로그램 정상 운영 지원</li>
+                            <li>웹 접근성 인증마크 획득 지원, 모바일 서비스 운영</li>
+                            <li>국가정보자원관리원(광주센터) 인프라 장애 연계 대응</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매/납품 명시 S/W]</strong><br>
+                    ※ 본 사업은 신규 S/W 구매·납품 사업이 아닌 <u>기존 구축 상용 S/W의 유지관리</u>가 목적이며, 아래는 현재 운영 중인 상용 S/W 유지관리 대상 목록임 (신규 통합발주 S/W 없음)
+                        <ul>
+                            <li>통계분석솔루션 1식</li>
+                            <li>고급분석 솔루션 1식</li>
+                            <li>DB접근제어 3서버</li>
+                            <li>데이터통합 솔루션 8Core</li>
+                            <li>검색솔루션 4식</li>
+                            <li>DB모니터링 3식</li>
+                            <li>WAS모니터링 8Core</li>
+                            <li>DB암호화(플러그인) 기본패키지 4Core</li>
+                            <li>DB암호화(플러그인) 추가패키지 20Core</li>
+                            <li>DB암호화(API) 기본패키지 4Core</li>
+                            <li>PKI툴킷 4서버</li>
+                            <li>통합권한관리 4서버</li>
+                            <li>통합로그관리 11서버</li>
+                            <li>EAI Agent 4서버</li>
+                            <li>웹UI 툴 4서버</li>
+                            <li>웹리포팅 툴 4서버</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>신규 S/W 납품·구독 항목 없음</strong>: 본 사업은 기존 국세통계시스템의 순수 운영 및 유지관리 용역으로, RFP 어디에도 신규 상용 S/W 구매·도입 항목이 명시되어 있지 않음</li>
+                    <li><strong>Red Hat 상용 제품 전혀 미명시</strong>: RHEL, OpenShift, Ansible, JBoss EAP, Satellite, Quay 등 Red Hat 상용 제품명이 RFP 본문, 과업지시서, 상용 S/W 목록 어디에도 등장하지 않음</li>
+                    <li><strong>기존 DB 스택이 IBM DB2 기반</strong>: 인력 요구사항(MHR-01)에 "DB2 DBA 5년 이상 유경험자"를 명시하고 있어, 현행 데이터베이스 환경이 IBM DB2로 확정되어 있으며 Red Hat 스택 연계 여지 없음</li>
+                    <li><strong>기존 운영 S/W 목록에 Red Hat 제품 부재</strong>: 유지관리 대상 상용 S/W 16종 모두 제조사가 미상이나, 통계분석·DB암호화·PKI 등 특정 기능 제품군으로 구성되어 있으며 Red Hat 제품군과 무관</li>
+                    <li><strong>미들웨어·WAS 교체 요구 없음</strong>: WAS모니터링 8Core가 유지관리 대상으로 포함되어 있으나, WAS 제품 자체의 교체나 신규 도입 요구사항은 없음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>제안 가능 포인트</strong>
+                        <ul>
+                            <li><strong>기술적용 지침 내 Linux OS 포함</strong>: 기술적용계획표(별지 제12호)의 플랫폼 및 기반구조 분야에 "Linux"가 서버용 개방형 운영체제 항목으로 명시되어 있어, 향후 인프라 교체·증설 사업 발생 시 RHEL 제안을 위한 사전 관계 구축 기회로 활용 가능</li>
+                            <li><strong>가상화서버 운영 환경</strong>: H/W 유지관리 대상에 가상화서버(3식)가 포함되어 있어, 향후 고도화·재구축 사업 시 OpenShift Virtualization 또는 RHEV 제안 가능성 있음 (단, 현 사업 범위 외)</li>
+                            <li><strong>RFP에 나온 Red Hat(또는 동의어) 제품명·수량</strong>: <u>해당 없음</u> — RFP 전문에 Red Hat 상용 제품명 또는 동의어가 전혀 명시되어 있지 않음</li>
+                        </ul>
+                    </li>
+                    <li><strong>제안 불가능 포인트 요약</strong>
+                        <ul>
+                            <li>현 사업은 신규 SW 도입이 아닌 유지관리 용역이므로, Red Hat 상용 제품의 직접 납품·구독 제안이 불가능한 구조</li>
+                            <li>기존 인프라 및 SW 스택 전환 요구가 없으며, 현행 유지가 핵심 과업이므로 실질적인 Red Hat 영업 기회는 매우 낮음</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

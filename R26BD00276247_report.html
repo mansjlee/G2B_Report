@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00276247 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>방송미디어통신심의위원회_2027년도 정보시스템 통합 유지보수 및 위탁운영 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=orange>중간<br>Linux 부분적용, OS 미지정 RHEL 제안 여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>방송미디어통신심의위원회 정보시스템의 장애 선제 대응 및 안정적 운영·유지보수 체계 확립</li>
+                    <li>디지털방송심의시스템(서울·대전·부산·광주·대구·강원·제주 7개 지역), 통신심의지원시스템, 분쟁조정처리시스템, 공공DNA DB 통합관리시스템 등 위원회 정보시스템 전반에 대한 통합 유지보수 및 위탁운영</li>
+                    <li>신규 강릉 지역 디지털방송심의시스템(라디오·SO 녹화) 안정적 운영 지원</li>
+                    <li>24시간 365일 무중단 운영을 통한 서비스 연속성 및 효율성 극대화</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 1,920,300,000원 (부가가치세 포함)</li>
+                    <li><strong>사업 기간</strong>: 2027. 1. 1. ~ 2027. 12. 31. (1년, 계약 지연 시 실제 용역 개시일부터 정산)</li>
+                    <li><strong>사업 범위</strong>: ① 디지털방송심의시스템 H/W·S/W 유지보수 및 위탁운영 (서울 포함 7개 지역) ② 공공DNA DB 통합관리시스템 및 디지털성범죄정보 자동모니터링시스템 위탁운영·유지보수 ③ 주전산기(전자문서·웹메일·예산회계·민원처리 등) H/W·S/W 유지보수 ④ 강릉 지역 라디오·SO 녹화 관리 운영(상면·전기·회선료 등 운영비 포함)</li>
+                    <li><strong>주요 일정</strong>: 계약 후 2개월 이내 SLA 체결 → 매월 3째 주 종합 정기점검 → 매월 7일 이내 서비스수준평가보고서 제출 → 매월 익월 7일까지 검수 요청 및 대금 청구</li>
+                    <li><strong>계약 방식</strong>: 협상에 의한 계약 / 제한경쟁입찰 (중소 소프트웨어사업자만 참가 가능, 소프트웨어진흥법 제48조)</li>
+                    <li><strong>평가 방법</strong>: 기술평가 90% (정성 85점 + 정량 5점) + 가격평가 10%, 기술평가 85% 이상 협상적격자 선정</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>수요기관</strong>: 방송미디어통신심의위원회</li>
+                    <li><strong>담당 부서</strong>: 디지털혁신팀</li>
+                    <li><strong>담당자</strong>: 이재인 과장</li>
+                    <li><strong>전화</strong>: 02-3219-5093</li>
+                    <li><strong>팩스</strong>: 02-3219-5099</li>
+                    <li><strong>이메일</strong>: jaein1218@kocsc.or.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술·운영 요구사항]</strong>
+                        <ul>
+                            <li>H/W 유지보수(MPR-001): 인코더·스토리지·서버 등 장비 환경설정, 가동상태 점검, 자원 여유율 유지, Performance 튜닝</li>
+                            <li>S/W 유지보수(MPR-002): 응용S/W 환경설정, OS 패치, WAS·WEB·DB 모니터링 및 연계처리, 결함·에러 원인 분석 및 수정</li>
+                            <li>백업 관리(MPR-003): 데이터·OS·로그파일 백업정책 수립, 일별·월별·분기별 백업 이행 관리</li>
+                            <li>시스템 운영(MPR-004): 24시간 무중단 운영, 성능 모니터링 및 튜닝, OS·상용S/W 버전·로그 관리</li>
+                            <li>정기예방점검(MPR-005): 월 1회 이상 정기점검 (서울·대전·부산·광주·대구·강원·제주 동일 기준), 환경설정 파일 점검·백업, Error 로그 확인</li>
+                            <li>장애처리(MPR-006): 24시간 365일 지원체계, 장애접수 후 2시간 이내 현장 도착, SLA 기준 시간 내 복구, 48시간 이내 서면 보고 (지역은 6시간 이내 도착)</li>
+                            <li>기반설비 관리(MPR-007): 전산실 출입통제, UPS·항온항습기·CCTV 등 기반시설 운영, EMS·SMS·FMS 운영</li>
+                            <li>EPG 서비스계약(MPR-010): 전자프로그램가이드 정보제공업체와의 서비스계약 포함 (공급확약서 제출)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[유지보수 대상 S/W 목록 - 별첨1 기준, 주요 상용 SW]</strong>
+                        <ul>
+                            <li>Oracle Standard 20user 1식 (디지털방송심의시스템 심의업무 DB)</li>
+                            <li>Oracle 10g SE 1식 (홈페이지 DB)</li>
+                            <li>Oracle 10g EE 1식 (전자문서시스템 DB)</li>
+                            <li>Oracle 10g SE 1식 (민원처리시스템 DB)</li>
+                            <li>IBM DB2 1식 (통신심의처리시스템 DB)</li>
+                            <li>OZ Report 8.0 1식 (방송심의업무 보고서 Tool)</li>
+                            <li>Handy Groupware 1식 / 모바일 Handy Groupware 1식 (전자문서시스템 SW)</li>
+                            <li>Easyshow Document 1식 (문서변환 시스템)</li>
+                            <li>SensMail v5.0 1식 (웹메일 SW)</li>
+                            <li>Netbackup 2TB 라이선스 증설 1식 (백업)</li>
+                            <li>Midas Integration V7.0 1식 (공조시스템 연계 솔루션)</li>
+                            <li>CRO CHECK SDNS 2.0 2식 (통신심의처리시스템)</li>
+                            <li>GrippinTower 1식 (공공DNA DB 인증 SW, OTP)</li>
+                            <li>Polestar EMS 8 SMS for Windows/Linux Class 1: 12식 + Network Management: 25식 (공공DNA DB 관제시스템)</li>
+                            <li>Polestar EMS 8 Framework 1식 + SMS for Windows/Linux Class 1: 25식 + Network Management: 5식 (자동모니터링 관제시스템)</li>
+                            <li>Quantum StorNext SAN Client License 2식 × 2건 + 1식 (공유파일솔루션 클라이언트)</li>
+                            <li>가상화 솔루션 100식 (위원회 승인 후 직접 열람 - 내용 비공개)</li>
+                            <li>망분리 가상화솔루션 다수식 (위원회 승인 후 직접 열람 - 내용 비공개)</li>
+                            <li>ESM SW, 패치관리시스템, NAC 센서, 방화벽, 접근제어, 개인정보보호, 망연계 솔루션 등 보안 제품 다수 (위원회 승인 후 직접 열람)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[인력 요구사항]</strong>: 사업관리자(PM) 1인(방송영상녹화시스템 구축·운영 5년 이상, 투입률 50% 이상), 정보시스템운영자 1인(2년 이상 경험, 투입률 100%), 방송수신상태 모니터링 순환근무자 4인(24시간 교대, 최소 1인 상시 근무)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>유지보수 중심 사업 구조</strong>: 신규 S/W 도입이 아닌 기존 시스템 유지보수·위탁운영이 주목적으로, Red Hat 신규 제품 납품·구독 기회가 매우 제한적</li>
+                    <li><strong>경쟁 DB 제품 다수 명시</strong>: Oracle 10g SE/EE, Oracle Standard, IBM DB2 등 타사 DBMS가 유지보수 대상으로 확정되어 있어 RHEL 기반 DB 플랫폼 전환 불가</li>
+                    <li><strong>기존 응용 S/W 고정</strong>: Handy Groupware, SensMail, OZ Report, Midas Integration, CRO CHECK 등 기존 상용 SW가 유지보수 대상으로 확정되어 있어 JBoss EAP 등 미들웨어 신규 제안 어려움</li>
+                    <li><strong>Red Hat 상용 제품 미명시</strong>: RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품이 유지보수 대상 물품내역서에 전혀 포함되지 않음</li>
+                    <li><strong>중소 SW 사업자 입찰 제한</strong>: 소프트웨어진흥법 제48조에 따라 대기업·중견기업 입찰 불가 (중소 SW사업자만 참가), Red Hat 직접 입찰 불가, SI 채널을 통한 간접 공급만 가능</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>Linux 운영환경 공식 확인</strong>: 기술적용계획표 "플랫폼 및 기반구조 분야"에서 서버용 개방형 운영체제로 Linux가 <strong>부분적용</strong>으로 명시됨. 어떤 배포판인지는 미지정으로 현재 사용 중인 Linux OS를 RHEL로 전환·교체 제안 여지 존재</li>
+                    <li><strong>가상화 솔루션 100식 비공개 확인 필요</strong>: "가상화 솔루션 위원회 승인 후 직접 열람 100식"이 유지보수 대상 목록에 포함되어 있으나 내용 비공개. 현장 열람 시 Red Hat Virtualization(RHEV) 또는 OpenShift 기반 환경 여부 확인 권장</li>
+                    <li><strong>망분리 가상화솔루션 비공개</strong>: 망분리 가상화솔루션도 내용 비공개 처리됨. 열람을 통해 RHEL 기반 가상화 환경 여부 확인 필요</li>
+                    <li><strong>Polestar EMS "for Windows/Linux" 환경 확인</strong>: 공공DNA DB 관제시스템 및 자동모니터링 관제시스템 EMS가 Linux 기반 운영임을 간접 확인 가능. 해당 서버 OS로 RHEL 적용 여지 있음</li>
+                    <li><strong>RFP에 명시된 Red Hat(또는 동의어) 제품명·수량</strong>: 없음 (RFP 전체에서 Red Hat 상용 제품명 미확인)</li>
+                    <li><strong>현장 열람 강력 권고</strong>: 비공개 처리된 가상화·보안·망분리 솔루션 목록 확인을 위해 담당자(이재인 과장, 02-3219-5093, jaein1218@kocsc.or.kr)와 사전 협의 후 현장 방문 열람 적극 권장. 비공개 목록에 Red Hat 상용 제품 포함 여부에 따라 제안 가능성 재평가 필요</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
