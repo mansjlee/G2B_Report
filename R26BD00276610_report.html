@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00276610 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국방전산정보원_국방 차세대 기록관리시스템 전환사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>PaaS OpenShift 품목 명시(ECR-004)</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국방부 및 육·해·공군에서 개별 운영 중인 표준기록관리시스템(RMS, 2006년 개발 기반)을 국가기록원 최신 플랫폼 RAMP(기록물통합서비스플랫폼) 기반의 <strong>클라우드 통합 차세대 기록관리시스템</strong>으로 전환하는 사업</li>
+                    <li>기존 시스템의 기술지원 중단 및 '국방 온나라 2.0'과의 호환 불가 문제 해소</li>
+                    <li>국방부·합참·육군·해군·공군의 5개 독립 RMS를 단일 클라우드(PaaS) 플랫폼으로 통합하여 운영 효율화 및 서비스 연속성 확보</li>
+                    <li>전군 99개 기록관(특수기록관 8개, 기록관 91개) 대상 약 8.2억 건의 기록물을 신규 시스템으로 무결성 기반 이관</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 11,608,635천 원 (VAT 포함, 약 116억원) / 장기계속 1차 368,966천원 · 2차 6,136,948천원 · 3차 5,102,720천원</li>
+                    <li><strong>사업 기간</strong>: 계약일로부터 792일(26개월) / 장기계속계약 3차수 분할 시행</li>
+                    <li><strong>사업 범위</strong>: ① RAMP 기반 국방 차세대 기록관리시스템 기능 개발 및 커스터마이징 ② 클라우드(IaaS/PaaS) 환경 구축(국방 온나라 2.0 기반환경 증설·공유) ③ 전군 기록물 데이터 마이그레이션 및 이관 ④ 각 군 비표준기능 개발(육군 MTDSS·개인정보통합지원, 해군 병적기록물, 공군 영구보존, 공통 M/F 관리 등) ⑤ 내·외부 시스템 연계(온나라 2.0, MOUS, SSO, BRM, 국방허브 등) ⑥ 시스템 유지관리 및 헬프데스크 운영</li>
+                    <li><strong>주요 일정</strong>: 2026년 하반기 사업 착수 → 2026년 말 합참·국방부 데이터이관 검수(1차) → 2027년 육·해·공군 데이터이관 및 검수(2차) → 2028년 최종 전력화 및 완료 보고 / 감리 3회 시행</li>
+                    <li><strong>계약 방법</strong>: 일반경쟁입찰, 협상에 의한 계약(기술평가 90%, 가격평가 10%), 상호출자제한기업집단 입찰 제한</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주기관</strong>: 국방전산정보원 (집행기관)</li>
+                    <li><strong>소요제기기관</strong>: 국방부 운영지원과</li>
+                    <li><strong>기반체계</strong>: 국방통합데이터센터(DIDC)</li>
+                    <li><strong>문의 담당자</strong>: 국방전산정보원 차세대기록TF 주무관 <strong>김민재</strong></li>
+                    <li><strong>연락처</strong>: RFP 내 보안사항으로 열람 제한 (담당자 입회 하에 가능한 범위 내 열람)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>기술 요구사항</strong>: RAMP 표준 소프트웨어의 국방 환경 커스터마이징(국방 인증·보안 반영), Cubrid → Oracle 상용 DBMS 변경 적용, IaaS/PaaS 클라우드 플랫폼 기반 구축(Auto-Scale·멀티테넌시), 전자정부 표준프레임워크 적용, 8.2억 건 기록물 무결성 마이그레이션, 개인정보필터 도입, 국방인증서(RSA-3072) 기반 장기보존패키지 변환</li>
+                    <li><strong>통합발주 SW 목록</strong>:
+                        <ul>
+                            <li>DBMS (Oracle, 클러스터·파티셔닝 포함): <strong>48 Core, 2센터</strong></li>
+                            <li>가상화(IaaS) 네트워크 가상화 SW (기 도입 동일 제품 증설): <strong>4식, 2센터</strong></li>
+                            <li>가상화(IaaS/PaaS) 운영 SW — <strong>PaaS OpenShift 4식, IaaS OS Linux 4식, PaaS WAS 포함, 2센터</strong></li>
+                            <li>가상화(PaaS) 통합관리 SW (Cluster·APM 모니터링): <strong>4식, 2센터</strong></li>
+                            <li>검색엔진_포털연계 (기 도입 동일 제품 에이전트 증설): <strong>32 Core, 2센터</strong></li>
+                            <li>통합로그인(SSO) (기 도입 동일 제품 에이전트 증설): <strong>1식, 2센터</strong></li>
+                            <li>문서암호화 (기 도입 동일 제품 에이전트 증설): <strong>2식, 2센터</strong></li>
+                        </ul>
+                    </li>
+                    <li><strong>분리발주 SW 목록</strong>:
+                        <ul>
+                            <li>가상화(IaaS) OS(Windows): <strong>128 Core, 2센터</strong></li>
+                            <li>검색엔진_전문검색 (신규 도입): <strong>44 Core, 2센터</strong></li>
+                            <li>보존포맷변환 (신규 도입): <strong>4식, 2센터</strong></li>
+                            <li>문서백신 (증설): <strong>1식, 2센터</strong></li>
+                            <li>통합뷰어 (증설): <strong>1식, 2센터</strong></li>
+                            <li>개인정보필터 (신규 도입): <strong>4식, 2센터</strong></li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>DBMS는 Oracle 확정</strong>: RFP에서 "온나라 2.0과의 호환을 위해 Cubrid → Oracle(상용 DBMS)로 변경" 명시. Red Hat Data Grid나 PostgreSQL 계열 제안 불가</li>
+                    <li><strong>통합발주 SW 대부분이 기 도입 제품 증설</strong>: 네트워크 가상화 SW, 통합검색엔진, SSO, 문서암호화 등은 국방 온나라 2.0에 기 구축된 동일 제품으로 증설 조건이 명시되어 있어 신규 제품 대체 불가</li>
+                    <li><strong>IaaS OS(Windows) 분리발주</strong>: Windows Server 128 Core는 분리발주로 조달청 직접구매 예정이며 Red Hat과 무관</li>
+                    <li><strong>분리발주 SW</strong>(전문검색엔진·보존포맷변환·문서백신·통합뷰어·개인정보필터)는 조달쇼핑몰 직접구매 대상으로 별도 발주되므로 통합사업자 제안 범위 외</li>
+                    <li><strong>WAS 요건에 전자정부 표준프레임워크 인증 GS/CC 인증 제품 요구</strong>: Red Hat JBoss EAP는 해당 인증 보유 여부 사전 확인 필요</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>OpenShift(OCP) 품목 명시 — 핵심 기회</strong>: ECR-004 요구사항에 "납품하는 가상화 SW(PaaS Openshift) 제품은 아래의 기능을 제공"라고 OpenShift를 직접 명시. 통합발주 대상, 4식(2센터), 기존 온나라 2.0 동일 제품 증설 조건 → Red Hat OpenShift Container Platform(OCP) 납품 기회</li>
+                    <li><strong>RHEL(엔터프라이즈 Linux) 품목 명시</strong>: ECR-004 IaaS OS_Linux 항목에 "공개SW 기반 최신 버전(엔터프라이즈급 리눅스)", "KVM(Kernel Based Virtual Machine)", "SELinux", "Subscription 기반 기술지원", "3시간 이내 응답·5시간 이내 복구" 등 RHEL 특성 그대로 기술. 4식(2센터) 통합발주 대상</li>
+                    <li><strong>PaaS WAS(JBoss EAP 계열) 제안 가능성</strong>: ECR-004 PaaS WAS 항목에 "컨테이너 플랫폼에 최적화·검증된 WEB/WAS 엔진", "Enterprise OpenJDK 제공 및 JDK runtime 수준 기술지원", "Messaging 비동기 처리를 위한 Message Broker 엔진" 등 JBoss EAP·AMQ 연관 기능 기술 → JBoss EAP, Red Hat AMQ(Message Broker) 제안 검토 가능</li>
+                    <li><strong>기존 온나라 2.0 기반환경과 동일 제품</strong>: 국방 온나라 2.0에 OpenShift·RHEL이 기 도입된 경우 본 사업의 증설 물량 자동 확보 가능성 높음</li>
+                    <li><strong>RFP 명시 Red Hat 제품명 요약</strong>:
+                        <ul>
+                            <li>OpenShift (PaaS): ECR-004, 4식, 2센터 (통합발주·증설)</li>
+                            <li>Linux OS 엔터프라이즈(RHEL): ECR-004, 4식, 2센터 (통합발주·증설)</li>
+                        </ul>
+                    </li>
+                    <li><strong>컨테이너·Kubernetes 기술 전반 적용</strong>: SFR-001(공개SW·개방형 기술), SFR-019(국방 클라우드 플랫폼 RAMP 전환) 등에서 컨테이너 네이티브 아키텍처 요구 → OpenShift 기반 플랫폼 수주 시 Red Hat 생태계 확장 가능</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

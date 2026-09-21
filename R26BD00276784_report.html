@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00276784 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>신용보증재단중앙회_AI 인프라 및 생성형 AI 구축 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>Linux·K8s·컨테이너 제안여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>새 정부의 국가 인공지능 대전환(AX) 정책에 발맞춰 공공 서비스 전반의 디지털 혁신 및 일하는 방식의 AI 전환 추진</li>
+                        <li>온프레미스(On-Premise) 환경에서 생성형 AI 모델 및 서비스를 구동하기 위한 고성능 GPU 기반의 AI 인프라 구축</li>
+                        <li>다양한 LLM 모델 관리, 문서 업로드 및 정보 검색, 내용 분석 및 요약, 문서 초안 작성 등이 가능한 생성형 AI 플랫폼 구축</li>
+                        <li>기관 내 보유한 내부 제규정, 업무매뉴얼 등 각종 자료를 AI가 참조할 수 있는 지식창고 형태로 구축하는 RAG 시스템 구축</li>
+                        <li>대국민 행정 서비스의 품질 향상과 임직원의 실무 업무 생산성 향상 추진</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 617,500천원 (부가세 포함, 제안평가비 및 조달수수료 제외)</li>
+                        <li><strong>사업 기간</strong>: 계약체결일로부터 210일 (7개월) / 예상 기간: 2026년 11월 ~ 2027년 5월</li>
+                        <li><strong>사업 범위</strong>: ① GPU 서버 도입 및 AI 인프라 구축, ② 생성형 AI 플랫폼 구축 (멀티 LLM, RAG 시스템), ③ AI 검색 시스템 구축, ④ 기존 시스템(SSO, 검색엔진, DRM) 연동 개발, ⑤ 운영 SW 도입 (로그관리·서버접근제어·통합관제 직접구매 설치)</li>
+                        <li><strong>주요 일정</strong>: M~M+1 사업수행 계획 수립 및 요구사항 분석 → M+1~M+4 AI 인프라 구축 및 시스템 설계·구축 → M+4~M+5 단위·통합 테스트 → M+5~M+6 시스템 오픈 및 안정화</li>
+                        <li><strong>입찰 방식</strong>: 제한경쟁입찰 (협상에 의한 계약), 중소 소프트웨어사업자 대상 (대기업 참여 불가)</li>
+                        <li><strong>평가 비율</strong>: 기술평가 90% + 가격평가 10%</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>수요기관</strong>: 신용보증재단중앙회 (중소벤처기업부 산하)</li>
+                        <li><strong>담당 부서</strong>: AI디지털전환부</li>
+                        <li><strong>성명</strong>: 송진규</li>
+                        <li><strong>직위</strong>: 부부장</li>
+                        <li><strong>전화번호</strong>: 044-270-4097</li>
+                        <li><strong>이메일</strong>: jinkyu@koreg.or.kr</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[핵심 기술 요구사항]</strong>
+                            <ul>
+                                <li>컨테이너 기반 AI 인프라 표준화: Docker 컨테이너 기반 패키징·배포, NVIDIA Container Toolkit 필수 구성</li>
+                                <li>Kubernetes 클러스터 구축: 경량화된 프로덕션급 K8s 환경 구성, NVIDIA GPU Operator 도입</li>
+                                <li>GPU 모니터링: NVIDIA DCGM 및 Prometheus/Grafana 기반 모니터링 파이프라인 구축</li>
+                                <li>멀티 LLM 실행 환경: 온프레미스 설치·운용 가능한 복수 LLM 모델 동시 탑재 (SLM, LLM)</li>
+                                <li>RAG 시스템: 벡터DB 기반 유사도 검색, Chunk 분할·임베딩, 권한별 지식데이터 관리</li>
+                                <li>AI 검색 시스템: 제규정·업무매뉴얼 기반 업무지식 검색, 벡터DB 전환</li>
+                                <li>기존 시스템 연동: SSO 자동 로그인, 검색엔진 연계, DRM 연동, REST API 제공</li>
+                                <li>성능 기준: 전체 사용자 2,500명, 동시접속 250명, 동시응답 25명 처리</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매 명시 S/W - 통합발주 목록]</strong>
+                            <ul>
+                                <li>생성형 AI 플랫폼 1식 (통합발주 - 직접구매 제외, SI 사업자가 커스터마이징 포함 납품)</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매 명시 S/W - 직접구매 목록]</strong>
+                            <ul>
+                                <li>로그관리 소프트웨어 (Logcops) 4식 - 직접구매</li>
+                                <li>서버접근제어 소프트웨어 (Hiwre) 4식 - 직접구매</li>
+                                <li>통합관제 소프트웨어 (Watchall) 4식 - 직접구매</li>
+                            </ul>
+                        </li>
+                        <li><strong>[H/W 도입]</strong>
+                            <ul>
+                                <li>GPU 서버 1식 (NVMe SSD 3.84TB×4EA 이상, 총 3,200W 전원 4+4 구성)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>Red Hat 상용 제품명 미명시</strong>: RFP 전체에 걸쳐 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품이 구매·도입 품목으로 명시되지 않음</li>
+                        <li><strong>OS 미지정</strong>: 서버 운영체제가 특정되지 않았으나, Linux 계열 적용으로 기술적용계획표에 Linux 항목이 포함됨. 특정 배포판이 확정되지 않은 점은 기회이기도 하나 명시 도입 근거 없음</li>
+                        <li><strong>직접구매 SW 목록에 RH 제품 없음</strong>: [붙임 8] 직접구매 대상 상용 SW 구매계획에 Logcops, Hiwre, Watchall만 포함되며 Red Hat 제품 전혀 없음</li>
+                        <li><strong>생성형 AI 플랫폼은 통합발주 단일 품목</strong>: 생성형 AI 솔루션이 직접구매 제외 품목으로 SI 사업자의 통합 납품 대상이며, 특정 Red Hat AI 제품(OpenShift AI, RHEL AI 등)을 명시 요구하지 않음</li>
+                        <li><strong>중소기업 제한 입찰</strong>: 사업 금액 20억 미만으로 대기업 SW사업자 참여 불가 → Red Hat Korea가 직접 입찰 불가, 파트너 통해서만 참여 가능</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>Kubernetes / 컨테이너 인프라 요구 (OpenShift 제안 여지)</strong>: ECR-004에서 Docker 컨테이너 기반 AI 인프라 표준화 및 Kubernetes 클러스터 구축을 명시적으로 요구. OpenShift Container Platform(OCP) 또는 OpenShift AI는 GPU 기반 AI 워크로드 오케스트레이션에 최적화된 엔터프라이즈 K8s 솔루션으로 제안 가능</li>
+                        <li><strong>GPU 기반 AI 플랫폼 (OpenShift AI / RHEL AI 제안 여지)</strong>: 온프레미스 환경에서 LLM 모델을 운용하는 고성능 AI 인프라 구축으로, Red Hat OpenShift AI(RHOAI)가 멀티 LLM 관리·RAG·모델 서빙 환경으로 적합</li>
+                        <li><strong>서버 OS 미지정 (RHEL 제안 여지)</strong>: GPU 서버 및 AI 인프라 운영 OS가 특정되지 않아 RHEL(Red Hat Enterprise Linux) 제안 가능. 공공·금융권 레퍼런스 요구 조건(ECR-001)에 RHEL이 부합</li>
+                        <li><strong>자동화·운영 관리 (Ansible Automation Platform 제안 여지)</strong>: AI 인프라 구성, K8s 클러스터 프로비저닝, 보안 패치 자동화 등에 Ansible Automation Platform 제안 가능</li>
+                        <li><strong>보안 및 컨테이너 보안 (ACS 제안 여지)</strong>: 보안 요구사항(SER-001~007)이 광범위하게 요구되며, 컨테이너 환경 보안을 위한 Red Hat Advanced Cluster Security(ACS) 제안 가능</li>
+                        <li><strong>온프레미스 AI 구축 사업</strong>: 클라우드가 아닌 온프레미스 환경 구축으로, Red Hat의 온프레미스 엔터프라이즈 솔루션 포트폴리오(RHEL, OCP, OpenShift AI)가 강점 발휘 가능</li>
+                        <li><strong>RFP 내 Red Hat 제품명 명시</strong>: 없음 (RHEL, OpenShift, Ansible 등 Red Hat 상용 제품이 RFP 내 품목으로 명시되지 않음)</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

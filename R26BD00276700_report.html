@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00276700 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>성평등가족부_2027년 e새일시스템 운영·유지관리 및 고도화 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>RHEL·JBCS·JBoss EAP EOS 업그레이드 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>성평등가족부가 운영 중인 <strong>e새일시스템</strong>(여성새로일하기센터 지원 시스템)의 안정적 운영·유지관리 및 고도화 추진</li>
+                    <li>「여성경제활동 촉진과 경력단절 예방법」에 근거, 새일센터의 여성경제활동 촉진지원 업무를 효율적으로 관리하기 위한 시스템 지속 운영</li>
+                    <li>국가정보자원관리원 구조진단('26.4월) 결과 도출된 HW·SW 등 6개 분야 21개 개선과제 중 아키텍처 6건·AP 2건 등 중장기 개선과제 이행</li>
+                    <li>노후 서버 교체(2019년 도입, 6년 경과) 대응 및 상용SW EOS 대응을 통한 시스템 안정성 확보</li>
+                    <li>대국민 홈페이지 UI/UX 개선 및 업무시스템 주요 기능 개선을 통한 사용자 편의성 향상</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 1,983,000,000원 (금일십구억팔천삼백만원, 부가세 포함)</li>
+                    <li><strong>사업 기간</strong>: 2027. 1. 1. ~ 2027. 12. 31. (12개월)</li>
+                    <li><strong>사업 범위</strong>: ① 대국민홈페이지 및 업무시스템 운영·유지관리 ② 국자원 구조진단 개선과제 이행(서버 이중화·소프트웨어 최신화 등 아키텍처 6건, AP 2건) ③ 노후서버 교체 대응 ④ 상용SW 6종 통합발주 도입 ⑤ 대국민 홈페이지 디지털서비스 개선 ⑥ 업무시스템 주요 기능 개선 ⑦ 콜센터 운영(상담원 2인 이상) ⑧ 정보보안·개인정보보호 강화</li>
+                    <li><strong>계약 방법</strong>: 제한경쟁(협상에 의한 계약), 중소 SW사업자만 입찰 가능(20억원 미만 사업)</li>
+                    <li><strong>주요 일정</strong>: 2026년 9월 사전규격공개 → 입찰공고 → 2027년 1월 사업착수 → 2027년 12월 검수 완료 / 상주인력 최소 10명 이상(운영·유지관리 6명 필수 상주 포함), 고도화 분야 48MM 이상 투입</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 성평등가족부 경력이음지원과</li>
+                    <li><strong>과장</strong>: 이경운 / TEL: 02-2100-6631 / FAX: 02-2100-6469</li>
+                    <li><strong>사무관</strong>: 송재언 / TEL: 02-2100-6638</li>
+                    <li><strong>주무관(문의처)</strong>: 송민정 / TEL: 02-2100-6643</li>
+                    <li><strong>협조기관</strong>: 성평등가족부 정보통계담당관실, 행정안전부 국가정보자원관리원(광주센터), 고용노동부(한국고용정보원)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>단일서버(SCH·EAI·DB) 이중화 구성 (Active-Active / Active-Standby)</li>
+                            <li>개발→검증(Staging)→운영(Prod) 3단계 분리 검증 환경 구축</li>
+                            <li>서비스 분리 구성 (통계분석 서버 별도 분리)</li>
+                            <li>AP 소스 WAS 서버별 로컬 분산 저장</li>
+                            <li>OS·WEB·WAS·DBMS·JDK EOS 대응 최신화 (국자원 위임발주)</li>
+                            <li>노후 서버 6대(2019년 도입, WEB·WAS·SCH·EAI) 교체 대응</li>
+                            <li>Oracle RAC 기반 DB 이중화 구성</li>
+                            <li>통합검색엔진 신규 도입 및 구축 (대국민·업무시스템 통합검색)</li>
+                            <li>대국민 홈페이지 UI/UX 개선, 반응형 웹, 간편인증 확대</li>
+                            <li>업무시스템 2단계 인증(2FA), 세션관리 등 접속보안 강화</li>
+                            <li>고용24(워크넷)·일모아시스템 EAI 연계 기능 개선</li>
+                            <li>JAVA/JSP 기반 응용SW 개발, 전자정부 표준프레임워크 적용</li>
+                        </ul>
+                    </li>
+                    <li><strong>[통합발주 상용 SW 구매 목록]</strong>
+                        <ul>
+                            <li>DB암호화 S/W: <strong>1식</strong> (Oracle RAC 이중화 환경 지원, DB서버 CPU 16core 기준 라이선스)</li>
+                            <li>문서보안 S/W: <strong>1식</strong> (서버 이중화 구성 지원 라이선스)</li>
+                            <li>통계분석 S/W(OLAP): <strong>1식</strong> (서버 이중화 구성 지원 라이선스)</li>
+                            <li>검색엔진 S/W: <strong>2식</strong> (이중화 구성, 검색서버 2대·서버당 CPU 11core 기준)</li>
+                            <li>DBMS S/W: <strong>1식</strong> (Oracle RAC 기반 DB 이중화 지원 라이선스)</li>
+                            <li>연계 S/W: <strong>1식</strong> (고용24 연계환경 호환, 서버 이중화 지원)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[국가정보자원관리원 위임발주 품목]</strong>: WEB·WAS·DB·SCH·통계서버 HW, 시스템 SW(OS·WEB·WAS 포함), 백업SW, 스토리지(SAN·NAS)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>통합발주 상용SW에 Red Hat 제품 미포함</strong>: 통합발주 대상 6종(DB암호화·문서보안·통계분석·검색엔진·DBMS·연계 SW) 모두 Red Hat 제품과 무관하며, 수행사가 직접 납품하는 상용SW 목록에 Red Hat 제품 없음</li>
+                    <li><strong>시스템 SW는 국가정보자원관리원 위임발주</strong>: RHEL·JBCS·JBoss EAP 업그레이드 구매는 국자원(위임발주)이 진행하며, 수행사(SI사업자)는 납품 주체가 아닌 기술지원·적용 역할 수행</li>
+                    <li><strong>Oracle Database 유지 확정</strong>: DBMS SW 통합발주 요구사항에 "현행 Oracle DBMS 환경과 호환, Oracle RAC 기반 이중화"가 명시되어 Oracle 유지가 사실상 확정. RHEL AI/OpenShift 등 데이터 플랫폼 제안 여지 낮음</li>
+                    <li><strong>중소기업 제한 입찰</strong>: 20억원 미만 사업으로 대기업·중견기업 입찰 불가. Red Hat Korea가 직접 입찰 불가하며, 중소 SI 파트너를 통한 간접 기회만 존재</li>
+                    <li><strong>검색엔진 신규 도입</strong>: 기존 Search Formula-1 EOS 대응으로 상용 검색엔진 2식 신규 도입. Elasticsearch/OpenSearch 계열 경쟁 제품과 경합 가능성 있으나, OpenShift 기반 제안 연결 가능성은 낮음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[RFP 명시 Red Hat 상용 제품 현황]</strong>
+                        <ul>
+                            <li><strong>Redhat Linux (RHEL)</strong>: 현행 OS로 명시 (국자원 관리), EOS 대응 업그레이드 대상 — ECR-006 시스템SW EOS 현황에 "OS: Redhat Linux 6, EOS: ○" 명시, 수량 기재 (국자원 위임발주 구매 예정)</li>
+                            <li><strong>JBCS (JBoss Core Services)</strong>: 현행 Web SW로 명시, EOS 대응 업그레이드 대상 — ECR-006에 "Web: JBCS 1, EOS: ○" 명시 (국자원 위임발주 구매 예정)</li>
+                            <li><strong>JBoss EAP</strong>: 현행 WAS로 명시, EOS 대응 업그레이드 대상 — ECR-006에 "WAS: Jboss EAP 3, EOS: ○" 명시 (국자원 위임발주 구매 예정)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[Red Hat 영업 접근 포인트]</strong>
+                        <ul>
+                            <li>국가정보자원관리원(광주센터) 위임발주를 통해 RHEL·JBCS·JBoss EAP 3개 제품이 공식 구매 예정 → 국자원 대상 Red Hat 라이선스 영업 기회 확실</li>
+                            <li>JBoss EAP 3식 EOS 업그레이드: EAP 7→8 버전업 가능성, 기술지원 갱신 기회</li>
+                            <li>RHEL EOS(버전 6) → 최신 RHEL(8 또는 9)로 업그레이드, 서버 이중화 환경에서의 라이선스 추가 수요 발생</li>
+                            <li>수행사(SI사업자)는 Red Hat 공급사·파트너와 협력하여 라이선스·기술지원확약서 제출 의무가 있어, Red Hat 파트너 생태계를 통한 매출 기회 존재</li>
+                            <li>서버 이중화 구성(WEB·WAS 이중화)으로 기존 대비 Red Hat 라이선스 수량 증가 가능성 (Active-Active 구성 시 서버 추가)</li>
+                            <li>Ansible Automation Platform: 서버 이중화·배포 아키텍처 전환(AS-IS→TO-BE 배포 파이프라인) 자동화 제안 가능</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

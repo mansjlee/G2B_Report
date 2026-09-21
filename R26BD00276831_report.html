@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00276831 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국임업진흥원 전산실 이전·구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 미포함 이전 용역, RH 제품 전혀 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>한국임업진흥원이 서울특별시 강서구 등촌동 본원(구 청사)에서 대전광역시 유성구 뉴유성빌딩(임시청사)으로 전산실 및 정보시스템 전체를 이전·구축하는 사업</li>
+                    <li>이전 과정에서의 업무 공백 최소화 및 서비스 연속성 확보가 핵심 목적</li>
+                    <li>노후 인프라(항온항습기, UPS, 백업장비) 교체·신규 설치 포함</li>
+                    <li>170명 직원 및 1,730대 사무용 전산장비, 195대 서버·네트워크·보안 장비의 안전한 이전 지원</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 900,000,000원 (부가세 포함, 9억원)</li>
+                    <li><strong>사업 기간</strong>: 계약 체결 후 2027년 1월 22일까지</li>
+                    <li><strong>사업 범위</strong>: ① 전산실 이전 계획 수립 및 이행 ② 임시청사 전산실·층별 통신실 구축 및 네트워크 이전 설치 ③ 정보시스템(서버·스토리지·네트워크·보안장비 195대) 이전·설치 ④ 사무용 전산장비(PC·모니터·노트북·IP전화기·프린터 등 1,730대) 설치 지원 ⑤ 이전 전·후 안정화 및 후속조치(헬프데스크 운영) ⑥ UPS·항온항습기 신규 설치 및 백업장비 교체</li>
+                    <li><strong>주요 일정</strong>: 10월 3~4주 사업계약 및 착수 → 10~11월 현황파악 및 이전계획 수립, 네트워크 현황분석 → 11~12월 전산실 이전 준비 및 PC·프린터 등 이전 설치 → 2027년 1월 네트워크·시스템 안정화 및 사업 검수</li>
+                    <li><strong>계약 방식</strong>: 제한경쟁입찰 (협상에 의한 계약, 조달청), 기술평가 90% / 가격평가 10%</li>
+                    <li><strong>입찰 참가 자격</strong>: 소프트웨어사업자 + 정보통신공사업자 자격 동시 보유한 중소·중견기업 (대기업 참여 불가, 사업금액 20억원 미만)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>사업 총괄 책임자</strong>: 한국임업진흥원 AI빅데이터실 전성기 실장 / TEL: 02-6393-2781 / FAX: 02-6393-2609</li>
+                    <li><strong>실무 담당자</strong>: 장용석 책임 / TEL: 02-6393-2714 (현장 방문 문의 및 RFP 내용 문의)</li>
+                    <li><strong>실무 담당자</strong>: 오시온 전임 / TEL: 02-6393-2738</li>
+                    <li><strong>담당 부서</strong>: 한국임업진흥원 AI빅데이터실</li>
+                    <li><strong>이메일</strong>: 명시되지 않음</li>
+                    <li><strong>사업 장소(임시청사)</strong>: 대전광역시 유성구 계룡로 72 뉴유성빌딩 (지하1층, 지상1·3~6층 일부, 전산실 6층)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>임시청사 전산실·층별 통신실 구축 및 서버·네트워크·보안장비 195대 이전·설치 (ECR-02~05)</li>
+                            <li>업무망·인터넷망 VLAN 기반 네트워크 분리 설계 및 IP 체계 재구성 (ECR-04)</li>
+                            <li>무진동 차량 이용 전산장비 운송, 이전 전 데이터 백업 및 이전 모의훈련 1회 이상 실시 (ECR-06, ECR-11, ECR-12)</li>
+                            <li>이전 완료 후 성능 테스트 및 약 1개월 안정화 상주 지원, 헬프데스크 운영 (ECR-13, TER-01, PER-01)</li>
+                            <li>NTP 시간동기화, 불필요 포트 차단, SSH 암호화 원격관리 등 보안 강화 조치 (SIR-01~02)</li>
+                            <li>이전 대상 장비의 배상보험 가입 의무 (ECR-06)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W 및 장비 — 통합발주 항목]</strong>
+                        <ul>
+                            <li><strong>UPS (무정전전원장치)</strong>: 2SET (N+1방식, 40KVA, 일체형, 무보수 무누액 연축전지 100AH×40CELL, SNMP 기능) — ECR-14</li>
+                            <li><strong>항온항습기</strong>: 2SET (10RT 이상, 공랭식·상향식·Dual type, R-407C 냉매, 냉방용량 27,000kcal/hr 이상) — ECR-15</li>
+                            <li><strong>중복제거 백업스토리지</strong>: 2식 (Physical 120TB 이상, Intel Xeon 24Core 이상, 128GB 메모리, 10GbE 2P+SFP+ 2P, NFS/CIFS/RDA/OST/VTL 지원, FIPS 140-2 AES 256bit 암호화, 기존 CNE DR4500과 동종사 제품 필수) — ECR-16</li>
+                            <li>※ 별도 Red Hat 또는 기타 상용 S/W 라이선스 구매 항목은 RFP에 명시되지 않음</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>이전 용역 중심 사업으로 S/W 구독·납품 항목 부재</strong>: 본 사업은 기존 정보시스템을 그대로 임시청사로 이전·설치하는 물리적 이전 용역 사업이며, 신규 S/W 도입·라이선스 구매 항목이 사실상 없음</li>
+                    <li><strong>Red Hat 상용 제품 전혀 미명시</strong>: RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 RFP 어디에도 등장하지 않음</li>
+                    <li><strong>백업장비 동종사 제품 제한</strong>: 백업스토리지는 기존 Dell EMC 계열(CNE DR4500)과 동종사 제품으로 사실상 제조사 고정 (Red Hat과 무관)</li>
+                    <li><strong>신규 플랫폼 도입 없음</strong>: 컨테이너, Kubernetes, PaaS, 자동화 플랫폼 등 Red Hat 기술 스택이 적용될 수 있는 신규 인프라 도입 계획 없음</li>
+                    <li><strong>Linux/OS 미지정이나 제안 여지 없음</strong>: 기존 운영 중인 서버 OS를 그대로 유지한 채 이전하는 구조이므로 OS 교체·전환 제안 불가</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>해당 없음</strong>: 본 사업은 전산실 물리적 이전 및 기존 장비 재설치 용역이 핵심으로, Red Hat 상용 제품 제안 가능 포인트가 존재하지 않음</li>
+                    <li><strong>향후 기회 메모 (직접 제안 불가)</strong>: 임시청사 이전 완료 후 노후화된 서버 및 운영체제 현대화, 컨테이너 플랫폼 전환, 자동화 도입 등에 대한 후속 사업 발굴 관점에서 관계 구축 가능 (본 사업과 직접 무관)</li>
+                    <li><strong>RFP 내 Red Hat 제품명·수량</strong>: 없음 (0건)</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

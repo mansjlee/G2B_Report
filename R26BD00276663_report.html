@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00276663 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>중앙선거관리위원회_통신 및 보안시스템 통합유지보수 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 미포함 순수 유지보수 용역</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>중앙선거관리위원회에서 운영 중인 통신장비 및 정보보안시스템에 대한 통합 유지보수 사업</li>
+                    <li>전문 상주인력(4명: 고급 1, 중급 1, 초급 2) 투입을 통한 24시간 365일 안정적 운영 보장</li>
+                    <li>공직선거 및 위탁선거 대비 통신·보안시스템의 연속성 및 안정성 확보</li>
+                    <li>장애 예방, 신속 복구, 보안패치 및 정기점검 등 종합 유지관리 체계 구축</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 2,911,440천원 (부가세 포함) / 1차년도(2027년): 1,455,720천원, 2차년도(2028년): 1,455,720천원 ※ 2027년 정부안 확정에 따라 일부 조정 가능</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2028년 12월 31일 (2년)</li>
+                    <li><strong>사업 범위</strong>: 통신장비 210식 (네트워크 스위치 230대) + 정보보호시스템 213식 (방화벽 61, 침입방지시스템 24, 통합보안관리/APT 대응 18, VPN 12, 망연계 40, SSL가시성/바이패스 10, DDoS 11, EDR/NAC/단말보안 14, 개인정보유출방지 7, 로그분석/관제/취약점진단 6, 유해사이트차단 4, 악성코드탐지/CDR 4, 웹셸차단 2) 총 423식 유지보수</li>
+                    <li><strong>주요 일정</strong>: RFP 발간 2026년 9월 / 사업착수 2027년 1월 1일 / 연간보고서 및 재해복구훈련 연 1회 / 사이버공격대응·피싱메일 모의훈련 연 2회</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>기관명</strong>: 중앙선거관리위원회</li>
+                    <li><strong>담당 부서</strong>: 기획조정실 정보정책과</li>
+                    <li><strong>담당자</strong>: 강주철</li>
+                    <li><strong>연락처</strong>: 02-3294-1111</li>
+                    <li><strong>이메일</strong>: 명시 없음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong> 24시간 365일 유지보수 지원 원칙 / 장애 발생 시 30분 내 전담인력 배정, 2시간(주말 3시간) 내 현장방문 지원 준수</li>
+                    <li><strong>[상주인력 요구사항]</strong> 고급 1명(통신·사업관리), 중급 1명(보안), 초급 2명(통신, 보안) 총 4명 상주 / 네트워크 및 정보보안 관련 자격증 및 최소 2년 이상 실무경험 필요</li>
+                    <li><strong>[운영 요구사항]</strong> 네트워크 장비 장애처리·최적화·이력관리 / 보안장비 정책관리·버전·엔진 업데이트 / 월간 유지보수보고서, 일간 보고서, 장애보고서 등 산출물 정기 제출</li>
+                    <li><strong>[보안 요구사항]</strong> 보안서약서 및 보안확약서 징구 / 외부 노트북 반입 금지, 원격 접속 원칙 금지 / 사이버보안 위규 등급별 처리 기준(A~D급) 및 보안 위약금 부과</li>
+                    <li><strong>[구매 명시 S/W]</strong>: 없음 — 본 사업은 순수 유지보수 용역으로, RFP 및 과업지시서 내 통합발주 또는 직접구매 방식의 상용 S/W 품목 명시 없음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>[S/W 납품 없음]</strong> 본 사업은 기존 통신·보안 장비에 대한 운영·유지보수 용역으로, 신규 S/W 도입·구매·납품·구독 항목이 전혀 포함되어 있지 않음</li>
+                    <li><strong>[Red Hat 제품 미언급]</strong> RFP 전문에 걸쳐 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 단 한 건도 명시되지 않음</li>
+                    <li><strong>[기술 스택 무관]</strong> 유지보수 대상이 네트워크 스위치, 방화벽, IPS, VPN, 망연계, DDoS, EDR/NAC 등 보안 어플라이언스 중심이며, 서버 OS·컨테이너 플랫폼·미들웨어 관련 요구사항 없음</li>
+                    <li><strong>[서버 유지보수 제외]</strong> MAR-003에서 "서버 및 시스템은 별도 유지보수 시 단순 기술지원"으로 명시되어, 서버·플랫폼 영역은 본 사업 범위 외임</li>
+                    <li><strong>[경쟁 제품 명시]</strong> 특정 경쟁 OS나 제품이 명시되지는 않았으나, Red Hat 스택 제안 여지 자체가 없는 구조임</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[RFP 내 Red Hat 제품명]</strong>: 없음 — RFP 전문에 Red Hat(레드햇) 또는 동의어(RHEL, OCP, Ansible, JBoss 등)에 해당하는 상용 제품명 및 수량이 전혀 기재되어 있지 않음</li>
+                    <li><strong>[기술 스택 연계 가능성]</strong>: 없음 — Linux 서버, 컨테이너, Kubernetes, PaaS, 자동화 플랫폼 등 Red Hat 솔루션과 연관된 기술 요구사항 부재</li>
+                    <li><strong>[종합 의견]</strong>: 본 사업은 선거관리위원회 네트워크·보안 어플라이언스의 순수 운영·유지관리 용역으로, 구조적으로 Red Hat 상용 제품 제안 기회가 없음. 향후 서버·인프라 플랫폼 관련 별도 사업 발주 시 기회 모색 필요</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
