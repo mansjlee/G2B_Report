@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00277378 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국지능정보사회진흥원(NIA)_AI 맞춤형 교수학습 플랫폼 고도화 - 분석 리포트</h2>
+
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>Rocky Linux 명시, RH SW 전무</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>1단계 구축 완료된 AI 기반 교수학습 플랫폼(AIEP)을 2단계로 고도화하는 사업으로, 민간 에듀테크 서비스가 표준 기반으로 연동되는 개방형 '에듀테크 허브'로 구조 전환하는 것이 핵심 목적</li>
+                    <li>11개 시도교육청이 공동 활용하는 비용 효율적 단일 인프라 위에 3대 핵심 미들웨어(단일 학적 통합 인증 체계, 학습데이터 통합저장소(LRS), 민간 에듀테크 표준 연계 관문) 구축</li>
+                    <li>데이터·AI 기반 교수학습 지원 기능 고도화, 교사 효능감 중심의 플랫폼 구현, 학생·학부모의 데이터 주권 통제권 보장 및 무결점 보안 체계 마련</li>
+                    <li>발주기관: 한국지능정보사회진흥원(NIA) / 주관: 서울특별시교육청 포함 11개 시도교육청(서울·인천·경북·전북·전남·광주·대전·강원·제주·울산·세종)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 7,199,299,990원 (VAT 포함, 약 72억 원)</li>
+                    <li><strong>사업 기간</strong>: 계약체결일 ~ 2027년 6월 30일 (약 8개월) / 실질 산정: 2026.11.1. ~ 2027.6.30.</li>
+                    <li><strong>사업 범위</strong>: ① 현행 시스템 아키텍처 정밀 진단 및 2단계 전환체계 구축(Migration), ② 학생·수업 정보 연계 안정화 및 DB 접근통제 강화, ③ 통합 교수학습 포털 UI/UX 고도화, ④ 통합인증 및 표준연계(SAML/OIDC/OAuth) 고도화, ⑤ 학습이력 통합저장소(DataLake/LRS) 구축, ⑥ 데이터 기반 학습분석 및 AI 맞춤형 서비스 기반 구축, ⑦ 빅테크 연계 보안적합성 검증(PoC) 및 CC인증 고도화, ⑧ 외부 솔루션(LCMS, SIS) 내재화 추진</li>
+                    <li><strong>주요 일정</strong>: 제안요청설명회 2026.10.7.(수) 14:00, NIA 서울사무소 지하 1층 대회의실 / 계약방법: 협상에 의한 계약체결 / 기술능력평가(90%) + 입찰가격평가(10%) / 기술능력평가 85% 미만 협상 제외 / 3단계 정보시스템 감리 실시</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>담당부서</strong>: 한국지능정보사회진흥원(NIA) 지능기술인프라본부 AI기술전략팀</li>
+                    <li><strong>팀장</strong>: 김동희 / ☎ 053-230-1701 / ✉ dhk@nia.or.kr</li>
+                    <li><strong>선임</strong>: 장유환 / ☎ 053-230-1709 / ✉ yuhwan@nia.or.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>현행 1단계 시스템 아키텍처 정밀 진단 및 To-Be 아키텍처 설계, 단계적 전환(Migration) 전략 수립</li>
+                            <li>SAML 2.0, OIDC, OAuth 2.0, SCIM 2.0, OneRoster 1.2 기반 통합인증 체계 고도화 및 CC인증 적용</li>
+                            <li>LRS(Learning Record Store) 중심 학습데이터 통합관리, DataLake 구축, 데이터 파이프라인 구현</li>
+                            <li>LTI 1.3 / LTI Advantage 기반 외부 에듀테크 도구 연계, xAPI·CMI-5·OneRoster 등 국제 교육표준 적용</li>
+                            <li>Google Classroom, Naver Whaleclass, MS Teams for Education 빅테크 계정 연계 및 PoC 수행</li>
+                            <li>AI 분석 기반 맞춤형 학습 서비스 기반 구축(DAG 파이프라인, 분석 모델 등록·관리·실행)</li>
+                            <li>외부 솔루션(LCMS, SIS, 통합학습플레이어) 내재화 추진, 외부 라이선스 의존도 감소(SFR-020)</li>
+                            <li>KCMVP 검증 암호모듈 적용, 사이버보안 취약점 점검 및 모의해킹(외부 전문업체 위탁)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W 목록 — NCP(네이버클라우드) 환경]</strong>
+                        <ul>
+                            <li>Rocky Linux (표기: Rock Linux): <strong>256EA</strong></li>
+                            <li>MS Windows Server: <strong>30EA</strong></li>
+                            <li>MS-SQL (4Core): <strong>10EA</strong></li>
+                            <li>Cloud DB for MySQL: <strong>10EA</strong></li>
+                            <li>Cloud DB for PostgreSQL: <strong>80EA</strong></li>
+                            <li>NoSQL PaaS: <strong>60EA</strong></li>
+                            <li>Secuve TOS Manager: <strong>10EA</strong> / Agent: <strong>286EA</strong> (서버보안)</li>
+                            <li>DBSAFER Gateway: <strong>10EA</strong> / DB Core: <strong>480Core</strong> (DB 접근제어)</li>
+                            <li>Magic DB Plus DB 암호화: <strong>568Core</strong> / 유지보수: <strong>232EA</strong></li>
+                            <li>i-OneNGS Standard Master: <strong>10EA</strong> / 40Node: <strong>1Set</strong> / 30Node: <strong>9Set</strong> (VM 접근제어)</li>
+                            <li>알약 for Linux Server and Windows Server: <strong>286EA</strong> (서버 백신)</li>
+                            <li>Exper DB (4vCore 기준): <strong>10Set</strong> (DBMS)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W 목록 — KTC(KT클라우드) 환경]</strong>
+                        <ul>
+                            <li>Linux (OS): <strong>27EA</strong> / MS Windows: <strong>3EA</strong></li>
+                            <li>Secuve TOS Manager: <strong>1EA</strong> / Agent: <strong>30EA</strong></li>
+                            <li>DBSAFER Gateway: <strong>1EA</strong> / DB Core: <strong>48Core</strong></li>
+                            <li>Magic DB Plus DB 암호화: <strong>56Core</strong></li>
+                            <li>i-OneNGS Standard Master: <strong>1EA</strong> / 40Node: <strong>1Set</strong></li>
+                            <li>알약 for Linux Server and Windows Server: <strong>30EA</strong></li>
+                            <li>Exper DB (4vCore 기준): <strong>1Set</strong></li>
+                        </ul>
+                    </li>
+                    <li><strong>[기타 기술지원 서비스]</strong>
+                        <ul>
+                            <li>네이버웍스(웨일스페이스) 메일 계정 운영 기술지원, SAML 2.0 SSO 연동 유지보수 (PSR-004)</li>
+                            <li>구글 에듀케이션 플러스(Google Education Plus) 약 2,620,247개 계정 라이선스 운영 및 SIS 연동 기술지원 (PSR-005)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>경쟁 OS(Rocky Linux) 명시 도입 확정</strong>: NCP 클라우드 환경 서버 OS로 Rocky Linux(RFP 표기: Rock Linux) 256EA가 품목으로 명시·확정되어 RHEL 신규 제안이 구조적으로 어려움. 낮음 판정의 핵심 근거</li>
+                    <li><strong>Red Hat 상용 제품 전무</strong>: RFP 전체 문서(제안요청서, 현행 SW 목록, 구매 품목)에 RHEL, OpenShift, Ansible, JBoss/EAP, Satellite 등 Red Hat 상용 제품명이 단 한 건도 등장하지 않음</li>
+                    <li><strong>경쟁 DBMS 다수 명시</strong>: MS-SQL(10EA), Exper DB(11Set), Cloud DB for MySQL/PostgreSQL, NoSQL PaaS 등이 구매 품목으로 이미 확정되어 있어 Red Hat 관련 미들웨어(Data Grid, AMQ 등) 제안 여지 없음</li>
+                    <li><strong>외부 솔루션 내재화 추진 방침</strong>: 신규 상용 SW 도입을 억제하는 내재화 요구(SFR-020) 및 상용 솔루션 도입 시 사전 협의 의무(COR-008)가 명시되어 있어 추가 상용 SW 납품 장벽이 높음</li>
+                    <li><strong>기존 CSP 관리형 클라우드 스택 고착</strong>: 11개 교육청이 이미 NCP/KTC 기반 민간 클라우드로 운영 중이며, CSP PaaS Node 중심 구조로 OpenShift 등 컨테이너 플랫폼 도입 여지가 사실상 없음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>RFP 내 Red Hat 상용 제품 명시 없음</strong>: RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품이 구매 품목으로 명시된 사례가 전혀 없어 제안 가능 근거 자체가 부재</li>
+                    <li><strong>다수의 Linux 계열 VM 존재 (제한적 여지)</strong>: 현행 인프라에 OS가 단순 "Linux"로만 표기된 VM이 수백 식 존재하여 기술적으로는 RHEL 논의 구도는 가능하나, Rocky Linux가 주 OS로 이미 확정된 상황으로 전환 가능성 매우 낮음</li>
+                    <li><strong>컨테이너/PaaS 환경 존재 (제한적 여지)</strong>: 각 교육청별 PaaS Node(64vCore/128GB)가 구성되어 있어 OpenShift 기술 어프로치는 가능하나, CSP 관리형 PaaS로 운영 중이어서 실질적 도입 가능성 희박</li>
+                    <li><strong>운영 자동화 요구 존재 (제한적 여지)</strong>: xAPI, LTI, SCIM, OIDC 등 다양한 표준 연계 및 DAG 기반 파이프라인 관리 요구사항이 있어 Ansible Automation Platform 활용 어프로치를 기술적으로 제안할 수 있으나, 예산 품목에 미반영 상태</li>
+                    <li><strong>종합 평가</strong>: Rocky Linux 대규모 명시 도입 및 Red Hat 상용 제품 전무라는 두 가지 핵심 요인으로 인해 영업 기회가 사실상 없음. 동 사업에 대한 영업 투자 우선순위는 낮음(Low)으로 권고</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

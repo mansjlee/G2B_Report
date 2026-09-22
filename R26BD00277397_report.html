@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00277397 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>농림축산검역본부_AI 기반의 X-Ray 고도화 및 HPAI 의심축 부검이미지 판독 시스템 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>Rocky Linux OS 명시, RH 상용제품 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국제우편·휴대검역 X-ray 물량 증가에 따른 판독 부담 경감 및 업무 효율화를 위해 <strong>AI 기반 X-ray 검역판독 시스템 고도화</strong> 추진</li>
+                    <li>현장판독 한계 극복을 위한 <strong>HPAI(고병원성 조류인플루엔자) 의심축 부검이미지 AI 판독 시스템 신규 구축</strong>으로 초동 방역 대응 강화</li>
+                    <li>HPAI 유전체 정보 및 지리정보를 연계한 확산 패턴 분석을 위한 <strong>NGS 아카이브 시스템(KAHIS 동물질병 유전정보 통합관리 플랫폼) 고도화</strong></li>
+                    <li>HPAI·ASF 위험도 알고리즘 개발을 위한 <strong>공간정보 AI(GEO AI) 빅데이터 시스템 HW 신규 도입</strong></li>
+                    <li>주관기관: 농림축산검역본부</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 총 3,254백만원 (부가가치세 포함, 직접구매 제외) / 직접구매 포함 시 4,363백만원 / 리스 기간 72개월(6년), 리스 방식 계약</li>
+                    <li><strong>사업 기간</strong>: 계약일로부터 150일 (약 5개월)</li>
+                    <li><strong>사업 범위</strong>:
+                        <ul>
+                            <li>인공지능 기반 의심축 부검소견 판독시스템 구축 (AI 서버, 통합서버, SAN 스토리지, NAS 스토리지 증설)</li>
+                            <li>인천공항 X-ray 검역판독 AI 시스템 고도화 및 구축 (GPU 서버 도입, AI 모델 고도화·신규 구축)</li>
+                            <li>KAHIS 동물질병 유전정보 통합관리 플랫폼(NGS 아카이브 시스템) 고도화</li>
+                            <li>GEO AI 빅데이터 시스템 HW 도입 (서버 7식) 및 GEO AI 전용 솔루션 144Core 도입(직접구매)</li>
+                        </ul>
+                    </li>
+                    <li><strong>주요 일정</strong>:
+                        <ul>
+                            <li>제안요청 설명회: 2026년 10월 14일 오전 10시, 농림축산검역본부 본관동 2층 국제회의실</li>
+                            <li>입찰 방식: 조달청 일반경쟁입찰, 협상에 의한 계약체결</li>
+                            <li>평가 방식: 기술평가 90% + 가격평가 10%</li>
+                            <li>GEO AI 솔루션 도입 예정 시기: 2027년 2월</li>
+                            <li>사업 수행 단계: 착수(M) → 분석(M+1) → 구축(M+2~M+3) → 시험·검수(M+4) → 안정화</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>담당 부서</strong>: 농림축산검역본부 동식물빅데이터팀</li>
+                    <li><strong>사업 사무관</strong>: 유충식 / TEL: 054-912-0609 / FAX: 054-912-0383</li>
+                    <li><strong>동식물 주무관</strong>: 백정훈 / TEL: 054-912-0611 / FAX: 054-912-0383</li>
+                    <li><strong>소재지</strong>: 경상북도 김천시 혁신8로 177 (농림축산검역본부)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>X-ray 검역판독 AI 모델 고도화: 종자(목표 판독률 90%), 원형과실(90%), 묘목·기타과실·소시지(60%) 대상 강화학습 기반 모델 개발</li>
+                            <li>HPAI 의심축 부검이미지 기반 멀티모달 AI 판독 모델 구축 (목표 판독률 60%, 8개 클래스 분류)</li>
+                            <li>NGS 아카이브 시스템 고도화: 지리정보 기반 AI 확산 트렌드 시각화 기능 개발</li>
+                            <li>GEO AI: MSA(마이크로서비스 아키텍처) 기반 컨테이너 가상화 구조, 공간정보 분석·AI 학습·서빙·시각화 기능</li>
+                            <li>전자정부 표준프레임워크 적용, Linux OS 전용 환경 구성</li>
+                            <li>보안: CC인증 제품 납품, 국정원 검증필 암호모듈, 소프트웨어 개발보안(시큐어 코딩) 준수</li>
+                        </ul>
+                    </li>
+                    <li><strong>[통합발주 도입 S/W 및 품목]</strong>
+                        <ul>
+                            <li>GEO AI 메시지 버스 서버 2식: OS Rocky Linux 9.7 이상 (서버 내 포함)</li>
+                            <li>GEO AI 배치 서버 1식: OS Rocky Linux 9.7 이상 (서버 내 포함)</li>
+                            <li>GEO AI Serving 서버 2식: OS Rocky Linux 9.7 이상 (서버 내 포함)</li>
+                            <li>GEO AI 시각화 서버 2식: OS Rocky Linux 9.7 이상 (서버 내 포함)</li>
+                            <li>의심축 판독 AI 서버 1식: OS Rocky Linux 9.7 이상 (서버 내 포함)</li>
+                            <li>의심축 판독 통합 서버 1식: OS Rocky Linux 9.7 이상 (서버 내 포함)</li>
+                            <li>인공지능 판독 GPU 서버 1식: 표준 OS (미지정)</li>
+                            <li>GEO AI 솔루션 포함 구성: WEB(nginx), WAS(tomcat), DBMS(PostgreSQL) — 오픈소스 SW</li>
+                            <li>※ 직접구매(조달청 디지털서비스몰): GEO AI 144Core 1식 (도입금액 약 11억 880만원, 본 통합발주 범위 외)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>Rocky Linux OS 명시 확정</strong>: 통합발주 HW 서버 6종(GEO AI 메시지버스·배치·Serving·시각화 서버, 의심축 판독 AI·통합 서버) 전체에 OS를 "Rocky Linux 9.7 이상"으로 명시 → RHEL 대체 가능성 극히 낮음</li>
+                    <li><strong>Red Hat 상용 제품명 전무</strong>: RFP 전체에 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 단 한 곳도 언급되지 않음</li>
+                    <li><strong>오픈소스 SW 스택 명시</strong>: GEO AI 솔루션 구성에 nginx, tomcat, PostgreSQL 등 오픈소스 SW가 명시되어 Red Hat 상용 미들웨어(JBoss EAP 등) 제안 여지 없음</li>
+                    <li><strong>S/W 납품 규모 미미</strong>: 사업 구조가 HW 도입 및 AI 개발용역 중심이며, 별도 상용 SW 통합발주 품목이 사실상 없음</li>
+                    <li><strong>경쟁 OS 확정</strong>: Rocky Linux는 CentOS 계열의 무료 커뮤니티 OS로, RHEL 도입 없이 해당 OS로 사업이 확정될 경우 Red Hat 라이선스 수익 기회 없음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>인공지능 판독 GPU 서버 1식 OS 미지정</strong>: "표준 OS 제공"으로만 명시되어 있어 이론적으로 RHEL 제안이 가능하나, 나머지 서버가 모두 Rocky Linux로 지정된 점을 고려하면 실질적 가능성은 매우 낮음</li>
+                    <li><strong>컨테이너·MSA 아키텍처 구조</strong>: GEO AI 솔루션이 MSA 기반 컨테이너 가상화 구조를 채택하고 있어, 향후 확장·유지관리 시 OpenShift 또는 Ansible 제안 여지가 이론적으로 존재하나 현재 RFP 상 Red Hat 상용 제품명 없음</li>
+                    <li><strong>RFP 내 Red Hat(또는 동의어) 제품명·수량</strong>: 해당 없음 (전무)</li>
+                    <li><strong>종합 판단</strong>: Rocky Linux OS가 서버 전반에 명시 확정된 상황으로, 판정 규칙상 <strong>낮음</strong>에 해당. 윈백(CentOS→RHEL 전환) 관점의 어프로치도 Rocky Linux가 이미 차기 OS로 지정된 만큼 설득력 확보 어려움</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

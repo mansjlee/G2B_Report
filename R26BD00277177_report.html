@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00277177 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국교육방송공사_EBS 방송 및 교육 인터넷서비스 통합 운영 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>Ubuntu·Rocky OS 명시, RH 상용 제품 전무</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>한국교육방송공사(EBS)가 운영 중인 <strong>14개 교육 인터넷 서비스</strong>(공통API, 메인, 초등, 중학프리미엄, 고교강의, 북스토리, 영어, 수학, AI교육플랫폼, EBS튜터링, AI단추플러스, 함께학교, 의무교육단계 학습지원, 유스캠퍼스)의 통합 위탁 운영 및 유지관리(SM) 사업</li>
+                    <li>기존 위탁운영 계약 만료(2026년 12월 말)에 따른 차기 운영사업자 선정</li>
+                    <li>대국민 교육서비스의 무중단 안정 운영, AI 기반 운영 혁신, EOS 자산의 단계적 전환, 통합 표준화 체계 확립이 핵심 목표</li>
+                    <li>사업 종류: 소프트웨어 운영 및 유지관리(SM)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 총 46,669,318,026원 (부가세 별도) — 2027년 23,501,875,910원 / 2028년 23,167,442,116원 (운영비·마케팅비·교재문항DB구축·기타 포함)</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2028년 12월 31일 (24개월, 장기계속계약·연차별 계약 체결)</li>
+                    <li><strong>사업 범위</strong>: EBS 패밀리 14개 웹/앱 서비스 통합 운영·유지관리, 응용 시스템 개발, 상용 소프트웨어 통합 유지보수, 교재문항 DB 구축, 마케팅 운영, AI 도구 도입·운영, EOS 전환, 보안 관리, 클라우드 인프라(네이버 클라우드) 연계 운영</li>
+                    <li><strong>계약 방법</strong>: 일반경쟁입찰(협상에 의한 계약), 기술평가 90% + 가격평가 10%</li>
+                    <li><strong>주요 일정</strong>: 2026년 11월 RFP 공고 → 제안서 접수 → 기술평가 → 협상 → 계약 체결 → 2027년 1월 착수 / 2027년 12월 1차년도 평가 후 2차년도 계약 협의 / 2028년 12월 완료</li>
+                    <li><strong>최소 투입 인력</strong>: 163.45명 (사이트별 상주 인력 포함)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관 기관</strong>: 한국교육방송공사 (EBS)</li>
+                    <li><strong>담당 부서</strong>: 디지털학교교육본부 디지털교육서비스부</li>
+                    <li><strong>담당자 이름</strong>: 임형진</li>
+                    <li><strong>연락처</strong>: 02-526-7483</li>
+                    <li><strong>이메일</strong>: lhj@ebs.co.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong>
+                        <ul>
+                            <li>14개 EBS 웹/앱 서비스의 무중단 통합 운영·유지관리 (221개 요구사항: CMR 20개, MPR 164개, DAR·SER·COR·PER·QUR·SIR·PMR·MHR·PSR 등)</li>
+                            <li>네이버 클라우드 기반 운영 환경에서의 CI/CD 자동화, 클라우드 인프라 연계 운영</li>
+                            <li>EOS 도래 자원 전환 대응: 2027년 DBMS 44대·OS 30대·미들웨어 50대, 2028년 DBMS 7대·OS 30대·미들웨어 50대</li>
+                            <li>ISMS-P 인증 유지, 망분리 보안 통제, 개인정보 보호 (SER 요구사항)</li>
+                            <li>AI 기반 개발·운영 도구 도입 계획 수립(1차년도) 및 본격 적용(2차년도)</li>
+                            <li>SLA 기반 서비스 품질 관리, 서비스 가용률 99.9% 이상</li>
+                            <li>MLOps 운영 관리, AI 단추플러스 지식추적모델·추천엔진 고도화</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매·통합발주 S/W 목록 - 별첨2 유지보수 대상 소프트웨어]</strong>
+                        <ul>
+                            <li>WEB-Apache or NGINX (그로윈, 미들웨어, 코어): <strong>1,028개</strong></li>
+                            <li>Wildfly WAS (그로윈, 미들웨어, 코어): <strong>454개</strong></li>
+                            <li>Maria DBMS (그로윈, 데이터베이스, 서버): <strong>57대</strong></li>
+                            <li>AI 교육플랫폼 게임 솔루션 10종 (글로브포인터): 사이트 <strong>1식</strong></li>
+                            <li>AI 교육플랫폼 블록코딩 실습도구 (글로브포인터): 사이트 <strong>1식</strong></li>
+                            <li>AI 교육플랫폼 게임 솔루션 2종 (글로브포인터): 사이트 <strong>1식</strong></li>
+                            <li>AI 교육플랫폼 게임 솔루션 2종 (로지브라더스): 사이트 <strong>1식</strong></li>
+                            <li>AI 교육플랫폼 게임 솔루션 3종 (에드윌): 사이트 <strong>1식</strong></li>
+                            <li>엑스트렉터 개인화 e-CRM 솔루션 (넥스트웹): 사이트 <strong>1식</strong></li>
+                            <li>DATA STORY (넷스루, 웹 분석): <strong>9 사이트</strong></li>
+                            <li>넷피온 엔터프라이즈 V3 (넷퍼씨, EMS): <strong>2 사이트</strong></li>
+                            <li>웹 가상키패드 솔루션 PC용 (라온시큐어): 전사 <strong>1식</strong></li>
+                            <li>웹 가상키패드 솔루션 모바일용 (라온시큐어): 전사 <strong>1식</strong></li>
+                            <li>API 문제은행 (링인터렉티브, 문항저작도구): 전사 <strong>3식</strong></li>
+                            <li>e-Page SAFER WebDRM Pack For NoAX / Mobile (마크애니, 캡쳐방지): 서버 <strong>1식</strong></li>
+                            <li>eSurvey-Master (윈솔, 설문조사): 사이트 <strong>1식</strong></li>
+                            <li>EBS HTML5Player by Sharemind (쉐어마인드, 플레이어): 사이트 <strong>1식</strong></li>
+                            <li>나모크로스에디터 3.5 (스퀘어네트, 에디터): 사이트 <strong>1식</strong></li>
+                            <li>MAXY 솔루션 (씽크엠, 모바일 성능 모니터링): 사이트 <strong>1식</strong></li>
+                            <li>이미지인식(패턴매칭) (아이브릭스, 인공지능): 서버 <strong>2대</strong></li>
+                            <li>챗봇엔진 (아이브릭스, 인공지능): 서버 <strong>2대</strong></li>
+                            <li>광학문자인식(OCR) (아이브릭스, 인공지능): 서버 <strong>2대</strong></li>
+                            <li>AI 추천엔진 (아이브릭스, 인공지능): 서버 <strong>11대</strong></li>
+                            <li>Zone Player 2.0 (아이엠지테크, 플레이어): 사이트 <strong>1식</strong></li>
+                            <li>HTML5 VideoPlayer (아이엠지테크, 플레이어): 사이트 <strong>2식</strong></li>
+                            <li>EBSMath 앱 (아이엠지테크): 사이트 <strong>1식</strong></li>
+                            <li>EBSe 영어앱(다운로드) (아이엠지테크): 사이트 <strong>1식</strong></li>
+                            <li>Report Designer Server (엠투소프트, 리포팅 툴): CPU <strong>24개</strong></li>
+                            <li>플레이어&amp;다운로드 (올두잇, 플레이어): 사이트 <strong>1식</strong></li>
+                            <li>ezPDF WebViewer (유니닥스, 웹뷰어): 사이트 <strong>2식</strong></li>
+                            <li>DRM뷰어(안드로이드/iOS) (유니닥스, eBook DRM): 사이트 <strong>1식</strong></li>
+                            <li>수식편집기 (이든아이티, 에디터): 사이트 <strong>2식</strong></li>
+                            <li>U-PRIVACY SAFER (이지서티, 개인정보 탐지): VM <strong>1식</strong></li>
+                            <li>EBSe 펀리딩 PC용 이북/액티비티 (참빛): 사이트 <strong>1식</strong></li>
+                            <li>동영상 다운로드 솔루션 (테르텐, 다운로더/플레이어): 사이트 <strong>1식</strong></li>
+                            <li>단원복습 게임 솔루션 (스윙크, 게임 서비스): 서버 <strong>1식</strong></li>
+                            <li>방송 편성 솔루션 CAST_IS (라이브방송 서버): <strong>1식</strong></li>
+                        </ul>
+                    </li>
+                    <li><strong>[현행 응용시스템 기반 기술 스택]</strong>
+                        <ul>
+                            <li>OS: RockyLinux, Ubuntu, WinServer, CentOS</li>
+                            <li>Web Server: Apache, NginX / WAS: Wildfly, Tomcat, Spring Boot Embedded Tomcat</li>
+                            <li>DBMS: MariaDB, MaxScale, MySQL, MongoDB / 검색엔진: Elasticsearch</li>
+                            <li>Language: OpenJDK, Temurin, Java, Python, node.js / Framework: 전자정부 표준 프레임워크, FastAPI</li>
+                            <li>AI: AWS FlexAI, GPT/Gemini/EXAONE/Solar/Claude 모델 연동</li>
+                            <li>클라우드: 네이버 클라우드 기반 운영</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>경쟁·대체 OS 명시 확정</strong>: 현행 응용시스템 OS 스택에 <strong>Ubuntu, RockyLinux, CentOS, WinServer</strong>가 명시되어 있으며, EOS 전환 대상에도 RockyLinux·Ubuntu가 전환 완료 목표 OS로 포함됨. 이미 Red Hat 경쟁 제품이 운영 플랫폼으로 확정된 상태</li>
+                    <li><strong>WAS: Wildfly(커뮤니티) 사용, JBoss EAP 상용 제품 미명시</strong>: 별첨2 유지보수 목록에 'Wildfly WAS 454코어'가 등재되어 있으나, 이는 Red Hat 상용 제품인 JBoss EAP가 아닌 업스트림 커뮤니티 제품임. 상용 EAP 도입 근거로 인정 불가</li>
+                    <li><strong>Red Hat 상용 제품 전무</strong>: RFP 전문, 과업지시서, 별첨2 유지보수 대상 소프트웨어 목록 어디에도 RHEL, OpenShift, Ansible, JBoss EAP, Satellite, Quay, AAP 등 Red Hat 상용 제품명이 품목으로 명시되지 않음</li>
+                    <li><strong>클라우드 플랫폼: 네이버 클라우드</strong>: 현재 운영/개발 환경은 네이버 클라우드 기반으로 운영 중이며, OpenShift나 ROSA(Red Hat OpenShift Service on AWS) 도입 여지 없음</li>
+                    <li><strong>SM 사업 특성</strong>: 본 사업은 기존 환경을 유지관리하는 SM 사업으로, 신규 플랫폼·OS 도입이 아닌 기존 구성을 유지·운영하는 것이 핵심 과업임. 별도의 신규 상용 SW 직접구매 대상 없음을 RFP에서 명시</li>
+                    <li><strong>EOS 전환 대상 OS</strong>: 별첨1 EOS 대상 리스트에서 OS 전환 대상(CentOS 등)의 후속 플랫폼으로 RockyLinux·Ubuntu가 현재 스택에서 이미 사용 중이므로 RHEL 전환 여지 극히 낮음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[극히 제한적 여지] CentOS EOS 전환 대응</strong>: 별첨1 EOS 목록에 CentOS가 포함되어 있어, 이론적으로 RHEL로의 전환 제안 여지는 있음. 그러나 현행 스택에 이미 RockyLinux와 Ubuntu가 대체 OS로 운영 중이므로 실질적 윈백 가능성은 매우 낮음</li>
+                    <li><strong>[극히 제한적 여지] Wildfly → JBoss EAP 업그레이드 제안 가능성</strong>: Wildfly WAS 454코어가 유지보수 대상으로 등재되어 있어, 기술지원 만료·보안 이슈 발생 시 JBoss EAP 상용 전환 제안의 씨앗은 존재함. 단, 사업 특성상 현재 사업 기간 내 채택 가능성은 낮으며, 차기 사업 사전 포지셔닝 관점에서만 유효</li>
+                    <li><strong>[장기 관점] Ansible 자동화 제안 여지</strong>: RFP CMR-003에서 '운영 업무 자동화' 및 'RPA·스크립트·AI 활용'을 명시하고 있어, Ansible Automation Platform(AAP)의 운영 자동화 솔루션으로서의 포지셔닝을 장기적으로 검토해 볼 수 있음. 단, 현재 사업에서 SW 구매 항목으로는 미포함</li>
+                    <li><strong>현 사업에서 직접적인 Red Hat 상용 제품 제안 기회는 없음</strong>: 위 요소들은 모두 차기 사업(2029년 이후) 또는 추가 사업 포지셔닝을 위한 관계 구축 차원의 접근이며, 본 사업 내 직접적인 제안·납품 기회는 판정 불가 수준</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
