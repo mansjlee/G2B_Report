@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00277680 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>영산강홍수통제소_정보시스템 이중화 및 노후장비 교체사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>UNIX/AIX OS 지정, RH 상용 제품 미명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>노후 전산시스템(연계 서버·백업 스토리지·LTO·타임서버 등) 교체로 장애 요소를 최소화하고, 안정적인 대국민 물정보 서비스(홍수예보) 제공</li>
+                    <li>정보보호제품(DDoS·IPS·웹방화벽)을 Active-Active 이중화 구성하여 업무 연속성 확보 및 서비스 중단 시간 최소화</li>
+                    <li>백업·재해 복구 체계 강화 및 통합 모니터링 시스템 도입으로 예방 중심 운영체계 구축</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 전체 1,131,715,100원(부가세 포함) — 경쟁입찰 725,392,800원(H/W 419,610,000원 + S/W 239,838,000원) + 조달 직접구매 406,322,300원(H/W 258,295,300원 + S/W 148,027,000원)</li>
+                    <li><strong>사업 기간</strong>: 계약일로부터 180일(6개월)</li>
+                    <li><strong>사업 범위</strong>: ① 유관기관 연계 서버 신규 도입(2대, 64bit UNIX), ② 백업 스토리지 교체(1대), ③ 타임서버 교체(1대), ④ LTO 장비 교체(1대), ⑤ DDoS·IPS·웹방화벽 신규 도입 및 이중화, ⑥ L4 스위치 신규 도입(4대), ⑦ UPS·모니터·서버랙 추가, ⑧ 상용 S/W 구매·설치(DBMS, 파일전송, 백업 SW, 보안 SW, EMS SW)</li>
+                    <li><strong>주요 일정</strong>: 착수(계약체결·현장실사) → 목표시스템 설계(1~2개월) → 구축(장비 도입·인프라 구성·이중화·백업체계, 2~4개월) → 통합테스트·보안점검(5개월) → 안정화 및 완료보고(6개월)</li>
+                    <li><strong>계약 방법</strong>: 협상에 의한 계약(리스계약 조건부), 기술 90%·가격 10% 평가</li>
+                    <li><strong>대기업 참여 제한</strong>: 20억 미만 사업으로 대기업 SW사업자 참여 불가</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>수요기관</strong>: 기후에너지환경부 영산강홍수통제소</li>
+                    <li><strong>담당 부서</strong>: 예보통제과</li>
+                    <li><strong>성명·직위</strong>: 김민영 (전산주사)</li>
+                    <li><strong>전화</strong>: 062-600-8341</li>
+                    <li><strong>팩스</strong>: 062-600-8329</li>
+                    <li><strong>이메일</strong>: 명시되지 않음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항 요약]</strong>
+                        <ul>
+                            <li>유관기관 연계 서버(2대): CPU 14.4GHz 이상, DDR5 ECC 64GB, NVMe SSD 800GB×5, 32Gbps 광채널 — OS: <strong>64bit UNIX</strong>, 기존 운영 서버(AIX 7.3)와 동일 또는 준하는 OS 제공, HA Cluster SW 포함</li>
+                            <li>백업 스토리지(1대): Dual RAID Controller, SAS 144TB 이상, 16Gbps 8포트 이상</li>
+                            <li>타임서버(1대): GNSS·PTP·NTP 지원, Anti-Jamming 기능</li>
+                            <li>LTO 장비(1대): LTO 9 HH FC Drive, 18TB Ultrium 9 카트리지 포함</li>
+                            <li>보안장비(직접구매): DDoS·IPS·웹방화벽 각 1식 신규 + 기존 장비와 이중화, CC인증 필수</li>
+                            <li>L4 스위치 4대, HBA카드(Emulex 32Gb 듀얼포트) 2식, UPS 1식, 상황관제 모니터(75인치 UHD) 3대</li>
+                        </ul>
+                    </li>
+                    <li><strong>[통합발주 S/W — 제품명·수량]</strong>
+                        <ul>
+                            <li><strong>DBMS S/W</strong> 1식(총 100 unit): 홍수예보서버용 DBMS 증설 2조 + 외부망 DB서버 DBMS 증설 2조 — <em>"현재 운영 중인 DBMS와 동일 제품으로 설치"</em>(Oracle RMAN·FRA 지원 명시로 Oracle DBMS 추정), Active-Active 이중화 구성 / BMT 비대상(직접구매 제외)</li>
+                            <li><strong>파일전송 솔루션(Ez-GATOR V3.3 Agent, Client용)</strong> 3식: 기 구축 연계서버 에이전트 증설 / BMT 비대상(직접구매 제외, 5천만원 미만)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[조달 직접구매 S/W — 제품명·수량]</strong>
+                        <ul>
+                            <li><strong>백업 SW</strong> 2식(직접구매): 무제한 클라이언트 라이선스, NAS NDMP·Oracle RMAN 백업 지원</li>
+                            <li><strong>보안 SW(망간자료전송)</strong> 1식(직접구매): 기존 망간자료전송 SW와 이중화</li>
+                            <li><strong>EMS SW</strong> 1식(직접구매): 통합 모니터링(서버·DBMS·망·보안 등)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>OS가 UNIX(AIX) 계열로 고정</strong>: 연계 서버 요구사항(ECR-002)에 "64bit UNIX HA Cluster" 및 "현재 운영중인 서버(AIX 7.3)와 동일 시스템 운영체제 또는 이에 준하는 운영체제"로 명시 → RHEL 제안 불가</li>
+                    <li><strong>DBMS 제품 고정(Oracle 추정)</strong>: ECR-010에 "현재 운영 중인 DBMS와 동일 제품"으로 설치 요구, ECR-009 백업 SW 요구사항에 "Oracle RMAN을 통해 FRA(Fast Recovery Area)에 직접 백업" 명시 → Oracle DBMS 기반으로 고정, Red Hat 관련 DBMS 제안 불가</li>
+                    <li><strong>파일전송 제품 고정(Ez-GATOR V3.3)</strong>: ECR-011에 "Ez-GATOR V3.3 Agent (Client용)"으로 제품명 명시 → Red Hat 제안 영역 없음</li>
+                    <li><strong>Red Hat 상용 제품명 전혀 미등장</strong>: RFP 전체에 RHEL, OpenShift, Ansible, JBoss, AAP 등 Red Hat 상용 제품명 또는 동의어가 단 한 건도 명시되지 않음</li>
+                    <li><strong>S/W 납품은 포함되나 RH 스택 적용 여지 없음</strong>: 도입 S/W 모두 기존 운영 환경 연속성(UNIX/AIX, Oracle DBMS, Ez-GATOR) 기반으로 고정</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[제안 가능 포인트]</strong>
+                        <ul>
+                            <li>기술적용계획표 내 운영체제 항목에 "Linux" 기반 환경이 일반 표준기술로 나열되어 있어, 향후 관련 사업 확장 시 RHEL 제안 여지는 이론적으로 존재</li>
+                            <li>EMS SW 및 백업 SW는 제품명이 명시되지 않아 특정 제품에 종속되지 않으나, Red Hat 제품군과의 직접 연관성은 없음</li>
+                        </ul>
+                    </li>
+                    <li><strong>[제안 불가능 포인트]</strong>
+                        <ul>
+                            <li>핵심 서버 OS가 AIX 7.3 계열로 고정되어 RHEL·OpenShift 등 제안 근거 없음</li>
+                            <li>컨테이너·Kubernetes·자동화·PaaS 등 Red Hat 스택 적용 가능한 기술 요구사항이 RFP에 없음</li>
+                            <li>RFP 및 과업지시서 내 Red Hat(레드햇), RHEL, OpenShift, Ansible, JBoss, AAP 등 상용 제품명·동의어 전혀 없음</li>
+                            <li>결론: 이번 사업에서 Red Hat 상용 제품의 구체적인 제안 기회는 없으며, 영업 활동은 차기 유지보수 또는 신규 클라우드 전환 사업 발굴로 전환 필요</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
