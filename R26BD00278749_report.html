@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00278749 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>인덕대학교_대학 AI 인프라 기반 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>컨테이너/K8s 환경 구축 언급, OS 미지정</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>인덕대학교(전문대학)의 중장기발전계획 "INDUK VISION2030" 및 전문대학 혁신지원사업 목표 달성을 위한 대학 전용 AI 인프라 기반 구축 사업</li>
+                    <li>Private AI 구동을 위한 GPU 서버 등 하드웨어·소프트웨어 인프라(AI 데이터 스퀘어) 구축</li>
+                    <li>대학 통합 지식 기반 데이터베이스(Knowledge DB) 및 데이터 마트 구축을 통해 AI가 참조할 수 있는 지식베이스 확보</li>
+                    <li>대학 맞춤형 AI 에이전트 3~5종 개발 및 관리자용 Agent Studio 구축으로 대학 자체 AI 운영 역량 확보</li>
+                    <li>LLM 기반 RAG 시스템, 모델 게이트웨이, SSO 연동 AI 포털(UI/UX) 구축을 통한 실무형 AI·DX 융합 교육 체계 이행</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 총 13억원 (2026학년도 9억원 + 2027학년도 4억원) / 시스템 구축, 하드웨어 구매, 구독라이선스, 솔루션 구매, 연동 개발, 마이그레이션, 감리 등 일체 포함</li>
+                    <li><strong>사업 기간</strong>: 계약일로부터 10개월 (장기계속계약, 안정화 기간 포함)</li>
+                    <li><strong>사업 범위</strong>: ① Private AI 기반 인프라(AI 데이터 스퀘어) 구축 ② 대학 통합 지식 기반 DB(Knowledge DB) 및 데이터 마트 구축 ③ AI 특화 에이전트 개발 및 Agent Studio 구축 ④ 시스템 최적화·안정화·품질 대응 / 레거시 시스템(학사/행정/포털/SSO/LMS) 연동 포함</li>
+                    <li><strong>주요 일정</strong>: M-2~M-1: 사업발주 및 입찰·사업자 선정 → M: 계약체결 및 요구사항 분석 → M+1~M+3: 기반 HW/SW 설치 및 인프라 구축 완료 → M+3~M+7: 지식 DB 구축, 레거시 연동, 시스템·에이전트 설계 및 개발 → M+7~M+9: 단위·통합 테스트 → M+10: 사업 완료보고</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주기관</strong>: 인덕대학교</li>
+                    <li><strong>총괄 부서</strong>: 대학혁신사업단 (대학혁신지원사업 총괄, 대학 에이전트 선정 TF 운영)</li>
+                    <li><strong>기술 자문 부서</strong>: 전산센터 혁신지원사업추진 TF (사업 시행·기술 자문, 보안 검토, 제안서 평가)</li>
+                    <li><strong>시스템 관리 부서</strong>: 기획처 전산센터 (시스템 구축 업무 및 시스템 관리 주관)</li>
+                    <li><strong>담당자 연락처·이메일</strong>: RFP 내 미기재 (보안사항으로 입찰 참여업체 한정 보안서약서 제출 후 별도 제공)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항] AI 인프라 구축</strong>: GPU 서버 기반 온프레미스(Private) 또는 하이브리드 클라우드 환경 구축; 컨테이너/Kubernetes 등 인프라 환경 선택적 구성 가능; LLM 추론·임베딩·Reranker 워크로드별 성능 산정; OpenAI 호환 API 표준 인터페이스 기반 모델 서빙</li>
+                    <li><strong>[기술 요구사항] 모델 게이트웨이 및 RAG</strong>: Private LLM·Hybrid(Cloud/Private) LLM 모두 지원하는 Model Gateway 구성; Hybrid Search(Keyword+Vector+Reranking) 기반 RAG 엔진 독립 API 구축; Langchain 등 프레임워크 활용 가능; 데이터 수집→전처리→청킹→임베딩→Vector DB 저장 파이프라인 구성</li>
+                    <li><strong>[기술 요구사항] 지식 기반 및 Agent Studio</strong>: Knowledge DB·Knowledge Catalog 구축 (규정·매뉴얼·외부 API 등); 관리자용 Agent Studio 구축 (외부 사업자 없이 대학 자체 Agent 추가·관리 가능); 시범 Agent 3~5종 개발 (학칙·규정 상담, 학사 조회, 졸업요건 점검, 감정분석 등); SSO 통합로그인 연동 및 권한/IAM 체계</li>
+                    <li><strong>[비기능 요구사항]</strong>: 동시 사용자 1,400명 이상 지원; 웹페이지 응답 3초 이내; 365일 24시간 무중단 이중화 운영; 국정원 8대 취약점 및 OWASP 10대 보안 취약점 제거; 웹 표준(W3C) 및 Windows/Linux/Mac/Android/iOS 다중 OS 지원</li>
+                    <li><strong>[구매 명시 S/W]</strong>:
+                        <ul>
+                            <li><strong>Oracle DB</strong>: 수량 미명시, "관계형 데이터베이스를 이용하는 경우 호환성을 위해 Oracle를 구매하고 이용한다"고 명시 (AI Data Mart 구축 항목)</li>
+                            <li><strong>API 솔루션</strong>: 수량 미명시, "API 게이트웨이 또는 API 관리 솔루션이 필요한 경우 도입 가능"으로 조건부 명시 (Tool/API Layer 구축 항목)</li>
+                            <li>※ 그 외 벡터 DB, Document AI, RAG 엔진 등은 OSS 또는 상용 모두 허용하나 특정 제품명 미명시</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>Red Hat 상용 제품 미명시</strong>: RFP 전문 내 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 구매·납품 품목으로 전혀 명시되어 있지 않아 "높음" 판정 불가</li>
+                    <li><strong>Oracle DB 명시 구매</strong>: AI Data Mart용 관계형 DB로 Oracle이 명시적으로 구매 품목으로 지정되어 있어 해당 영역에서의 Red Hat 제품 대체 여지가 제한적</li>
+                    <li><strong>영구 라이선스 원칙 요구</strong>: "도입 솔루션·소프트웨어 일체는 기간·사용 제한 없는 영구 대학 라이선스로 제공"을 기본 원칙으로 명시하여, Red Hat의 구독(Subscription) 기반 라이선스 모델 제안 시 대학의 별도 인정 절차 필요 (단, "대학이 인정한 소프트웨어의 경우 구독 라이선스 가능"이라는 예외 조항 존재)</li>
+                    <li><strong>특정 경쟁 OS 확정 없음 (양면)</strong>: Ubuntu, Rocky Linux, Windows 등 경쟁 OS가 확정 명시되지는 않았으나, 동시에 Red Hat 상용 OS도 명시되지 않아 자동 우위를 점하기 어려운 상황</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>컨테이너/Kubernetes 환경 구축 가능 → OpenShift 제안 여지</strong>: GPU 서버 인프라 요구사항에 "필요의 경우 컨테이너/Kubernetes 등 인프라 환경을 구축할 수 있다"고 명시. Red Hat OpenShift Container Platform(OCP)을 Private AI 인프라의 컨테이너 오케스트레이션 플랫폼으로 제안 가능</li>
+                    <li><strong>Private AI / LLM 운영 환경 → RHEL AI, OpenShift AI 제안 여지</strong>: Private LLM 운영을 위한 종속성 없는 범용 LLM 운영 환경 구축 요구. Red Hat의 RHEL AI(Granite 모델 포함) 및 OpenShift AI를 GPU 기반 온프레미스 AI 플랫폼으로 제안하여 "특정 하드웨어·제품에 종속되지 않는 표준 스택" 요건 충족 가능</li>
+                    <li><strong>Agent Runtime 프레임워크 → 상용지원 가능 옵션 허용</strong>: "Agent Runtime은 OSS 또는 상용지원 가능한 프레임워크를 활용할 수 있다"고 명시. Red Hat이 지원하는 Podman AI Lab, InstructLab, Ansible Automation Platform(AAP)을 Agent 자동화 및 운영 자동화 레이어로 제안 가능</li>
+                    <li><strong>API 관리 솔루션 → 3scale API Management 제안 여지</strong>: "API 게이트웨이 또는 API 관리 솔루션 도입 가능" 조건부 허용 명시. Red Hat 3scale API Management를 Model Gateway 및 Tool/API Layer의 API 관리 플랫폼으로 제안 가능</li>
+                    <li><strong>OS 미지정 → RHEL 제안 가능</strong>: 웹 호환성 요구사항에 "Linux" 운영체제 지원 명시(Windows 10~11, Linux, Mac 등), 서버 OS는 별도 지정 없음. GPU 서버 및 AI 인프라 서버 OS로 RHEL 제안 가능</li>
+                    <li><strong>RFP 내 Red Hat(또는 동의어) 상용 제품명 명시 품목</strong>: 없음 (해당 없음)</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
