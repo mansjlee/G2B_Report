@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00278985 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국무조정실_'27년 AI 규제정보분석시스템 운영 및 유지관리 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 미포함 운영·유지관리 용역</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국무조정실이 운영 중인 <strong>AI 규제정보분석시스템</strong>의 24시간 365일 안정적 운영 및 유지관리</li>
+                    <li>생성형 AI 기반 규제행정 혁신 서비스(RAG, LLM 기반)의 신뢰성 확보 및 서비스 품질 유지</li>
+                    <li>제·개정 법령, 규제심사 등 주기적 데이터 적재 및 최신화를 통해 규제데이터 품질·최신성 상시 유지</li>
+                    <li>최신 AI 모델 적용 및 최신 보안 가이드라인 준수를 통한 법적·기술적 리스크 최소화</li>
+                    <li>대구센터 민관협력존(PPP) 클라우드 및 범정부 AI 공통기반 환경에서 운영되는 시스템의 통합 유지관리</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 709,000천원 (부가가치세 포함)</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 19일 ~ 2027년 12월 31일 (약 11.5개월, 회계연도 시작 전 계약 체결 사업)</li>
+                    <li><strong>사업 범위</strong>: ① AI 규제정보분석시스템 운영·유지관리(응용SW, 상용SW(오픈소스 포함), 대구센터 민관협력존 클라우드 포함) ② 생성형 AI 서비스 운영·유지관리(RAG 데이터 관리, AI 플랫폼 설정, LLM 모델·API 관리, LLMOps) ③ 클라우드 자원 운영·관리 및 보안관제 ④ Help Desk 운영, 데이터 품질관리, 보안관리 전반</li>
+                    <li><strong>주요 일정</strong>: 2026년 9월 제안요청서 발행 / 계약 체결 후 14일 이내 착수계 제출 / 2027년 1월 19일 사업 개시 / 매월 용역 대금 지급 / 계약 종료 후 14일 이상 인계 절차 수행</li>
+                    <li><strong>입찰 방법</strong>: 제한경쟁입찰 (협상에 의한 계약) / 중소기업 간 경쟁제품, 대기업 참여 불가 / 기술평가 90% + 가격평가 10%</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 국무조정실</li>
+                    <li><strong>담당 부서</strong>: 규제총괄정책관실</li>
+                    <li><strong>팀장</strong>: 이정호</li>
+                    <li><strong>사무관</strong>: 고유미</li>
+                    <li><strong>연락처·이메일</strong>: RFP에 별도 기재 없음 (입찰공고문 참조)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong>
+                        <ul>
+                            <li>SW(AP) 운영·유지관리: 운영체제·응용SW·AI 인프라 운영, 변경 이력 관리, 결함수정, 기능보완·개선</li>
+                            <li>HW 인프라: 클라우드 인프라(VM, 스토리지, 시스템SW) 임차 운영 (비용 사업비 포함), CSP/MSP 협업 체계 운영</li>
+                            <li>생성형 AI RAG 관리: 정형·비정형 데이터 파이프라인, 그래프DB 적재, 벡터DB 현행화, 할루시네이션 최소화, MRR·Top-K 품질 지표 월 측정</li>
+                            <li>LLM 모델·API 관리: 범정부 AI 공통기반 LLM 모델 활용, 모델 교체 시 벤치마크 테스트, API key 생성·관리, 롤백 시나리오 보유 / 현재 적용 예정 모델: GPT-OSS 120B (변경 가능)</li>
+                            <li>LLMOps: 모델 사용량·API key별 사용량 모니터링, 응답 지연 등 성능지표 관리</li>
+                            <li>민관협력형(PPP) 클라우드: 국가정보자원관리원 대구센터 PPP 운영환경 기반 시스템 유지관리, CSP 보안관제 서비스 활용</li>
+                            <li>범정부 AI 공통기반: AI 모델·Agent·Prompt·RAG·Vector 데이터·Tool/API 구성 관리, 공통기반 운영주체와 협업</li>
+                            <li>보안관제: WAF, DDoS, IPS 등 보안관제 서비스 활용, CERT 총괄, 분기 1회 취약점 자체 점검</li>
+                            <li>24×365 무중단 운영, SLA 기반 서비스 수준 관리, 장애 대응(최초 통보 후 2시간 이내 현장 도착, 4시간 이내 정상복구)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W]</strong>: RFP 내 통합발주 또는 별도 구매 S/W 품목 목록 없음. 클라우드 인프라(VM·스토리지·시스템SW 등) 임차 비용만 사업비에 포함. 별첨 1(정보시스템 구성도·정보자원 현황)은 보안서약서 제출 후 열람 가능하며 RFP 본문에 공개되지 않음.</li>
+                    <li><strong>[인력 요구사항]</strong>: 사업관리자(PM), AI 규제시스템 운영·관리·점검 인력, AI 모델 점검·교체·사용량 관리 인력, AI 답변 최적화 인력, 데이터·AI 기능 유지보수 인력, 보안점검·조치 인력, Help Desk 인력 등. 전원 정규직. 하도급 불가(상용SW 패키지 서비스지원 인력 제외).</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>운영·유지관리 중심 용역 사업</strong>: 신규 S/W 납품·구독 항목이 명시되지 않은 순수 운영·유지관리 용역으로, Red Hat 상용 제품 도입·납품 기회가 없음</li>
+                    <li><strong>별도 통합발주 S/W 목록 없음</strong>: RFP 본문에 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품이 품목으로 전혀 명시되어 있지 않음</li>
+                    <li><strong>기존 구축 시스템 유지 목적</strong>: 이미 구축된 AI 규제정보분석시스템(대구센터 PPP 클라우드 + 범정부 AI 공통기반)의 유지관리가 목적으로, 기존 인프라 환경(OS·플랫폼)이 이미 확정된 상태</li>
+                    <li><strong>클라우드 인프라 임차</strong>: 시스템 SW 포함 클라우드 자원은 임차(CSP 서비스)로 계약하며, 별도 OS·미들웨어 구매 구조가 아님</li>
+                    <li><strong>범정부 AI 공통기반 종속</strong>: LLM 모델은 범정부 AI 공통기반에서 제공(GPT-OSS 120B 예정)하며, Red Hat AI 관련 제품 적용 여지 없음</li>
+                    <li><strong>경쟁 제품</strong>: 경쟁 제품(Ubuntu, VMware 등)이 명시되지는 않았으나, 특정 OS·플랫폼 지정 없이 기존 환경 유지가 목적임</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>RFP 내 Red Hat 상용 제품명 명시 없음</strong>: RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품이 품목으로 전혀 언급되지 않아 직접적인 제안 근거 없음</li>
+                    <li><strong>클라우드 OS 미지정 (간접 여지)</strong>: 클라우드 VM 운영 환경의 OS가 RFP 본문에 명시되지 않아 기존 도입된 OS가 RHEL일 가능성은 이론적으로 존재하나, 이는 기존 구축 사업에서 결정된 사항으로 현 사업에서의 신규 제안 기회는 매우 제한적</li>
+                    <li><strong>컨테이너·LLMOps 환경 (잠재 여지)</strong>: LLMOps 자원 관리, AI 플랫폼 운영, 데이터 파이프라인 등 컨테이너/오케스트레이션 기술이 활용될 가능성이 있으나, 기존 구축된 환경 운영이 목적이며 OpenShift 등 신규 도입 근거 없음</li>
+                    <li><strong>결론</strong>: Red Hat 상용 제품 도입·납품이 확정되거나 명시된 항목이 없고, 기존 시스템 운영·유지관리 용역이 사업의 본질이므로 실질적인 Red Hat 제안 기회는 낮음. 단, 수행사 선정 후 인프라 현황 파악 시 기존 RHEL/OpenShift 도입 여부 확인 필요.</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
