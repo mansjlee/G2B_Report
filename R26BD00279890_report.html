@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00279890 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국기술교육대학교 온라인평생교육원_STEP SDDC 가상화 서버 성능 업그레이드 및 노후 DB서버 교체 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>Oracle DBMS·DR 제품 특정, RH SW 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>한국기술교육대학교 온라인평생교육원이 운영하는 스마트 직업훈련 플랫폼(STEP)의 SDDC 가상화 서버 성능 업그레이드 및 노후 DB서버 교체 사업</li>
+                    <li>AI·다국어 직업훈련 확대, LMS 분양기관 증가에 따른 클라우드 인프라 확장 및 안정적 운영 기반 확보</li>
+                    <li>노후 DB 하드웨어(2019년 도입)·DBMS(Oracle 12c) 버전 경과에 따른 최신 안정화 버전(Oracle 26ai) 전환 및 재해복구(DR) 체계 신규 구축</li>
+                    <li>현재 48대 물리 서버에서 1,627대 가상서버를 운영 중이며, 신규 LMS 분양·AI 콘텐츠 확대로 가상서버 및 관리 자원 지속 증가 예상</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 1,380,000천원 (부가가치세 포함)</li>
+                    <li><strong>사업 기간</strong>: 계약일로부터 90일 이내</li>
+                    <li><strong>사업 범위</strong>:
+                        <ul>
+                            <li>① STEP SDDC HCI 컴퓨트 관리 노드 증설 (1EA, HW)</li>
+                            <li>② STEP SDDC 화상회의 영상처리 노드 GPU 업그레이드 (6EA, HW / NVIDIA H200 NVL 이상)</li>
+                            <li>③ STEP DB시스템 H/W 재구축 (고성능 DB Appliance, 1식)</li>
+                            <li>④ STEP DB시스템 S/W 재구축 (Oracle DB EE 26ai 등, 1식)</li>
+                            <li>⑤ STEP DB 소산 재해복구시스템 구축 (Oracle Active Data Guard, 1식)</li>
+                        </ul>
+                    </li>
+                    <li><strong>주요 일정</strong>: M(입찰공고·사업자선정) → M+1(착수·요구분석·설계) → M+2(장비납품·시스템구현·단위테스트) → M+3(통합테스트·검수·안정화)</li>
+                    <li><strong>계약 방법</strong>: 협상에 의한 계약 (제한경쟁입찰), 중소 소프트웨어사업자 제한</li>
+                    <li><strong>입찰 특이사항</strong>: 하도급 불허, 공동수급(공동이행방식) 허용, 총사업금액 20억원 미만</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주 기관</strong>: 한국기술교육대학교 온라인평생교육원 (플랫폼운영팀)</li>
+                    <li><strong>담당자 성명</strong>: 이영호</li>
+                    <li><strong>전화번호</strong>: 041-580-4424</li>
+                    <li><strong>이메일</strong>: howler2k@koreatech.ac.kr</li>
+                    <li><strong>협조 부서</strong>: 정보화운영팀 (네트워크·시스템 구축 지원, 보안성 평가), 회계팀 (계약 체결)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong>
+                        <ul>
+                            <li>기존 STEP SDDC 관리 클러스터와 호환되는 고성능 HCI 관리노드 도입 및 통합 구성 (AMD EPYC 9755 2.7G급, 128C/256T 이상)</li>
+                            <li>기존 GPU 가상화 노드(DellEMC V570F / NVIDIA A16 × 6EA)의 GPU를 NVIDIA H200 NVL PCIe × 2EA(총 6개) 이상으로 업그레이드</li>
+                            <li>DB 어플라이언스 기반 신규 운영환경 구축: DB Node 2노드 이상, 스토리지 Node 1개 이상, 46TB SSD(7.68TB×6EA), 클러스터 파일시스템 포함</li>
+                            <li>데이터베이스 클러스터 기반 이중화(Active-Active), 자동 Failover/Failback, 부하분산 구성</li>
+                            <li>운영 DB와 소산 재해복구 DB 간 Redo 로그 기반 실시간/준실시간 데이터 동기화 및 자동 Switchover/Failover</li>
+                            <li>기존 DB 데이터의 안전한 이관 및 이관 전·후 데이터 정합성 검증</li>
+                            <li>단위·통합·성능(부하) 테스트 계획 수립 및 결과 제출</li>
+                        </ul>
+                    </li>
+                    <li><strong>[RFP 구매 명시 S/W - 통합발주 품목]</strong>
+                        <ul>
+                            <li><strong>Oracle Database Enterprise Edition 26ai</strong> (포함 라이선스: Real Application Clusters, Multitenant, Advanced Security) — 총 12Core(노드당 6Core × 2노드) 기준, 1식 / ※ Oracle DB EE 12c에서 업그레이드, 동일 제조사 제품으로 특정</li>
+                            <li><strong>Oracle Active Data Guard</strong> — 신규 12Core + 기존 운영 DB 8Core 통합 지원 가능한 재해복구 라이선스, 1식 / ※ Redo 로그 기반 물리 스탠바이 복제 목적으로 제품 특정</li>
+                        </ul>
+                    </li>
+                    <li><strong>[직접구매 대상 상용 S/W]</strong>: RFP 본문상 이미지(표) 형태로 첨부되어 텍스트 추출 불가 (방문 열람 필요)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>Oracle DBMS 제품 특정 명시</strong>: ECR-04에서 Oracle Database Enterprise Edition 26ai를 동일 제조사 제품으로 명시 특정. "타 제조사 DBMS로 대체할 경우 기존 응용프로그램 SQL·프로시저 전면 재개발, Advanced Security 적용 데이터 변환, 데이터 이관 정합성 검증 등으로 현저한 비용 상승과 사업 지연이 초래"라고 적시하여 대체 불가 선언 → Red Hat JBoss/Quay 등 제안 완전 불가</li>
+                    <li><strong>Oracle Active Data Guard 제품 특정 명시</strong>: ECR-05에서 "운영 DBMS와 동일 제조사의 재해복구 솔루션(Oracle Active Data Guard)으로만 요구 기능의 완전한 충족이 가능"하다고 명시하여 제품 특정 → Red Hat DR 관련 솔루션 제안 불가</li>
+                    <li><strong>DB 어플라이언스 OS는 Oracle Linux 추정</strong>: ECR-03에서 "DB 제조사의 정품 제공", "펌웨어·운영체제·이중화 솔루션·DB가 통합 패치 번들 형태로 설치"를 요구 → Oracle ODA(Oracle Database Appliance) 구성으로 Oracle Linux 환경이 확실시되어 RHEL 제안 불가</li>
+                    <li><strong>기존 SDDC 환경 호환성 종속</strong>: ECR-01에서 "기존 STEP SDDC 관리 클러스터와 동일 운영환경으로 통합 구성 가능해야 하며 기존 가상화 플랫폼·네트워크·스토리지와 호환성"을 요구 → 기존 가상화 플랫폼(보안상 비공개) 종속으로 Red Hat 가상화(RHEV) 신규 제안 사실상 불가</li>
+                    <li><strong>Red Hat 상용 제품명 전혀 미명시</strong>: RFP 전체 문서에서 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 단 한 건도 언급되지 않음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>RFP 내 Red Hat 상용 제품명 명시: 없음</strong></li>
+                    <li><strong>Linux 기반 운영환경 언급</strong>: ECR-04에서 "Linux 기반 운영환경을 지원해야 함"이라는 조건이 있으나, DB 어플라이언스 특성상 Oracle Linux 환경으로 귀결될 가능성이 높아 RHEL 제안 실질적 여지 없음</li>
+                    <li><strong>IaaS/클라우드 컴퓨팅 기술 적용</strong>: 기술적용계획표에 IaaS/PaaS/SaaS 항목이 기재되어 있으나, 기존 SDDC 환경 확장 사업 특성상 신규 플랫폼 도입 여지 없음</li>
+                    <li><strong>종합 평가</strong>: 본 사업은 Oracle DBMS·DR 솔루션이 제품 특정으로 고정되어 있고, SDDC 증설은 기존 환경 호환성에 종속되어 Red Hat 상용 제품이 진입할 실질적 기회가 없는 사업임. 향후 Oracle DB 환경 위에 운영되는 미들웨어·자동화 영역(JBoss EAP, Ansible 등)에 대한 별도 사업 발굴 관점으로 접근 권장</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

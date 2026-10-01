@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00280017 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국교육학술정보원_모두의 한국어 모바일 웹 개발 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 미포함 순수 개발 용역</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>지속적으로 증가하는 초·중등 이주배경학생의 학교 초기 진입 및 교과 학습 지원을 위해, 현재 PC 웹 중심으로 운영 중인 <strong>모두의 한국어</strong> 시스템을 모바일 웹 기반으로 확장하는 사업</li>
+                    <li>스마트폰·태블릿 등 다양한 기기에서 안정적으로 한국어 학습 서비스를 이용할 수 있는 환경 구축</li>
+                    <li>기존 PC 웹 서비스와 모바일 웹 간 연계성을 확보하여 교사·학생·학부모·일반 사용자 유형별 서비스 이용 편의성 및 접근성 제고</li>
+                    <li>현재 1,950차시 분량의 학습 콘텐츠(모두를 위한 한국어, 문법쑥쑥, 어휘쑥쑥, 예비과정)를 모바일 환경에 최적화하여 재개발</li>
+                    <li>모바일 웹 시범운영을 통해 현장 적합성을 검증하고 서비스 완성도를 제고하는 것이 핵심 목표</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 1,340백만 원 (부가세 포함)</li>
+                    <li><strong>사업 기간</strong>: 2026년 계약 체결일 ~ 계약 후 240일 이내 (약 8개월, 2026.10 ~ 2027.6 예상)</li>
+                    <li><strong>사업 범위</strong>: ① 모두의 한국어 시스템 및 학습 콘텐츠 현황 분석 → ② 모바일 웹 개발 (반응형, iOS/Android 지원) → ③ 학습 콘텐츠 1,950차시 모바일 최적화 재개발 → ④ 시범운영 및 서비스 활용 지원 자료 개발</li>
+                    <li><strong>주요 일정</strong>: 2026년 9~10월 입찰 공고 및 사업자 선정 → 2026년 10~11월 분석 및 설계 → 2026년 11월~2027년 4월 모바일 웹 구현 및 콘텐츠 재개발 → 2027년 4~6월 검증·테스트·시범운영</li>
+                    <li><strong>계약 방식</strong>: 협상에 의한 계약 (기술평가 90% / 가격평가 10%)</li>
+                    <li><strong>대기업 참여</strong>: 제한 (20억원 미만, 중소기업 대상 사업)</li>
+                    <li><strong>상용SW 직접구매</strong>: <font color=red>해당 없음 (RFP 법제도 준수여부 표 명시)</font></li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>수요기관</strong>: 한국교육학술정보원 (KERIS)</li>
+                    <li><strong>담당 부서</strong>: 디지털교육본부 디지털시민교육부</li>
+                    <li><strong>부장</strong>: 이윤정 / ☎ 053-714-0401 / ✉ smallyj@keris.or.kr / FAX 053-714-0193</li>
+                    <li><strong>담당자</strong>: 오동익 / ☎ 053-714-0164 / ✉ dongik@keris.or.kr</li>
+                    <li><strong>담당자</strong>: 김아라 / ☎ 053-714-0481 / ✉ arakim@keris.or.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong>
+                        <ul>
+                            <li>반응형 웹 구현 (HTML5 기반, 스마트폰·태블릿 대응, iOS/Android 지원)</li>
+                            <li>주요 브라우저 호환 (Chrome, Safari, 삼성인터넷, Whale 등)</li>
+                            <li>기존 LMS, AI튜터, 콘텐츠 통합뷰어, 맞춤형 추천 알고리즘 등 백엔드 API 연동</li>
+                            <li>클라우드 환경 기반 개발 및 운영 (개발계 환경은 사업자 구축·부담)</li>
+                            <li>전자정부 표준프레임워크 준수, 웹 접근성 및 웹 표준 준수</li>
+                            <li>개인정보보호 및 보안 취약점 점검 (소프트웨어 개발보안 가이드 준용)</li>
+                            <li>AI 기능 (음성·필기 인식, AI 학습 튜터) 모바일 환경 적용 최적화</li>
+                        </ul>
+                    </li>
+                    <li><strong>[비즈니스 요구사항]</strong>
+                        <ul>
+                            <li>사용자 유형별 (교사·학생·학부모·일반) 모바일 UI/UX 재설계</li>
+                            <li>학습 콘텐츠 1,950차시 모바일 최적화 재개발 (화면·상호작용·멀티미디어·성능)</li>
+                            <li>10개 언어 다국어 지원 (영어, 중국어, 베트남어, 크메르어, 러시아어, 카자흐스탄어, 필리핀어, 일본어, 몽골어, 아랍어)</li>
+                            <li>PC 웹과 모바일 웹 간 동일 계정·학습이력 공유를 통한 서비스 연속성 확보</li>
+                            <li>시범운영 및 사용자 유형별 매뉴얼·홍보물·튜토리얼 영상 개발</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매가 명시된 S/W]</strong>: <font color=red>없음. RFP 내 "상용SW 직접구매 및 SW품질성능 평가시험(BMT): 해당 없음"으로 명시. 통합발주 S/W 목록 전무.</font></li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>순수 개발 용역 사업으로 S/W 납품·구독 항목 없음</strong>: RFP 법제도 준수여부 정리표에 "상용SW 직접구매 및 SW품질성능 평가시험(BMT): 해당 없음"이 명시되어 있어, 어떠한 상용 소프트웨어도 구매 대상이 아님</li>
+                    <li><strong>Red Hat 상용 제품명 전혀 미언급</strong>: RFP 전체를 통틀어 RHEL, OpenShift, Ansible, JBoss EAP, AAP 등 Red Hat 상용 제품 또는 동의어가 단 한 건도 언급되지 않음</li>
+                    <li><strong>클라우드 인프라는 별도 사업단 운영</strong>: 클라우드 운영 사업단이 이미 구성되어 인프라를 별도로 운영하고 있으며, 본 사업은 개발 환경만 사업자가 자체 구축(비용 부담)하고 완료 시 기존 운영 환경에 이관하는 방식으로 인프라 납품 기회 없음</li>
+                    <li><strong>기존 시스템과의 기술 연속성 요구</strong>: "기존 시스템과 동일한 기술 표준을 우선 적용"하도록 명시(COR-001)되어 있어, 기존 전자정부 표준프레임워크(Java) 기반 유지가 우선되며 새로운 플랫폼 도입 가능성 희박</li>
+                    <li><strong>경쟁 제품 미명시</strong>: VMware, Ubuntu, Rocky Linux 등 경쟁 제품이 명시되지는 않았으나, 이와 무관하게 SW 납품 자체가 없으므로 Red Hat 도입 기회가 없음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>클라우드 환경 기반 개발 언급</strong>: 사업 전반이 클라우드 환경(IaaS/PaaS/SaaS 기술 지침 적용표 포함)을 기반으로 하나, 클라우드 플랫폼이 미지정 상태임. 이론적으로는 OpenShift 등의 제안 여지가 있으나, 별도 클라우드 운영 사업단이 이미 인프라를 운영 중이므로 실질적 기회는 없음</li>
+                    <li><strong>Linux 서버 환경 가능성</strong>: 기술적용계획표에 Linux 운영체제가 적용 항목으로 포함되어 있으나, OS 지정이 없고 별도 인프라 납품 항목도 없으므로 RHEL 제안 기회 없음</li>
+                    <li><strong>전자정부 표준프레임워크(Java) 기반</strong>: Java 기반 개발로 이론적으로는 JBoss EAP 제안 여지가 있으나, RFP에 WAS 관련 상용 SW 납품 항목이 명시되지 않았으며 기존 유지관리 사업자가 운영 중인 환경을 그대로 활용하도록 제약</li>
+                    <li><strong>RFP 내 Red Hat 제품명·수량</strong>: <font color=red>없음. RFP 전문에서 Red Hat(레드햇) 또는 동의어(RHEL, OpenShift, Ansible, JBoss, EAP, OCP 등) 관련 제품명·수량이 단 한 건도 확인되지 않음.</font></li>
+                    <li><strong>종합 평가</strong>: 클라우드·Linux·Java 환경이라는 기술적 배경은 존재하나, 본 사업은 순수 SW 개발 용역으로서 S/W 납품·구독 항목이 전혀 없어 Red Hat 제품 제안 가능성은 사실상 없음</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
