@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00280619 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>해양수산부_수산정보통합시스템 운영·유지관리(2027~2028) - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>JBoss EAP 기존 운영 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>해양수산부의 수산정보통합시스템(내·외부망, 수산정보포털 포함)을 안정적으로 운영·유지관리하고, 수산업무 서비스의 연속성과 품질을 확보하는 것이 핵심 목표</li>
+                        <li>30개 단위업무시스템에 대한 Help-Desk 운영을 통해 사용자(해양수산부 업무담당자 및 대국민)의 업무 지원 및 만족도 제고</li>
+                        <li>응용SW·상용SW에 대한 정기·수시 점검 및 예방 보수정비를 실시하여 최적의 운영 환경 유지</li>
+                        <li>각 업무 부서의 수산관련 통계자료 추출·제공 등 수산행정 지원 업무 수행</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 총 1,334백만원 (부가가치세 포함) / 1년차(2027년) 667백만원, 2년차(2028년) 667백만원</li>
+                        <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2028년 12월 31일 (2년 장기계속계약)</li>
+                        <li><strong>사업 범위</strong>: 수산정보통합시스템(내·외부망) 및 수산정보포털 운영관리·기능개선, 상용SW 유지관리, Help-Desk 운영(콜센터), 유관기관 정보연계 관리, 보안·품질 관리</li>
+                        <li><strong>주요 일정</strong>: 제한경쟁입찰 방식으로 사업자 선정 후 계약 → M+11까지 운영·유지관리 수행 / SLA 계약 후 1개월 이내 체결, 3개월 이내 목표수준 협의</li>
+                        <li><strong>계약 방법</strong>: 제한경쟁입찰 / 협상에 의한 계약 (기술평가 90%, 가격평가 10%) / 대기업·중견기업 참여 제한(20억 미만 SW사업)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>주관기관</strong>: 해양수산부 수산직불제팀</li>
+                        <li><strong>사무관</strong>: 양성환 / TEL: 051-773-5455 / FAX: 051-773-5189</li>
+                        <li><strong>주무관</strong>: 김종덕 / TEL: 051-773-5456 / FAX: 051-773-5189</li>
+                        <li><strong>이메일</strong>: 명시되지 않음</li>
+                        <li><strong>소재지</strong>: 부산 (051 국번 기준)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong> WEB/WAS/DB 서버 성능 모니터링, 로그·용량 관리, 장애 예방·복구 (8시간 이내 조치), 비상연락망 구축(4시간 이내 현장 도착)</li>
+                        <li><strong>[운영 요구사항]</strong> 수산정보통합시스템(내부망 URL: int.fips.go.kr, 외부망 URL: ext.fips.go.kr), 수산정보포털(www.fips.go.kr) 운영·유지관리</li>
+                        <li><strong>[인력 요구사항]</strong> 상주인력 5명: IT PM 1명, SW개발·시스템운용자 2명, IT기술지원자(콜센터) 2명</li>
+                        <li><strong>[Help-Desk]</strong> 30개 수산단위업무 서비스데스크 운영 (평일 09:00~18:00), 해양수산부 지정 장소 상주</li>
+                        <li><strong>[품질 요구사항]</strong> SLA 체결 및 목표수준 이행, 연간 서비스만족도 측정, 미달 시 사업비 감액</li>
+                        <li><strong>[보안 요구사항]</strong> OWASP Top 10, 국정원 8대 취약점 관리, 시큐어코딩, 개인정보보호법 준수, 보안서약서 제출</li>
+                        <li><strong>[구매·유지관리 대상 상용SW]</strong> 아래는 기 도입되어 유지관리 중인 상용SW 목록 (신규 구매 아닌 유지관리 항목):
+                            <ul>
+                                <li>OZ Report 7.0 (리포팅툴) × 4식</li>
+                                <li>e-Page Safer 2.5 (문서보안) × 4식</li>
+                                <li>KSign SecureDB 3.6 (DB암호화) × 4식</li>
+                                <li>eCross Bizi Suite 4.0 Enterprise (정보연계 HUB) × 1식</li>
+                                <li>eCross Bizi Suite 4.2 (정보연계) × 12식</li>
+                                <li>WebSquare 5.0 (UI 툴) × 16식</li>
+                                <li>WISE OLAP v5.0 (BI 솔루션) × 2식</li>
+                                <li>TeraStream v5.5 (ETL 솔루션) × 1식</li>
+                                <li>MetaStream v3.0 (META 솔루션) × 1식</li>
+                                <li>Elevisor for J2EE 3.0 (WAS 모니터링) × 12식</li>
+                                <li>Elevisor for Tibero 3.0 (DB 모니터링) × 28식</li>
+                            </ul>
+                        </li>
+                        <li><strong>[현 시스템 SW 인프라]</strong> OS: Oracle Linux 8.9 / WEB: Apache 2.4.57 / <strong>WAS: JBoss EAP 7.4.16</strong> / DBMS: Tibero 6 / 개발언어: OpenJDK 1.8.0_382</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[용역 중심 사업]</strong> 본 사업은 신규 SW 도입·납품이 아닌 기존 시스템 운영·유지관리 용역 사업으로, 신규 Red Hat 제품 납품·구매 발주 항목은 없음</li>
+                        <li><strong>[경쟁 OS 사용 중]</strong> 현 시스템 OS가 Oracle Linux 8.9(ORCL 8.9)로 명시되어 있어 RHEL 신규 도입 여지 없음 — 기존 OS 전환은 이 사업 범위 외</li>
+                        <li><strong>[경쟁 DBMS 사용 중]</strong> DBMS로 Tibero 6(TmaxSoft)이 사용 중으로, Red Hat 데이터 관련 제품 제안 어려움</li>
+                        <li><strong>[상용SW 유지관리 목록]</strong> 붙임 1의 유지관리 대상 SW 목록(OZ Report, e-Page Safer, KSign SecureDB, eCross 등)에 Red Hat 상용 제품이 별도 라이선스 품목으로 등재되어 있지 않음</li>
+                        <li><strong>[계약 구조]</strong> SI 사업자(통합사업자)가 운영·유지관리를 수행하는 구조로, Red Hat이 직접 입찰하거나 단독 납품하는 형태의 사업 아님</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[JBoss EAP 7.4.16 기 도입 운영 중 — 핵심 근거]</strong> 시스템 SW 현황([붙임 1])에 WAS로 <strong>JBoss EAP 7.4.16</strong>이 명시되어 있음 — JBoss EAP는 Red Hat의 상용 엔터프라이즈 애플리케이션 플랫폼으로, 현재 수산정보통합시스템 전체 WAS로 운영 중</li>
+                        <li><strong>[JBoss EAP 구독 갱신 기회]</strong> 사업 기간(2027~2028년) 동안 JBoss EAP 구독 갱신·유지가 필요하며, 운영사업자를 통한 Red Hat 구독 공급 기회 존재</li>
+                        <li><strong>[상용SW 유지관리 요구사항 적용]</strong> OMR-006(상용프로그램 유지관리) 요구사항에서 "상용 S/W에 대해 정상 운영되도록 최적 상태 유지", "Patch 및 버전 업그레이드 수행 지원"을 요구하므로 JBoss EAP 패치·버전 업그레이드 관련 Red Hat 기술지원 연계 가능</li>
+                        <li><strong>[RFP 내 Red Hat 관련 명시 제품·수량 요약]</strong>
+                            <ul>
+                                <li>JBoss EAP 7.4.16 — WAS로 수산정보통합시스템 내부망 및 외부망에 운영 중 (수량 별도 명시 없으나 내부망 WAS 이중화, 외부망 WAS 이중화 구성 확인)</li>
+                            </ul>
+                        </li>
+                        <li><strong>[Java/WAS 기술 스택 연계]</strong> 개발언어 OpenJDK 1.8.0_382 사용 중 — Red Hat OpenJDK 상용 구독(Red Hat build of OpenJDK) 또는 EAP 업그레이드(JBoss EAP 8.x 지원) 제안 가능</li>
+                        <li><strong>[영업 전략 포인트]</strong> 운영사업자가 JBoss EAP 구독을 보유해야 공식 기술지원 및 패치 수령 가능 — 운영사업자 선정 이후 Red Hat 파트너사를 통한 JBoss EAP 구독 공급 협력 기회</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

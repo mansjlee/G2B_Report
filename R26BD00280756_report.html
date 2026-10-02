@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00280756 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국립국제교육원_2027년 한국어능력시험운영시스템 운영 및 유지관리 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>JBoss EAP·JBCS 기존 운영 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>한국어능력시험(TOPIK) 운영시스템의 안정적 운영·유지관리를 목적으로 하는 교육부 국립국제교육원 주관 용역 사업</li>
+                    <li>PBT(지필) 6회, IBT(인터넷) 6회, 말하기 평가 3회, 시범시행 1회 등 연간 총 16회 시험 시행 전반 지원</li>
+                    <li>시스템 기능·성능 개선, IBT 클라우드 운영·정산, 답안 이관, 보안관제, 민원 상담·기술지원 등 종합 운영 서비스 제공</li>
+                    <li>국내·외 지원자, 시행기관, 출제·채점자 등 다양한 이해관계자의 원활한 업무처리 지원</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 800,000,000원 (부가가치세 포함)</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (1년)</li>
+                    <li><strong>사업 범위</strong>: 한국어능력시험 홈페이지·접수관리·시행관리·출제관리·채점관리·문제은행·인력풀 등 전체 운영시스템 운영 및 유지관리, IBT 클라우드 운영·정산, 보안관제, 민원상담센터 운영, 국가정보자원관리원 및 네이버 클라우드 인프라 운영지원</li>
+                    <li><strong>계약 방법</strong>: 제한경쟁 입찰 (협상에 의한 계약), 기술평가 90% + 입찰가격평가 10%, 대기업·중견기업 참여 불가 (20억 미만)</li>
+                    <li><strong>주요 일정</strong>: 입찰공고 및 접수기간 조달청 공고 참조, 제안서 설명회 별도 공지, 인수인계계획서 제출 2026년 11월 30일까지, 용역결과 보고서 제출 2027년 12월 20일</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>제안서 관련 담당자</strong>: 민경환 주무관 / 국립국제교육원 기획조정부 한국어능력시험센터 / Tel. 02-3668-1388 / mminkh@korea.kr</li>
+                    <li><strong>제안서 관련 담당자(2)</strong>: 강정구 주무관 / 국립국제교육원 기획조정부 / Tel. 02-3668-1395 / paramita77@korea.kr</li>
+                    <li><strong>입찰 관련 담당자</strong>: 박주영 주무관 / 국립국제교육원 기획재정팀 / Tel. 02-3668-1327</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong> 한국어능력시험 운영시스템 24시간 365일 무중단 운영 (응답시간 3초 이내, CPU 90% 이하, 메모리 75% 이하)</li>
+                    <li><strong>[기능 유지관리]</strong> 완전·적응·수리·예방 유지관리 4가지 유형의 소프트웨어 유지관리 수행, 형상관리(SVN/Subversion) 시스템을 통한 과업 등록·관리</li>
+                    <li><strong>[IBT 지원]</strong> 연 6회 IBT 시험 시행 지원 (문항 검수 2일×2명, 시행 전후 모니터링·답안이관 3일×5명), IBT 문항 출제본부 지원 연 3회×5일×3명</li>
+                    <li><strong>[클라우드 운영]</strong> 민간 클라우드(네이버 클라우드) 이용료 및 초과 과금분 사업자 부담, 업무 집중기간 자원 증설 대응</li>
+                    <li><strong>[보안]</strong> 연 1회 이상 보안 취약점 점검 및 모의해킹 수행, 보안관제 상시 운영, 개인정보보호 관련 법령 준수</li>
+                    <li><strong>[민원센터]</strong> 최소 7명 상주 (사업관리자 1명, 서비스운영 5명, 사용자지원 1명), 1등급 장애 4시간 이내·2등급 8시간 이내·3등급 24시간 이내 복구</li>
+                    <li><strong>[직접 경비 (사업자 부담)]</strong> 상용 SW 유지보수비, 홈페이지 외국어 번역(영·중·일·베트남어 각 20페이지), 유량제어 서비스(1년), SSL 인증서(도메인 와일드카드), 웹 접근성 품질 인증, 민간 클라우드 이용료</li>
+                    <li><strong>[구매 명시 S/W - 상용SW 현황 (사업자 부담 유지보수)]</strong>
+                        <ul>
+                            <li>AnySign Lite v1.0 PC (㈜한컴위드) - 인증서 인증 / 수량 미명시</li>
+                            <li>D'Amo v4.0 (㈜펜타시큐리티) - DB 암호화 / 수량 미명시</li>
+                            <li>OZ Report 7.0 SE (㈜포시에스) - 수험표·성적표 리포팅툴 / 수량 미명시</li>
+                            <li>Nexacro platform 17, Standard Edition (㈜투비소프트) - UI 개발 / 수량 미명시</li>
+                            <li>EON CRM Service (㈜이비즈앤시스템) - 대량메일·문자 / 수량 미명시</li>
+                            <li>NetFUNNEL NF2-S05 (㈜에스티씨랩) - 사용자 제어(유량제어) / 수량 미명시</li>
+                            <li>e-Page SAFER Web DRM Pack for Cross OS V2.5, Basic Package (㈜마크애니) - 화면보안 / 수량 미명시</li>
+                            <li>e-Page SAFER Web DRM Pack for Cross OS V2.5, Non-ActiveX, Cross Browser (㈜마크애니) / 수량 미명시</li>
+                            <li>e-Page SAFER V2.5 for Zero Client (㈜마크애니) - 문서 위변조방지 / 수량 미명시</li>
+                            <li>Xtractor Weblog v.3.0 Basic (㈜넥스트웹) - 로그 분석 / 수량 미명시</li>
+                            <li>SecuveTos v5.0 for Linux (㈜시큐브) - 서버 보안 / 수량 미명시</li>
+                            <li>K-Editor 2018 (라온위즈주식회사) - 웹에디터 / 수량 미명시</li>
+                            <li>얼굴인식 솔루션 (에스큐아이소프트㈜) - 얼굴인식 / 수량 미명시</li>
+                            <li>한국어 맞춤법 문법검사기 SDK (㈜나라인포테크) / 수량 미명시</li>
+                            <li>파르고스 (삼오씨엔에스) - 개인정보접속관리 / 수량 미명시</li>
+                            <li>Jennifer5.0, Jennifer java EE edition (제니퍼소프트) - APM / 수량 미명시</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>[대기업 참여 불가]</strong> 사업금액 20억 미만으로 중소기업만 참여 가능. Red Hat Korea가 직접 입찰·납품 불가하며 중소 파트너사를 통해서만 접근 가능</li>
+                    <li><strong>[WAS 경쟁 제품 혼재]</strong> 주요 WAS 서버(WAS#1~4 4대, 인력풀·공모 WAS#1~2, 메일·사진·문제은행 WAS 등 다수)가 <strong>HyperFrame WildFly 26.1.2</strong> (커뮤니티·업스트림 제품, 상용 Red Hat 제품 아님)로 운영 중. WildFly는 JBoss EAP의 업스트림이나 상용 구독 제품이 아님</li>
+                    <li><strong>[OS 경쟁 제품 다수]</strong> 사용자제어·형상관리·스트리밍·개발서버·개인정보관리·답안관리·자동채점 서버 등 총 8대 이상의 서버에 <strong>Oracle Linux 8 Enterprise 8.6</strong> (경쟁 제품) 사용 중</li>
+                    <li><strong>[비Red Hat DB]</strong> Cubrid 10.2.1 (3대), PostgreSQL (4대) 사용 중 — Red Hat 스택과 무관</li>
+                    <li><strong>[S/W 직접 구매 없음]</strong> 본 사업은 운영·유지관리 용역으로, S/W 신규 구매·납품 발주가 아니며 상용 SW 유지보수비는 사업자 부담으로 처리됨 (직접 구독 판매 기회 제한적)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[RFP 명시 Red Hat 상용 제품 - 높음 판정 근거]</strong>
+                        <ul>
+                            <li><strong>JBoss EAP 7.4</strong> (Red Hat 상용 WAS): 한국어능력시험 접수_시행WAS#1~8 총 8대 (각 16코어, 64GB RAM) — 현재 운영 중인 핵심 트랜잭션 처리 서버</li>
+                            <li><strong>JBCS 2.4.62</strong> (JBoss Core Services, Red Hat 상용 Web 서버): 한국어능력시험 접수_시행WEB#1~4 총 4대 (각 8코어, 16GB RAM) — 현재 운영 중</li>
+                        </ul>
+                    </li>
+                    <li><strong>[버전 업그레이드 제안 기회]</strong> JBoss EAP 7.4는 Extended Life Support(ELS) 단계에 진입 예정. EAP 8.x 또는 OpenShift 기반 JBoss EAP 마이그레이션 제안 가능</li>
+                    <li><strong>[RHEL 전환 제안 여지]</strong> Oracle Linux 8 Enterprise 사용 서버 8대 이상 존재. Oracle Linux→RHEL 전환 제안 가능 (동일 RHEL 기반 바이너리 호환)</li>
+                    <li><strong>[WildFly→JBoss EAP 상용화 기회]</strong> 커뮤니티 WildFly 26.1.2 운영 서버(WAS 다수)에 대해 엔터프라이즈 지원이 포함된 JBoss EAP 상용 구독으로 전환 제안 가능</li>
+                    <li><strong>[클라우드/컨테이너 기회]</strong> IBT 시험 시행기간 자원 급증 대응을 위해 민간 클라우드 사용 중. OpenShift 기반 컨테이너 플랫폼 도입으로 탄력적 자원 운영 및 비용 최적화 제안 가능</li>
+                    <li><strong>[Ansible 자동화 기회]</strong> 복잡한 다수 서버(30대 이상) 운영 환경에서 Ansible Automation Platform 기반 패치 적용·구성 자동화·장애 대응 자동화 제안 가능</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
