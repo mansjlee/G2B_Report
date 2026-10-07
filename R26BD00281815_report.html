@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00281815 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>외교부_여권정보통합관리시스템 운영 및 통합유지관리 - 분석 리포트</h2>
+
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>AIX·Windows OS 명시, RH 상용SW 미포함</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>외교부 영사안전국 여권과가 발주하는 <strong>여권정보통합관리시스템(PICAS) 운영 및 통합유지관리</strong> 사업으로, 2027년 1년간 전자여권 발급·관리 시스템의 안정적 무중단(24시간 365일) 운영을 목적으로 함</li>
+                        <li>2008년 전자여권 도입 이후 지속 운영 중인 시스템에 대해 체계적 유지관리, 장애 대응, 기능 개선을 통해 국민 여권 서비스 품질 및 신뢰성 제고</li>
+                        <li>여권정보통합관리시스템, 안내 홈페이지, 업무용 전산장비, 여권통신망, 정보보호시스템, 기타 장비에 대한 통합 운영관리 체계 구축</li>
+                        <li>국내 258개 여권사무대행기관, 188개 재외공관(해외 대사관·총영사관 등), 인천·김해공항 민원실 등 전국 단위 지원 체계 유지</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 2,745,551,000원 (부가세 포함, 미확정 예산으로 심의 과정에서 조정 가능)</li>
+                        <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (12개월)</li>
+                        <li><strong>사업 범위</strong>:
+                            <ul>
+                                <li>여권정보통합관리시스템(PICAS) 운영 및 유지관리 (응용프로그램 기능개선, CI 변환, DR 시스템 운영, 전자여권 인증체계 운영 포함)</li>
+                                <li>상용 S/W 유지관리 (22종)</li>
+                                <li>여권업무용 전산장비 유지관리 (PC, 스캐너, 통합단말기, 여권판독기, 사진촬영기, 프린터 등 총 5,782대)</li>
+                                <li>여권통신망 운영 및 유지관리 (스위치 등 32대)</li>
+                                <li>정보보호시스템 운영 및 유지관리 (방화벽, ESM, 백신, 매체제어 등 4,016식)</li>
+                                <li>여권 안내홈페이지 운영 및 유지관리 (passport.go.kr 등)</li>
+                                <li>기타 장비(공조기, UPS, 전화교환기 등) 유지관리</li>
+                            </ul>
+                        </li>
+                        <li><strong>주요 일정</strong>:
+                            <ul>
+                                <li>제안요청 설명회: 2026년 10월 30일 16:00 (외교부 여권과 대회의실)</li>
+                                <li>사업자 선정 및 계약: 2026년 11~12월 예정</li>
+                                <li>인수·인계: 2026년 12월 ~ 2027년 1월</li>
+                                <li>사업 수행: 2027년 1월 ~ 12월 (Q1~Q4 전 기간)</li>
+                            </ul>
+                        </li>
+                        <li><strong>입찰 방식</strong>: 공개경쟁입찰 (협상에 의한 계약), 기술평가 90% + 가격평가 10%</li>
+                        <li><strong>참여 제한</strong>: 상호출자제한기업집단 및 대기업(소프트웨어사업자) 참여 불가 (사업금액 20억 이상 40억 미만 구간 적용)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>주관기관</strong>: 외교부 영사안전국 여권과 정보관리팀</li>
+                        <li><strong>과장</strong>: 이동규 / TEL: 02-2002-0101</li>
+                        <li><strong>담당자 (외무행정관)</strong>: 김병성 / TEL: 02-2002-0188 / FAX: 02-2002-0217</li>
+                        <li><strong>문의처</strong>: 외교부 여권과 정보관리팀 김병성 외무행정관 (02-2002-0188)</li>
+                        <li><strong>설명회 참석 문의</strong>: 동일 (김병성 외무행정관, 02-2002-0188)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong>
+                            <ul>
+                                <li>24시간 365일 무중단 시스템 운영 및 장애 대응 체계 구축 (장애 접수 후 2시간 이내 조치, 4시간 이내 복구)</li>
+                                <li>PICAS 응용프로그램 기능개선, 오류교정, 환경적응, 예방조치 수행</li>
+                                <li>전자여권 인증체계(CSCA, CVCA, DS, DV, IS 인증서 갱신·관리, PKD 서버 운영) 운영</li>
+                                <li>주민등록번호의 CI(Connecting Information) 변환 수행</li>
+                                <li>스토리지 이관 작업 지원</li>
+                                <li>SLA(서비스 수준 협약) 체결 및 관리: 장애 1등급 가용률 목표 100%, 최소허용 99.92%</li>
+                                <li>국내 대행기관 연 1/2 이상, 국외 재외공관 연 2회 현장 방문 점검</li>
+                                <li>상주인력 16M/M 이상 (PM 1명, 응용SW개발 7명, IT지원 2명, 전산장비관리 4.5명 등)</li>
+                                <li>주요정보통신기반시설 취약점 점검 대응 및 보안 취약점 조치</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매 명시 S/W]</strong>: 본 사업은 신규 S/W 조달·통합발주가 아닌 <strong>기존 운영 중인 상용 S/W 22종의 유지관리(기술지원·장애조치)</strong>가 목적이며, 신규 S/W 납품 품목은 명시되지 않음. 유지관리 대상 S/W 22종 목록은 아래와 같음:
+                            <ul>
+                                <li>문서 이미지 관리: Xtorm(XVARM) ECM 5.0 (스펜오컴) 4식</li>
+                                <li>PC보안/매체제어: WaterWall V7.0 (워터월시스템즈) 2,000 User</li>
+                                <li>지문대조: AEROX Finger FS (위닝아이) 2식</li>
+                                <li>이미지처리 및 문자인식: RealEYE (페이스시스템) 1식</li>
+                                <li>이미지 변환 및 압축: Magic Convert (미네르바소프트) 3식</li>
+                                <li>파일업다운로드: Dext5 Upload (라온위즈) 1식</li>
+                                <li>여권판독SW (아이티센) 1식</li>
+                                <li>Reporting: Rexpert Enterprise v4.0 (클립소프트) 9식</li>
+                                <li>인증서: 전자여권 PKI인증서(CSCA, CVCA) (케이사인) Site License</li>
+                                <li>DB암호화: D'Amo (펜타시큐리티) 6식</li>
+                                <li>안면인식: Alchera Face V1.0 Server (알체라) 5식, Alchera Face V1.0 Client (알체라) 451식, Alchera Face (시큐센) 3식</li>
+                                <li>생체정보 이미지 암호화: EdgeBio V4.0 (시큐센) 4식</li>
+                                <li>연계Hub-Agent: Megaware Smart Integration v7.0, Server-Agent (메가투스) 1식</li>
+                                <li>연계Hub: Megaware Smart Integration v7.0, Server (메가투스) 1식</li>
+                                <li>연계Agent: Megaware Smart Integration v7.0, Agent (메가투스) 1식</li>
+                                <li>LDAP SW: Chakan LDAP Suite (디에스멘토링) 3식</li>
+                                <li>무인민원발급 SW (한국타피컴퓨터) 1식</li>
+                                <li>PC원격지원시스템: RemoteCall (알서포트) 1식</li>
+                                <li>통합웹문서뷰어: StreamDocs Vu! (이파피루스) 2식</li>
+                                <li>문서위변조방지: TrustCertificate v3.0 (SGA) 1식</li>
+                                <li>개인정보관리: UBI Safer PSM (이지서티) 1식</li>
+                                <li>서버접속통제: GateOne 5 / 9.0 (㈜모두스원) 1식</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>신규 S/W 납품 없음</strong>: 본 사업은 기존 운영 중인 시스템의 운영·유지관리 용역으로, 신규 상용 S/W 구독 또는 납품 항목이 존재하지 않음. Red Hat 제품 신규 공급 기회 없음</li>
+                        <li><strong>서버 OS 명시 (비Red Hat)</strong>: RFP 사업 범위에 운영 대상 서버 OS가 <strong>"AIX, Windows 서버"</strong>로 명시되어 있어, RHEL 제안 여지 없음</li>
+                        <li><strong>기존 상용 S/W 22종 모두 비Red Hat 제품</strong>: 유지관리 대상 S/W 22종 전체가 국내외 타 벤더 제품이며, Red Hat 제품명(RHEL, OpenShift, Ansible, JBoss EAP 등) 또는 동의어가 목록에 전혀 존재하지 않음</li>
+                        <li><strong>경쟁/대체 미들웨어·플랫폼 확인 불가 (소프트웨어 구성 보안 비공개)</strong>: 소프트웨어 구성 현황이 보안상 미표시 처리되어 있어 서버단 미들웨어·OS 전체 현황 파악 불가. 단, 공개된 범위 내에서 Red Hat 상용 제품은 확인되지 않음</li>
+                        <li><strong>대기업 입찰 참여 불가</strong>: 사업 금액이 20억 이상 40억 미만으로 대기업 소프트웨어사업자 참여 제한 적용 — Red Hat Korea 직접 입찰 불가</li>
+                        <li><strong>RFP 전체에 Red Hat(또는 동의어) 제품명 전무</strong>: RHEL, OpenShift, OCP, Ansible, JBoss, EAP, Satellite, Quay, AAP 등 어떠한 Red Hat 상용 제품명도 문서 내에 등장하지 않음</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>가능 요소 사실상 없음</strong>: 공개된 RFP 내용 전체에서 Red Hat 상용 제품 도입·증설을 뒷받침하는 요소가 발견되지 않음</li>
+                        <li><strong>(제한적) Linux 계열 언급</strong>: 기술적용계획표(붙임 17)의 운영체제 항목에 "Linux"가 적용 검토 대상으로 포함되어 있으나, 이는 사업 수행 표준 점검 항목으로 형식적 기재이며 특정 배포판·상용 제품을 지정하지 않음. 또한 실제 운영 OS는 AIX·Windows Server로 명시되어 있어 RHEL 전환 근거로 삼기 어려움</li>
+                        <li><strong>(간접) Java 기반 응용시스템 운영</strong>: 기술 스택으로 Java(JSP, Java) 및 전자정부 표준프레임워크가 명시되어 있어 이론적으로 JBoss EAP/WildFly 계열 미들웨어가 사용될 가능성이 있으나, 소프트웨어 구성이 보안상 비공개이고 RFP에 미들웨어 제품명이 명시되지 않아 제안 근거 불충분</li>
+                        <li><strong>RFP에 명시된 Red Hat 제품명·수량: 없음</strong></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

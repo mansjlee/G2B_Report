@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00282241 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>서울기독대학교_AI 지식정보 기반 종합정보시스템 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>OS 미지정, RHEL·WAS 제안여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>마이빌더(MyBuilder) 기반의 노후화된 종합정보시스템을 웹 표준 기반으로 전면 재구축하고, 학사·행정·학생성공·성과관리·그룹웨어 등 대학 전 영역을 하나의 통합 정보체계로 구축하는 사업</li>
+                        <li>생성형 AI(LLM)와 데이터 분석 기술을 접목하여 문서중앙화(ECM), AI 지식 검색, 성과관리 BI, 통합인증(SSO) 등을 갖춘 AI·데이터 기반 지능형 대학 운영환경 마련</li>
+                        <li>ActiveX 등 비표준 플러그인 종속 탈피, 멀티 브라우저·멀티 디바이스 지원, 정보보안 강화(MFA, 암호화, 개인정보보호), 데이터 표준화·통합을 통해 중장기 디지털 혁신 기반 확보</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 5,000,000,000원 (부가세 포함) — 2026년 9억원, 2027~2029년 연간 예산 별도 책정, 단계별 기성 지급</li>
+                        <li><strong>사업 기간</strong>: 계약일로부터 36개월 이내 (장기계속계약)</li>
+                        <li><strong>사업 범위</strong>: ① AI 지식정보시스템(ECM) 구축 ② 웹 표준 종합정보시스템 재개발(학사·행정 전 영역) ③ 학생성공포털 구축 ④ 그룹웨어·전자결재 시스템 구축 ⑤ AI 성과관리시스템(BI) 구축</li>
+                        <li><strong>주요 일정</strong>: DB version upgrade 완료(5개월/누계30%), 학생성공포털 구축 완료(10개월/40%), 종합정보 구축 완료(16개월/55%), 문서중앙화·그룹웨어 구축 완료(21개월/70%), AI 성과관리 구축 완료(26개월/80%), 시스템 고도화 완료(32개월/90%), 최종 안정화(36개월/100%)</li>
+                        <li><strong>계약방법</strong>: 총액계약, 제한경쟁, 협상에 의한 계약 / 단독입찰(공동수급 불허)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업담당</strong>: 전산정보원 / 김재덕 / 02-380-2551 / scu025@scu.ac.kr</li>
+                        <li><strong>계약담당</strong>: 사무처 / 양우영 / 02-380-2529 / scu004@scu.ac.kr</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[주요 기술 요구사항]</strong>
+                            <ul>
+                                <li>전자정부 표준프레임워크 및 Java LTS 버전 기반 개발, 멀티 브라우저·멀티 디바이스 지원(ActiveX 완전 제거)</li>
+                                <li>데이터베이스: 학교 보유 SQL Server 2022 이상에서 정상 동작(기존 SQL Server 2008에서 이관)</li>
+                                <li>클라우드 우선(G-Cloud 포함) 서버 구성, 학교가 서버 인프라 제공 원칙</li>
+                                <li>SAML 2.0·OAuth 2.0·OpenID Connect 기반 통합인증(SSO), 2차 인증(MFA) 필수</li>
+                                <li>AES-256·SEED 암호화 모듈 적용, GS인증 보유 제품 요건</li>
+                                <li>생성형 AI(LLM) 기반 문서 검색·요약·질의응답, AI 챗봇 기반 성과관리 BI 제공</li>
+                                <li>Self-Service BI(비정형 장표 생성), 다차원 분석·시각화 환경 구축</li>
+                                <li>REST API 표준 인터페이스, 외부 시스템(전자출결·LMS·헤이영·학술정보관·금융기관 등) 연계</li>
+                                <li>소프트웨어 개발보안 가이드(행안부) 준수, OWASP TOP 10 보안취약점 조치</li>
+                            </ul>
+                        </li>
+                        <li><strong>[통합발주 상용 S/W 구매 목록]</strong> (ECR-005, Ⅴ.3. 상용 소프트웨어 납품 조항 명시)
+                            <ul>
+                                <li><strong>UI/UX 개발 Tool</strong> — 1식 (Nexacro N 동등 이상, GS인증 필수, 자체 기술 기반 4GL WYSIWYG 통합개발환경)</li>
+                                <li><strong>리포팅 Tool</strong> — 1식 (ClipReport5.0 동등 이상, GS 1등급 인증·조달청 우수제품 인증 필수)</li>
+                                <li><strong>AI 시각화 통계/분석 Tool</strong> — 1식 (Spotfire 동등 이상, 200여 개 통계함수·AI Agent·자연어 차트 생성 기능)</li>
+                                <li><strong>SSO(통합인증 솔루션)</strong> — 1식 (SAML 2.0 국제표준 기반, 이중화·고가용성 구성)</li>
+                                <li><strong>WEB 서버</strong> — 1식 (GS인증 상용 웹서버, HTTP/HTTPS·SSL/TLS 지원)</li>
+                                <li><strong>WAS(웹 애플리케이션 서버)</strong> — 1식 (Java EE 8 이상 지원, GS인증 상용 WAS, WEB SW와 동일 제조사 제품)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>데이터베이스 지정</strong>: SQL Server 2022 이상으로 명시 지정 — RHEL 기반 DB(PostgreSQL 등 Red Hat 스택)로의 대체 불가</li>
+                        <li><strong>WEB/WAS GS인증 필수</strong>: RFP ECR-001에서 WEB 및 WAS 모두 GS인증 취득 제품을 요구 — JBoss EAP는 한국 GS인증 미보유로 WAS 품목 직접 제안 어려움</li>
+                        <li><strong>국내 인증·조달 요건 중심</strong>: UI/UX 개발 Tool(GS인증·전자정부 표준프레임워크 호환성 인증), 리포팅 Tool(GS 1등급·조달청 우수제품 인증) 등 국내 특화 인증이 필수로, Red Hat 제품군이 해당 인증을 보유하지 않음</li>
+                        <li><strong>Red Hat 상용 제품명 전혀 미기재</strong>: RFP 전문에 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 구매·납품 품목으로 명시된 사례 없음</li>
+                        <li><strong>경쟁·대체 OS 없음 / 커뮤니티 제품 미기재</strong>: Ubuntu, Rocky Linux, CentOS, WildFly 등 경쟁 제품도 명시되지 않아 "낮음" 판정 요인도 없으나, 동시에 Red Hat 상용 제품 확정 근거도 부재</li>
+                        <li><strong>SSO 제품 고가용성·이중화 요건</strong>: SSO 솔루션은 국내 상용 제품 중심으로 제안할 가능성이 높으며, Red Hat SSO(Keycloak 상용)의 국내 레퍼런스·인지도 측면에서 경쟁 열위 우려</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>서버 운영체제 미지정</strong>: RFP에서 서버 OS를 특정하지 않고 "공공 클라우드(G-Cloud) 포함 구성 제안"을 요구 → RHEL을 운영 OS로 제안 가능. 기술적용계획표 상 Linux(서버용 개방형 OS) 항목이 명시되어 있어 RHEL 제안 근거 확보 가능</li>
+                        <li><strong>Java/WAS 환경에서 JBoss EAP 가능성</strong>: Java EE 8 이상, 전자정부 표준프레임워크 지원 WAS를 요구하며, JBoss EAP는 해당 기술 요건을 충족 — 단, GS인증 미보유 이슈를 파트너사의 GS인증 WAS(티맥스소프트 JEUS 등)와 번들링 전략 또는 컨소시엄 방식으로 접근 필요</li>
+                        <li><strong>SSO(통합인증) 솔루션 제안 여지</strong>: SAML 2.0, OAuth 2.0, OpenID Connect 표준 기반 SSO를 요구하며, Red Hat SSO(Keycloak 상용)는 해당 표준을 완벽히 지원 — 국내 파트너사와 협력하여 제안 가능</li>
+                        <li><strong>컨테이너·클라우드 인프라 제안 여지</strong>: G-Cloud 기반 시스템 구성을 허용하며, 클라우드 환경에서 OpenShift(OCP) 또는 RHEL 기반 컨테이너 플랫폼 제안을 통해 안정성·보안성 강조 가능</li>
+                        <li><strong>Ansible을 활용한 운영 자동화 제안</strong>: 36개월의 장기 사업으로 단계별 시스템 배포·운영 자동화 솔루션으로 Ansible Automation Platform 추가 제안 가능</li>
+                        <li><strong>RFP 내 Red Hat 제품명 명시 없음</strong> — 높음 판정 근거 없음. 현재 판정은 중간(OS 미지정·제안 여지) 수준.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

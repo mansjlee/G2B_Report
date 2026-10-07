@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00282329 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>K-water(한국수자원공사)_물환경(댐) 디지털트윈 시스템 구축 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>클라우드·MSA·Linux 제안여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>대청댐 및 금강유역을 대상으로 <strong>물환경 디지털트윈(DT) 시스템</strong>을 구축하여 실시간 모니터링, AI 기반 3차원 수질모의 및 예측 기능을 통합한 과학적 의사결정 지원체계 마련</li>
+                        <li>클라우드 기반 물환경 디지털트윈 플랫폼 구축, 3D GIS 기반 가상공간 구현, 통합 물환경 감시체계 구축이 핵심 목표</li>
+                        <li>녹조·탁수·수질오염사고 대응 시뮬레이터 및 AI 기반 예측·의사결정 지원 기능 구현 포함</li>
+                        <li>발주기관: 한국수자원공사(K-water)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 일금 구억팔천백육십만육천백팔원 (₩981,606,108)</li>
+                        <li><strong>사업 기간</strong>: 착수일로부터 24개월 (730일간)</li>
+                        <li><strong>사업 범위</strong>:
+                            <ul>
+                                <li>클라우드 기반 물환경 디지털트윈 플랫폼 구축 (K-water 디지털 플랫폼 연계)</li>
+                                <li>3D GIS(Cesium) 기반 디지털트윈 가상공간 구현</li>
+                                <li>금강유역 통합 물환경 감시체계 및 대시보드 구축</li>
+                                <li>녹조·탁수 AI 예측 모델(AEM3D, EFDC 등 수질모형 + Surrogate Model) 구축</li>
+                                <li>수질오염사고 대응 시뮬레이터 개발 (수리안 시스템 연계)</li>
+                                <li>생성형 AI 서비스 프로토타입 제작</li>
+                                <li>위성 기반 광역 녹조 예측 및 조기경보 기능</li>
+                            </ul>
+                        </li>
+                        <li><strong>주요 일정</strong>:
+                            <ul>
+                                <li>제안요청서 발행: 2026년 9월</li>
+                                <li>기술적용계획표 작성일: 2026.05.28</li>
+                                <li>하자보수 기간: 준공 후 1년</li>
+                                <li>사업자 선정: 협상에 의한 계약 방식 (조달청 기준 적용)</li>
+                                <li>중소기업 참여 확대 적용 (20억 미만, 대기업·중견기업 입찰 제한)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>발주기관</strong>: 한국수자원공사 (K-water)</li>
+                        <li><strong>담당 부서</strong>: 물환경관리처 녹조대응센터 디지털기술과</li>
+                        <li><strong>연락처 1</strong>: 042-629-4783 (물환경관리처)</li>
+                        <li><strong>연락처 2</strong>: 042-629-4784 (제안 관련 문의 / 디지털기술과)</li>
+                        <li><strong>이메일</strong>: 명시되지 않음</li>
+                        <li><strong>담당자 성명</strong>: 명시되지 않음</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[핵심 기술 요구사항]</strong>
+                            <ul>
+                                <li>클라우드 기반 아키텍처 구축 (K-water 기관 구축 클라우드 내 자원 활용, IaaS/PaaS/SaaS 적용, MSA 기반 확장 구조 검토 포함)</li>
+                                <li>3D GIS 가상공간: Cesium 기반 WebGIS 엔진, 3DTiles 국제표준 적용</li>
+                                <li>AI 예측 모델: AEM3D·EFDC 등 3차원 수질모형 + AI Surrogate Model (녹조·탁수 wMAPE 20% 이내 KPI)</li>
+                                <li>GPU 기반 연산 환경 On-demand 확장 가능 구조</li>
+                                <li>생성형 AI 서비스 프로토타입 (지식DB, 질의응답, 보고서 작성 등)</li>
+                                <li>Java/전자정부 표준프레임워크 기반 개발, RESTful API 연계 원칙</li>
+                                <li>보안: 국가사이버보안 기본지침, 국가클라우드 컴퓨팅 보안가이드라인 준수</li>
+                                <li>다국어 지원 체계 구축 (한국어·영어 우선, 기타 언어 확장 구조)</li>
+                                <li>총 58개 요구사항: 기능(SFR 22개), 인터페이스(SIR 1개), 데이터(DAR 5개), 성능(PER 4개), 보안(SER 6개), 품질(QUR 4개), 제약(COR 3개), PM(PMR 8개), PS(PSR 2개), 컨설팅(CSR 2개)</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매 명시 S/W]</strong>
+                            <ul>
+                                <li>본 사업은 주로 <strong>소프트웨어 개발 용역(SI)</strong> 형태로, 별도 통합발주 상용SW 품목 목록이 RFP에 명시되지 않음</li>
+                                <li>기존 K-water 인프라(참고용): AutomateOne 3.0 ibizebot (RPA), Oracle 12c (DB), SAP S/4 HANA (ERP), MESIM ESB v3.5 (EAI), K-sign Secure DB (DB암호화), DA#5 (DB모델링), Jeus 8.0 / WebToB 4.1 (WAS/WEB), WebSquare 5.0 (UI), OZe-Form 7.0 (보고서), rMateChart for html5 (차트), SOFTMANAGER 5 (형상관리), VMware View 7 (서버형 VDI)</li>
+                                <li>수질모형 도구(사업 수행 시 활용): AEM3D, EFDC, 수리안(SURIAN) 시스템 — 구매 품목 명시 없음, 기존 모델 연계 및 고도화 방식</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>주로 SW 개발 용역 중심</strong>: RFP에 Red Hat 상용 제품(RHEL, OpenShift, Ansible 등)이 구매·납품 품목으로 전혀 명시되지 않음</li>
+                        <li><strong>기존 경쟁 솔루션 사용 중</strong>: K-water 현 인프라에 <strong>VMware View 7</strong>(VDI), <strong>Oracle 12c</strong>(DB), <strong>Jeus 8.0/WebToB 4.1</strong>(WAS/WEB) 등 비 Red Hat 솔루션이 이미 구축·운영 중</li>
+                        <li><strong>기존 플랫폼 호환성 준수 요건</strong>: K-water 디지털 플랫폼 및 기존 표준프레임워크 환경 준수 의무화 → 기존 인프라 교체 가능성 제한</li>
+                        <li><strong>Red Hat 상용 제품명 미명시</strong>: RHEL, OpenShift, Ansible, JBoss EAP 등 어떠한 Red Hat 상용 제품도 요구사항 내 품목으로 지정되지 않음</li>
+                        <li><strong>SW 개발 결과물 지식재산권 K-water 귀속</strong>: 개발 산출물 전체가 발주기관 소유 → 상용 Red Hat 구독형 제품 채택 동기 낮음</li>
+                        <li><strong>20억 미만 소규모 사업</strong>: 대기업·중견기업 입찰 제한, Red Hat 직접 입찰 불가 (SI 업체를 통한 간접 제안 필요)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>클라우드 기반 아키텍처 + MSA 구조 검토 명시 (SFR-002)</strong>: "필요시 MSA(Microservice Architecture) 기반 확장 구조 적용" 명시 → <strong>OpenShift Container Platform</strong> 제안 가능</li>
+                        <li><strong>Linux 서버 OS 옵션 존재</strong>: 기술적용계획표 상 서버용 OS로 "Linux" 적용 계획 표기 (특정 배포판 미지정) → <strong>RHEL</strong> 제안 가능</li>
+                        <li><strong>GPU 기반 AI 연산 환경 On-demand 확장 구조 요구 (SFR-002, SER-006)</strong>: AI 기반 추론·3D 시뮬레이션 고성능 연산 → <strong>OpenShift AI / RHEL AI</strong> 적용 검토 가능</li>
+                        <li><strong>클라우드 IaaS/PaaS/SaaS 적용 계획</strong>: 기술적용계획표에 IaaS·PaaS·SaaS 모두 적용 계획으로 표기 → <strong>OpenShift (PaaS 레이어)</strong> 제안 가능</li>
+                        <li><strong>API 기반 마이크로서비스 연계 구조 설계 요구</strong>: 시스템 간 연계를 API 기반으로 구성, 특정 플랫폼 종속 배제 원칙 → <strong>OpenShift + Ansible Automation Platform</strong> 적용 여지</li>
+                        <li><strong>생성형 AI 서비스 프로토타입 요구 (SFR-019)</strong>: K-water 전사 AI 정책 정합성 고려한 시스템 아키텍처 요구 → <strong>OpenShift AI</strong> 기반 제안 가능</li>
+                        <li><strong>RFP 내 Red Hat 명시 제품·수량</strong>: 없음 (명시된 Red Hat 상용 제품 없음)</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
