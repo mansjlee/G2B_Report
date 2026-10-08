@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00282537 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국가데이터처_2027년 경제총조사 통합시스템 운영 및 유지관리 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>Linux·컨테이너 클라우드네이티브, RH 상용 제품 미명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국가데이터처가 발주하는 <strong>2027년 경제총조사 통합시스템 운영 및 유지관리</strong> 사업으로, 경제총조사 통합시스템(입력관리·자료처리·홈페이지·모집단·거버넌스 등)과 경제통계 연간 4종 조사 시스템의 안정적 유지관리·운영을 목적으로 함</li>
+                    <li>2027년 경제총조사 자료처리 확정 공표 및 경제통계 연간조사(광업제조업·서비스업·운수업·기업활동조사) 본조사 시스템의 성공적 운영 지원</li>
+                    <li>전국사업체조사 자료처리 시스템을 경제총조사 통합시스템으로 이관하여 자료처리 효율성 제고</li>
+                    <li>클라우드네이티브(컨테이너 기반, MSA, CI/CD) 기반 인프라 자원 운영 및 장애 대처로 무중단 서비스 환경 구현</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 841,000,000원 (부가세 포함) / 20억 미만 → 대기업·중견기업 입찰 참여 제한, 중소 SW사업자만 참가 가능</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (12개월) ※ 계약이 2027.1.1. 이후 체결 시 계약일~2027.12.31.로 일할 계산</li>
+                    <li><strong>사업 범위</strong>: ① 경제총조사 통합시스템(입력관리·자료처리·홈페이지·모집단·명부작성·거버넌스·CAPI 등) 유지관리·운영 ② 경제통계통합조사 시스템 유지관리·운영 ③ 전국사업체조사 자료처리 시스템 이관 및 운영 ④ 내·외부 시스템 연계 지원 ⑤ 클라우드 인프라 운영 및 장애 대처 ⑥ 문서관리 및 문서화 지원</li>
+                    <li><strong>주요 일정</strong>: RFP 발행 2026년 9월 / 사업계약 후 착수보고 10일 이내 / 2027년 6월 경제총조사 확정 공표, 7~8월 경제통계 연간 본조사 운영</li>
+                    <li><strong>입찰 방식</strong>: 제한경쟁입찰(협상에 의한 계약) / 기술평가 90% + 가격평가 10% / 조달청 위탁 평가</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 국가데이터처 조사시스템관리과</li>
+                    <li><strong>과장</strong>: 황의태 / TEL: 042-481-2434 / FAX: 042-481-2478</li>
+                    <li><strong>서기관</strong>: 한정희 / TEL: 042-481-2452</li>
+                    <li><strong>주무관(문의처)</strong>: 유기찬 / TEL: 042-481-2451</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>클라우드네이티브 기반(컨테이너, MSA, CI/CD) 시스템 운영 및 자원 배분 최적화</li>
+                            <li>Java 기반 시스템 및 전자정부 표준프레임워크 적용 (Java, JSP, RESTful API)</li>
+                            <li>Linux 운영체제 적용, RDBMS 기반 데이터베이스 운영</li>
+                            <li>PaaS 클라우드 서비스 활용 (국가정보자원관리원 클라우드 자원 관리)</li>
+                            <li>VM·POD 추가/변경 등 필요 시 상용SW 설치(라이선스 한도 내)</li>
+                            <li>APM·DPM 툴을 활용한 시스템 성능 모니터링, 동시 사용자 지원 (최대 현장조사 대상 40% 추정)</li>
+                            <li>응답시간: 일반 질의 3초 이내, 복잡 질의 5초 이내 / 서비스 가동률 연간 99% 이상</li>
+                            <li>표준E&I(Banff 기반 이상치 내검·임퓨테이션) 서비스, AI 산업직업분류 시스템 연계</li>
+                            <li>Multi OS(Windows, Mac OS, Linux), Multi Browser(IE, Chrome, Edge) 지원</li>
+                            <li>전산내검, 표준E&I, 집계·분석, 행정자료 항목대체 등 자료처리 기능 유지관리</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W]</strong>
+                        <ul>
+                            <li>RFP 본문 내 통합발주 대상 S/W 품목·수량이 <strong>구체적으로 명시되지 않음</strong></li>
+                            <li>S/W 시스템 구성도는 <em>"보안상 공개 안 함"</em>으로 별도 열람 필요 (국가데이터처 방문 열람)</li>
+                            <li>MPR-007(기능 및 성능 최적화)에 "VM, POD 추가 또는 변경 등 필요 시 상용SW 설치(라이선스 한도 내)" 조건 언급</li>
+                        </ul>
+                    </li>
+                    <li><strong>[요구사항 총계]</strong>: 총 108개 (기능 16, 성능 8, 인터페이스 2, 데이터 11, 테스트 1, 보안 26, 품질 3, 제약 6, 프로젝트관리 21, 프로젝트지원 5, 유지관리수행 8, 유지관리인력 1)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 도입 품목 미명시</strong>: RFP에 통합발주 S/W 품목·수량이 공개되지 않아 Red Hat 상용 제품이 구매 목록에 포함되어 있는지 현재로서는 확인 불가 (S/W 구성도 보안상 비공개)</li>
+                    <li><strong>Red Hat 상용 제품명 부재</strong>: RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 RFP 어디에도 명시되지 않음</li>
+                    <li><strong>경쟁 제품 미명시</strong>: Ubuntu, VMware, Oracle Linux, Rocky Linux 등 특정 경쟁 OS·플랫폼도 명시되지 않아 기존 스택 파악 불가</li>
+                    <li><strong>대기업 참여 제한</strong>: 20억 미만 사업으로 중소 SW사업자만 입찰 가능 → Red Hat Korea 직접 입찰 불가, 중소 파트너사를 통한 간접 제안만 가능</li>
+                    <li><strong>유지관리 성격</strong>: 신규 구축이 아닌 기존 시스템 유지관리·운영 사업으로, 기존 SW 스택을 유지하는 방향이 일반적임</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>클라우드네이티브 아키텍처 명시</strong>: RFP에서 "클라우드네이티브(컨테이너 기반, MSA, 배포 자동화(CI/CD))"를 추진 목표로 명시 → <strong>OpenShift Container Platform</strong> 제안 기회</li>
+                    <li><strong>Linux 운영체제 적용 확정</strong>: 기술적용계획표에서 서버용 운영체제로 <strong>Linux ○(적용)</strong>로 명시 → <strong>RHEL(Red Hat Enterprise Linux)</strong> 제안 여지</li>
+                    <li><strong>PaaS 적용 계획 명시</strong>: 기술적용계획표에 <strong>PaaS ○(적용)</strong>로 명시 → OpenShift 기반 PaaS 플랫폼 제안 가능</li>
+                    <li><strong>Java 기반 애플리케이션</strong>: Java/JSP, 전자정부 표준프레임워크 기반 시스템 → <strong>JBoss EAP</strong> 애플리케이션 서버 제안 여지</li>
+                    <li><strong>컨테이너 운영(VM·POD)</strong>: MPR-007에서 VM/POD 기반 상용SW 설치 조건 언급 → 컨테이너 플랫폼(OpenShift) 및 <strong>Ansible Automation Platform</strong>(배포 자동화) 제안 가능</li>
+                    <li><strong>자동화·CI/CD 요구</strong>: 배포 자동화(CI/CD) 기술 요구 → <strong>Ansible Automation Platform</strong>, OpenShift Pipelines 제안 기회</li>
+                    <li><strong>RFP 내 Red Hat(또는 동의어) 제품명·수량</strong>: 해당 없음 (명시 없음)</li>
+                    <li><strong>접근 전략</strong>: S/W 구성도가 비공개이므로 파트너사(중소 SW사)와 협력하여 국가데이터처 방문 열람 후 기존 스택 확인 및 RHEL·OpenShift·Ansible 전환/추가 제안 검토 필요</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

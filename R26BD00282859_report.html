@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00282859 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국가데이터처_정보시스템 및 사무용 전산장비 유지관리(2027~2028년) - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>OS변경(Unix→Linux) RHEL 제안여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국가데이터처 정보통신실 전산장비(HW 2종) 및 상용 SW(6종, 5,005개)의 안정적 운영·유지관리</li>
+                    <li>국가정보자원관리원 총조사 시스템('19년 도입) 상용 SW 5종 운영 및 유지관리</li>
+                    <li>통계분석용 서버(SAS, R, Python/GPU) 운영 지원 및 이용자 지원</li>
+                    <li>SAS 서버 OS 변경(Unix → Linux)에 따른 G-Cloud 신규 서버 재설치 및 데이터 마이그레이션</li>
+                    <li>사무용 전산장비(PC, 모니터, 노트북, 프린터 등) 헬프데스크 운영을 통해 업무 공백 최소화</li>
+                    <li>정보자원 현황 현행화(EA, PMS) 및 국가정보자원관리원 등 타 기관 업무 협력</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 총 1,165백만원 (부가세 포함) / 1차년도 632백만원(2027), 2차년도 533백만원(2028) ※ 예산 심의 과정에서 조정 가능</li>
+                    <li><strong>사업 기간</strong>: 2027.1.1. ~ 2028.12.31. (24개월) ※ 계약 지체 시 계약일부터 일할 계산</li>
+                    <li><strong>사업 범위</strong>: ① 정보통신실 전산장비(HW 2종) 유지관리 ② 총조사 시스템 상용SW(6종/5,005개) 유지관리 ③ SAS 서버 Unix→Linux 이전·재설치·데이터 마이그레이션 ④ R·SAS·Python(GPU) 분석시스템 운영지원 ⑤ 사무용 전산장비(PC 2,910대, 모니터 2,436대, 노트북 55대, 프린터 375대) 헬프데스크 ⑥ 정보자원 현행화 및 기관 간 업무 협력</li>
+                    <li><strong>주요 일정</strong>: 2027.1월 착수(착수계·착수보고·SLA 체결) → 매월 정기점검·주간·월간 보고 → 연 1회 이상 정보통신실 환경정비(청소·케이블 정리) → 연 1회 부서별 전산장비 전수조사 → 2028.12.31. 사업 종료</li>
+                    <li><strong>입찰 방식</strong>: 제한경쟁입찰(협상에 의한 계약), 기술능력 90% / 입찰가격 10%, 대기업·중견기업 참여 제한(20억원 미만 사업)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>소속 부서</strong>: 국가데이터처 통계서비스국 지능정보화팀</li>
+                    <li><strong>과장</strong>: 신우람 / TEL: 042-481-2352 / FAX: 042-481-3750</li>
+                    <li><strong>사무관</strong>: 손상호 / TEL: 042-481-2321</li>
+                    <li><strong>주무관</strong>: 이지훈 / TEL: 042-481-2318</li>
+                    <li><strong>이메일</strong>: RFP 내 명시 없음 (입찰공고문 참조)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[운영 체계]</strong> 24시간 × 365일 유지관리 원칙, 5명 상주 인력(PM 포함: 서버·상용SW 관리 2명, 사무용 전산장비 관리 3명)</li>
+                    <li><strong>[장애 대응]</strong> 장애 인지 후 2시간 이내 현장 도착·4시간 이내 복구 완료, 5일 이내 장애원인 분석 보고서 제출; 사무용 전산장비는 장애 접수 후 30분 이내 현장 도착·2시간 이내 복구</li>
+                    <li><strong>[SAS 서버 이전]</strong> G-Cloud 신규 서버에 OS 변경(Unix → Linux)에 따른 SAS 재설치, 기존 SAS 데이터 마이그레이션, OS 환경설정 및 필수 패키지·라이브러리 설치 지원</li>
+                    <li><strong>[분석시스템 운영]</strong> R 서버(사용자·용량 관리, 패키지 업데이트, 장애 대응), SAS(사용자·용량 관리, 라이선스 지원), Python/GPU 서버(패키지 업데이트, 버전관리, 장애 대응)</li>
+                    <li><strong>[구매 명시 SW (통합발주 유지관리 대상)]</strong>
+                        <ul>
+                            <li>DB암호화 D'amo 112Core: 1식 (총조사 시스템, 2019년 도입)</li>
+                            <li>MDM Server: 1식</li>
+                            <li>MDM MAM pack: 1식</li>
+                            <li>MDM Agent for Android: 5,000개</li>
+                            <li>MDM App Secure Library: 1식</li>
+                            <li>Veem Backup(R 서버 백업): 1식 (2019년 도입)</li>
+                            <li>※ SW 총 수량: 5,005개 / 신규 구매 아닌 기존 도입 SW 유지관리 용역</li>
+                        </ul>
+                    </li>
+                    <li><strong>[서비스 수준]</strong> 연간 가동률 99% 이상, 서버 및 시스템 SW 평균 장애건수 월 0.82건 이내, SLA 체결·관리</li>
+                    <li><strong>[보안]</strong> 개인정보 보호, 구간 암호화(SSL/TLS), 시스템 접근통제, 보안 취약점 조치 등 25개 보안 요구사항 준수</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>[신규 S/W 구매 없음]</strong> 본 사업은 기존 도입(2019년) 장비 및 상용 SW에 대한 순수 유지관리 용역으로, 신규 S/W 구독·구매 항목이 없음</li>
+                    <li><strong>[RFP 내 Red Hat 상용 제품 미명시]</strong> RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 RFP 어디에도 품목으로 명시되지 않음</li>
+                    <li><strong>[기존 유지관리 SW가 타사 제품]</strong> 명시된 상용 SW 6종이 D'amo(이니텍), MDM(모바일 단말관리), Veem Backup 등 Red Hat과 무관한 제품으로 구성</li>
+                    <li><strong>[특정 경쟁 제품 미명시]</strong> Ubuntu, Rocky Linux, VMware 등 경쟁 제품이 명시되지는 않으나, Red Hat 제품 도입 확정 항목도 없음</li>
+                    <li><strong>[SI·유지관리 사업자가 SW 납품 주체]</strong> Red Hat이 직접 유지관리 용역에 참여하기보다 파트너사를 통해 간접 제안 필요</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[OS 미지정 Linux 전환 기회 - 핵심]</strong> SAS 서버 OS 변경(Unix → Linux) 시 특정 Linux 배포판이 RFP에 명시되지 않음 → G-Cloud 신규 서버 Linux OS로 RHEL(Red Hat Enterprise Linux) 제안 가능</li>
+                    <li><strong>[R 서버 및 GPU 서버 Linux 환경]</strong> R 서버, Python/GPU 서버 모두 Linux 기반 운영환경으로, 해당 서버 OS가 RHEL일 경우 유지관리 수행사가 RHEL 구독 서비스 제안 가능</li>
+                    <li><strong>[SAS 재설치 환경 구성 지원]</strong> SAS 재설치를 위한 OS 환경설정·필수 패키지·라이브러리 설치 지원(MPR-007) 과정에서 RHEL 기반 환경 제안 및 기술 지원 여지 존재</li>
+                    <li><strong>[Ansible 자동화 제안 여지]</strong> 다수의 상용 SW(5,005개) 모니터링·패치·백업 자동화 업무에 Ansible Automation Platform(AAP) 제안 검토 가능</li>
+                    <li><strong>[RFP 내 Red Hat 제품명 직접 명시]</strong> RFP 내 Red Hat(레드햇) 상용 제품명·수량이 직접 명시된 항목은 없음</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

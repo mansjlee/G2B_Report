@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00283077 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>서울특별시 북부병원_통합의료정보시스템 구축 - 분석 리포트</h2>
+
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>OS·미들웨어 미지정, RHEL·EAP 제안 여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>서울특별시 북부병원(공공의료기관)의 노후화된 처방전달시스템(OCS, 2006년 구축)을 전면 재구축하고, EMR 중심의 통합의료정보시스템을 신규 구축하는 사업</li>
+                        <li>핵심 목표: ① 미래지향적 종합의료정보시스템 기반 마련(EMR/OCS 전면 재구축), ② 서버·DB·스토리지를 CSAP 인증 클라우드 센터로 이전(온프레미스 → 클라우드), ③ 네트워크·보안 인프라(방화벽·IPS·NMS·NAC) 고도화, ④ 그룹웨어·ERP 도입을 통한 행정·경영 효율화, ⑤ 개인정보 보호 및 환자 안전관리 체계 구축</li>
+                        <li>북부병원 특화 영역(재활의학센터, 호스피스완화의료센터, 인공신장실, 한방·침구과) 업무 시스템 포함하는 전 병원 업무 전산화</li>
+                        <li>공공부문 클라우드 우선(Cloud First) 정책에 따라 CSAP('상' 등급 수준) 인증 클라우드 환경에 정보자원 구성 의무화</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 961,873천원 (VAT 포함, 약 9.6억원)</li>
+                        <li><strong>사업 기간</strong>: 2026년 12월 16일 ~ 2027년 12월 15일 (12개월)</li>
+                        <li><strong>사업 범위</strong>:
+                            <ul>
+                                <li>가. EMR 중심 통합의료정보시스템 구축(EMR/OCS 전면 재구축, LIS, CRM, QI, 전자동의서, DB마이그레이션 등)</li>
+                                <li>나. 클라우드 인프라 도입(CSAP 인증 클라우드 가상서버·DB·스토리지·DR)</li>
+                                <li>다. 네트워크·보안 인프라 및 외부 솔루션 도입(방화벽·IPS·L2스위치·NMS·NAC·그룹웨어·ERP)</li>
+                                <li>라. OS/미들웨어/백신, DBMS, SSO/PKI/EAM 등 시스템 SW 구매·납품</li>
+                            </ul>
+                        </li>
+                        <li><strong>주요 일정</strong>:
+                            <ul>
+                                <li>SW 분석/설계/개발/단위테스트/통합테스트/리허설/안정화: M ~ M+7</li>
+                                <li>HW·네트워크(클라우드 자원 준비, 구내 방화벽·IPS·스위치 설치·검수): M ~ M+4</li>
+                                <li>외부 솔루션(그룹웨어·ERP·NMS·NAC 구축 및 연계): M+2 ~ M+9</li>
+                                <li>사업관리(개인정보 영향평가/전산감리): 전 기간</li>
+                                <li>입찰 방식: 협상에 의한 계약(제한경쟁입찰, 중소기업간 경쟁), 대기업·중견기업 참여 제한</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업부서 담당자</strong>: 도화섭 / 기획조정실 / ☎ 02-2036-0231 / seoulnmhit@bbhosp.go.kr</li>
+                        <li><strong>계약부서 담당자</strong>: 최준석 / 총무팀 / ☎ 02-2036-0332 / contract@bbhosp.go.kr</li>
+                        <li><strong>발주기관</strong>: 서울특별시 북부병원 (서울 중랑구 양원역로 38)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[핵심 기술·비즈니스 요구사항]</strong>
+                            <ul>
+                                <li>EMR/OCS 전면 재구축: 진료·간호·진료지원·원무행정·일반행정 전 영역 전산화(SFR-001~083)</li>
+                                <li>클라우드 전환: CSAP 인증 클라우드(G-Cloud 또는 민간 CSAP '상' 등급)에 가상서버(IaaS) 기반 EMR/OCS 운영 의무화, Multi-AZ 이중화, DR 구성(RTO 4시간 이하, RPO 30분 이하)</li>
+                                <li>네트워크·보안 인프라 신규 구축: 방화벽 HA 이중화, IPS, L2 스위치, NMS, NAC</li>
+                                <li>외부 솔루션 도입: 그룹웨어(전자결재·SSO 연계), ERP(인사·급여·회계·자산·구매관리)</li>
+                                <li>SSO/PKI/공인인증서/EAM 구축: EMR·그룹웨어·ERP 통합 단일 로그인</li>
+                                <li>기존 OCS DB 마이그레이션(온프레미스 → 클라우드), 개인정보 영향평가 수행</li>
+                                <li>의료장비 인터페이스(HL7/DICOM), PACS·LIS·마약류통합관리 등 내외부 연계 15종 이상(SIR-001~015)</li>
+                                <li>클라우드 보안(CSAP), ISMS-P 인증기준 보안 구성, 백신/EDR 적용</li>
+                                <li>전자의무기록(EMR) 시스템 인증(2주기) 기준 충족</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매 명시 S/W 내역 — 통합발주 품목]</strong>
+                            <ul>
+                                <li>EMR/OCS: 1식</li>
+                                <li>환자안전·전자동의서·CRM·건강검진: 1식</li>
+                                <li>SSO/PKI/공인인증서/EAM: 1식</li>
+                                <li>NMS(네트워크통합관리)/NAC(네트워크접근제어): 1식</li>
+                                <li>그룹웨어/ERP: 1식 (온프레미스/클라우드/SaaS 가능)</li>
+                                <li>OS/미들웨어(WAS)/백신: 1식</li>
+                                <li>DBMS(클라우드 매니지드 또는 가상서버): 1식, Active/Standby 이중화</li>
+                                <li>유무선 공인인증서(PKI 툴킷): 1식</li>
+                                <li>통합관제 시스템(EMS·NMS 대시보드, 관제용 모니터·미니PC 포함): 1식</li>
+                                <li>클라우드 보안(웹방화벽·보안그룹 등): 1식</li>
+                                <li>클라우드(DR) 재해복구 자원: 1식</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>Red Hat 상용 제품명 미명시</strong>: RFP 전체에 걸쳐 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 구매·납품 품목으로 단 한 곳도 명시되어 있지 않음 → 높음 판정 불가</li>
+                        <li><strong>경쟁·대체 제품 명시 없음</strong>: Ubuntu, Rocky Linux, Oracle Linux, Windows Server, VMware 등 경쟁 제품이 OS/미들웨어로 특정되지 않아 Red Hat 배제 조건은 아님</li>
+                        <li><strong>클라우드 중심 아키텍처</strong>: 서버·DB·스토리지 전체를 CSAP 인증 클라우드(IaaS) 기반으로 구성해야 하므로, 온프레미스 RHEV/가상화 플랫폼 제안 범위는 없음</li>
+                        <li><strong>DBMS 미지정</strong>: DBMS는 '국제표준 RDBMS'로만 요구하고 특정 벤더를 지정하지 않아 Red Hat의 직접적인 DBMS 제품은 없음(PostgreSQL 계열 클라우드 매니지드 DB가 주로 사용될 것으로 예상)</li>
+                        <li><strong>중소기업 경쟁 사업</strong>: 대기업·중견기업 참여 제한 사업으로, Red Hat Korea가 직접 입찰 참여 불가 → 파트너(중소 SI)를 통한 납품 구조</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>OS/미들웨어(WAS) 1식 — RHEL + JBoss EAP 제안 기회</strong>: 도입 내역표([붙임11])에 'OS 미들웨어(WAS) 1식'이 통합발주 품목으로 명시됨. 특정 벤더 지정 없이 '최신 정품' 요건만 있어 RHEL(서버 OS) + JBoss EAP(WAS/미들웨어) 조합 제안 가능</li>
+                        <li><strong>기술 표준에 Linux 명시</strong>: 기술적용계획표(붙임9) 플랫폼 분야에 서버용 운영체제로 'Linux'가 명시적으로 열거되어 있어 RHEL 제안의 기술적 근거 확보</li>
+                        <li><strong>클라우드 IaaS 가상서버 OS</strong>: 총 10개 가상서버(EMR I/F 2식, APP 2식, 진료대기/건강검진 1식, 환자안전/전자동의서 1식, 권한인증 2식, KIMS/CRM 1식, 개발/테스트 1식) 운영을 위한 게스트 OS가 필요하며 CSAP 인증 클라우드 환경에서 RHEL 이미지 적용 가능</li>
+                        <li><strong>Ansible Automation Platform 제안 여지</strong>: 클라우드 자원의 '24시간 실시간 관제', '자원 증설 자동화', '백업 정책 자동화' 등 운영 자동화 요건이 다수 포함되어 있어 Ansible 기반 자동화 솔루션 제안 가능</li>
+                        <li><strong>보안 및 컨테이너 플랫폼 여지</strong>: ISMS-P 인증기준 보안 구성 요건, 클라우드 환경의 컨테이너 기반 배포 가능성에 따라 OpenShift/Podman 기반 컨테이너 플랫폼 제안 여지 존재(필수 아님)</li>
+                        <li><strong>RFP에 명시된 Red Hat(또는 동의어) 제품명·수량</strong>: 없음 (본 RFP에는 Red Hat 상용 제품명이 품목으로 직접 명시된 항목 없음)</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

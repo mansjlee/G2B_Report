@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00282546 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국토지리정보원_'27~'28년 지오프라 등 클라우드 네이티브 운영관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 미포함 용역, RH 제품 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>'24~'26년 클라우드 네이티브 전환 사업을 통해 전환 완료된 국토지리정보원 4개 정보시스템(지오프라(GEOFRA), 공간정보 행정망 서비스, 기관홈페이지, 국토위성센터 홈페이지)의 안정적 운영 및 이용지원을 위한 MSP(클라우드 서비스 운영관리) 사업</li>
+                    <li>NHN 클라우드(CSP)를 기반으로 24×365 무중단 클라우드 서비스 운영관리, 보안관제, 장애처리, 백업·복구 등 클라우드 환경의 안정성과 지속성 확보가 핵심 목적</li>
+                    <li>장기계속계약(2년) 방식으로 추진하여 업무연속성 보장</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 4,520백만원 (부가세 포함, CSP 이용요금 포함 / 연도별 변동 가능)</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2028년 12월 31일 (2년, 장기계속계약 / 1차년도 '27.1~'27.12, 2차년도 '28.1~'28.12)</li>
+                    <li><strong>사업 범위</strong>: 4개 정보시스템 클라우드 운영관리 — ① 모니터링(24×365 보안관제 포함), ② 장애처리·침해대응, ③ 백업·복구, ④ 기술지원(SR 창구 운영), ⑤ 운영지원(SLA 체결·이용료 집행·SOP 수립), ⑥ 클라우드 네이티브 운영(Pod/Container/Cluster 관리, 오픈소스 아우터 아키텍처 유지보수), ⑦ 모의훈련. CSP는 NHN 클라우드로 고정(국정자원 대구센터 민관협력형). 운영 자원: VM 73식, CPU 722vCore, Memory 2,364GB, Disk 7,300GB 등</li>
+                    <li><strong>주요 일정</strong>: 계약일로부터 7일 이내 착수계·사업수행계획서 제출, 매월 운영보고서 제출, 사업 종료 15일 전 최종보고서(안) 제출 / 입찰방법: 공개경쟁입찰(협상에 의한 계약), 기술:가격 평가 비율 90:10 / <strong>대기업 참여 불가</strong>(중소SW사업자 지원 지침 적용)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>담당 부서</strong>: 국토교통부 국토지리정보원 국토조사과</li>
+                    <li><strong>과장</strong>: 김희경 / TEL: 031-210-2605 / FAX: 031-210-2707</li>
+                    <li><strong>연구관</strong>: 박수영 / TEL: 031-210-2690</li>
+                    <li><strong>담당자(문의처)</strong>: 김선혜 / TEL: 031-210-2783 / Email: shjohn@korea.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술·비즈니스 요구사항]</strong>
+                        <ul>
+                            <li>CMR-001: 운영관리 대상 자원 및 서비스 현황관리 (VM 75식, 클러스터 10식, 시스템SW WEB/WAS/DBMS 57개 등)</li>
+                            <li>CMR-002: 24×365 서비스 운영 모니터링 및 상시 보안관제 (주간 관제인력 2인 이상 상주)</li>
+                            <li>CMR-003: 장애관리 및 침해대응 체계 운영 (SLA 내 복구, 비상연락체계 구축)</li>
+                            <li>CMR-004: 백업 정책 수립, 정기 백업 수행 및 복구 지원, 모의훈련</li>
+                            <li>CMR-005: 클라우드 서비스 기술지원 (SR 창구 운영, 보안 패치, 오픈소스 SW 취약점 점검)</li>
+                            <li>CMR-006: 운영지원 — CSP 이용료 집행, SLA 체결, 표준운영절차(SOP) 수립, IRM 등록 지원</li>
+                            <li>CMR-007: 클라우드 네이티브 운영 — Pod/Container/Cluster 관리, 아우터 아키텍처(오픈소스 SW) 운영·유지보수</li>
+                            <li>CMR-008: 비상상황 대비 모의훈련 (침해사고 대응, 장애대응, 백업데이터 복구)</li>
+                            <li>CSR: NHN 클라우드 기반 컴퓨팅 환경 제공, Block/NAS 스토리지, CDN, 부하분산, 원격 모니터링</li>
+                            <li>보안: 국정원 CC인증 제품 활용, CSAP 클라우드 이용, 클라우드 기반 보안관제, 개인정보 접속기록 관리</li>
+                        </ul>
+                    </li>
+                    <li><strong>[RFP 명시 구매 S/W]</strong>: <span style="color:#c00"><strong>해당사항 없음</strong></span> — RFP 내 "하드웨어 및 상용소프트웨어 분리발주: 해당사항 없음" 명시. 별도 통합발주 또는 상용SW 구매 품목 없음. CSP(NHN 클라우드) 이용료는 사업비에 포함되어 집행되나 이는 클라우드 서비스 이용료이며 SW 구독 품목이 아님. 클라우드 보안 서비스(WAF 2식, IPS 1식, DDoS 1식, DB보안 2식, 서버접근제어 모듈 1식+DB접근제어 32식, 서버백신 75식, 개인정보접속기록 모듈 2식+20식 라이선스 등)는 CSP 제공 서비스 항목임.</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 납품·구독 항목 없음</strong>: RFP 명시 "상용SW 분리발주 해당사항 없음". 순수 클라우드 운영관리 용역 사업으로 상용 SW 도입·납품 계획 전혀 없음</li>
+                    <li><strong>Red Hat 상용 제품명 전혀 미명시</strong>: RHEL, OpenShift, OCP, Ansible, JBoss EAP, Satellite, Quay 등 Red Hat 상용 제품 어디에도 언급 없음</li>
+                    <li><strong>CSP 고정(NHN 클라우드)</strong>: 이미 NHN 클라우드를 CSP로 확정하여 운영 중인 환경 유지 관리 사업으로, 인프라 플랫폼 교체 가능성 없음</li>
+                    <li><strong>경쟁 제품 명시는 없으나 RH 도입 여지 없음</strong>: Ubuntu, VMware, Oracle Linux 등 직접적 경쟁 제품은 명시되지 않았으나, 기존 운영 환경을 그대로 유지·관리하는 사업 특성상 신규 Red Hat 제품 도입 기회 없음</li>
+                    <li><strong>대기업 참여 불가 사업</strong>: 중소SW사업자 지원 지침에 따라 대기업 및 대기업의 공동수급 참여 불가 — Red Hat이 직접 참여하거나 대기업 파트너를 통한 접근에 제한이 있음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>컨테이너·클라우드 네이티브 환경</strong>: CMR-007에서 Pod, Container, Cluster 운영관리가 명시되어 있으나, 기존 전환 완료된 환경 유지보수에 국한되어 OpenShift 신규 도입 가능성은 극히 낮음</li>
+                    <li><strong>오픈소스 SW 아우터 아키텍처 유지보수</strong>: 오픈소스 SW EOS 시 대체 SW 도입 기술지원 협의 가능성 언급 (CMR-007) — 장기적으로 EAP/OpenShift 전환 제안 여지가 미미하게 존재하나, 현 계약 범위 내 SW 구매는 없음</li>
+                    <li><strong>기술적용계획표 Linux 적용 명시</strong>: 서버용 운영체제로 Linux가 '적용' 체크되어 있음 — RHEL 제안 여지가 이론상 존재하나, SW 구매 예산이 없어 실질적 기회 없음</li>
+                    <li><strong>RFP 내 Red Hat(또는 동의어) 제품명·수량</strong>: <strong>없음</strong> — 문서 전체에 Red Hat 상용 제품명 전혀 등장하지 않음</li>
+                    <li><strong>종합</strong>: 판정 규칙 3)항 해당 — 순수 운영관리 용역으로 SW 납품·구독 항목이 없고, Red Hat 상용 제품명도 없으며, 기술 요구도 기존 NHN 클라우드 환경 유지에 한정됨. <strong>제안 가능한 실질적 요소 없음(낮음 유지)</strong></li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

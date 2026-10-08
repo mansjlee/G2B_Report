@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00282588 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국인터넷진흥원_사이버공격 통합탐지 체계 운영 및 연관분석 지원 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 미포함 순수 운영 용역</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>한국인터넷진흥원(KISA)이 운영 중인 <strong>사이버공격 통합탐지대응체계(C-SPIDER)</strong> 내 축적된 위협정보에 대한 연관분석 및 대응 용역 추진</li>
+                    <li>국내 ICT 인프라 전반의 사이버 공격을 식별·추적하기 위한 C-SPIDER 시스템의 ① 사이버위협 연관분석, ② 시스템 운영·관리, ③ AI 탐지 모델 관리·운영을 전담 수행</li>
+                    <li>침해지표(IoC) 기반 위협 연관분석, 탐지 시나리오 검증 및 고도화, 인텔리전스 보고서 작성, K8s 클러스터 운영, AI 모델(FastText·XGBoost) 재학습 및 성능 최적화가 핵심 과업</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 1,300,000,000원 (부가세 포함 / 13억 원)</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (12개월)</li>
+                    <li><strong>사업 범위</strong>: ① C-SPIDER 활용 위협정보 연관분석(IoC 기반 공격자 추적·식별·보고서 작성) ② C-SPIDER·홈페이지 침해사고 대응체계·주요 웹사이트 심층 보안 모니터링 시스템 운영·관리 ③ AI 탐지 모델(FastText·XGBoost) 학습·최적화·운영</li>
+                    <li><strong>계약 방법</strong>: 제한경쟁입찰 (협상에 의한 계약체결), 조달청 발주, 기술평가 90% + 가격평가 10%</li>
+                    <li><strong>입찰 참가 제한</strong>: 20억 미만 사업으로 중소 소프트웨어사업자만 참가 가능 (대기업·중견기업 제한), 공동수급 및 하도급 불허</li>
+                    <li><strong>주요 일정</strong>: 계약일로부터 14일 이내 사업수행계획서 제출, 선금 최초 30% 지급 후 이행 확인 시 추가 40% 지급 가능</li>
+                    <li><strong>투입 인력</strong>: 최소 8명 이상 (PM 1, PL 1, 사이버위협분석 4, 시스템운영 1, AI모델운영 1)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>담당 부서</strong>: 한국인터넷진흥원(KISA) AI탐지대응팀</li>
+                    <li><strong>담당자 1</strong>: 심유진 책임연구원 / ☎ 02-405-4735</li>
+                    <li><strong>담당자 2</strong>: 송승훈 주임연구원 / ☎ 02-405-4742</li>
+                    <li><strong>이메일</strong>: RFP 내 명시되지 않음</li>
+                    <li><strong>수행 장소</strong>: 한국인터넷진흥원 서울 청사(가락동 IT벤처타워)에서 대중교통 1.5시간 이내로 협의하여 결정</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[FUR-01] 연관분석</strong>: C-SPIDER에 축적된 IoC(악성코드, 악성 도메인, IP, URL 등)를 기반으로 공격자 추적·식별, 위협 확산 경로 분석, CTI(사이버위협 인텔리전스) 수집·융합, 탐지 시나리오 검증·고도화, 정기·비정기 인텔리전스 보고서 작성</li>
+                    <li><strong>[FUR-02] 시스템 운영·관리</strong>: 대상 시스템(사이버 스파이더·홈페이지 침해사고 대응체계·주요 웹사이트 심층 보안 모니터링)의 K8s 클러스터 운영, 자동화 배포·롤백·헬스체크, RDBMS 성능 최적화, 장애 8시간 이내 복구, YARA 탐지 규칙 분기별 최적화, DevOps/CI-CD 기반 운영, 클라우드 모니터링(Prometheus, ELK, Grafana, Jenkins 등) 활용</li>
+                    <li><strong>[FUR-03] AI 모델 관리</strong>: FastText 기반 공격 의심 도메인 추천 AI, XGBoost 기반 도메인 정적·동적 통합 분석 AI의 학습·하이퍼파라미터 튜닝·성능 평가(Precision/Recall/F1-score/ROC-AUC), K8s 기반 서빙 환경 운영, MLOps/AIops 활용, 신규 탐지 AI 모델 제안</li>
+                    <li><strong>구매 명시 S/W</strong>: <span style="color:gray">없음 — 본 사업은 인력 투입 기반 순수 운영·분석 용역으로, 통합발주 또는 조달쇼핑몰 직접구매 S/W 품목이 RFP에 전혀 명시되어 있지 않음. 분석 환경(분석 PC, 백신 S/W, 위협 인텔리전스 서비스, 악성코드 분석 도구 등)은 제안사 자체 부담.</span></li>
+                    <li><strong>보안 요구</strong>: 시큐어 코딩(CC인증 도구 사용), TLS/SSL 암호화, 보안 OS 사용 의무(제조사 서비스 지원 종료 버전·CVE 존재 버전 금지), 국가사이버보안기본지침 준수</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 납품·구독 항목 없음</strong>: 본 사업은 KISA 기존 시스템을 대상으로 한 순수 운영·분석 인력 용역으로, S/W 구매·납품·구독을 포함하는 통합발주 항목이 RFP 내 전혀 존재하지 않음. Red Hat 상용 제품의 도입·납품·증설 기회 없음.</li>
+                    <li><strong>Red Hat 상용 제품 미명시</strong>: RHEL, OpenShift, OCP, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 RFP 전문에 단 한 차례도 언급되지 않음.</li>
+                    <li><strong>기존 운영 시스템 유지 원칙</strong>: 대상 시스템(C-SPIDER 등)은 이미 K8s 기반으로 운영 중이며, 제안사는 기존 인프라를 그대로 운영·관리하는 것이 원칙. OS·플랫폼 교체 또는 신규 도입 여지 없음.</li>
+                    <li><strong>중소기업 전용 입찰</strong>: 20억 미만 사업으로 대기업·중견기업 참가 제한, 공동수급·하도급 불허 — Red Hat이 직접 또는 파트너를 통해 영향력을 행사하기 어려운 구조.</li>
+                    <li><strong>경쟁·대체 OS 명시 없음 / 그러나 RH 도입 근거도 없음</strong>: Ubuntu, Rocky Linux, VMware 등 경쟁 제품이 명시되지 않았으나, 반대로 Red Hat 상용 제품 도입 근거도 전혀 없음.</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>K8s 기반 운영 환경</strong>: 대상 시스템 전체가 쿠버네티스(K8s) 기반으로 운영 중. 이론적으로 OpenShift Container Platform(OCP) 제안 여지가 존재하나, 기존 환경 변경 없이 운영 대행이 원칙이므로 실질적 판매 기회로 연결되기 어려움.</li>
+                    <li><strong>Linux 서버 운영 명시</strong>: 시스템 운영 인력에게 "리눅스/윈도우 서버 운영 및 보안 패치 경험"이 요구되어 Linux 환경임을 확인. RHEL 도입 여지가 이론적으로 존재하나 기존 OS 그대로 유지 원칙.</li>
+                    <li><strong>DevOps/CI-CD·자동화 도구 요구</strong>: Prometheus, ELK, Grafana, Jenkins 등 DevOps 도구 활용 경험 요구 → Ansible Automation Platform 제안 맥락이 있으나 SW 구매 항목 없음.</li>
+                    <li><strong>AI 모델 서빙 환경</strong>: "AI 모델 서빙/배포(Kubernetes, Docker, MLOps) 운영 경험" 요구 → OpenShift AI / RHEL AI 제안 맥락 존재하나, 역시 기존 환경 운영 대행 수준.</li>
+                    <li><strong>RFP 내 Red Hat(또는 동의어) 제품명 명시</strong>: <span style="color:gray">없음 — RFP 전문에 Red Hat 상용 제품명이 단 한 건도 명시되지 않음.</span></li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
