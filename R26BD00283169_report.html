@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00283169 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>행정안전부_2027년 하모니시스템 등 통합유지관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>RHEL·JBoss EAP·JBCS SW 환경 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>행정안전부 내 운영 중인 <strong>하모니시스템</strong>(업무포털), <strong>정보화지원시스템</strong>(EA 기반 정보화업무 지원), <strong>통합개방관리시스템</strong>(공공데이터 개방·통계관리), <strong>데이터품질관리시스템</strong>(데이터 표준·품질진단), <strong>기관공유데이터 관리시스템</strong>(기관 간 데이터 공유·연계)의 통합 운영 및 유지관리 수행</li>
+                        <li>부내 6,000여 명 직원의 업무 생산성 및 효율성 향상을 위한 24시간 365일 중단 없는 안정적 서비스 제공</li>
+                        <li>사용자 요구사항 및 행정환경 변화를 반영한 시스템 기능 개선 및 성능 최적화</li>
+                        <li>공공데이터 품질 확보 및 기관 간 데이터 공유·활용 활성화</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 598백만원 (실제 용역제공일수 기준 일할 정산)</li>
+                        <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (1년)</li>
+                        <li><strong>사업 범위</strong>: ① 하모니시스템 운영·유지관리 및 헬프데스크 운영 ② 정보화지원시스템 운영·유지관리 및 전자정부 성과관리 대응 지원 ③ 통합개방관리시스템 및 데이터품질관리시스템 운영·유지관리 ④ 기관공유데이터 관리시스템 운영 및 공유데이터 등록·연계 지원</li>
+                        <li><strong>계약 방식</strong>: 공개경쟁입찰 (협상에 의한 계약체결), 중소기업자만 입찰 참가 가능 (20억 미만, 대기업·중견기업 참여 제한)</li>
+                        <li><strong>평가 방식</strong>: 기술평가(90%) + 가격평가(10%)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>발주기관</strong>: 행정안전부 데이터정보화담당관</li>
+                        <li><strong>과장</strong>: 한혜남 / TEL: 044-205-1631 / FAX: 044-204-8948</li>
+                        <li><strong>팀장</strong>: 윤종혁 / TEL: 044-205-1636</li>
+                        <li><strong>주무관(주담당)</strong>: 심세희 / TEL: 044-205-1637 / E-mail: ssh2181@korea.kr</li>
+                        <li><strong>주무관</strong>: 박소영 / TEL: 044-205-1639</li>
+                        <li><strong>주무관</strong>: 강선숙 / TEL: 044-205-1644</li>
+                        <li><strong>주무관</strong>: 정은솔 / TEL: 044-205-1642</li>
+                        <li><strong>주무관</strong>: 위운비 / TEL: 044-205-1652</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong>
+                            <ul>
+                                <li>24시간 365일 상시 안정적 시스템 운영 (MPR-01): 가동상태, Memory·CPU·DB Space 등 정기 점검(월 1회 이상)</li>
+                                <li>장애 예방·접수·처리·보고 체계적 관리 (MPR-02): 비상대응체계 수립, 48시간 이내 장애 조치</li>
+                                <li>시스템 기능 및 성능 개선 (MPR-03~06): 사용자 요구사항 반영, 보안 취약점 우선 조치, 웹 접근성 개선</li>
+                                <li>헬프데스크 운영 (MPR-07): 전화·전자우편·게시판 질의 접수 및 처리, FAQ 제공</li>
+                                <li>전자정부 성과관리 대응 지원 (MPR-09): IRM 등록정보 품질 점검, 성과평가 대응</li>
+                                <li>공공 모바일 앱(웹) 품질관리 컨설팅 (CNR-01): 웹 접근성·호환성·개방성·접속성 수준진단 및 개선</li>
+                                <li>데이터 표준·구조·품질 관리 (DAR-01~06): 공공데이터 품질관리 수준진단 지원</li>
+                                <li>보안 요구사항 (SER-01~05): 시큐어코딩, 취약점 점검(OWASP 10대, 국정원 8대), 개인정보처리 위탁관리</li>
+                            </ul>
+                        </li>
+                        <li><strong>[RFP 명시 구매 S/W 목록]</strong>
+                            <ul>
+                                <li>하모니시스템 상용 SW (본 사업 유지관리 대상):
+                                    <ul>
+                                        <li>문서보안SW - <strong>Fasoo Enterprise DRM</strong> * 2식</li>
+                                        <li>알리미SW - <strong>온-나라 메신저 연동 알림서비스</strong> * 1식</li>
+                                        <li>통합검색SW - <strong>PCN e-search</strong> (수량 미명시)</li>
+                                    </ul>
+                                </li>
+                                <li>기관공유데이터 관리시스템 상용 SW (본 사업 유지관리 대상):
+                                    <ul>
+                                        <li>전자서명 - <strong>MagicLine</strong> * 2식</li>
+                                        <li>DB암호화 - <strong>Petra Cipher</strong> * 2식</li>
+                                    </ul>
+                                </li>
+                                <li>※ 상용SW 라이선스 갱신·적용 업무 포함 (MPR-13): 전자서명(2식), DB암호화(2식) 등 유효기간 관리 및 갱신</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>주요 DB는 비 Red Hat 플랫폼</strong>: 하모니시스템 DB가 IBM AIX + Oracle, 통합개방관리시스템 DB가 Cubrid·Tibero로 구성되어 있어 해당 영역은 Red Hat 제안 불가</li>
+                        <li><strong>중소기업 전용 입찰</strong>: 사업 규모 20억 미만으로 소프트웨어 진흥법 제48조에 따라 대기업·중견기업 입찰 참여 제한 → Red Hat 본사 또는 대형 파트너사의 직접 참여 불가, 중소 파트너 채널을 통한 간접 제안 필요</li>
+                        <li><strong>SW 신규 구매보다는 유지관리 용역 중심</strong>: 사업의 본질이 기존 시스템 운영·유지관리로, 별도 대규모 SW 신규 납품 항목은 제한적</li>
+                        <li><strong>하모니시스템·정보화지원시스템의 JBoss 표기 불명확</strong>: "JBoss"로만 표기되어 상용 JBoss EAP인지 커뮤니티 WildFly인지 명확히 구분되지 않음</li>
+                        <li><strong>통합개방관리시스템 상용 SW</strong>: WiseOpen, WiseMeta, WiseDQ 등 타사 제품이 명시되어 있어 해당 영역 Red Hat 제안 여지 없음</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[RFP 명시 Red Hat 상용 제품 — 높음 판정 근거]</strong>
+                            <ul>
+                                <li>기관공유데이터 관리시스템 SW 환경에 Red Hat 상용 제품이 명시적으로 기재됨:
+                                    <ul>
+                                        <li><strong>RHEL (Red Hat Enterprise Linux)</strong> — WEB/WAS #1, WEB/WAS #2, DB #1·#2, 연계 #1·#2 서버 전반 (총 6개 노드 이상)</li>
+                                        <li><strong>JBCS (JBoss Core Services)</strong> — WEB/WAS #1, WEB/WAS #2</li>
+                                        <li><strong>JBoss EAP (JBoss Enterprise Application Platform)</strong> — WEB/WAS #1, WEB/WAS #2, 연계 #1·#2</li>
+                                    </ul>
+                                </li>
+                                <li>유지관리 범위에 <strong>상용 SW 라이선스 현황 및 유효기간 관리, 라이선스 갱신·적용</strong>이 명시되어 있어 RHEL·JBCS·JBoss EAP 구독 갱신 영업 기회 존재 (MPR-13)</li>
+                            </ul>
+                        </li>
+                        <li><strong>[기타 제안 검토 요소]</strong>
+                            <ul>
+                                <li>하모니시스템, 정보화지원시스템, 통합개방관리시스템의 WAS로 "JBoss" 사용 중 — 상용 JBoss EAP 여부 확인 시 추가 갱신 기회 가능</li>
+                                <li>전 시스템이 Linux 기반 운영 환경을 사용하고 있어 RHEL 전환·확장 제안 여지 있음</li>
+                                <li>기관공유데이터 관리시스템의 AP 유지보수 수행기관이 제공하는 <strong>패치·기능개선·버전 업데이트 적용</strong> 업무 포함으로 Red Hat 기술지원 연계 가능</li>
+                                <li>Ansible Automation Platform(AAP) 제안 검토 가능: 다수 시스템(5개) 통합 운영·패치관리 자동화 수요 존재</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
