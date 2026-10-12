@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00283669 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>인천광역시교육청신트리도서관_2027~2029년 공공도서관 통합전산시스템 유지관리 - 분석 리포트</h2>
+
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>VMware 가상화 명시, RH 상용제품 전무</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>인천광역시교육청 소속 8개 공공도서관(신트리·중앙·부평·주안·화도진·서구·계양·연수) 및 평생학습관의 통합전산시스템을 3년간 유지관리하는 사업</li>
+                        <li>주요 관리 대상: 통합도서관리시스템(K·LAS), 통합홈페이지, 통합전자도서관, RFID시스템 등 통합 인프라 전반</li>
+                        <li>2026년 12월 31일로 기존 유지관리 계약이 종료됨에 따라 시스템 안정화·성능 개선·보안 강화를 위한 후속 사업으로 추진</li>
+                        <li>장애 예방, 신속 장애 대응, 소프트웨어 패치·업그레이드, 보안취약점 조치, 기술지원 및 교육 등 종합적인 IT인프라 운영 지원이 핵심 목적</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 총 663,423,000원 (VAT 포함) — 1년차 220,459,000원 / 2년차 221,119,000원 / 3년차 221,845,000원 (장기계속계약)</li>
+                        <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2029년 12월 31일 (3년)</li>
+                        <li><strong>사업 범위</strong>: 하드웨어 112식(서버·백업/스토리지·네트워크·RFID 등), 소프트웨어 102식(도서관리·홈페이지·DBMS·가상화·보안 등), 기타 PC·주변기기 162식</li>
+                        <li><strong>계약 방법</strong>: 제한경쟁입찰 (협상에 의한 계약), 기술평가 90점 / 가격평가 10점</li>
+                        <li><strong>입찰 참가 자격</strong>: 중소기업만 참여 가능 (사업금액 20억 미만, 대기업·중견기업 참여 불가), 직접생산확인증명서(정보시스템유지관리서비스) 보유 업체</li>
+                        <li><strong>주요 일정</strong>: 조달청 입찰공고문 참조; 착수 후 15일 이내 착수계 및 사업수행계획서 제출, 착수 후 30일 이내 제조사 유지관리 계약 체결 증빙 제출</li>
+                        <li><strong>주관기관</strong>: 인천광역시교육청신트리도서관 (발주: 조달청)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>담당부서</strong>: 인천광역시교육청신트리도서관 정보자료과</li>
+                        <li><strong>담당자 성명</strong>: 조성배</li>
+                        <li><strong>전화번호</strong>: 032-363-5033</li>
+                        <li><strong>이메일</strong>: uncleman@ice.go.kr</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong>
+                            <ul>
+                                <li>H/W·S/W 24시간 365일 장애 대응 체계 구축 (장애 접수 후 6시간 이내 복구, 관리용 S/W는 24시간)</li>
+                                <li>월 1회 전체 H/W·주요 S/W 정기점검 (방문 점검 원칙), 기타 S/W 최소 분기 1회</li>
+                                <li>OS 보안 패치·펌웨어 업그레이드·성능 개선 무상 적용 (MAR-011)</li>
+                                <li>국가정보원 취약점 점검 스크립트 활용 월간 취약점 점검 및 조치</li>
+                                <li>반기 1회 EOS/EOL·CC인증 만료 제품 현황 보고 및 대체 방안 제시</li>
+                                <li>SLA(서비스수준협약) 체결 및 월간 SLA 성과보고서 제공</li>
+                                <li>PC 월 1회 보안점검(ESA 프로그램), 연 1회 S/W 사용실태 점검 지원</li>
+                                <li>연 1회 기술자료집(기동절차서·장애대응가이드·운영지침서) 제출</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매/통합발주 S/W 목록]</strong> — 본 사업은 신규 구매가 아닌 기존 운영 중인 S/W의 유지관리 계약이 주목적이며, 아래 S/W에 대해 제조사(또는 공인 업체)와 유지관리 계약 체결이 필수 의무임
+                            <ul>
+                                <li>도서관리프로그램: <strong>K·LAS 3.0</strong> 1식 (채움씨앤아이)</li>
+                                <li>바로대출서비스: <strong>희망도서서점 바로대출서비스</strong> 2식</li>
+                                <li>홈페이지/전자도서관: <strong>통합홈페이지/전자도서관, 8개 도서관 홈페이지</strong> 1식 (인포셋)</li>
+                                <li>홈페이지: <strong>평생학습관 도서관서비스</strong> 1식</li>
+                                <li>디지털자료실좌석관리: <strong>LibMate</strong> 1식 (호디)</li>
+                                <li>모바일서비스: <strong>리브로피아</strong> 1식</li>
+                                <li>가상화 S/W: <strong>VMware vSphere 6.0</strong> 10식, <strong>VMware vCenter Server 6 Standard for vSphere 6</strong> 1식, <strong>VMware vCenter Server 6 Foundation for vSphere up to 4 hosts</strong> 1식</li>
+                                <li>백업 S/W: <strong>Netvault Backup Enterprise Edition Per Managed 1TB License/Main</strong> 4식, <strong>QUEST NETVAULT BACKUP 4TB(증설)</strong> 1식</li>
+                                <li>DBMS: <strong>Oracle Standard Edition 11g</strong> 2식, <strong>Tibero 5 Tibero Active Cluster 6P</strong> 2식</li>
+                                <li>DB복제: <strong>Double-Take Availability for Linux</strong> 2식</li>
+                                <li>쉘 모니터: <strong>WebServerSafeguard ShellMonitor V2.5 (Management Server S/W)</strong> 1식, <strong>Linux Agent</strong> 2식</li>
+                                <li>DB접근제어: <strong>Chakra MAX 7~8core</strong> 1식, <strong>Chakra MAX 3~4core</strong> 1식</li>
+                                <li>WEB 미들웨어: <strong>Webtob 4.1 Standard(비IBM용)</strong> 24식 (티맥스소프트)</li>
+                                <li>WAS 미들웨어: <strong>Jeus7 Standard(비IBM용)</strong> 4식, <strong>Jeus7 Enterprise(비IBM용)</strong> 8식 (티맥스소프트)</li>
+                                <li>DB암호화: <strong>CubeOne</strong> 2식</li>
+                                <li>통합로그관리: <strong>Logsaver v3.0</strong> 1식</li>
+                                <li>패스워드관리: <strong>가드온 v1.0 (1000 Server License)</strong> 1식, <strong>가드온 v1.0 Agent License</strong> 14식</li>
+                                <li>서버보안 S/W: <strong>Redcastle(Windows)</strong> 1식, <strong>Redcastle(Linux)</strong> 9식 (SGI솔루션즈)</li>
+                                <li>시스템관리 S/W: <strong>Jennifer 5.0 (JENNIFER JAVA Edition, 4core×2)</strong> 4식</li>
+                            </ul>
+                        </li>
+                        <li><strong>[필수 유지관리 계약 체결 대상]</strong>: 스토리지(SAN스위치 포함), RFID, 보안장비, 백업(LTO/VTL 포함), 네트워크(L4), DBMS, WEB/WAS, K·LAS, 홈페이지 — 착수 후 30일 이내 증빙 제출 의무</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>신규 S/W 도입 없는 순수 유지관리 사업</strong>: 본 사업은 기존 구축 시스템의 유지관리·운영 지원이 목적으로, 신규 상용 S/W 구매·납품 항목이 없음</li>
+                        <li><strong>VMware 가상화 플랫폼 확정 운영 중</strong>: VMware vSphere 6.0(10식), VMware vCenter Server 6 Standard(1식), VMware vCenter Server 6 Foundation(1식)이 현재 가상화 인프라로 명시 운영 중 → Red Hat 가상화(RHEV) 또는 OpenShift 제안 불가</li>
+                        <li><strong>Oracle DBMS 운영 중</strong>: Oracle Standard Edition 11g 2식이 KㆍLAS용 DBMS로 확정 운영 중 (EOS 기술지원 계약 필수 명시)</li>
+                        <li><strong>티맥스소프트 WEB/WAS 스택 고정</strong>: Webtob 4.1(24식), Jeus7(12식)이 미들웨어로 확정 — JBoss EAP 제안 불가</li>
+                        <li><strong>RFP 전체에 Red Hat 상용 제품명 전혀 미명시</strong>: RHEL, OpenShift, Ansible, JBoss EAP 등 어떠한 Red Hat 상용 제품도 도입·납품 품목으로 언급되지 않음</li>
+                        <li><strong>기존 인프라 유지가 목적 — 플랫폼 전환 여지 없음</strong>: 제품 유지관리 계약 체결(COR-004)에서 기존 제품과 동일 제조사 계약이 의무화되어 있어 대체·전환 제안 구조적으로 불가</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>Linux 서버 환경 다수 확인</strong>: Redcastle(Linux) 9식, Double-Take Availability for Linux 2식, WebServerSafeguard Linux Agent 2식 등 Linux OS 기반 서버가 다수 운영 중이나, 구체적인 Linux 배포판(RHEL, CentOS 등)이 명시되지 않아 RHEL 여부 불확실</li>
+                        <li><strong>OS 패치·업그레이드 요구사항 존재</strong>: MAR-011에서 "OS에 대한 Patch Release, Hot Fix 수준의 Upgrade(보안 Patch 포함)"가 명시되어 있어, 운영 OS가 RHEL일 경우 구독 갱신 연계 가능성 존재 — 단, 현 RFP만으로는 확인 불가</li>
+                        <li><strong>종합 평가</strong>: RFP 문서상 Red Hat 상용 제품이 전혀 명시되지 않고, VMware·Oracle·티맥스 등 경쟁/대체 제품이 확정 운영 중이므로 실질적인 제안 기회는 없음. 향후 Linux OS 확인 후 RHEL 구독 전환 가능성 타진 정도가 유일한 접점</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
