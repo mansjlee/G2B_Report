@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00283834 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>해양경찰청_2027년도 정보시스템 통합유지관리 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 미포함 용역, Rocky Linux OS 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>해양경찰청이 운영 중인 정보시스템의 운영 및 유지관리를 외부 전문기술력 보유업체에 위탁하는 사업</li>
+                    <li>유지관리 대상 시스템의 안정적 운영 및 장애 발생에 대비한 사전예방·신속대응 체계 마련이 핵심 목표</li>
+                    <li>H/W(서버·네트워크·보안장비 등), 상용S/W, 응용S/W 등 해양경찰청 정보자원 전반에 대한 통합 유지관리 수행</li>
+                    <li>IRM 현행화, 공공데이터 개방 컨설팅, 정보화사업 타당성 검토 등 정보화 지원업무 포함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 3,429,800,000원 (부가세 포함) — 예산심의 결과에 따라 계약금액 변경 가능</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (1년, 일할계산 적용)</li>
+                    <li><strong>사업 범위</strong>: H/W 237종 5,026점 / 상용S/W 133종 10,312점 / 응용S/W 22종 25점 유지관리; 상주인력 15명 이상 투입(정보시스템 운영 11명·네트워크/보안 1명·데이터 정제 1명·PC OA 2명)</li>
+                    <li><strong>주요 일정</strong>: 계약 체결 후 10일 이내 착수계·현장대리인계 제출 / 계약 후 1개월 이내 SLA 체결 / 월간보고서 익월 10일까지 제출 / 물품 재물조사 11월 1일 실시, 결과 12월 24일 제출</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>수요기관</strong>: 해양경찰청</li>
+                    <li><strong>담당 부서</strong>: 장비기술국 정보통신과</li>
+                    <li><strong>전산사무관</strong>: 김영수 / TEL) 032-835-2182 / FAX) 032-835-2781</li>
+                    <li><strong>실무담당</strong>: 경장 이진영 / TEL) 032-835-2282</li>
+                    <li><strong>이메일</strong>: RFP 내 별도 기재 없음 (방문 열람 문의: 032-835-2282)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong>
+                        <ul>
+                            <li>H/W(서버·네트워크·보안장비 등) 장애 예방·복구 및 정기점검 (월 1회 이상)</li>
+                            <li>상용S/W 성능향상(Upgrade) 및 기능보완(Patch) 정보 제공·적용</li>
+                            <li>응용S/W DB 튜닝, 메타데이터 관리, 데이터 표준화·품질 개선 지원</li>
+                            <li>장애등급별 복구 최대허용시간: 1등급 120분 / 2등급 180분 / 3등급 300분 / 4등급 480분</li>
+                            <li>SLA(서비스수준협약) 수립·체결·관리 및 월간 평가보고서 제출</li>
+                            <li>24시간 365일 비상대응체계 운영, 정보보호시스템 운영·보안취약점 점검·조치</li>
+                            <li>IRM 현행화, 공공데이터 개방이행 컨설팅, 정보화사업 타당성 검토 수행</li>
+                            <li>백업·복구 및 재해복구(DR) 훈련 지원 (A1~A4 등급 시스템)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W — 통합발주]</strong>
+                        <ul>
+                            <li>본 사업은 기존 구축된 시스템에 대한 <strong>유지관리 용역</strong>으로, RFP 내 신규 통합발주 S/W 구매 목록이 별도로 명시되어 있지 않음</li>
+                            <li>유지관리 대상 기존 상용S/W 주요 품목(관리·유지 대상, 신규구매 아님):
+                                <ul>
+                                    <li>PC보안취약점 점검: Comvoy S+ Agent 700점, Comvoy PMS Agent 700점</li>
+                                    <li>자료저장방지 S/W: DA-Loc (2025년) 2,000점</li>
+                                    <li>네트워크 접근제어: Tgate V5.0 100Node 30식, 500Node 10식</li>
+                                    <li>매체제어시스템: 세이퍼존 DefCon Secure USB Agent 1,450점</li>
+                                    <li>개인정보검출 사용자용 S/W: PC Filter 사용자용 (2021년) 500점</li>
+                                    <li>화상회의 S/W: 새하컴즈 멀티뷰 5.3 1User 200점</li>
+                                    <li>통합메세지시스템: PowerService5 유저 라이선스 1,000점 증설 포함</li>
+                                    <li>통신소프트웨어: KAFKA 3점</li>
+                                    <li>빅데이터 수집/저장/관리 S/W: CDP 7.1.4 1점 (Cloudera)</li>
+                                    <li>DOCKER 0점 (수량 0, 기존 환경 유지 대상)</li>
+                                    <li>이외 DB암호화, 서버접근통제, 문서보안(DRM), 망연계솔루션, ITSM 등 다수 기존 상용SW 유지관리 대상</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 신규 납품·구독 항목 없음</strong>: 본 사업은 기존 구축된 정보시스템에 대한 순수 통합유지관리 용역으로, 신규 상용 S/W 도입·납품·구독 항목이 RFP에 명시되어 있지 않음</li>
+                    <li><strong>Rocky Linux OS 명시</strong>: 월간 운영보고서 표준안(붙임 30호) 내 SW 구성 현황 예시에 Rocky Linux(JEUS+Rocky Linux, WebtoB+Rocky Linux 구성)가 현재 운영 OS로 기재됨 — Rocky Linux는 Red Hat 커뮤니티/경쟁 OS로 RHEL 상용 제품이 아님</li>
+                    <li><strong>Cloudera(CDP 7.1.4) 사용 중</strong>: 빅데이터 플랫폼에 Cloudera Data Platform이 기존 도입되어 운영 중으로, Red Hat 빅데이터 스택 제안 여지 없음</li>
+                    <li><strong>Red Hat 상용 제품명 전혀 없음</strong>: RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 RFP 전문(유지관리 대상 목록 포함)에 단 한 건도 명시되지 않음</li>
+                    <li><strong>기존 보안SW 생태계 고착</strong>: 안랩(TrusGuard, TMS), 소만사, 세이퍼존, 아이넵 등 국내 보안 솔루션이 대거 유지관리 대상으로 등록되어 있어 기반 인프라 교체 여지 없음</li>
+                    <li><strong>대기업 참여 제한</strong>: 소프트웨어 진흥법에 따라 대기업 참여 제한 — Red Hat Korea 직접 입찰 자격 해당 여부 검토 필요</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>Red Hat 상용 제품 명시 없음</strong>: RFP 전문에 RHEL, OpenShift, OCP, Ansible, JBoss EAP 등 Red Hat 상용 제품이 구매·도입 품목으로 명시된 바 없으므로 판정 근거 없음</li>
+                    <li><strong>DOCKER·KAFKA 유지관리 대상 포함(이론적 관심 포인트)</strong>: 상용S/W 목록에 DOCKER(수량 0), KAFKA(수량 3)가 포함되어 있어 컨테이너·메시징 인프라가 존재함을 확인할 수 있으나, 해당 항목은 기존 시스템 유지 대상이며 수량 0인 항목은 현실적 제안 대상으로 보기 어려움</li>
+                    <li><strong>OS 업그레이드 요구사항 존재(미미한 여지)</strong>: MPR-009에서 "운영체제 업그레이드 작업(필요 시 백업)" 언급, PSR-001에서 "OS 업그레이드(마이너 업그레이드 기준)" 기술지원 조항이 있으나, 이는 기존 OS 패치 수준의 유지관리이며 RHEL 신규 도입을 의미하지 않음</li>
+                    <li><strong>빅데이터 플랫폼·IoT 영역 모니터링 가치</strong>: 빅데이터 플랫폼(CDP), IoT 스마트함정 플랫폼 등 기술 고도화 사업의 차기 프로젝트 발생 시 Red Hat OpenShift·RHEL·Ansible 제안 접점으로 관계 구축 활용 가능 (본 사업 직접 제안은 아님)</li>
+                    <li><strong>결론</strong>: 본 사업 내에서 Red Hat 상용 제품을 제안할 직접적 기회는 없으며, 수행사를 통한 간접 영향력 확보 또는 차기 사업 대비 관계 관리 차원의 접근만 가능함</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
