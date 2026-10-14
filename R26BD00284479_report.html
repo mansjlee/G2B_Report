@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00284479 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>관세청_2027년 빅데이터플랫폼 유지관리 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>Kubernetes·클라우드 플랫폼 운영, OpenShift 제안여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>관세청이 운영 중인 <strong>빅데이터플랫폼</strong>(빅데이터시스템 + 빅파인더시스템)의 안정적 유지관리를 위탁하는 사업</li>
+                        <li>대내·대민 포털, 32개 빅데이터 분석모델, 4개 빅파인더 분석모델, 셀프분석 환경 등 전체 플랫폼 운영 유지</li>
+                        <li>응용프로그램 기능 변경·개선, 전산설비(상용SW 37종) 유지관리, 시스템 운영 지원, 장애 예방 및 신속 대응 체계 구축이 핵심 목표</li>
+                        <li>민간위탁을 통해 IT자원 효율성·가용성 극대화, 24시간×365일 무중단 빅데이터 분석 서비스 환경 제공</li>
+                        <li>수출입 통관·조사·심사·FTA 등 관세행정 전반에 걸친 국정과제 지원을 위한 안정적 운영 기반 유지</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 1,844백만원 (부가세 포함) — 응용프로그램 978백만원 + 전산설비(상용SW) 866백만원</li>
+                        <li><strong>사업 기간</strong>: 2027년 01월 01일 ~ 2027년 12월 31일 (12개월)</li>
+                        <li><strong>사업 범위</strong>: ① 빅데이터플랫폼 응용프로그램 유지관리(빅데이터시스템 32개 모델 + 빅파인더시스템 4개 모델 + 포털), ② 전산설비 유지관리(국가정보자원관리원 설치 상용SW 37종 구독 갱신 포함), ③ 시스템 운영 지원(모니터링·점검·데이터 이관·연계), ④ 부가서비스(기술동향 제공, 교육 지원), ⑤ 정보보안 관리</li>
+                        <li><strong>주요 일정</strong>: 제안요청 설명회 2026년 11월 9일(월) 10:00 / 사업 착수 2027년 1월 1일</li>
+                        <li><strong>계약 방식</strong>: 협상에 의한 계약 체결 (소프트웨어진흥법 제49조 제1항) / 중소SW사업자만 입찰 가능 (20억 미만)</li>
+                        <li><strong>평가 비율</strong>: 기술평가 90% + 가격평가 10%</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>수요기관</strong>: 관세청 (인공지능혁신팀)</li>
+                        <li><strong>과장</strong>: 채봉규 / TEL: 042-481-3290 / FAX: 042-481-7717</li>
+                        <li><strong>사무관(기술제안 문의)</strong>: 홍성진 / TEL: 042-481-3280 (제안요청서 관련), 042-481-3291 (일반)</li>
+                        <li><strong>기술제안 추가 문의</strong>: 임익현 / TEL: 042-481-7946</li>
+                        <li><strong>입찰·계약 문의</strong>: 김기영 (정보기획담당관) / TEL: 042-481-3252</li>
+                        <li><strong>설명회 참석 신청 이메일</strong>: daysis2000@korea.kr (2026.11.2.(수) 17:00까지)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong>
+                            <ul>
+                                <li>Kubernetes 기반 컨테이너·클라우드 환경에서의 분석모델 배치 및 API 서비스 운영</li>
+                                <li>HDFS 기반 데이터 수집·적재·이관 처리 (네이버, 이베이 등 외부 연계 포함)</li>
+                                <li>Python·SAS 셀프분석 환경 및 32개+4개 AI·빅데이터 분석모델 유지관리</li>
+                                <li>ESB·망연계를 통한 외부수집서버↔내부시스템 간 데이터 전송 안정화</li>
+                                <li>SHA-256·RSA 2048bit 암호화 기술 적용, SSO 연동, 개인정보 보호</li>
+                                <li>24시간 무중단 운영(SLA 장애 3등급 가용률 99.98%, 4등급 가용률 99.98%)</li>
+                                <li>전자정부 표준프레임워크 및 관세청 프레임워크 기반 기능 개선</li>
+                                <li>소프트웨어 개발보안(시큐어 코딩), 웹 접근성·보안 취약점 준수</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매(구독 갱신) 명시 상용SW]</strong>
+                            <ul>
+                                <li>관세청_[KCS20A]하둡 에코시스템 — <strong>MapR Data Platform</strong> 1식 (구독 갱신)</li>
+                                <li>[21_빅데이터] — <strong>Elasticsearch Elastic Platinum</strong> 3node (구독 갱신)</li>
+                                <li>[19_빅파인더] — <strong>Elasticsearch 7.2.0</strong> (구독 갱신)</li>
+                                <li>※ 상기 3종은 구독형 라이선스로 사업 기간 내 구매·유지가 명시됨</li>
+                                <li>※ 별첨10 기준 총 37종 상용SW 유지관리 대상 (시각화 SW 4조, 개인정보 비식별화 8식, SSO 10식, ESB 2식, 데이터 품질관리 6조, 배치 잡 스케줄러 2식, 데이터 수집 SW 128Core, 클라우드 플랫폼 9식+1식, 데이터 마이닝 분석서버 192Core, 메타데이터 관리 32Core, DRM문서보안솔루션 3종, 와탭R2 105조, ImageOCR 2식, Cerebro 1식, RPA 관리·개발·수행 도구 다수, 데이터분석SW 1식, 그래프 DB 1식 등)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[Red Hat 상용 제품 미명시]</strong>: 별첨10 상용SW 37종 목록 어디에도 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품이 포함되어 있지 않음. 구독 갱신 대상도 MapR·Elasticsearch에 한정</li>
+                        <li><strong>[경쟁 OS 사용 징후]</strong>: 월간 운영보고서 표준안(별첨11-6) 작성 예시의 SW 구성 현황표에 <strong>Rocky Linux</strong>가 WAS·WEB·DB 서버의 OS로 표기되어 있어 현행 시스템이 Rocky Linux 기반일 가능성 있음</li>
+                        <li><strong>[기존 플랫폼 스택 고착화]</strong>: Hadoop(MapR), Elasticsearch, RPA, DRM 등 타 벤더 솔루션 중심으로 이미 구성·운영 중이며, 이번 사업은 신규 구축이 아닌 유지관리 사업으로 플랫폼 교체 수요 낮음</li>
+                        <li><strong>[입찰 참여 제한]</strong>: 사업금액 20억 미만으로 대기업·중견기업 참여 불가 (중소SW사업자 전용) — Red Hat Korea가 직접 입찰하는 구조 아님 (단, 제안기회 자체가 없는 것은 아님)</li>
+                        <li><strong>[컨테이너 플랫폼 기도입]</strong>: 클라우드 플랫폼 SW가 2020년(1식)·2022년(9식) 이미 도입되어 있어 OpenShift로의 신규 교체 여지 제한적</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[Kubernetes/컨테이너 환경]</strong>: RFP 본문에 "<strong>Kubernates 기반 컨테이너 등 클라우드 환경에 분석모델 배치, API 서비스, Python 셀프분석 환경 제공</strong>"이 명시되어 있어 OpenShift Container Platform 제안 기반이 존재함</li>
+                        <li><strong>[클라우드 플랫폼 구독 유지]</strong>: 별첨10에 클라우드 플랫폼 SW가 2020년(1식) 및 2022년(9식) 도입되어 있으며, 유지관리 기간 내 구독 갱신 필요 — 차기 사업 또는 이번 갱신 시 OpenShift 전환·업셀 기회 존재</li>
+                        <li><strong>[AI·빅데이터 워크로드]</strong>: 32개 분석모델(AI OCR, 머신러닝, 데이터마이닝 등)이 운영 중으로 OpenShift AI / RHEL AI 솔루션의 기술적 적합성 확보 가능</li>
+                        <li><strong>[자동화 운영 요구]</strong>: 24시간 무중단 운영, 정기·비정기 예방점검, 장애자동감지 체계 요구 → Ansible Automation Platform(AAP)을 통한 운영 자동화 제안 여지</li>
+                        <li><strong>[Linux OS 기반 서버 환경]</strong>: 별첨10 SW 목록에 OS가 명시되지 않아 현행 OS 교체 또는 병행 도입 시 RHEL 제안 가능성 있음 (Rocky Linux → RHEL 전환 제안 가능)</li>
+                        <li><strong>[RFP 내 Red Hat 제품 직접 언급 없음]</strong>: 별첨10 및 본문 전체에 Red Hat 상용 제품명(RHEL, OCP, Ansible, JBoss 등)은 명시되어 있지 않음</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

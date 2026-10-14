@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00284594 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국민권익위원회 정부합동민원센터_통합콜센터 시스템 유지관리 및 운영위탁 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>RHEV-M·OpenShift 운영 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>국민권익위원회 정부합동민원센터가 중앙행정기관 17개 콜센터를 통합 운영하는 <strong>통합콜센터 시스템</strong>의 전문 유지관리 및 운영위탁 사업</li>
+                        <li>민간클라우드 중심으로 구성된 하드웨어·소프트웨어·통신망 등 시스템 구성요소 전체에 대한 <strong>24시간 365일 무중단 서비스</strong> 유지</li>
+                        <li>시스템 점검·패치·업그레이드·장애조치 등 원활한 시스템 관리 기반 마련 및 신규 BPR/ISP·시스템 구축 등 정보화 사업 기술지원 기반 확보</li>
+                        <li>대국민 및 이용·연계기관(주관기관 외 16개 기관) 대상 안정적 상담서비스 제공이 핵심 목표</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 3,486,400,000원 (VAT 포함)</li>
+                        <li><strong>사업 기간</strong>: 2027.01.01. ~ 2027.12.31. (12개월)</li>
+                        <li><strong>사업 범위</strong>: 통합콜센터 시스템 구성요소 일체 유지관리 및 운영위탁
+                            <ul>
+                                <li>하드웨어: 서버, 방화벽, 네트워크스위치, VPN, IPS 등</li>
+                                <li>상용 소프트웨어: CTI, IVR, 화상수어채팅, DBMS, WAS, WEB 등</li>
+                                <li>응용 소프트웨어: 홈페이지, 상담 어플리케이션, 기관연계 등</li>
+                                <li>기반시설: 항온항습기, UPS, 자동소화기, 분전반 등</li>
+                                <li>전산기기: 컴퓨터(431대), 노트북(3대), 모니터(551대), 프린터(4대), 복합기(9대)</li>
+                            </ul>
+                        </li>
+                        <li><strong>계약 방식</strong>: 제한경쟁입찰(협상에 의한 계약) / 대기업 참여 제한(20억 이상 40억 미만)</li>
+                        <li><strong>주요 일정</strong>:
+                            <ul>
+                                <li>입찰공고: 2026년 10월</li>
+                                <li>제안서 평가·기술협상: 2026년 11월~12월</li>
+                                <li>계약체결·사업착수: 2026년 12월 ~ 2027년 1월</li>
+                                <li>사업수행: 2027년 1월 ~ 12월</li>
+                                <li>사업완료: 2027년 12월</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>발주기관</strong>: 국민권익위원회 정부합동민원센터 (정부민원안내콜센터)</li>
+                        <li><strong>사업 책임자</strong>: 이제희 (고충상담기획과 110콜센터 파트장)
+                            <ul>
+                                <li>TEL: 02-2110-6500 / FAX: 044-200-7957</li>
+                            </ul>
+                        </li>
+                        <li><strong>사업 실무자(전산)</strong>: 이영규 전산사무관
+                            <ul>
+                                <li>TEL: 02-2110-6502</li>
+                                <li>E-mail: anarki007@korea.kr</li>
+                            </ul>
+                        </li>
+                        <li><strong>사업 실무자(주무)</strong>: 김용준 주무관
+                            <ul>
+                                <li>TEL: 02-2110-6511</li>
+                            </ul>
+                        </li>
+                        <li><strong>사업지원</strong>: 한국지능정보사회진흥원 (디지털서비스 계약지원), 서울지방조달청 (입찰·계약)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[핵심 기술 요구사항]</strong>
+                            <ul>
+                                <li>24시간 365일 무중단 시스템 운영 및 장애 신속대응 체계 구축</li>
+                                <li>SLA 관리: 핵심정보시스템(A2등급) 기준 장애등급별 가용률 관리 (1등급 99.92%, 2등급 99.90%, 3등급 99.88%)</li>
+                                <li><strong>K8S(Kubernetes) 운영 및 관리 지원</strong> (MPR-019): 전문 인력 상시 지원 가능 체계</li>
+                                <li><strong>OpenShift Cluster</strong> 운영 관리: Master/Infra/Router/Worker 노드 상태 점검, openshift-monitoring(Prometheus, Grafana, Alertmanager), openshift-sdn 등 관리</li>
+                                <li><strong>RHEV-M(Red Hat Enterprise Virtualization Manager)</strong> 기반 가상화 환경 운영 관리</li>
+                                <li>AI 시스템 유지관리 및 운영(STT, TA, AI 운영SW, LLM 서버 등)</li>
+                                <li>오픈소스 S/W 유지관리 및 운영 계획 수립·이행 (MPR-021)</li>
+                                <li>상주 투입인력 16명 (IT시스템관리 10명, IT시스템기술지원 2명, 응용SW개발 4명)</li>
+                            </ul>
+                        </li>
+                        <li><strong>[RFP 명시 상용 S/W 현황 - 붙임1 유지관리 대상]</strong><br>
+                        ※ 보안상 품명 미공개 원칙이나 카테고리별 수량 확인 가능
+                            <ul>
+                                <li>SBC 운영SW 2식, 라이선스SW 1,000식 / PBX 운영SW 2식, 라이선스 다수</li>
+                                <li>CTI 운영SW 2식, 라이선스SW 200·530·40·116·400·300식</li>
+                                <li>IVR 운영SW 2식, 라이선스SW 620식 / WEB SW 2식, WAS SW 2식, DBMS SW 2식</li>
+                                <li>디지털ARS 운영SW 2식, TTS 운영SW 2식 (라이선스 40·24·2·2식)</li>
+                                <li>녹취 운영SW 2식, 라이선스SW 200·530식</li>
+                                <li>STT 운영SW 1식, 라이선스SW 120·1,040식</li>
+                                <li>TA 운영SW 1식, AI 운영SW 1식</li>
+                                <li>상담AP 운영SW 1식, 라이선스SW 200·450식 / KMS 운영SW 1식</li>
+                                <li>VDI HOST서버용 운영체제 SW 6식, 운영SW 228식</li>
+                                <li>ESB 비긴급연계 운영SW 4식, 라이선스SW 4식</li>
+                                <li>IPCC 운영SW 1식, 라이선스SW 650식</li>
+                                <li>SSO 운영SW 2식, 라이선스SW 10·31식</li>
+                                <li>통합DB DBMS SW 2식, DB암호화 SW 2식</li>
+                                <li>SSL VPN 관련 SW 140식, 로그수집/분석 SW 2식, 보안/관제운영 SW 1식</li>
+                                <li>LLM 서버 HW 1식, 운영SW 1식</li>
+                                <li>※ 품명(제조사·버전)은 보안상 보안서약 후 열람 가능</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[용역 중심 사업]</strong>: 본 사업은 신규 S/W 도입·납품이 아닌 기존 시스템의 유지관리·운영위탁 용역이 핵심으로, Red Hat이 직접 낙찰받기보다 SI·운영사업자(하도급·협력사)를 통한 간접 수주 구조</li>
+                        <li><strong>[VMware 경쟁 제품 운영 중]</strong>: [붙임6] 예방점검 항목 클라우드 영역에 VMware ESXi / vCenter(vSphere) 가 기존 인프라로 명시되어 RHV와 병존 중 — 완전 교체 기회는 제한적</li>
+                        <li><strong>[품명 비공개]</strong>: [붙임1] H/W 및 상용S/W 목록에서 품명이 보안상 제외되어 있어 Red Hat 외 경쟁 OS(Rocky Linux, Ubuntu 등) 실제 사용 여부를 RFP 문면상 확인 불가</li>
+                        <li><strong>[대기업 참여 제한]</strong>: 20억 이상 40억 미만 사업으로 대기업 소프트웨어사업자 참여 불가 → Red Hat코리아 규모에 따라 직접 입찰 제한 가능성</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[RFP 명시 Red Hat 상용 제품 — 핵심 근거]</strong>
+                            <ul>
+                                <li><strong>RHEV-M (Red Hat Enterprise Virtualization Manager)</strong>: [붙임6] 예방점검 항목 클라우드 영역 "RHV (3개)" 항목에 "RHEV-M 가상화SW 상태 점검", "RHEV-M 가상화SW 로그 점검", "관리포탈 이벤트 메시지 점검" 등 명시 → 기존 RHV 인프라 유지관리 대상으로 확정</li>
+                                <li><strong>OpenShift Cluster</strong>: [붙임6] 예방점검 항목 클라우드 영역 "OepnShift Cluster (10개)"에 Master·Infra·Router·Worker 노드 상태, CPU·Memory·Container Storage 체크, 시스템 로그, kube-system Pod, <strong>openshift-console, openshift-metrics-server, openshift-monitoring (Prometheus·Grafana·Alertmanager), openshift-node, openshift-sdn, openshift-web-console</strong> Pod 상태 및 로그 명시 → 운영 중인 Red Hat OpenShift 클러스터 유지관리 대상으로 확정</li>
+                            </ul>
+                        </li>
+                        <li><strong>[Kubernetes/컨테이너 운영 요구]</strong>: MPR-019 "K8S 운영 및 관리 지원" 요구사항에서 K8S 전문 인력 상시 지원 체계 요구 → OpenShift 기반 K8S 전문 지원 제안 가능</li>
+                        <li><strong>[Linux 기반 서버 환경]</strong>: 기술적용계획표(붙임4)에 "Linux" 서버 OS 적용 명시 / VDI HOST 서버 228대 분량의 운영체제·운영SW가 포함되어 RHEL 제안 여지 존재</li>
+                        <li><strong>[WEB/WAS 미들웨어 유지관리]</strong>: 상용SW 유지관리 대상에 WAS SW 다수 포함 → JBoss EAP 등 Red Hat 미들웨어 포트폴리오 제안 가능</li>
+                        <li><strong>[AI·데이터 플랫폼 확장]</strong>: LLM 서버·STT·TA·AI 운영SW 등 AI 시스템 유지관리 요구 증가 → OpenShift AI / RHEL AI 확장 제안 가능성</li>
+                        <li><strong>[운영 협력사 파트너 영업 기회]</strong>: 운영사업자(낙찰사)가 RHEV-M·OpenShift 지원을 위해 Red Hat 공인 파트너사를 하도급·협력사로 포함하도록 유도 가능 (COR-011: H/W·S/W 제조사 정식 파트너사 자격 요건 명시)</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
