@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00285195 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국연구재단_2026년 한국학술지인용색인(KCI) DB 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 납품 없는 DB구축 용역사업</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>한국연구재단이 운영하는 <strong>한국학술지인용색인(KCI)</strong> 시스템의 DB 구축, 기능 개선, 운영 지원을 위한 용역 사업</li>
+                    <li>'한국형 SCI 개발'을 통해 국내 연구성과에 대한 질적 평가지표(IF, 중심성지수, 즉시성지수, H-Index 등)를 제공하고, 과학적 인용정보 분석을 통해 국가 R&D 현황 파악 및 정책 수립 기초자료 제공</li>
+                    <li>2026년 발행 논문 약 12만 건 전수 보정 및 참고문헌·사사표기 DB 구축</li>
+                    <li>KCI 검색 기능 개선(완전일치 검색 지원) 및 관리자 기능 개선을 통한 운영 안정성 강화</li>
+                    <li>KCI 데이터의 원활한 외부 연계(KRI, KISTI, WoS, Scopus 등)와 학술정보 활용 기반 강화</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 840,000,000원 (부가세 포함)</li>
+                    <li><strong>사업 기간</strong>: 2026. 12. 19. ~ 2027. 12. 18. (총 365일) ※ DB 구축 및 기능개선은 계약체결일로부터 240일간 수행</li>
+                    <li><strong>사업 범위</strong>:
+                        <ul>
+                            <li>[DB 구축] 2026년 발행 논문 약 12만 건 전수 보정 / 참고문헌 DB 구축(약 400만 건) / 사사표기 DB 구축 / 과거 미구축분 소급 구축</li>
+                            <li>[기능 개선] KCI 검색 기능 개선(원문 문자열 기반 완전일치 검색) / KCI 관리자 기능 개선(기관·학술지·DOI 관리)</li>
+                            <li>[운영 지원] KCI 시스템 운영 지원 / 국내외 학술DB 및 도서관 연계 지원 / DOI 기탁 업무 지원 / KCI·KJC·DSpace 등 관련 서비스 운영 지원</li>
+                        </ul>
+                    </li>
+                    <li><strong>주요 일정</strong>: M+1(계약 및 사업준비) → M+2~M+9(논문 보정, 참고문헌·사사표기 구축) → M+2~M+10(기능개선: 분석·설계·구현·테스트) → M+10~M+11(시스템 안정화, 최종완료보고) / 현행시스템 운영지원 전 기간</li>
+                    <li><strong>주관기관</strong>: 한국연구재단 (연구성과전략실 / 연구데이터분석팀)</li>
+                    <li><strong>입찰 방식</strong>: 협상에 의한 계약 / 중소기업 제한 경쟁(20억 미만, 대기업 참여 불가) / 기술평가 90% + 가격평가 10%</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>사업 담당</strong>: 한국연구재단 연구성과전략실 연구데이터분석팀 / 이길용 / ☎ 042-869-6676</li>
+                    <li><strong>계약 담당</strong>: 한국연구재단 경영지원본부 재정기금실 구매자산팀 / 장범진 / ☎ 042-869-6232</li>
+                    <li><strong>이메일</strong>: 별도 명시 없음 (나라장터 G2B 통해 문의)</li>
+                    <li><strong>주관기관 주소</strong>: 대전 본원 (한국연구재단)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>2026년 발행 학술지 논문 약 12만 건 전수 보정(논문 제목·권호·저자명·초록·DOI 등 정확성 검증) 및 3단계 품질검증 체계</li>
+                            <li>참고문헌 DB 구축: 논문당 평균 40건, 약 400만 건 분리 입력(논문명·학술지명·저자명·권호·DOI 등) 및 KRI·KRM·국회도서관·국립중앙도서관 인용관계 연결</li>
+                            <li>사사표기 DB 구축: 12만 건 대상, '20~'25년 재단 지원 논문 포함</li>
+                            <li>KCI 인용지수 산출(IF, 중심성지수, Immediacy Index 등) 및 2026년 인용분석 보고서 작성</li>
+                            <li>검색 기능 개선: 원문 문자열 기반 완전일치 검색, 검색 인덱스 재구성, 형태소 분석 기반 검색과 구분 처리</li>
+                            <li>KCI 관리자 기능 개선: 기관 등록·변경·탈퇴, 학술지 발행처 이관, DOI 기탁 관리 기능 개선</li>
+                            <li>KCI 시스템 운영 지원: IP 체계 변경 대응, KCI Open API·OAI-PMH 확장, 국내외 학술DB 연계 지원</li>
+                            <li>Java 기반 전자정부 표준프레임워크 적용 원칙, JATS 표준 XML 품질 검증, PDF 기반 원문 XML 자동 변환</li>
+                            <li>보안: SSL(HTTPS) 필수, 소프트웨어 개발보안 가이드 준수, 모의해킹 취약점 조치, 개인정보 암호화</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W]</strong>: <font color=blue>RFP에 통합발주 또는 상용 S/W 구매 품목이 명시되지 않음. 본 사업은 순수 DB 구축 및 시스템 개발 용역으로, 별도의 S/W 라이선스 납품 항목이 없음.</font> (단, 보안 요구사항에서 바이러스 백신 S/W, 취약점 진단 도구 등 정품 S/W 사용 의무가 있으나 별도 구매 품목으로 발주되지 않음)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 납품 항목 없음</strong>: 본 RFP는 DB 구축 및 시스템 기능 개선 용역으로, 상용 S/W 구독·납품 항목이 전혀 명시되어 있지 않음. 예산 840백만 원 전액이 용역비로 구성</li>
+                    <li><strong>기존 인프라 종속</strong>: COR-001(재단시스템 호환 요건)에 따라 기존 KCI 운영 환경 및 데이터 구조와의 호환성을 확보해야 하므로, 신규 OS·미들웨어 도입이 제한적</li>
+                    <li><strong>Red Hat 상용 제품 미명시</strong>: RFP 전문(제안요청서, 기술적용계획표, 요구사항 목록 등) 어디에도 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 품목으로 명시되지 않음</li>
+                    <li><strong>중소기업 제한 경쟁</strong>: 사업 금액 20억 미만으로 중소기업 제한 경쟁 입찰이며, Red Hat은 직접 입찰 대상이 아닌 구조</li>
+                    <li><strong>경쟁 OS 포함</strong>: 기술적용계획표에 Linux 외에 Windows Server도 적용 가능 항목으로 체크되어 있어 특정 OS 지정 없음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>Linux 미지정</strong>: 기술적용계획표 플랫폼 분야에서 서버용 운영체제로 Linux(√ 적용)가 명시되어 있으나 배포판이 지정되지 않아 RHEL 제안 여지가 이론적으로 존재 → 단, 기존 운영 환경 호환 요건으로 실질적 신규 도입 가능성은 낮음</li>
+                    <li><strong>Java 기반 개발</strong>: 전자정부 표준프레임워크 기반 Java 개발이 명시되어 있어, WAS로 JBoss EAP 제안 여지가 있으나 WAS 구매 품목으로 발주되지 않음</li>
+                    <li><strong>Red Hat 명시 제품·수량</strong>: <font color=blue>없음 — RFP 전문에 Red Hat 또는 동의어(RHEL, OpenShift, Ansible, JBoss 등)가 품목으로 명시된 항목 전무</font></li>
+                    <li><strong>향후 인프라 제안 기회</strong>: KCI 시스템의 안정적 운영을 위한 차기 인프라 구축(RHEL 기반 서버 환경, Ansible 자동화) 또는 유지보수 사업에서 Red Hat 기술 스택 제안을 검토할 수 있으나, 본 사업 범위 내에서는 직접적인 제안 기회 없음</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

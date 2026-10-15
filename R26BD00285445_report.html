@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00285445 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국대학교육협의회_2027년 대학입학전형 종합지원시스템 통합유지보수 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>RHEL 품목 명시(6식 도입 확정)</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>한국대학교육협의회가 운영하는 <strong>대학입학전형 종합지원시스템</strong>(표준공통원서접수, 대입정보포털, 대학입학전형 지원, 대입특별전형 서류제출 등)의 2027년 통합유지보수 및 운영지원 수행</li>
+                    <li>2027학년도 정시·추가모집 및 2028학년도 수시·정시모집의 안정적 운영을 위한 응용프로그램 유지관리, 인프라(클라우드·IDC) 기술지원, 장애예방·대응 체계 운영</li>
+                    <li>수험생·학부모의 대입정보 격차 완화, 사교육비 부담 경감, 대학 행정 효율화 및 정보시스템 서비스 연속성 확보</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 3,485,000천원 (부가세 포함, 약 34.85억원)</li>
+                    <li><strong>사업 기간</strong>: 2027.01.01 ~ 2027.12.31 (12개월) / 긴급입찰로 추진</li>
+                    <li><strong>사업 범위</strong>: ① 응용프로그램 유지관리(SR처리, 기능개선, 오류수정) ② 인프라 유지관리(클라우드 임차, IDC 전산장비, 전산실 기반환경, 사용자 업무수행환경) ③ 표준공통원서 접수서비스 운영지원 ④ 대학입학전형 운영지원(수시/정시/추가모집 기간 비상대응) ⑤ 보안관리, 형상관리, 기술지원</li>
+                    <li><strong>주요 일정</strong>: 2026년 10월 발주(긴급입찰) → 2027.01.01 사업 개시 → 2027.09~12월 수시모집 운영지원 → 2028.01~02월 정시·추가모집 운영지원 → 2027.12.31 사업 종료</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 한국대학교육협의회 대학교육지원실 정보화지원팀</li>
+                    <li><strong>팀장</strong>: 최용규 / Tel: 02-6919-3871 / FAX: 02-6919-3880</li>
+                    <li><strong>담당자</strong>: 황진용 / Tel: 02-6919-3975</li>
+                    <li><strong>담당자(문의처)</strong>: 문상혁 / Tel: 02-6919-3874</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술·업무 핵심 요구사항]</strong>
+                        <ul>
+                            <li>대학입학전형 종합지원시스템 전 영역(표준공통원서, 대입정보포털, 대입전형 지원, 특별전형 서류제출) 응용프로그램 및 인프라 유지관리</li>
+                            <li>클라우드 임차 서비스 및 IDC 전산자원 안정적 운영·기술지원 (가산IDC·서초IDC 포함)</li>
+                            <li>수시/정시/추가모집 집중 운영기간 24시간 비상대응체계 운영(장애 인지 후 8시간 이내 서비스 정상화)</li>
+                            <li>SLA 체결 및 준수(정보시스템 A2등급, 가용률 목표 99.90~100%)</li>
+                            <li>정보시스템 정기점검(서비스 주요 솔루션 월 1회, 기타 분기 1회), 성능 튜닝(연 2회 이상)</li>
+                            <li>나이스(NEIS), 행정안전부 전자증명서, 원서접수 대행사(유웨이어플라이·진학어플라이) 등 유관기관 연계 안정적 운영</li>
+                            <li>어디가 AI(대화형 AI 챗봇) 유지보수 및 2022 개정교육과정·2028 수능 개편 반영</li>
+                        </ul>
+                    </li>
+                    <li><strong>[통합발주 상용 S/W 유지보수 대상 주요 목록]</strong>
+                        <ul>
+                            <li><strong>OS (IDC, 차세대)</strong>: RedHat Enterprise Linux 5식 (가산·서초 IDC 연계서버), RedHat Enterprise Linux 1식 (EAI개발) — 총 6식</li>
+                            <li><strong>WEB서버</strong>: WebtoB 4 core(개발), WebToB 7.0 24 Core, WebtoB 5 Enterprise 14식, WebtoB 6 Enterprise 4식</li>
+                            <li><strong>WAS</strong>: JEUS 8 core(개발), Jeus 7.0 16 Core, JEUS 8 Enterprise 12식, JEUS 21 Enterprise 4식</li>
+                            <li><strong>DBMS</strong>: Tibero6 8 core(개발), Tibero 40 Core, Tibero6 Enterprise 6식, Tibero 7 Enterprise 4식×2</li>
+                            <li><strong>EAI 연계솔루션</strong>: MESIM Indigo ESB v2.5 Enterprise 2식×2, Adaptor 4식+5식; MESIM APIG(API Gateway) v1.5 4식×2</li>
+                            <li><strong>UI솔루션</strong>: Nexacro Platform 3식(사이트), Nexacro N 16식, Nexacro N Standard 4식</li>
+                            <li><strong>EMS/APM</strong>: Zenius 7 1식, Zenius EMS v8.0 1식, JENNIFER 1식, JENNIFER X 5.0 4식</li>
+                            <li><strong>DB모니터링</strong>: MAXGauge for Tibero 12식, Maxgauge for Tibero(8Core) 8식, Maxgauge 5 4식</li>
+                            <li><strong>리포팅툴</strong>: UbiReport 16 Core, UbiReport e-Form Suite v22 4식, UbiReport Smart Edition v4.0 4식+1식</li>
+                            <li><strong>형상관리</strong>: Soft Manager Pro 1식×2</li>
+                            <li><strong>DB암호화</strong>: Ksign SecureDB V3.6 2식, KSignSecureDB v3.7 1식×2</li>
+                            <li><strong>PKI인증/암호화</strong>: KSignCASE for Web 1식+1식+21식+2식+1식</li>
+                            <li><strong>IDC 서버보안</strong>: REDOWL_Linux 4식+1식, REDOWL_Windows 1식</li>
+                            <li><strong>IDC 서버백신</strong>: 안랩_Linux 4식+1식, 안랩_Windows 1식</li>
+                            <li><strong>OS백업</strong>: Acronis Cyber Protect 15 6식, Commvault Backup &amp; Recovery 3식</li>
+                            <li><strong>검색엔진</strong>: Konan Search 5 1식</li>
+                            <li><strong>전자문서</strong>: TrustCertificate 2식, Score PDF 4식, Magic TSA 1식</li>
+                            <li><strong>로그분석</strong>: LogCops V5.0 1식(LogAgent 31식)</li>
+                            <li><strong>원격제어</strong>: RemoteCall 5 User, RemoteCall 7.0 8식, RemoteView 1식</li>
+                            <li><strong>메타데이터</strong>: Quest erwin Modeler 1식+3식, 비투엔_SMETA 1.0 1식, 비투엔_SDQ v3.0 1식, GenelLAB-ERA 9 1식, GenelLAB-ERV 9 1식</li>
+                            <li><strong>문서미리보기</strong>: 사이냅문서뷰어 2022 8식</li>
+                            <li><strong>OCR</strong>: ARGOS OCR 2식</li>
+                            <li><strong>대량접속제어</strong>: NetFUNNEL Standard NF3-SB 1식</li>
+                            <li><strong>키보드보안</strong>: Touchen Transkey 3식, TouchEn transKey V4.6 3식</li>
+                            <li><strong>메일/SMS</strong>: mnwise 1식</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 납품 신규 구매 없음</strong>: 본 사업은 기 도입된 상용 S/W 및 인프라에 대한 <strong>유지보수(유상유지보수) 사업</strong>으로, 신규 S/W 구매·납품이 아닌 기존 도입품 유지관리가 주 목적</li>
+                    <li><strong>Red Hat이 직접 입찰 어려운 구조</strong>: 사업금액 40억원 미만 중소SW 사업자 참여 제한 조건 — 대기업 및 상호출자제한기업 집단 소속 기업 입찰 불가. Red Hat Korea는 해당 규정에 따라 직접 입찰 참여 불가능. SI/통합사업자를 통한 간접 참여 구조</li>
+                    <li><strong>주력 미들웨어·DB 비Red Hat 제품</strong>: WEB서버(WebtoB), WAS(JEUS), DBMS(Tibero) 등 핵심 미들웨어·DB는 티맥스소프트 제품으로 확정되어 있어 JBoss EAP, AMQ 등 Red Hat 미들웨어 제안 여지 없음</li>
+                    <li><strong>컨테이너/오케스트레이션 플랫폼 미명시</strong>: RFP 전반에 Kubernetes, OpenShift, 컨테이너 플랫폼 도입 계획이 없어 OpenShift/OCP 신규 제안 불가</li>
+                    <li><strong>Ansible/자동화 플랫폼 미명시</strong>: 자동화 관련 요구사항이 별도 명시되지 않아 Ansible Automation Platform 신규 제안 어려움</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>RHEL 유지보수 대상 명시 확정 (핵심 기회)</strong>:
+                        <ul>
+                            <li>차세대 대학입학전형 종합지원시스템 도입 인프라 상용SW(IDC) 항목에 <strong>RedHat Enterprise Linux 5식</strong> (가산 및 서초 IDC 연계서버, EAI 3식·EMS 1식) 및 <strong>RedHat Enterprise Linux 1식</strong> (EAI개발) — <strong>총 6식이 2027.01~12 유상유지보수 대상으로 확정</strong></li>
+                            <li>해당 RHEL 6식은 EAI 연계서버(Lenovo SR650 Gen2 4식, SR630 v2 1식) 운영 OS로 구동 중이며, 점검 주기는 분기 1회</li>
+                        </ul>
+                    </li>
+                    <li><strong>RHEL 구독 갱신·버전 업그레이드 영업 기회</strong>: 유지보수 사업 수행업체가 "라이선스 갱신이 필요한 SW는 최신 버전으로 갱신(유효기간 1년 이상) 후 증서 제출" 의무를 지므로, Red Hat 공인 파트너와 협력하여 RHEL 구독 갱신 및 버전 업그레이드 제안 가능</li>
+                    <li><strong>Linux 기반 서버 환경 전반</strong>: IDC서버보안(REDOWL_Linux 5식), IDC서버백신(안랩_Linux 5식) 등 Linux 기반 인프라가 광범위하게 운영 중이며, 클라우드 환경도 Linux 기반으로 RHEL 확장 가능성 존재</li>
+                    <li><strong>RHEL AI / OpenShift AI 장기 제안 가능성</strong>: '어디가 AI' 대화형 챗봇 서비스 유지보수 및 개선 요구사항 존재 — 향후 AI 인프라 고도화 시 RHEL AI, OpenShift AI 등 제안 여지</li>
+                    <li><strong>기술지원 확약서 제출 의무</strong>: 수행업체는 계약 후 10일 이내 유지보수 대상 정보자원에 대한 기술지원 확약서 제출 의무 — Red Hat 공식 파트너로서 RHEL 기술지원 확약서 발급 참여 가능</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
