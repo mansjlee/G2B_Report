@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00286643 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>행정안전부_2027년 전자증명서 발급유통시스템 운영관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 납품 없는 운영관리 용역</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>행정안전부가 운영하는 전자증명서 발급유통시스템의 2027년도 운영관리 용역 사업</li>
+                    <li>2천만명 이상 가입자가 이용하는 전자증명서 서비스(발급·유통·지갑·수취)의 안정적 무중단 운영 및 장애 신속 대응</li>
+                    <li>기존 상용SW 유지보수, 시스템 성능 최적화(Web/WAS/DBMS), 보안 관리 수행</li>
+                    <li>연계기관(발급·수취·앱/웹) 기술지원 강화 및 헬프데스크 운영을 통한 이용 만족도 향상</li>
+                    <li>AI통합민원플랫폼 MCP 연계, 정부24→범정부 서비스 통합창구 전환 대응 기술지원</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 2,832백만원 (VAT 포함) / 계약방식: 제한경쟁입찰(협상에 의한 계약)</li>
+                    <li><strong>사업 기간</strong>: 2027. 1. 1. ~ 2027. 12. 31. (1년) / 계약 지연 시 실제 계약체결일로부터 일할계산 정산</li>
+                    <li><strong>사업 범위</strong>: ① 서비스 모니터링 및 장애 처리 ② 전자증명서 발급·유통 서비스 운영 및 연계기관 기술지원 ③ 헬프데스크 운영(상담사 3명 이상, 기술지원 2명 이상) ④ H/W·상용SW 유지보수 ⑤ 데이터 품질관리 ⑥ 보안점검 및 개인정보 보호 ⑦ SLA 관리(정보시스템 A4등급) / 투입인력 18명 이상 상주</li>
+                    <li><strong>주요 일정</strong>: 제안요청 설명회 2026. 10. 30.(금) 예정(온나라 영상회의) / 사업 착수 2027. 1. 1. / 정기보고(주/월) 및 수시보고 연중 / 사업 검수 및 완료 2027. 12.</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주기관</strong>: 행정안전부 행정정보공유과</li>
+                    <li><strong>사업 책임자(과장)</strong>: 이택길 / TEL: 044-205-2802 / FAX: 044-204-8937</li>
+                    <li><strong>사무관</strong>: 김영훈 / TEL: 044-205-2816</li>
+                    <li><strong>주무관(문의·자료열람)</strong>: 한정우 / TEL: 044-205-2817 / E-mail: jeongu12@korea.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술·비즈니스 요구사항]</strong>
+                        <ul>
+                            <li>24시간 365일 서비스 가용성 확보 및 장애 등급별 신속 복구 (1등급: 120분, 2등급: 180분, 3등급: 300분, 4등급: 480분 이내)</li>
+                            <li>전자문서지갑 앱/웹 서비스, 포털, API·SDK 운영·관리 (현행 연계 앱 60개, 웹 9개)</li>
+                            <li>전자증명서 487종 발급 연계 및 신청·재신청 서비스(97종) 운영관리</li>
+                            <li>헬프데스크 운영: 상담사 3명 이상 + 기술지원 2명 이상, 콜 응대율 90% 이상 유지</li>
+                            <li>IT지원 기술자 18명 이상 상주 근무, 전담 디자이너 1명 필수 배치</li>
+                            <li>SLA 관리: 장애등급별 가용률 목표·최소허용수준 준수, 미달 시 위약금 부과</li>
+                            <li>보안점검 연 2회 이상, 소스코드 취약점 진단, 개인정보보호 법적 조치 이행</li>
+                            <li>정부24→범정부 서비스 통합창구 연계모듈(ECID) 커스터마이징 개발 및 전자증명서 신청서비스 이관</li>
+                            <li>AI통합민원플랫폼 구축 사업과 MCP 등 전자증명서 API 활용·연계 기술지원</li>
+                            <li>데이터 품질관리(표준·구조·값 검증), 공공데이터 품질관리 수준 진단평가 지원</li>
+                        </ul>
+                    </li>
+                    <li><strong>[통합발주 신규 구매 명시 S/W]</strong>
+                        <ul>
+                            <li>본 사업은 신규 S/W 구매·도입이 아닌 <strong>기존 시스템의 운영관리·유지보수 용역</strong>으로, RFP 및 붙임 문서 어디에도 통합발주 신규 구매 S/W 품목이 명시되어 있지 않음</li>
+                            <li>유지보수 대상 기존 상용SW (총 977식, 368Core): WEB(124C), WAS(212C), DB(32C), OS(98식+2식), APM(56조+80조), CA/RA(2식+1식), DBMS(64식, Goldilocks V3.1), DB보안솔루션(7식+9식, KSignSecureDB), EDMS(140조+240조, 엠파워 보안파일서버), ESB솔루션(8식, MESIM mHUB), GTSAAgent(2식+3식, Magic TSA Agent), KMS(2식+1식), LDAP(5식, Chakan LDAP Suite), PDF뷰어(1식+6식+2식, ezPDF Web Viewer), PKI Toolkit(6식+4식+3식, Magic PKI Toolkit), SSL인증서(12식, Digicert OV), 가상화관리SW(22식+36식, SYMPHONY A.I.), 메모리DBMS(8식, Goldilocks V3.1), 문서변환솔루션(9식+18식, ezPDF WorkFlow), 블록체인플랫폼(1식, Nexledger v2.1), 웹구간암호화솔루션(2식+1식+2식, KSignCASE for Web), 출력물위변조방지(4식, TrustCertificate V2.5), 캡쳐방지솔루션(4식+2식+2식, e-Page SAFER Web DRM), 키보드보안(2식+8식+4식, nProtect Online Security), 백업SW(98식), APM(Jennifer5.0) 등</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 납품·구독 미포함 용역:</strong> 본 사업은 기존 전자증명서 발급유통시스템의 운영관리 용역으로, 신규 S/W 구매·납품·도입 항목이 RFP 어디에도 명시되어 있지 않음. S/W 관련 범위는 기존 도입 상용SW에 대한 유지보수(패치·점검)이며 신규 구독 계약 대상이 아님</li>
+                    <li><strong>기존 상용SW 목록에 Red Hat 제품 부재:</strong> 별첨2의 상용 소프트웨어 현황(38개 품목, 779식) 전체에서 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품이 단 한 건도 포함되어 있지 않음</li>
+                    <li><strong>경쟁·이종 환경:</strong> H/W 현황에 Oracle SPARC S7-2 서버 2식이 명시되어 있으며, DBMS로 Goldilocks(국산)가 도입되어 있어 Red Hat 스택과 이질적인 환경임</li>
+                    <li><strong>국가정보자원관리원(국정자원관리원) 관리 체계:</strong> H/W 및 시스템SW(OS, WEB, WAS, DB 등)는 국가정보자원관리원에서 관리하므로, 사업자가 직접 OS 교체·신규 도입을 제안하기 어려운 구조임</li>
+                    <li><strong>운영관리 용역 특성상 기술 스택 변경 불가:</strong> 기존에 도입된 시스템의 현행 유지가 원칙이며, OS·미들웨어·플랫폼 등의 대체·교체를 위한 예산·근거가 없음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>OS 종류 미명시(간접 여지):</strong> S/W 현황에 OS 98식(국정자원관리원 관리) 및 OS 2식(행정안전부 관리)이 포함되어 있으나, 구체적인 OS 제품명·버전이 RFP 본문 및 별첨 어디에도 공개되지 않음. 자료열람을 통해서만 확인 가능하므로, OS 종류가 확정되지 않은 상태</li>
+                    <li><strong>기술적용계획표 Linux 적용 표시:</strong> 붙임4 기술적용계획표의 "운영체제 및 기반환경" 항목에서 Linux가 "적용(○)"으로 표시되어 있어 Linux 계열 OS가 운영 중임을 시사하나, 구체적 배포판(RHEL, CentOS, Rocky 등)은 불명확</li>
+                    <li><strong>컨테이너·클라우드 기술 언급:</strong> 기술적용계획표에서 IaaS·PaaS·SaaS 항목이 적용(○)으로 표시되어 있으며, AI통합민원플랫폼 MCP 연계 등 클라우드 네이티브 기술 적용 가능성이 존재하나, 이는 기존 연계 사업의 기술지원 수준에 그침</li>
+                    <li><strong>결론:</strong> 위 요소들은 잠재적인 기술 환경 파악 기회(자료열람을 통한 OS 종류 확인)에는 활용될 수 있으나, 본 사업 자체에서 Red Hat 제품의 신규 도입·제안으로 이어질 가능성은 매우 낮음. RFP 내 Red Hat 상용 제품명(동의어 포함)이 전혀 명시되어 있지 않으며, 낮음 판정이 유지됨</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

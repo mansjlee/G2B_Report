@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00286641 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국인터넷진흥원_라우팅 보안 체계 기반 전산장비 증설 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>Rocky Linux OS 명시, RH 상용제품 전무</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>고의 또는 실수로 인한 잘못된 인터넷 경로(BGP) 전파에 따른 통신 장애·정보 탈취 등 피해를 방지하기 위해, 라우팅 보안(RPKI) 체계의 가용성 확보 및 성능 강화를 목적으로 전산장비를 증설하는 사업</li>
+                    <li>기밀성·가용성·무결성 확보를 위한 라우팅 보안 체계 기반 전산장비 증설·설치 및 기반 네트워크 최적화 설계·구성</li>
+                    <li>업무연속성 확보를 위한 스토리지 이중화 구축 및 재난재해·사고 대비 체계 이중화 기반 마련</li>
+                    <li>수요기관: 한국인터넷진흥원 (KISA)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 987,536,000원 (부가세 포함) / 대금지급: 선금 40%, 잔금 60%</li>
+                    <li><strong>사업 기간</strong>: 계약체결일 ~ 2026년 12월 31일</li>
+                    <li><strong>사업 범위</strong>: ① L2 스위치 도입·설치 ② 방화벽 도입·설치 ③ 웹 방화벽 도입·설치 ④ IaaS 서버(가상화 서버) 도입·설치 ⑤ 스토리지 서버 도입·설치 ⑥ 기반 네트워크 최적화 설계 및 구성 ⑦ 스토리지 이중화 구축 ⑧ 실무자 교육 및 기반 안정화</li>
+                    <li><strong>주요 일정</strong>: M월 - 착수보고, 전산실 실사, 장비 도입 설계 / M+1월 - 장비 납품 및 설치, 실무자 교육, 기반 안정화, 종료보고 (세부일정은 발주기관과 협의 조정 가능)</li>
+                    <li><strong>입찰 방법</strong>: 제한경쟁입찰 (협상에 의한 계약) / 중소기업·소상공인 한정 (대기업·중견기업 참여 불가)</li>
+                    <li><strong>직접구매 대상 상용 소프트웨어</strong>: 해당사항 없음 (RFP 명시)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>수요기관</strong>: 한국인터넷진흥원 (KISA)</li>
+                    <li><strong>담당 부서</strong>: 인터넷주소보호팀</li>
+                    <li><strong>담당자 성명</strong>: 한종화 주임연구원</li>
+                    <li><strong>연락처</strong>: 061-820-1753</li>
+                    <li><strong>이메일</strong>: 명시되지 않음</li>
+                    <li><strong>소재지</strong>: 전남광주통합특별시 나주시 진흥길 9</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>기술 요구사항 핵심:</strong>
+                        <ul>
+                            <li>도입 장비 전체 이중화 구성 및 서비스 무중단 운영 체계 필수</li>
+                            <li>CC인증 또는 보안기능확인서 취득 제품만 납품 가능 (네트워크·보안 장비)</li>
+                            <li>국가정보원 검증필 암호모듈 탑재 제품 요구</li>
+                            <li>SW(가상화 솔루션)와 연계·통합 구성 필수 지원</li>
+                            <li>HCI(Hyper-Converged Infrastructure) 형태 제안 허용</li>
+                            <li>24시간 365일 무중단 운영, 장애 발생 시 4시간 내 현장 도착·8시간 내 복구 의무</li>
+                        </ul>
+                    </li>
+                    <li><strong>구매 명시 H/W 품목 및 수량 (통합발주):</strong>
+                        <ul>
+                            <li>L2 스위치 (ECR-002): 4식 — 56Gbps 이상, CC인증 제품, 10/100/1000Base-T 24포트</li>
+                            <li>방화벽 (ECR-003): 3식 — FW Throughput 28Gbps 이상, CC인증, 국정원 검증필 암호모듈 탑재, Appliance 형태</li>
+                            <li>웹 방화벽 (ECR-004): 4식 — HTTP Throughput 10Gbps 이상, CC인증 EAL4, GS인증 1등급</li>
+                            <li>IaaS 서버 (ECR-005): 3식 — x86, 3.6GHz 16Core×2, Memory 512GB, SSD 960GB×2, Rocky Linux 9 설치 가능 명시</li>
+                            <li>스토리지 서버 (ECR-006): 1식 — Active-Active Controller, Usable 50TB 이상(RAID 5 기준), NVMe SSD 지원</li>
+                        </ul>
+                    </li>
+                    <li><strong>직접구매 상용 S/W</strong>: 해당사항 없음 (RFP 소프트웨어 진흥법 제54조 항목 명시)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>Rocky Linux OS 명시</strong>: ECR-005 IaaS 서버 요구사항에 "Rocky Linux 9 설치가능"이 서버 OS로 명시되어 있어, RHEL 도입 여지가 사실상 없음. Rocky Linux는 Red Hat의 커뮤니티 업스트림 기반 배포판이나 Red Hat 상용 제품이 아니며, 판정 규칙상 경쟁·대체 OS로 분류됨</li>
+                    <li><strong>Red Hat 상용 제품 전무</strong>: RFP 전체에 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 단 한 건도 언급되지 않음</li>
+                    <li><strong>직접구매 대상 상용 S/W 없음</strong>: RFP 소프트웨어 진흥법 제54조 항목에 "해당사항 없음"으로 명시 — S/W 라이선스 별도 구매·통합발주 계획 없음</li>
+                    <li><strong>H/W 장비 도입 중심 사업</strong>: 사업 내용이 네트워크 장비, 보안 장비, 서버, 스토리지 등 H/W 납품·설치 중심으로 구성되어 있어 S/W 구독 납품 기회가 극히 제한적</li>
+                    <li><strong>중소기업 한정 입찰</strong>: 사업금액 20억원 미만으로 대기업·중견기업 참여 불가 — Red Hat코리아 직접 참여 불가, 파트너사를 통한 납품도 구조적으로 어려움</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>가상화 소프트웨어 연계 요구</strong>: ECR-001 시스템 구성 공통사항에 "본 체계는 SW(가상화 솔루션)와 연계 및 통합 구성되어야 하는 서비스"로 명시되어 있으나, 가상화 SW 제품명은 특정되지 않음 — 단, Rocky Linux 9이 IaaS 서버 OS로 지정되어 있어 가상화 SW도 Rocky Linux 생태계 기반으로 도입될 가능성이 높아 실질적인 Red Hat 상용 제품 제안 여지는 매우 낮음</li>
+                    <li><strong>FUR-001 소프트웨어 정의 기반 데이터센터</strong>: 가상화 클러스터 관리, 마이그레이션, 일원화된 관리환경 요구 — 이론적으로 OpenShift Virtualization 또는 RHEV 제안 포인트가 될 수 있으나, Rocky Linux OS 명시로 실질적 제안 가능성은 극히 낮음</li>
+                    <li><strong>RFP 내 Red Hat(또는 동의어) 제품명 언급</strong>: 없음 — 해당 없음</li>
+                    <li><strong>종합 평가</strong>: Rocky Linux 9이 서버 OS로 명시되어 있고 Red Hat 상용 제품명이 전혀 없으며 직접구매 S/W도 없는 사업으로, 실질적인 Red Hat 제품 제안 기회는 없는 것으로 판단됨</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
