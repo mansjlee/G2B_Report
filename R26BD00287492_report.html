@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00287492 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국인터넷진흥원_인터넷침해대응센터 전산시스템 운영 및 관리강화 - 분석 리포트</h2>
+
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 납품 없는 위탁운영 용역</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>한국인터넷진흥원(KISA) 인터넷침해대응센터의 전산시스템 통합 운영 및 유지관리 업무를 전문업체에 아웃소싱하는 위탁용역 사업</li>
+                    <li>시스템 운영의 효율성 제고 및 안정성 확보를 목표로, 상시 장애 예방·보안 점검 수행과 장애 발생 시 신속·전문적 기술 지원 제공</li>
+                    <li>서울(가락동)분원 및 나주본원에 상주 인력을 배치하여 24시간 365일 정보자원을 운영·관리</li>
+                    <li>AI탐지대응팀이 관리부서로, 디지털위협대응본부 각 팀별 시스템 운영을 위탁운영 통합업체가 수행하는 구조</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 18,240,000,000원 (부가세 포함, 변동 가능)</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2028년 12월 31일 (24개월)</li>
+                    <li><strong>사업 범위</strong>: 유지관리 대상 장비 총 2,293대 (서버 744, 네트워크 332, 기반시설 113, 보안장비 333, SW 764, 기타 7) / 수행장소: 서울분원(13명 상주) + 나주본원(2명 상주) / 최소 투입 인력 15명 이상</li>
+                    <li><strong>주요 일정</strong>: 사업설명회 2026.11.03.(KISA 서울청사 4층 회의실) / 낙찰방식: 협상에 의한 계약체결(기술평가 90% + 가격평가 10%) / 대금지급: 매월 검수 후 지급</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>담당 부서</strong>: AI탐지대응팀 (인터넷침해대응센터 위탁운영/유지관리 아웃소싱 총괄)</li>
+                    <li><strong>담당자</strong>: 장웅 책임</li>
+                    <li><strong>연락처</strong>: 02-405-4733</li>
+                    <li><strong>이메일</strong>: 명시 없음</li>
+                    <li><strong>발주기관</strong>: 한국인터넷진흥원 (원장: 이상중) / 주소: 전남광주통합특별시 나주시 진흥길 9</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>기반시설(UPS, 항온항습기, CCTV, 출입통제 등) 운영 및 관리</li>
+                            <li>네트워크(라우터, 백본스위치, BGP/OSPF/VRRP 라우팅) 운영 및 자원 관리</li>
+                            <li>보안시스템(방화벽, 웹방화벽, IPS, DDoS대응, VPN, 망연계) 운영 관리</li>
+                            <li>서비스 시스템(SMS, NMS, ITSM, KrCERT/보호나라 홈페이지, 메일·스팸필터링) 운영</li>
+                            <li>백업시스템(Local·Remote 백업) 운영 및 DB 관리(RAC, SINGLE, ASM)</li>
+                            <li>AI 기반 침해대응체계 인프라(네트워크 장비, 서버, 스토리지, GPU 서버, IAM) 유지보수</li>
+                            <li>GPU 서버(NVLink/NVSwitch 포함) 정기점검 및 GPU Driver, CUDA, Firmware 관리</li>
+                            <li>모의훈련 플랫폼, C-TAS, 사이버보안 AI데이터셋 관리 시스템, AI 악성도메인 탐지시스템, 통합 허니넷 시스템, 위협정보 통합 조치 이력관리 시스템, 사이버 위협 인텔리전스 관리 시스템, 사이버사기대응시스템, 해킹메일확인서비스 시스템 운영</li>
+                            <li>24시간 365일 시스템 관제 (야간·휴일 교대근무 포함)</li>
+                            <li>EA(정보기술아키텍처) 자료 현행화 및 EAMS 운영 지원</li>
+                            <li>SLA(서비스수준협약) 수립 및 운영</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W]</strong>
+                        <ul>
+                            <li>RFP 및 과업지시서 내 <strong>통합발주·구매 대상 상용 S/W 품목이 명시되지 않음</strong></li>
+                            <li>제안사가 자체 조달해야 하는 운영용 소프트웨어(운영체제, 백신, 모니터링/접속프로그램(DB) 등)가 PPR-001에 기재되어 있으나, 특정 제품명·수량 없이 포괄적으로 명시됨</li>
+                            <li>가상화 소프트웨어(ESXi, vCenter, VM 등)의 유지보수는 본 과업 범위에서 명시적으로 제외됨(별도 유지보수 사업자가 담당)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>순수 위탁운영 용역 사업</strong>: 본 사업은 S/W 도입·납품·구독이 아닌 시스템 운영·유지관리 인력 공급 위탁용역으로, 통합발주 또는 상용SW 구매 항목이 RFP 전체에 걸쳐 명시되지 않음</li>
+                    <li><strong>기존 VMware/ESXi 환경 확정</strong>: 가상화용 물리 서버에 ESXi가 설치되어 있음이 명시되어 있고, 가상화 소프트웨어(ESXi, vCenter, VM) 유지보수는 별도 사업자가 담당한다고 명시됨 → Red Hat 가상화 제품 도입 여지 없음</li>
+                    <li><strong>Red Hat 상용 제품 전혀 미명시</strong>: RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품이 RFP 어디에도 품목·구매 대상으로 등장하지 않음</li>
+                    <li><strong>하도급 금지</strong>: 본 사업은 하도급이 허용되지 않아 Red Hat이 SW 공급 파트너로 참여하는 구조도 어려움</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>GPU 서버 OS 재설치 지원 시 RHEL 적용 가능성</strong>: GPU 서버 OS 재설치·장애복구 시 GPU Driver, CUDA 등 구동환경 재설치가 요구되며, 이 환경에서 RHEL이 선택될 수 있음 (단, OS 지정 없음)</li>
+                    <li><strong>제안사 운영 PC 및 모니터링 시스템용 SW</strong>: 사업자가 자체 조달해야 하는 운영체제·모니터링 소프트웨어에 RHEL 등을 활용할 수 있으나, 사업 규모 대비 매우 제한적</li>
+                    <li><strong>AI/빅데이터 인프라 환경</strong>: 사이버보안 AI·빅데이터 활용 플랫폼(GPU 인프라)이 포함되어 있어 향후 OpenShift AI, RHEL AI 등 Red Hat AI 포트폴리오 관계 구축의 간접 기회가 존재</li>
+                    <li><strong>RFP 내 Red Hat 제품명·수량</strong>: 해당 없음 (RFP 전 구간에 걸쳐 Red Hat 또는 동의어 상용 제품이 구매·납품 품목으로 명시된 바 없음)</li>
+                    <li>※ 종합적으로, 현 RFP 범위 내에서 Red Hat 상용 제품의 직접 제안 기회는 매우 낮으며, 낙찰 업체와의 파트너십을 통한 간접적 관계 형성에 집중하는 전략이 현실적</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

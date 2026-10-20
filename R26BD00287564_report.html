@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00287564 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>세종특별자치시교육청교육원_2026년 노후 교육포털시스템 교체 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>Rocky Linux·Ubuntu OS 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>세종특별자치시교육청교육원이 운영 중인 노후 교육포털시스템(총 18대)을 교체하여 안정적인 서비스 운영 기반 마련</li>
+                    <li>지원 종료(EOS)된 운영체제를 최신 버전으로 교체하고, 물리 서버를 가상화(HCI) 환경으로 전환하여 보안성·가용성 및 운영 효율성 향상</li>
+                    <li>테이프 라이브러리 시스템(PTL) 신규 도입을 통한 백업·복구 안정성 확보</li>
+                    <li>최신 보안기술 적용을 통한 정보보호 수준 강화 및 장애 예방</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 598,771천원 (약 5억 9,877만원)</li>
+                    <li><strong>사업 기간</strong>: 계약일로부터 60일 (하자보수: 사업종료일로부터 1년)</li>
+                    <li><strong>사업 범위</strong>: ① 테이프 라이브러리 시스템(PTL) 1대 신규 도입(노후 교체), ② 가상화 서버(HCI 노드) 3대 신규 도입, ③ Linux 서버 13대 OS 교체, ④ Windows 서버 4대 OS 교체, ⑤ 가상화 환경 전환 대상 11대, ⑥ 기존 서버(HP DL380G10) 활용 운영 솔루션 이전 5대 — 총 대상 18대</li>
+                    <li><strong>주요 일정</strong>: M+0(사업 착수·현황조사), M+1(신규 서버 도입·PTL·가상화), M+2(정책 이관·시스템 이전·보안점검·검수), 검수 완료 후 1년 하자보수</li>
+                    <li><strong>계약 방법</strong>: 제한경쟁입찰(협상에 의한 계약), 대기업·중견기업 참여 제한(20억원 미만 SW사업)</li>
+                    <li><strong>설치 장소</strong>: 세종특별자치시교육청교육원 정보관 2층 교육포털시스템실</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 세종특별자치시교육청교육원</li>
+                    <li><strong>담당 부서</strong>: 행정지원부 전산행정팀</li>
+                    <li><strong>팀장</strong>: 한희 / TEL: 044-902-1381 / FAX: 044-902-1309</li>
+                    <li><strong>주무관(제안서 문의)</strong>: 박효영 / TEL: 044-902-1391</li>
+                    <li><strong>계약 담당</strong>: 행정지원부 운영지원팀 (계약 관련 업무)</li>
+                    <li><strong>협조 기관</strong>: 조달청 (입찰·공고·사업자 선정)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[H/W 도입]</strong> 테이프 라이브러리 시스템(PTL) 1대: LTO-8/9 FC Drive 5개 이상, 테이프 슬롯 120개 이상, SAN 스위치 연결, 논리적 파티션 기능, CC인증 또는 보안기능확인서 필수</li>
+                    <li><strong>[H/W 도입]</strong> 가상화 서버(HCI 통합운영노드) 3대: CPU 24Core×2ea 이상, MEM 512GB 이상, SSD 960GB×2ea 이상, 10G SFP+ 6Port 이상, 최대 32노드 확장, Self-Healing·HA·라이브마이그레이션 기능, CC인증 또는 보안기능확인서 필수, 직접생산확인증명서(G2B 물품분류번호 4321150102) 소지 업체 제품 제안 필요</li>
+                    <li><strong>[OS 교체]</strong> Linux 서버 13대: Rocky Linux, Ubuntu 등 제조사 기술지원 가능한 최신 버전으로 교체 (발주기관과 협의 조정 가능)</li>
+                    <li><strong>[OS 교체]</strong> Windows 서버 4대: Windows Server 2022 이상 버전으로 교체, 정품 라이선스 제공</li>
+                    <li><strong>[가상화 환경 구성]</strong> 물리 서버 11대를 가상화(P2V) 전환, 내부망·DMZ망·DB망 구분 구성, 단일 물리 서버 장애 시에도 HA 보장</li>
+                    <li><strong>[운영 솔루션 이전]</strong> 기존 서버(HP DL380G10) 자원 활용하여 운영 솔루션 5대 이전·구축</li>
+                    <li><strong>[보안]</strong> 구축 완료 후 정보시스템 취약점 점검 및 조치 필수, 국가 사이버보안 기본지침 및 교육부 정보보안 기본지침 준수</li>
+                    <li><strong>[구매 명시 S/W]</strong> 통합발주 S/W로 별도 명시된 품목 없음. OS는 Rocky Linux 또는 Ubuntu(Linux 계열, 수량 13라이선스), Windows Server 2022 이상(4라이선스)이 설치 대상이나 라이선스 구매 방식은 협의 사항. 기존 운영 솔루션(Zenius SMS 7.0, JENNIFER APM-J2EE, WebtoB 5.0, JEUS 8.0, Tibero 6, Chakra Max V3.0, CROWNIX Report 8, TG 1st Movie, Privacy Scanner 3.0 등)은 이전·재설치 대상이나 신규 구매 명시 없음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>[경쟁 OS 명시]</strong> SFR-006에서 Linux 운영체제 교체 대상 OS로 "Rocky Linux, Ubuntu 등"을 명시. Rocky Linux는 CentOS 계열 커뮤니티 배포판이며, Ubuntu는 Canonical사의 경쟁 Linux 배포판으로, Red Hat 상용 제품(RHEL)이 아님</li>
+                    <li><strong>[Red Hat 상용 제품 전무]</strong> RFP 전문에 걸쳐 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 품목으로 전혀 명시되지 않음</li>
+                    <li><strong>[WAS/DB 경쟁 제품 고정]</strong> 현재 운영 중인 WAS는 티맥스소프트 JEUS 8.0, DB는 티베로 Tibero 6으로 확인됨. 해당 솔루션 이전이 목표이므로 JBoss EAP 등 Red Hat WAS/미들웨어 제안 근거 없음</li>
+                    <li><strong>[가상화 솔루션 미지정이나 경쟁 환경]</strong> 가상화 관리 소프트웨어(하이퍼바이저)는 명시되지 않았으나, HCI 구성 특성상 국산 HCI 솔루션(뉴타닉스 계열 OEM 등) 또는 VMware 계열 제품이 주로 제안될 가능성이 높으며 Red Hat Virtualization(RHEV)은 현재 단종(EoL) 상태</li>
+                    <li><strong>[소규모 사업·대기업 참여 제한]</strong> 20억원 미만 사업으로 대기업(Red Hat Korea 해당)의 입찰 직접 참여가 제한됨. SI 사업자를 통한 간접 공급만 가능</li>
+                    <li><strong>[S/W 통합발주 항목 부재]</strong> 별도의 상용 S/W 통합발주 목록이 없으며, 기존 운영 솔루션은 신규 구매 없이 이전·재설치 방식으로 진행됨</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[Linux OS 교체 수요]</strong> Linux 서버 13대의 OS 교체가 필요하며, SFR-006에서 "Rocky Linux, Ubuntu 등"으로 명시하되 "발주기관과 협의를 통해 조정 가능"이라는 단서가 있어 RHEL 제안 여지가 이론적으로 존재함. 단, Rocky Linux·Ubuntu가 기본 선호 OS로 명시된 만큼 현실적 수주 가능성은 낮음</li>
+                    <li><strong>[가상화 플랫폼 미지정]</strong> HCI 기반 가상화 관리 소프트웨어(하이퍼바이저/가상화 관리 플랫폼)가 RFP에 특정 제품으로 지정되지 않았으나, Red Hat Virtualization은 EoL로 제안 불가. OpenShift Virtualization(OCP 기반) 제안은 이 사업 규모 및 예산 대비 과도한 솔루션으로 현실성 낮음</li>
+                    <li><strong>[RFP 내 Red Hat 제품명 명시 없음]</strong> RFP 전문 어디에도 Red Hat(레드햇), RHEL, OpenShift, Ansible, JBoss 등 Red Hat 상용 제품명 또는 동의어가 단 한 건도 등장하지 않음</li>
+                    <li><strong>[종합 판단]</strong> 이 사업에서 Red Hat 제품의 직접적인 영업 기회는 매우 제한적임. 향후 OS 협의 과정에서 RHEL 전환 제안을 위한 사전 관계 구축(Account Development) 용도로 접근하는 것이 현실적인 전략</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

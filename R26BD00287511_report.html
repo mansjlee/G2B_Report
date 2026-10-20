@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00287511 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국립전파연구원_'27년도 전파로시스템 기능개선 및 유지관리 용역 - 분석 리포트</h2>
+
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>RHEL 8.9·JBCS 운영환경 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>과학기술정보통신부 국립전파연구원이 운영하는 <strong>전파로시스템(13개 단위시스템)</strong>의 기능개선 및 정보자원 유지관리를 목적으로 하는 사업</li>
+                        <li>무선국 허가·검사·감시, 적합성평가, 전파사용료, 통신사업 인허가 등 전파·방송·통신 행정업무 및 대국민 민원서비스(107종, 年 28만건)를 안정적으로 운영·유지</li>
+                        <li>법제도 개정 및 사용자 요구사항의 신속한 반영을 통해 행정업무 효율성 향상 및 서비스 연속성 제고</li>
+                        <li>웹 취약점 및 DB 성능개선 등 시스템 최적화 유지, SLA(서비스수준협약) 기반 품질관리 적용</li>
+                        <li>舊 전파방송통신시스템(방미통위 소관업무)의 이관 지원(2027년 1~3월 한정)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 총 1,876백만원 (부가세 포함) ※ 예산 편성 결과에 따라 변경 가능</li>
+                        <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (1년)</li>
+                        <li><strong>사업 범위</strong>: 전파로시스템 응용SW·상용SW 유지관리 및 기능개선, 장애 대응 및 사용자 지원, 舊 전파방송통신시스템 이관 지원, 데이터·보안·품질 관리, SLA 운영</li>
+                        <li><strong>계약 방법</strong>: 조달청 제한경쟁입찰 (협상에 의한 계약체결) / 중소기업자만 입찰 가능 (20억원 미만, 대기업·중견기업 참여 제한)</li>
+                        <li><strong>평가 비율</strong>: 기술능력평가 90% + 입찰가격평가 10%</li>
+                        <li><strong>주요 일정</strong>: 2026년 10월 제안요청서 발행 → 착수보고(2027년 1월) → 운영 및 유지관리(2027년 1~12월) → 만족도/SLA 수준평가 → 산출물 검수 및 최종보고(2027년 12월)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>주관기관</strong>: 과학기술정보통신부 국립전파연구원</li>
+                        <li><strong>담당 부서</strong>: 정보운영과</li>
+                        <li><strong>사무관</strong>: 김주석 / ☎ 061-338-4930 / FAX 061-338-4919</li>
+                        <li><strong>주무관(사업문의)</strong>: 윤대환 / ☎ 061-338-4931 / FAX 061-338-4919 / ✉ shwanta@korea.kr</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong>
+                            <ul>
+                                <li>응용SW 및 상용SW 유지관리: 기능개선, 커스터마이징, 마이그레이션, 패치·업데이트, 버전업그레이드 지원</li>
+                                <li>장애 대응 체계 수립 및 운영: 장애처리 기준시간(현장 도착 5시간, 복구 2시간) 준수</li>
+                                <li>SLA 체결 및 이행: 월별 서비스수준 측정·보고, 지표 미달 시 위약금 부과</li>
+                                <li>정기점검(매월 2주차) 및 자체 성능진단(년 1회 이상, SQL 튜닝 포함)</li>
+                                <li>전자정부 표준 프레임워크 준수, 웹표준·웹접근성 준수(年 1회 인증 갱신)</li>
+                                <li>개인정보보호법, 시큐어코딩 가이드, 국가정보보안기본지침 준수</li>
+                                <li>데이터 표준·구조·값 관리, 메타데이터 현행화</li>
+                                <li>舊 전파방송통신시스템(방미통위 소관) 이관 지원(1~3월)</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매/유지관리 대상 상용SW 목록]</strong> (기존 운영 중인 SW 유지관리 대상, 통합발주 방식)
+                            <ul>
+                                <li>KSignAccess SSO 6식, EAM 6식, IAM 6식</li>
+                                <li>WebSquare5 34식</li>
+                                <li>VestSign(공인인증/추가인증) 2식</li>
+                                <li>MetaMiner(메타데이터 관리) 2식</li>
+                                <li>ZenithECM(전자문서관리) 8식</li>
+                                <li>Erwin Data Modeler 2식</li>
+                                <li>RAON K Upload 2018 2식, RAON K Editor 2018 2식</li>
+                                <li>PDF Gateway v11.0 2식</li>
+                                <li>TrustCertificate V3.0(문서위변조방지) 2식</li>
+                                <li>OZ Report 8.0(레포팅툴) 10식</li>
+                                <li>INFOSAFER V1.1(개인정보 접속이력 관리) 4식</li>
+                                <li>I-Mailer Ver6.0(대용량 메일 발송) 2식</li>
+                                <li>CubeOne v3.0(DB 암호화) 22식</li>
+                                <li>ProSync4 12식, ProSync 10식 (데이터 및 파일 동기화)</li>
+                                <li>MESIM Indigo EAI v3.5(정보연계 솔루션) 4식</li>
+                                <li>SQLCanvas Trans v4.7(데이터베이스 관리 SW) 2식</li>
+                                <li>합계 140식</li>
+                                <li><strong>인프라 SW(현재 운영 환경): RedHat RHEL 8.9</strong>(웹서버 OS), <strong>JBCS Apache</strong>(웹어플리케이션 서버), TIBERO 6(DB)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[직접 납품·도입 구조 아님]</strong>: 본 사업은 신규 구축이 아닌 유지관리 용역 사업으로, Red Hat이 직접 입찰 주체가 되기는 어려운 구조임. 사업자는 중소기업만 참여 가능(20억 미만, 대기업 제한)</li>
+                        <li><strong>[별도 Red Hat SW 신규 구매 품목 없음]</strong>: 상용SW 통합발주 목록에 Red Hat 제품이 신규 도입 품목으로 별도 명시되어 있지 않으며, 기존 운영 SW 유지관리 중심의 사업임</li>
+                        <li><strong>[DB는 경쟁 제품 운영 중]</strong>: 데이터베이스로 TIBERO 6(티베로)를 사용 중이며, Oracle/PostgreSQL 등 Red Hat 생태계와 무관한 DB가 운영됨</li>
+                        <li><strong>[경쟁 경량 솔루션 혼재]</strong>: WebSquare5, KSignAccess 등 국내 상용 SW 위주로 구성되어 있어 Red Hat 미들웨어 추가 제안 여지 제한적</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[RHEL 8.9 명시 운영 중 — 핵심 기회]</strong>: 현재 시스템 운영 목록에 <strong>RedHat RHEL 8.9</strong>가 웹서버 OS로 명시되어 있음. 유지관리 범위에 상용SW 패치·업데이트·버전업그레이드 지원이 포함되어 있어 RHEL 구독 갱신 및 향후 RHEL 9.x 업그레이드 제안 가능</li>
+                        <li><strong>[JBCS Apache(JBoss Core Services) 운영 중]</strong>: 웹어플리케이션 서버로 <strong>JBCS Apache</strong>(JBoss Core Services — Red Hat 상용 제품)가 운영 중임. 유지관리 범위 내 JBCS 구독·기술지원 갱신이 포함될 수 있음</li>
+                        <li><strong>[RFP 명시 Red Hat 제품명 및 수량 정리]</strong>:
+                            <ul>
+                                <li>RedHat RHEL 8.9 — 웹서버 OS (수량: 시스템 구성상 명시, 별도 수량 미기재)</li>
+                                <li>JBCS Apache — 웹어플리케이션 서버 (수량: 시스템 구성상 명시, 별도 수량 미기재)</li>
+                            </ul>
+                        </li>
+                        <li><strong>[RHEL EOSL 대응 기회]</strong>: MPR-013에서 EOSL(End Of Service Life) 제품 관리 방안 요구. RHEL 8은 2029년 5월 EOSL 예정이므로 RHEL 9 업그레이드 전환 제안 가능</li>
+                        <li><strong>[Ansible 자동화 제안 여지]</strong>: 정기점검, 보안패치 적용, 형상관리 등 반복 운영 자동화 관련 요구사항(MPR-003, MPR-008 등)에 대해 Ansible Automation Platform 도입 제안 여지 있음</li>
+                        <li><strong>[Java 기반 시스템 — JBoss EAP 전환 가능성]</strong>: 사용언어가 JAVA로 현재 JBCS(Apache HTTP 서버 레이어) 사용 중이나, 향후 고도화 시 JBoss EAP(Enterprise Application Platform) 제안 여지 존재</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

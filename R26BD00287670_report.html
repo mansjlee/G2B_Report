@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00287670 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국토지리정보원_2027~2029년 GNSS 측위보정정보 서비스 시스템 유지관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange">중간<br>K8s·컨테이너 환경, OS 미지정으로 제안 여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국토교통부 국토지리정보원이 운영하는 GNSS(위성항법) 측위보정정보 서비스 시스템 전반의 안정적 운영 및 유지보수를 목적으로 하는 3개년 유지관리 용역 사업</li>
+                    <li>GNSS 중앙국 및 전국 위성기준점의 H/W·S/W 장애 예방, 신속 복구, 실시간 측위보정정보 서비스 연속성 확보</li>
+                    <li>GNSS 포털·위성기준점·측위보정정보·상설감시국 등 포함한 GNSS 정보관리 체계의 연속적·안정적 운영 지원</li>
+                    <li>클라우드 네이티브 전환 이후 쿠버네티스 기반 환경에서의 시스템 운영 및 CI/CD, MSA 아키텍처 유지관리 포함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 총 3,040,852천원 (1차 1,007,000,000원 / 2차 1,015,238,000원 / 3차 1,018,614,000원)</li>
+                    <li><strong>사업 기간</strong>: (1차) 2027.1.1.~2027.12.31. / (2차) 2028.1.1.~2028.12.31. / (3차) 2029년 추정 (본문 명시 3개년)</li>
+                    <li><strong>사업 범위</strong>: 기반시설장비·서버·네트워크 장비 등 GNSS 정보관리체계 구성장비 및 상용 S/W 일체, GNSS 서비스 포털 등 응용 S/W 통합 유지보수; 상주인력(1인) 운영, 정기점검(월 1회), 긴급점검, 장애복구, 클라우드 네이티브 아키텍처 운영 포함</li>
+                    <li><strong>주요 일정</strong>: 계약 후 7일 이내 착수계·사업책임자 선임계 등 제출 / 10일 이내 사업수행계획서 제출; 매월 2일까지 진도보고서 제출; 상시점검 8시간/일, 정기점검 매월 1회, 긴급점검 상시 운영</li>
+                    <li><strong>입찰 참가자격</strong>: 소프트웨어사업자(1468) + 정보통신공사업자(0036) 모두 등록 필요; 사업금액 20억 미만으로 대기업 참여 불가(중소기업 한정)</li>
+                    <li><strong>발주기관</strong>: 국토교통부 국토지리정보원</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>담당부서</strong>: 국토교통부 국토지리정보원</li>
+                    <li><strong>과장</strong>: 박진식 / TEL: 031-210-2603 / FAX: 031-210-2756</li>
+                    <li><strong>사무관</strong>: 문지영 / TEL: 031-210-2650</li>
+                    <li><strong>담당자</strong>: 김예린 / TEL: 031-210-2655</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong>
+                        <ul>
+                            <li>H/W 및 상용 S/W 정기점검(월 1회 이상), 수시점검, 장애 시 긴급복구 (24시간 이내 복구 완료)</li>
+                            <li>응용 S/W 오류 보완, 기능 개선, 법·제도 변경에 따른 시스템 기능변경 수행</li>
+                            <li>클라우드 네이티브 환경(쿠버네티스 클러스터) 유지보수 및 MSA SpringBoot Framework 유지관리</li>
+                            <li>CI/CD 파이프라인 관리: GitOps(ArgoCD, Flux), Jenkins, Nexus, Gitea, GitLab, Tekton 등 구성·운영</li>
+                            <li>모니터링·로깅: Whatap, Pinpoint, Kiali, Prometheus, Grafana, Jaeger, ELK/EFK 스택 운영</li>
+                            <li>Keycloak OAuth 연계, Redis, RabbitMQ, Kafka 서비스 연계 유지관리</li>
+                            <li>지각변동 분석용 S/W(GAMIT, BERNESE, GIPSY-X) 정상 작동 점검 및 라이선스 관리</li>
+                            <li>백업 체계 수립, 재해복구 훈련(연 1회 이상), RTO/RPO 기반 업무연속성 계획 유지</li>
+                            <li>보안 취약점 점검, SW 개발보안 적용, 365일 24시간 무중단 서비스 목표</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W (유지보수 대상 상용 S/W)]</strong>
+                        <ul>
+                            <li>PIVOT Platform (Trimble) — RTS1 측위보정정보 서비스용, 수량 미지정(서버 2식: 운영+백업)</li>
+                            <li>GNSmart2 (Geo++) — RTS2 측위보정정보 서비스용, 수량 미지정(서버 2식: 운영+백업)</li>
+                            <li>V3 서버용 백신 — GNSS 중앙국 서버 대상, 수량 미지정</li>
+                            <li>GAMIT / BERNESE / GIPSY-X — 지각변동 분석용 S/W, 각 1식(라이선스 관리 포함)</li>
+                            <li>※ 본 사업은 유지관리 용역으로 신규 상용 S/W 통합발주 품목은 별도 명시 없음 (H/W·상용S/W는 분리발주 추진)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>신규 S/W 납품·구독 항목 미존재</strong>: 본 사업은 순수 유지관리 용역 사업으로, RFP 내 통합발주 방식의 Red Hat 상용 제품 구매·도입 품목이 명시되지 않음</li>
+                    <li><strong>H/W·상용S/W 분리발주</strong>: 상용 S/W는 분리발주 추진으로 명시되어 있어, 본 용역 계약에서 Red Hat 상용 라이선스 직접 납품 기회가 제한됨</li>
+                    <li><strong>기존 확정 S/W 스택</strong>: GNSS 핵심 시스템은 Trimble PIVOT, Geo++ GNSmart2 등 전문 GNSS 상용 솔루션으로 이미 고정되어 있어 Red Hat 제품 대체 불가</li>
+                    <li><strong>오픈소스 CI/CD 도구 명시</strong>: ArgoCD, Flux, Jenkins, Gitea, GitLab, Tekton 등 커뮤니티 오픈소스 도구가 이미 도입·운영 중으로 명시되어 Red Hat 상용 버전 전환 여지가 낮음</li>
+                    <li><strong>대기업 참여 불가</strong>: 사업금액 20억 미만 중소기업 한정 사업으로, Red Hat이 직접 참여하거나 대형 파트너를 통한 납품 채널 활용이 제한적</li>
+                    <li><strong>경쟁·대체 제품 직접 명시는 없으나</strong>, 기존 운영 인프라가 특정 상용 제품(Trimble, Geo++)으로 고정되어 있어 Red Hat 플랫폼으로의 전환 가능성 낮음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>쿠버네티스 기반 클라우드 네이티브 환경 운영 요구</strong>: RFP PMR-003에서 쿠버네티스 클러스터 유지보수, 컨테이너화, MSA, CI/CD, DevOps 전문 인력 명시 → OpenShift Container Platform 제안 여지 존재 (기존 vanilla K8s 환경을 OpenShift로 전환하거나 OpenShift 기반 운영 제안 가능)</li>
+                    <li><strong>OS 플랫폼 미지정</strong>: 서버 운영체제로 Linux 계열 적용 가능성이 있으며(기술적용계획표에 Linux 항목 적용 표시), RHEL 제안 여지가 있음</li>
+                    <li><strong>Keycloak OAuth 연계 유지관리 명시</strong>: PMR-003에서 "Keycloak Oauth 연계 유지관리"가 명시되어 있어, 커뮤니티 Keycloak을 Red Hat 상용 RH-SSO(Keycloak) 또는 Red Hat Build of Keycloak로 전환 제안 가능</li>
+                    <li><strong>자동화·DevOps 수요</strong>: 배포 자동화(Rolling Update, Blue/Green, Canary), GitOps, CI/CD 파이프라인 관리 요구 → Ansible Automation Platform(AAP)을 활용한 운영 자동화 제안 가능</li>
+                    <li><strong>모니터링 통합 수요</strong>: Prometheus, Grafana, ELK/EFK 등 다수 모니터링 도구 운영 요구 → OpenShift 내장 모니터링·로깅 스택으로 통합 제안 가능</li>
+                    <li><strong>RFP 내 Red Hat(또는 동의어) 제품명 명시 현황</strong>: Keycloak 1건(PMR-003, 수량 미지정) — 상용 제품 여부는 불명확하나 제안 연결 고리로 활용 가능</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

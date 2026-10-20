@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00287517 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>대한무역투자진흥공사(KOTRA) 지능형 무역투자 플랫폼 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>Linux·K8s 제안여지, OS 미지정 컨테이너</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>KOTRA(대한무역투자진흥공사)의 분산된 8개 대외 웹사이트를 2개 채널(국내기업·해외투자자)로 통폐합하고, 고객 중심 서비스 채널을 혁신</li>
+                    <li>LLM 기반 AI Agent를 통한 무역투자 정보 제공 및 수출 지원 서비스 진입장벽 완화 (AI 수출비서 구축)</li>
+                    <li>CRM·BuyKOREA 고객데이터 통합, 유선 상담 STT·AI 요약 자동화, 상담매칭시스템 구축</li>
+                    <li>통합 데이터 저장소(데이터레이크하우스) 구축으로 핵심 데이터 축적·학습·활용 체계 마련</li>
+                    <li>클라우드 기반 인프라 구축을 통한 지속 가능한 지능형 서비스 제공 기반 마련</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 206억 9,000만 원 (VAT 포함) — 1차 37억 500만 원 / 2차 86억 9,500만 원 / 3차 82억 9,000만 원 (장기계속사업, 2·3차 예산 미확정)</li>
+                    <li><strong>사업 기간</strong>: 계약일 ~ 2028년 9월 30일 (약 21개월, 안정화 기간 미포함)</li>
+                    <li><strong>계약 방법</strong>: 일반경쟁입찰 / 협상에 의한 계약 / 장기계속계약</li>
+                    <li><strong>사업 범위</strong>: ①홈페이지 통합(8→2개 채널) ②고객데이터 통합(CRM·BuyKOREA MDM) ③고객상담 데이터 관리(STT·AI 자동화) ④AI 수출비서(LLM·Agentic RAG, AX Playground) ⑤상담매칭시스템 ⑥해외정보관리시스템(GMR·GIM·해시뉴스) ⑦통합 데이터 저장소(데이터레이크하우스)</li>
+                    <li><strong>주요 일정</strong>:
+                        <ul>
+                            <li>1단계 (계약일~'27.5월): 요구사항 정의, 설계, 인프라 구성, 7개 과제 구축 착수</li>
+                            <li>2단계 ('27.6월~'28.2월): 각 과제 구축 및 시험 계속</li>
+                            <li>3단계 ('28.3월~'28.9월): 각 과제 시험 및 완료</li>
+                            <li>감리 3회(요구정의·설계·종료), 개인정보영향평가 2회, 정기보고 9회</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>담당 부서 (사업)</strong>: 정보화기획팀</li>
+                    <li><strong>담당자 (사업)</strong>: 이영일 팀장</li>
+                    <li><strong>연락처 (사업)</strong>: 02-3460-7095</li>
+                    <li><strong>담당 부서 (계약)</strong>: 총무팀</li>
+                    <li><strong>담당자 (계약)</strong>: 이은영 차장</li>
+                    <li><strong>연락처 (계약)</strong>: 02-3460-7122</li>
+                    <li><strong>이메일 (제안요청 설명회 신청)</strong>: info@kotra.or.kr</li>
+                    <li><strong>개인 이메일</strong>: 미기재</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>개발 표준</strong>: JAVA 기반, 전자정부 표준 프레임워크, 웹접근성 품질마크 사업기간 내 획득 필수</li>
+                    <li><strong>AI/LLM</strong>: LLM 기반 Multi-RAG·Agentic AI·Agentic RAG 아키텍처 구현 / 27B 이상 모델 2식 기본 / 컨텍스트 최소 16K~최대 65K / 멀티모달·멀티 언어모델 지원 / 특정 LLM 종속성 제거 / Human-in-the-Loop(HITL) 필수 / AI 레드티밍 수행 필수</li>
+                    <li><strong>AI 수출비서 아키텍처</strong>: (A) 국민 대상 상용 LLM / (B) KOTRA 회원용 / (C) 임직원 대상 로컬 LLM(오픈소스, 폐쇄망) — Langchain·LangGraph·Langsmith·Airflow 프레임워크 적용</li>
+                    <li><strong>LLMOps</strong>: 오픈소스 기반 무료 솔루션 우선 / 상용 솔루션 제안 시 구매비용 업체 부담 / 복수의 LLMOps Pool 제안 필수</li>
+                    <li><strong>STT</strong>: 화자분리, 실시간 변환(3초 이내), 일치율 95% 이상</li>
+                    <li><strong>RAG</strong>: Multi-RAG·Query Decomposition·Multi-Hop·Graph RAG·Text-to-SQL·Reranker 필수, 10개 이상 RAG 옵션</li>
+                    <li><strong>통합 데이터 저장소</strong>: 데이터레이크하우스 / 오픈 테이블 포맷(Parquet, Delta Lake 등) / ACID 트랜잭션 / 메달리온 구조(Bronze/Silver/Gold) / 오브젝트 스토리지 / Hot-Warm-Cold ILM</li>
+                    <li><strong>ETL</strong>: Airflow 등 산업 표준 워크플로우 오케스트레이션 권장, 실시간·배치 스트리밍 지원</li>
+                    <li><strong>클라우드</strong>: 국정원 민간클라우드 도입 가능목록 등재 CSP 서비스만 허용 / CSAP 인증 서비스 사용 / K8S 도입 시 CSP 제공 관리형 K8S 구성 / 클라우드 이용료·토큰사용료 제안사 부담</li>
+                    <li><strong>보안</strong>: DB암호화(Oracle·DB2·MS SQL Server 등 컬럼 단위, CC인증 EAL2 이상) / 국가망보안체계(N2SF) 준수 / TLS 1.3 전 구간 암호화 / PKI·SSO·WAF·DDoS 등 보안기능 확인서 또는 CC인증 필수</li>
+                    <li><strong>국가공유데이터 플랫폼 연계</strong>: 메타관리솔루션 1식, DQ솔루션 1식, DB암호화 2식, WEB/WAS 서버 2식, 연계 서버 2식, DB 서버 2식, SSL 인증서 1식</li>
+                    <li><strong>성능 목표</strong>: 웹페이지 응답 3초 이내, 동시접속 200명 이상, CPU·메모리 평균 사용률 90% 이하, 장애복구 3시간 이내</li>
+                    <li><strong>구매·통합발주 상용 S/W</strong>: <strong>해당 없음</strong> — 붙임3 직접구매 대상 상용소프트웨어 구매계획 전 항목 공란 (직접구매 대상 상용SW 없음)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>직접구매 S/W 없음</strong>: 붙임3 상용SW 구매계획 전 항목 공란 — Red Hat 제품을 통합발주·직접구매 품목으로 명시 구매하는 항목이 없음</li>
+                    <li><strong>Red Hat 상용 제품명 미명시</strong>: RFP 전체에 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 단 한 건도 명시되지 않음</li>
+                    <li><strong>OpenShift 도입 필요성 낮음</strong>: 컨테이너 환경은 CSP 제공 관리형 K8S 구성이 명시(CCR-002)되어 있어 OpenShift Container Platform의 직접 도입 근거가 없음</li>
+                    <li><strong>LLMOps 오픈소스 우선 원칙</strong>: 상용 솔루션 제안 시 구매비용을 업체가 부담해야 하므로, Red Hat OpenShift AI 등 상용 LLMOps 제안 시 비용 구조상 불리</li>
+                    <li><strong>클라우드 이용료 제안사 부담</strong>: 클라우드 인프라 이용료·토큰사용료 전액 제안사 부담 조건으로 추가 상용 SW 비용 제안에 제약</li>
+                    <li><strong>경쟁 대체 OS 없음</strong>: Ubuntu, Rocky Linux, VMware 등 직접 경쟁 제품이 명시되지는 않으나, Red Hat 상용 제품도 명시되지 않아 지명 지정 기회 부재</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>OS 제안 여지 (RHEL)</strong>: OS 요건이 "Linux (서버용 개방형 운영체제)"로 기술되어 있어 RHEL이 원천 배제되지 않음. LLM 서버·AI 서버·데이터레이크하우스 노드 등 다수 서버 OS로 RHEL 제안 가능</li>
+                    <li><strong>컨테이너·자동화 제안 여지 (Ansible)</strong>: 7개 과제 통합 구축, 멀티 클라우드·폐쇄망 환경 구성 필요 — Ansible Automation Platform(AAP)을 인프라 자동화·구성 관리 도구로 제안 가능</li>
+                    <li><strong>AI/LLM 인프라 (OpenShift AI / RHEL AI)</strong>: 로컬 LLM 운영(폐쇄망), GPU 자원 효율적 활용 방안 제시 필수 조건이 있어 Red Hat OpenShift AI 또는 RHEL AI를 AI 인프라 플랫폼으로 제안 검토 가능 (단, 비용 업체 부담 조건 감안 필요)</li>
+                    <li><strong>데이터레이크하우스 운영 OS</strong>: HDFS, HBase, Parquet, Delta Lake 기반 데이터레이크하우스 노드에 RHEL을 OS로 제안 가능</li>
+                    <li><strong>대규모 통합 SI 사업</strong>: 약 207억 원 규모의 장기(21개월) 통합 사업으로, 수행사를 통한 RHEL 서버 OS 납품 기회 존재 (SI 파트너 협력 전략 유효)</li>
+                    <li><strong>RFP 내 Red Hat 명시 제품</strong>: 없음 (RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명 전혀 미기재)</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

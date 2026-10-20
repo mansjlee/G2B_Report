@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00287234 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국방전산정보원_5G 기반 모바일 시설업무체계 보안 플랫폼 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>상용SW 직접구매 해당없음 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국방 모바일 업무환경(차세대 국방시설통합정보체계, 개발 중)에서 현장 디지털화를 위한 5G 기반 보안 플랫폼을 구축하는 <strong>국방실험사업</strong></li>
+                    <li>업무전용 안드로이드 태블릿 단말, 상용 5G 네트워크 구간, 데이터 등 모바일 업무 제반 요소에 <strong>ZeroTrust 원칙</strong>을 적용하여 보안 플랫폼 구축</li>
+                    <li>PUF(물리적 복제 불가 기능) 및 PQC(양자내성암호) 신기술을 적용하여 단말 신뢰성 확보, 네트워크 보안 강화, 데이터 유출 방지를 실증하는 것이 핵심 목표</li>
+                    <li>향후 국방 신규 체계구축 시 별도 보안장비 도입 최소화 및 확산성 있는 기반환경 구축을 최종 목표로 함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 총 781,000,000원 (부가세 포함) — 1차(~'26.12.31.) 381,000,000원 / 2차('27.1.1.~) 400,000,000원</li>
+                    <li><strong>사업 기간</strong>: 계약 후 300일 이내 (장기계속계약, 2개년 사업: '26년~'27년)</li>
+                    <li><strong>사업 범위</strong>: ① 단말 영역: Android 인증 Agent 개발, 파일 암호·복호화 / ② 인증·플랫폼 영역: Device 인증 플랫폼 구축, 통합인증 플랫폼 구축, Binding 검증 구현 / ③ 네트워크 영역: VPN Gateway 연동, Device Token 기반 터널링(PQC 적용) / ④ 데이터 보호: 파일 암호화(Download/Upload), 단말 저장 데이터 자동 보호</li>
+                    <li><strong>주요 일정</strong>: 착수보고 → SSR → CDR → PDR → TRR → 종료보고 (2026년 10월 ~ 2027년 6월)</li>
+                    <li><strong>계약 방법</strong>: 제한경쟁입찰(협상에 의한 계약), 기술평가 90% + 가격평가 10%</li>
+                    <li><strong>발주기관</strong>: 국방전산정보원 차세대 국방시설통합정보체계 구축 TF</li>
+                    <li><strong>참가 자격</strong>: 중소·소상공인 SW사업자 한정 (대기업·중견기업 참여 불가, 사업금액 20억 미만)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>담당 부서</strong>: 국방전산정보원 차세대 국방시설통합정보체계 구축 TF</li>
+                    <li><strong>담당자 1</strong>: 대령 강정호 / TEL: 02-748-5480</li>
+                    <li><strong>담당자 2</strong>: 소령 조용영 / TEL: 02-748-5482</li>
+                    <li><strong>이메일</strong>: RFP 내 별도 기재 없음 (입찰공고문 참조)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong>
+                        <ul>
+                            <li>단말 신뢰 기반: 하드웨어 신뢰점(Root of Trust) 기반 보안 부팅, TEE/SE 기반 키 보호, 업무·개인 영역 OS 수준 분리(보안 컨테이너)</li>
+                            <li>인증 체계: 다요소 인증(MFA, 온디바이스), 생존성 검증, 세션 전구간 지속인증, 단말·사용자·보안매체 결합 바인딩</li>
+                            <li>암호 통신: KCMVP 검증필 암호모듈 적용 필수, 다계층(이중) 보안통신 심층방어, PQC·KPQC 전환 대비, VPN 기반 전구간 암호화</li>
+                            <li>ZeroTrust: NIST SP 800-207 기반, PE·PA·PEP 구조, 동적 접근통제, 지속적 신뢰평가</li>
+                            <li>PKI 운영: 계층형 인증기관(Root CA 오프라인 에어갭), OCSP·CRL 연계, X.509 표준, PQC 확장 설계</li>
+                            <li>데이터 보호: 전구간 암호화(ARIA·LEA 등 국가표준 블록암호), DLP, 안전 소거</li>
+                            <li>보안관제: MDM 연동, 온디바이스 MTD, 국방 SIEM 표준 규격 연계, AI/ML 이상행위 탐지</li>
+                            <li>고가용성: Active-Active/Active-Standby 이중화, 자동 절체, 무중단 운영</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W]</strong>: <font color="blue">소프트웨어 구매대상: <strong>해당없음</strong></font> (RFP Ⅱ장 5.나항 및 Ⅵ장 4항 명시) — 통합발주 및 상용SW 직접구매 모두 해당 없음</li>
+                    <li><strong>[구매 명시 H/W]</strong>:
+                        <ul>
+                            <li>인증·키관리 서버 (x86_64 2소켓 24코어 이상, HSM PCIe 장착) 2식</li>
+                            <li>하드웨어 보안모듈(HSM, PCIe 카드형, KCMVP 검증필) 2식</li>
+                            <li>WAS/DB 연동서버 (x86_64 2소켓 24코어 이상) 2식</li>
+                            <li>보안 게이트웨이 서버 (x86_64 2소켓 32코어급, KCMVP 검증필 암호모듈) 2식</li>
+                            <li>네트워크 스위치(L2, 24포트 1G) 2식</li>
+                            <li>보안매체 900대 (KCMVP 검증필, 외장형 또는 내장형 SE/TEE)</li>
+                            <li>업무용 안드로이드 태블릿 900대 (※ 차세대 국방시설통합정보체계 구축사업에서 <strong>별도 구매 예정</strong>, 본 사업 포함 아님)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>[S/W 납품 없음]</strong>: RFP Ⅱ장 5.나항에 "<strong>소프트웨어 구매대상: 해당없음</strong>", Ⅵ장 4항에 "<strong>상용소프트웨어 직접구매 대상: 해당없음</strong>"이 명시되어 있어 상용 SW 납품·구독 기회가 원천적으로 없음</li>
+                    <li><strong>[서버 OS 납품 불가]</strong>: ECR-004 서버 공통사양에 "2년 이상 보안업데이트가 지원되는 64bit 운영체제(공개SW 허용)"로만 기재되어 있어 OS를 특정하지 않으나, SW 직접구매 항목이 없으므로 RHEL 납품 기회 없음</li>
+                    <li><strong>[Red Hat 상용 제품명 전무]</strong>: RFP 전문에 RHEL, OpenShift, Ansible, JBoss, Satellite 등 Red Hat 상용 제품명이 단 한 차례도 언급되지 않음</li>
+                    <li><strong>[컨테이너·K8s 플랫폼 미언급]</strong>: OpenShift·OCP·Kubernetes 제안 근거가 될 컨테이너 플랫폼 도입 요건이 명시되지 않음 (단말 업무·개인 영역 분리를 위한 '보안 컨테이너'는 OS 수준 격리 기능을 의미하며 OCP와 무관)</li>
+                    <li><strong>[순수 개발·실증 사업 성격]</strong>: 국방실험사업(연구개발) 특성상 상용 솔루션 납품보다 자체 개발 및 기술 실증이 목적이며, 상용 SW 분리발주 영향평가도 완료된 사업임</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[서버 OS 미지정]</strong>: 서버 운영체제가 "공개SW 허용"으로만 기재되어 있어 RHEL을 기술적으로 제안할 여지가 이론상 존재하나, SW 구매 항목 자체가 없으므로 납품 기회로 연결되지 않음</li>
+                    <li><strong>[ZeroTrust·자동화 연계 가능성]</strong>: ZeroTrust, PE/PA/PEP 구조, 동적 접근통제 등은 Ansible Automation Platform(AAP)·Red Hat Advanced Cluster Security(ACS) 솔루션의 활용 영역과 기술적으로 연계 가능하나, 본 사업에서 SW 납품이 불가하므로 직접적인 영업 기회로 보기 어려움</li>
+                    <li><strong>[차세대 사업 연계 가능성]</strong>: 본 실험사업의 결과가 "차세대 국방시설통합정보체계 구축사업(~'27.12.31.)"에 반영될 경우, 해당 후속 사업에서 RHEL·OCP·Ansible 등을 제안할 간접적 레퍼런스 확보 가능</li>
+                    <li><strong>[RFP 내 Red Hat 제품명 언급]</strong>: 없음 (0건)</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

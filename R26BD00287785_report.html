@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00287785 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>서울특별시_2027년 정보소통광장·문서공개시스템 유지관리 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 구매 없는 순수 유지관리 용역</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>서울특별시 정보소통광장 및 문서공개시스템의 안정적 운영·유지관리를 목적으로 하는 용역 사업</li>
+                    <li>「공공기관의 정보공개에 관한 법률」에 근거하여 결재문서, 사전공개정보, 회의정보 등 행정정보의 지속적·안정적 공개 서비스 제공</li>
+                    <li>시민의 알권리 보장 및 행정 투명성 제고, 연간 200만 건 이상 행정정보 공개 및 600만 명 이상 방문자 서비스 유지 목표</li>
+                    <li>마스킹 기능 신규 개발, 웹접근성·웹표준 준수, 개인정보 노출 모니터링 등 시스템 고도화 및 품질 개선 포함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 731,629천원 (부가가치세 포함)</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (12개월)</li>
+                    <li><strong>사업 범위</strong>: 정보소통광장·문서공개시스템 운영 및 유지관리 / 마스킹 기능 개발 / 응용SW·상용SW 예방점검 및 유지관리 / 83개 기관 연계시스템 유지관리 / 개인정보 모니터링 / 웹접근성·보안 유지 / 서비스 분석 보고 및 교육지원 ※ HW 및 SW 구매 범위: 없음 / 직접구매: 해당없음</li>
+                    <li><strong>주요 일정</strong>: 2026년 11월 입찰공고 → 2026년 12월 업체선정 및 계약 → 2027년 1월 착수보고 → 2027년 중간보고 → 2027년 12월 완료보고</li>
+                    <li><strong>입찰 방식</strong>: 협상에 의한 계약 / 제한경쟁입찰 (중소 소프트웨어사업자 참여 지원, 대기업·중견기업 참여 불가)</li>
+                    <li><strong>최소 투입 인력</strong>: PM 12M/M, PL 18M/M, 정보소통광장 유지관리 21M/M, 문서공개시스템 유지관리 18M/M, 모니터링 전담 18M/M 이상</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>담당 부서</strong>: 서울특별시 정보시스템과</li>
+                    <li><strong>담당자 1</strong>: 박영옥 / 전화: 02-2133-2601 / 이메일: cathexis@seoul.go.kr</li>
+                    <li><strong>담당자 2</strong>: 김정현 / 전화: 02-2133-2603 / 이메일: hkim0@seoul.go.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기능 개발]</strong> hwpx 파일의 현황펜 블록 영역을 *로 치환하는 마스킹 기능 신규 개발 (SFR-001)</li>
+                    <li><strong>[연계 시스템 유지관리]</strong> 총 83개 기관(업무관리시스템, 자치구 결재시스템, 투자출연기관, 서울시의회, 재정포털 등) 연계 서비스 안정적 유지관리</li>
+                    <li><strong>[개인정보 보호]</strong> 개인정보 노출 위험 문서(일평균 1,000~1,200건) 지속 모니터링 및 패턴 분석·필터링 적용, 개인정보 노출 전담 모니터링 인력 투입 의무</li>
+                    <li><strong>[웹 품질]</strong> 웹접근성(과학기술정보통신부 품질마크 기준), 웹표준(HTML5, UTF-8, W3C 검증), 크로스브라우징(Edge·Chrome·Whale·Firefox), SEO 최적화 유지관리</li>
+                    <li><strong>[성능]</strong> 주요 페이지 용량 3MB 이내, 응답속도 3초 이하 목표, 24시간 무중단 운영, 부하테스트 수행</li>
+                    <li><strong>[보안]</strong> SSL/TLS 구간 암호화, 개인정보 암호화(SHA-256 이상), 접속기록 1년~2년 이상 보관, 소프트웨어 개발보안(시큐어코딩) 적용</li>
+                    <li><strong>[유지관리 대상 SW (통합발주, 수량 명시)]</strong>
+                        <ul>
+                            <li>PDF변환기: 2식 (문서공개시스템)</li>
+                            <li>마스킹 솔루션: 2식 (문서공개시스템)</li>
+                            <li>텍스트 파서: 1식 (문서공개시스템)</li>
+                            <li>웹서버성능모니터링(APM): 2식 (정보소통광장)</li>
+                            <li>개인정보필터링 솔루션: 4식 (정보소통광장, SW·HW 일체형)</li>
+                            <li>문서뷰어: 4식 (정보소통광장)</li>
+                        </ul>
+                        ※ 상기 SW는 신규 구매가 아닌 기존 도입 제품의 유지관리 대상이며, RFP에 "HW 및 SW 구매 범위 - 없음"으로 명시됨
+                    </li>
+                    <li><strong>[데이터]</strong> 범정부 표준 준수 데이터 표준화, 메타데이터 현행화, 공공데이터 개방 연계(DB to DB 또는 OpenAPI)</li>
+                    <li><strong>[프로젝트 관리]</strong> 서울시 정보화사업 추진절차 준수, SW사업저장소(spir.kr) 사업정보 제출, 정보자원 현행화(IRM 지원)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>[SW 구매 없음 — 핵심 불가 요인]</strong> RFP 제안요청 사업범위에 "HW 및 SW 구매 범위 - 없음"으로 명시, 직접구매 사항도 "해당없음"으로 확정되어 있어 RHEL, OpenShift, Ansible 등 Red Hat 상용 제품의 신규 납품·구독 계약 기회가 전혀 없음</li>
+                    <li><strong>[순수 유지관리 용역]</strong> 사업 전체가 기존 시스템의 운영 및 유지관리에 한정되며, 신규 인프라나 플랫폼 도입이 포함되지 않음</li>
+                    <li><strong>[Red Hat 상용 제품명 미명시]</strong> RFP 전문에 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 품목으로 전혀 명시되지 않음</li>
+                    <li><strong>[기존 시스템 환경 비공개]</strong> "정보시스템 구성도 및 제품버전 등 공개될 경우 보안침해 사고 우려"를 이유로 OS, 미들웨어, DBMS 등 현행 제품 정보가 RFP에서 삭제 처리됨. 기술적용계획표에 Linux, RDBMS, Oracle(ORDBMS) 등이 언급되나 구체적 제품명 및 버전 미확인</li>
+                    <li><strong>[중소기업 전용 사업]</strong> 대기업·중견기업 입찰 참여 불가, Red Hat이 직접 입찰 불가 구조이며 파트너(SI)도 중소기업만 참여 가능</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[간접적 Linux 환경 존재]</strong> 기술적용계획표에 서버 OS로 Linux가 적용 검토 대상에 포함되어 있으며, 정보소통광장(Web Server 5식, 검색엔진서버 3식, DB Server 2식) 및 문서공개시스템(WAS 서버, AP서버, 변환서버, 통합DB서버 등) 운영에 Linux 계열 OS가 사용될 가능성 있음</li>
+                    <li><strong>[유지관리 중 OS 라이선스 갱신 가능성 탐색]</strong> 기존 운영 시스템의 상용 SW 유지관리 항목에 OS 라이선스 갱신이 포함될 수 있으므로, 사업 수주 후 현황 파악 단계에서 RHEL 전환 또는 갱신 기회를 확인할 수 있음 (단, 현재 RFP 상에는 근거 없음)</li>
+                    <li><strong>[전자정부 표준프레임워크 적용]</strong> Java 기반 전자정부 표준프레임워크 운영 환경에 JBoss EAP 미들웨어 제안 여지가 이론적으로 존재하나, SW 구매 범위가 없어 현 사업에서는 실질적 제안 불가</li>
+                    <li><strong>[RFP 내 Red Hat 제품명 명시 없음]</strong> RFP 전문에 Red Hat 또는 동의어(RHEL, OpenShift, Ansible, JBoss EAP 등) 제품명이 품목으로 명시된 사례 없음. Red Hat 영업 기회로 직결되는 근거 없음</li>
+                    <li><strong>[결론]</strong> 현 입찰 건은 SW 구매가 완전히 배제된 순수 유지관리 용역이므로 Red Hat 상용 제품 제안 기회 없음. 다만, 사업 수행사(SI)와의 관계 형성을 통해 차기 시스템 구축·전환 사업 시 RHEL/OpenShift 제안 파이프라인 구축 관점에서 관심 유지 권장</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

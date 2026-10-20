@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00287827 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국립암센터_온프레미스 기반 AI 인프라·데이터 허브 구축 및 임상 AI 서비스 실증 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>RHEL 8/9 OS 품목 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국가암AI데이터센터 구현을 위한 <strong>온프레미스 기반 AI 인프라</strong>(GPU/가속기·스토리지·네트워크) 및 <strong>데이터·AI 전주기 통합 관리 체계</strong> 확립</li>
+                    <li>의료기관 내부 데이터 주권·보안 요구를 만족하는 온프레미스 AI 인프라와 운영 자동화 기반 구축</li>
+                    <li>다종 의료정보시스템(HIS/EMR, PACS 등)을 연계하는 <strong>데이터 허브</strong>(표준화·메타데이터·품질·가명/비식별 포함) 구축</li>
+                    <li>AI 서비스 2종 이상(임상업무 효율화/의료영상·텍스트 통합 판독지원 등) 구현·파일럿 실증</li>
+                    <li>생성형 AI 포함 <strong>AI 거버넌스·가드레일·보안체계</strong> 수립 및 운영 내재화</li>
+                    <li>ISO/IEC 42001(AIMS) 등 관리체계 표준 참조, 정책–위험관리–운영–개선의 폐루프 구성</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 총 25억 5천만원(VAT 포함, 장기계속계약 부기) — 1차수(2026): 9.35억 / 2차수(2027): 6.25억 / 3차수(2028): 9.9억</li>
+                    <li><strong>사업 기간</strong>: 계약일로부터 18개월 이내 완료 — 1차수(계약일~2026.12.31), 2차수(2027.1.1~2027.12.31), 3차수(2028.1.1~총 사업기간 종료일)</li>
+                    <li><strong>사업 범위</strong>: ① 온프레미스 AI 인프라(GPU/가속기·스토리지·네트워크) 구축 ② 데이터 허브 구축 ③ MLOps/ModelOps 기반 구축 ④ AI 서비스 개발(2종 이상, 파일럿 실증) ⑤ 보안·가드레일·AI 거버넌스 체계 구축</li>
+                    <li><strong>주요 일정</strong>: 1차수 — GPU 서버 1식 공급·설치·성능시험·검사검수(계약일로부터 5일 이내 반입, 2026.12.31 이전 완료) / 2차수 — 착수·분석·설계, 스토리지(1PB↑)·네트워크·데이터 허브 구축, AI 서비스 MVP→파일럿 / 3차수 — 스토리지 3PB 확보, 최종 고도화·성능 검증, ISO/IEC 42001 인증 획득 지원, 성과평가 및 운영전환 완료</li>
+                    <li><strong>계약 방법</strong>: 제한경쟁입찰(협상에 의한 계약), 장기계속계약(차수별 계약) / 중소기업자 간 경쟁제품, 대기업 참여 제한(사업금액 20억~40억 구간)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주기관</strong>: 국립암센터 (경기도 고양시 일산동구 일산로 323)</li>
+                    <li><strong>센터장</strong>: 손대경 / TEL: 031-920-1636</li>
+                    <li><strong>담당 부서</strong>: 인공지능사업팀</li>
+                    <li><strong>담당자</strong>: 이재동 / TEL: 031-920-0572 (제안 관련 문의)</li>
+                    <li><strong>담당자</strong>: 권병욱 / TEL: 031-920-0552 (제안 관련 문의)</li>
+                    <li><strong>입찰 관련</strong>: 국립암센터 물류관리팀 / TEL: 031-920-1981</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>GPU/가속기 서버(SAR-001): FP8 sparse 노드당 72,000 TFLOPS 이상, HBM 288GB/장 이상, InfiniBand XDR 800Gb/s 이상, SmartNIC/DPU(BlueField-3 또는 동급) 장착</li>
+                            <li>고성능 스토리지(SAR-002): Hot/Warm/Cold 3계층, Usable 3PB 이상(3차수), 1PB 이상(2차수), 컨트롤러 이중화, 캐시 512GB 이상/컨트롤러</li>
+                            <li>컨테이너 오케스트레이션(SAR-004): Kubernetes 기반, GPU Operator/Device Plugin 지원, MIG/MPS/시간분할 자원 효율화</li>
+                            <li>MLOps/ModelOps(DAR-009): 실험추적·모델 레지스트리·CI/CD 배포 파이프라인·재현 가능한 학습 환경 제공</li>
+                            <li>AI 서비스 2종 이상(FUR-001): 임상업무 효율화, 멀티모달 판독지원, 연구지원, 생성형 AI 업무지원 중 선택·구현, RESTful API 및 OpenAPI/Swagger 문서 제출</li>
+                            <li>보안·거버넌스(SER-001~016): Zero Trust 아키텍처, ISMS-P 정렬, 생성형 AI 가드레일, ISO/IEC 42001 인증 준비, SBOM 관리, NIST AI RMF 적용</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매/통합발주 S/W 목록]</strong>
+                        <ul>
+                            <li><strong>GPU 서버 OS(SAR-001)</strong>: Ubuntu 24.04 LTS, <u>Red Hat Enterprise Linux 8/9</u>, 또는 Rocky Linux 9 중 택일 — 설치·제공·기술지원 포함 (1 set)</li>
+                            <li><strong>GPU 제조사 엔터프라이즈 AI 플랫폼 소프트웨어 라이선스(SAR-001)</strong>: GPU 병렬 연산·LLM 학습·추론·MLOps 파이프라인 지원 공인 소프트웨어 환경 (1 set, GPU 서버와 통합 공급)</li>
+                            <li><strong>AI 인프라 통합 운영관리 플랫폼(SAR-012)</strong>: GPU/서버/사용자 현황 모니터링·RDMA(IB/RoCEv2) 통합 지원 웹 기반 플랫폼 SW (1 식)</li>
+                            <li><strong>AI 서비스 개발·배포·운영 통합 플랫폼(SAR-013)</strong>: LLM 파인튜닝·RAG(Simple/Graph)·AI 에이전트 워크플로우·모니터링 웹 기반 플랫폼 SW (1 식)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>OS 선택 경쟁 구도</strong>: SAR-001에서 GPU 서버 OS를 "Ubuntu 24.04 LTS, Red Hat Enterprise Linux 8/9, 또는 Rocky Linux 9 중 택일"로 규정하여, <strong>Ubuntu 24.04 LTS</strong>(경쟁 OS)와 <strong>Rocky Linux 9</strong>(RHEL 대체 커뮤니티 계열)이 동등 대안으로 명시됨 → 수주 사업자가 RHEL 대신 Ubuntu 또는 Rocky Linux를 선택할 경우 납품 기회 소멸</li>
+                    <li><strong>특정 벤더 종속성 최소화(COR-002)</strong>: 개방형 표준 및 산업 표준 인터페이스 우선 채택, 특정 벤더 교체 시 시스템 연속성 보장 설계 원칙 명시 → Red Hat 상용 플랫폼 Lock-in 회피 압력 존재</li>
+                    <li><strong>오픈소스 우선 전략 평가 반영</strong>: 기술평가 항목에 "컨테이너·Kubernetes 기반 GPU 자원 스케줄링, 오픈소스 우선·상용 최소화" 명시 → OpenShift 등 상용 컨테이너 플랫폼 제안 시 감점 가능성</li>
+                    <li><strong>중소기업 참여 제한 사업</strong>: 사업금액 20억~40억 구간으로 대기업 SW사업자 참여 제한 → Red Hat Korea가 직접 수행사로 입찰 불가, 파트너(중소 SI) 통한 간접 공급만 가능</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>🔴 RHEL 8/9 OS 품목 직접 명시 (높음 판정 근거)</strong>: SAR-001 GPU 서버 구성 요구사항에 "<strong>Red Hat Enterprise Linux 8/9</strong>"가 Ubuntu·Rocky Linux와 함께 도입·납품 대상 OS로 명시됨. 수주 SI가 RHEL을 선택 시 라이선스 공급 및 기술지원 계약 확정 (1 set)</li>
+                    <li><strong>RHEL 제안 전략</strong>: SAR-008(운영체제 및 기반 소프트웨어 스택)에서도 "GPU 서버 운영체제(예: Ubuntu LTS, RHEL 등)"로 RHEL 재언급. AI/ML 프레임워크(PyTorch, TensorFlow, vLLM) 호환성 및 GPU 드라이버(CUDA/ROCm) 지원 측면에서 RHEL의 엔터프라이즈 지원·보안패치 주기를 강점으로 어필 가능</li>
+                    <li><strong>OpenShift 제안 기회</strong>: SAR-004(컨테이너 오케스트레이션), SAR-005(다중 테넌시·환경 분리), SAR-007(HA·장애복구), DAR-009(MLOps CI/CD) 등에서 Kubernetes 기반 컨테이너 플랫폼 구축 필수. OpenShift Container Platform(OCP)의 엔터프라이즈 보안·RBAC·Operator 프레임워크를 활용한 GPU 클러스터 관리 제안 가능</li>
+                    <li><strong>Ansible Automation Platform 제안 기회</strong>: SAR-001 1차수 GPU 서버 설치·OS 구성 자동화, SAR-006 통합 모니터링·운영 자동화, SAR-009 단계별 증설 자동화 등 "운영 자동화 기반 구축" 요건에 Ansible AAP 제안 가능</li>
+                    <li><strong>Quay / Red Hat Advanced Cluster Security(ACS) 제안 기회</strong>: SER-009(SBOM·공급망 보안), SAR-004(컨테이너 이미지 레지스트리 CI/CD), SER-016(Zero Trust·최소권한) 요구사항에 Quay(컨테이너 레지스트리) 및 ACS(컨테이너 보안) 제안 가능</li>
+                    <li><strong>생성형 AI·MLOps 연계</strong>: SAR-013(LLM 파인튜닝·RAG·AI 에이전트 플랫폼), DAR-009(MLOps 파이프라인), SER-015(ISO/IEC 42001 AI 거버넌스) 요건에 Red Hat OpenShift AI(RHEL AI) 솔루션 제안 가능</li>
+                    <li><strong>공공·의료 분야 레퍼런스 활용</strong>: 국립암센터는 공공의료기관으로 ISMS-P, 개인정보보호법, AI 기본법 등 강력한 컴플라이언스 요건 보유. RHEL의 FIPS 140-2/3 인증, CC 인증 보안 강점이 SER-001(공공 보안 규정 준수) 평가 항목에서 유리하게 작용</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

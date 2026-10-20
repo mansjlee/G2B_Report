@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00287514 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>부천시_2027~2028년 서버 통합 유지관리 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>RHEL 유지관리 대상 포함, 신규 납품 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>부천시 정보시스템의 24시간 365일 안정적 운영 및 서비스 개선을 위한 서버 통합 유지관리 용역</li>
+                        <li>H/W(서버, 부대장비) 및 S/W(OS, DBMS 등) 통합 유지관리를 통한 정보시스템 운영 효율성 증대</li>
+                        <li>전문인력 1명 상주를 통한 주기적 사전 장애예방 및 신속한 사후 장애조치로 민원서비스 중단 최소화</li>
+                        <li>장애 응급조치 및 복구 기술이전을 통해 부천시의 자체 대처능력 배양</li>
+                        <li>무정전전원장치(UPS), 항온항습기, 전산실 운영 유지관리 포함</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 총 10억 2,277만원 (부가가치세 포함) — 1차(2027년) 5억 977만원, 2차(2028년) 5억 1,300만원</li>
+                        <li><strong>사업 기간</strong>: 2027.01.01 ~ 2028.12.31 (24개월, 장기계속계약 / 회계연도 기준 1년 단위 계약)</li>
+                        <li><strong>사업 범위</strong>: 주전산기 85대, 저장장비 11대, 백업장비 8대, 부대장비/스위치 17대 (H/W 합계 121대, 취득금액 약 32.6억원) + S/W 66개 (OS 12개, DBMS 16개, WEB/WAS 22개, 백업S/W 등 16개, 취득금액 약 14.4억원) 통합 유지관리</li>
+                        <li><strong>계약 방법</strong>: 제한경쟁입찰(협상에 의한 계약), 중소 소프트웨어사업자만 입찰 참가 가능 (총 사업금액 20억원 미만), 공동수급 허용 (공동이행방식, 5인 이하)</li>
+                        <li><strong>주요 일정</strong>: 제안요청서 발행 2026년 10월 / 사업 시작 2027년 1월 1일 / 계약 갱신 기준 2028년 1월 1일</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>담당 부서</strong>: 부천시 정보통신과 행정정보팀</li>
+                        <li><strong>팀장</strong>: 이영선 / 전화: 032-625-2375</li>
+                        <li><strong>주무관</strong>: 이세영 / 전화: 032-625-2376</li>
+                        <li><strong>이메일</strong>: RFP 내 별도 명시 없음</li>
+                        <li><strong>기관 주소</strong>: 부천시 길주로 210 (부천시청)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong>
+                            <ul>
+                                <li>H/W 및 S/W 유지관리: 상태점검, 용량/가용성 관리, 장애예방, 장애복구, 자료백업 및 복구 지원</li>
+                                <li>범정부 정보시스템 예방점검체계 준수: 일상점검(일/월), 특별점검(연), 구조진단(3년) 수행</li>
+                                <li>상주인력 1명 이상 (중급기술자 이상, 월~금 09:00~18:00 상주)</li>
+                                <li>장애 발생 시 2시간 내 현장 도착, 단순장애 2시간·중장애 4시간·네트워크/스토리지 6시간 이내 정상가동 조치</li>
+                                <li>연 1회 이상 장애대응 모의훈련 실시</li>
+                                <li>보안예방 활동 (H/W, S/W 취약점 조치 기술지원)</li>
+                            </ul>
+                        </li>
+                        <li><strong>[유지관리 대상 S/W 목록]</strong> ※ 신규 구매가 아닌 기존 도입 S/W 유지관리 대상
+                            <ul>
+                                <li><strong>OS</strong>: Redhat Enterprise Linux Server Standard 1개 (업무포털), RedHat 8.3 1개 (시포털), VMware vSphere Enterprise 2개 (가상화솔루션), Ubuntu 22.04 1개 (PC자산관리), MS Windows Server 2012/2016/2019 다수, MS 2019 Server 2개</li>
+                                <li><strong>DBMS</strong>: Oracle 11/11g Standard Edition 7개, Oracle 19c 2개, Oracle Standard Edition2 1개, Oracle Standard Edition One 3개, Oracle 9i 1개, MySQL 8 1개, Altibase 5.3.5.24 1개, MSSQL 2019 1개 (합계 16개)</li>
+                                <li><strong>WEB/WAS</strong>: WebtoB 4.x/5 (티맥스) 다수, JEUS 6/7/8 (티맥스) 다수, Resin Pro 4.0.47 1개 (합계 22개)</li>
+                                <li><strong>백업S/W</strong>: Netvault 다수 (7.x, 8.5.2, 12.4, 13.x 등 16개)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[S/W 신규 납품 없음]</strong> 본 사업은 기존 도입 H/W 및 S/W에 대한 순수 유지관리 용역으로, 신규 S/W 도입·납품·구독 구매 항목이 RFP에 명시되어 있지 않음 → Red Hat 신규 상용 제품 납품 기회 없음</li>
+                        <li><strong>[VMware 가상화 솔루션 확정 운영 중]</strong> VMware vSphere Enterprise 2개가 기존 가상화 솔루션으로 이미 구축·운영 중 (HP DL380 G10 가상화 서버 4대 연계) → 경쟁 제품 고착화</li>
+                        <li><strong>[Ubuntu OS 운영 중]</strong> Ubuntu 22.04가 PC 자산관리 시스템 OS로 기도입·운영 중 (Canonical) → RHEL 전환 여지 낮음</li>
+                        <li><strong>[Oracle DBMS 다수 운영]</strong> Oracle DBMS가 16개 중 13개로 압도적 다수를 차지하며 DBMS 환경 고착화 → Red Hat Data Grid, AMQ 등 제안 여지 희박</li>
+                        <li><strong>[TmaxSoft WEB/WAS 지배적]</strong> WebtoB, JEUS(TmaxSoft) 제품이 WEB/WAS 22개 중 대다수를 차지 → JBoss EAP 등 Red Hat 미들웨어 제안 불가</li>
+                        <li><strong>[낮은 사업규모 및 참여자격 제한]</strong> 총 사업금액 20억원 미만으로 중소기업만 참여 가능, Red Hat 직접 제안 구조가 아닌 유지관리 업체 채널 영업 필요</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[기존 RHEL 운영 환경 — 구독 갱신 기회]</strong>
+                            <ul>
+                                <li>Redhat Enterprise Linux Server Standard (2018년 도입, 업무포털 서버 OS) — 유지관리 대상 24개월, 구독 갱신 시점 도래 가능성</li>
+                                <li>RedHat 8.3 (2023년 도입, 시포털 서버 OS) — RHEL 최신 버전 업그레이드 및 구독 갱신 제안 여지</li>
+                            </ul>
+                        </li>
+                        <li><strong>[빅데이터플랫폼 클라우드 환경]</strong> HPE DL380 Gen10 Plus 서버 8대 (Control node 3대, Compute node 5대), 배포서버 1대로 구성된 클라우드 플랫폼 운영 중 → OpenShift Container Platform 또는 RHEL 기반 제안 잠재 가능성</li>
+                        <li><strong>[가상화 인프라 전환 잠재 기회]</strong> VMware vSphere Enterprise 기반 가상화 서버 4대 운영 중 → 향후 VMware 라이선스 정책 변화에 따른 OpenShift Virtualization(RHEV) 전환 제안 어프로치 가능 (유지관리 기간 내 관계 구축)</li>
+                        <li><strong>[범정부 예방점검 프레임워크 내 RHV 항목 포함]</strong> 붙임7 클라우드 점검항목에 "RHV (RHEV-M 가상화SW 상태 점검, 하이퍼바이저 SW 상태 점검)" 항목이 포함되어 있어 RHV 환경 도입 가능성 존재</li>
+                        <li><strong>[컨테이너/OpenShift 아키텍처 점검 항목 포함]</strong> 붙임7 예방점검 클라우드 영역에 Master, Infra, Router, Worker 노드 등 OpenShift 아키텍처 기반 점검 항목이 수록 → 향후 컨테이너 플랫폼 확장 시 OpenShift 제안 토대 구축 가능</li>
+                        <li><strong>[유지관리 기간 내 관계 및 인사이트 확보]</strong> 2년간 부천시 IT 인프라 전반을 관리하는 유지관리 업체(채널 파트너) 접점을 통해 향후 신규 투자 사업 발굴 및 RHEL 확장 제안 기회 모색 가능</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
