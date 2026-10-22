@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00288992 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국립박물관단지 통합운영지원센터_2027년 클라우드 서비스 이용 및 운영 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>RHEL 3식(16vCPU×2, 8vCPU×1) 품목 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>행정중심복합도시 국립박물관단지 통합운영지원센터가 2023년 12월부터 구축·운영 중인 클라우드 인프라(대민 홈페이지, 파일서버, 구독형 서비스 등)의 안정적 운영 및 서비스 품질 확보</li>
+                    <li>2027년 국립도시건축박물관 개관 및 기관 인력 증원에 따른 신규 홈페이지, 그룹웨어·ERP, 보안솔루션 등 신규 클라우드 인프라 운영·증설 및 기술지원</li>
+                    <li>「클라우드컴퓨팅법」 및 관련 고시에 따라 공공기관 보안수준을 충족하는 클라우드 서비스 도입으로 정보보안 및 서비스 안정성 확보</li>
+                    <li>대민서비스의 안정적 지속 제공 및 기관 행정업무 연속성 확보</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 587,760,000원 (부가세 포함) / 추정금액 기준, 국회 예산 확정 결과에 따라 감액 변경 가능</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (12개월)</li>
+                    <li><strong>사업 범위</strong>: ① 가상서버(VM) – 홈페이지·그룹웨어·ERP·예약시스템 등 다수 운영, ② 파일서버(웹하드), ③ 네트워크(공인IP·로드밸런서·SSL VPN·IPSec VPN 등), ④ 보안서비스(DDoS·IPS·IDS·웹방화벽·SMS알림), ⑤ 구독형 SW(DB암호화·DB이중화·접근제어·이메일보안·통합로그관리), ⑥ 백업·소산, ⑦ 운영서비스(WEB/WAS/DBMS 기술지원, 매니지드서비스, DB분리·이중화 구성)</li>
+                    <li><strong>계약 방법</strong>: 제한경쟁입찰 (협상에 의한 계약) / 기술평가 90% + 가격평가 10%</li>
+                    <li><strong>입찰 자격</strong>: 중소기업만 입찰 가능 (20억 미만 사업, 대기업·중견기업 참여 제한)</li>
+                    <li><strong>주요 일정</strong>: 2026년 12월 중 입찰자 선정 및 계약·착수, 2027년 1월~12월 운영 서비스 제공, 신규 서비스·인프라 구성, DB 서버 분리 및 이중화, 취약점 진단 등 수행</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>사업담당자</strong>: 시설안전부 / 황승준 (전임) / 044-251-3043</li>
+                    <li><strong>계약담당자</strong>: 총무회계부 / 김채연 (전임) / 044-251-3033</li>
+                    <li><strong>수요기관</strong>: 행정중심복합도시 국립박물관단지 통합운영지원센터 (세종특별자치시 어울누리로 130)</li>
+                    <li><strong>문의처</strong>: 시설안전부 황승준 전임 (044-251-3043)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>가상서버(VM) 28종 구성: 도시건축박물관·대표홈페이지·어린이박물관·통합예약시스템 등의 WEB/WAS/DB 운영서버·개발서버, 그룹웨어/ERP, 파일서버, 통합로그관리, DB암호화·접근제어 매니지드서버, KMS 서버 등</li>
+                            <li>WEB-WAS-DB 3계층 구성 원칙, AutoScaling, 세션 클러스터링, 고가용성(HA) 구성</li>
+                            <li>동시접속 2,000명 이상 안정 지원, 24시간 365일 운영 및 기술지원 체계</li>
+                            <li>공공기관 클라우드 보안인증(CSAP) 취득 인프라 기반 서비스 제공 필수</li>
+                            <li>국가정보원 검증필 보안제품(서버백신, 시스템접근제어 등) 적용 필수</li>
+                            <li>DevOps 환경(Private Git Repository 등) 지원, DB Cluster·Failover 구성</li>
+                        </ul>
+                    </li>
+                    <li><strong>[RFP 구매 명시 S/W – 통합발주 품목]</strong>
+                        <ul>
+                            <li><strong>운영체제</strong>
+                                <ul>
+                                    <li>Microsoft Windows Server (x64): 1식</li>
+                                    <li>Microsoft MSSQL Server Standard (x64, 그룹웨어·ERP 등 3식): 3식</li>
+                                    <li>Linux (Rocky Linux, x64): 45식</li>
+                                    <li><strong>Red Hat Enterprise Linux (16vCPU, x64): 2식</strong></li>
+                                    <li><strong>Red Hat Enterprise Linux (8vCPU, x64): 1식</strong></li>
+                                </ul>
+                            </li>
+                            <li><strong>백업 라이선스</strong>: 가상서버와 호환 가능한 백업솔루션 라이선스 – 41조</li>
+                            <li><strong>DB이중화 솔루션</strong>: 대민서비스 DB서버 이중화솔루션 증설 – 4set</li>
+                            <li><strong>DB암호화 솔루션</strong>: 증설(8core) 13식 + 증설(16core) 2식 + 유지보수서비스 증설 15식</li>
+                            <li><strong>파일서버 유저라이선스</strong>: 업무용 파일서버 유저라이선스 증설 – 300조</li>
+                            <li><strong>이메일보안솔루션</strong>: 구성 및 제공 1식 + 라이선스 구독 300조</li>
+                            <li><strong>시스템접근제어</strong>: Enterprise Mgmt. Module(접근제어·계정관리) 1식 + 노드라이선스 80조</li>
+                            <li><strong>서버백신</strong>: 중앙관리형 Linux/Windows 서버백신 (국정원 보안적합성 검증필) – 41식</li>
+                            <li><strong>통합로그관리 솔루션</strong>: 구성 1식 + 구독(일 400만 Line 이상) 1식</li>
+                            <li><strong>웹방화벽(완전관리형, 이중화)</strong>: SA-100, 300Mbps 이상 – 2식</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>Rocky Linux 대규모 명시</strong>: 운영체제 항목에 Rocky Linux(x64) 45식이 명시되어 있어, VM 대부분의 OS가 Rocky Linux로 확정됨. RHEL 전환 제안 여지가 제한적</li>
+                    <li><strong>WEB/WAS 오픈소스(무료) 지정</strong>: WEB·WAS·DBMS 애플리케이션을 오픈소스(무료) 제공으로 명시하여 JBoss EAP 등 Red Hat 유료 미들웨어 제안 불가</li>
+                    <li><strong>구독형 SW 대부분 타 벤더 제품 특정</strong>: DB암호화, DB이중화, 시스템접근제어, 이메일보안, 통합로그관리, 서버백신 등 보안·솔루션 품목은 이미 타 전문 벤더 제품으로 구성되어 있어 Red Hat 솔루션 대체 불가</li>
+                    <li><strong>중소기업 입찰 제한</strong>: 20억 미만 사업으로 대기업·중견기업 입찰 참여 불가. Red Hat Korea가 직접 입찰 불가하며, Red Hat 파트너(중소기업) 통해 납품 형태로만 참여 가능</li>
+                    <li><strong>Ansible/OpenShift 등 자동화·컨테이너 플랫폼 요구 없음</strong>: RFP 내 Kubernetes, 컨테이너, Ansible 관련 기술 요구사항 명시 없음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>RHEL 상용 제품 구매 품목 명시 (핵심 기회)</strong>:
+                        <ul>
+                            <li>Red Hat Enterprise Linux (16vCPU), x64 – <strong>2식</strong></li>
+                            <li>Red Hat Enterprise Linux (8vCPU), x64 – <strong>1식</strong></li>
+                            <li>총 3식의 RHEL이 운영체제 구매 항목으로 명확히 명시됨 → 도입 확정 기회</li>
+                        </ul>
+                    </li>
+                    <li><strong>그룹웨어/ERP 운영서버 연계 가능성</strong>: 그룹웨어/ERP 운영서버(16vCPU, 128GB) 2식 및 개발서버(8vCPU, 32GB) 1식은 고사양 서버로, RHEL이 해당 VM의 운영체제로 적용된 것으로 추정됨. ERP 등 기간계 시스템의 안정성·지원 요건과 RHEL의 강점 일치</li>
+                    <li><strong>공공 보안 요건 적합성</strong>: RFP에서 Supported 버전 제공 필수(EOS 버전 불가)로 명시. RHEL은 장기 지원(Extended Life Cycle Support) 및 보안 패치 체계가 강점으로, 공공기관 보안 요건과 부합</li>
+                    <li><strong>Red Hat Satellite 제안 여지</strong>: 45식(Rocky Linux) + 3식(RHEL) 등 다수 Linux VM 운영 환경에서 패치 관리·구성 자동화를 위한 Red Hat Satellite 제안 가능 (파트너 통해)</li>
+                    <li><strong>파트너 납품 영업 전략</strong>: 낙찰 예정 클라우드 운영 중소기업(파트너)에 대한 사전 영업을 통해 RHEL 3식 납품 및 추가 RHEL 전환(Rocky Linux → RHEL) 제안 기회 확보 필요</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00288619 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>보령시_인구감소 대응 데이터실증 플랫폼 구축(용역) - 분석 리포트</h2>
+
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange">중간<br>OS/PaaS 미지정, OpenShift·RH-SSO 제안여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>충청남도 보령시가 지속적인 인구 감소에 선제적으로 대응하기 위해 데이터 수집·저장·분석·개방이 가능한 데이터 실증 플랫폼을 구축하는 사업</li>
+                        <li>인구, 주거, 교통, 편의시설 등 정주 여건 관련 특화데이터를 AI가 즉시 활용할 수 있도록 정제·표준화(AI-Ready Data)하여 데이터 기반 행정 혁신 도모</li>
+                        <li>생성형 AI 언어모델(LLM) 및 RAG 기반 AI 에이전트를 활용한 공직자 행정지원 및 맞춤형 대민서비스 구현</li>
+                        <li>데이터 분석 결과 시각화 대시보드 및 대국민 웹서비스 구축을 통한 데이터 기반 행정 활성화 및 공무원 업무 효율성 향상</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 1,161,500천원 (부가가치세 포함) — 1차 400,000천원 / 2차 400,000천원 / 3차 361,500천원</li>
+                        <li><strong>사업 기간</strong>: 계약일로부터 30개월 (장기계속계약, 3차년도 구분 수행)</li>
+                        <li><strong>사업 범위</strong>: ① 인구감소 대응 데이터 실증 플랫폼 구축(내부용) — 클라우드 기반 데이터 플랫폼, RAG 기반 AI, AI DLP, NLQ 기반 시각화 / ② 도내 특화데이터 대민서비스 플랫폼 구축 — 대민용 웹포털, 대민 AI 에이전트 / ③ 2차: 내부망 AI 고도화, 행정용 에이전트 개발 / ④ 3차: 대민 서비스 확장, 충청남도 내 타 지자체 공동활용 멀티테넌시 구조 마련</li>
+                        <li><strong>주요 일정</strong>: 1차년도 착수(6개월) → 클라우드 인프라 구축, 내부용 데이터 플랫폼·AI 구축, 대시보드·사이니지 설치 / 2차년도(12개월) → 내부망 AI 고도화, 행정용 에이전트 개발 / 3차년도(12개월) → 대민 서비스 확장, 도내 공동사용 기반 마련 / ※ H/W·상용SW는 본 용역과 분리하여 별도 발주</li>
+                        <li><strong>계약방법</strong>: 제한경쟁입찰 (협상에 의한 계약), 중소 소프트웨어사업자 한정 (대기업·중견기업 참여 불가)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>소속 부서</strong>: 충청남도 보령시 홍보미디어실 (데이터통계팀)</li>
+                        <li><strong>직위</strong>: 팀장</li>
+                        <li><strong>성명</strong>: 오혜영</li>
+                        <li><strong>전화번호</strong>: 041-930-3154</li>
+                        <li><strong>이메일</strong>: obbing@korea.kr</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[핵심 기술 요구사항]</strong>
+                            <ul>
+                                <li>클라우드 기반 데이터 플랫폼 구축: 민간데이터(73종) 적재, 외부API/파일/IoT 센서 연계 수집 파이프라인, 메타데이터·카탈로그 시스템 구축</li>
+                                <li>RAG(Retrieval-Augmented Generation) 기반 AI 구현: 행정문서 지식화 파이프라인(텍스트 추출·청킹·임베딩), 벡터DB 인덱싱, 근거 제시형 응답</li>
+                                <li>AI DLP(데이터유출방지) 도입: 프롬프트 입력·출력 민감정보 탐지·차단·마스킹, 국정원 보안성 검토 대응</li>
+                                <li>NLQ(자연어 질의) 기반 데이터 시각화 및 PDP 연계, 대시보드(노코드 기반)</li>
+                                <li>업무지원용 AI 플랫폼 구축: 단일/다중 Agent 운영, AgentOps(Agent 운영관리 체계), HITL(Human-in-the-Loop) 통제 기능</li>
+                                <li>업무용 AI 에이전트 5종 이상 개발 (행정 업무지원 특화)</li>
+                                <li>대민 서비스용 포털 구축: 전자정부 표준프레임워크 기반, 반응형 웹, 공공데이터 개방, 대민용 AI 에이전트 연계</li>
+                                <li>보안등급 기반 AI 라우팅: 내부 LLM↔외부 LLM 자동 분기, 망분리 환경 고려</li>
+                                <li>3차년도: 멀티테넌시(Tenancy) 구조 마련, 관광·민원 AI 챗봇·콜봇 구축</li>
+                            </ul>
+                        </li>
+                        <li><strong>[직접구매 대상 상용 소프트웨어 (붙임 1) — 발주기관(보령시) 직접구매]</strong>
+                            <ul>
+                                <li>AI 솔루션 12개 (직접구매)</li>
+                                <li>BI 솔루션 1개 (직접구매)</li>
+                                <li>DBMS 1개 (직접구매)</li>
+                                <li>클라우드 PaaS 1개 (직접구매)</li>
+                                <li>SSO 1개 (직접구매)</li>
+                                <li>전자정부 표준프레임워크 콤포넌트 솔루션 10개 (직접구매)</li>
+                                <li>데이터 전처리 솔루션 1개 (직접구매)</li>
+                                <li>프롬프트 관리 솔루션 1개 (직접구매)</li>
+                                <li>망연계 솔루션 1개 (직접구매)</li>
+                                <li>※ 상기 SW는 모두 조달쇼핑몰 직접구매 방식이며, 본 용역(통합발주)에는 S/W 납품이 포함되지 않음</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>S/W 납품 분리 발주</strong>: RFP 명시 — "사업추진에 필요한 H/W, 상용SW는 본 용역과 분리하여 별도 발주" → 본 용역(R26BD00288619)은 순수 SW 개발·구축 용역으로, SI 사업자가 직접 SW를 납품·공급하는 구조가 아님. Red Hat 제품도 용역사업자 통한 통합발주 대상이 아님.</li>
+                        <li><strong>직접구매 방식</strong>: 붙임 1의 상용SW 9개 품목은 모두 발주기관(보령시)이 조달쇼핑몰을 통해 직접 구매하는 방식 — 제안사가 SW 선정권을 갖지 않으며, 발주기관 자체 선택으로 진행됨.</li>
+                        <li><strong>Red Hat 상용 제품명 미명시</strong>: RFP 전문, 과업지시서, 직접구매 목록 어디에도 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 품목으로 명시되지 않음.</li>
+                        <li><strong>경쟁 제품 명시 없음</strong>: Ubuntu, Rocky Linux, VMware 등 명시적 경쟁 제품도 지정되지 않아 배제 조건은 없으나, Red Hat 특정 지명도 없음.</li>
+                        <li><strong>참여 제한</strong>: 사업금액 20억원 미만 기준으로 대기업·중견기업 참여 불가 → Red Hat Korea 직접 입찰 불가 구조.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[클라우드 PaaS 1식 직접구매 → OpenShift Container Platform 제안 기회]</strong>: 붙임 1에 "클라우드 PaaS 1식" 직접구매 품목 존재. 발주기관(보령시)이 조달쇼핑몰에서 선택 시 OpenShift Container Platform(OCP) 제안 가능. 3차년도 멀티테넌시 구조 요구사항과 OpenShift의 멀티테넌트 Namespace 기능이 강점 일치.</li>
+                        <li><strong>[SSO 1식 직접구매 → Red Hat SSO(Keycloak) 제안 기회]</strong>: 붙임 1에 "SSO 1식" 직접구매 품목 존재. 기존 SSO 연동 기반 RBAC(역할 기반 접근제어) 구현 요구사항(SFR-001)과 Red Hat SSO(RH-SSO, Keycloak 기반 상용) 강점 일치.</li>
+                        <li><strong>[Linux OS 미지정 → RHEL 제안여지]</strong>: 기술적용계획표(붙임 2) 운영체제 항목에 "Linux" 적용 표시(○). 특정 배포판 미지정으로 RHEL 제안 가능. 국정원 보안성 검토 대응 요구(SER-001, SER-010) 및 보안취약점 점검 요건에서 RHEL의 보안 인증(CC인증 등) 강점 활용 가능.</li>
+                        <li><strong>[AI 플랫폼 Private/On-Premise 운영 → OpenShift AI 제안여지]</strong>: SFR-006에서 "Public Cloud, Private Cloud, On-Premise 환경에서 운영 가능한 구조" 요구 및 2차년도 "고성능 AI서버 기반 내부 LLM 추론환경 구축" 요구 → OpenShift AI(RHEL AI) 기반 프라이빗 LLM 추론 환경 제안 가능.</li>
+                        <li><strong>[자동화 요구 → Ansible Automation Platform 제안여지]</strong>: 클라우드 인프라 구축, 데이터 수집 스케줄링, 보안 하드닝, 형상관리 요구사항 다수 → AAP(Ansible Automation Platform) 기반 인프라 자동화 및 보안 정책 관리 제안 가능.</li>
+                        <li><strong>[AI 솔루션 12식 직접구매 항목]</strong>: 구체적 제품명 미명시 상태로, Red Hat 파트너사를 통한 AI 솔루션 포함 가능성 존재. 단, 직접구매 방식이므로 Red Hat 측 사전 영업 활동(발주기관 접촉, 제품 등록) 필요.</li>
+                        <li><strong>※ RFP 내 Red Hat 제품명·수량 명시: 없음</strong> (직접구매 목록 포함 전문 어디에도 Red Hat 상용 제품 미명시)</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
