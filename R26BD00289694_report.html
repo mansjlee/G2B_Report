@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00289694 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국지역정보개발원_2027년도 지방세외수입정보시스템 운영관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>RHEL·RHOSP·RHOVE 도입·업그레이드 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>218개 지방정부(16개 시도, 202개 시군구) 및 지방공무원 11만여 명이 사용하는 <strong>지방세외수입정보시스템</strong>의 안정적 운영·유지관리 수행</li>
+                    <li>지방세외수입 부과·징수·체납관리 등 핵심 세무업무 처리를 지원하는 응용SW 유지관리 및 기능 개선</li>
+                    <li>세외수입 관련 법·제도 변경 등 외부환경 변화에 적기 대응하여 DB·SW 반영</li>
+                    <li>클라우드 운영 인프라(HW 및 상용SW) 안정적 운영·유지관리 및 보안관제 체계 운영</li>
+                    <li>사용자 편의성 증대를 위한 의견수렴, 기술지원, 교육 지원</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 금 11,019,644천원 (VAT 포함) / 약 110억 원 규모</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (1년)</li>
+                    <li><strong>사업 범위</strong>: ① 지방세외수입정보시스템 응용SW 유지관리 ② 인프라(HW·상용SW) 운영지원 및 유지보수(HW 3식, SW 35종 제안사 수행) ③ 클라우드 플랫폼 기술지원 종료 대응 및 RHOVE 전환(업그레이드) ④ 사용자 교육·기술지원 ⑤ 보안관제 체계 운영 ⑥ 지방정부 개별시스템(주정차) 데이터 통합</li>
+                    <li><strong>계약 방법</strong>: 일반경쟁입찰, 협상에 의한 계약체결 / 80억원 이상 사업으로 일정 규모 이상 대기업 참여 가능</li>
+                    <li><strong>주요 일정</strong>: 착수보고 및 완료보고(1월·12월), 응용SW 유지관리(연중), 감리(요구정의·설계·종료), 서비스수준관리(SLA) 연중, 사용자 만족도 조사(연중)</li>
+                    <li><strong>사업 유형</strong>: 행정안전부·지방정부 수탁사업 (운영 및 유지관리)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주기관</strong>: 한국지역정보개발원 (KLID)</li>
+                    <li><strong>담당 부서</strong>: 세외수입정보부</li>
+                    <li><strong>사업 책임자</strong>: 부장 서은진 / TEL: 02-2031-9750 / FAX: 02-2031-9701</li>
+                    <li><strong>실무 담당자</strong>: 선임 박승철 / TEL: 02-2031-9759</li>
+                    <li><strong>이메일</strong>: scpark@klid.or.kr</li>
+                    <li><strong>문의 방법</strong>: 전화 또는 방문 질의 (응답사항은 법적 효력 없음), 각종 자료는 원칙적으로 비공개·방문 열람</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong>
+                        <ul>
+                            <li>응용SW 유지관리: 법·제도 변경 반영, 지방정부 기능개선 요구사항 적용, CI/CD 운영, 블록체인·SSO 솔루션 운영관리</li>
+                            <li>클라우드 플랫폼 RHOVE 전환: 기술지원 종료된 RHV 4.4(관리노드), RHOSP 16.1(컴퓨트노드), RHOCP 4.1(워커노드)를 기존 보유 HW 활용하여 RHOVE(OpenShift Virtualization Engine) 기반으로 전환·업그레이드</li>
+                            <li>인프라 유지관리: HW 3식(x86서버#8 통계DB 1대, 개인정보접근이력 2대) 및 상용SW 35종 유지보수</li>
+                            <li>AI 활용 단속사진 자동인식, 현장행정앱 개선, 납부자관리 기능 강화, 체납관리 고도화</li>
+                            <li>365일 24시간 운영 원칙, SLA A2등급 기준 준수(장애 2등급 가용률 99.90% 이상)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[통합발주 S/W 구매 목록]</strong> (직접구매 제외 항목 – 기 도입 제품 증설·업그레이드)
+                        <ul>
+                            <li><strong>음성변환 (VoiceCode V2.0)</strong>: 4식 1조 증설</li>
+                            <li><strong>WAS (TMAX JEUS 8.5)</strong>: 8core 1조 증설 (리포트서버용)</li>
+                            <li><strong>리포팅도구 (CLIP report V5.0)</strong>: 8core 1조 증설</li>
+                            <li><strong>IaaS 가상화 플랫폼 → RHOVE 업그레이드 (RedHat OpenShift Virtualization Engine)</strong>: 기 도입 RedHat OpenStack Platform의 라이선스 업그레이드·전환</li>
+                            <li><strong>IMDG (Hazelcast IMDG Enterprise HD)</strong>: 3식 1조 증설</li>
+                            <li><strong>스토리지 (NVMe 기반, Usable 6.2TB 이상)</strong>: 11.4TB 1조 증설</li>
+                        </ul>
+                    </li>
+                    <li><strong>[인프라 운영사업자 수행 SW 중 Red Hat 제품 유지보수 대상]</strong>
+                        <ul>
+                            <li><strong>레드햇 오픈스택 플랫폼 (Red Hat OpenStack Platform)</strong>: 2식</li>
+                            <li><strong>레드햇 엔터프라이즈 리눅스 (RHEL)</strong>: 2식</li>
+                            <li>※ 위 2종은 인프라 운영사업자가 유지관리 수행 (제안사 범위 외)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 공급 포함 여부</strong>: S/W 납품·구독 항목 포함 사업 (불가능 요소 해당 없음)</li>
+                    <li><strong>경쟁 제품 명시</strong>:
+                        <ul>
+                            <li>WAS: <strong>TMAX JEUS 8.5</strong>가 기 도입 제품으로 확정 (JBoss EAP 대체 불가)</li>
+                            <li>IMDG: <strong>Hazelcast IMDG Enterprise HD</strong>가 기 도입 제품으로 확정 (Red Hat Data Grid와 경쟁)</li>
+                            <li>리포팅도구: <strong>CLIP report V5.0</strong>으로 확정</li>
+                            <li>음성변환: <strong>VoiceCode V2.0</strong>으로 확정</li>
+                        </ul>
+                    </li>
+                    <li><strong>인프라 운영 분리</strong>: RHEL 2식, RHOSP 2식의 유지관리는 별도 인프라 운영사업자가 수행 (본 사업 제안사 수행 범위 제외) → 해당 제품 유지보수 계약은 본 제안사가 직접 수행하지 않음</li>
+                    <li><strong>RHOVE 전환 범위 제한</strong>: 신규 HW 도입 없이 기존 보유 장비 활용 원칙으로 하드웨어 추가 발주 불가</li>
+                    <li><strong>사업 구조</strong>: SI·통합발주 방식으로 Red Hat이 직접 입찰하기 어려운 구조 (단, 영업 기회로 간주)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[RFP에 명시된 Red Hat 상용 제품 – 직접 근거]</strong>
+                        <ul>
+                            <li><strong>RedHat OpenStack Platform (RHOSP)</strong>: ECR-06 기 도입 제품으로 명시, RHOVE로 업그레이드 대상</li>
+                            <li><strong>RHOVE (RedHat OpenShift Virtualization Engine)</strong>: ECR-06 목표 플랫폼으로 명시, 통합발주 SW 업그레이드 대상</li>
+                            <li><strong>RHV (Red Hat Virtualization) 4.4</strong>: ECR-06 현행 클라우드 관리노드로 명시</li>
+                            <li><strong>RHOCP (Red Hat OpenShift Container Platform) 4.1</strong>: ECR-06 현행 워커노드로 명시</li>
+                            <li><strong>레드햇 오픈스택 플랫폼 2식</strong>: MPR-15 인프라 운영사업자 수행 SW 목록에 명시</li>
+                            <li><strong>레드햇 엔터프라이즈 리눅스 (RHEL) 2식</strong>: MPR-15 인프라 운영사업자 수행 SW 목록에 명시</li>
+                        </ul>
+                    </li>
+                    <li><strong>[RHOVE 전환 사업 제안 기회]</strong>: ECR-06에서 기술지원 종료된 RHV 4.4, RHOSP 16.1, RHOCP 4.1을 RHOVE 기반으로 전환하는 과업이 본 사업 범위에 포함되어 있어, RHOVE 라이선스 업그레이드·전환 컨설팅 및 구독 판매 기회 명확히 존재</li>
+                    <li><strong>[OpenShift 스택 활용 요구]</strong>: ECR-04 WAS 요구규격에 "OpenStack, OpenShift 등 컨테이너 플랫폼 지원", "RHOCP 4.6 이상, CoreOS 지원" 명시 → OpenShift 기반 운영환경 유지 확인</li>
+                    <li><strong>[클라우드 인프라 확장 여지]</strong>: 기존 RHOSP·RHOCP 기반 클라우드 환경을 RHOVE로 전환하는 과정에서 RHEL, OpenShift, Ansible Automation Platform 활용 제안 가능</li>
+                    <li><strong>[파트너 영업 전략]</strong>: 본 사업은 SI 통합사업자가 수행하는 구조이므로, 주요 SI 파트너사(삼성SDS, LG CNS, SK(주) C&C, 현대오토에버 등) 또는 Red Hat 공인 파트너를 통한 RHOVE/RHEL/RHOCP 구독 라이선스 공급 및 기술지원 계약 체결 전략 수립 필요</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

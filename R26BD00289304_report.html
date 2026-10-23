@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00289304 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>농촌진흥청_2027년 농업 데이터 플랫폼 유지관리 및 지원센터 운영 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>K8s 상용전환·OpenShift 제안여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>농촌진흥청 농업지능데이터팀이 운영하는 <strong>농업기술 데이터 플랫폼</strong>의 유지관리 및 데이터 지원센터를 2027년도에 운영하는 사업</li>
+                        <li>국가연구데이터법 제정('26.6) 및 범정부 AI 대전환(AX) 기조에 대응하여 국가 농업 데이터 허브 역할 수행</li>
+                        <li>핵심 목표: ① 수요 중심 고가치 농업 데이터 발굴·개방, ② LLM 기반 AI 지능형 검색·전처리 서비스 구현, ③ 농업 재배 전주기 DB 품질검증 자동화, ④ 플랫폼 안정적 운영 및 농업 데이터 지원센터 운영</li>
+                        <li>오픈소스 Kubernetes의 보안 취약점 문제를 해결하기 위해 상용 솔루션으로 전환하고, 삼성SCP 클라우드 V1→V2 전환을 지원</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 838백만원 (부가가치세 포함)</li>
+                        <li><strong>사업 기간</strong>: 2027.1.1. ~ 2027.12.31. (12개월)</li>
+                        <li><strong>사업 범위</strong>: ① 고가치 데이터 확보 및 LLM 기반 지능형 서비스 구현, ② 농업기술 데이터 플랫폼 안정적 운영(기능개선·UI/UX·클라우드 전환 지원), ③ 농업 데이터 지원센터 운영(현장 데이터 수집, 헬프데스크, 상용·공개 SW 유지관리), ④ 상용SW 7종 및 공개SW 5종 유지관리</li>
+                        <li><strong>계약 방식</strong>: 조달청 중소기업자간 제한경쟁입찰 (협상에 의한 계약) / 하도급 불허 / 소프트웨어 직접발주 해당 없음</li>
+                        <li><strong>평가 비율</strong>: 기술평가 90% + 가격평가 10%</li>
+                        <li><strong>주요 일정</strong>: M1 착수 → M1~M2 분석 → M2~M3 설계 → M3~M6 기능 개발 → M1~M12 운영관리·헬프데스크·보안점검 / 클라우드 SCP V1→V2 및 K8S 전환 지원 병행</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>소속 부서</strong>: 농촌진흥청 농업지능데이터팀 (Fax 공통: 063-238-1760)</li>
+                        <li><strong>사업 책임자 (플랫폼)</strong>: 임세화 (농업연구관) / Tel: 063-238-0560 / shbreeze@korea.kr</li>
+                        <li><strong>사업 담당자 (플랫폼)</strong>: 김주란 (전산주사) / Tel: 063-238-0561 / kjr@korea.kr</li>
+                        <li><strong>사업 책임자 (지원센터)</strong>: 정환석 (전산사무관) / Tel: 063-238-4771 / xpertstone@korea.kr</li>
+                        <li><strong>사업 담당자 (지원센터)</strong>: 김성종 (전산주사) / Tel: 063-238-0553 / gogojong2@korea.kr</li>
+                        <li><strong>헬프데스크 대표번호</strong>: 063-238-1234</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[핵심 기술 요구사항]</strong>
+                            <ul>
+                                <li>오픈소스 Kubernetes(k8s) → 전문 상용 솔루션 전환 (보안 패치 통제 목적, 서버 6대→3대 효율화)</li>
+                                <li>삼성SCP 클라우드 플랫폼 V1→V2 전환 지원 및 데이터 마이그레이션 (AirFlow 131건, NiFi 186건, Wrangler 36건)</li>
+                                <li>LLM/RAG 기반 하이브리드 검색(벡터DB+전문검색엔진) 및 AI 지능형 검색 서비스 구현</li>
+                                <li>AI 기반 농업 재배 전주기 DB(24작목, 약 4,800만건) 품질검증 자동화</li>
+                                <li>정부통합 로그인 인증체계(Any ID) 도입</li>
+                                <li>디지털 정부서비스 UI/UX 가이드라인 적용, 반응형 웹 전환</li>
+                                <li>SLA 기반 서비스 품질 관리 (3등급 기준)</li>
+                            </ul>
+                        </li>
+                        <li><strong>[RFP 구매 명시 S/W - 상용SW 7종 통합발주 (유지관리 12개월)]</strong>
+                            <ul>
+                                <li>Brightics IoT-Core &amp; DH (데이터 수집·저장) - 1식 × 12개월</li>
+                                <li>GeOnPaas (공간정보) - 1식 × 12개월</li>
+                                <li>Bandi SSO Server Engine (인증) - 1식 × 12개월</li>
+                                <li>Bandi SSO Server Agent (인증) - 9개 × 12개월</li>
+                                <li>소프트보울 SB Chart (차트) - 4개 × 12개월</li>
+                                <li>소프트보울 SB Grid (UIUX) - 4개 × 12개월</li>
+                                <li>Konan Search 5 (검색) - 1식 × 12개월</li>
+                                <li>엠파워 보안파일서버 (보안) - 1식 × 12개월</li>
+                                <li>비투엔 SDQ (품질관리) - 1식 × 12개월</li>
+                                <li>※ 합계 22개 항목, 12개월 기술지원 협약서 착수계 포함 제출 조건</li>
+                            </ul>
+                        </li>
+                        <li><strong>[공개SW 5종 유지관리]</strong>: Apache, JBoss(오픈소스), Tomcat, Nginx, PostgreSQL / Hadoop 및 관련 제품 / Brightics 내 NiFi·Data Wrangler / Tableau 연결 RServe·TabPy / Docker(Portainer 포함)</li>
+                        <li><strong>[통계분석SW 사용자 지원]</strong>: RStudio, SPSS 등 계정 관리·라이선스 배부·기술지원</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>Red Hat 상용 제품 미명시</strong>: RHEL, OpenShift, JBoss EAP, Ansible Automation Platform 등 Red Hat 상용 제품이 도입·납품·구매 품목으로 단 한 건도 명시되지 않음</li>
+                        <li><strong>JBoss는 오픈소스로 분류</strong>: RFP 내 JBoss는 공개SW(오픈소스) 항목에 "Apache, JBoss, Tomcat, Nginx, PostgreSQL 등 오픈소스"로 분류되어 있어, 상용 JBoss EAP 구매 근거가 없음</li>
+                        <li><strong>소프트웨어 직접발주 해당 없음</strong>: RFP에 "소프트웨어 직접발주: 해당 없음"이 명시되어 별도 SW 직접 구매 계획 없음</li>
+                        <li><strong>클라우드 IaaS 전환 방향</strong>: 오픈소스 K8s 전환 목적지가 "클라우드 IaaS"로 명시되어 있어 OpenShift On-Premise 납품 기회 제한적이며, 삼성SCP 클라우드 종속 환경</li>
+                        <li><strong>기존 상용SW 생태계 고정</strong>: Brightics, Bandi SSO, GeOnPaas, Konan Search 등 타 벤더 상용SW 7종이 이미 도입되어 있어 Red Hat 솔루션 대체 진입 어려움</li>
+                        <li><strong>하도급 불허</strong>: Red Hat이 SI·파트너사를 통해 참여할 여지 축소</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[OpenShift 제안 핵심 기회] K8s 상용 솔루션 전환</strong>: RFP에 "오픈소스 쿠버네티스를 전문 상용 솔루션으로 전환 운영"이 명시되어 있으며, OpenShift Container Platform(OCP)이 가장 직접적인 상용 Kubernetes 솔루션 후보임. 비용 절감(서버 6→3대) 효과도 OpenShift의 운영 효율화로 어필 가능</li>
+                        <li><strong>[RHEL 제안 가능] Linux 서버 환경</strong>: 기술적용계획표에 Linux 서버 운영체제 적용이 명시되어 있으며, OS 브랜드 미지정 상태로 RHEL 제안 가능. 보안 패치 통제 가능한 엔터프라이즈 OS로의 전환 수요와 일치</li>
+                        <li><strong>[Ansible 제안 가능] 데이터 처리 파이프라인 자동화</strong>: AirFlow(131건), NiFi(186건), Wrangler(36건) 등 대규모 데이터 처리 마이그레이션 및 인프라 자동화 작업에 Ansible Automation Platform(AAP) 제안 가능</li>
+                        <li><strong>[컨테이너 보안] 보안 강화 요구사항</strong>: 오픈소스 K8s의 보안 취약점 문제가 전환 이유로 명시되어 있어, OpenShift의 내장 보안 기능(ACS, 이미지 스캔, RBAC 등) 및 Red Hat Advanced Cluster Security 제안 가능</li>
+                        <li><strong>[Podman/컨테이너] Docker 대체</strong>: Docker(Portainer 포함)가 공개SW로 운영 중이나, 보안 강화 기조에 맞춰 Podman(rootless 컨테이너) 전환 제안 가능</li>
+                        <li><strong>RFP 내 Red Hat(동의어) 제품 명시</strong>: 없음 (상용 Red Hat 제품 미명시)</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

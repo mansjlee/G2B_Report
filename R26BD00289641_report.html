@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00289641 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>중소벤처기업진흥공단_2027년 중소기업 통합플랫폼 운영 및 유지관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>K8s·컨테이너 환경 제안 여지 있음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>중소벤처기업진흥공단이 운영하는 <strong>'중소벤처 24'</strong> 포털과 <strong>'통합회원'</strong> 시스템을 민간 클라우드(NHN 클라우드) 기반으로 안정적으로 운영·유지관리하는 사업</li>
+                    <li>2단계 구축이 진행 중인 '통합플랫폼'의 서비스 확장 및 AI 서비스(생성형 AI, LLM) 고도화에 대응하는 전문 유지관리 인력과 기술 지원 체계 확보가 목적</li>
+                    <li>24시간 365일 무중단 운영, 장애 예방·신속 복구, 보안·개인정보보호, DataOps/LLMOps 운영 고도화를 핵심 목표로 함</li>
+                    <li>클라우드 전환(레거시 → NHN 클라우드) 병행 지원(2027.1~5월) 및 연계 시스템 유지관리 포함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 2,541,780,000원 (부가세 포함) ※ 2027년 예산 확정 결과에 따라 변경 가능</li>
+                    <li><strong>사업 기간</strong>: 2027.01.01 ~ 2027.12.31 (1년, 일할계산 적용)</li>
+                    <li><strong>사업 범위</strong>: ① 중소벤처 24 포털·통합회원·AI서비스 운영 및 유지관리 ② 협업/비즈니스지원단/CSR/M&A 통합운영 시스템(4개) 유지관리 ③ 상용 SW 21종 유지관리 ④ DataOps·LLMOps 운영 ⑤ 레거시 인프라 클라우드 전환 기술 지원(~2027.5월) ⑥ 헬프데스크·콜센터 운영 ⑦ 보안·개인정보보호 관리</li>
+                    <li><strong>주요 일정</strong>: 제안요청서 설명회 2026.11.11(수) 예정 / 제안서 평가: 입찰공고 마감 후 7일 이내 / 계약방법: 제한경쟁(총액), 협상에 의한 계약 / 평가 배점: 기술능력 90점, 가격 10점</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 중소벤처기업진흥공단</li>
+                    <li><strong>담당 부서</strong>: ICT운영실</li>
+                    <li><strong>관리자</strong>: 최은진 팀장 / ☎ 055-751-9461 / ✉ chansol@kosmes.or.kr</li>
+                    <li><strong>담당자</strong>: 심영석 부장 / ☎ 055-751-9464 / ✉ shimys@kosmes.or.kr (과업 제안 관련 문의)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>Java 기반 응용시스템 개발·유지관리 (전자정부프레임워크 필수)</li>
+                            <li>NHN 클라우드(CSP) 기반 운영 및 MSP 협업 체계 구축</li>
+                            <li>PostgreSQL(EDB Community PG), Neo4j 그래프 DB 운영 및 DBA 지원</li>
+                            <li>쿠버네티스(Kubernetes) 기반 컨테이너·파드(Pod) 모니터링 및 자원 관리</li>
+                            <li>vLLM 등 LLM 서빙 환경 운영, 임베딩·재순위 모델 포함 RAG 검색 환경 관리</li>
+                            <li>DataOps·LLMOps 운영 (데이터 파이프라인, AI 에이전트 관리)</li>
+                            <li>GPU 사용량, 파드별 CPU·메모리·저장소 사용량 상시 모니터링</li>
+                            <li>소프트웨어 보안약점 진단·조치, 웹 취약점(SQL Injection, XSS 등) 대응</li>
+                            <li>AI 가드레일 운영 (프롬프트 인젝션 차단, 개인정보 마스킹, 감사로그 등)</li>
+                            <li>시스템 오류 복구 6시간 이내 완료, 24시간×365일 무중단 운영</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매/통합발주 명시 S/W]</strong> — 본 사업은 신규 구매가 아닌 <u>기존 상용 SW 유지관리(첨부5)</u>가 과업 범위이며, 아래는 유지관리 대상 목록임
+                        <ul>
+                            <li>통합검색엔진: 와이즈넛 Search Formula-1 V7 — 8 core</li>
+                            <li>리포팅툴: 클립소프트 CLIP report V5.0 — 5 서버</li>
+                            <li>위변조방지: 마크애니 e-Page SAFER V2.5 Basic Package — 2 서버</li>
+                            <li>대용량파일전송: 라온위즈 RAON K Upload 2018 — 2 서버</li>
+                            <li>키보드보안: 잉카인터넷 Non-Active X 키보드보안(기본 Browser) 2서버, Non-Active X 키보드보안(멀티 Browser) 2서버, nProtect KeyCrypt V v1.0(가상키패드) 2서버</li>
+                            <li>개인정보보호모니터링: 웨어벨리 Log Catch v2.0 Manager 1서버, Agent 6서버</li>
+                            <li>PDF변환: 이파피루스 ePapyrus PDF Gateway 11 — 1 서버</li>
+                            <li>HTML5 PDF 스트리밍뷰어: 이파피루스 ePapyrus StreamDocs 5 — 2 서버</li>
+                            <li>DB암호화: 펜타시큐리티 D'Amo V5.0 (16core) — 9 서버</li>
+                            <li>DB접근제어: 웨어벨리 Chakra Max V4.0 — 57조(2Core)</li>
+                            <li>통합메시지전송: 티젠소프트 TG 1st UMS v3.5 — 1 서버</li>
+                            <li>대량메일발송: 티젠소프트 TG 1st EMS v2.0 — 1 서버</li>
+                            <li>연계솔루션: 이데아텍 i-ONE API Gateway v1.2(API 중계·관리 Server 3Core, Manager 1서버), APIGen v2.1(API 자동생성기 Server 1서버, EAI/ESB Enterprise 4서버, Manager 1서버)</li>
+                            <li>HTML5 통합문서뷰어: 이파피루스 ePapyrus StreamDocs Vu! v5.0 — 4 core</li>
+                            <li>텍스트에디터: 라온위즈 K Editor 2018 — 1 서버</li>
+                            <li>그리드툴: 소프트보울 SBGrid Ver.3 — 11조(4core)</li>
+                            <li>차트툴: 소프트보울 SBChart Ver.2 — 11조(4core)</li>
+                            <li>화면캡처방지: 마크애니 e-Page SAFER Web DRM Pack For Cross OS V2.5(서버 1서버, 클라이언트 1서버)</li>
+                            <li>RDBMS: EDB Community PG 48 — 1조(4core)</li>
+                            <li>그래프 DBMS: 에이치시스템즈 Neo4j — 1 서버</li>
+                            <li>회원통합솔루션: 유큐브 Q-ONE — 1 서버</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>신규 S/W 구매·도입 사업이 아님</strong>: 본 사업은 기존 상용 SW 21종 유지관리(정기점검, 패치·업그레이드, 장애처리) 중심의 운영·용역 사업으로, 신규 S/W 납품·구독 항목이 없음</li>
+                    <li><strong>Red Hat 상용 제품 미명시</strong>: RFP 전문 및 상용 SW 유지관리 목록(첨부5) 어디에도 RHEL, OpenShift, JBoss EAP, Ansible 등 Red Hat 상용 제품이 품목으로 명시되어 있지 않음</li>
+                    <li><strong>클라우드 CSP 지정</strong>: NHN 클라우드가 인프라 운영 사업자(CSP)로 지정되어 있어, IaaS/PaaS 인프라 레이어에 대한 Red Hat 플랫폼 신규 제안이 어려운 구조</li>
+                    <li><strong>경쟁 DB 환경 확정</strong>: RDBMS는 EDB Community PG(PostgreSQL 기반), 그래프 DB는 Neo4j가 기존 운영 환경으로 명시되어 있어 Red Hat 계열 DB 제안 여지 없음</li>
+                    <li><strong>하도급 불허 및 중소기업 참여 사업</strong>: 하도급 불허, 40억 미만 중소기업 참여 사업으로 Red Hat이 직접 참여하거나 대기업 채널 파트너를 통한 납품 구조 형성이 어려움</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>쿠버네티스/컨테이너 환경 운영 요구 → OpenShift 제안 여지</strong>: RFP에서 "쿠버네티스 기반 컨테이너·클라우드 환경 운영 경험자" 자격 요건 명시(MHR-002), 파드(Pod)별 CPU·메모리 사용량 모니터링 및 GPU 자원 관리(MPR-012) 요구 → 향후 OpenShift Container Platform 도입 제안 가능</li>
+                    <li><strong>LLM·AI 인프라 운영 환경 → OpenShift AI / RHEL AI 제안 여지</strong>: vLLM 등 LLM 서빙 환경 운영, GPU 사용량 관리, 임베딩·재순위 모델 포함 RAG 파이프라인 요구 → Red Hat OpenShift AI(구 RHODS) 및 RHEL AI 플랫폼 제안 가능성 존재</li>
+                    <li><strong>Java 기반 애플리케이션 서버 운영 → JBoss EAP 제안 여지</strong>: Java·전자정부프레임워크 기반 응용시스템 운영이 핵심 과업으로, 현재 WAS 환경이 비공개 상태 → 차기 구축 사업 또는 업그레이드 시 JBoss EAP 제안 가능</li>
+                    <li><strong>OS 미지정 (클라우드·컨테이너 환경)</strong>: RFP에 특정 OS가 명시되어 있지 않고 NHN 클라우드 기반 컨테이너 환경 운영 → RHEL 또는 RHEL 기반 컨테이너 이미지 제안 여지 있음</li>
+                    <li><strong>RFP에 명시된 Red Hat(또는 동의어) 제품명·수량</strong>: <u>없음</u> (RFP 전문 및 상용 SW 목록 어디에도 Red Hat 상용 제품 미등장)</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

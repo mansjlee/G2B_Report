@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00289329 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국국토정보공사_2027년 국토이용정보 통합플랫폼(KLIP) 운영 및 유지관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>RHEL·RHOSP 26식 연간라이센스 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국토교통부로부터 위탁받은 한국국토정보공사(LX)가 전국 230개 지자체 대상 국토이용정보 통합플랫폼(KLIP)을 안정적으로 운영·유지관리하는 사업</li>
+                    <li>클라우드 기반 KLIP 응용프로그램(AP) 및 전산자원(H/W, 상용 S/W)의 유지관리와 상시 모니터링을 통한 무중단 서비스 제공</li>
+                    <li>헬프데스크 운영, 사용자 교육, 도시계획현황 통계 생산·공표, 기술지원 등 종합적인 플랫폼 운영 지원</li>
+                    <li>'26년 토지이용계획확인서 발급·연계기능 이관(KRAS→KLIP)에 따라 행안부 정보시스템 등급제 'A3(행정중요)' 기준으로 운영 요구</li>
+                    <li>월 4백만 건 이상 발급되는 토지이용계획확인서의 중단 없는 서비스 및 외부기관 연계 체계 유지가 핵심 목표</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 1,342,000,000원 (부가세 포함, 회계연도 전 발주로 국회 예산심의에 따라 변경 가능)</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (12개월, 실제 용역 제공일수에 따라 일할정산)</li>
+                    <li><strong>사업 범위</strong>: ① 통합플랫폼 AP 유지관리(기능개선·결함수정·모니터링) ② 인프라(H/W 53식, S/W 113식) 유지관리 및 연간 라이선스 갱신 ③ 헬프데스크 운영·사용자 교육 ④ 도시계획현황 통계 생산·공표 지원 ⑤ 기술지원 및 정책분석 지원</li>
+                    <li><strong>주요 일정</strong>: 사업발주·입찰공고('26년 12월) → 제안서 평가 및 우선협상대상자 선정 → 계약 체결 → 사업 착수 및 인수인계('27년 1월) → 착수보고(계약 후 14일 이내) → 중간보고('27년 중) → 준공검사·완료보고('27년 12월)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>담당자 1</strong>: 문병용 / 한국국토정보공사 국토도시사업처 / 전화: 063-713-1243</li>
+                    <li><strong>담당자 2</strong>: 구현수 / 한국국토정보공사 국토도시사업처 / 전화: 063-713-1262 / 이메일: ghyusu07@lx.or.kr</li>
+                    <li><strong>발주기관</strong>: 한국국토정보공사(LX) / 주관기관: 국토교통부 도시정책과</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>24시간 365일 무중단 운영 및 A3 등급 정보시스템 기준 SLA 준수 (장애 1등급 가용률 99.90% 이상)</li>
+                            <li>서버·WEB·WAS·DBMS·네트워크 등 일 1회 이상 정기점검 및 월 1회 이상 취약점 점검</li>
+                            <li>상용 S/W 연간 라이선스 갱신(구매) 포함 수행</li>
+                            <li>Java/JSP, PostgreSQL(EDB), 전자정부 표준프레임워크, C#(C/S) 기반 응용프로그램 유지관리</li>
+                            <li>GIS 기반 도시계획 데이터 관리, 외부기관 연계(KRAS, 토지이음, 정부24 등) 유지</li>
+                            <li>66개 요구사항(MPR·PER·SIR·DAR·TER·SER·QUR·COR·SOR·PMR·PSR·MHR) 전체 준수</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W - 연간 라이선스 갱신 대상]</strong>
+                        <ul>
+                            <li><strong>RedHat OS</strong>: 1식 (연간라이센스)</li>
+                            <li><strong>RedHat OpenStack Platform 16.x</strong>: 26식 (연간라이센스)</li>
+                            <li>Enterprise Plan Production Support 8Core (EDB, PostgreSQL DBMS): 7식 (연간라이센스)</li>
+                            <li>(CH)Veeam Backup &amp; Replication 9: 7식</li>
+                            <li>MapPrime (GIS Web Server, GIS Server, SDK): 14식</li>
+                            <li>INNORIX PLATFORM V9, WP BASIC (대용량 파일전송): 2식</li>
+                            <li>eCross BLZI Suite v4.0_Enterprise (연계통합): 6식</li>
+                            <li>eCross BLZI Suite v4.0_Agent: 3식</li>
+                            <li>클라우드 가상화 관리 포털(CMP): 1식</li>
+                            <li>Windows Server: 2식</li>
+                            <li>WEB Server (오픈소스): 17식 / WAS (오픈소스): 27식 (라이선스 갱신 대상 아님)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 공급 여부</strong>: S/W 납품·구독 항목이 포함된 사업임 (제안 불가 사유 해당 없음)</li>
+                    <li><strong>WEB/WAS 오픈소스 지정</strong>: WEB Server(17식), WAS(27식)는 "오픈소스"로 명시되어 있어 JBoss EAP 등 Red Hat 상용 WAS 제안이 어려움</li>
+                    <li><strong>DBMS 경쟁 제품 확정</strong>: DBMS는 EDB(EnterpriseDB, PostgreSQL 기반) 7식으로 확정되어 있어 Red Hat 계열 DB 제안 여지 없음</li>
+                    <li><strong>Windows Server 존재</strong>: Windows Server 2식이 혼용되어 있으나 전체 OS 교체 제안은 불가</li>
+                    <li><strong>기존 사업자 인수인계 구조</strong>: 운영 유지관리 사업 특성상 기존 S/W 구성을 그대로 유지하는 것이 원칙이며, 신규 제품으로의 대체 여지는 제한적</li>
+                    <li><strong>GIS 솔루션 지정</strong>: MapPrime(14식)이 GIS 솔루션으로 확정되어 있어 해당 영역 대체 불가</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>🔴 [RFP 명시 Red Hat 상용 제품 - 높음 판정 근거]</strong>
+                        <ul>
+                            <li><strong>RedHat OS 1식 (연간라이센스)</strong>: S/W 유지관리 대상 목록에 "OS - RedHat OS, 연간라이센스, 1식"으로 명시. RHEL 연간 라이선스 갱신 구매 대상 확정</li>
+                            <li><strong>RedHat OpenStack Platform 16.x 26식 (연간라이센스)</strong>: "가상화 운용 - RedHat OpenStack Platform 16.x, 연간라이센스, 26식"으로 명시. 가상화 서버 26대 운용을 위한 RHOSP 라이선스 대규모 갱신 구매 대상 확정</li>
+                        </ul>
+                    </li>
+                    <li><strong>라이선스 갱신 영업 기회</strong>: RHEL 1식 + RHOSP 26식 연간 라이선스 갱신이 매년 반복 발생하는 구조로 장기적 Revenue 확보 가능</li>
+                    <li><strong>RHOSP 버전 업그레이드 기회</strong>: 현재 RHOSP 16.x(OpenStack Train 기반)는 EOS가 도래하였거나 임박한 버전으로, 최신 RHOSP(18.x, OpenShift 기반) 또는 Red Hat OpenShift Virtualization으로의 업그레이드 제안 가능</li>
+                    <li><strong>클라우드 인프라 확장 가능성</strong>: KLIP 클라우드 인프라 내 가상화 서버 26대 운영 환경에서 Red Hat Satellite(패치관리), Ansible Automation Platform(자동화 운영) 추가 제안 여지 있음</li>
+                    <li><strong>OpenShift 전환 제안 가능성</strong>: 현 RHOSP 환경에서 컨테이너 기반 플랫폼(OpenShift Container Platform) 전환에 대한 로드맵 제안 가능 (중장기 전략)</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

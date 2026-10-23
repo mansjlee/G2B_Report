@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00289554 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>군포시 - 2027년 교통정보시스템 유지관리 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>Oracle·Tibero DBMS 명시, RH 스택 무관</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>군포시 CCTV통합관제센터 내 교통정보시스템(ITS) 및 버스정보시스템(BIS)의 안정적 운영을 위한 연간 유지관리 용역 사업</li>
+                    <li>센터시스템(서버·네트워크·보안장비·DBMS 등) 및 현장시스템(CCTV, VMS, BIT, 스마트교차로 카메라, 자가통신망 등) 전반에 대한 상주 인력 기반 유지관리 수행</li>
+                    <li>교통정보 수집·가공·제공 서비스의 무중단 운영 및 시민 대상 버스도착정보·교통정보 안정적 제공이 핵심 목적</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 금 557,275,000원 (부가가치세 포함) ※ 지방의회 예산 심의결과에 따라 변경 가능</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (1년, 계약 지연 시 용역대금 일할 정산)</li>
+                    <li><strong>사업 범위</strong>: ① 센터시스템 유지관리 (ITS·BIS 서버 26대, 네트워크 장비, 스토리지, 보안장비, DBMS 라이선스 갱신 포함) ② 현장시스템 유지관리 (CCTV 36개소, VMS 9개소, BIT 303개소, BIT CCTV 303개소, 스마트교차로 카메라 6개소, 차량번호인식 카메라 4개소, 자가통신망 1식) ③ 유지관리용 소모성 장비 납품 (무선 AP, BIT 메인보드, BIT LCD 패널, BIT CCTV, VMS 모듈, CCTV 팬틸트카메라, 인코더 등)</li>
+                    <li><strong>주요 일정</strong>: 입찰방법 제한경쟁입찰, 계약방법 협상에 의한 계약 / 계약 체결 후 7일 이내 착수계 제출, 분기별 정기점검보고서 제출, 준공 시 최종 유지관리 보고서 제출 / 납품목록 분할납품 허용 (2회, 시기 발주처 협의)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>소속</strong>: 군포시 교통행정과</li>
+                    <li><strong>담당자</strong>: 김규형 주무관</li>
+                    <li><strong>연락처</strong>: 031-390-0844</li>
+                    <li><strong>이메일</strong>: kgh86@korea.kr</li>
+                    <li><strong>주소</strong>: 경기도 군포시 청백리길 6번지</li>
+                    <li><strong>문의 방법</strong>: 제반 문의는 문서 접수 원칙 (전화·구술 답변 불가) / 사업 자료 공문 직접 방문 요청 시 제공 (입찰 공고일로부터 7일 이내, 위임장·재직증명서·보안각서 지참)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>상주 인력 2명 배치 (가급적 유지관리 경력 2년 이상, 초급기술자 이상) - 1명은 현장대리인 지정</li>
+                            <li>ITS·BIS 센터시스템 서버(총 26대), 네트워크 장비, 스토리지, 보안장비(방화벽·VPN·IPS) 유지관리</li>
+                            <li>DBMS 라이선스 갱신 포함: ITS - <strong>Tibero</strong>, BIS - <strong>Oracle</strong></li>
+                            <li>응용 S/W(VMS S/W, CCTV S/W, ITS S/W, BIS 운영단말 등) 유지관리 및 장애처리</li>
+                            <li>현장 CCTV·VMS·BIT·스마트교차로 카메라 등 현장시스템 정기점검 및 장애복구</li>
+                            <li>BIS 기반정보(노선·정류소) 업데이트 관리, BIT 지하철정보 연계관리</li>
+                            <li>자가통신망(광전송) 유지관리 및 도면 현행화</li>
+                            <li>센터·현장 보안 (방화벽·VPN·IPS 유지관리, 정보시스템 보안 훈련)</li>
+                            <li>DBMS 및 백업 시스템 유지관리 (스토리지 백업, CCTV 영상 저장)</li>
+                            <li>72시간 이내 장애복구 미이행 시 감액(2.5/1000 × 미복구일수 × 미복구장비 수)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[통합발주 S/W — DBMS 라이선스 갱신]</strong>
+                        <ul>
+                            <li><strong>Tibero</strong> (ITS DBMS) — 수량·라이선스 규모 미명시, 갱신 포함</li>
+                            <li><strong>Oracle</strong> (BIS DBMS) — 수량·라이선스 규모 미명시, 갱신 포함</li>
+                        </ul>
+                    </li>
+                    <li><strong>[유지관리용 납품 물품]</strong> (조달쇼핑몰 직접구매 아닌 통합발주 물품)
+                        <ul>
+                            <li>무선 AP (BIS·교차로감시 AP 규격) 10대</li>
+                            <li>무선 AP POE (무선 AP 전원·통신 공급용) 10대</li>
+                            <li>BIT 메인보드 세트 (신형 BIT Main Board 1set, CPU·메모리·저장장치 포함) 15세트</li>
+                            <li>BIT LCD 패널 (32인치, 기존 시스템 호환) 10개</li>
+                            <li>BIT 패널 LVDS 케이블 (LCD패널·메인보드 호환용) 20개</li>
+                            <li>BIT 광장비 (1000Base-LX 4Port / 10/100/1000Base-TX 8Port, 케이블·광바이패스 포함) 5대</li>
+                            <li>BIT CCTV (1/2.8형 2MP 30fps, H.265/H.264/MJPEG 지원) 20대</li>
+                            <li>VMS 모듈 (신형) 10개</li>
+                            <li>CCTV 팬틸트카메라 (2M HD, 광학 55배 줌, 500m) 3대</li>
+                            <li>CCTV 팬틸트카메라 브라켓 3개</li>
+                            <li>ITS 교차로 CCTV (2MP, 4CH 4방향) 1대</li>
+                            <li>ITS 교차로 CCTV 브라켓 1개</li>
+                            <li>스마트교차로 CCTV (IP Bullet 카메라, 기존 시스템 호환) 3대</li>
+                            <li>인코더 (Full HD Encoder) 8대</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>[DBMS 경쟁 제품 명시]</strong>: RFP 사업 범위에 DBMS 라이선스 갱신이 명시되어 있으며, ITS는 <strong>Tibero</strong>, BIS는 <strong>Oracle</strong>로 특정됨 → Red Hat 데이터 관련 제품(AMQ, Data Grid 등) 제안 불가</li>
+                    <li><strong>[OS·플랫폼 미지정 + Red Hat 상용 제품 전무]</strong>: RFP 전체에 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 단 한 건도 명시되지 않음</li>
+                    <li><strong>[순수 유지관리 용역 중심]</strong>: 본 사업은 기존 운영 시스템의 유지관리 및 소모성 하드웨어 납품이 주목적이며, 신규 S/W 플랫폼 도입·구축 성격이 없어 Red Hat 솔루션을 신규 제안할 구조적 여지가 없음</li>
+                    <li><strong>[컨테이너·자동화·PaaS 요구 없음]</strong>: OpenShift, Kubernetes, Ansible Automation Platform 등 Red Hat 핵심 스택과 연관된 기술 요구사항이 전혀 없음</li>
+                    <li><strong>[기존 기술지원사 지정]</strong>: BIS 기술지원사(더로드아이앤씨㈜), 하드웨어·네트워크·보안장비 기술지원사(㈜유티넷)가 이미 명시되어 있어 공급망 변경이 어려움</li>
+                    <li><strong>[대기업·중견기업 입찰 제한]</strong>: 사업금액 20억 원 미만으로 대기업·중견기업 참여 불가 → Red Hat 직접 참여 또는 대형 파트너를 통한 제안 구조 제약</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[RFP 내 Red Hat 제품명 명시 없음]</strong>: RFP 전체에서 Red Hat 또는 동의어(RHEL, OCP, Ansible, JBoss, Satellite 등) 제품명이 전혀 등장하지 않으며, 도입·증설이 확정된 상용 Red Hat 품목 없음</li>
+                    <li><strong>[서버 인프라 OS 미지정 — 제한적 제안 여지]</strong>: ITS 서버 18대, BIS 서버 8대 등 총 26대의 서버 OS가 RFP에 명시되지 않아 이론적으로 RHEL 제안 여지가 있으나, 기존 운영 환경 유지가 원칙인 유지관리 용역 특성상 실질적인 OS 교체·도입 가능성은 극히 낮음</li>
+                    <li><strong>[종합 판단]</strong>: 실질적인 Red Hat 제안 가능 요소는 거의 없으며, 본 사업은 Red Hat 영업 우선순위에서 하위로 분류하는 것이 적절함. Tibero·Oracle DBMS 갱신 예산이 포함된 사업이므로, 차기 시스템 고도화·재구축 사업 발생 시 해당 기관에 대한 RHEL 전환 및 OpenShift 제안을 준비하는 중장기 파이프라인 관점으로 접근하는 것을 권고함</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

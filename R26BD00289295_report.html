@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00289295 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국민건강보험공단_상병수당 본사업 시행을 위한 정보시스템 재구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=orange>중간<br>Linux OS 명시·클라우드 PaaS 제안 여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국민건강보험공단이 추진하는 한국형 상병수당 정보플랫폼 전면 재구축 사업</li>
+                    <li>상병수당 본사업의 전국 확대 시행에 대비하여, 신뢰도 높고 효율적인 업무 운영이 가능한 정보시스템을 신규 구축</li>
+                    <li>상병수당 신청·자격심사·의료인증·지급결정·사후관리 등 전 업무 프로세스를 법령·고시 변화에 유연하게 대응 가능한 구조로 전면 재개발</li>
+                    <li>모바일 신청·조회, 간편인증, 대외 연계 고도화 등 국민 서비스 접근성 및 편의성 대폭 강화</li>
+                    <li>자동심사 모듈·DW 구축을 통한 업무 처리 효율화 및 데이터 기반 행정 고도화</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 4,203,148,000원 (VAT 포함) ※ 별도 직접구매 S/W·H/W 예산 추가 (리포팅툴 약 45,760천원, 개인정보검출솔루션 약 88,000천원, PDF편집 라이선스 약 34,650천원, 간편인증 후불형 등)</li>
+                    <li><strong>사업 기간</strong>: 계약체결일로부터 390일</li>
+                    <li><strong>사업 범위</strong>:
+                        <ul>
+                            <li>응용기능 전면 재구축 및 신규 개발 (통합급여정보시스템, 요양기관정보마당, 대표홈페이지, 건강보험 25시 모바일, 건강보험 EDI, DW·통계 포함 — 현 운영 응용프로그램 총 856본)</li>
+                            <li>상병수당 기준정보 관리체계 신규 구축, 자동심사 모듈(자격/의료인증/행정심사) 개발</li>
+                            <li>대내외 연계 고도화 (근로복지공단, 고용정보원, 국세청, 국민비서, 사회보장정보원, 요양기관 OCS, 심사평가원 등)</li>
+                            <li>상병수당 DW 구축 (CDC/ETL/ODS/DW모델/DM, 대시보드·Self BI)</li>
+                            <li>인프라 고도화: DW용 스토리지(Usable 20TB↑, SAN 구성) 1식 증설</li>
+                            <li>S/W 직접구매 4종 병행 추진 (조달쇼핑몰 구매, 공단이 직접 구매 후 수행사 제공)</li>
+                            <li>요구사항 총 235건 (ECR 8, FUN 132, PER 9, INR 5, DAR 11, TER 8, SER 17, QUR 7, COR 16, PMR 13, PSR 9)</li>
+                        </ul>
+                    </li>
+                    <li><strong>주요 일정</strong> (M = 계약월):
+                        <ul>
+                            <li>M+1: 사업착수·착수보고</li>
+                            <li>M+1~M+4: 요구분석·설계</li>
+                            <li>M+3~M+10: 구현</li>
+                            <li>M+6 전후: 중간보고</li>
+                            <li>M+8~M+12: 테스트·시험</li>
+                            <li>M+10: 서비스 오픈 1차</li>
+                            <li>M+10~M+12: 시험운영</li>
+                            <li>M+12: 서비스 오픈 2차</li>
+                            <li>M+12~M+13: 종료보고·안정화·인계인수</li>
+                            <li>감리 3단계(분석·설계·종료), 개인정보 영향평가(사업 전 기간) 병행 실시</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>담당 부서</strong>: 국민건강보험공단 상병수당추진단 제도기획부</li>
+                    <li><strong>담당자 1</strong>: 이시은 팀장 / TEL: 033-736-4291 / lse13@nhis.or.kr</li>
+                    <li><strong>담당자 2</strong>: 이경진 과장 / TEL: 033-736-4292 / kjlee1122@nhis.or.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>핵심 기술 요구사항</strong>:
+                        <ul>
+                            <li>(프레임워크) 신규 개발은 전자정부 표준프레임워크 최신 버전 필수 (COR-001)</li>
+                            <li>(개발언어) Java(JDK 1.8↑), Pro*C, C, C++, C# / 자동심사 배치는 Pro*C·Java 구현 (ECR-A-003, FUN-C-075~079)</li>
+                            <li>(OS) 신규 서버는 개방형 오픈시스템, 클러스터링·파티션 구성 가능 제품 필수 (ECR-A-001) — 특정 제품명 미지정, 기술적용계획표에 POSIX.0/UNIX/Windows Server/Linux 명시</li>
+                            <li>(DBMS) Active/Active 이중화, 무중단 백업 필수; 통합급여시스템 노후 인프라 교체 시 JDK·미들웨어·DB 버전 변경 예정 (ECR-A-003, QUR-001) — 특정 제품명 미지정, RDBMS/ORDBMS/OODBMS/MMDBMS/TSDBMS 포함</li>
+                            <li>(클라우드) 클라우드컴퓨팅 활용 우선 검토 의무 (「클라우드컴퓨팅 발전 및 이용자 보호에 관한 법률」 제12조·20조); IaaS·PaaS·SaaS 전체 적용 항목 — 특정 벤더 미지정; 민간 클라우드 사용 시 CSAP 인증 서비스 필수</li>
+                            <li>(가상화) VMware·KVM 등 가상화 장비가 취약점 진단 대상으로 명시; 가상화관리제품 도입 시 보안기능 확인서(➊) 필수</li>
+                            <li>(백업) NetBackup 등 백업 솔루션 포함 제안 (ECR-A-001)</li>
+                            <li>(보안) 모든 보안·정보보호 제품은 CC인증(EAL2↑) 또는 국가정보원 보안적합성 검증필 필수; 암호모듈 검증필 탑재 제품 요건 (ECR-A-003, COR-008, SER-008); 공단은 검증 대상기관 '가' 그룹</li>
+                            <li>(소스코드 보안약점 분석도구) <strong>Sparrow(SPARROW社)</strong> — 안전성검증필 제품목록 등재 제품으로 명시</li>
+                            <li>(취약점 진단 도구) <strong>에스에스알社 SolidStepCCE</strong> — 정보시스템 취약점 진단용</li>
+                            <li>(인증) 행정안전부 정부 통합인증(Any-ID) 활용 검토 의무; 간편인증은 금융인증서·네이버·카카오페이·PASS·TOSS·PAYCO 등 민간 10종↑ 중계형 지원 필수</li>
+                            <li>(시큐어코딩) 행안부 소프트웨어 개발보안 가이드 준수, KISA 교육 이수 의무, 모의해킹 수행 의무 (SER-010, SER-011)</li>
+                            <li>(성능) 온라인 배치 3분↓, 일 배치 10분↓, 월 배치 1시간↓, 웹 디스플레이 1초↓, CPU 80%↓, 메모리 90%↓</li>
+                            <li>(상용제품 원칙) 모든 S/W는 상용제품이어야 하며 프리웨어 제안 불가; 오픈소스는 법적·관리적 하자 없을 경우 허용 (ECR-A-003)</li>
+                            <li>(도입 장비) 출시 5년 이내 제품, 검수 완료 기준 1년 이내 EOM 예정 시 동급 이상 신제품 교체 필수 (ECR-A-001/002)</li>
+                            <li>(산출물관리) http://drive.nhisin.or.kr:8081/pm/ 사용</li>
+                        </ul>
+                    </li>
+                    <li><strong>통합발주(수행사 납품) S/W — 해당 없음</strong>: 본 사업의 S/W 구매는 모두 공단 직접구매(조달쇼핑몰) 방식이며, 수행사가 통합발주하는 상용 S/W 품목은 명시되지 않음</li>
+                    <li><strong>직접구매(공단 → 조달쇼핑몰) S/W 4종</strong>:
+                        <ul>
+                            <li>① 리포팅 툴 솔루션 업그레이드 (ECR-C-001) / 8조(16Core) / 약 45,760천원 / 용도: 요양기관정보마당 PDF뷰어 / 버전 업그레이드 ※제품명 열람제한</li>
+                            <li>② 간편인증 솔루션(구독형) (ECR-C-002) / 1조 / 후불형 / 용도: 의료인증 자문의사 간편인증 / 민간 10종↑ 자동 현행화, 연간 인증 10만건↓ ※제품명 열람제한</li>
+                            <li>③ PDF 변환 및 활용 라이선스(영구) (ECR-C-003) / 250유저 / 약 34,650천원 / 용도: 자문의뢰 첨부파일 PDF 편집 / HWP·이미지·MS Office 등 다포맷 변환 지원 필수</li>
+                            <li>④ 개인정보검출솔루션 (ECR-C-004) / 4조 / 약 88,000천원 / 용도: 개인정보 검출 모듈 / PDF 내 문자기반 검출, 주민번호·계좌번호·휴대폰번호 등 13종↑ 패턴 ※제품명 열람제한</li>
+                        </ul>
+                    </li>
+                    <li><strong>직접구매(공단 → 조달쇼핑몰) H/W 1종</strong>:
+                        <ul>
+                            <li>① DW용 스토리지(증설) (ECR-B-001) / 1식 / Usable 20TB↑ / SAN 구성·RAID·FailOver·로드밸런싱·24시간 자가진단·향후 2배↑ 확장 가능 구성 필수</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>통합발주 S/W 납품 품목 없음</strong>: 본 사업의 S/W 구매는 전량 공단 직접구매(조달쇼핑몰) 방식으로 처리되므로, 수행사(제안사)가 Red Hat 상용 제품을 납품·공급하는 구조가 아님 → Red Hat 구독 직접 판매 기회 제한</li>
+                    <li><strong>Red Hat 상용 제품명 미명시</strong>: RFP 전체(파트 1·2 모두)에서 RHEL, OpenShift, Ansible, JBoss/EAP, AAP, Satellite 등 Red Hat 상용 제품명이 품목으로 단 한 건도 명시되지 않음</li>
+                    <li><strong>경쟁 가상화 제품 언급</strong>: VMware·KVM이 취약점 진단 대상 클라우드 항목으로 명시 — 기존 가상화 환경이 VMware/KVM 기반일 가능성 높아 RHEV/OpenShift Virt 신규 진입 여지 제한</li>
+                    <li><strong>가상화관리제품 보안기능 확인서(➊) 필수</strong>: OpenShift 등 컨테이너 플랫폼을 가상화관리 범주로 분류할 경우 국정원 보안기능 확인서 취득 필요 — 미보유 시 도입 불가</li>
+                    <li><strong>상용제품 원칙 및 보안적합성 요건</strong>: 모든 S/W는 상용 제품이어야 하고, 보안 기능이 포함된 제품은 CC인증(EAL2↑) 또는 국정원 보안적합성 검증필 필수 — Red Hat 개별 제품의 검증 현황 확인 선행 필요</li>
+                    <li><strong>순수 SI·재개발 사업</strong>: 사업의 핵심은 Java 기반 응용프로그램 전면 재개발이며, OS·미들웨어 교체가 주목적이 아님 → 인프라 교체 예산·의사결정 여지 한정적</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>Linux OS 기술적용 전체 허용</strong>: 기술적용계획표 서버용 OS에 "Linux"가 전체 적용(O)으로 명시되어 있어 RHEL 계열 OS 제안이 기술적으로 배제되지 않음; ECR-A-001에서 "개방형 오픈시스템" 요건을 명시하여 RHEL이 요건 충족 가능</li>
+                    <li><strong>클라우드(PaaS) 활용 우선 검토 의무</strong>: 「클라우드컴퓨팅 발전 및 이용자 보호에 관한 법률」에 따라 IaaS·PaaS·SaaS 활용 우선 검토가 의무화되어 있어 OpenShift(컨테이너 PaaS) 제안 여지 존재; 단, 특정 벤더·제품 미지정</li>
+                    <li><strong>통합급여시스템 인프라 교체 예정</strong>: QUR-001에서 노후 인프라 교체에 따른 JDK·미들웨어·DB 버전 변경이 예정되어 있어, OS·미들웨어 스택 재선정 과정에서 RHEL 및 JBoss EAP 제안 가능성 있음</li>
+                    <li><strong>자동심사 배치·DW 등 Java 기반 대규모 개발</strong>: Pro*C·Java 기반 자동심사 모듈, CDC/ETL 파이프라인 등 대규모 미들웨어·런타임 스택이 요구되어 JBoss EAP(WildFly 상용) 또는 Ansible 기반 배포 자동화 제안 여지 있음 — 단, RFP에 상용 제품명 명시 없음</li>
+                    <li><strong>보안·컴플라이언스 강조 환경</strong>: 국정원 검증필, CC인증, 시큐어코딩, 취약점 진단 등 고강도 보안 요건이 적용되어, RHEL의 보안 강화 기능(SELinux, FIPS 모드, Insights) 및 Ansible 기반 컴플라이언스 자동화 제안 포인트로 활용 가능</li>
+                    <li><strong>RFP 내 Red Hat 제품명 직접 명시 건수</strong>: 0건 (RHEL, OpenShift, Ansible, JBoss/EAP 등 모두 미명시) — 배제 조항도 없으므로 영업 활동을 통한 수행사 영향력 행사 가능</li>
+                    <li><strong>국내 레퍼런스 요건</strong>: ECR-A-001에서 "국내 Reference Site를 가진 최신 제품" 기준 적용 — RHEL·OpenShift는 공공 및 금융권 다수 레퍼런스 보유로 요건 충족 가능성 높음</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
