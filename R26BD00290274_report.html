@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00290274 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>창원소방본부_2027년 정보통신시스템 유지보수 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>VMware 가상화 명시, 상용 RH 제품 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>화재·구조·구급 등 재난 대응 관련 유·무선 통신 시스템의 안정적 운영 및 체계적 관리를 위한 전문 유지보수 용역업체 선정</li>
+                    <li>소방정보통신 시설장비를 안정적으로 관리하고 최적 성능을 유지하며, 장애 발생 시 신속한 복구를 통해 서비스 중단 없이 시민의 생명과 재산 보호에 기여</li>
+                    <li>본 정보시스템은 SLA(서비스수준협약) 적용 대상으로, 정보시스템 서비스 목표 수준을 사전에 정의하고 지속적으로 개선·관리</li>
+                    <li>365일 24시간 중단 없는 소방 시스템 제공 및 시스템 안정성 유지, 풍부한 경험과 전문성을 보유한 최적의 유지보수 업체 선정</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 805,980,000원</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (12개월)</li>
+                    <li><strong>사업 범위</strong>: 창원소방본부 소속 소방서, 안전센터, 구조대 등 총 36개소 (본부, 마산소방서 13개소, 의창소방서 9개소, 성산소방서 7개소 등) / 긴급구조표준시스템, 인사행정정보시스템, 119종합상황실 특수장비, 네트워크·보안장비, 무선통신 인프라 등 통합 유지보수</li>
+                    <li><strong>주요 일정</strong>: 과업심의위원회 심의 완료 (2026.10.21) / 계약 후 14일 이내 사업수행계획서 제출 / 계약 후 30일 이내 시스템 분석보고서 제출 / 계약 착수 후 1개월 이내 SLA 체결 / 계약 방법: 협상에 의한 계약 체결 (기술능력평가 90점 + 가격평가 10점)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>소속기관</strong>: 창원소방본부 119종합상황실</li>
+                    <li><strong>담당자</strong>: 소방교 정성태</li>
+                    <li><strong>연락처</strong>: Tel. 055-548-9294</li>
+                    <li><strong>이메일</strong>: xoxono1212@korea.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong>
+                        <ul>
+                            <li>H/W·S/W 통합 유지보수: 서버(AIX, x86), OS 패치, 미들웨어, 응용프로그램, 네트워크·보안장비 전반 유지관리</li>
+                            <li>365일 24시간 장애 대응 체계 구축: 긴급장애(2시간 내 현장 도착, 4시간 내 복구), 일반장애(1일 업무시간 내 조치)</li>
+                            <li>전문 기술인력 배치: PM 포함 2인 본부 상주, 순회점검 인력 별도 운영</li>
+                            <li>정기점검 수행: 일일·주간·월간·분기별 점검 및 보고서 제출</li>
+                            <li>SLA 체결 및 관리: 정보시스템 A3등급 기준, 장애등급별 가용률(2등급 99.88%, 3등급 99.86%, 4등급 99.83% 최소허용수준) 관리</li>
+                            <li>보안 요구사항 준수: 취약점 개선, 보안패치, 접근통제, 보안위규 대응</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매/통합발주 S/W 목록 - 기존 시스템 유지보수 대상]</strong>
+                        <ul>
+                            <li>Oracle 11g DBMS (4 Core 라이센스) - 인사행정 2식, 긴급구조표준 2식 (RAC구성)</li>
+                            <li>Oracle WebLogic (WEB/WAS 서버용) - 1식</li>
+                            <li>TMAX 미들웨어 (긴급구조표준 지령서버용, 200 Users) - 2식</li>
+                            <li>VMware vSphere 6 Enterprise Plus (1 processor당) + vCenter Server 6 - 7식</li>
+                            <li>Tibero Standard v7 (콜백시스템 DBMS) - 1식</li>
+                            <li>Quest Software Netvault Enterprise Edition (백업 S/W) - 1식</li>
+                            <li>REXPERT Enterprise v3.0 (레포팅툴) - 1식</li>
+                            <li>MegaWare Smart (외부 공공기관 연계) - 4식</li>
+                            <li>Trustform System 4.0 (웹UI툴) - 1식</li>
+                            <li>IB Sheet Pro v7 (웹UI툴) - 2식</li>
+                            <li>Archi View Web v.2.0 (도면뷰어) - 1식</li>
+                            <li>Archi Hard v.1.0 (도면관리) - 1식</li>
+                            <li>Magic SSO V3.0 (사용자 인증) - 1식 + Agent 3식</li>
+                            <li>Chakra Max V3.0 (DB 암호화 솔루션) - 2식</li>
+                            <li>Ksign Secure DB for Oracle v.1.5 (DB보안 솔루션) - 2식</li>
+                            <li>MESIM Indigo for EAI (연계솔루션) - 인사행정 1식, 긴급구조 1식, 소방예방 1식</li>
+                            <li>NEPYX NetworkBridge Suite V4 (망연계솔루션, CC인증) - 3식</li>
+                            <li>Genian V5.0 NAC (정책서버·차단센서·Node License 다수), Genian V4.0 NAC 다수</li>
+                            <li>Tgate NAC 시리즈 (정책서버, 차단센서, Node License 200) - 다수</li>
+                            <li>NetMan Smart NAC - 1식 (재난현장영상)</li>
+                            <li>AhnLab AIPS 5000B IPS - 1식</li>
+                            <li>TouchEn mGuard v3.0 MDM - 1식</li>
+                            <li>GATEONE-Node License 100 (접근제어) / GATEONE-Z v3.0 (접근제어서버) - 각 1식</li>
+                            <li>각종 IP방송·TTS·녹음·GIS·무선관제·영상관리 S/W 다수</li>
+                            <li>행정전화 ARS 녹음 S/W UBIS-RBT&VR V2.00 - 120식</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>순수 유지보수 용역 사업</strong>: 신규 S/W 납품·구독 항목이 없으며, 기존에 구축된 시스템 유지관리만을 목적으로 함. 새로운 제품 도입·증설이 명시되지 않음</li>
+                    <li><strong>VMware vSphere 6 Enterprise Plus 명시</strong>: 가상화 S/W로 VMware vSphere 6 Enterprise Plus (7식)가 유지보수 대상으로 명시되어 있어 Red Hat 가상화 제품(RHEV 등) 제안 공간 없음</li>
+                    <li><strong>경쟁·비Red Hat OS 운영 환경</strong>: 콜 서버에 CentOS 6 운영 중, 지령서버에 AIX 7.2, 다수 서버에 Windows Server 2016/2012 R2 운영 중 → RHEL 제안 근거 없음</li>
+                    <li><strong>Red Hat 상용 제품 전무</strong>: RFP 전체에 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 구매·유지보수 대상으로 단 한 건도 명시되지 않음</li>
+                    <li><strong>미들웨어 경쟁제품 명시</strong>: 미들웨어로 TMAX(티맥스소프트), WAS로 Oracle WebLogic이 유지보수 대상 품목으로 명시되어 JBoss EAP 제안 공간 없음</li>
+                    <li><strong>DBMS 경쟁제품 명시</strong>: Oracle 11g, Tibero Standard v7이 DBMS로 명시되어 있어 Red Hat 관련 DB 제안 불가</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>제안 가능 포인트 (매우 제한적)</strong>
+                        <ul>
+                            <li>서버 OS 업그레이드 컨설팅 여지: 콜 서버에 CentOS 6(EOL 제품)이 운영 중이므로, 향후 유지보수 과정에서 OS 마이그레이션 필요성 발생 시 RHEL 전환 제안 기회가 간접적으로 존재할 수 있으나, 본 사업 범위 내 신규 도입은 없음</li>
+                            <li>VMware 대체 논의 가능성: VMware vSphere 6(구버전)이 운영 중이므로 차기 사업(교체·증설 사업)에서 Red Hat Virtualization 또는 OpenShift Virtualization 제안을 위한 관계 구축 기회로 활용 가능</li>
+                        </ul>
+                    </li>
+                    <li><strong>제안 불가능 포인트 요약</strong>
+                        <ul>
+                            <li>RFP 내 Red Hat 상용 제품명(RHEL, OpenShift, Ansible, JBoss, Satellite 등) 전혀 없음</li>
+                            <li>본 사업은 신규 S/W 도입이 아닌 기존 시스템 유지보수 용역이므로 상용 SW 납품·구독 기회 없음</li>
+                            <li>VMware, Oracle, TMAX 등 경쟁사 제품이 유지보수 대상으로 확정·고정되어 있음</li>
+                        </ul>
+                    </li>
+                    <li><strong>RFP에 명시된 Red Hat 제품명·수량</strong>: 없음 (0건)</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

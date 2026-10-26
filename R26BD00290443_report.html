@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00290443 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>행정안전부_2027~2028년 긴급신고 통합시스템 유지관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 미포함 순수 유지관리 용역</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>행정안전부가 운영 중인 <strong>긴급신고 통합시스템(112·119·110 연계)</strong>의 안정적 운영과 유지관리를 통해 신고이관·공동대응 서비스 품질 향상 도모</li>
+                    <li>경찰청·소방청·해양경찰청·국민권익위원회·산림청 등 긴급기관 간 신고정보 공유 및 24시간 365일 공동대응 협업체계 구축·운영</li>
+                    <li>클라우드 네이티브(KTC 민관협력형) 전환 이후 시스템의 안정적 운영, 장애예방·복구, 기능개선 및 보안관리 수행</li>
+                    <li>헬프데스크(24시간) 운영, 연계기관 교육 지원, 데이터 품질관리 등 종합적 유지관리 서비스 제공</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 2,234,000,000원 (연간, 부가세 및 민간CSP 사용료 포함) / 2028년 예산은 확정 예산에 따라 변동 가능</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2028년 12월 31일 (24개월)</li>
+                    <li><strong>사업 범위</strong>: 행정안전부 긴급신고 통합시스템 1식 — ① 시스템 유지관리·운영, ② 신고이관·공동대응 공동운영 상황관리, ③ 헬프데스크 운영, ④ CSP(클라우드) 인프라 운영관리, ⑤ 데이터 품질관리, ⑥ 교육·기술지원</li>
+                    <li><strong>주요 일정</strong>: M-2 계획수립·사전협의 → M-1 입찰공고 → M~M+2 제안서평가·기술협상·사업자선정(계약) → M+3~M+12 통합유지관리 업무수행 → 사업검수</li>
+                    <li><strong>계약방법</strong>: 제한경쟁입찰, 협상에 의한 계약 (조달청 의뢰)</li>
+                    <li><strong>입찰 제한</strong>: 중소·중견기업만 참여 가능 (20억 이상 40억 미만 사업, 대기업 참여 제한), 직접생산확인증명서(정보시스템유지관리서비스) 필요</li>
+                    <li><strong>주관기관</strong>: 행정안전부 예방안전제도과 (정부세종청사 중앙동) / 클라우드: 국정자원 대구센터(민관협력존)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>사업책임자 (과장)</strong>: 이치선 / 행정안전부 예방안전제도과 / TEL: 042-205-4510 / FAX: 044-205-8920</li>
+                    <li><strong>팀장</strong>: 박태균 / TEL: 042-205-4513</li>
+                    <li><strong>주무관 (문의·자료열람)</strong>: 이현우 / TEL: 042-205-4523 / E-mail: clown1@korea.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술·업무 요구사항]</strong>
+                        <ul>
+                            <li>24시간 365일 무중단 긴급신고 통합시스템 운영 및 공동운영(신고이관·공동대응) 모니터링</li>
+                            <li>클라우드 네이티브(MSA, DevSecOps, DevOps 파이프라인) 환경 운영·기술지원 및 품질점검</li>
+                            <li>장애등급별 허용복구시간 준수: 1등급 주중 180분·공휴일 240분, 2등급 주중 240분·공휴일 360분</li>
+                            <li>응용SW(MSA) 유지관리, 기능개선, 법·제도 변경에 따른 시스템 반영</li>
+                            <li>헬프데스크 24시간 운영 (전화·게시판 접수·처리)</li>
+                            <li>데이터 표준·구조·값 품질관리, 메타데이터 현행화, 공공데이터 제공 지원</li>
+                            <li>보안취약점 점검·조치, 시큐어코딩 준수, 주요정보통신기반시설 보호대책 이행</li>
+                            <li>최소 상주인력 8명 이상 (사업관리·클라우드·DB·연계·인프라·응용·보안·품질관리 분야별 배치)</li>
+                            <li>SLA 기반 성과관리 (종합평가 90점 이상 유지 의무)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[유지관리 대상 구매/통합발주 S/W — 붙임4 기준, 신규 구매가 아닌 기존 유지관리 대상]</strong>
+                        <ul>
+                            <li>SNIPER TMS-sensor (WINS) — 1EA (상위기관보안관제 연계)</li>
+                            <li>SNIPER OneCloud (WINS) — 1EA (가상 IPS)</li>
+                            <li>CoolFilter (시큐맵) — 1EA, domain 1EA (개인정보보호 필터링)</li>
+                            <li>Petra (신시웨이) — 6EA (DB 접근제어)</li>
+                            <li>i-OneNGS Standard 매니지먼트 모듈 (휴네시온) — 2EA (VM접근제어)</li>
+                            <li>i-OneNGS 매니지먼트 노드 (휴네시온) — 7set (10개당 1set)</li>
+                            <li>AhanLab CPP (비츠코리아) — 60EA (서버 백신)</li>
+                            <li>D'guard (제노솔루션) — 6EA, 8Core 1EA (DB 암호화)</li>
+                            <li>AppSuit AOS (스틸리언) — 1EA (앱 보안)</li>
+                            <li>AppSuit IOS (스틸리언) — 1EA (앱 보안)</li>
+                            <li>RedCastle Node (에스지에이) — 60EA (OS 보안)</li>
+                            <li>EnterprisecastleManager Module 관리 서버 — 2EA, 기술지원 월 1회 1식</li>
+                            <li>Y-secuKeypad (YH데이터베이스) — 1EA (키보드 보안)</li>
+                            <li>ExperDB (인젠트) — 6EA (DBMS)</li>
+                            <li>Nuri2 SMS 발송서비스 — 150,000EA</li>
+                            <li>MESIM Indigo ESB (메타빌드) — 2EA (ESB 연계)</li>
+                            <li>Konan Search (코난테크놀로지) — 2EA (검색엔진)</li>
+                            <li>Crownix Report (엠투소프트) — 24EA (Reporting Tool)</li>
+                            <li>Web Square (인스웨이브시스템즈) — 1EA (UI Tool)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>순수 유지관리 용역 사업</strong>: 본 사업은 기존 긴급신고 통합시스템의 운영·유지관리가 목적이며, 신규 상용SW 납품·구독 항목이 없음. 사업비는 인력(용역) 및 CSP 사용료 중심으로 구성됨</li>
+                    <li><strong>Red Hat 상용 제품 전혀 미명시</strong>: RFP 본문, 과업지시서, 붙임4(시스템 운영 SW 유지관리 대상) 등 어디에도 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 존재하지 않음</li>
+                    <li><strong>기존 운영 SW 목록에 Red Hat 제품 없음</strong>: 붙임4에 명시된 유지관리 대상 상용SW 19종은 모두 타사 제품(WINS, 시큐맵, 신시웨이, 휴네시온, 비츠코리아, 제노솔루션, 스틸리언, 에스지에이, YH데이터베이스, 인젠트, 메타빌드, 코난테크놀로지, 엠투소프트, 인스웨이브시스템즈)으로 구성됨</li>
+                    <li><strong>SW 직접구매 제외 명시</strong>: RFP 붙임8 자가점검표에서 "상용SW 직접구매 및 BMT — 해당없음"으로 명시되어 있어 신규 상용SW 조달 계획 없음</li>
+                    <li><strong>CSP 환경 고정</strong>: 클라우드 인프라는 KTC(국정자원) 민관협력형으로 이미 확정 운영 중이며, 클라우드 플랫폼 변경 가능성 없음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>클라우드 네이티브·컨테이너 환경 운영</strong>: RFP 전반에 걸쳐 MSA(Micro Service Architecture), DevOps 파이프라인, DevSecOps, 클라우드 네이티브 운영이 핵심 요구사항으로 명시되어 있어, 향후 OpenShift·Ansible 등 Red Hat 솔루션 제안 여지가 이론적으로 존재함</li>
+                    <li><strong>Linux 기반 서버 환경</strong>: 붙임3(CSP 현황)에서 다수의 Linux 기반 VM 운영이 확인되며(리눅스 패키지 서버 등), 기술적용계획표에도 Linux가 서버용 운영체제로 포함됨. 단, 구체적 배포판 미명시</li>
+                    <li><strong>OS 보안·관리 도구 도입 여지</strong>: RedCastle(OS 보안) 등 기존 OS 보안 SW 유지관리 과정에서 Red Hat Enterprise Linux 기반 보안 강화 솔루션(Satellite 등) 컨설팅 기회 가능성 있음</li>
+                    <li><strong>그러나 실질적 제안 기회 극히 제한적</strong>: 본 사업은 신규 SW 도입이 없는 유지관리 용역이며, 사업 범위 내에서 Red Hat 상용 제품을 신규로 납품하거나 구독 계약을 체결할 근거가 없음. 직접적인 영업 기회보다는 차기 사업(고도화·재구축)을 위한 관계 구축 수준으로 접근하는 것이 현실적임</li>
+                    <li><strong>RFP 내 Red Hat 제품명·수량</strong>: 해당 없음 (문서 전체에 Red Hat 또는 동의어 제품명 미등장)</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

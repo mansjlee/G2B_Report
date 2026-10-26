@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00289969 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국지역정보개발원_2027년도 지방세정보시스템 운영관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>RHEL·OCP·RHV 등 RH 상용 SW 품목 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>218개 지방정부(16개 시도, 202개 시군구)를 대상으로 지방세 부과·징수·체납관리 등 세무 행정업무를 지원하는 지방세정보시스템의 안정적인 운영 및 유지관리</li>
+                    <li>지방세 관련 법·제도 개정 등 외부환경 변화에 능동적으로 대응하고, 사용자(세무공무원 약 3.2만명 및 대국민 약 1,690만명) 중심의 편의 기능 제공</li>
+                    <li>생성형 AI 기반 대국민 상담서비스(AI 챗봇) 운영 및 품질 고도화</li>
+                    <li>기술지원이 종료된 클라우드 플랫폼(RHV, RHOSP, RHOCP)을 RHOVE(OpenShift Virtualization Engine) 기반으로 전환하고, RHEL 8.2 운영 서버를 최신 버전으로 업그레이드하는 인프라 고도화 수행</li>
+                    <li>발주기관: 한국지역정보개발원(지방세정보부) / 상위 위탁기관: 행정안전부(지방세입정보과)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: RFP 본문에 명시되지 않음 (나라장터 입찰공고 참조 필요)</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (계약체결 지연 시 실제계약일~12.31, 일할 계산)</li>
+                    <li><strong>사업 범위</strong>: 표준지방세정보시스템, 위택스(PC·모바일), 빅데이터 시스템, 블록체인 간편인증 플랫폼, 지방세 AI 챗봇, 통합수납·전자송달 시스템, 재해복구시스템, 부가서비스 개발 플랫폼 등 전체 지방세정보시스템 운영·유지관리 및 인프라 고도화(RHOVE 전환, RHEL 업그레이드, 스토리지 신규 구축, VPN 이중화, IMDG 최신화 포함)</li>
+                    <li><strong>주요 일정</strong>: 착수·중간·완료 보고회(연 3회), 외부 감리, 정기분 부과·납기말 운영(등록면허세 1월, 법인지방소득세 4~5월, 개인지방소득세 5~6월, 자동차세 6·12월, 재산세 7·9월, 주민세 8월, 환경개선부담금 연중), 연간 예방점검 및 SLA 평가(매월)</li>
+                    <li><strong>계약 방식</strong>: 일반경쟁입찰, 협상에 의한 계약체결 / 기술평가 90%, 가격평가 10%</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주기관</strong>: 한국지역정보개발원 지방세정보부</li>
+                    <li><strong>사업책임자(부장)</strong>: 이기범 / TEL: 02-2031-9710 / FAX: 02-2031-9701</li>
+                    <li><strong>수석</strong>: 전석범 / TEL: 02-2031-9711 / E-mail: jsblove@klid.or.kr</li>
+                    <li><strong>책임</strong>: 오수진 / TEL: 02-2031-9722 / E-mail: osj123@klid.or.kr</li>
+                    <li><strong>선임</strong>: 박병현 / TEL: 02-2031-9716 / E-mail: bhpark@klid.or.kr</li>
+                    <li><strong>문의 방법</strong>: 전화 또는 방문 질의 원칙 (응답사항은 법적 효력 없음)</li>
+                    <li><strong>자료 열람</strong>: 현행 시스템 구성도, 시스템 SW·HW 현황 등 비공개 자료는 방문 열람 신청 후 제공</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술·비즈니스 요구사항]</strong></li>
+                    <li>▸ <strong>시스템 운영·유지관리</strong>: 법·제도 변경 반영(MPR-01~06), 사용자 요청 기능 개선(MPR-08), 장애 대응(MPR-20), CI/CD 운영(MPR-37) 등 46개 유지관리 수행 요구사항</li>
+                    <li>▸ <strong>AI 챗봇 서비스 운영</strong>(MPR-41): 범정부 AI 공통기반(FabriX, CLOVA Studio for GOV) 연계, RAG 지식데이터 정기 갱신(월 1회 이상), 품질 지표(응답률·정확도·출처 정확도) 분기 측정, 운영비용(AI 사용료·RAG 인프라 사용료) 사업자 부담</li>
+                    <li>▸ <strong>클라우드 플랫폼 RHOVE 전환</strong>(MPR-45): 기술지원 종료된 RHV 4.4, RHOSP 16.1, RHOCP 4.10을 RHOVE(OpenShift Virtualization Engine) 기반 플랫폼으로 전환. 신규 HW 도입 없이 기존 장비 활용. 전담 인력 20MM 이상 투입</li>
+                    <li>▸ <strong>RHEL 업그레이드</strong>(MPR-46): RHEL 8.2(기술지원 종료) 서버를 RHEL 8.10 또는 RHEL 9 안정화 버전으로 업그레이드. 호환성 검증 필수</li>
+                    <li>▸ <strong>신규 스토리지 구축</strong>(MPR-42): 개발검증용 스토리지 EOS 대응. 신규 스토리지(논리적 250TB 이상, NVMe TLC Disk, RAID DDP) 1식 도입 및 기존 HITACHI VSP F370(350TB) 재활용</li>
+                    <li>▸ <strong>VPN 이중화</strong>(MPR-43): 서울시(신한은행), 신용정보원 대외연계 전용구간 암호화 장비(IPSEC VPN) 이중화 구성 (서울시 2식, 신용정보원 2식)</li>
+                    <li>▸ <strong>IMDG 솔루션 최신화</strong>(MPR-44): 주센터 운영영역 IMDG 솔루션 버전 최신화 (개발 3식, 검증 3식, 운영 3식) 및 재해복구센터 동일 버전 적용</li>
+                    <li>▸ <strong>보안 관리</strong>: 클라우드 영역 보안솔루션 운영(MPR-29), 주요정보통신기반시설 취약점 분석·평가, 모의해킹(연 2회), 공급망 보안 가이드라인 준수(SER-12)</li>
+                    <li>▸ <strong>인력 요건</strong>: 지방정부 등 사용자 운영지원 480MM 이상, DBA 2명, 개인정보보호 전문인력 1명, 신기술(빅데이터·AI·챗봇) 전담 2명, 보안 전담 2명, 업무지원시스템 운영 전담 1명 상주</li>
+                    <li><strong>[구매 명시 S/W - 붙임5 상용SW 유지관리 대상 현황]</strong></li>
+                    <li>▸ Red Hat OpenStack Platform, Premium (제조사 기술지원 포함): <strong>27식</strong> (인프라 사업자 유지관리)</li>
+                    <li>▸ Red Hat Virtualization (제조사 기술지원 포함): <strong>12식</strong> (인프라 사업자 유지관리)</li>
+                    <li>▸ Red Hat OpenShift Container Platform, Premium (제조사 기술지원 포함): <strong>9식</strong> (인프라 사업자 유지관리)</li>
+                    <li>▸ Red Hat OpenShift Container Platform (제조사 기술지원 포함): <strong>8식</strong> (인프라 사업자 유지관리)</li>
+                    <li>▸ Red Hat Cloud Suite (제조사 기술지원 포함): <strong>6식</strong> (인프라 사업자 유지관리)</li>
+                    <li>▸ Red Hat Enterprise Linux Server (제조사 기술지원 포함): <strong>23식</strong> (인프라 사업자 유지관리)</li>
+                    <li>▸ Red Hat Enterprise Linux for Virtual Datacenters (제조사 기술지원 포함): <strong>27식</strong> (인프라 사업자 유지관리)</li>
+                    <li>▸ DB접근제어: <strong>280식</strong> (제안사) / DB암호화: <strong>372식</strong> (제안사) / 서버보안: <strong>287식</strong> (제안사)</li>
+                    <li>▸ WEB: <strong>74core + 114core</strong> (제안사) / WAS: <strong>327core + 640core</strong> (제안사)</li>
+                    <li>▸ In-Memory Data Grid: <strong>44core</strong> (제안사) / 배치작업관리: <strong>1Server + 92core + 364core</strong> (제안사)</li>
+                    <li>▸ 연계솔루션(대내): <strong>27core8Agent + 3core14Agent</strong> (제안사) / 연계솔루션(대외): <strong>12core33Agent + 52core63Agent</strong> (제안사)</li>
+                    <li>▸ DBMS: <strong>96core + 430core</strong> (인프라) / 백업: <strong>69식</strong> (인프라)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 공급 포함 여부</strong>: 본 사업은 운영·유지관리 사업으로, Red Hat 제품의 신규 구독 라이선스 직접 구매·납품이 RFP에 명시되어 있지 않음. 상용 SW 유지관리(기술지원 갱신)는 사업자가 제조사 또는 공인 업체와 별도 계약 후 증빙 제출하는 방식</li>
+                    <li><strong>Red Hat SW 유지관리 주체 분리</strong>: 붙임5에서 Red Hat 제품 7종(RHOSP, RHV, OCP, RHEL 등) 전체가 "인프라" 사업자 유지관리 대상으로 지정되어 있어, 제안사(응용 SW 사업자)가 직접 Red Hat 라이선스 유지관리를 수행하지 않음</li>
+                    <li><strong>경쟁·대체 OS 명시 없음</strong>: Ubuntu, Rocky Linux, Oracle Linux, Windows 등 Red Hat 경쟁 OS는 RFP 및 붙임5 현황에 명시되지 않아 Red Hat 도입 배제 요인은 없음</li>
+                    <li><strong>RHOVE 전환 리스크</strong>: MPR-45 수행 시 기존 RHV·RHOSP·RHOCP를 폐기하고 RHOVE로 전환하므로 구형 Red Hat 플랫폼 라이선스 갱신 수요는 종료될 수 있음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>RFP 내 Red Hat 상용 제품 명시 (높음 판정 근거)</strong></li>
+                    <li>▸ 붙임5 상용SW 유지관리 현황에 <strong>Red Hat 상용 제품 7종 합계 112식</strong>이 품목으로 등재됨: RHOSP 27식, RHV 12식, OCP Premium 9식, OCP 8식, Cloud Suite 6식, RHEL Server 23식, RHEL for VDC 27식</li>
+                    <li>▸ RFP 본문 직접 언급: "서버OS/상용 SW(클라우드 가상화 Redhat 등) 버전업 등 인프라 고도화 수행"</li>
+                    <li><strong>MPR-45: RHOVE(OpenShift Virtualization Engine) 전환 과업</strong> — 제안사가 직접 수행. RHV·RHOSP·RHOCP → RHOVE로 전환, RHOCP 4.20 기준 클러스터 재구축. 재해복구센터는 이미 RHOVE+RHOCP 4.20으로 구축 완료. OpenShift 관련 컨설팅·구축 역량 필수</li>
+                    <li><strong>MPR-46: RHEL 업그레이드 과업</strong> — 제안사가 직접 수행. RHEL 8.2 → RHEL 8.10 또는 RHEL 9 업그레이드. 주센터·재해복구센터 대상 서버 전수 실사, 호환성 검증, 작업 계획 수립 및 이행. RHEL 전문 기술 역량 필수</li>
+                    <li><strong>RHOVE·OCP 운영 연속성</strong>: 전환 이후에도 RHOVE 및 RHOCP 기반 클라우드 플랫폼 운영·관리가 사업 전 기간 지속됨. 재해복구센터와 주센터 동기화 운영 포함</li>
+                    <li><strong>CI/CD 환경(MPR-37)</strong>: OpenShift API 인터페이스 기반 CI/CD 파이프라인 운영(Jenkins, GitLab, SonarQube 연동)이 명시되어 있어 OpenShift 전문성이 영업 차별화 포인트</li>
+                    <li><strong>Red Hat 기술 스택 적용 가능 영역</strong>: 컨테이너 워크로드 이행(OCP), 가상화 플랫폼 운영(RHOVE), 운영체제 표준화(RHEL), 자동화(Ansible을 통한 RHEL 업그레이드·패치 자동화 제안 가능)</li>
+                    <li><strong>Red Hat 제품명·수량 종합</strong>:
+                        <ul>
+                            <li>Red Hat OpenStack Platform, Premium: 27식</li>
+                            <li>Red Hat Virtualization (RHV): 12식</li>
+                            <li>Red Hat OpenShift Container Platform, Premium (OCP): 9식</li>
+                            <li>Red Hat OpenShift Container Platform (OCP): 8식</li>
+                            <li>Red Hat Cloud Suite: 6식</li>
+                            <li>Red Hat Enterprise Linux Server (RHEL): 23식</li>
+                            <li>Red Hat Enterprise Linux for Virtual Datacenters (RHEL VDC): 27식</li>
+                            <li>RHOVE(OpenShift Virtualization Engine): MPR-45 전환 과업 신규 도입 대상</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
