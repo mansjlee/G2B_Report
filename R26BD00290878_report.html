@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00290878 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>고양시_2027년 고양 스마트시티센터 정보시스템 유지보수 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 유지보수 용역, 신규 납품 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>고양 스마트시티센터(CCTV 통합관제시스템 및 스마트시티 통합플랫폼)의 정보시스템에 대한 안정적인 운영을 위한 체계적인 점검 및 유지관리 수행</li>
+                    <li>장애 발생 시 신속한 대응 및 복구를 통해 범죄 예방 목적의 24시간 중단 없는 시스템 운영으로 고양 시민의 생명 및 재산 보호</li>
+                    <li>본 사업은 신규 시스템 구축이나 소프트웨어 도입이 아닌 기존 운영 중인 정보시스템의 <strong>유지보수(운영·관리) 용역</strong>임</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 금 1,373,211,000원 (VAT 포함) / 고양시의회 2027년도 예산 심의결과에 따라 변경 가능</li>
+                    <li><strong>사업 기간</strong>: 2027. 1. 1. ~ 2027. 12. 31. (단, 2027. 1. 1. 이후 계약 시 실제 용역 개시일로부터 정산)</li>
+                    <li><strong>사업 범위</strong>: H/W(서버 190대, 운영PC 31대, 스토리지 6대, 보안장비 18대, 네트워크·통신장비 31대, 항온항습기 3대, 무정전전원장치 2대, 방범CCTV 비상벨 1식) 및 S/W(불법주정차 단속 S/W 1식, 차량방범 S/W 1식, CCTV 비밀번호관리 S/W 1식, 이동형 차량단속 S/W 1식, CCTV 유지보수 S/W 1식, 자산관리 S/W 1식, 망연계시스템 5식, 내부통제 S/W 1식, CCTV 지능형관제 시스템 1식, 영상반출 S/W 1식, 침입방지시스템 1식, 통합플랫폼 5대연계 서비스 S/W 3식, CCTV 영상시스템 S/W 1식, 통합플랫폼 상용 S/W 7식, 주정차 단속 사전알림 S/W 1식, CCTV 관리용 맵 S/W 1식, 네트워크 접근제어 시스템 1식) 일체 유지보수</li>
+                    <li><strong>계약 방법</strong>: 제한경쟁입찰 (협상에 의한 계약) / 20억 미만 사업으로 대기업·중견기업 입찰 참여 제한</li>
+                    <li><strong>주요 일정</strong>: 입찰공고 참조 / 계약 체결 후 10일 이내 사업수행계획서 및 현황조사서 제출 / 매월 말 유지보수 완료보고서 제출 / 12월 말 연간 유지보수 완료보고서 제출</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>소속 기관</strong>: 고양시청</li>
+                    <li><strong>담당 부서</strong>: 스마트시티과</li>
+                    <li><strong>담당자 성명</strong>: 김춘기</li>
+                    <li><strong>전화번호</strong>: 031-8075-2578</li>
+                    <li><strong>이메일</strong>: kcg1584@korea.kr</li>
+                    <li><strong>관제센터 위치</strong>: 경기도 고양시 덕양구 고양대로 1415, A구역 6, 7층</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>365일 24시간 무중단 정보시스템 운영 지원 (상주 유지보수 인력 2인 이상)</li>
+                            <li>장애 발생 시 4시간 이내 복구 완료 (장애처리 보고서 포함)</li>
+                            <li>월 1회 이상 정기점검 수행 및 점검결과보고서 제출</li>
+                            <li>OS 업그레이드·패치·기능개선 등 성능 최적화 지원 (MAR-006)</li>
+                            <li>백업 정책 전반 재검토 및 최적화 (MAR-007)</li>
+                            <li>보안 취약점 정기 점검·조치 및 보안 패치 적용 (SER-001~008)</li>
+                            <li>데이터 표준·구조·값 관리 및 메타데이터 현행화 (DAR-001~005)</li>
+                            <li>비상복구 훈련 연 1회 실시 (전 장비 셧다운 후 재기동 포함)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매가 명시된 S/W]</strong>: 본 사업은 신규 S/W 구매·납품 사업이 아닌 <strong>기존 운영 중인 S/W 유지보수 용역</strong>임. 아래는 유지보수 대상 S/W 목록(신규 구매 아님):
+                        <ul>
+                            <li>불법주정차 단속 S/W 1식, 차량방범 S/W 1식, CCTV 비밀번호관리 S/W 1식, 이동형 차량단속 S/W 1식</li>
+                            <li>CCTV 유지보수 S/W 1식, CCTV 관리용 맵 S/W 1식, CCTV 지능형관제 시스템 1식, CCTV 영상시스템 S/W 1식</li>
+                            <li>자산관리 S/W 1식, 내부통제 S/W 1식, 영상반출 S/W 1식, 주정차 단속 사전알림 S/W 1식</li>
+                            <li>망연계시스템 5식, 침입방지시스템 1식, 네트워크 접근제어 시스템 1식</li>
+                            <li>통합플랫폼 5대연계 서비스 S/W 3식, 통합플랫폼 상용 S/W 7식</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>순수 유지보수 용역 사업</strong>: 본 RFP는 기존 정보시스템에 대한 운영·유지관리 용역으로, 신규 S/W 납품·구독·도입 항목이 전혀 없음. Red Hat 제품 판매 기회 자체가 구조적으로 부재</li>
+                    <li><strong>Red Hat 상용 제품명 전무</strong>: RFP 전문에 걸쳐 RHEL, OpenShift, Ansible, JBoss EAP, Satellite, AAP 등 Red Hat 상용 제품명이 단 한 건도 명시되지 않음</li>
+                    <li><strong>경쟁 제품 명시 없으나 기회도 없음</strong>: VMware, Ubuntu, Oracle Linux 등 경쟁 제품 명시는 없으나, 유지보수 대상 S/W는 모두 CCTV·스마트시티 전용 소프트웨어로 Red Hat 스택과 무관한 영역</li>
+                    <li><strong>중소기업 제한 사업</strong>: 20억 미만으로 대기업·중견기업 입찰 불가. Red Hat 코리아 직접 참여 불가 구조</li>
+                    <li><strong>기술적용계획표 상 Linux 언급은 표준 체크리스트</strong>: 별표6 기술적용계획표에 Linux가 언급되나, 이는 행정기관 정보시스템 지침의 표준 항목 체크리스트일 뿐 실제 도입 요구가 아님</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>직접적 제안 가능 요소 없음</strong>: 본 사업은 기존 CCTV 통합관제시스템 유지보수 용역으로, Red Hat 상용 제품을 새롭게 도입하거나 확장할 수 있는 요소가 RFP 내에 존재하지 않음</li>
+                    <li><strong>간접 참고 정보 (영업 활동 참고용)</strong>:
+                        <ul>
+                            <li>서버 190대 규모의 대형 인프라 운영 환경으로, 향후 인프라 현대화·클라우드 전환 프로젝트 발생 시 RHEL·OpenShift 제안 가능성 있음 (별도 사업 기회)</li>
+                            <li>기술적용계획표에 Linux, IaaS/PaaS/SaaS, Kubernetes 관련 항목이 체크되어 있어 고양시 스마트시티센터가 오픈소스 기반 기술 환경에 친숙한 조직임을 시사</li>
+                            <li>RFP에 명시된 Red Hat(또는 동의어) 제품명·수량: <strong>없음</strong></li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

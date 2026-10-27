@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00291083 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국보건의료연구원_2027년 정보시스템 및 인프라 통합 유지관리 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>VMware 기존 구축, RH 상용품목 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>한국보건의료연구원의 정보시스템 및 IT 인프라(H/W, S/W, 사무용기기 등)의 통합적 유지관리를 위한 전문 용역 사업</li>
+                    <li>전문 상주인력 및 기술지원 확보를 통한 업무 연속성 유지 및 효율적 운영</li>
+                    <li>주요 정보시스템에 대한 사전 예방점검 및 신속한 장애복구체계 구축으로 신뢰성 있는 시스템 운영</li>
+                    <li>보안 취약점 제거 및 보안장비 탐지 규칙 최신 업데이트를 통한 정보보안 침해사고 예방</li>
+                    <li>대표 홈페이지(neca.re.kr) 및 PACEN 홈페이지(pacen.neca.re.kr) 유지관리 포함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 524,900천원 (부가가치세 포함)</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (12개월)</li>
+                    <li><strong>사업 범위</strong>: 서버(24대)·네트워크(10종)·보안장비(27종)·상용SW·응용프로그램·사무용기기(데스크톱 293대, 모니터 503대, 복합기 등 총 823대) 통합 유지관리; ERP·홈페이지(대표, PACEN) 유지관리; 정보보호 및 개인정보보호 지원; 백업·복구 체계 운영</li>
+                    <li><strong>주요 일정</strong>: 2026년 10~12월 과업 확정·입찰·업체선정 및 계약 / 2027년 1~12월 정보시스템 통합 유지관리 수행 (정기·수시 점검, 장애대응, 교육·기술지원, 산출물 관리)</li>
+                    <li><strong>입찰 방법</strong>: 제한경쟁(협상에 의한 계약) / 기술평가 90% + 가격평가 10%</li>
+                    <li><strong>참여 제한</strong>: 20억 미만 사업으로 대기업·중견기업 입찰 참여 제한 (중소 SW사업자만 참여 가능)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주기관</strong>: 한국보건의료연구원</li>
+                    <li><strong>사업담당</strong>: 정보화운영팀 김준홍 / ☎ 02-2174-2582</li>
+                    <li><strong>계약담당</strong>: 재무회계팀 최슬기 / ☎ 02-2174-2751</li>
+                    <li><strong>이메일</strong>: 별도 명시 없음 (입찰공고문 참조)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong>
+                        <ul>
+                            <li>상주 인력 2명 운용: ① 서버·미들웨어·보안·네트워크 관리 (유사경력 5년 이상) ② 사무용기기·IT 서비스데스크 운영 (유사경력 2년 이상)</li>
+                            <li>24시간 365일 무중단 서비스 목표, 장애 접수 후 2시간 내 현장 도착·8시간 내 복구</li>
+                            <li>OS EoS 버전 재설치, OS 업그레이드 및 마이그레이션 작업 지원</li>
+                            <li>정기점검(월 1회 또는 분기 1회), 예방점검(연속 5일 초과 공휴일 전), 특별점검(수시) 수행</li>
+                            <li>백업정책 수립, 복구체계 구축, 연 1회 이상 모의훈련 실시</li>
+                            <li>SLA 기반 서비스 수준 협약 체결(착수 후 3개월 이내), 월간 보고</li>
+                            <li>웹접근성 인증 갱신 2건(프로그램 수정 포함), SSL/PKI 등 솔루션 서비스 갱신</li>
+                            <li>소프트웨어 개발보안(시큐어코딩) 적용, 취약점 점검·조치(연 1회 이상)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W — 유지관리 대상 상용프로그램]</strong>
+                        <ul>
+                            <li>OfficeHardVEX (지란지교시큐리티, 파일서버용) — 1식</li>
+                            <li>PetraCipher (신시웨이, 암호화/접근제어) — 2식</li>
+                            <li>DocumentViewer (사이냅소프트, 문서뷰어) — 1식</li>
+                            <li>WatchAll 11 (와치텍, 통합관제/시스템관리) — 21식 (1+20)</li>
+                            <li>VMWARE 8 (브로드컴, 가상화소프트웨어) — 1식</li>
+                            <li>Splentec Storage v4.1 (올리브텍, 웜스토리지SW, 10TB) — 1식</li>
+                            <li>U-Audit v2.0 (유엔파인, 전자감사솔루션) — 1식 (27년 0개월 미계상)</li>
+                            <li>Veeam Backup &amp; Replication 12 (Veeam, 백업SW) — 1식</li>
+                        </ul>
+                        ※ 상기 목록은 신규 통합발주가 아닌 기존 도입 S/W에 대한 유지관리 대상 목록임
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>순수 유지관리 용역으로 신규 S/W 납품·구독 항목 없음</strong>: 본 사업은 기존 구축 장비 및 소프트웨어에 대한 통합 유지관리 용역이며, 신규 상용 S/W 도입·납품 항목이 별도로 존재하지 않음</li>
+                    <li><strong>VMware(브로드컴) 가상화 소프트웨어 기존 구축 확정</strong>: 상용프로그램 목록에 '브로드컴 VMWARE8' 1식이 기존 가상화 플랫폼으로 명시되어 있으며, 이에 대한 유지관리가 과업 범위에 포함됨. Red Hat Virtualization(RHEV) 등 RH 가상화 제품으로의 전환 여지 없음</li>
+                    <li><strong>Red Hat 상용 제품명(RHEL, OpenShift, Ansible, JBoss EAP 등) 전혀 미명시</strong>: RFP 전문 및 기술적용계획표 어디에도 Red Hat 상용 제품·동의어가 품목으로 기재되지 않음</li>
+                    <li><strong>기술표준 목록은 일반 표준 열거에 불과</strong>: 기술적용계획표의 'Linux' 항목은 행정안전부 표준 기술 목록 체크 항목으로, 특정 OS 도입·구매를 의미하지 않음</li>
+                    <li><strong>20억 미만 소규모 사업, 중소 SW사업자만 참여 가능</strong>: Red Hat코리아 등 대기업·중견기업은 직접 입찰 참여 제한됨</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>기술적용계획표 내 Linux 서버 운영체제 표준 명시</strong>: '서버용(개방형) 운영체제 — Linux' 항목이 기술 표준으로 체크되어 있으나, 이는 일반적인 개방형 OS 기준이며 RHEL 상용 제품 도입을 의미하지 않음. 유지관리 중 OS 업그레이드·마이그레이션 지원 과정에서 RHEL 전환 제안 여지가 이론상 존재하나 가능성 매우 낮음</li>
+                    <li><strong>OS EoS 대응 과업 포함</strong>: MPR-002에서 "OS EoS 버전 재설치, OS 업그레이드 및 마이그레이션 작업" 이 명시되어 있어, 유지관리 수행 중 노후 OS 전환 시 RHEL 제안 가능성이 부수적으로 존재할 수 있음</li>
+                    <li><strong>RFP에 명시된 Red Hat(또는 동의어) 제품명·수량</strong>: <strong>없음</strong> — 본 RFP 전문에 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 품목으로 명시된 사례 없음</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

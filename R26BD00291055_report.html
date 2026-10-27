@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00291055 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>서울특별시 마포구_마포구 홈페이지 개편 및 2027년 유지관리 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>Rocky Linux OS 확정 명시, RH 상용 제품 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>서울특별시 마포구의 대표홈페이지 등 24개 사이트를 전면 개편하고 2027년 통합 유지관리를 수행하는 사업</li>
+                    <li>노후화된 전자정부 표준프레임워크 및 개발환경(Java, WAS)을 최신화하여 보안 취약점 해소 및 서비스 연속성 확보</li>
+                    <li>콘텐츠관리시스템(CMS) 도입 및 관리자시스템 3개를 1개로 통합하여 운영 효율성 제고</li>
+                    <li>구민 중심의 화면 개편, AI(마포브레인) 연계 기반 구축, 개인정보 보호 자동화 기능 구현</li>
+                    <li>웹 접근성·개인정보보호 인증 획득 및 보안 강화를 통한 디지털 공공서비스 품질 향상</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 총 664,811,000원 (부가가치세 포함) — 홈페이지 개편 399,811,000원(2026년 예산) + 통합유지관리 265,000,000원(2027년 예산)</li>
+                    <li><strong>사업 기간</strong>: 계약 체결 후 ~ 2027년 12월 31일</li>
+                    <li><strong>사업 범위</strong>: ① 홈페이지 개편(개발환경 전환, CMS 도입, 관리자시스템 통합, 화면 개편, AI 연계 기반 구축, 모의해킹 등) ② 통합유지관리(24개 사이트 상시 유지관리, 솔루션 8종 유지관리, 기능 개선, 웹접근성·보안인증 유지 등)</li>
+                    <li><strong>주요 일정</strong>: 2027년 상반기 기존 홈페이지 AI 연계 우선 적용 → 2027년 9월까지 새 홈페이지 오픈 → 2027년 12월까지 유지관리 이관 및 안정화 완료</li>
+                    <li><strong>입찰 방식</strong>: 제한경쟁입찰 / 협상에 의한 계약, 중소 소프트웨어사업자만 참여 가능(대기업 참여 불가), 공동수급 불허(단독도급)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 서울특별시 마포구 스마트정책과(디지털정책팀)</li>
+                    <li><strong>담당자 1</strong>: 주무관 전지열 / 전화: 02-3153-8414 / E-mail: jeonji@mapo.go.kr</li>
+                    <li><strong>담당자 2</strong>: 주무관 김태훈 / 전화: 02-3153-8402 / E-mail: th2268@mapo.go.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong>
+                        <ul>
+                            <li>개발환경 전환: 전자정부 표준프레임워크 5.0 이상, Java 17 이상 적용 / JEUS WAS 업그레이드 (COR-007)</li>
+                            <li>현행 DBMS(ORACLE), 웹서버(WebtoB) 현행 유지, 솔루션 8종의 신규 서버(Rocky Linux) 이관 설치 및 재연동</li>
+                            <li>CMS 기반 통합 관리자시스템 구축(대표·보건소·동주민센터 3개 사이트 통합)(SFR-001)</li>
+                            <li>개인정보 자동 파기, 인사이동에 따른 권한 자동 회수 및 후임자 지정 자동화(SFR-004)</li>
+                            <li>마포브레인(AI) 연계: API 기반 질의응답·후임자 추정 기능 연동(SFR-006)</li>
+                            <li>정부 통합인증(Any-ID) 도입 및 기존 서울패스·마포패스 로그인 유지(SFR-005)</li>
+                            <li>문화관광 포털 기능 개선, 평생학습포털 통합예약 기능 개편 및 결제모듈 최신화(SFR-007, SFR-008)</li>
+                            <li>개통 전 웹 취약점 점검 및 모의해킹 수행·조치(COR-006)</li>
+                            <li>웹 접근성 품질인증 마크 획득(24개 사이트 전체), 개인정보보호 인증마크(ePRIVACY) 갱신, SSL 갱신 포함</li>
+                            <li>총 투입공수 22.5M/M (유지관리 파트: 개발자 1명 상주 포함 5명 체계)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 S/W — 통합발주 대상]</strong>
+                        <ul>
+                            <li>콘텐츠관리시스템(CMS) 1식 — 상용 CMS 신규 도입(ECR-001), 직접구매 제외(통합발주), 라이선스 마포구 명의, 사이트 수·사용자 수 무제한 조건 필요</li>
+                        </ul>
+                    </li>
+                    <li><strong>[유지관리 대상 솔루션 8종 — 직접구매 아닌 유지보수 형태]</strong>
+                        <ul>
+                            <li>WEB/WAS: WebtoB / JEUS — ㈜티맥스소프트</li>
+                            <li>통합검색엔진: ibricks openQuery SE — ㈜아이브릭스</li>
+                            <li>DB암호화: Xecure DB — ㈜한컴위드</li>
+                            <li>문서변환: Synap Document Viewer — ㈜사이냅소프트</li>
+                            <li>이미지 개인정보 차단: PrivacyCenter — ㈜컴트루테크놀로지</li>
+                            <li>WAS 성능관리: Jennifer — 제니퍼소프트</li>
+                            <li>전자점자: 다큐브레일 — ㈜에이씨엔에스</li>
+                            <li>DB접근제어: DBSAFER — ㈜피앤피시큐어</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>Rocky Linux OS 확정</strong>: RFP 서비스 환경 표에서 서버 운영체제가 "HP-UX, CentOS → Rocky Linux"로 명시되어 있으며, "Rocky Linux 서버는 발주기관이 준비하여 제공"한다고 명확히 기재되어 있음. OS 전환 대상이 이미 Rocky Linux로 확정되어 RHEL 제안 여지 없음</li>
+                    <li><strong>경쟁 OS 명시</strong>: Rocky Linux는 RHEL의 대체·경쟁 오픈소스 OS로, 발주기관이 직접 준비·제공하는 기반 인프라로 확정됨</li>
+                    <li><strong>Red Hat 상용 제품 전무</strong>: RFP 전문에 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 단 한 건도 언급되지 않음</li>
+                    <li><strong>WEB/WAS 스택 타사 확정</strong>: 웹서버(WebtoB)·WAS(JEUS) 모두 티맥스소프트 제품으로 현행 유지 또는 업그레이드가 명시되어 JBoss EAP 제안 불가</li>
+                    <li><strong>DBMS 타사 확정</strong>: Oracle DBMS를 현행 유지로 명시, Red Hat 관련 데이터 플랫폼 제안 여지 없음</li>
+                    <li><strong>솔루션 8종 모두 타사 제품으로 고정</strong>: 유지관리 대상 솔루션 8종이 티맥스소프트, 아이브릭스, 한컴위드, 사이냅소프트 등 타사 제품으로 전부 확정되어 대체 제안 불가</li>
+                    <li><strong>중소기업 전용 사업</strong>: 대기업 참여 불가, Red Hat Korea는 입찰 직접 참여 불가 구조</li>
+                    <li><strong>S/W 구매 최소화</strong>: 구매 S/W가 CMS 1식에 불과하며, 해당 제품 역시 Red Hat 포트폴리오와 무관한 웹 콘텐츠관리 솔루션임</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>RFP 내 Red Hat 상용 제품명 없음</strong>: RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품이 구매 품목이나 기술 요구사항으로 일절 명시되지 않아 직접적인 제안 기회는 없음</li>
+                    <li><strong>Rocky Linux → RHEL 전환 간접 여지(매우 제한적)</strong>: 현행 CentOS에서 Rocky Linux로 전환하는 환경이므로, 향후 안정성·보안지원 측면에서 RHEL 도입의 간접적 영업 대화 소재가 될 수 있으나, 본 사업 내에서는 이미 Rocky Linux로 확정되어 실질적 제안 기회 없음</li>
+                    <li><strong>AI/자동화 플랫폼 간접 연관성</strong>: 마포브레인(AI) 연계 및 데이터 표준화, API 개발 등의 요구사항이 있으나, OpenShift AI, Ansible Automation Platform 등의 Red Hat 솔루션과 기술적 연관성은 있어도 본 사업 내 도입 품목으로 명시되지 않아 활용 불가</li>
+                    <li><strong>결론</strong>: 본 RFP에서 Red Hat 상용 제품 제안 가능 요소 없음. Rocky Linux OS 확정으로 인해 낮음 판정</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00291112 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>포항테크노파크_AI·로봇 보안위협 시연 및 보안 테스트베드 구축 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>Linux 계열 OS 미지정, RHEL 제안여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>「2026년 지역거점 정보보호클러스터 구축사업」의 일환으로, 이동형 휴머노이드 로봇 시스템을 중심으로 통신·인지·제어·데이터 전 계층의 보안위협 시험·시연과 AI·로봇 소프트웨어 공급망 보안 검증을 위한 통합 테스트베드를 구축하는 사업</li>
+                    <li>「위협 시연 존」과 「보안 테스트 존」 2개 존으로 구성된 AI·로봇 보안위협 통합 시험환경을 조성하고, 시나리오 기반 보안 위협 시연 및 로봇 SW·AI 보안 검증 수행 기반 마련</li>
+                    <li>지역 로봇·AI 기업의 향후 보안위협 체험·검증 지원에 활용 가능한 반복·재현 가능한 시험 절차 확보를 목표로 함</li>
+                    <li>개별 장비 또는 소프트웨어의 단순 구매가 아닌 공개·개방형 기반 시험 모듈을 활용한 통합 구축 용역임 (신규 SW 개발 비포함)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 523,000,000원 (금 오억이천삼백만 원, 부가가치세 포함)</li>
+                    <li><strong>사업 기간</strong>: 계약 체결일로부터 31일 이내</li>
+                    <li><strong>사업 범위</strong>: ① AI·로봇 보안위협 시연 존 구축 (이동형 휴머노이드 로봇 도입, 위협 시나리오 2건 개발, 시연 영상 2종 제작, 데이터 수집·시각화 기능 구현) ② AI·로봇 보안 테스트 존 구축 (로봇 통신·미들웨어 퍼징 시험 자동화 모듈, AI 데이터 품질·모델 성능 검증 모듈, SW 구성분석(SCA)/SBOM 생성 모듈) ③ 장비 납품·설치·연동·시운전 및 구축 검증 ④ 시험 절차서·사용자 매뉴얼 등 산출물 작성, 사용자 교육 및 운영 인수인계</li>
+                    <li><strong>계약 방법</strong>: 제한경쟁입찰 (협상에 의한 계약), 중소기업 제한 (대기업 참여 불가)</li>
+                    <li><strong>주요 일정</strong>: 착수보고 계약 후 7일 이내 → 중간보고 현장 구축 시작 후 3일 이내 → 완료보고 계약 종료 1일 전까지 / 전체 일정: 계약 체결 후 1~5주차 내 모든 공정 완료·검수·인수인계</li>
+                    <li><strong>평가 장소</strong>: (재)포항테크노파크 제5벤처동 AX랩</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주 기관</strong>: 재단법인 포항테크노파크</li>
+                    <li><strong>담당 부서</strong>: 경북AI혁신본부</li>
+                    <li><strong>담당자 성명</strong>: 박진석</li>
+                    <li><strong>전화번호</strong>: 054-223-2190</li>
+                    <li><strong>이메일</strong>: 미기재 (제안요청서 내 별도 안내 없음)</li>
+                    <li><strong>주소</strong>: 경북 포항시 남구 지곡로 394</li>
+                    <li><strong>대표자</strong>: 송 경 창 (재단법인 포항테크노파크 원장)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항 요약]</strong>
+                        <ul>
+                            <li><strong>위협 시연 존 (SFR-001~006)</strong>: 이동형 휴머노이드 로봇 기반 통합 보안 시험·시연환경 구축, 위협 시나리오 2건 개발 (정상→공격→방어 흐름, MITRE ATT&CK for ICS 참조), 시연 영상 2종 제작 (FHD 이상, 편당 3~5분), 로봇 상태·공격 이벤트 실시간 데이터 수집·시각화</li>
+                            <li><strong>보안 테스트 존 (SFR-007~009)</strong>: 로봇 통신·미들웨어 퍼징 시험 자동화 환경 구축 (분산 데이터 통신 프로토콜 지원, 인터넷 비연결 환경 동작), AI 데이터 품질·모델 성능 검증 모듈 구축 (완전성·정합성·강건성 검증), SW 구성분석(SCA) 및 SBOM 생성 모듈 구축 (CycloneDX 등 공개 표준 형식)</li>
+                            <li><strong>공통</strong>: 모든 시험 모듈은 공개·개방형 기술 기반, 사용 기간·사용자 수 제한 없이 영구 사용 가능, 폐쇄망 재설치·복구 가능, 라이선스 준수 확인자료 인계 의무</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매가 명시된 H/W 목록]</strong>
+                        <ul>
+                            <li><strong>ECR-001</strong>: 이동형 휴머노이드 로봇 1식 (25 DOF 이상, AI 연산 200 TOPS 이상, 메모리 32GB 이상, 개방형 OS(Linux 계열) + ROS 2, 원격조작 장치 포함, E-STOP 포함)</li>
+                            <li><strong>ECR-002</strong>: AI 데이터·모델 검증용 워크스테이션 1식 (16코어 이상, 메모리 128GB 이상, SSD 2TB + HDD 4TB 이상, GPU: NVIDIA RTX PRO 5000 또는 동등 이상, <strong>운영체제 정품 라이선스 포함</strong>)</li>
+                            <li><strong>ECR-003</strong>: 이동형 검증·시연용 노트북 4식 (Core i7급, 메모리 16GB 이상, SSD 512GB 이상, 14~16인치, <strong>운영체제 정품 라이선스 포함</strong>)</li>
+                            <li><strong>ECR-004</strong>: 시연·시각화용 대형 디스플레이 1식 (75인치 4K 이상, 거치대 포함)</li>
+                            <li><strong>ECR-005</strong>: 통합 테스트베드 구성용 네트워크 장비 1식 (기가비트 RJ-45 포트 24개 이상, 10GbE 2개 이상, SFP+ 2개, L3 스위치 기능 탑재 시 보안기능 확인서 필수)</li>
+                            <li><strong>ECR-006</strong>: AI 데이터·모델 검증용 모니터 2식 (27인치 이상)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매가 명시된 S/W 목록]</strong>: <strong>통합발주 상용 SW 품목 없음.</strong> 보안 테스트 존 시험 모듈은 모두 공개·개방형 SW 기반으로 설치·구성하며, "별도 상용 보안 솔루션 도입은 본 사업 범위에서 제외"라고 명시함. 컴퓨팅 장비(ECR-002, ECR-003)에 "운영체제 정품 라이선스 포함 공급" 요구 있으나 OS 종류는 미지정.</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>공개 소프트웨어 기반 원칙 명시</strong>: 보안 테스트 존의 모든 시험 모듈은 "공개·개방형 기술 또는 동등한 기능·성능을 제공하는 기술"을 활용하여 구축하도록 명시. 상용 SW 라이선스 구독 도입을 사실상 배제하는 구조임.</li>
+                    <li><strong>상용 보안 솔루션 명시 제외</strong>: SFR-002에서 "탐지·방어 기능은 공개 소프트웨어 또는 시나리오용 구성으로 구현하며, 별도 상용 보안 솔루션 도입은 본 사업 범위에서 제외"라고 명확히 기재.</li>
+                    <li><strong>Red Hat 상용 제품명 전혀 없음</strong>: RFP 전체에 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명 또는 동의어가 단 한 건도 명시되지 않음.</li>
+                    <li><strong>경쟁·대체 OS 직접 명시는 없으나</strong>: 컴퓨팅 장비 OS 종류가 미지정으로, 일반적으로 노트북·워크스테이션 납품 시 Windows OS가 번들되는 경우가 많아 RHEL 도입 가능성이 낮음.</li>
+                    <li><strong>중소기업 한정 입찰</strong>: 대기업(Red Hat Korea 포함) 직접 입찰 불가. SI 또는 통합 사업자를 통한 간접 공급 구조.</li>
+                    <li><strong>사업 성격상 SW 구독 수익 기회 제한</strong>: 신규 SW 개발이나 상용 플랫폼 도입이 아닌 하드웨어 공급 + 공개 SW 설치·연동 중심 사업으로, Red Hat 구독형 상용 제품 납품 기회 구조적으로 희박.</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>로봇 OS "개방형 OS(Linux 계열)" 미지정 (ECR-001)</strong>: 이동형 휴머노이드 로봇의 메인 OS가 "개방형 OS(Linux 계열)"로만 명시되어 특정 배포판이 고정되지 않음. RHEL 기반 로봇 플랫폼 구성을 기술 차별화 포인트로 제안 가능.</li>
+                    <li><strong>컴퓨팅 장비 OS 납품 요구 (ECR-002, ECR-003)</strong>: 워크스테이션(1식) 및 노트북(4식) 모두 "운영체제 정품 라이선스를 포함하여 공급" 조건이 명시되어 있어, RHEL Workstation 라이선스 납품 제안 검토 가능 (단, 실제 수요는 낮을 것으로 예상).</li>
+                    <li><strong>보안 테스트 존 시험 모듈의 Linux 기반 운영 환경</strong>: 퍼징 시험(SFR-007), AI 데이터·모델 검증(SFR-008), SCA/SBOM(SFR-009) 등 시험 모듈은 모두 Linux 환경에서 운영되는 구조이며, 안정성·보안성 강화를 위한 RHEL 기반 운영환경 제안 가능.</li>
+                    <li><strong>RFP에 명시된 Red Hat(또는 동의어) 제품명·수량</strong>: <strong>없음</strong> — RFP 전체에 Red Hat 상용 제품명 또는 동의어가 명시되지 않음.</li>
+                    <li><strong>ROS 2 + Linux 환경</strong>: 로봇 미들웨어로 ROS 2가 명시되어 있으며, ROS 2는 Linux 환경에서 주로 운용됨. 파트너사를 통한 로봇 플랫폼에 RHEL 기반 OS 번들 제안 가능성 있음.</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
