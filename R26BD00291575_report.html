@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00291575 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>중소기업기술정보진흥원_2027~28년 스마트공장 사업관리시스템 위탁운영 및 기능개선 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 미포함 순수 위탁운영 용역</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>중소기업기술정보진흥원이 운영하는 <strong>스마트공장 사업관리시스템</strong>의 안정적 위탁운영 및 기능개선 사업</li>
+                    <li>스마트공장 지원사업의 원활한 수행을 위한 시스템 운영·연계 복잡도 증가에 선제 대응</li>
+                    <li>제조혁신사업 확대(스마트서비스, 뿌리기업, 지역별 구축지원 등)에 따른 사업관리 기능 고도화</li>
+                    <li>공공 마이데이터·RCMS 등 대내외 연계 서비스의 안정적 운영 및 데이터 정합성 확보</li>
+                    <li><strong>제조 AI24 통합플랫폼</strong> 구축에 따른 현행 사업관리시스템 업무·기능 전환 및 데이터 이관 지원</li>
+                    <li>365일 24시간 무중단 운영환경 제공 및 정보보안 강화</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 총 38억원 (부가세 포함) — 1차년도 19억원, 2차년도 19억원</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2028년 12월 31일 (총 24개월, 장기계속계약)</li>
+                    <li><strong>사업 범위</strong>: ① 시스템 안정적 운영 및 보안관리 ② 제조혁신 지원사업 운영환경 변화에 따른 기능개선 ③ 제조 AI24 통합플랫폼 구축에 따른 시스템 전환 및 데이터 이관 지원</li>
+                    <li><strong>계약 방법</strong>: 제한경쟁입찰(총액, 긴급) / 협상에 의한 낙찰자 선정</li>
+                    <li><strong>입찰 참가자격</strong>: 연차별 계약금액 20억원 미만 사업으로 중소 소프트웨어사업자(소상공인 포함)만 참여 가능 (대기업·중견기업 제한)</li>
+                    <li><strong>주요 일정</strong>: 계약 체결 후 14일 이내 사업수행계획서 제출 / SLA 착수 후 2개월 이내 체결 / 평가일시는 접수 마감 후 7일 이내 별도 안내</li>
+                    <li><strong>분리발주</strong>: 상용 SW 직접구매 없음 (5천만원 초과 SW 도입 없음)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>소속 부서</strong>: 중소기업기술정보진흥원 지능정보화실</li>
+                    <li><strong>실장</strong>: 한상희 / 전화: 044-300-0770</li>
+                    <li><strong>담당 선임연구원</strong>: 최욱진 / 전화: 044-300-0763 (문의처)</li>
+                    <li><strong>소재지</strong>: 세종시 (주소 미상세 기재)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술·업무 요구사항]</strong> 총 54개 요구사항 구성: 유지관리 수행(11), 유지관리 인력(3), 기능(5), 품질(7), 보안(8), 제약사항(8), 프로젝트관리(8), 프로젝트지원(4)</li>
+                    <li><strong>[핵심 기술 요구사항]</strong>
+                        <ul>
+                            <li>민간 클라우드 기반 서버·네트워크·보안장비 및 상용SW의 통합 유지관리</li>
+                            <li>ITSM 기반 표준운영절차 수립 및 SLA 관리</li>
+                            <li>공공마이데이터·RCMS·중소벤처24·SIMS 등 대내외 시스템 API 연계 기능 운영 및 개선</li>
+                            <li>제조 AI24 통합플랫폼 클라우드 네이티브 전환에 따른 업무기능 변경, 데이터 추출·변환·매핑, 통합테스트 지원</li>
+                            <li>24×365 무중단 장애 대응 체계 (장애 접수 후 2시간 내 방문, 4시간 내 복구 원칙)</li>
+                            <li>웹 보안 취약점 점검, 개인정보보호, 국정원 정보보안 감사 지원</li>
+                            <li>AI 활용 방안 지원(Chat GPT, Perplexity 등)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W — 통합발주 없음, 기존 운영 중인 SW 현황]</strong>
+                        <ul>
+                            <li>OZ Report Server v9.0 (리포팅도구) — 2EA</li>
+                            <li>OZ Report Html5/Scheduler 9.0 (리포팅도구) — 2EA</li>
+                            <li>MySQL Enterprise Edition 5.6 (사업관리시스템 구버전 DBMS) — 2EA</li>
+                            <li>MySQL Enterprise Edition Subscription (1-4 socket server) 8.0 (사업관리시스템 DBMS + 로그수집시스템 DBMS) — 3EA</li>
+                            <li>D'Amo D'Amo 16Core (암호화 특화솔루션) — 2EA</li>
+                            <li>WEBFILTER W4000 2.0 (관제 및 개인정보솔루션) — 1EA</li>
+                            <li>e-Page SAFER V2.5, Client for Non-ActiveX, Enterprise (복사방지·출력물 제어) — 1EA</li>
+                            <li>PKI (Key# nxBiz v1.0, Non-ActiveX, 전자서명솔루션) — 2EA</li>
+                            <li>ez TimeStamp (타임스탬프·시점확인) — 2EA</li>
+                            <li>ePapyrus PDF Gateway11 (PDF변환) — 2EA</li>
+                            <li>K-link (기업데이터 정보) — 1EA</li>
+                            <li>K-Upload (대용량 첨부파일) — 1EA</li>
+                            <li>실명인증 API (회원 실명인증·IPIN·본인확인) — 2EA</li>
+                            <li>AnySupport (원격지원관리) — 1EA</li>
+                            <li>※ 상기 SW는 현행 운영 중인 자산이며, 본 사업에서 SW 신규 구매·도입 없음 (분리발주 없음 명시)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>[SW 공급 없음]</strong> RFP에 "분리발주에 관한 사항: 상용 SW 직접구매 없음"이 명시되어 있으며, "본 사업은 5천만원을 초과하는 소프트웨어 도입이 없으므로 소프트웨어 분리발주 대상에 해당하지 않음"이라고 명확히 규정 → SW 납품·구독 기회 없음</li>
+                    <li><strong>[Red Hat 상용 제품명 전무]</strong> RFP 전문에 RHEL, OpenShift, Ansible, JBoss EAP, Satellite, AAP 등 Red Hat 상용 제품명이 단 한 건도 명시되지 않음</li>
+                    <li><strong>[현행 DBMS 경쟁 제품]</strong> 기존 DBMS로 MySQL Enterprise Edition(Oracle 상용 제품)이 명시·운영 중이며, 본 사업은 이의 유지관리를 포함하므로 RH DBMS 진입 여지 없음</li>
+                    <li><strong>[순수 위탁운영·용역 사업]</strong> 사업의 핵심은 기존 시스템 운영·유지보수 및 기능개선 개발 용역이며, 신규 인프라·플랫폼 구축이 아니므로 Red Hat 솔루션 도입 기회가 구조적으로 차단됨</li>
+                    <li><strong>[HW/SW 인프라 현황 비공개]</strong> 현행 서버·OS·미들웨어 구성 현황은 보안사항으로 방문 열람만 가능하여 제안 기반 정보 확보가 제한적이나, 전반적인 사업 성격상 RH 제품 제안 가능성이 낮음</li>
+                    <li><strong>[중소SW 사업자 제한 입찰]</strong> 연차 계약금액 20억원 미만으로 중소SW사업자만 참여 가능, Red Hat이 직접 사업을 수행하거나 주도적으로 관여하기 어려운 구조</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[클라우드 네이티브 전환 언급]</strong> 제조 AI24 통합플랫폼이 "클라우드 네이티브 기반"으로 구축된다고 명시되어 있으나, 이는 본 사업(위탁운영)이 아닌 별도 구축 사업의 내용이며, 현 RFP에서 OpenShift/OCP 등 구체적 기술 스택이 특정되지 않음</li>
+                    <li><strong>[Linux 계열 서버 OS 항목 언급]</strong> 기술적용계획표에 서버용 개방형 운영체제로 POSIX, UNIX, Windows Server, Linux 항목이 포함되어 있으나, 이는 표준 준수 체크리스트 항목일 뿐 특정 OS 채택을 의미하지 않음</li>
+                    <li><strong>[간접 제안 기회]</strong> 향후 제조 AI24 통합플랫폼 구축 사업(별도)에서 클라우드 네이티브·컨테이너 플랫폼 요구 시 OpenShift 제안 가능성 존재 — 현재 운영사가 통합 전환을 지원하므로, 해당 구축 사업 수주 업체와의 협업을 통한 간접 기회 모니터링 필요</li>
+                    <li><strong>[RFP 내 Red Hat 제품·동의어 명시 없음]</strong> 본 RFP에는 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품 또는 동의어가 전혀 언급되지 않음 → 직접적인 영업 기회 없음</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

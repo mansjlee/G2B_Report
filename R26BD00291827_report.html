@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00291827 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>경기도교육청_2027년 경기도 고등학교 입학 전학 포털시스템 프로그램 유지관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>TmaxSoft/IBM SW 고정, RH 제품 미명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>경기도교육청이 운영하는 <strong>고등학교 입학·전학 포털시스템</strong>(고교입학시스템·고입포털시스템)의 응용프로그램 유지관리 사업</li>
+                    <li>정기적인 장애 예방 활동 및 장애 발생 시 신속한 대응을 통해 <strong>24시간 365일 안정적인 시스템 운영</strong> 보장</li>
+                    <li>응용프로그램 현행화 및 기능 개선을 통해 학생·학부모 대상 양질의 대국민 서비스 제공</li>
+                    <li>2028학년도 고입전형 계획 및 내신성적 반영 지침 반영, 시스템 사용자 교육 실시</li>
+                    <li>고입포털 홈페이지의 경기도교육청 정보자원통합시스템 이전 지원 포함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 20억원 미만 (소프트웨어진흥법 제48조에 따른 대기업·중견기업 입찰 제한 기준 적용 확인, 상용 및 응용SW 유지관리 대상 합계 약 24억 2,414만원은 도입원가 기준)</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (1년, 사업 시작일 이후 계약 시 계약일로부터 2027.12.31.까지)</li>
+                    <li><strong>사업 범위</strong>: ① 고교입학시스템(교직원용, high.goe.go.kr) 및 고입포털시스템(대국민서비스, satp.goe.go.kr) 응용프로그램 유지관리 ② 연계솔루션·웹UI툴·DBMS·WEB·WAS·DB암호화·리포팅툴 등 상용SW 유지관리 ③ DBMS(DB2 AI Standard Edition) 라이선스 구매 납품 ④ 정보자원통합시스템 이전 지원</li>
+                    <li><strong>주요 일정</strong>: 2026년 8~10월 사업계획 수립 및 검토 → 10~11월 과업심의위원회 심의 → 11~12월 사업발주 및 우선협상대상자 선정 → 12월~2027년 1월 협상 및 계약 → 2027년 1분기 시스템 분석 → 연간 유지관리 및 사용자 교육(2028학년도 고입업무 대비) 수행</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주기관</strong>: 경기도교육청</li>
+                    <li><strong>담당 부서</strong>: 중등교육과</li>
+                    <li><strong>사무관</strong>: 조동일 / 전화: 031-820-0615 / 이메일: windblown@korea.kr</li>
+                    <li><strong>주무관</strong>: 박상길 / 전화: 031-820-0615 (제안·요청 관련 문의처)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[핵심 기술·운영 요구사항]</strong>
+                        <ul>
+                            <li>유지관리 1일 24시간 365일 지원 원칙; 장애 접수 후 2시간 이내 오류확인 및 대응 착수, 4시간 이내 정상 복구</li>
+                            <li>월 1회 정기점검 + 고입업무 집중기간(1월, 7~12월) 특별점검 및 모니터링</li>
+                            <li>2028학년도 고입전형 기본계획·내신성적 반영지침에 따른 프로그램 현행화</li>
+                            <li>고교평준화지역 학생배정 시뮬레이션 기능 개선, 홈페이지 웹디자인·UI 개선</li>
+                            <li>보안취약점 점검 결과에 따른 응용프로그램 보완·개선</li>
+                            <li>JAVA 시큐어코딩 가이드(행정안전부) 준수, 전자정부 표준 프레임워크 적용</li>
+                            <li>나이스(NEIS) 연계 유지 및 나이스 총괄센터 개발 가이드 적용</li>
+                            <li>고입포털 홈페이지의 경기도교육청 정보자원통합시스템 이전(WEB·WAS·DBMS 설치 및 데이터 이관) 지원</li>
+                            <li>어플리케이션 응답시간 3초 이내 유지</li>
+                        </ul>
+                    </li>
+                    <li><strong>[통합발주 SW 구매 품목]</strong> (사업자가 직접 구매·납품해야 하는 SW)
+                        <ul>
+                            <li><strong>DB2 AI Standard Edition</strong> (IBM 정품 라이선스) — <strong>9 core 기준</strong> / 약 121,242천원 이내 / 납품 예정: 2027년 6월 이내</li>
+                        </ul>
+                    </li>
+                    <li><strong>[직접구매(조달쇼핑몰) SW - 경기도교육청이 별도 구매 제공]</strong>
+                        <ul>
+                            <li>WEB 소프트웨어 (WebToB 계열): <strong>16식</strong> / 약 46,400천원 이내 / 2027년 6월 도입 예정</li>
+                            <li>WAS 소프트웨어 (JEUS 계열): <strong>16식</strong> / 약 136,000천원 이내 / 2027년 6월 도입 예정</li>
+                        </ul>
+                    </li>
+                    <li><strong>[유지관리 대상 기존 상용SW 현황]</strong>
+                        <ul>
+                            <li>연계솔루션: eCross BIZi Suite V4 Agent — <strong>2식</strong> / 30,000천원</li>
+                            <li>웹UI툴: NexacroN Desktop Std — <strong>1식</strong> / 37,620천원</li>
+                            <li>원격접근제어: HIWARE Identity Management for System v6.0 — <strong>10식</strong> / 8,500천원</li>
+                            <li>리포팅툴: Crownix Report ERS8 upgrade — <strong>2식</strong> / 12,000천원; CROWNIX Report 6.0 &amp; CROWNIX ERS 6.0(HTML5) — <strong>2식</strong> / 44,000천원</li>
+                            <li>DBMS: DB2 Enterprise Server V10.5 — <strong>2식</strong> / 69,300천원(대국민); DB2 CP4D Advanced Enterprise V11.5.7 — <strong>2식</strong> / 72,000천원(고교입학)</li>
+                            <li>WEB서버: WebToB 4.x Standard — <strong>2식</strong> / 11,000천원(대국민); WebToB 5 Enterprise(8core×2식) — <strong>2식</strong> / 47,232천원(고교입학)</li>
+                            <li>WAS서버: JEUS 7.0 Enterprise — <strong>2식</strong> / 66,000천원(대국민); JEUS 8 Enterprise(8core×2식) — <strong>2식</strong> / 136,992천원(고교입학)</li>
+                            <li>DB암호화: Ksign Secure DB v1.5 — <strong>2식</strong> / 66,000천원; Ksign Secure DB V3.6 업그레이드 — <strong>2식</strong> / 8,500천원</li>
+                            <li>응용프로그램: 고등학교 입학 전학 포털시스템 프로그램 — <strong>1식</strong> / 1,815,000천원</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>WAS 서버 TmaxSoft JEUS 고정</strong>: WAS는 JEUS 7.0/8 Enterprise(TmaxSoft)가 기 구축·운영 중이며, COR-002(현재 운영 중인 제품과의 호환성) 요구사항으로 인해 Red Hat JBoss EAP 제안 불가</li>
+                    <li><strong>WEB 서버 TmaxSoft WebToB 고정</strong>: WEB 서버는 WebToB 4.x/5 Enterprise(TmaxSoft)가 기 구축·운영 중이며 직접구매로 조달쇼핑몰 구매 예정. Red Hat 기반 WEB 서버 대체 기회 없음</li>
+                    <li><strong>DBMS IBM DB2 계열 고정</strong>: 기존 DB2 Enterprise Server V10.5, DB2 CP4D Advanced Enterprise V11.5.7 운영 중이며, 통합발주 품목도 DB2 AI Standard Edition(IBM)으로 지정. Red Hat DataGrid 등 대체 여지 없음</li>
+                    <li><strong>Red Hat 상용 제품명 전혀 미명시</strong>: RFP 전체(과업지시서, SW 도입 목록, 통합발주 목록 포함)에서 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 단 한 건도 언급되지 않음</li>
+                    <li><strong>기존 시스템 유지관리 사업으로 플랫폼 변경 불가</strong>: 본 사업은 기 구축된 시스템 유지관리 사업으로, 기존 SW 스택(TmaxSoft 미들웨어, IBM DB2) 교체·대체 가능성이 원천적으로 배제됨</li>
+                    <li><strong>OS 미지정이나 실질적 변경 기회 없음</strong>: 기술적용계획표에서 Linux를 서버 OS 옵션으로 언급하나, 이는 일반적인 전자정부 기술참조모델 기재 사항이며 기존 운영환경 변경을 전제하지 않음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>RFP 내 Red Hat(동의어 포함) 제품명: 없음</strong> — RFP, 과업지시서, SW 구매 목록 전체에서 RHEL, OpenShift, OCP, Ansible, JBoss, EAP, Satellite, AMQ, Quay 등 Red Hat 상용 제품명이 전혀 명시되어 있지 않음</li>
+                    <li><strong>Java 기반 응용프로그램</strong>: 시스템이 Java(전자정부 표준 프레임워크 기반)로 개발되어 있어 이론적으로 JBoss EAP와 기술적 연관성은 있으나, WAS가 JEUS로 고정되어 있어 실질적인 Red Hat 제안 여지 없음</li>
+                    <li><strong>보안 기능 개선 영역</strong>: 보안취약점 점검 대응, 개인정보보호 등 보안 요구사항이 다수 존재하나, 해당 보안 솔루션도 HIWARE, Ksign 등 타사 제품으로 기 도입되어 있음</li>
+                    <li><strong>종합 평가</strong>: 상기 요소들은 Red Hat 상용 제품을 실질적으로 제안할 수 있는 기회로 보기 어려우며, 이 사업에서 Red Hat SW 납품·구독 기회는 사실상 없음</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00291319 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>공정거래위원회 전자심의시스템 운영 및 유지관리(27~29) - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>RH 제품 없는 순수 운영유지관리 사업</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>공정거래위원회가 구축한 전자심의시스템의 안정적 운영 및 유지관리를 위해 적격사업자를 선정하여 2027~2029년 3년간 운영위탁 사업 추진</li>
+                    <li><strong>핵심 목표</strong>: 전자심의시스템 및 온라인사건처리시스템 등 24시간 365일 무중단 운영, 장애 예방 및 신속 복구, 법령·지침 변경에 따른 기능 개선, 보안성 강화, 사용자 편의성 향상</li>
+                    <li><strong>대상 시스템</strong>: ① 전자심의시스템(공정위 내부), ② 온라인사건처리시스템(case.ftc.go.kr, 대국민), ③ 위원용 시스템(인터넷망/업무망), ④ 연계시스템(ESB, IAM 등)</li>
+                    <li><strong>사업 내용</strong>: 개발 SW 유지관리, 상용 SW 유지관리, 운영 및 기술지원, 기능개선, 데이터 관리, 헬프데스크 운영, 보안 및 개인정보보호 지원</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 총 2,727,684천원(부가세 포함) — 1차년도(27년): 572,297천원 / 2차년도(28년): 1,093,653천원 / 3차년도(29년): 1,061,734천원 ※ 상용SW 물품공급·기술지원확약 금액: 28년 230,047,000원 + 29년 169,965,000원 = 400,012,000원(27년은 무상유지보수)</li>
+                    <li><strong>사업 기간</strong>: 2027.01.01. ~ 2029.12.31. (3년, 장기계속계약)</li>
+                    <li><strong>사업 범위</strong>: 전자심의시스템·온라인사건처리시스템·위원용 시스템(인터넷망/업무망)·연계시스템 등 총 4개 단위시스템 및 연계시스템에 대한 운영·유지관리·기능개선·헬프데스크·데이터 관리·보안 지원. 핵심 투입인력 최소 월 5명 이상(PM 포함) 상주 원칙</li>
+                    <li><strong>주요 일정</strong>: 2026년 9월 제안요청서 작성 → 입찰공고 → 제안서 접수 → 협상 평가(기술 90% + 가격 10%) → 낙찰자 선정 → 2027.01.01. 사업 착수 / 계약일로부터 10일 이내 착수보고서 제출</li>
+                    <li><strong>입찰 방법</strong>: 제한경쟁입찰(협상에 의한 계약), 중소기업 참여 제한 적용(40억 미만, 대기업 참여 제한)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 공정거래위원회 정보화 담당관실</li>
+                    <li><strong>과장</strong>: 이상욱 / 전화: 044-200-4269 / FAX: 044-200-5217</li>
+                    <li><strong>팀장</strong>: 장광환 / 전화: 044-200-4271</li>
+                    <li><strong>조사관</strong>: 이경서 / 전화: 044-200-4279</li>
+                    <li><strong>이메일</strong>: 별도 기재 없음 (입찰공고문 참조)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>기술 요구사항 요약</strong>: 보안(15개), 품질/SLA(8개), 제약사항(6개), 프로젝트관리(13개), 프로젝트지원(4개), 운영인력(7개), 운영관리 수행(17개), 데이터 보정 및 유지관리(5개) — 총 75개 요구사항</li>
+                    <li><strong>핵심 기술 요구</strong>: 24시간 무중단 운영, SLA 체결 및 관리(가동률·장애복구율 등), 전자정부프레임워크 기반 기능개선, 형상관리(MetaPlus DevEye v6.0) 및 시큐어코딩(SPARROW) 준수, IAM/SSO 연계 운영, DR 시스템 지원, RESTful API 방식 연계 개발</li>
+                    <li><strong>개발 환경</strong>: Java / JSP / 전자정부프레임워크 / C# / Oracle / Cubrid / PostgreSQL / ESB / OPENAPI</li>
+                    <li><strong>통합발주 상용SW 목록 (유지관리 대상 44종, 28~29년 유상):</strong>
+                        <ul>
+                            <li>시각화: SB Grid V3, SB Chart V2</li>
+                            <li>대용량 파일업로드: RAON K Upload 2018</li>
+                            <li>DB암호화: MagicDB (2건)</li>
+                            <li>웹기안기: 한글로폼</li>
+                            <li>이폼: Clip e-Form V5.0</li>
+                            <li>ECM: INZENT Document v6 (Server), INZENT Document v6 (Client)</li>
+                            <li>웹뷰어: ezPDF WebViewer</li>
+                            <li>개인정보 비식별화: Docu-Guard GT4</li>
+                            <li>모바일보안: Argos MDM V2.0 (Server), Argos MDM V2.0 (User)</li>
+                            <li>OCR: ezPDF Capture AI v2.0</li>
+                            <li>화상회의: 화상회의(심판총괄)</li>
+                            <li>QR생성기: makeQR (2건)</li>
+                            <li>싱글사인온(SSO): Bandi SSO V7.0 (3건)</li>
+                            <li>통합계정관리(IM/IAM): Bandi IAM Suite v7.0 (3건)</li>
+                            <li>DRM 라이선스: FED 5 SP 1, 서버DRM 시스템 연동모듈 (4건)</li>
+                            <li>개인정보접속관리: WEEDS BlackBox Suite V2.0</li>
+                            <li>PDF변환: ezPDF WorkFlow v5.0 Upgrade</li>
+                            <li>연계: MESIM Indigo ESB v2.5 Enterprise (2건), MESIM Indigo ESB v2.5 Adaptor (2건)</li>
+                            <li>API Gateway (Management, Analytics 포함)</li>
+                            <li>시점확인: TrustTSA(Document)</li>
+                            <li>리포팅툴: ClipReport</li>
+                            <li>형상관리: 메타플러스 데브아이 V6.0 (agent), 메타플러스 데브아이 V6.0 (USER)</li>
+                            <li>NAC 노드 라이선스: Genian ZTNA V6.0 SP1</li>
+                            <li>웹로그분석: AI VORY VODA</li>
+                            <li>접근제어 라이선스: HIWARE TAM V6.2 (Node)</li>
+                            <li>전자관인관리: simpleSign v1.0</li>
+                            <li>HW(ESB 서버): Dell PowerEdge R760 (3.7Ghz 8Core*2)</li>
+                            <li>태블릿 PC: 서피스10</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>Red Hat 상용 제품 전무</strong>: 상용SW 유지관리 목록 44종 전체에 RHEL, OpenShift, Ansible, JBoss/EAP, Satellite 등 Red Hat 제품이 단 하나도 포함되어 있지 않음</li>
+                    <li><strong>순수 운영·유지관리 사업</strong>: 기존 구축 시스템의 운영 위탁 사업으로, 신규 인프라·플랫폼·OS 도입 항목이 없음. S/W 납품이 아닌 기존 상용SW 유지보수 계약 갱신이 핵심</li>
+                    <li><strong>Red Hat 스택과 무관한 기술 환경</strong>: 시스템 개발환경이 Java/전자정부프레임워크 기반이며, DB는 Oracle·Cubrid·PostgreSQL 사용. OS·컨테이너·가상화·자동화 플랫폼 관련 요구사항 전혀 없음</li>
+                    <li><strong>인프라 운영 주체 별도</strong>: 서버·스토리지·네트워크 등 인프라 운영은 국가정보자원관리원(광주)에서 관리하므로, OS 및 인프라 플랫폼에 대한 제안 권한 없음</li>
+                    <li><strong>Dell HW만 명시</strong>: HW 항목으로 Dell PowerEdge R760이 명시되어 있으며, Red Hat 가상화(RHEV) 등 연계 가능성도 없음</li>
+                    <li><strong>기존 SSO/IAM 제품 확정</strong>: SSO(Bandi SSO V7.0), IAM(Bandi IAM Suite v7.0)이 이미 도입·운영 중이어서 RH-SSO/Keycloak 제안 불가</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>해당 없음</strong>: RFP 및 과업지시서 전반에 걸쳐 Red Hat 상용 제품명(RHEL, OpenShift, Ansible, JBoss EAP 등) 및 Red Hat 기술 스택을 적용할 수 있는 요구사항이 전혀 명시되어 있지 않음</li>
+                    <li><strong>컨테이너/Kubernetes 요구사항 없음</strong>: 컨테이너, PaaS, 자동화 플랫폼 관련 기술 요구사항이 없어 OpenShift·Ansible 제안 근거 부재</li>
+                    <li><strong>Linux 계열 OS 제안 여지 없음</strong>: 운영환경 OS가 별도 명시되지 않았으나, 인프라가 국가정보자원관리원에서 관리되고 기존 시스템 유지관리가 목적이므로 OS 전환 제안 기회 없음</li>
+                    <li><strong>RFP 내 Red Hat 제품명 명시 없음</strong>: 문서 전체에서 Red Hat, RedHat, 레드햇, RHEL, OpenShift, Ansible, JBoss, EAP, Satellite 등 어떠한 Red Hat 동의어도 발견되지 않음</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

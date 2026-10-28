@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00291647 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국정책방송원_KTV 차세대 미디어 서비스 위탁운영 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>Linux·클라우드 PaaS 제안 여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>한국정책방송원(KTV)의 차세대 미디어 서비스(라이브·VOD·업/다운로드) 클라우드 인프라 구축 및 위탁운영</li>
+                        <li>20채널 동시 수신·배포 가능한 실시간 다채널 영상 수신·배포 시스템 구축 및 운영관리</li>
+                        <li>생방송 자동자막(AI STT) 시스템 구축 및 운영관리</li>
+                        <li>CSAP 인증 민간 클라우드 기반 대국민 콘텐츠 개방 서비스 안정적 운영 체계 정립</li>
+                        <li>전문업체 위탁을 통한 신속한 장애 대응, 보안 관리, 서비스 품질(SLA) 향상</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 1,064 백만원 (부가세 포함) — 사업금액 782백만원 + 공공요금 및 제세 282백만원</li>
+                        <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (12개월)</li>
+                        <li><strong>사업 범위</strong>: ① 클라우드 인프라 및 전용회선 서비스(라이브·VOD·업/다운로드, 생방송 자동자막 시스템 클라우드 환경 구성) ② 실시간 다채널 영상 수신·배포 시스템 운영관리 ③ 생방송 자동자막 시스템 운영관리 ④ 정보보안 운영관리, SLA 수립, 기술지원 및 교육</li>
+                        <li><strong>수행 장소</strong>: 세종특별자치시 정부2청사로 13, 한국정책방송원</li>
+                        <li><strong>입찰 방법</strong>: 제한경쟁입찰 (협상에 의한 계약) / 기술 90% : 가격 10%</li>
+                        <li><strong>참가 자격</strong>: 중소기업 소프트웨어사업자만 참여 가능 (대기업·중견기업·상호출자제한기업집단 참여 제한, 20억 미만 사업)</li>
+                        <li><strong>주요 일정</strong>: 2026년 10월 발주 → 계약 후 14일 이내 착수보고 → 2027년 1월 1일 사업 시작 → 2027년 12월 31일 사업 종료</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>발주기관</strong>: 한국정책방송원</li>
+                        <li><strong>사업 책임자</strong>: 방송기술부 팀장 김확충 / TEL: 044-204-8317 / FAX: 044-204-8471</li>
+                        <li><strong>사업 담당자</strong>: 방송기술부 주무관 조종형 / TEL: 044-204-8351</li>
+                        <li><strong>이메일</strong>: 제안요청서 내 미기재</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong>
+                            <ul>
+                                <li>멀티 프로토콜 라이브 수신·배포(RTMP, RIST, RTSP, SRT, WebRTC, HLS, MPEG-TS, MoQ 등) 및 20채널 동시 수신 시스템 구축</li>
+                                <li>LL-HLS, DASH, WHIP 등 초저지연(2초 미만) 스트리밍 지원</li>
+                                <li>CSAP 인증 민간 클라우드 환경 구축 (기존 나누리포털과 동일 클라우드 확장)</li>
+                                <li>클라우드 IaaS/PaaS 구성: WEB×2, WAS×2, 검색×2, 관리서버×1, 개발/검증×3, APM×1, 통계×1 (VM)</li>
+                                <li>스토리지: 데이터 저장소 최소 50TB 이상, 백업 최소 50TB 이상</li>
+                                <li>네트워크 트래픽: 월 평균 135TB 이상, 연 최대 1,620TB 이상</li>
+                                <li>KTV↔클라우드 전용회선: 1G 2회선 이상 이중화</li>
+                                <li>오토스케일·이중화·CDN 구성, 동시접속 6,000~10,000명 대응</li>
+                                <li>실시간 자동자막 AI STT 시스템 구축 (AI GPU 서버 포함)</li>
+                                <li>24×365 무중단 운영, 장애 접수 후 2시간 내 원격 대응, 4시간 내 복구</li>
+                                <li>OS: Linux(오픈소스) 권장, Unix계열 배제 / DB: 오픈소스 권장, Oracle 배제 / WEB·WAS: 오픈소스 권장, Sun ONE·WebLogic 배제</li>
+                            </ul>
+                        </li>
+                        <li><strong>[통합발주·구매 명시 SW/HW 목록]</strong> (SFR-003 기준)
+                            <ul>
+                                <li>Load Balancer: 해당 서비스(WEB, WAS, 검색, CMS, 검증 등) 이상 수량</li>
+                                <li>웹방화벽(관리형): 2식</li>
+                                <li>DDoS 이중화: 2식</li>
+                                <li>백신 License: 서버 수량 이상</li>
+                                <li>DB암호화: 1식 (대상 DB 확인 필요)</li>
+                                <li>접근제어 License: 20개 이상</li>
+                                <li>매니지드 서비스(모니터링 시스템 포함): VM 수량 기준 1식</li>
+                                <li>실시간 자동자막서비스 STT: 2대 이상</li>
+                                <li>AI GPU서버: 2대</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[상용 RH 제품 미명시]</strong>: RFP 전체(과업지시서, 구매·통합발주 목록 포함)에 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 품목으로 전혀 명시되지 않음</li>
+                        <li><strong>[위탁운영 중심 사업]</strong>: 본 사업은 신규 SW 직접 구매·납품보다는 클라우드 인프라 위탁운영 서비스가 핵심으로, 특정 상용 SW 도입이 확정되지 않음</li>
+                        <li><strong>[OS 명시 방식]</strong>: OS로 "Linux(오픈소스)"를 지정하여 특정 상용 배포판(RHEL 등)을 명시하지 않고, 오픈소스 기반 자유 선택 구조임. 커뮤니티 Linux(CentOS, Rocky 등)도 포함될 수 있음</li>
+                        <li><strong>[WAS 오픈소스 선호]</strong>: WAS는 오픈소스 권장(WebLogic 배제)으로 WildFly 등 커뮤니티 WAS가 채택될 가능성이 있으며, 상용 JBoss EAP는 명시되지 않음</li>
+                        <li><strong>[중소기업 전용 입찰]</strong>: Red Hat 코리아(대기업 계열) 직접 참여 불가이며, SI 사업자가 사업을 수주 후 협력사로 RH 제품을 제안해야 하는 구조</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[OS — RHEL 제안 여지]</strong>: OS를 "Linux(오픈소스)"로 지정하여 특정 배포판을 고정하지 않음. 서버 OS(WEB×2, WAS×2, 검색×2 등 총 12대 이상 VM)에 RHEL 도입 제안 가능. CSAP 인증 클라우드 환경에서 안정성·보안 지원 측면의 강점 어필 가능</li>
+                        <li><strong>[클라우드 PaaS — OpenShift 제안 여지]</strong>: 클라우드 IaaS/PaaS 구성을 명시하고 있으며, 오토스케일·이중화·컨테이너 기반 인프라 운영 요구사항이 있어 OpenShift Container Platform 또는 OpenShift AI 제안 검토 가능</li>
+                        <li><strong>[운영 자동화 — Ansible Automation Platform 제안 여지]</strong>: 24×365 무중단 운영, 주기적 패치·업데이트·보안관제 자동화 요구사항(MPR-012 등)에 Ansible Automation Platform(AAP) 제안 가능</li>
+                        <li><strong>[WAS — JBoss EAP 제안 여지]</strong>: 오픈소스 WAS 권장 환경에서, WildFly 대신 상용 지원이 포함된 JBoss EAP로의 업셀링 제안 가능 (단, 현재 RFP에 명시 없으므로 중간 이하 수준)</li>
+                        <li><strong>[RFP 내 Red Hat 제품명·수량 명시]</strong>: 없음 — 현재 RFP에는 Red Hat 또는 동의어로 인식되는 상용 제품명이 품목으로 기재된 사례 없음</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
