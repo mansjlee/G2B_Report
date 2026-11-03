@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00293552 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국지역정보개발원_2027년 온나라 및 전자문서유통지원센터 유지관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>JBoss 7.x WAS 운영·전환 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>중앙행정기관과 지방자치단체의 모든 공무원이 사용하는 <strong>온나라 업무관리시스템(2.0)</strong>을 전국 단위로 체계적으로 관리·지원합니다.</li>
+                    <li>대국민·공공기관 간 전자문서를 유통하는 <strong>전자문서유통지원센터</strong>와 대국민 서비스인 <strong>문서24시스템</strong>을 24시간 365일 안정적으로 운영합니다.</li>
+                    <li>응용SW, HW, 공개·상용SW를 유지관리하고 기능을 개선하며, 서비스데스크·콜센터 운영, 교육, 홍보, 보안·개인정보보호를 강화합니다.</li>
+                    <li>국가정보자원관리원 클라우드 운영환경 전환(대전 S존→S2존, 광주 B존→S2존)과 DR 구축을 지원합니다.</li>
+                    <li>노후화된 전자정부프레임워크와 JBoss 7.x(WAS)의 EOS에 대응하기 위해 온나라 응용 기반환경을 업그레이드합니다.</li>
+                    <li>사업유형은 행정안전부와 228개 자치단체의 수탁사업(운영·유지관리)입니다.</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 16,928,320천원(약 169.3억원)
+                        <ul>
+                            <li>국비 4,799,400천원, 지방비 12,128,920천원</li>
+                            <li>가예산이므로 국회·지방의회 심의 결과에 따라 변경될 수 있습니다.</li>
+                            <li>실제 용역제공일수 기준으로 일할 정산합니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>사업 기간</strong>: 2027.1.1 ~ 2027.12.31(12개월)
+                        <ul>
+                            <li>후속 계약이 체결되지 않으면 계약이 자동 연장됩니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>사업 범위</strong>:
+                        <ul>
+                            <li>대상 시스템: 온나라 업무관리, 전자문서유통지원센터, 문서24</li>
+                            <li>대상 품목: 응용SW, HW, 공개·상용SW 유지관리</li>
+                            <li>설치 장소: 국가정보자원관리원 및 228개 자치단체 전산실</li>
+                            <li>인프라 규모: 총 6,586식(HW 1,108식, SW 5,478식)</li>
+                            <li>주요 과업: 24×365 장애대응, 정기점검(월 1회 현장방문), 이중화 실전환 점검, 패치·업그레이드, 보안취약점 점검·모의해킹, 성능개선(APM·SQL 튜닝)</li>
+                            <li>운영 지원: 클라우드 S2존 전환, DR 구축 지원, 서비스데스크·콜센터 운영, 교육·홍보, 데이터 품질관리</li>
+                            <li>OS EOL 대응: CentOS·Rocky 등 EOL OS에 대한 연장 기술지원(전문업체 별도 계약)</li>
+                        </ul>
+                    </li>
+                    <li><strong>주요 일정</strong>:
+                        <ul>
+                            <li>제안요청 설명회: 11.25(수), 개발원 내 회의실(사전에 이메일 신청)</li>
+                            <li>입찰·제안서 제출 및 평가: 입찰공고문에 따름</li>
+                            <li>계약 방식: 제한경쟁입찰, 협상에 의한 계약(기술 90% : 가격 10%, 차등점수제 2점)</li>
+                            <li>입찰 자격: 중소 SW사업자만 참여 가능(대기업·중견기업 제한), 직접생산확인증명(정보시스템유지관리서비스) 필요, 공동수급 5개사 이하·최소지분 10%</li>
+                            <li>착수 시기별 의무
+                                <ul>
+                                    <li>착수 후 10일 이내: 착수계 제출</li>
+                                    <li>착수 후 15일 이내: 정기점검 계획 제출</li>
+                                    <li>착수 후 1개월 이내: 대상품목 실사, 장애예방계획 제출, SLA 체결</li>
+                                    <li>착수 후 1개월 이내 체결, 2개월 이내 증빙 제출: <strong>제조사(또는 제조사 인정업체)와 제품 유지관리 계약</strong></li>
+                                </ul>
+                            </li>
+                            <li>연중 일정: 외부감리(운영감리), 고객만족도 조사, 기능점수(FP) 검증·제출(2027.10~11월), 12월 완료보고</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주기관</strong>: 한국지역정보개발원(KLID) 문서정보부</li>
+                    <li><strong>부장</strong>: 이효주 (TEL 02-2031-9460)</li>
+                    <li><strong>책임(문의처·자료열람)</strong>: 김두리 (TEL 02-2031-9468, Email: doori@klid.or.kr)</li>
+                    <li><strong>선임</strong>: 김민성 (TEL 02-2031-9473)</li>
+                    <li><strong>FAX</strong>: 02-2031-9401</li>
+                    <li><strong>위탁기관</strong>: 행정안전부 정보공개제도과</li>
+                    <li><strong>HW·시스템SW 운영기관</strong>: 국가정보자원관리원(대전·광주센터)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술·비즈니스 핵심 요구사항]</strong>
+                        <ul>
+                            <li>24×365 장애대응 조직을 제조사·협력사를 포함해 구성해야 합니다.</li>
+                            <li>장애조치 허용시간(1등급 120분 ~ 4등급 480분)과 SLA 가용률(1등급 100%, 최소 99.92%)을 준수해야 하며, 미달 시 위약금이 부과됩니다.</li>
+                            <li>정기점검(월 1회, VM Guest OS 포함), 이중화(HA) 실전환 점검(연 10개 기관 이상), 오프라인 점검, 상용SW(DBMS·WAS) 성능점검을 수행해야 합니다.</li>
+                            <li>(MPR-007) 노후 전자정부프레임워크 기반 AP 소스와 <strong>JBoss 7.x(WAS)</strong>의 EOS(2030년 예정)에 선제 대응하기 위해 온나라 기반환경을 업그레이드해야 합니다.</li>
+                            <li>(MPR-021) OS Patch·Hot Fix, 시스템SW Minor Upgrade를 적용하고, <strong>CentOS·Rocky 등 EOL OS 연장 기술지원</strong>(전문업체 별도 계약)을 보장해야 합니다.
+                                <ul>
+                                    <li>단, 타 제품·기술을 신규 도입할 경우 개발·환경변경·추가비용 일체를 계약자가 부담해야 합니다.</li>
+                                </ul>
+                            </li>
+                            <li>(MPR-016·022) HW, 운영체제, DBMS, JDK의 EOS 영향도 분석과 대체방안을 제시해야 합니다.</li>
+                            <li>클라우드 온나라·문서유통·문서24의 S2존 전환, 스토리지 이중화·증설, 대전↔공주 스토리지 DR 구축, 전자문서유통 DR(ISP 결과 반영) 구축을 지원해야 합니다.</li>
+                            <li>보안 요구사항
+                                <ul>
+                                    <li>이상행위 탐지시스템 구축 지원(별도 발주)</li>
+                                    <li>2차 인증, G-SSL 적용</li>
+                                    <li>소스코드 취약점 진단(연 2회), 모의해킹</li>
+                                    <li>개인정보 컨설팅</li>
+                                </ul>
+                            </li>
+                            <li>(COR-023) 유지관리 대상 <strong>모든 제품</strong>에 대해 제조사 또는 제조사 인정업체와 연 단위 유지관리 계약을 체결해야 합니다(PerCall 불가).</li>
+                            <li>인력은 중앙센터(핵심SW 기술지원인력 포함), 4개 이상 권역센터, 전담 콜센터로 구성해야 합니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매·유지관리 대상 S/W 명세 및 수량]</strong>
+                        <ul>
+                            <li>신규 S/W 구매 품목은 없으며, 아래는 붙임5 유지관리 대상 목록(유지관리·라이선스 갱신 대상)입니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>중앙행정기관 – 온나라2.0 (합계 68식)</strong>
+                        <ul>
+                            <li>웹그리드 1식</li>
+                            <li>개인정보점검 20식(2017) + 1식(2023)</li>
+                            <li>2차원바코드 1식</li>
+                            <li>소스코드보안(서버용) 1식, 소스코드보안(클라이언트용) 2식</li>
+                            <li>기록물 검증 솔루션 2식</li>
+                            <li>보안 2식</li>
+                            <li>온나라 연·중계 G/W 13식</li>
+                            <li>표준점역 및 음성지원 2식</li>
+                            <li>웹기안기 1식</li>
+                            <li>SSO 솔루션(서버) 2식, SSO 솔루션(에이전트) 20식</li>
+                        </ul>
+                    </li>
+                    <li><strong>중앙행정기관 – 전자문서유통시스템 (합계 2,619식)</strong>
+                        <ul>
+                            <li>키보드 보안 2식</li>
+                            <li>레포트 1식</li>
+                            <li>대용량 파일 첨부 8식</li>
+                            <li>데이터복제솔루션 9식</li>
+                            <li>데이터 암호화 4식</li>
+                            <li>인증모듈 4식</li>
+                            <li>메시지엔진 2,544식</li>
+                            <li>블록체인 22식</li>
+                            <li>LDAP 6식</li>
+                            <li>웹변환기 2식</li>
+                            <li>통합모니터링 13식</li>
+                            <li>보안 소프트웨어 4식</li>
+                        </ul>
+                    </li>
+                    <li><strong>중앙행정기관 – 문서24시스템 (합계 17식)</strong>
+                        <ul>
+                            <li>2차원 바코드 1식</li>
+                            <li>문서관리 2식</li>
+                            <li>키보드보안 2식</li>
+                            <li>개인정보보호 2식</li>
+                            <li>메일솔루션 2식</li>
+                            <li>변환솔루션 4식</li>
+                            <li>모니터링 2식</li>
+                            <li>표준점역 2식</li>
+                        </ul>
+                    </li>
+                    <li><strong>SW 연간사용 (합계 4식)</strong>
+                        <ul>
+                            <li>(온나라) 모니터링 1식</li>
+                            <li>(문서유통) evSSL 2식</li>
+                            <li>(문서유통) SSL 1식</li>
+                        </ul>
+                    </li>
+                    <li><strong>자치단체 HW·SW (합계 4,095)</strong>
+                        <ul>
+                            <li>상용SW
+                                <ul>
+                                    <li>2차원바코드 25</li>
+                                    <li>문서보안(DRM) 10</li>
+                                    <li>개인정보보호솔루션 369</li>
+                                    <li>모니터링 솔루션 281</li>
+                                    <li>웹기안기 229</li>
+                                    <li><strong>가상화 S/W 285</strong></li>
+                                </ul>
+                            </li>
+                            <li>공개SW
+                                <ul>
+                                    <li><strong>O/S 939</strong></li>
+                                    <li><strong>WEB+WAS 399</strong></li>
+                                    <li>DBMS 387</li>
+                                </ul>
+                            </li>
+                            <li>HW
+                                <ul>
+                                    <li>x86서버 646</li>
+                                    <li>스토리지 266</li>
+                                    <li>스위치 259</li>
+                                </ul>
+                            </li>
+                            <li>OS EOL 버전 기술지원이 필요하며, 유지관리는 물리서버 기준으로 VM(Guest OS)을 포함합니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>WAS 관련 명시 사항</strong>: 온나라 응용 기반 WAS로 <strong>JBoss 7.x</strong>가 명시되어 있으나, 수량은 명시되지 않았습니다(상세 상용SW 목록은 비공개이며 개발원 방문 열람 가능).</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>사업 성격</strong>: 운영·유지관리 용역사업이며, 신규 S/W 구매·통합발주 품목이 없습니다. 기존 위탁품목의 유지관리(제조사 유지관리 계약) 구조입니다.</li>
+                    <li><strong>경쟁·커뮤니티 OS 명시</strong>: MPR-021에 <strong>CentOS, Rocky</strong> 등 EOL OS에 대한 "연장 기술지원 서비스 전문업체" 별도 계약이 요구되어, 제3자 연장지원(예: TuxCare 등)이 우선 고려됩니다. 자치단체 O/S 939식은 "공개SW"로 분류되어 있습니다.</li>
+                    <li><strong>기존 환경 호환성 조건</strong>: 기존 연장 기술지원과의 호환성을 요구하며, 타 제품을 신규 도입하면 개발·환경변경·추가비용 일체를 계약자가 부담해야 합니다. RHEL 전환 제안의 비용 장벽입니다.</li>
+                    <li><strong>가상화 S/W</strong>: 자치단체 가상화 S/W 285식의 제품명은 명시되지 않았으나, VMware 등 기존 상용 가상화가 설치된 것으로 추정됩니다.</li>
+                    <li><strong>인프라 관리 주체</strong>: 클라우드 온나라 등 중앙 인프라의 HW·시스템SW는 국가정보자원관리원이 관리합니다. 플랫폼 선택권이 제한됩니다.</li>
+                    <li><strong>입찰 자격 제한</strong>: 중소 SW사업자만 입찰할 수 있으므로, Red Hat은 파트너·하도급(제조사 유지관리 계약) 형태로만 참여할 수 있습니다.</li>
+                    <li><strong>확인 필요</strong>: "JBoss 7.x"가 상용 JBoss EAP 7.x인지 커뮤니티 JBoss AS 7인지 RFP에 명확히 표기되지 않았습니다.
+                        <ul>
+                            <li>EOS 일정(2030년) 언급으로 보아 EAP 7.x로 추정되나, 상세 목록 열람으로 확인해야 합니다.</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>RFP 내 Red Hat(동의어) 제품명·수량</strong>
+                        <ul>
+                            <li><strong>JBoss 7.x (WAS)</strong>: 온나라 응용 기반 WAS로 명시(MPR-007)되어 있으며, 수량은 미기재입니다. 2030년 EOS 대응 기반환경 업그레이드가 과업으로 확정되어 있습니다.</li>
+                            <li>기타 RHEL, OpenShift, Ansible 등의 상용 제품명은 명시되지 않았습니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>JBoss EAP 서브스크립션 유지·업그레이드</strong>
+                        <ul>
+                            <li>COR-023에 따라 모든 유지관리 대상 제품에 대해 제조사 유지관리 계약이 의무입니다. 따라서 기존 JBoss EAP 서브스크립션 갱신 기회가 확실합니다.</li>
+                            <li>JBoss EAP 7.x → <strong>EAP 8.x</strong> 업그레이드(전자정부프레임워크 4.x, Jakarta EE 전환)를 제안할 수 있습니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>CentOS → RHEL 전환</strong>
+                        <ul>
+                            <li>CentOS EOL OS에 대한 연장지원 대안으로 RHEL을 제안할 수 있습니다.</li>
+                            <li>Convert2RHEL로 기존 환경 호환성을 유지하며 전환하고, RHEL ELS로 장기 보안 업데이트를 보장할 수 있습니다.</li>
+                            <li>자치단체 공개SW O/S 939식이 대상 풀입니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Red Hat Ansible Automation Platform</strong>
+                        <ul>
+                            <li>228개 자치단체 1,000여 대 서버를 대상으로 하는 월간 정기점검, OS·시스템SW 패치, 보안취약점 조치, 일상점검(안정성 고시)을 자동화할 수 있습니다.</li>
+                            <li>이를 통해 SLA 준수와 인적장애를 줄일 수 있습니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Red Hat Satellite</strong>: 전국 분산 Linux 서버의 패치·구성·라이선스를 통합 관리하여 QUR-003 라이선스 대장과 EOS 현황 보고를 지원합니다.</li>
+                    <li><strong>OpenShift / OpenShift Virtualization</strong>
+                        <ul>
+                            <li>클라우드 온나라 S2존 전환과 차세대 기반환경 현대화에 컨테이너 PaaS를 적용할 수 있습니다(장기 제안).</li>
+                            <li>자치단체 가상화 S/W 285식을 대체할 수 있습니다.</li>
+                        </ul>
+                    </li>
+                    <li><strong>영업 전략</strong>
+                        <ul>
+                            <li>중소 SI 입찰참여사(공동수급체)를 대상으로 JBoss EAP 제조사 유지관리 확약과 기술지원 파트너십을 선제적으로 제공합니다.</li>
+                            <li>개발원 방문 열람으로 상용SW 상세 목록(JBoss 버전·수량, OS 배포판 구성)을 확인합니다.</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
