@@ -12,111 +12,133 @@
         <table>
             <tr>
                 <th>레드햇 제안 가능성</th>
-                <td id="AI-summary"><font color=red>높음<br>RHEL 7.4/8.8 품목 명시</font></td>
+                <td id="AI-summary"><font color=red>중간<br>기존 RHEL 운영 환경 명시, 신규 도입 없음</font></td>
             </tr>
             <tr>
                 <th>사업 개요 및 목적</th>
-                <td><ul>
-                    <li>한국지능정보사회진흥원(NIA)이 발주하는 <strong>범정부 데이터 공유시스템(국가공유데이터 플랫폼 + 기관공유데이터 관리시스템)의 2027년 운영·유지관리 및 기능개선 사업</strong></li>
-                    <li>24시간 365일 무중단 안정적 운영, 데이터 수집·제공 표준화(URI·고유식별자, MCP 기반), 공유·개방 일원화 통합 관리체계 구축, AI 활용환경 대응(MCP 서버, AI Q&A 서비스, 생성형 AI 검색) 등을 핵심 목표로 함</li>
-                    <li>기관공유데이터 관리시스템의 확산 설치 지원, 기존 설치기관 시스템 전환·데이터 이관, 기관 내·외부 데이터 공유·활용 체계 및 등급 기반 권한체계 구현 포함</li>
-                    <li>범정부 메타·품질표준 사업과 분리 발주되며, 양 사업 간 통합자원(WEB·WAS·DB) 공유 및 협조 의무 부담</li>
-                </ul></td>
+                <td>
+                    <ul>
+                        <li>한국지능정보사회진흥원(NIA)이 발주하는 <strong>범정부 데이터 공유시스템(기관공유데이터 관리시스템 + 국가공유데이터 플랫폼)의 2027년 운영·유지관리 및 기능개선 사업</strong></li>
+                        <li>24시간 365일 무중단 안정적 운영 체계 유지</li>
+                        <li>데이터 수집·제공 표준화(URI·고유식별자, MCP 기반 제공체계 구축)</li>
+                        <li>공유·개방데이터 통합 등록관리 체계 일원화 및 중복 등록 데이터 정비</li>
+                        <li>기관 내·외부 데이터 공유·활용 체계 확대 및 AI 활용 환경 대응(MCP 기반 제공, AI Q&A 서비스 구축 등)</li>
+                    </ul>
+                </td>
             </tr>
             <tr>
                 <th>주요 정보</th>
-                <td><ul>
-                    <li><strong>사업 예산</strong>: 1,869,689,952원 (부가세 포함) / 약 18.7억 원 규모 (20억원 미만 → 중소 SW사업자 제한 적용)</li>
-                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (12개월)</li>
-                    <li><strong>사업 범위</strong>: ① 국가공유데이터 플랫폼 운영·유지관리 및 기능개선(SFR-004~007) ② 기관공유데이터 관리시스템 운영·유지관리 및 기능개선(SFR-001~003) ③ 공통기능(통합 로그인, 사용자·조직 통합관리 등) 운영 ④ 상용SW 유지관리 ⑤ 기관 확산 설치 지원 ⑥ 서비스데스크 운영 ⑦ 데이터기반행정평가 지원</li>
-                    <li><strong>주요 일정</strong>: 제안요청설명회 2026년 11월 11일(수) 15:00 온라인, 계약방법 협상에 의한 계약체결, 기술능력평가 90% + 가격평가 10%, 기술능력 평가 최소 85% 이상 필요</li>
-                    <li><strong>투입인력</strong>: 최소 46M/M 이상 (정보시스템 운용자 12M/M + IT지원 기술자 34M/M), 기능개선 개발인력은 별도 산정</li>
-                </ul></td>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 1,869,689,952원 (부가세 포함) / 약 18.7억 원 (20억 원 미만, 중소 SW사업자 대상)</li>
+                        <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (12개월)</li>
+                        <li><strong>사업 범위</strong>:
+                            <ul>
+                                <li>기관공유데이터 관리시스템 및 국가공유데이터 플랫폼 운영·유지관리</li>
+                                <li>상용 SW 유지관리 (전자서명, DB암호화, 검색엔진, API 게이트웨이, 망연계, SSL 인증서 등)</li>
+                                <li>기능개선 7건 (SFR-001~007): 설치기관 시스템 전환·이관, 공유·개방데이터 통합관리, 기관 내 데이터 공유·권한 구현, URI·식별자 체계 적용, MCP 기반 제공체계 구축, 평가 심의 자동화, AI Q&A 서비스 구축</li>
+                                <li>운영 투입인력 최소 46M/M 이상 (기능개선 개발인력 별도 산정)</li>
+                                <li>HW 및 시스템 SW 인프라는 국가정보자원관리원(국정자원) 유지관리 사업에서 전담</li>
+                            </ul>
+                        </li>
+                        <li><strong>주요 일정</strong>:
+                            <ul>
+                                <li>제안요청설명회: 2026년 11월 11일 (수) 15:00 (온라인)</li>
+                                <li>계약 체결 후 15일 이내 착수보고서 제출</li>
+                                <li>사업 수행: 2027년 1/4분기 ~ 4/4분기 (전 분기 상시 운영 및 기능개선 병행)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
             </tr>
             <tr>
                 <th>담당자 정보</th>
-                <td><ul>
-                    <li><strong>발주기관</strong>: 한국지능정보사회진흥원 (NIA)</li>
-                    <li><strong>담당 부서</strong>: 공공지능데이터본부 공공지능데이터인프라팀</li>
-                    <li><strong>팀장</strong>: 김상준 / TEL: 053-230-1531</li>
-                    <li><strong>수석</strong>: 박지홍 / TEL: 053-230-1543</li>
-                    <li><strong>제안요청설명회 문의</strong>: lso0927@nia.or.kr</li>
-                    <li><strong>총괄기관</strong>: 행정안전부 공공데이터분석관리과</li>
-                    <li><strong>시스템 지원</strong>: 국가정보자원관리원 (HW·시스템SW 유지관리)</li>
-                </ul></td>
+                <td>
+                    <ul>
+                        <li><strong>발주기관</strong>: 한국지능정보사회진흥원 (NIA)</li>
+                        <li><strong>담당 부서</strong>: 공공지능데이터본부 공공지능데이터인프라팀</li>
+                        <li><strong>팀장</strong>: 김상준 / TEL: 053-230-1531</li>
+                        <li><strong>수석</strong>: 박지홍 / TEL: 053-230-1543</li>
+                        <li><strong>제안요청설명회 문의 이메일</strong>: lso0927@nia.or.kr</li>
+                        <li><strong>총괄기관</strong>: 행정안전부 공공데이터분석관리과</li>
+                    </ul>
+                </td>
             </tr>
             <tr>
                 <th>핵심 요구사항</th>
-                <td><ul>
-                    <li><strong>[기술 요구사항]</strong>
-                        <ul>
-                            <li>국가공유데이터 플랫폼 및 기관공유데이터 관리시스템의 24×365 무중단 운영</li>
-                            <li>MCP(Model Context Protocol) 기반 AI 에이전트용 데이터 제공체계 구축 및 온AI 연계 (SFR-005)</li>
-                            <li>URI·고유식별자 체계 적용 및 등급별 접근통제 구현 (SFR-004)</li>
-                            <li>생성형 AI 기반 검색·추천 서비스 RAG DB 관리 및 AI Q&A 서비스 구축 (SFR-007)</li>
-                            <li>기관 내·외부 데이터 공유·활용 체계 및 N2SF 기반 등급별 권한체계 구현 (SFR-003)</li>
-                            <li>기존 설치기관 단독형 시스템 전환 및 데이터 이관·정합성 검증 (SFR-001)</li>
-                            <li>공유·개방데이터 통합 관리체계 운영 (SFR-002), 평가 심의 자동화 (SFR-006)</li>
-                            <li>기관 원천시스템 자동 수집 연계 고도화 (메타데이터 기반 원천 DB 자동 수집·등록)</li>
-                            <li>API 게이트웨이, 정보유통허브 기반 연계, LDAP 연계 운영</li>
-                            <li>국가 망 보안체계(N2SF) 보안가이드라인 1.0 준수</li>
-                        </ul>
-                    </li>
-                    <li><strong>[구매 명시 S/W — 통합발주 유지관리 대상 상용SW]</strong>
-                        <ul>
-                            <li>전자서명 MagicLine V4.0 (드림시큐리티): 12식 + 1식 + 13식(단독형) — 12개월/4개월</li>
-                            <li>키보드 보안 TouchEn nxKey: 6식 — 12개월</li>
-                            <li>대용량 다운로드 태그프리 X-Free: 2식 — 12개월</li>
-                            <li>망연계 MESIM Indigo ESB v2.5: 4식 — 12개월</li>
-                            <li>검색엔진 Search Formula-1 V7: 2식 + 2식 — 12개월/4개월</li>
-                            <li>시각화 비아이매트릭스: 1식 — 12개월</li>
-                            <li>API 게이트웨이 MESIM APIG: 4식 + 4식 — 12개월/4개월</li>
-                            <li>DB암호화 Petra Cipher V3.2 (신시웨이): 8식 + 2식 + 15식(단독형) — 12개월/4개월</li>
-                            <li>SSL 인증서 Thawte Wildcard: 1식 — 12개월 (라이선스 갱신)</li>
-                            <li>통신구간 암호화 OpenSSL/1.0.2k-fips (오픈소스)</li>
-                        </ul>
-                    </li>
-                    <li><strong>※ 신규 상용SW 직접구매 계획 없음</strong> (기 도입 제품 유지관리만 대상, 분리발주 없음)</li>
-                    <li><strong>[시스템 SW — 오픈소스 설치·운영]</strong>
-                        <ul>
-                            <li>OS: RHEL 7.4 / RHEL 8.8</li>
-                            <li>DBMS: PostgreSQL 14.0, Tibero</li>
-                            <li>WEB: JBoss-Apache 2.4</li>
-                            <li>WAS: JBoss-WAS 7.8, Node-JS 8.0, Python 3.7.0</li>
-                        </ul>
-                    </li>
-                </ul></td>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong>
+                            <ul>
+                                <li>기관공유데이터 관리시스템 및 국가공유데이터 플랫폼 24시간 365일 무중단 운영</li>
+                                <li>MCP(Model Context Protocol) 서버·게이트웨이 구축 및 온AI 연계 (SFR-005)</li>
+                                <li>URI·고유식별자 체계 적용 및 등급별 접근통제 구현 (SFR-004)</li>
+                                <li>AI 기반 Q&A 서비스 구축 (SFR-007), 생성형 AI 기반 추천 서비스 RAG DB 관리</li>
+                                <li>기관 원천시스템 자동 수집 연계 고도화 (MPR-008)</li>
+                                <li>기존 설치기관 단독형 시스템 전환 및 데이터 이관 (SFR-001)</li>
+                                <li>공유·개방데이터 통합 등록·관리 체계 구현 (SFR-002)</li>
+                                <li>등급 기반 데이터 권한체계 및 2차 인증 구현 (SFR-003)</li>
+                                <li>데이터기반행정평가 심의 자동화 (SFR-006)</li>
+                                <li>시큐어코딩, 보안 취약점 점검·조치, 개인정보보호법 준수</li>
+                                <li>국가 망 보안체계(N2SF) 보안가이드라인 1.0 준수 (C·S·O 등급 체계 적용)</li>
+                                <li>전자정부 표준프레임워크 적용</li>
+                            </ul>
+                        </li>
+                        <li><strong>[비즈니스 요구사항]</strong>
+                            <ul>
+                                <li>메타·품질표준 사업자와의 협조체계 구축 및 통합자원(WEB·WAS·DB) 운영 협조</li>
+                                <li>SLA 기반 서비스 수준 관리 (정보시스템 가용률 1등급 99.92% 이상)</li>
+                                <li>기관공유데이터 관리시스템 확산 및 신규 설치기관 지원</li>
+                                <li>통합 서비스데스크 운영 (대표번호 1588-0182)</li>
+                                <li>AI 윤리 교육 이수 필수 (전 참여인력)</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매 명시 S/W - 상용 SW 유지관리 대상 (신규 구매 없음, 기 도입 제품 유지관리)]</strong>
+                            <ul>
+                                <li>전자서명: MagicLine V4.0 (드림시큐리티) - 12식 + 1식 + (13식 단독형) / 12개월, 4개월</li>
+                                <li>키보드 보안: TouchEn nxKey - 6식 / 12개월</li>
+                                <li>대용량 다운로드: 태그프리 X-Free - 2식 / 12개월</li>
+                                <li>망연계: MESIM Indigo ESB v2.5 - 4식 / 12개월</li>
+                                <li>검색엔진: Search Formula-1 V7 - 2식 + 2식 / 12개월, 4개월</li>
+                                <li>시각화: 비아이매트릭스 - 1식 / 12개월</li>
+                                <li>API 게이트웨이: MESIM APIG - 4식 + 4식 / 12개월, 4개월</li>
+                                <li>DB암호화: Petra Cipher V3.2 (신시웨이) - 8식 + 2식 + (15식 단독형) / 12개월, 4개월</li>
+                                <li>SSL 인증서: Thawte Wildcard - 1식 / 12개월 (라이선스 갱신)</li>
+                                <li>통신구간 암호화: OpenSSL/1.0.2k-fips (오픈소스)</li>
+                                <li>※ 본 사업은 직접구매 대상 상용SW 없음. 신규 도입 계획 없음.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
             </tr>
             <tr>
                 <th>Red Hat 제안 <br>불가능 요소</th>
-                <td><ul>
-                    <li><strong>신규 S/W 직접구매 없음</strong>: RFP 명시("본 사업은 직접구매 대상 상용SW가 없음. 신규 도입 계획 없어 직접구매 대상 구매계획 첨부 안 함") → 신규 RHEL 구독 라이선스 납품 기회 없음</li>
-                    <li><strong>인프라(HW·시스템SW)는 국가정보자원관리원 담당</strong>: OS 포함 시스템SW 유지관리는 국정자원 사업에서 수행. 본 사업은 응용계층(AP) 담당이므로 OS 계층 변경 권한 없음</li>
-                    <li><strong>통합자원(WEB·WAS·DB) 운영은 메타·품질표준 사업 전담</strong>: JBoss-Apache, JBoss-WAS 등 통합자원 상용SW 운영·유지관리 비용 부담은 본 사업이나, 실제 운영권한은 타 사업자</li>
-                    <li><strong>JBoss·RHEL이 "오픈소스 설치·운영"으로 분류됨</strong>: RFP에서 RHEL, JBoss-Apache, JBoss-WAS를 "시스템SW는 오픈소스 설치·운영"으로 명시하여 상용 구독 제품으로 취급하지 않고 있음 (커뮤니티/무상 버전 운영 가능성)</li>
-                    <li><strong>20억 미만 중소기업 제한 사업</strong>: Red Hat Korea 직접 입찰 불가 (파트너사 통해 간접 기회만 존재)</li>
-                    <li><strong>상용SW 유지관리 대상 목록에 Red Hat 구독 제품 없음</strong>: 유지관리 대상 상용SW 9개 품목에 RHEL, OpenShift, Ansible 등 Red Hat 상용 제품 미포함</li>
-                </ul></td>
+                <td>
+                    <ul>
+                        <li><strong>신규 S/W 도입·구매 없음</strong>: RFP 명시 - "본 사업은 직접구매 대상 상용SW가 없음. 기 도입 제품의 유지관리를 대상으로 하며, 신규 도입 계획이 없어 직접구매 대상 SW 구매계획은 첨부하지 않음." → Red Hat 상용 제품의 신규 납품·구독 구매 기회 없음</li>
+                        <li><strong>HW·시스템SW(OS) 인프라는 국가정보자원관리원 전담</strong>: RFP 명시 - "시스템 인프라(HW 및 시스템SW)는 국가정보자원관리원 유지관리 사업에서 수행" → OS를 포함한 인프라 관련 구독·유지관리는 본 사업 범위 외</li>
+                        <li><strong>WEB·WAS·DB 통합자원은 메타·품질표준 사업 전담</strong>: 통합자원(WEB: JBoss-Apache, WAS: JBoss-Was)의 운영·유지관리 비용 부담은 본 사업이 하되, 실제 운영·관리 주체는 메타·품질표준 사업자 → JBoss 관련 영업 접촉 포인트가 분산</li>
+                        <li><strong>예산 규모 20억 원 미만 중소기업 제한 사업</strong>: 대기업·중견기업 입찰 참여 제한 → Red Hat Korea 직접 입찰 불가, 파트너를 통한 간접 영향력 행사만 가능</li>
+                        <li><strong>경쟁·대체 제품 확정 사용 중</strong>: DBMS로 PostgreSQL 14.0 (오픈소스) 및 Tibero (토종 DBMS) 사용 중, Oracle/Rocky Linux 등 타 경쟁 제품 미명시이나 이미 확정된 기술 스택 변경 여지 없음</li>
+                    </ul>
+                </td>
             </tr>
             <tr>
                 <th>Red Hat 제안 <br>가능 요소</th>
-                <td><ul>
-                    <li><strong>RHEL 7.4 / RHEL 8.8 품목 명시 — 판정 근거 (높음)</strong>: RFP 본문 및 ECR-003(상용SW 구성 요구사항), MPR-009(운영 요구사항) 등 다수 위치에서 "OS: RHEL 7.4/8.8"이 시스템 SW로 명시되어 현재 운영 중. RHEL 기반 인프라가 확정 도입·운영되고 있으므로 Red Hat 상용 제안 기회 존재</li>
-                    <li><strong>JBoss-Apache 2.4 / JBoss-WAS 7.8 운영 환경</strong>: WEB/WAS 레이어에 JBoss 기반 스택이 명시되어 있어 JBoss EAP 상용 전환 또는 유지관리 제안 여지 있음. 단, 현재 오픈소스로 분류·운영 중</li>
-                    <li><strong>MCP 기반 AI 플랫폼 구축 (SFR-005)</strong>: MCP 서버·게이트웨이 구축, AI 에이전트 환경 보안통제 요구 → OpenShift AI, RHEL AI 등 Red Hat AI 플랫폼 제안 가능성 검토 필요</li>
-                    <li><strong>컨테이너·쿠버네티스 미지정 영역</strong>: 생성형 AI 서비스(LLM 서버 1식 운영 중), RAG DB 관리, MCP 게이트웨이 등 신규 구축 요소에 대해 OpenShift Container Platform 또는 Ansible Automation Platform 제안 여지</li>
-                    <li><strong>자동 수집 연계 고도화 (MPR-008)</strong>: 600여 개 기관 동시 연계, 에이전트 중앙 원격관리(상태 모니터링, 설정·버전 일괄 배포, 장애 알림) 요구 → Ansible Automation Platform 제안 가능 포인트</li>
-                    <li><strong>RHEL 7.4 EOS 대응 기회</strong>: RHEL 7.4는 이미 EOS(Extended Life Cycle Support) 단계 진입. 보안 패치, 유지관리 연장 지원(ELS) 또는 RHEL 8/9 업그레이드 제안 가능. SER-007에서 "보안지원 종료 운영체제 업그레이드 실시" 명시</li>
-                    <li><strong>RFP 명시 Red Hat 관련 제품 수량 정리</strong>:
-                        <ul>
-                            <li>RHEL 7.4: 국가공유데이터 플랫폼 및 기관공유데이터 관리시스템 전체 서버 OS (수량 미명시, 대전·광주·대구센터 수십 식 규모)</li>
-                            <li>RHEL 8.8: 동일 시스템 OS (수량 미명시)</li>
-                            <li>JBoss-Apache 2.4: WEB 서버 레이어 (수량 미명시)</li>
-                            <li>JBoss-WAS 7.8: WAS 서버 레이어 (수량 미명시)</li>
-                        </ul>
-                    </li>
-                    <li><strong>파트너 영업 전략</strong>: 20억 미만 중소기업 제한 사업이므로, Red Hat 공인 파트너사(중소 SW사업자)를 통한 간접 영업 및 솔루션 제안 전략 수립 필요. RHEL ELS/업그레이드, Ansible 자동화, OpenShift AI 포함 제안서 작성 지원 검토</li>
-                </ul></td>
+                <td>
+                    <ul>
+                        <li><strong>[RFP에 명시된 Red Hat 상용 제품]</strong>
+                            <ul>
+                                <li><strong>RHEL (Red Hat Enterprise Linux) 7.4 / 8.8</strong>: 현행 시스템 OS로 명시 (시스템 SW 오픈소스 설치·운영 항목에 명시: "OS(RHEL 7.4/8.8)") - 장비 현황 비고, ECR-003(상용 SW 구성), MPR-009(기관공유 안정적 운영) 등 총 3개 항목에 반복 기재</li>
+                                <li><strong>JBoss-Apache 2.4 (WEB)</strong> 및 <strong>JBoss-Was 7.8 (WAS)</strong>: 현행 시스템 WEB·WAS 서버로 명시 - "WEB(JBOSS-Apache 2.4), WAS(JBOSS-Was 7.8)" 형태로 장비 현황 및 SW 구성 항목에 명시</li>
+                            </ul>
+                        </li>
+                        <li><strong>[기존 고객 기반의 구독 갱신·확장 가능성]</strong>: RHEL 7.4 및 8.8이 현재 운영 중이며, 특히 RHEL 7.x는 Extended Life Cycle Support(ELS) 대상으로 구독 갱신 또는 RHEL 8/9로의 업그레이드 필요성 영업 기회 존재. 국가정보자원관리원 사업자 및 메타·품질표준 사업자와의 협조 채널을 통해 접근 가능</li>
+                        <li><strong>[JBoss EAP 관련 기회]</strong>: 현행 WAS가 JBoss 기반이므로 JBoss EAP 상용 구독 전환 가능성 있음. 현재 RFP에서 "오픈소스 설치·운영"으로 표현하고 있어 커뮤니티 버전(WildFly) 사용 가능성 있으나, 공공기관 보안 요건(CC인증, 기술지원 등)을 감안 시 상용 EAP 전환 설득 포인트 존재</li>
+                        <li><strong>[MCP·컨테이너·자동화 기술 요구사항과의 연계]</strong>: SFR-005(MCP 기반 데이터 제공체계 구축), AI 기반 Q&A 서비스 구축 등 최신 기술 요구사항이 포함되어 있으며, 향후 OpenShift, Ansible Automation Platform, RHEL AI 등의 제안 여지 있음 (단, 현 사업에서 직접 제안 기회는 아님)</li>
+                        <li><strong>[영업 전략 방향]</strong>: 본 사업의 수행 사업자(SI) 또는 국가정보자원관리원 유지관리 사업자를 통해 RHEL 구독 갱신 및 JBoss EAP 상용 전환 논의 시작 권고. 특히 RHEL 7.x EOS(End of Support) 이슈를 활용한 업그레이드 제안이 유효</li>
+                    </ul>
+                </td>
             </tr>
         </table>
     </div>
