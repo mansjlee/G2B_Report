@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00293975 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국광기술원_공정관리시스템 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>OS 미지정, Linux 계열 제안 여지 존재</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>한국광기술원 차세대반도체패널연구센터가 추진하는 <strong>공정관리시스템 구축 용역</strong> 사업</li>
+                        <li>「무기발광디스플레이 생태계 육성을 위한 스마트모듈러센터 구축」 사업의 효율적 추진을 위해 기업 의뢰부터 공정 수행 및 설비 운영까지 <strong>전주기 통합관리</strong>가 가능한 공정관리시스템 구축</li>
+                        <li>CRM(고객의뢰관리), MES(제조공정관리), FDC(데이터 수집·분석), TC(Tool Control), CIM(설비 인터페이스) 등 통합 시스템 구축</li>
+                        <li>무기발광디스플레이 제조공정 61점(연구장비 48점 + GMS 13점) 설비와의 실시간 인터페이스 연동 포함</li>
+                        <li>공정 데이터 관리의 신뢰성 제고 및 업무 활용성·운영 효율성 극대화</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 1,290,674,000원 (부가세 및 제반비용 포함, 약 12.9억 원)</li>
+                        <li><strong>사업 기간</strong>: 계약일로부터 720일 이내 (약 24개월)</li>
+                        <li><strong>사업 범위</strong>: CRM, MES, FDC, TC, CIM 시스템 개발·구축 및 통합 운영환경 조성, 서버·스토리지·네트워크 등 H/W 및 S/W 도입, 설비(61점) 인터페이스 연동, 시스템 교육·유지보수</li>
+                        <li><strong>입찰 방식</strong>: 제한경쟁입찰 (총액입찰, 전자입찰), 협상에 의한 계약</li>
+                        <li><strong>평가 방법</strong>: 기술능력평가(90점) + 입찰가격평가(10점) 합산, 기술능력평가 85%(76.5점) 이상 업체 협상적격자 선정</li>
+                        <li><strong>대기업 참여 제한</strong>: 사업금액 20억 원 미만으로 중소기업자만 참여 가능</li>
+                        <li><strong>상용SW 직접구매 계획</strong>:
+                            <ul>
+                                <li>DBMS: 2식 → 통합발주 (약 33,000,000원 이내, 도입예정 2028년 8월 이내)</li>
+                                <li>가상화 VM: 3식 → 통합발주 (약 42,000,000원 이내, 도입예정 2028년 8월 이내)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>기관명</strong>: 한국광기술원 (KOPTI)</li>
+                        <li><strong>부서</strong>: 차세대반도체패널연구센터</li>
+                        <li><strong>담당자 1 (센터장)</strong>: 정태훈 / E-mail: hchung@kopti.re.kr / TEL: 062-605-9243 / FAX: 062-605-9249</li>
+                        <li><strong>담당자 2 (책임연구원)</strong>: 윤성훈 / E-mail: shyoon@kopti.re.kr</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong>
+                            <ul>
+                                <li>CRM, MES, FDC, TC(Tool Control), CIM(장비 인터페이스) 5개 시스템 신규 개발 및 통합 구축</li>
+                                <li>SECS/GEM, HSMS(SEMI E5, E30, E37) 표준 프로토콜 기반 설비 61점 인터페이스 연동</li>
+                                <li>전자정부 표준 프레임워크 기반 Java, HTML5 등 최신 기술 활용 반응형 웹 개발</li>
+                                <li>LOT 추적관리, 공정 Recipe 관리(RMS), FDC(설비 빅데이터 수집·시각화), SPC(통계적 공정관리) 기능 구현</li>
+                                <li>SSO(Single Sign-On) 기반 그룹웨어 계정 통합 연계</li>
+                                <li>실시간 모니터링용 멀티스크린(110인치 이상) 현황판 설치</li>
+                                <li>개발 완료 후 1년간 무상 하자보수 수행</li>
+                            </ul>
+                        </li>
+                        <li><strong>[통합발주 S/W 목록]</strong> (직접구매 제외, 통합발주 대상)
+                            <ul>
+                                <li><strong>DBMS (Freeware)</strong>: CRM 시스템용 1식 (PostgreSQL/MariaDB 등, 무결성·범용 SQL 지원)</li>
+                                <li><strong>DBMS (상용SW)</strong>: 공정관리/데이터수집·분석 시스템용 1식, MES 시스템용 1식 (MS SQL Server/MariaDB 등) — 합계 2식, 통합발주, 약 33,000,000원 이내</li>
+                                <li><strong>OS</strong>: CRM 서버용 1식, 공정관리/FDC 서버용 1식, MES 서버용 1식 — Linux, Unix, NT 계열 (명확한 제품명 미지정)</li>
+                                <li><strong>가상화 VM (상용SW)</strong>: CRM 시스템 1식, 공정관리/데이터수집·분석 시스템 1식, MES 시스템 1식 — 합계 3식 (3Node, 1년), 통합발주, 약 42,000,000원 이내 / Enterprise 저장소 접근, 국내 기술지원, 연간 기술지원 티켓·원격지원 포함</li>
+                                <li><strong>CIM PC (산업용)</strong>: x64 기반 NT 계열 OS 지원 2식</li>
+                                <li><strong>Tool Control(TC)</strong>: x64 기반 NT 계열 OS 지원 3식</li>
+                                <li><strong>ETC DBMS</strong>: 관계형 데이터베이스 기반 41식</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>Red Hat 상용 제품명 미명시</strong>: RFP 전체에 걸쳐 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 도입·납품 품목으로 전혀 명시되어 있지 않음</li>
+                        <li><strong>OS 사양 불특정 (Linux 계열 일반 표기)</strong>: OS 요구사항이 "Linux, Unix, NT 계열"로만 표기되어 있어 특정 상용 OS 브랜드가 확정되지 않음 — 구체적인 Red Hat 제품 도입 확정 근거 없음</li>
+                        <li><strong>가상화 VM 제품 미특정</strong>: 가상화 VM(상용SW) 3식이 통합발주 품목으로 명시되어 있으나, VMware, Red Hat Virtualization(RHEV), Nutanix 등 특정 제품명이 지정되지 않아 경쟁 구도 불확실</li>
+                        <li><strong>DBMS 경쟁 제품 언급</strong>: MS SQL Server, PostgreSQL, MariaDB, SQLite 등 타사 DBMS 제품이 명시되어 있어 Red Hat Data Grid 등 도입 여지 제한</li>
+                        <li><strong>NT 계열 OS 비중 높음</strong>: TC, CIM, Workstation 등 다수 구성 요소가 "NT 계열(Windows)" 운영체제 기반으로 명시되어 Red Hat Linux 적용 범위 제한적</li>
+                        <li><strong>중소기업자 전용 입찰</strong>: 대기업 참여 불가 조건으로 Red Hat 코리아 직접 입찰 불가 — 파트너(SI)를 통한 간접 영업만 가능</li>
+                        <li><strong>순수 개발 용역 중심</strong>: 사업의 주목적이 응용 SW 개발·구축 용역으로, Red Hat 상용 구독 제품의 명시적 도입이 의무화되어 있지 않음</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>서버 OS 미지정 — RHEL 제안 여지</strong>: CRM, MES, FDC 등 DB 서버(총 3대) 및 백업 서버의 OS가 "Linux, Unix, NT 계열"로만 명시되어 있어, RHEL(Red Hat Enterprise Linux) 제안이 가능. Enterprise 저장소 접근·보안 패치·연간 기술지원 요건이 명시되어 있어 RHEL 상용 구독의 강점과 부합</li>
+                        <li><strong>가상화 VM(상용SW) 3식 통합발주 — RHEV/KVM 기반 가상화 제안 가능</strong>: "Enterprise 저장소 접근 및 안정적 SW 업데이트", "국내 기술지원 및 연간 기술지원 티켓/원격지원 포함(3Node, 1년)" 요건이 Red Hat Virtualization(RHEV) 또는 RHEL KVM 기반 가상화 솔루션의 강점과 일치. 총 3식 통합발주 예정(약 42,000,000원 이내)</li>
+                        <li><strong>보안 패치 업데이트 요건 명시</strong>: OS 요구사항에 "보안 패치 업데이트 제공" 조건이 명시되어 있어 RHEL의 Extended Update Support(EUS) 및 장기 지원 구독 강점 부각 가능</li>
+                        <li><strong>컨테이너·자동화 환경 제안 여지</strong>: MES, FDC 등 마이크로서비스 기반 아키텍처 구성 시 OpenShift(컨테이너 플랫폼) 및 Ansible Automation Platform(인프라 자동화) 제안 가능 — 다만 RFP에 컨테이너·Kubernetes 명시는 없음</li>
+                        <li><strong>대용량 데이터 처리·실시간 수집 요건</strong>: 설비 61점 빅데이터 수집, FDC 시계열 데이터 처리, SPC 통계분석 등의 요건은 Red Hat AMQ(메시징), Data Grid(인메모리 캐시) 등 미들웨어 솔루션 검토 여지 존재</li>
+                        <li><strong>RFP에 명시된 Red Hat(또는 동의어) 제품명·수량</strong>: 없음 — 문서 전체에 Red Hat 상용 제품명(RHEL, OpenShift, JBoss EAP, Ansible 등)이 직접 명시된 항목 없음</li>
+                        <li><strong>영업 접근 전략</strong>: 낙찰 예정 SI 파트너사를 통해 서버 OS(RHEL), 가상화(RHEV/KVM), 자동화(Ansible) 제안 유도 필요. 가상화 VM 통합발주 품목(3식, 약 4,200만 원)이 핵심 공략 포인트</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
