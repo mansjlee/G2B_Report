@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00295593 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국지능정보사회진흥원_2027년 디지털서비스플랫폼 운영 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange">낮음<br>S/W 납품 없는 순수 운영·유지보수 용역, Red Hat 제품명 미확인</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>공공 디지털서비스(API)를 민간앱·웹에서 활용 가능하도록 연계·중계하는 <strong>디지털서비스플랫폼</strong>의 2027년 운영·유지관리 사업</li>
+                        <li>정부-민간 API 중계 허브(디지털서비스플랫폼) 운영, 포털 4종(대국민·기관·검증·관리자) 유지관리 및 기능 개선, 24/7 장애 관제, 공공서비스 민간 개통 지원, 개방 정책 법·제도 정비 및 활성화 추진</li>
+                        <li>발주기관: 한국지능정보사회진흥원(NIA), 주관기관: 행정안전부</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 1,997,618,894원 (부가세 포함, 약 20억 원)</li>
+                        <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (12개월)</li>
+                        <li><strong>사업 범위</strong>:
+                            <ul>
+                                <li>디지털서비스플랫폼 운영·최적화 (API 중계 게이트웨이, 트래픽·보안·Key 관리, 정합성 검증)</li>
+                                <li>포털 4종 유지관리 및 기능 개선 (홍보·기관·검증·관리자 포털)</li>
+                                <li>인프라 및 시스템 SW 유지관리 (상용SW·응용SW·오픈소스 관리, DR 컨설팅)</li>
+                                <li>24/7 장애 관리 및 서비스 연속성 확보, 헬프데스크 운영</li>
+                                <li>공공서비스 민간 개통 추진 및 수요 발굴</li>
+                                <li>개방 정책 법·제도 정비, 가이드 작성, 이용 활성화</li>
+                            </ul>
+                        </li>
+                        <li><strong>계약 방법</strong>: 협상에 의한 계약 체결 (중소 소프트웨어사업자 한정, 20억 원 미만)</li>
+                        <li><strong>주요 일정</strong>: 2026년 10월 RFP 공고, 2027년 1월 계약 및 착수 → 2027년 12월 사업 종료 및 인수인계</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>담당 부서</strong>: 한국지능정보사회진흥원(NIA) 인공지능정부본부 AI정부혁신성과팀</li>
+                        <li><strong>팀장</strong>: 김진욱 / TEL: 053-230-1661</li>
+                        <li><strong>선임</strong>: 최민수 / TEL: 053-230-1676</li>
+                        <li><strong>이메일</strong>: RFP 내 별도 명시 없음 (NIA 대표 이메일 채널 활용)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>기술 요구사항</strong>:
+                            <ul>
+                                <li>API 중계 게이트웨이(APISIX, Kafka 등 오픈소스) 및 연계 시스템 상시 운영</li>
+                                <li>APM·성능 모니터링(Prometheus, Grafana 등) 기반 트래픽·부하 분산 관리</li>
+                                <li>KCMVP 암호모듈·KMS 적용, API 인증·암호화 Key 체계 운영</li>
+                                <li>Swagger 기반 API 명세서 최신화 및 정합성 검증 환경 운영</li>
+                                <li>포털 4종 웹 환경 최적화·기능 개선 (반응형 웹, 웹 접근성 인증 유지)</li>
+                                <li>기 도입 상용SW(키보드 보안, DB보안, PKI인증, APM, KMS, ITSM) 정기 점검 및 라이선스 관리</li>
+                                <li>오픈소스 SW(Kafka, Prometheus, Grafana, APISIX 등) 버전 관리·보안 패치</li>
+                                <li>365일 24시간 상시 관제 체계 운영, SLA 체결 및 이행 관리</li>
+                                <li>ITSM 도입·운영(상용SW 또는 자체 개발 자유 제안), SOP 수립·현행화</li>
+                                <li>Active-Standby DR 컨설팅 지원</li>
+                                <li>데이터 품질 관리(표준·구조·값·메타데이터·연계데이터) 수행</li>
+                            </ul>
+                        </li>
+                        <li><strong>구매가 명시된 S/W (통합발주 품목)</strong>:
+                            <ul>
+                                <li>본 RFP는 순수 운영·유지보수 용역 사업으로, <strong>신규 S/W 도입·납품·구매 품목이 별도로 명시되어 있지 않음</strong></li>
+                                <li>기 도입 상용SW(키보드 보안, DB보안, PKI인증, APM, KMS, ITSM)의 <strong>유지관리 대상</strong>으로만 언급되며, 구체적 제품명·수량·라이선스 정보는 RFP 내 미공개(보안 사유로 인프라 구성 현황 미제공)</li>
+                                <li>ITSM은 제안사 자유 제안 허용 (상용SW 또는 자체 개발 선택 가능)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>S/W 신규 납품·구매 항목 없음</strong>: 본 사업은 기존 디지털서비스플랫폼의 운영·유지관리 용역으로, 신규 S/W 구독 또는 도입·납품 품목이 RFP에 명시되어 있지 않음</li>
+                        <li><strong>Red Hat 상용 제품명 미확인</strong>: RFP 전문 어디에도 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 기재되어 있지 않음. 현행 시스템 인프라 구성 현황은 보안상 비공개로 처리됨</li>
+                        <li><strong>오픈소스 중심 기술 스택</strong>: 운영 대상으로 명시된 기술은 APISIX, Kafka, Prometheus, Grafana 등 커뮤니티·오픈소스 SW 위주이며, Red Hat 상용 제품과 직접 연결되지 않음</li>
+                        <li><strong>경쟁·대체 제품 확정 여부 불분명</strong>: VMware, Ubuntu, Rocky Linux 등 경쟁 제품도 명시되어 있지 않으나, 현행 인프라 구성 미공개로 Red Hat 도입 여부 자체 확인 불가</li>
+                        <li><strong>중소기업 한정 입찰</strong>: 20억 원 미만 사업으로 중소 소프트웨어사업자만 입찰 참여 가능 (Red Hat 직접 수주 불가, 채널 파트너 통한 간접 기회도 제한적)</li>
+                        <li><strong>인프라 구성 비공개</strong>: "보안상 제공하지 않음. 필요 시 발주처 담당자에게 확인 후 열람" 명시 — 현행 운영 환경의 OS·미들웨어 등 세부 정보를 사전 파악 불가</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>RFP 내 Red Hat 제품명 명시 없음</strong>: 현재 RFP 텍스트 기준으로 RHEL, OpenShift, Ansible, JBoss, Satellite 등 Red Hat 상용 제품이 도입·유지관리 대상으로 명시된 항목은 발견되지 않음</li>
+                        <li><strong>인프라 구성 비공개로 인한 간접 기회 가능성</strong>: 현행 플랫폼 인프라 구성이 보안상 비공개이므로, 실제 운영 환경에 RHEL 또는 JBoss 기반 시스템이 존재할 가능성을 완전히 배제할 수 없음 — 발주처 담당자 접촉을 통한 사전 정보 수집 필요</li>
+                        <li><strong>ITSM 자유 제안 항목</strong>: ITSM 솔루션은 제안사 자유 제안 허용(MPR-06, PMR-02) — Red Hat의 Ansible Automation Platform 기반 운영 자동화 솔루션이나 관련 파트너 ITSM 솔루션 제안 여지 있음 (단, 기술 평가에서 가산점보다는 적합성 중심 평가)</li>
+                        <li><strong>오픈소스 SW 관리 고도화 니즈</strong>: Kafka, Prometheus, Grafana, APISIX 등 오픈소스 EOS(기술지원 종료) 관리 및 보안 패치 요구(MPR-07) — Red Hat이 엔터프라이즈 지원하는 AMQ(Kafka), 모니터링 스택 등 제안 맥락 존재하나, 현실적으로 이번 용역 사업에서 직접 납품 기회로 연결되기 어려움</li>
+                        <li><strong>전략적 어카운트 관리 차원</strong>: NIA(한국지능정보사회진흥원)는 다수의 대형 공공 IT 사업을 발주하는 핵심 기관 — 본 사업을 통한 담당자 관계 구축 및 차년도·유관 사업(HW·SW 자원 위임발주, DR 체계 구축 등) 연계 기회 발굴 관점에서의 전략적 접근 고려</li>
+                        <li><strong>별도 HW·SW 위임·분리발주 사업 예고</strong>: RFP 기타사항(PSR-03)에 "별도의 위임·분리발주 사업, 국가정보자원관리원 자원 관련 작업"이 언급됨 — 해당 별도 발주 사업에서 Red Hat 제품 도입 기회 발생 가능성 모니터링 필요</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

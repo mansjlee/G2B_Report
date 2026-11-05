@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00295336 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국국토정보공사_2027년 지하공간통합지도 수정·갱신 사업 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="gray"><strong>낮음</strong><br>S/W 납품 없는 DB구축 용역, RH 제품 미명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>전국 지하시설물(상수·하수·통신·전력·가스·열수송·송유 7종) 및 지하구조물, 지반정보를 수집·표준화하여 지하공간통합지도(2D/3D)를 월별 수정·갱신하는 사업</li>
+                        <li>지반침하·지하안전사고 예방을 위한 고품질 지하정보 통합관리 및 3차원 서비스 제공</li>
+                        <li>울산광역시 미포·온산 국가산업단지 산업용 배관(고압가스, 화학물질, 위험물 이송배관)에 대한 지하공간통합지도 신규 제작 포함</li>
+                        <li>지하공간통합지도와 지하안전정보시스템(JIS) 연계 및 데이터 공동활용 체계 마련</li>
+                        <li>발주기관: 한국국토정보공사(LX) / 주관부처: 국토교통부 공간정보진흥과</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 1,652,000,000원 (부가세 포함) — 회계연도 개시 전 발주로 예산 변경 또는 취소 가능성 있음</li>
+                        <li><strong>사업 기간</strong>: 계약일 ~ 2027년 12월 31일</li>
+                        <li><strong>사업 범위</strong>: ① 지하시설물 통합DB(2D) 수정·갱신 (전체갱신 연2회, 월별 부분갱신), ② 지하공간통합지도(3D) 수정·갱신 (지하시설물·지하구조물·지반정보), ③ 울산 미포·온산 국가산업단지 산업용 배관 지하공간통합지도 제작</li>
+                        <li><strong>설계 수량</strong>: 지하시설물 2D 11,809km / 3D 279km² / 울산 산업단지 60km², 지하구조물 기준점 60점·보조측량 300점·모델구조화 18.76km, 지반 71.54m²</li>
+                        <li><strong>계약 방법</strong>: 협상에 의한 계약 (제한경쟁입찰, 중소 소프트웨어사업자 대상, 20억 미만으로 대기업·중견기업 참여 제한)</li>
+                        <li><strong>사업 유형</strong>: DB구축사업 (투입공수 방식, 소프트웨어사업 영향평가 제외 대상)</li>
+                        <li><strong>주요 일정</strong>: 착수보고 계약 후 14일 이내, 중간보고 사업 중반, 최종보고 계약완료일 14일 이내 / 월간 공정보고 매월 5일 전후</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>담당 부서</strong>: 한국국토정보공사 디지털 SOC처</li>
+                        <li><strong>담당자 성명</strong>: 이태훈</li>
+                        <li><strong>전화번호</strong>: 063-713-1348</li>
+                        <li><strong>e-mail</strong>: lth04@lx.or.kr</li>
+                        <li><strong>과업내용 문의처</strong>: 디지털 SOC처 대표번호 063-713-1343</li>
+                        <li><strong>부패신고</strong>: 감사실장 063-713-1700</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술·업무 핵심 요구사항]</strong>
+                            <ul>
+                                <li>DAR-001~012: 데이터 표준 수립 및 상위표준 준수, 데이터 품질진단, 공공데이터 관리, 관리기관 지하시설물 DB 수집, 통합DB 수정·갱신(2D/3D), 품질관리, 지하시설물·지하구조물·지반정보 지하공간통합지도 수정·갱신, 산업단지 지하공간통합지도 제작, 데이터 로딩</li>
+                                <li>전체갱신(연2회) + 월별 부분갱신(변동정보 승인일 기준 30일 이내 반영) 체계 운영</li>
+                                <li>자동갱신시스템 및 자체 모듈 활용, 준공도서제출시스템 연동</li>
+                                <li>공공측량 성과심사 적합 판정 필수 (지하시설물·지하구조물·지반·산업배관 모두 해당)</li>
+                                <li>지하정보 활용시스템(지하정보통합체계) 데이터 탑재 및 로딩 테스트 수행</li>
+                                <li>전자정부 표준프레임워크, RESTful API, XML/JSON 데이터 형식, RDBMS 등 행정기관 정보시스템 구축·운영 지침 준수</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매 명시 S/W]</strong>
+                            <ul>
+                                <li>RFP 전체에 별도로 구매·납품·통합발주되는 상용 S/W 품목은 명시되어 있지 않음</li>
+                                <li>기술적용계획표(붙임1)에 운영체제(UNIX, Windows Server, Linux), DBMS(RDBMS, ORDBMS 등), 개발프레임워크(전자정부 표준프레임워크), 클라우드(IaaS, PaaS, SaaS) 등이 항목으로 나열되어 있으나, 이는 적용 여부 검토 대상 표준 목록이며 특정 제품 구매를 지정하지 않음</li>
+                                <li>본 사업은 DB구축 용역 중심으로, SW 조달쇼핑몰 직접구매 및 통합발주 SW 목록 없음</li>
+                            </ul>
+                        </li>
+                        <li><strong>[보안·관리 요구사항]</strong>
+                            <ul>
+                                <li>SER-001~006: 정보보안 일반사항, 규정 준수(국가정보보안기본지침 등), 관리적·물리적·기술적 보안대책, 인력 보안관리, 자료 보안관리, 네트워크 보안관리</li>
+                                <li>PMR-001~011: 프로젝트 관리방법론, 일정관리, 요구사항 관리, 안전관리, 위험관리, 보고관리, 산출물 관리, 검수, LX IRIS 시스템 활용, 자문위원회·기술평가단 구성, 하도급 관리</li>
+                                <li>PSR-001~003: 교육지원, 기술이전, 하자보수(검수완료일로부터 12개월)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>S/W 납품·구매 항목 없음</strong>: 본 사업은 DB구축 및 지하공간통합지도 수정·갱신 용역 사업으로, RFP 내 상용 S/W 구매·조달·납품에 관한 품목이 전혀 명시되어 있지 않음. 소프트웨어사업 영향평가 제외 대상 'DB구축 사업'으로 명시됨</li>
+                        <li><strong>Red Hat 상용 제품명 미등장</strong>: RFP 전문에 RHEL, OpenShift, Ansible, JBoss, Satellite 등 Red Hat 상용 제품명이 단 한 차례도 언급되지 않음</li>
+                        <li><strong>경쟁·대체 제품 명시 없음(단, RH 제품도 없음)</strong>: 기술적용계획표에 "Linux", "Windows Server", "UNIX" 등 운영체제가 일반 표준 항목으로 나열되어 있으나, 특정 배포판(Ubuntu, Rocky, CentOS 등) 또는 Red Hat 제품을 지정하지 않음</li>
+                        <li><strong>현행 시스템 구성에 RH 제품 미확인</strong>: 현행 시스템 환경, 기구축 인프라, 유지보수 대상 S/W 목록 등에 Red Hat 제품명(RHEL, JBoss, OpenShift 등)이 전혀 기재되어 있지 않음</li>
+                        <li><strong>중소기업 제한 입찰</strong>: 20억 미만 사업으로 대기업·중견기업 참여 제한 → Red Hat이 직접 입찰 불가, SI 파트너를 통한 공급도 별도 SW 품목 없이는 사실상 제안 경로 없음</li>
+                        <li><strong>사업 성격</strong>: GIS·공간정보 DB구축, 측량, 데이터 표준화 중심 용역으로, IT 인프라·미들웨어·플랫폼 솔루션 도입과 무관한 사업</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>RFP 내 Red Hat(동의어 포함) 제품명·수량: 없음</strong> — RHEL, OpenShift, Ansible, JBoss, Satellite 등 어떠한 Red Hat 상용 제품도 명시되어 있지 않음</li>
+                        <li><strong>기술적용계획표의 Linux 항목</strong>: "서버용(개방형) 운영 체제 및 기반환경 — POSIX.0, UNIX, Windows Server, Linux" 항목이 있으나, 이는 행정기관 정보시스템 구축·운영 지침에 따른 표준 목록 나열이며, 특정 Linux 배포판 또는 RHEL 도입을 의미하지 않음. 판정 근거로 활용 불가</li>
+                        <li><strong>클라우드 항목(IaaS, PaaS, SaaS)</strong>: 기술적용계획표에 클라우드 항목이 있으나, 이 역시 표준 적용 여부 검토용 항목으로 OpenShift 등 특정 제품 도입을 지정하지 않음</li>
+                        <li><strong>간접 제안 가능성 (매우 낮음)</strong>: 사업 수행 환경(개발서버, 운영서버)에 Linux 기반 인프라가 사용될 가능성이 있으나, 이는 수행사 자체 인프라로 발주기관이 S/W 구매를 요구하지 않음. Red Hat 솔루션 직접 제안 기회 없음</li>
+                        <li><strong>종합 판단</strong>: S/W 도입·납품 항목이 없고, 현행 시스템에 Red Hat 제품 존재 미확인, 사업 성격이 GIS·공간정보 DB구축 용역으로 Red Hat 기술 스택 적용 여지가 거의 없음. 영업 우선순위 낮음</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
