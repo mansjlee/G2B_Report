@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00296364 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국자활복지개발원_2027~2028년 정보시스템 통합 운영관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange">중간<br>Linux·WAS 운영환경, OS 미지정 제안여지</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>한국자활복지개발원이 운영하는 자활정보시스템(자활근로, 중앙자활자금, 자산형성, 자산형성포털, 교육훈련), 경영지원시스템, 대표홈페이지 등 정보시스템 전반의 안정적 운영·유지관리를 목적으로 함</li>
+                        <li>자활사업 지침 개정 등 신규 행정수요에 적기 대응하고, 사용자 편의성 향상 및 기능 개선을 위한 유지보수 수행</li>
+                        <li>상용 소프트웨어 유지관리(라이선스 갱신, 기술지원 포함) 및 G클라우드 기반 소프트웨어 운영지원 포함</li>
+                        <li>정보보호(DB암호화, 접근통제, 개인정보보호), 공공데이터 품질관리, 웹 취약점 진단·조치 등 보안 관리 수행</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 4,338,000천원(부가가치세 포함) / 연간 2,169,000천원</li>
+                        <li><strong>사업 기간</strong>: 2027.01.01 ~ 2028.12.31 (2년, 장기계속계약)</li>
+                        <li><strong>사업 범위</strong>: 자활정보시스템(자활근로·중앙자활자금·자산형성·자산형성포털·교육훈련), 경영지원시스템, 대표홈페이지의 운영관리 및 상용 소프트웨어 유지관리</li>
+                        <li><strong>주요 일정</strong>: 2026년 10월 사업계획 수립 → 2026년 11~12월 조달검토 및 사전규격공개 → 입찰공고 → 기술평가 및 계약 → 2027.01.01 운영관리 착수</li>
+                        <li><strong>계약 방식</strong>: 협상에 의한 계약, 제한경쟁입찰 (중소·중견기업 한정, 20억~40억 미만 대기업 참여 제한)</li>
+                        <li><strong>인프라</strong>: 정부통합전산센터 G클라우드 기반, 국가정보자원관리원 관리 (서버, OS, JDK, DBMS, WAS 운영)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>수요기관</strong>: 한국자활복지개발원</li>
+                        <li><strong>담당 부서</strong>: 정보화지원부</li>
+                        <li><strong>담당자</strong>: 이건호 (대리)</li>
+                        <li><strong>전화</strong>: 02-3415-6929</li>
+                        <li><strong>FAX</strong>: 02-3415-6990</li>
+                        <li><strong>이메일</strong>: 명시되지 않음</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong>
+                            <ul>
+                                <li>전자정부 표준프레임워크 기반 개발 준수, 현행 아키텍처 유지</li>
+                                <li>화면 응답시간 3.0초 이내, 오류 응답시간 3.0초 이내</li>
+                                <li>DB암호화, 개인정보보호법 준수, 접속기록 2년 이상 보관</li>
+                                <li>소스코드 취약점 진단(Sparrow SAST/SAQT 활용) 및 보안 약점 조치</li>
+                                <li>G클라우드 전산자원 운용지원 및 소프트웨어 유지관리 (365일 24시간)</li>
+                                <li>분기별 소프트웨어 방문점검, 장애 접수 후 주간 4시간·야간 6시간 이내 처리</li>
+                                <li>ISMS-P 지원 수행</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매 명시 S/W - 통합발주 유지보수 대상 (표3. 소프트웨어 구성)]</strong>
+                            <ul>
+                                <li>D'amo Enterprise v4.0 2식 (DB암호화)</li>
+                                <li>ISSAC-Web Standard v2.5 2식 (공동인증서)</li>
+                                <li>NexacroPlatform v14.0 2Core (UI플랫폼)</li>
+                                <li>Crownix Report &amp; ERS v6.0 2CPU (리포팅툴)</li>
+                                <li>MegaTier Integration suite@Enterprise 2식 / @Agent 2식 (정보연계)</li>
+                                <li>XecureFileCrypto Server v3.0 2식 / Agent v3.0 2식 (첨부파일 암호화)</li>
+                                <li>DextUpload 2.7 2000User (파일업로드)</li>
+                                <li>nProtect Online Security v1.0 2식 (키보드보안)</li>
+                                <li>Jennifer 5.3 6식 (성능관리시스템)</li>
+                                <li>DA# Repository v5.0 1식 / Architecture v5.0 7User (DB모델링)</li>
+                                <li>Sparrow SAST/SAQT Server v5.6 1식 / Agent v5.6 5User (소스코드 취약점점검)</li>
+                                <li>UBI SAFER-PSM MASTER V3.0 1식 / Agent 10식 (개인정보 접속기록)</li>
+                                <li>UBI SAFER-PSM MASTER V3.0 1식 / Agent 8식 (개인정보 접속기록)</li>
+                                <li>StarPlayer+(HTML5) 1식 (동영상플레이어)</li>
+                                <li>Synap Document Viewer 2019 1식 (문서뷰어)</li>
+                                <li>CoolFilter v3.0 2식 (웹필터)</li>
+                                <li>Dext5 Editor v3.5 2식 (웹에디터)</li>
+                                <li>AUI Grid Enterprise v3.0 1식 (UI플랫폼)</li>
+                                <li>NetFUNNEL Standard Edition NF3-SA v3.0 3식 (대량접속제어)</li>
+                                <li>Bandi SSO Server Engine v7.0 2식 / Agent v7.0 3식 (통합로그인)</li>
+                                <li>K-Systems ACE 1Server 1식 (ERP)</li>
+                                <li>SmartFlow OSE 3.8 Server 1식×2 / Client 145User / Client 155User (전자결재시스템)</li>
+                                <li>DocuConverter v7.0 4User (웹한글기안기)</li>
+                                <li>CrenityMessaging v9.0 300User×2 (이메일시스템)</li>
+                                <li>SpamBreaker v7.0 300User (스팸차단)</li>
+                                <li>Pass-Ni SSO v4.0 Server 1식 / Agent 4식 / Agent 2식 (통합로그인)</li>
+                                <li>OZ Reporting Tool(Viewer) 1식 (리포팅툴)</li>
+                                <li>K*CUBE EP Server Module R6 1Server / Client Module R6 500User (포털)</li>
+                                <li>WebToBe v5.0 Enterprise 6Core (WEB)</li>
+                                <li><strong>JEUS v8.0 Enterprise 10Core (WAS)</strong></li>
+                                <li><strong>Tibero v6.0 Enterprise 8Core (DBMS)</strong></li>
+                                <li>AtMessenger 7.0 2Server / 300User (메신저)</li>
+                                <li>e-CMS 1식 (홈페이지 CMS)</li>
+                                <li>U-Privacy Safer Saver v4.0 4Core (개인정보필터)</li>
+                                <li>ITM SIMMS V2 Server 1식 / 자산 500 (IT자산관리)</li>
+                            </ul>
+                        </li>
+                        <li><strong>※ 본 사업은 상용 S/W 라이선스(제조사 기술지원 및 유지관리 포함)의 신규 도입, 갱신 및 유지관리 계약을 주사업자 책임 하에 제조사 또는 공식 파트너사와 직접 체결하도록 명시 (MPR-07)</strong></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>Red Hat 상용 제품명 미명시</strong>: RFP 전반 및 소프트웨어 구성 현황(표3)에 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품이 품목으로 명시되지 않음</li>
+                        <li><strong>WAS: JEUS v8.0</strong> (티맥스소프트 제품) 10Core가 유지보수 대상으로 명시되어 있어 JBoss EAP 대체 제안이 현실적으로 어려움</li>
+                        <li><strong>DBMS: Tibero v6.0</strong> (티맥스소프트 제품) 8Core가 유지보수 대상으로 명시되어 있어 경쟁 DBMS 환경</li>
+                        <li><strong>인프라 운영 주체 분리</strong>: 서버, OS, JDK, DBMS, WAS는 국가정보자원관리원이 운영하므로, 본 사업자가 OS/플랫폼 교체나 신규 도입을 주도하기 어려운 구조</li>
+                        <li><strong>순수 운영·유지보수 용역 중심</strong>: 신규 인프라 구축 또는 플랫폼 도입 사업이 아니며, 기존 시스템의 운영관리 및 기능유지에 초점이 맞춰져 있어 Red Hat 신규 상용 제품 도입 가능성이 낮음</li>
+                        <li><strong>JBoss 미명시</strong>: WAS 항목에 JEUS만 명시되어 있고 JBoss(WAS)는 등장하지 않음</li>
+                        <li><strong>대기업 참여 제한</strong>: 20억~40억 미만 대기업 참여 제한으로 Red Hat이 직접 사업자로 참여 불가 (파트너 채널을 통한 간접 공급만 가능)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>RFP 내 Red Hat 제품명 명시 없음</strong>: RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품이 명시적으로 기재된 항목은 없음</li>
+                        <li><strong>OS 환경 불명시</strong>: RFP 내 하드웨어·네트워크 현황은 보안상 비공개이며, 서버 OS가 명시되어 있지 않아 국가정보자원관리원 운영 서버의 OS 환경(Linux 계열 여부)이 불분명 → RHEL 도입 가능성 간접 존재</li>
+                        <li><strong>Linux 계열 서버 환경 추정 가능</strong>: G클라우드 기반 운영, 전자정부 표준프레임워크(Java/JSP) 환경, JEUS·Tibero 조합은 Linux 서버 위에서 동작하는 경우가 많아 간접적인 RHEL 운영 환경 가능성 있음</li>
+                        <li><strong>상용 SW 라이선스 신규 도입·갱신 책임 명시 (MPR-07)</strong>: 주사업자가 제조사 또는 공식 파트너와 직접 계약하도록 명시되어, 향후 운영 중 Red Hat 관련 제품 필요 시 파트너를 통한 공급 가능성 존재</li>
+                        <li><strong>인프라 이전 시 소프트웨어 설치 지원 과업 포함</strong>: MPR-07에 "서버 등 인프라 이전에 따른 소프트웨어 설치 지원"이 포함되어 있어 환경 변화 시 RHEL 등 제안 여지 존재</li>
+                        <li><strong>자동화·보안 솔루션 제안 여지</strong>: 보안 취약점 진단·조치, 패치 관리, 분기별 방문점검 등 반복 운영 자동화 영역에서 Ansible Automation Platform 간접 제안 여지 (단, 현재 명시 없음)</li>
+                        <li><strong>제안 가능성 종합</strong>: Red Hat 상용 제품이 유지보수 대상 목록에 명시되지 않고, OS 및 미들웨어가 국가정보자원관리원 관리 하에 있으므로 직접적인 도입 기회는 낮으나, 운영 환경의 Linux 가능성 및 상용 SW 갱신 책임 조항으로 인해 파트너를 통한 간접 기회 모색 가능 → <strong>중간</strong> 판정</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
