@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00296971 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국가생명윤리정책원_2027년 연명의료 정보시스템 기능개선 및 통합 유지관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>JBoss 4식 유지보수 대상 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>국가생명윤리정책원 연명의료관리본부가 운영하는 연명의료 정보시스템(정보처리시스템, 정보포털, 태블릿 앱, 모바일 서명앱, API 등)에 대한 2027년도 통합 유지관리 및 기능개선 사업</li>
+                    <li>365일 24시간 무중단 안정적 서비스 제공, 정보시스템 오류 사전 예방, 보안 강화를 통해 운영 안정성 확보</li>
+                    <li>법 개정에 따른 법정 서식 변경 대응, 교육포털 소스 구조 표준화, ISMS-P 인증 준비를 위한 기술적 조치 수행</li>
+                    <li>연명의료 정보시스템은 국가정보자원관리원(대전) G-Cloud에서 자원을 할당받아 운영 중</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 770,000천원 (VAT 포함, 약 7.7억 원)</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (12개월)</li>
+                    <li><strong>사업 범위</strong>: ① 연명의료 정보시스템 통합 유지관리 (정보포털, 정보처리시스템, 태블릿 등록앱, 모바일 서명앱, API 모듈 등 운영·관리, 보안취약점 점검 및 조치, 예방점검, 장애처리) ② 기능개선 (법정 서식 변경 대응, 교육포털 표준프레임워크 전환 및 소스 구조 표준화, 서식 파기·분리보관 기능, ISMS-P 대응)</li>
+                    <li><strong>주요 일정</strong>: 2026년 11월 RFP 발행 / 제한경쟁입찰, 협상에 의한 계약체결 방식 / 계약 후 10일 이내 착수계 제출 / 2027년 1월 사업 개시 예정</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 국가생명윤리정책원 연명의료관리본부 (연명의료정보화 TF팀)</li>
+                    <li><strong>협력부서</strong>: 경영지원본부 (사업발주, 공고, 계약 담당)</li>
+                    <li><strong>담당 부서</strong>: 연명의료관리본부 (사업추진 주관, 제안요청서 작성, 사업 검수 등)</li>
+                    <li><strong>연락처·이메일</strong>: RFP 내 별도 명시 없음 (입찰공고문 및 나라장터 공고 참조 필요)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong>
+                        <ul>
+                            <li>연명의료 정보시스템(정보포털/교육포털/처리시스템/앱/API) 통합 유지관리 및 365일 24시간 운영 지원</li>
+                            <li>전자정부 표준프레임워크 기반 교육포털 전환(Java·Spring 최신 안정 버전 적용, MVC 구조 표준화)</li>
+                            <li>연명의료결정법 개정에 따른 법정 서식 변경 유연 대응 구조 설계 및 버전 이력 관리</li>
+                            <li>서식 데이터 파기 및 분리보관 기능 구축 (별도 DB 영역 이전, 암호화, 접근통제, 배치 파기)</li>
+                            <li>ISMS-P 인증 심사 대응 기술 자료·증적 작성, 결함 조치</li>
+                            <li>침투테스트 연 1회 이상 수행 (외부 보안 전문기관 활용)</li>
+                            <li>수료증 진본확인 고도화 (GTSA 타임스탬프 적용, 제3자 진위 확인 화면)</li>
+                            <li>설문조사 생성·응답·통계 기능 추가 (관리자/사용자, PC/Mobile 반응형)</li>
+                            <li>DB 성능 튜닝, SQL 중심 데이터 접근 방식 통일, 데이터 표준화 준수</li>
+                            <li>SLA 체결 및 운영 (A2등급 정보시스템 기준 적용)</li>
+                            <li>상주 인력 운영 (PM 7년 이상, DBA 비상주 지원 가능), 인수인계 최소 10일</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W - 패키지 소프트웨어 유지관리 대상]</strong>
+                        <ul>
+                            <li>DBMS: PostgreSQL 2식</li>
+                            <li>WEB/WAS: Apache 4식, <strong>Jboss 4식</strong></li>
+                            <li>APM: Jennifer 1식</li>
+                            <li>레포팅 툴: OZ Report (리포팅 서버 2식, 문서뷰어 4식) 6식</li>
+                            <li>시큐어코딩 1식</li>
+                            <li>대량메일 발송 솔루션 1식</li>
+                            <li>DB 암호화 (ECHELON 등) 2식</li>
+                            <li>문서위변조방지 솔루션 2식</li>
+                            <li>음성변환 바코드 2식</li>
+                            <li>공인인증 2식</li>
+                            <li>키보드 보안 (nProtect Online Security 등) 2식</li>
+                            <li>개인정보접속관리 솔루션 1식</li>
+                            <li>DB 성능관리 1식</li>
+                            <li>HA 1식</li>
+                            <li>문서 뷰어 1식</li>
+                            <li>파일암호화 DRM 2식</li>
+                            <li>검색엔진 솔루션 2식</li>
+                            <li>전자문서 시점 인증 2식</li>
+                            <li>개인정보 필터링 1식</li>
+                            <li>※ 합계 40식 (신규 구매가 아닌 기존 운영·유지관리 대상 소프트웨어 목록)</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 신규 구매(통합발주) 없음</strong>: 본 사업은 기존 운영 중인 시스템의 유지관리·기능개선 용역으로, 신규 S/W 도입·납품 항목이 별도로 명시되어 있지 않음</li>
+                    <li><strong>DBMS 경쟁 제품 사용 중</strong>: 현행 DBMS로 PostgreSQL(오픈소스)이 사용 중이며, RHEL 기반 DBMS 전환 가능성은 낮음</li>
+                    <li><strong>OS 정보 비공개</strong>: 하드웨어/소프트웨어 구성 상세 정보가 보안 사유로 공개되지 않아(방문 열람 필요) 현행 OS 환경을 RFP에서 직접 확인 불가</li>
+                    <li><strong>순수 유지관리·용역 사업</strong>: 20억 미만 용역 사업으로 중소기업 단독 참여 사업이며, Red Hat이 직접 입찰할 수 없는 구조</li>
+                    <li><strong>경쟁 제품 명시 없음(긍정 요소)</strong>: Ubuntu, Rocky Linux, Oracle Linux, VMware 등 명시적인 경쟁 제품은 RFP에 등장하지 않음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>JBoss 4식 유지보수 대상 명시 → 높음 판정 근거</strong>: 패키지 소프트웨어 목록 WEB/WAS 항목에 "Jboss 4식"이 유지관리 대상으로 명시되어 있음. 판정 규칙에 따라 JBoss가 운영·유지보수 대상으로 나오면 EAP 표기 여부·라이선스 형태 불문하고 반드시 높음 판정</li>
+                    <li><strong>JBoss EAP 구독 갱신 기회</strong>: 현행 운영 환경에 JBoss 4식이 운영 중이므로, WAS 사업자를 통한 JBoss EAP 서브스크립션 갱신 또는 신규 전환 영업 기회 존재. SI 사업자와 협력 채널을 통한 접근 필요</li>
+                    <li><strong>RHEL 제안 가능성</strong>: 현행 서버 OS 정보가 비공개(방문 열람)이나, 공공기관 G-Cloud 환경에서 운영 중이므로 Linux 계열 OS 사용 가능성이 높음. 방문 열람 후 RHEL 운영 여부 확인 시 추가 갱신 기회 발굴 가능</li>
+                    <li><strong>전자정부 표준프레임워크 환경</strong>: 교육포털의 전자정부 표준프레임워크 전환 요구(Java/Spring 기반)는 JBoss EAP 운영과 연계될 수 있으며, Red Hat 미들웨어 스택 제안 여지 존재</li>
+                    <li><strong>Ansible 자동화 제안 여지</strong>: 정기·예방점검 자동화, 시스템 패치 관리, 보안 취약점 점검 자동화 등의 요구사항(MPR-004, SER-003 등)에 Ansible Automation Platform 제안 가능</li>
+                    <li><strong>RFP 내 Red Hat 제품명 직접 명시 현황</strong>: "Jboss 4식" (WEB/WAS 유지관리 대상, 패키지 소프트웨어 목록)</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

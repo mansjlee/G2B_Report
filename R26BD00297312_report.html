@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00297312 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>기상청_2027년도 지진화산정보시스템 통합 유지관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>리눅스OS 등 공개SW 유지관리 대상 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>기상청이 운영 중인 지진화산정보시스템(HW 326점, SW 91점, 총 417점)의 365일 24시간 무중단 운영을 위한 통합 유지관리 사업</li>
+                        <li>지진자료 수집·분석·통보·분배를 포함한 지진 관련 서비스의 안정적 제공을 목적으로 함</li>
+                        <li>행정안전부 고시 제2026-23호에 따른 A1등급 정보시스템 안정성 기준 충족을 필수 요건으로 함</li>
+                        <li>H/W 운영·개선, S/W 운영·개선, DB 운영·개선, 24시간 상황근무(2인 4교대) 수행</li>
+                        <li>8개 응용시스템(지진정보, 조기경보, 통합통보, 통합지진업무, 국가지진종합정보, 품질관리, 재해복구, 긴급재난문자 시스템) 운영·관리</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 1,800백만원 (18억원)</li>
+                        <li><strong>사업 기간</strong>: 2027.1.1. ~ 2027.12.31. (1년)</li>
+                        <li><strong>사업 범위</strong>: 지진화산정보시스템 유지관리·운영·개선 (HW 326점, SW 91점 총 417점 대상 / 상용SW 71점, 응용SW 20점)</li>
+                        <li><strong>발주기관</strong>: 기상청 지진화산국 지진화산기술팀</li>
+                        <li><strong>입찰방식</strong>: 제한경쟁입찰 (협상에 의한 계약) / 조달청 평가 위임 / 중소기업자만 입찰 참가 가능 (20억 미만)</li>
+                        <li><strong>주요 일정</strong>: 2026년 11~12월 계약 의뢰 및 입찰공고 → 2026년 12월 용역 계약 체결 → 2027년 1월 착수보고회 → 2027년 7월·12월 SLA 평가 및 성과보고회</li>
+                        <li><strong>투입인력</strong>: 최소 18명 이상 상주인력 (서비스데스크 관제 8인 + 상주 전문인력 10인)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>담당 부서</strong>: 기상청 지진화산국 지진화산기술팀</li>
+                        <li><strong>담당자 1</strong>: 기상사무관 조정훈 / TEL: 02-2181-0081 / FAX: 02-841-7664</li>
+                        <li><strong>담당자 2</strong>: 방송통신주사 유종선 / TEL: 02-2181-0091</li>
+                        <li><strong>문의처</strong>: 지진화산국 지진화산기술팀 ☏ (02)2181-0091 / 유종선 주무관</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong>
+                            <ul>
+                                <li>지진화산정보시스템 365일 24시간 무중단 운영 (이중화 구성 기반)</li>
+                                <li>HW(서버·스토리지·네트워크 등), SW(지진분석SW·OS·Web/WAS 등), DB 전반 유지관리</li>
+                                <li>상용SW: Antelope, ElarmS, RTLoc, MAXEL, Earthworm 등 지진분석 소프트웨어 유지관리</li>
+                                <li>공개SW: 리눅스 OS, 공개 Web/WAS, 지진자료 실시간 수집 SW, 기타 업무용 SW·라이브러리 유지관리</li>
+                                <li>DBMS 운영/관리 (오라클), 웹 프로그램 개발(JAVA, JSP, HTML), Apache·Tomcat·Eclipse·웹투비·제우스 활용</li>
+                                <li>A1등급 정보시스템 안정성 고시(행정안전부고시 제2026-23호) 기준 준수</li>
+                                <li>SLA(서비스수준협약) 체결 및 월간·연간 평가 수행</li>
+                                <li>장애관리: 1등급(120분), 2등급(180분), 3등급(300분), 4등급(480분) 이내 복구</li>
+                                <li>재해복구시스템(충북 오창) 포함 주기적 점검 및 모의훈련 수행</li>
+                                <li>소프트웨어 형상·배포·패치 관리, 보안 취약점 점검 및 조치</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매 명시 S/W]</strong>
+                            <ul>
+                                <li>본 사업은 <strong>순수 유지관리·운영 용역</strong>으로, 별도의 통합발주 또는 조달쇼핑몰 직접구매 형태의 신규 S/W 품목 구매 내역이 명시되어 있지 않음</li>
+                                <li>유지관리 대상 상용SW는 71점으로 명시되어 있으나, 개별 제품명 및 수량은 보안상 구성현황 비공개 처리됨 (열람은 보안서약서 징구 및 담당자 입회 하에 가능)</li>
+                                <li>제안서 작성 지침에 "상용 및 응용소프트웨어 유지관리의 적정성" 항목에서 Antelope, 조기경보 등 지진분석 SW, DB·Web/WAS 언급</li>
+                                <li>공개SW 항목에서 리눅스OS, 공개 Web/WAS, 지진자료 실시간 수집 SW 등 언급</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>신규 S/W 납품·구독 구매 없음</strong>: 본 사업은 기존 시스템에 대한 순수 유지관리·운영 용역으로, Red Hat 상용 제품의 신규 도입·납품·구독 갱신이 명시된 품목이 없음</li>
+                        <li><strong>Red Hat 상용 제품명 미명시</strong>: RFP 전반에 걸쳐 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 유지관리 대상으로 명확히 기재되어 있지 않음</li>
+                        <li><strong>구성현황 비공개</strong>: 세부 시스템 구성 현황(어떤 OS, 어떤 미들웨어 사용 여부 등)이 보안상 비공개 처리되어 있어, Red Hat 제품 사용 여부를 현 단계에서 확인 불가</li>
+                        <li><strong>경쟁 제품 명시 없음(단, 대체 가능성 불확실)</strong>: Ubuntu, Rocky Linux 등 경쟁 OS가 명시적으로 지정되지는 않았으나, 오라클 DBMS가 명시되어 있고 공개SW 항목에서 "리눅스OS"로만 언급됨</li>
+                        <li><strong>중소기업 제한 입찰</strong>: 20억 미만 사업으로 대기업·중견기업 참여 불가. Red Hat이 직접 입찰 불가하며 파트너를 통한 간접 기회에 한정됨</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>리눅스 OS 유지관리 대상 명시</strong>: 제안서 평가항목 "공개SW 유지관리의 적정성" 항목에 "리눅스OS"가 유지관리 대상으로 명시되어 있어, 현재 운영 중인 Linux 서버 환경에 RHEL이 사용 중일 가능성이 있으며, 향후 구독 갱신·전환 기회 존재</li>
+                        <li><strong>공개 Web/WAS 유지관리 대상 명시</strong>: Apache, Tomcat 등 공개 Web/WAS가 유지관리 대상으로 언급되어 있으며, JBoss EAP 또는 Red Hat의 미들웨어 솔루션 제안 여지 존재</li>
+                        <li><strong>상용SW 71점 유지관리 대상 (내용 비공개)</strong>: 비공개 처리된 구성현황 내 Red Hat 상용 제품이 포함되어 있을 가능성 배제 불가. 담당자 접촉을 통해 현황 파악 필요</li>
+                        <li><strong>OS 미지정으로 RHEL 제안 여지</strong>: "리눅스OS"로만 표기되어 특정 배포판이 지정되지 않아, RHEL 도입·전환 또는 CentOS → RHEL 전환 기회로 활용 가능</li>
+                        <li><strong>Ansible 자동화 제안 가능성</strong>: 대규모 시스템 운영(HW 326점, SW 91점)에 대한 자동화 필요성이 높아, Ansible Automation Platform을 운영 자동화·패치 관리 솔루션으로 제안 가능</li>
+                        <li><strong>RFP에 명시된 Red Hat(동의어) 제품명·수량</strong>: 없음 (현 RFP 공개 범위 내에서 Red Hat 상용 제품명 명시 없음)</li>
+                        <li><strong>영업 접근 방향</strong>: 입찰 참여 중소 파트너사를 통한 간접 영업 추진 필요. 담당자(유종선 주무관, 02-2181-0091) 접촉을 통해 현행 시스템 내 Red Hat 제품 사용 여부 확인 선행 필요</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
