@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00298288 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국사회보장정보원_2027년 지역보건의료정보시스템 유지관리 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 미포함 순수 유지관리 용역</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>전국 3,627개 보건기관(보건소, 보건지소, 보건진료소 등)에서 사용하는 지역보건의료정보시스템(PHIS)의 안정적 운영을 위한 유지관리 사업</li>
+                    <li>법·제도·지침 변경에 따른 기능 추가·변경, 사용자 요청사항 처리, 장애 예방 및 대응, 보안 관리, SLA 기반 품질 관리 등 수행</li>
+                    <li>시스템 안정화, 편의 기능 강화, 서비스 품질 향상을 통해 보건기관 업무 효율성 증대 및 국민건강증진 지원</li>
+                    <li>유지관리 대상은 지역보건의료정보시스템 전체 응용SW(HW/상용SW 제외)이며, 통계(DW) 시스템, 대국민 포털(e보건소), 아이마중 앱, 개인정보보호 상시모니터링 시스템, 대내외 연계 업무 포함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 금 십오억팔천칠백만원 (₩1,587,000,000, 부가세 포함) ※ 국회 심의 과정에서 조정 가능</li>
+                    <li><strong>사업 기간</strong>: 2027.01.01. ~ 2027.12.31. (1년, 필요 시 연장 계약 가능)</li>
+                    <li><strong>사업 범위</strong>: 지역보건의료정보시스템(PHIS) 전체 응용SW 유지관리 (HW/상용SW 제외) — 보건진료, 보건사업, 보건행정, 통계(DW), 대국민 포털, 모바일 앱, 연계업무, 개인정보보호 상시모니터링 등</li>
+                    <li><strong>계약 방법</strong>: 조달청을 통한 제한경쟁입찰(협상에 의한 계약), 긴급입찰방식 / 20억 미만 중소기업 간 경쟁 (대기업·중견기업 참여 제한)</li>
+                    <li><strong>주요 일정</strong>: 사업계획 수립 → 과업심의위원회 → 사전협의 및 일상감사 → 조달공고 → 계약체결(M월) → 시스템 운영·유지 및 SLA 성과보고서 제출(M~M+11월) → 월별검사</li>
+                    <li><strong>서비스수준협약</strong>: SLA 적용 사업, 계약 착수 후 1개월 이내 협약 체결 / 정보시스템 등급 A2 / 필수지표: 장애등급별 가용률(가중치 30%)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 한국사회보장정보원</li>
+                    <li><strong>담당 부서</strong>: 보건사업정보부</li>
+                    <li><strong>부서장</strong>: 보건사업정보부부장 김기현 / TEL: 02-6360-6981</li>
+                    <li><strong>담당자</strong>: 대리 윤지선 / TEL: 02-6360-6986</li>
+                    <li><strong>FAX</strong>: 02-6360-6930</li>
+                    <li><strong>기관 주소</strong>: 서울시 광진구 능동로 400 (중곡동, 보건복지행정타운)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong>
+                        <ul>
+                            <li>법·제도·지침 변경에 따른 기능 추가 및 변경 (MPR-001)</li>
+                            <li>사용자 요청사항(SR) 처리, 결함 개선 조치 (MPR-002)</li>
+                            <li>통계(DW) 시스템 운영 지원: Datastage, MSTR, OZReport 전문인력 참여 권고 (MPR-003)</li>
+                            <li>대국민 서비스(e보건소, 아이마중 앱) 운영 및 유지관리, 웹접근성·웹표준 품질관리 인증 유지 (MPR-004)</li>
+                            <li>연계 업무 처리 운영 관리: SOAP/REST 실시간 연계, 파일 배치 연계, 외부 연계기관 에이전트 관리 (MPR-006)</li>
+                            <li>개인정보보호 상시모니터링 시스템 유지관리 (MPR-007)</li>
+                            <li>DB 성능 및 품질 점검 관리: SQL 튜닝, 악성 TOP10 SQL 개선, 데이터 표준 관리 (PER-001)</li>
+                            <li>데이터 품질 관리, 무결성, 표준 수립·관리, 구조 관리, 값 검증, 메타데이터 현행화 (DAR-001~009)</li>
+                            <li>웹접근성 및 호환성 준수, OWASP 10대 취약점·국정원 8대 취약점 점검 및 조치 (INR-001)</li>
+                            <li>테스트 체계 마련, 소프트웨어 개발보안(시큐어코딩) 점검 (TER-001~002)</li>
+                            <li>보안 관리, 수행인력 보안 관리 (SER-001~002)</li>
+                            <li>품질관리, 배포관리: Jenkins Plugin 활용 테스트 코드 생성 및 적용 (QUR-001~002)</li>
+                            <li>전자정부 표준프레임워크 적용, C#/.NET/웹소켓 개발 유경험자 1명 이상 포함 권고</li>
+                            <li>5년 이상 경력자 60% 이상, 즉시 투입 가능 개발·운영인력 80% 이상 구성 권고</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W]</strong>
+                        <ul>
+                            <li>본 사업은 <strong>응용SW 유지관리 용역</strong>으로, 통합발주 또는 조달쇼핑몰을 통한 신규 S/W 구매 품목이 RFP에 명시되어 있지 않음</li>
+                            <li>유지관리 대상 범위는 <strong>HW/상용SW를 제외한 전체 응용SW</strong>이며, 기 도입된 상용SW(ORACLE 19C, Sybase IQ, DataStage, MSTR, OZReport, WebSquare5 등)는 유지관리 대상이 아닌 운영 환경으로만 언급됨</li>
+                            <li>수행사는 개발도구(tool) 등을 자체 지원해야 하며, 별도 S/W 사용 시 정품 사용 의무</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 구매·납품 항목 없음</strong>: 본 사업은 응용SW 유지관리 용역으로, HW 및 상용SW를 과업 범위에서 명시적으로 제외하고 있어 Red Hat 상용 제품의 구매·납품·구독 기회가 없음</li>
+                    <li><strong>Red Hat 상용 제품명 미명시</strong>: RFP 전문, 과업지시서, 도입 소프트웨어 현황(붙임 6), 오픈소스SW 목록 어디에도 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 기재되어 있지 않음</li>
+                    <li><strong>JBoss 미언급</strong>: WAS 서버로 JBoss 관련 표기(JBoss, JBoss EAP, WildFly 등)가 현행 시스템 구성, 도입SW 현황, 오픈소스SW 목록 등에 전혀 없음</li>
+                    <li><strong>오픈소스SW 목록에 경쟁·대체 제품 명시</strong>: 오픈소스SW로 PostgreSQL(개인정보 상시모니터링 DBMS), Altibase(대민/대민모바일 DBMS), Jenkins, SVN, Maven, Nexus, Hudson 등이 명시되어 있으며, Red Hat 관련 항목 없음</li>
+                    <li><strong>상용SW 목록에 경쟁 DBMS 명시</strong>: ORACLE 19C, SyBaseIQ가 DBMS로 도입되어 있으며, 운영체제 관련 상용SW는 목록에 없음 (OS 환경 비공개)</li>
+                    <li><strong>순수 용역 사업</strong>: 20억 미만 중소기업 간 경쟁 사업으로, Red Hat이 직접 입찰 불가한 구조이며, SI·통합발주 없이 운영 인력 투입 중심의 순수 유지관리 용역임</li>
+                    <li><strong>인프라 환경 비공개</strong>: 시스템 구성도 및 HW·SW 현황은 보안 사유로 비공개(보안서약서 작성 후 현장 열람 가능)이므로, OS 환경 확인 불가</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>RFP 내 Red Hat 제품명 명시 없음</strong>: RFP, 과업지시서, 도입SW 현황 등 어느 문서에도 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 기재되어 있지 않아 직접적인 제안 근거 없음</li>
+                    <li><strong>Linux 기반 서버 환경 추정 가능</strong>: 기술적용계획표(붙임 10)에서 서버용 운영체제로 POSIX, UNIX, Windows Server, Linux가 모두 "적용" 체크되어 있어 Linux 계열 OS 운영 환경이 존재할 가능성 있음. 단, 구체적 배포판(RHEL, CentOS, Rocky 등) 미확인</li>
+                    <li><strong>WEB/WAS/DB 75식 운영 환경</strong>: WEB 10식, WAS 17식, DB 9식, 기타 39식 등 대규모 서버 운영 환경이 존재하므로, 향후 인프라 갱신 또는 차기 사업에서 RHEL 등 제안 여지는 있으나 본 사업에서는 해당 없음</li>
+                    <li><strong>컨테이너/클라우드 기술 적용 계획 체크</strong>: 기술적용계획표 플랫폼 분야에서 IaaS, PaaS, SaaS 항목이 "적용" 체크되어 있어 향후 클라우드·컨테이너 전환 사업 발생 시 OpenShift 제안 기회 모니터링 필요</li>
+                    <li><strong>종합 판단</strong>: 본 사업은 응용SW 유지관리 용역으로 S/W 구매 항목이 없고, Red Hat 상용 제품명이 어디에도 명시되지 않아 현재 단계에서 Red Hat 제품 제안 기회는 없음. 다만 대규모 보건의료 정보시스템 운영 고객사로서 향후 인프라 현대화 또는 차기 시스템 구축 사업 시 고객 관계 유지 차원의 접근은 의미 있음</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
