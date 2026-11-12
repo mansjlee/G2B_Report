@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00299500 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>서울특별시 서초구청_2027~2028년 행정정보시스템 통합 유지관리 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>RHEL 유지보수 대상 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>서울특별시 서초구청이 운영 중인 행정정보시스템(H/W 및 S/W)의 안정적 운영을 위한 통합 유지관리 용역 사업</li>
+                    <li>전산장비(주전산기, 백업장비, PC, 모니터, 프린터 등) 및 상용·행정 소프트웨어에 대한 정기/수시 점검, 보수정비, 장애복구, 성능분석 등을 통해 행정업무의 연속성과 안정성 확보</li>
+                    <li>VMware 가상화 환경에서 운영 중인 Linux/Windows 가상머신 유지관리 포함</li>
+                    <li>구청 본청, 동주민센터(18개소), 보건(지)소(3개소), 구의회, 정보화교육장(3개소) 등 서초구 전 행정 전산장비 대상</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 679,672천원(부가세 포함) / 1차(2027년) 337,954천원, 2차(2028년) 341,718천원</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2028년 12월 31일 (24개월, 장기계속계약)</li>
+                    <li><strong>사업 범위</strong>: 정보시스템(서버 8대, 스토리지 3대, 백업장비 6대, 네트워크 10대, S/W 44식), 행정전산장비(PC·모니터·프린터 등 5,055대) 통합 유지관리. VMware 가상화 환경, 가상머신(Linux/Windows) 운영 포함</li>
+                    <li><strong>주요 일정</strong>: 2026년 11월 RFP 공고 / 협상에 의한 계약 / 계약 후 10일 이내 착수계 및 사업수행계획서 제출 / 2027년 1월 1일 사업 착수</li>
+                    <li><strong>계약 방식</strong>: 제한경쟁입찰 (협상에 의한 계약, 장기계속계약) / 중소기업·소기업 제한, 대기업·중견기업 참여 불가</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>담당 부서</strong>: 서울특별시 서초구청 스마트도시과 정보화운영팀</li>
+                    <li><strong>담당자 성명</strong>: 성윤상</li>
+                    <li><strong>전화번호</strong>: 02-2155-6414</li>
+                    <li><strong>이메일</strong>: anybada@seocho.go.kr</li>
+                    <li><strong>제출 장소</strong>: 서초구청 6층 스마트도시과 정보화운영팀</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <strong>[핵심 기술 및 비즈니스 요구사항]</strong>
+                    <ul>
+                        <li>유지관리 대상 H/W 및 S/W의 최적화 상태 유지, 신속한 장애복구 및 개선, 백업관리</li>
+                        <li>VMware에 탑재된 개별 Linux/Windows 가상머신 운영 및 유지관리</li>
+                        <li>OS 및 시스템 소프트웨어 보안 패치 적용 및 취약점 조치 지원</li>
+                        <li>TMAX(JEUS, WEBTOB), VERITAS(넷백업), ORACLE에 대한 제조사·총판·파트너사 기술지원 확약서 제출 필수 (계약 후 10일 이내)</li>
+                        <li>IBM 서버 담당자: IBM Certified System Administrator 자격 + 2년 이상 경력 필수</li>
+                        <li>Oracle 담당자: Oracle Certified Professional(OCP) Database 자격 + 2년 이상 경력 필수</li>
+                        <li>상주 IT지원기술자 2명 운영 (5년 이상 경력 1명, 1년 이상 경력 1명)</li>
+                        <li>월 1회 이상 정기점검, Help Desk 운영, 연 1회 종합점검 실시</li>
+                        <li>장애등급별 복구 조치시간 준수 (상: 4시간, 중: 8시간, 하: 12시간 이내)</li>
+                        <li>SLA 체결 및 월간 실적 보고 (유지관리 70%, 관리서비스 10%, 보안준수 20%)</li>
+                    </ul>
+                    <strong>[유지관리 대상 S/W 목록 (별첨1 기준, 통합 유지관리 포함)]</strong>
+                    <ul>
+                        <li>ORACLE: 3식 (통합DB, 지리정보, 대표홈페이지)</li>
+                        <li>WEB/WAS (WEBTOB, JEUS): 4식 (행정포털, 대표홈페이지)</li>
+                        <li>원격지원 시스템: 3식 (HelpCom 2식, RemoteCall v6.0 1식)</li>
+                        <li>백업 S/W (Veritas NetBackup): 2식 (내부망 백업, 외부망 백업)</li>
+                        <li>GIS S/W: 5식 (GeoDT 수치지도관리, GeoDT 공간자료편집, GeoNURIS GIS엔진, OZ Xstudio 리포팅툴, 모니터링)</li>
+                        <li>행정포털 모니터링 (Jennifer 5.0): 1식</li>
+                        <li>통합인증시스템 SSO (Pass-Ni): 1식</li>
+                        <li>소프트웨어관리시스템 (NetClient): 1식</li>
+                        <li>가상화 S/W (VMware vSphere Standard): 4식</li>
+                        <li>가상화 관리 S/W (VMware vCenter Server Standard): 1식 (수량 별도 미기재, 1식으로 추정)</li>
+                        <li>가상화 OS (Windows Server Datacenter): 16식</li>
+                        <li><strong>가상화 OS 서브스크립션 (Red Hat Enterprise Linux Server, Standard, 인증서 갱신): 1식</strong></li>
+                        <li>보안 S/W (RedCastle): 2식 (대표홈페이지)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>신규 S/W 납품 없음</strong>: 본 사업은 기존 운영 중인 H/W 및 S/W에 대한 순수 유지관리·운영 용역으로, 신규 Red Hat 제품 납품·구독 갱신 발주 항목은 명시되어 있지 않음</li>
+                    <li><strong>VMware 기존 도입 확정</strong>: 가상화 플랫폼으로 VMware vSphere Standard 및 vCenter Server Standard가 이미 도입·운영 중이며, OpenShift 등 Red Hat 컨테이너 플랫폼 대체 여지 없음</li>
+                    <li><strong>Windows Server 환경 혼재</strong>: 가상화 OS로 Windows Server Datacenter 16식이 주요 운영 환경으로 명시되어 있어 RHEL 신규 도입 여지 제한적</li>
+                    <li><strong>중소기업 제한 입찰</strong>: 대기업·중견기업 참여 불가 사업으로, Red Hat 코리아가 직접 입찰 불가 (SI 파트너사를 통한 간접 기회만 존재)</li>
+                    <li><strong>TMAX(JEUS/WEBTOB), Veritas, Oracle 등 타사 제품 명시</strong>: 해당 제품들에 대한 기술지원 확약서 제출이 필수 요건으로, 경쟁 미들웨어·백업 환경이 고정되어 있음</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <strong>[RFP에 명시된 Red Hat 제품명 및 수량]</strong>
+                    <ul>
+                        <li><strong>Red Hat Enterprise Linux Server, Standard (인증서 갱신): 1식</strong> — [별첨1] 유지관리 대상 소프트웨어 목록 중 "가상화시스템" 항목에 "내부망 가상화 OS 서브스크립션 (Red Hat Enterprise Linux Server, Standard, 인증서 갱신 1식)"으로 명확히 기재됨</li>
+                    </ul>
+                    <strong>[제안 가능 포인트]</strong>
+                    <ul>
+                        <li><strong>RHEL 유지보수 대상 명시 (높음 판정 근거)</strong>: 별첨1에 "Red Hat Enterprise Linux Server, Standard, 인증서 갱신 1식"이 현행 유지관리 대상 S/W로 명시. 판정 규칙 1)-④에 따라 기존 운영 대상에 정확한 Red Hat 상용 제품명이 기재되어 있으므로 반드시 높음으로 판정</li>
+                        <li><strong>구독 갱신 기회</strong>: 현재 운영 중인 RHEL Server Standard 구독(인증서 갱신)이 유지관리 범위에 포함되어 있어, 차기 계약 연도(2027~2028년) 구독 갱신 시 Red Hat 파트너사를 통한 구독 확장·업그레이드 기회 존재</li>
+                        <li><strong>Linux 가상머신 운영 환경</strong>: 내부망 가상화 서버(HPE DL380 G10)에서 VMware vSphere 위에 Linux 가상머신이 다수 운영 중. RHEL이 이미 1식 도입되어 있으며, 향후 추가 Linux VM 도입 시 RHEL 확장 제안 가능</li>
+                        <li><strong>Ansible Automation Platform 제안 여지</strong>: OS 보안 패치 적용, 가상머신 환경 구성 자동화, Help Desk 운영 효율화 등 반복 작업 자동화 필요성이 높아 Ansible 도입 추가 제안이 가능한 환경</li>
+                        <li><strong>파트너사 협력 기회</strong>: 본 사업 낙찰 SI 업체가 RHEL 구독 갱신 및 유지관리를 위해 Red Hat 파트너사와 하도급 계약 체결 가능성 있음. Red Hat 코리아는 낙찰 SI 파트너 대상 영업 활동을 통해 간접 매출 기회 확보 필요</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

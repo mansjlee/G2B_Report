@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00299504 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국생산기술연구원_2027~2028년 전산시스템 유지보수 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>Linux 서버 운영 명시, RH 제품명 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>한국생산기술연구원이 보유한 정보시스템(HW, SW, 기반설비)을 전문 업체에 위탁하여 통합 유지보수하는 사업</li>
+                        <li>24시간 365일 무중단 운영체계 확보 및 장애 발생 시 즉각 대응체계 구축이 핵심 목표</li>
+                        <li>서버(Unix, Linux, NT), 네트워크, DBMS, WAS 등 전산시스템 전반에 대한 안정적 운영·관리 체계 확립</li>
+                        <li>SLA 기반의 정량적 서비스 수준 관리 및 보안 취약점 대응 포함</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 약 1,303백만원 이내 (부가가치세 포함) / 1차년도 651,500천원, 2차년도 651,500천원</li>
+                        <li><strong>사업 기간</strong>: 2027.1.1. ~ 2028.12.31. (24개월, 2년 장기계속계약)</li>
+                        <li><strong>사업 범위</strong>: 천안 본원 및 12개 지역(인천, 안산, 광주, 부산, 대구, 울산, 강릉, 김제, 전주, 제주, 부천 등) 정보시스템 통합 유지보수 / 대상 총 747점(HW 720대, SW 17본, DR 10식) / 서버·네트워크·DBMS·WAS·기반설비(UPS, 항온항습기 등) 포함</li>
+                        <li><strong>주요 일정</strong>: 사업 개시 2027.1.1. / 계약 후 10일 이내 유지보수계획서 제출 / 정기점검 매월 둘째 주 수요일 / 연 1회 이상 재해복구 모의훈련 실시 / 2027.10월까지 2차년도 과업범위·금액 협의</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>담당 부서(기술)</strong>: 한국생산기술연구원 디지털정보혁신실</li>
+                        <li><strong>담당자(기술)</strong>: 전성은</li>
+                        <li><strong>연락처(기술)</strong>: 041-589-8096</li>
+                        <li><strong>이메일</strong>: sejeon@kitech.re.kr</li>
+                        <li><strong>담당 부서(입찰)</strong>: 구매자산실</li>
+                        <li><strong>연락처(입찰)</strong>: 041-589-8530</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong>
+                            <ul>
+                                <li>24시간×365일 무중단 운영관리 및 비상 대응체계 구축</li>
+                                <li>상주인력 2명 필수 배치: 서버/솔루션 관리 1명(AIX·Unix·Linux·NT 서버 관리 경력 5년 이상, 리눅스·유닉스·가상화(VMware) 자격증 보유자 우대), 네트워크 관리 1명(CCNA 등 자격증 보유자 우대)</li>
+                                <li>HW 장애 등급별 기준조치시간 준수: A등급 4시간, B등급 6시간, C등급 8시간 이내</li>
+                                <li>DBMS(Informix) 유지보수: 장애조치, Minor 이상 Upgrade 무상 제공, DB 동기화 분기 1회</li>
+                                <li>System S/W(WAS, Apache Tomcat, 백업, 프레임워크 등) 장애관리 및 튜닝 지원</li>
+                                <li>OS Patch Release 수준의 Upgrade 지원(보안 패치 포함)</li>
+                                <li>연 1회 이상 재해복구 모의훈련 실시</li>
+                                <li>네트워크 보안 취약점 점검 연 1회 이상 및 개선조치</li>
+                                <li>SLA 기반 사업관리: 월별 성능 모니터링 및 보고</li>
+                                <li>기술지원확약서(HW 계열 25종) 제출 필수 — IBM(E950, E850 2종), DellEMC(Unity 제품·RecoverPoint·SAN S/W 3종), Cisco(백본), L4(Alteon), 무선컨트롤러(Cisco, 삼성) 등</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매·납품 명시 S/W]</strong>
+                            <ul>
+                                <li>본 RFP는 순수 유지보수 용역 사업으로, 신규 S/W 구매·납품 품목이 별도로 명시되어 있지 않음</li>
+                                <li>기존 운영 중인 SW로 <strong>Informix(DBMS)</strong>, <strong>WAS</strong>, <strong>Apache Tomcat</strong>, 백업 SW, 재해복구 SW 등이 유지보수 대상으로 기재되어 있으나 수량·라이선스 정보 미명시</li>
+                                <li>SW 계열 기술지원확약서 제출 대상: 없음(HW 계열만 해당)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>신규 S/W 납품 없음</strong>: 본 사업은 순수 유지보수·운영 용역으로, 신규 Red Hat 상용 제품의 납품·구독·증설 항목이 RFP 어디에도 명시되어 있지 않음</li>
+                        <li><strong>Red Hat 상용 제품명 미명시</strong>: RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 유지보수 대상 SW 목록, 현행 시스템 구성 등 문서 전반에 걸쳐 전혀 등장하지 않음</li>
+                        <li><strong>경쟁·대체 제품 환경 존재</strong>: 상주인력 자격 조건에 VMware 가상화 자격증이 명시되어 있어 VMware 기반 가상화 환경이 운영 중임을 시사함</li>
+                        <li><strong>DBMS는 Informix 명시</strong>: DBMS 유지보수 대상이 IBM Informix로 특정되어 있어 Red Hat 관련 DBMS 제안 여지 없음</li>
+                        <li><strong>HW 기술지원확약서 대상이 IBM·DellEMC·Cisco 중심</strong>: SW 계열 기술지원확약서 제출 대상은 없음(HW만 해당)으로 명시되어, Red Hat SW 제품 도입 근거가 없음</li>
+                        <li><strong>중소기업 참여 사업</strong>: 대기업·중견기업 소프트웨어사업자 참여 불가 조건이 있어, Red Hat 코리아가 직접 입찰하기 어려운 구조</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>Linux 서버 운영 환경 명시</strong>: RFP에 "서버(Unix, Linux, NT)는 천안(본원)에서 운영"이라고 명시되어 있으며, 상주인력 자격 조건에 "AIX, Unix, Linux, NT 서버 관리" 경력이 요구됨 → Linux 계열 서버가 운영 중임이 확인되어 RHEL 도입·전환 제안 여지 존재</li>
+                        <li><strong>OS 패치·업그레이드 지원 과업 포함</strong>: MPR-011에 "운영체제(OS)에 대한 Patch Release 수준의 Upgrade 지원(보안 Patch 포함)"이 명시되어 있어, OS 버전 업그레이드 시 RHEL 구독 갱신·전환 제안 가능</li>
+                        <li><strong>WAS 유지보수 대상 포함</strong>: MPR-012에 System S/W 종류로 WAS가 명시되어 있음. WAS 환경에 따라 JBoss EAP 도입 제안 가능성 검토 여지 있음(단, 현재 운영 중인 WAS 제품명은 불명확)</li>
+                        <li><strong>컨테이너·자동화 추가 제안 가능</strong>: 제안서 평가 항목 중 "추가 제안(7점)"이 별도 항목으로 존재하며, 정보시스템 운영체계 고도화 방안 제안이 권장됨 → OpenShift, Ansible Automation Platform 기반의 운영 자동화·컨테이너 전환 로드맵을 추가 제안으로 제시 가능</li>
+                        <li><strong>RFP에 명시된 Red Hat(동의어 포함) 제품명·수량</strong>: 없음 (문서 전체에서 Red Hat, RHEL, OpenShift, Ansible, JBoss 등 상용 제품명 미발견)</li>
+                        <li><strong>파트너 협력 기회</strong>: 본 사업은 중소 SW사업자 참여 사업으로, Red Hat 파트너사(중소기업)가 입찰 참여 시 RHEL·Ansible 등을 활용한 운영 자동화·보안 강화 방안을 차별화 요소로 제시 가능</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
