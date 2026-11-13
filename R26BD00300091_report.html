@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00300091 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>대구광역시_2027년도 D-클라우드 시스템 통합유지보수 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>높음<br>JBoss WAS 유지보수 대상 명시</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>대구광역시 통합전산센터에서 운용 중인 <strong>D-클라우드 시스템</strong>의 정상 상태 유지 및 오류 발생 시 장애 복구, 기술지원·자문 등을 위한 통합 유지보수 용역</li>
+                    <li>효과적인 사전점검 및 유지보수 체계 확립을 통해 365일 24시간 신속한 장애해결 및 적정 성능 유지</li>
+                    <li>D-클라우드 시스템 및 인프라의 전문적 유지관리로 신뢰성 있는 대시민 서비스 제공</li>
+                    <li>IaaS·PaaS(컨테이너/K8s 기반 PaaS 플랫폼 포함) 가상화 환경, SDN 네트워크 가상화 환경, 공개 소프트웨어(OS, DB, WAS 등) 등 D-클라우드 전반 유지보수</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 1,835,384,000원 (부가세 포함, 12개월 기준) ※ 예산심의 결과에 따라 변경 가능</li>
+                    <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (12개월) ※ 2028년도 계약 체결 시까지 연장 가능</li>
+                    <li><strong>사업 범위</strong>: D-클라우드 시스템 등 303식 운영·유지보수 (상주인력 1명 포함)
+                        <ul>
+                            <li>하드웨어: 서버, 스토리지, 스위치 등 117식</li>
+                            <li>소프트웨어: 클라우드 솔루션, 상용 S/W, 공개 S/W 등 186식</li>
+                        </ul>
+                    </li>
+                    <li><strong>주요 일정</strong>: 2026년 10월 제안요청서 발행 / 2026년 회계연도 시작 전 입찰계약 예정 / 제안서 제출 및 평가 후 협상에 의한 계약 체결</li>
+                    <li><strong>입찰 방식</strong>: 제한경쟁입찰 후 협상에 의한 계약 체결 (기술평가 90% : 가격평가 10%)</li>
+                    <li><strong>참가 자격</strong>: 중소기업 대상 (대기업 참여 제한 적용), 직접생산확인증명서 필요, 정보통신공사업 면허 필요</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>주관기관</strong>: 대구광역시</li>
+                    <li><strong>담당 부서</strong>: 기획조정실 지능정보화담당관</li>
+                    <li><strong>직위/성명</strong>: 주무관 / 김중활</li>
+                    <li><strong>전화번호</strong>: 053-803-3572</li>
+                    <li><strong>이메일</strong>: hwarl@korea.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>[기술 요구사항]</strong>
+                        <ul>
+                            <li>D-클라우드 시스템 365일 24시간 유지보수 및 장애 복구 (장애 발생 후 1시간 내 현장 도착, 4시간 내 긴급조치, 12시간 내 정상 복구)</li>
+                            <li>IaaS/PaaS 가상화 환경 운영·관리 (VM 생성·관리, 오토스케일링, CI/CD 지원 등)</li>
+                            <li>PaaS 플랫폼(K8s 기반) 운영 관리: 연 1회 이상 버전 업데이트, 파드/컨테이너 현황 관리</li>
+                            <li>SDN 네트워크 가상화 환경 운영·관리</li>
+                            <li>공개 소프트웨어(Cubrid DB, JBoss WAS) 매월 정기 점검 및 기술지원</li>
+                            <li><strong>공개 SW(OS, 가상화, WAS, DB) 부문별 제조사 서브스크립션(Subscription) 계약 체결 및 보증 서류 제출 필수</strong></li>
+                            <li>보안 취약점 점검·조치, 보안패치 및 운영체제 업그레이드 지원</li>
+                            <li>재해복구 모의훈련 연 2회 이상 수행</li>
+                            <li>통합 IT 관리시스템(ITSM) 운영 지원</li>
+                            <li>상주인력 1명 (클라우드 인프라 유지보수 경력 2년 이상, 초급기술자 이상)</li>
+                        </ul>
+                    </li>
+                    <li><strong>[구매 명시 S/W - 통합발주 / Subscription 체결 대상]</strong>
+                        <ul>
+                            <li>※ RFP 본문에서 상세 시스템 내역은 보안상 비공개 (오프라인 열람 허용)이며, 별첨2 유지보수 대상 내역 합계 249식(시스템별 상세 내역 비공개)</li>
+                            <li><strong>JBoss WAS</strong>: MAR-08에 "가상서버에 설치된 Cubrid DB, JBoss WAS에 대해 매월 정기 점검" 명시 (수량 미공개)</li>
+                            <li><strong>Cubrid DB</strong>: MAR-08에 명시 (수량 미공개)</li>
+                            <li>OS, 가상화, WAS, DB 부문 제조사 서브스크립션 계약 체결 의무 명시 (MAR-08) → 구체적 제품명/수량은 오프라인 열람 필요</li>
+                            <li>상용 S/W 포함 소프트웨어 186식 유지보수 대상이나 세부 내역 비공개</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 직접 납품 사업 아님</strong>: 본 사업은 유지보수·운영 용역으로, 신규 S/W 도입·납품보다는 기존 시스템 유지보수 중심. 단, Subscription 계약 체결 의무가 있어 간접적 S/W 공급 기회 존재</li>
+                    <li><strong>시스템 상세 내역 비공개</strong>: 유지보수 대상 시스템 249식의 세부 내역이 보안상 비공개 처리되어, Red Hat 제품 구체적 현황 파악을 위해 오프라인 열람 필요</li>
+                    <li><strong>공개 SW로 분류된 JBoss</strong>: MAR-08에서 JBoss WAS를 "공개 소프트웨어" 항목으로 분류하고 있으나, 판정 규칙에 따라 JBoss 표기 자체가 Red Hat 상용 제품(JBoss EAP)으로 간주됨 → 불가능 요소 아님</li>
+                    <li><strong>경쟁 제품 명시 없음</strong>: Ubuntu, Rocky Linux, Oracle Linux, VMware 등 경쟁 제품이 명시적으로 지정되지 않음 (불리한 조건 없음)</li>
+                    <li><strong>중소기업 참여 제한</strong>: 대기업 참여 제한 사업으로 Red Hat이 직접 입찰 불가 → SI/채널 파트너를 통한 제안 필요</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>[RFP 명시 Red Hat 관련 제품]</strong>
+                        <ul>
+                            <li><strong>JBoss WAS</strong>: MAR-08 "가상서버에 설치된 Cubrid DB, JBoss WAS에 대해 매월 정기 점검" - 판정 규칙에 따라 JBoss EAP(Red Hat 상용 제품)로 간주, 유지보수 대상 명시 → 높음 판정 근거</li>
+                        </ul>
+                    </li>
+                    <li><strong>[Subscription 계약 의무 — RHEL 제안 기회]</strong>: MAR-08에서 "OS, 가상화, WAS, DB 부문 제조사 서브스크립션(Subscription) 체결" 의무 명시 → OS 부문 RHEL Subscription 제안 가능성 높음 (현재 운영 중인 Linux OS 종류 오프라인 열람 필요)</li>
+                    <li><strong>[PaaS/컨테이너 플랫폼 — OpenShift 제안 기회]</strong>: MAR-04에서 PaaS 플랫폼(K8s 기반), 파드/컨테이너 운영, CI/CD 지원, 연 1회 이상 버전 업데이트 명시 → OpenShift Container Platform 제안 여지 존재 (현재 플랫폼 종류 확인 필요)</li>
+                    <li><strong>[자동화 — Ansible Automation Platform 제안 기회]</strong>: 보안 취약점 점검, OS 패치, 가상서버 자원 관리 자동화 등 반복적 운영 작업이 다수 → Ansible AAP 제안 가능</li>
+                    <li><strong>[기존 고객 기반 Subscription 갱신/확장]</strong>: JBoss WAS가 유지보수 대상으로 명시된 만큼, JBoss EAP Subscription 갱신 또는 신규 계약 기회. 채널 파트너(수주 SI)를 통한 Subscription 공급 전략 필요</li>
+                    <li><strong>[전략적 접근]</strong>: 본 사업은 중소기업 대상 용역으로 Red Hat 직접 입찰 불가 → 수주 가능성 있는 SI 파트너 사전 발굴 및 JBoss EAP, RHEL Subscription 번들 제안 협업 필요. 오프라인 시스템 열람을 통한 정확한 Red Hat 제품 현황 파악 권장</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
