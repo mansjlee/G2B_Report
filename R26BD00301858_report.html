@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00301858 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국자산관리공사_차세대 국민행복기금시스템 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange"><strong>중간</strong><br>OS 미지정(Linux 계열), RHEL 제안 여지 있음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>노후화된 국민행복기금 전산시스템(HW/SW) 및 소액대출 시스템을 차세대로 전면 재구축하는 대형 SI 사업</li>
+                    <li>채권관리 고도화, 사용자 중심 UI/UX 구현, AI·자동화 기반 업무효율화, 보안 강화, 규제 대응, 고객 편의성 향상을 핵심 목표로 함</li>
+                    <li>고객관리, 채무조정, 상환·연체관리, 공적채무조정, 법적조치, 소액대출 등 채권관리 전 분야 기능 구현 포함</li>
+                    <li>AI 챗봇(LLM/RAG 기반), AI 채무조정 심사지원, 채권 회수가능성 예측, 발견재산 실익분석 등 AI 기반 의사결정 시스템 신규 구현 포함</li>
+                    <li>국민행복기금·소액대출 홈페이지 전면 개편 및 대내외 시스템 연계 고도화 포함</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 20,790,309,184원 (VAT 포함, 약 207.9억 원)</li>
+                    <li><strong>사업 기간</strong>: 계약체결일로부터 21개월 (구축 18개월 + 안정화 3개월)</li>
+                    <li><strong>사업 범위</strong>:
+                        <ul>
+                            <li>국민행복기금 차세대 시스템 구축 (고객관리, 채무조정, 상환·연체관리, 공적채무조정, 법적조치, 소액대출 등)</li>
+                            <li>국민행복기금·소액대출 홈페이지 전면 개편 (UI/UX 개선, 비대면 신청 기능)</li>
+                            <li>대내외 시스템 연계 고도화 (ESB 기반 대내 연계, API 허브 기반 대외 연계)</li>
+                            <li>DB 구축 및 기존 운영 데이터 이관 (Oracle DB 버전 업그레이드 및 데이터 이관 포함)</li>
+                            <li>통계정보 시스템 구축</li>
+                            <li>전산시스템 인프라(HW·SW) 도입·구축 (온프레미스)</li>
+                            <li>AI 기반 업무지원 및 의사결정 시스템 구현</li>
+                        </ul>
+                    </li>
+                    <li><strong>주요 일정</strong>:
+                        <ul>
+                            <li>제안요청 설명회: 2026년 12월 11일(금) 14:00, 캠코양재타워 20층 세미나실 (서울 강남구 강남대로 262)</li>
+                            <li>요구분석/구체화/시스템설계: 8개월</li>
+                            <li>개발 및 단위테스트: 8개월</li>
+                            <li>통합테스트: 3개월</li>
+                            <li>사용자 교육: 1개월</li>
+                            <li>데이터이관 및 구축: 11개월</li>
+                            <li>시스템 연계: 8개월</li>
+                            <li>운영 및 안정화: 3개월</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>사업 관련 담당 부서</strong>: 국민행복기금관리처</li>
+                    <li><strong>사업 담당자</strong>: 나예진 과장 / ☎ 051-794-3744 / ✉ yejinn6470@kamco.or.kr</li>
+                    <li><strong>계약 관련 담당 부서</strong>: 한국자산관리공사 디지털운영실</li>
+                    <li><strong>계약 담당자</strong>: 박민규 과장 / ☎ 051-794-3304 / ✉ mink7304@kamco.or.kr</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <strong>핵심 기술·비즈니스 요구사항</strong>
+                    <ul>
+                        <li><strong>아키텍처</strong>: ESB 기반 대내 시스템 통합 연계, API 허브 기반 외부 연계, DB Link 방식 완전 제거, 컴포넌트 기반 모듈화 설계, 멀티탭/멀티창 지원 UI</li>
+                        <li><strong>AI 기능</strong>: LLM/RAG 기반 업무지원 챗봇, AI 채무조정 심사지원, AI 발견재산 실익분석, AI 회수가능성 예측, AI 상각/소각 의사결정, AI 소송제외 대상 판정, AI-OCR 문자인식, 그래프DB 기반 관계 분석, ML 모델 학습·배포·성능평가 (내부망 LLM 온프레미스 운영)</li>
+                        <li><strong>성능</strong>: 동시사용자 200명 기준 평균 3초 이내 응답, 시스템 자원 사용률 80% 미만, 24시간 365일 고가용성, 이중화 구성 필수</li>
+                        <li><strong>보안</strong>: CC인증·국정원 보안적합성 검증필 보안 제품 적용 필수, 소프트웨어 개발보안(시큐어코딩) 의무, 국정원 검증 암호모듈 사용 필수, 망분리 환경 준수, 웹 취약점 점검·모의해킹</li>
+                        <li><strong>인터페이스</strong>: 플러그인(Active-X) 완전 배제, HTML5/CSS3 웹 표준 준수, 웹접근성 인증마크 획득 기준 충족, 반응형 웹 필수</li>
+                        <li><strong>연계</strong>: 서민금융진흥원, 신용회복위원회, 금융결제원, 우정사업본부, 한국신용정보원, 행정안전부(공공마이데이터), 신한은행, 새출발기금, 새도약기금 등 대외 연계; 전자결재·SMS·인사시스템 등 대내 연계</li>
+                    </ul>
+                    <strong>통합발주 S/W 목록 (직접구매 제외, 사업자 조달 대상)</strong>
+                    <ul>
+                        <li>WEB: 16 core</li>
+                        <li>WAS: 20 core</li>
+                        <li>UI Tool: 20 core</li>
+                        <li>연계(ESB): 8 core</li>
+                        <li>배치관리: 1 copy</li>
+                        <li>통계분석(BI/OLAP): 1 copy</li>
+                        <li>백업: 25 TB</li>
+                        <li>DB암호화: 48 core</li>
+                        <li>비정형데이터 암호화: 4 (단위 미지정)</li>
+                        <li>SSL인증서자동화: 1 (단위 미지정)</li>
+                        <li>DIPS: 4 (단위 미지정)</li>
+                        <li>AI SW_그래프RAG: 1 식</li>
+                        <li>AI OCR_이미지인식: 1 core</li>
+                        <li>웹서비스보안: 2 식</li>
+                    </ul>
+                    <strong>직접구매 S/W 목록 (참고)</strong>
+                    <ul>
+                        <li>DBMS: 48 core / 리포팅솔루션: 2 core / 시스템접속기록: 16 core / 백신: 16 copy / 출력물위변조방지: 2 copy / 개인정보접속: 2 core / DB 접근제어: 2 core / DB 모니터링: 2 core / SSL인증서: 2 도메인 / SSO: 2 copy / 개인인증(서버): 4 copy / 개인인증(모바일): 4 copy / 개인인증(클라이언트): 2 copy / 시스템 접근제어(서버): 16 copy / 시스템 접근제어(클라이언트): 16 copy / 개인정보검출: 8 copy / 보안관제 및 해킹분석: 4 copy / 웹로그분석: 2 copy / 서버 관제 SMS: 12 copy / 형상관리: 2 copy / 개인정보분리보관: 1 식 / 성능관리(APM): 16 core</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>Red Hat 제품명 미명시</strong>: RFP 전반에 걸쳐 RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품명이 단 한 건도 명시되지 않음</li>
+                    <li><strong>Oracle DB 명시</strong>: DB는 Oracle DB로 명시되어 있으며 버전 업그레이드 및 데이터 이관 계획 포함 — Red Hat DBMS 제안 여지 없음</li>
+                    <li><strong>WAS 취약점 점검 대상에 경쟁 미들웨어 명시</strong>: Apache, Tomcat, JEUS, WebLogic이 취약점 점검 대상으로 명시되어 있어 WAS 영역에서 타사 제품 선호 가능성 존재</li>
+                    <li><strong>가상화 SW 인증 요건</strong>: 가상화 소프트웨어는 국정원 보안기능확인서 취득 제품으로 한정 — OpenShift Virtualization 등 도입 시 사전 인증 보유 여부 확인 필수이며 현실적 장벽 존재</li>
+                    <li><strong>보안 제품 국정원 인증 의무</strong>: 모든 보안 제품은 CC인증 및 국정원 보안적합성 검증필 필수 — Red Hat 보안 솔루션(ACS 등) 제안 시 해당 인증 충족 여부 별도 확인 필요</li>
+                    <li><strong>온프레미스 구축</strong>: 클라우드 환경이 아닌 완전한 온프레미스 구조로 OpenShift 클라우드 서비스 형태 제안 불가</li>
+                    <li><strong>S/W 직접구매 품목 多</strong>: DBMS, 보안 솔루션 등 주요 품목이 조달쇼핑몰 직접구매로 발주되어 사업자의 S/W 선택권이 제한적</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>OS 미지정 — RHEL 제안 가능성</strong>: AP서버 및 DB서버 VM 구성 시 OS를 "호환 가능한 UNIX 또는 Linux 제공"으로만 명시하여 특정 OS를 지정하지 않음 → RHEL 제안 여지 존재</li>
+                    <li><strong>특정 OS·HW 종속 배제 요건</strong>: AI SW 요구사항(ECR-012)에서 특정 OS 및 특정 하드웨어에 종속되지 않는 구조를 요구 — RHEL이 이를 충족하는 범용 엔터프라이즈 Linux로 제안 가능</li>
+                    <li><strong>WAS 통합발주(20 core) — JBoss EAP 제안 가능성</strong>: WAS 20 core가 통합발주 품목으로 명시되어 있고 특정 제품이 지정되지 않음 → JBoss EAP 제안 여지 존재 (단, JEUS·WebLogic·Tomcat 등이 점검 대상으로 언급된 점은 경쟁 요소)</li>
+                    <li><strong>WEB 통합발주(16 core)</strong>: WEB 소프트웨어도 통합발주 품목으로 특정 제품 미지정 — Red Hat 계열 Web 서버 솔루션 제안 가능</li>
+                    <li><strong>연계(ESB) 통합발주(8 core)</strong>: ESB 기반 연계 솔루션이 통합발주 품목 — Fuse(Red Hat Integration) 등 제안 여지 존재</li>
+                    <li><strong>AI·GPU 인프라 온프레미스 구축</strong>: 내부망 LLM 온프레미스 운영, GPU 서버 1식(H200×2ea 기준) 등 AI 인프라 구축 포함 — OpenShift AI(RHEL AI) 기반 ML 플랫폼 제안 가능성 검토 가능 (단, 국정원 인증 요건 충족 여부 확인 필요)</li>
+                    <li><strong>Ansible Automation Platform 제안 여지</strong>: 대규모 SI 구축 프로젝트로 VM 20EA 이상 구성 및 복잡한 연계 환경 — 인프라 자동화·구성 관리 도구로 Ansible 제안 가능성 존재</li>
+                    <li><strong>RFP에 명시된 Red Hat(동의어 포함) 제품명·수량</strong>: 없음 (Red Hat 상용 제품명은 RFP 내 일체 명시되지 않음)</li>
+                    <li><strong>영업 전략 포인트</strong>: 약 207.9억 원 규모의 대형 차세대 SI 사업으로, 수주 사업자(SI)를 통한 RHEL·JBoss EAP·Ansible 등 서브 공급 채널 영업 접근이 현실적인 전략</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
