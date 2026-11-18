@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00302671 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>대구광역시 대구도서관_2027년 대구도서관 정보자원 통합유지관리 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange">중간<br>Linux 계열 OS 운영·교체 대상 명시, 정확한 RH 제품명 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>대구지역 113개 도서관을 통합 운영하는 <strong>도서관 통합허브시스템의 안정적 운영 및 서비스 연속성 확보</strong></li>
+                        <li>도서관 운영·홍보·알림을 위한 홈페이지의 효율적 운영 및 유지관리</li>
+                        <li>자료관리시스템(K-LAS), 홈페이지 및 ICT·RFID 장비 등에 대한 헬프데스크 운영</li>
+                        <li>도서관 운영에 필요한 정보시스템(서버·네트워크·보안장비 등)의 유지관리</li>
+                        <li>정보보안 및 개인정보 보호 관련 법령·지침 준수</li>
+                        <li>24시간 365일 안정적 서비스 제공 및 장애 발생 시 신속 복구를 통한 이용자 만족도 제고</li>
+                        <li>기술지원 종료(EOS)에 따른 보안취약 운영체제(OS) 교체 포함</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 932,433천원 (부가세 포함, 예산심의 결과에 따라 변경 가능)</li>
+                        <li><strong>사업 기간</strong>: 2027년 1월 1일 ~ 2027년 12월 31일 (12개월)</li>
+                        <li><strong>사업 범위</strong>:
+                            <ul>
+                                <li>(H/W) 통합허브시스템 서버, 스토리지, 백업장비, 네트워크 장비, 보안장비 등 113종 427식</li>
+                                <li>(응용 S/W) 도서관 통합 자료관리시스템(K-LAS), 홈페이지 등 유지관리</li>
+                                <li>(상용 S/W) DBMS, WAS, 보안, 검색엔진 등 56종 70식</li>
+                                <li>(운영장비) 북드라이브, 도난방지기, 무인반납분류기, 미디어월 등 ICT&amp;RFID 장비</li>
+                                <li>(헬프데스크) 도서관 시스템 사용자 업무지원 헬프데스크 운영</li>
+                                <li>(OS 교체) EOS 임박 또는 종료된 운영체제 교체 (Linux CentOS 8대상, Windows Server 2016 2대상)</li>
+                            </ul>
+                        </li>
+                        <li><strong>주요 일정</strong>:
+                            <ul>
+                                <li>제안요청서 발행: 2026년 11월</li>
+                                <li>계약 체결 목표: 2027년 1월 이전 (회계연도 개시 전 입찰계약)</li>
+                                <li>사업 수행: 2027년 1월 1일 ~ 2027년 12월 31일</li>
+                                <li>착수 후 1개월 이내: SLA 체결, 사업수행계획서 제출</li>
+                                <li>상반기 중: 업무 매뉴얼 현행화 제출</li>
+                                <li>사업 종료 2주 전: 완료보고서 제출</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>담당 부서</strong>: 대구광역시 대구도서관 도서관정책과</li>
+                        <li><strong>담당자</strong>: 주무관 백중수</li>
+                        <li><strong>전화</strong>: 053-803-8683</li>
+                        <li><strong>FAX</strong>: 053-220-8683</li>
+                        <li><strong>이메일</strong>: 명시되지 않음</li>
+                        <li><strong>사업장소</strong>: 대구광역시 대구도서관, 통합전산센터(지산동) 등</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong>
+                            <ul>
+                                <li>H/W 및 S/W 유지관리: 서버, 스토리지, 네트워크, 보안장비 정기점검·장애처리·부품교체</li>
+                                <li>OS 업그레이드(ECR-001): EOS 임박/종료 OS 교체 — Linux CentOS(홈페이지#1·#2, 책이음(자관), RFID, 메타검색, 빅데이터, 좌석예약WEB#1·#2 총 8서버), Windows Server 2016(전자도서관WEB#1·#2 총 2서버)</li>
+                                <li>가상화시스템(MPR-016) 유지관리: 가상화솔루션 장애지원, 패치·업그레이드·성능개선 기술지원</li>
+                                <li>DBMS(TIBERO) 유지관리 전담인력 1인 이상 배치</li>
+                                <li>응용S/W 유지관리: K-LAS, 통합검색엔진, 좌석예약, 전자도서관시스템 등</li>
+                                <li>헬프데스크 운영: 평일·토·일 09~18시, 비상연락체계 병행</li>
+                                <li>보안취약점 점검: 연 1회 이상, 서버·네트워크·보안장비·DBMS·홈페이지 웹취약점 점검</li>
+                                <li>백업·복구 절차 수립 및 장애복구 모의훈련</li>
+                                <li>SLA 체결 및 가용성 보장 (A등급 2시간, B등급 4시간, C등급 6시간 내 복구)</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매 명시 S/W — 통합발주 및 유지관리 대상]</strong>
+                            <ul>
+                                <li>자료관리시스템(통합) 1식, 자료관리시스템(시립) 1식, 자료관리시스템(공립작은) 1식, 자료관리시스템(구·군) 1식, 자료관리시스템(사립공공) 1식, 재해복구 자료관리시스템 1식, 자료관리고도화 1식</li>
+                                <li>홈페이지(통합·시립·CMS) 1식, 홈페이지(구·군·전자·CMS) 1식, 홈페이지(사립공공) 1식, 홈페이지(대구도서관) 1식, 내집앞도서관홈페이지 1식, 문화정보플랫폼홈페이지 1식</li>
+                                <li>좌석예약시스템 1식</li>
+                                <li>통합DBMS 2식, 통합DBMS(추가) 2식, 재해복구 DBMS 1식 (공급사: 티맥스티베로)</li>
+                                <li>WAS 1식, WAS(추가) 1식, 재해복구 WAS/WEB 1식 (공급사: 티맥스소프트·오픈정보)</li>
+                                <li>WEB 1식, WEB(추가) 1식</li>
+                                <li>가상화솔루션 1식, 가상화솔루션(추가) 1식, 재해복구 가상화솔루션 1식 (공급사: VMware·에스엔텍)</li>
+                                <li>백업S/W 2식 (공급사: VERITAS·지티솔루션)</li>
+                                <li>망연계솔루션1 1식, 망연계솔루션2 1식, 재해복구 망연계솔루션 2식 (공급사: 한싹·범일정보)</li>
+                                <li>DB암호화솔루션 2식 (공급사: 펜타시큐리티·피엔에스정보)</li>
+                                <li>서버보안솔루션 2식, 서버보안솔루션(AIX) 1식, 서버보안솔루션(Linux) 1식 (공급사: SGA·범일정보)</li>
+                                <li>바이러스 백신 2식</li>
+                                <li>APM 2식 (공급사: 제니퍼소프트·데이터뱅크)</li>
+                                <li>DB접근제어 1식 (공급사: 피앤피시큐어·비트시스템)</li>
+                                <li>개인정보차단 2식 (공급사: 나솔시스템즈)</li>
+                                <li>개인정보이력관리 2식 (공급사: 위즈코리아)</li>
+                                <li>서버개인정보진단 2식, 개인정보비식별화시스템 1식 (공급사: 지란지교데이터)</li>
+                                <li>희망도서바로대출시스템 1식, 맞춤형도서추천시스템 1식, 비대면도서대출시스템 1식</li>
+                                <li>도서관통합모니터링시스템 1식, 포인트플랫폼 1식 (공급사: 인포셋)</li>
+                                <li>빅데이터구축 1식, 메타검색엔진 1식 (공급사: 이패스)</li>
+                                <li>통합로그시스템 2식 (공급사: 이너버스·비트시스템)</li>
+                                <li>대용량접속제어 1식 (공급사: 에스티씨랩·엑스비씨)</li>
+                                <li>패스워드관리시스템 2식 (공급사: 시큐어가드테크놀러지·다온소프트)</li>
+                                <li>시스템접근제어 2식 (공급사: 에스지엔·비트시스템)</li>
+                                <li>키보드보안 1식 (공급사: 라온시큐어·비트시스템)</li>
+                                <li>ICT 통합관리 연계 1식, 통합관리SW 및 Agent 1식 (공급사: 인포셋)</li>
+                                <li>공동보존서고 서비스 1식</li>
+                                <li>운영체제 교체 1종 1식 (Linux CentOS → 타 OS 업그레이드, Windows Server 2016 → 업그레이드)</li>
+                                <li>콜센터 운영 1종 1식</li>
+                            </ul>
+                        </li>
+                        <li><strong>[라이선스 요건(ECR-002)]</strong>: 공급되는 모든 제품 라이선스는 제안사가 제공, 오픈소스의 경우 EOS 기간 고려하여 최적 제품 제공</li>
+                        <li><strong>[인력 구성 최소 요건]</strong>: PM 1인, 서버(UNIX·Linux·Windows)·스토리지 관리 1인 이상, DBMS(TIBERO) 1인 이상, 상용S/W 1인 이상, 응용S/W 2인 이상, 백업 1인 이상 — 총 7명 이상</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>RFP 전체에 Red Hat 상용 제품명(RHEL, OpenShift, JBoss EAP, Ansible 등) 미명시</strong>: 유지관리 대상 S/W 56종 70식 목록 어디에도 RHEL, JBoss EAP, OpenShift 등 Red Hat 상용 제품명이 기재되어 있지 않음</li>
+                        <li><strong>경쟁 가상화 제품 명시</strong>: 협력업체 목록(PSR-004) 및 유지관리 대상 S/W 목록에 <strong>VMware(에스엔텍)</strong>가 가상화솔루션으로 명시·도입 확정 (VMware는 Red Hat OpenShift/RHEV 경쟁 제품)</li>
+                        <li><strong>DBMS: 티맥스티베로 확정</strong>: DBMS는 티맥스티베로 제품으로 확정 운영 중이며 Red Hat 제품 개입 여지 없음</li>
+                        <li><strong>WAS/WEB: 티맥스소프트 확정</strong>: WAS·WEB서버는 티맥스소프트(오픈정보) 제품으로 확정 (JBoss EAP 대체 불가)</li>
+                        <li><strong>OS 교체 대상이 CentOS</strong>: ECR-001에서 명시된 OS 교체 대상 Linux 서버 8대 모두 "Linux CentOS"로 명기됨 — RHEL이 아닌 CentOS(커뮤니티판)이며, 교체 후 도입 OS가 RHEL로 확정되지 않음. "오픈소스의 경우 EOS 기간 고려하여 최적 제품 제공"이라는 조건만 존재</li>
+                        <li><strong>순수 유지관리 용역 성격</strong>: 신규 시스템 구축이 아닌 기존 시스템 유지관리 용역으로, 신규 Red Hat 제품 도입이 명시되지 않음</li>
+                        <li><strong>20억 미만 중소기업 사업</strong>: 소프트웨어 진흥법에 의거 대기업·중견기업 입찰 불가 — Red Hat Korea는 직접 입찰 불가, SI 파트너를 통한 간접 제안만 가능</li>
+                        <li><strong>JBoss 미명시</strong>: 유지관리 대상 WAS는 티맥스소프트 제품으로 확정, JBoss/JBoss EAP 관련 언급 전혀 없음</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>CentOS → RHEL 전환 제안 기회 (가장 핵심 포인트)</strong>:
+                            <ul>
+                                <li>ECR-001에서 EOS 임박/종료 OS로 Linux CentOS 8개 서버(홈페이지#1·#2, 책이음(자관), RFID, 메타검색, 빅데이터, 좌석예약WEB#1·#2)를 교체 대상으로 명시</li>
+                                <li>CentOS는 커뮤니티판으로 판단되나, 교체 후 도입 OS가 미확정 상태 — <strong>RHEL로의 전환 제안 가능</strong></li>
+                                <li>ECR-002에서 "오픈소스의 경우 EOS 기간 고려하여 최적 제품을 제공"이라 명시 → RHEL의 장기 엔터프라이즈 지원(10년) 강점 어필 가능</li>
+                                <li>Windows Server 2016(전자도서관WEB#1·#2) 교체 대상도 존재하여 Linux 계열 전환 시 RHEL 추가 제안 여지 있음</li>
+                            </ul>
+                        </li>
+                        <li><strong>서버보안솔루션(Linux) 1식 유지관리 대상 명시</strong>: Linux 서버 환경이 현행 운영 중임을 확인할 수 있으며, Linux 운영 환경에서 RHEL 도입 필요성 어필 가능</li>
+                        <li><strong>가상화시스템 유지관리 요구사항(MPR-016)</strong>: 신규 구축·재구축 필요 시 기술 검토 지원 명시 → 향후 OpenShift/RHEV 전환 가능성 타진 가능 (단, 현재 VMware 확정)</li>
+                        <li><strong>Ansible Automation Platform 제안 여지</strong>: 보안패치 자동화, OS 패치·업그레이드 자동화, 정기점검 자동화 등 요구사항(MPR-002, MPR-010, SER-002) 대응 솔루션으로 Ansible 제안 검토 가능</li>
+                        <li><strong>RFP 내 Red Hat(또는 동의어) 상용 제품 명시 없음</strong>: RHEL, OpenShift, JBoss EAP, Ansible, Satellite 등 Red Hat 상용 제품명이 RFP 어디에도 기재되지 않음 — 직접 명시 기회는 없으나 CentOS→RHEL 전환 영업 타겟으로 활용 가능</li>
+                        <li><strong>파트너 활용 간접 제안 전략</strong>: 중소기업 대상 사업이므로 Red Hat 공인 파트너(SI)를 통해 CentOS 교체 OS로 RHEL 납품 제안 유도 가능</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

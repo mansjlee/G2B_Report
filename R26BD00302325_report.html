@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00302325 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>아이씨티웨이_강원후평 스마트그린산업단지 통합관제센터 화재감시 및 통합관제 SW 구축용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color=red>낮음<br>S/W 납품 없는 순수 개발·구축 용역, Red Hat 제품명 전혀 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td><ul>
+                    <li>강원후평 스마트그린산업단지 내 <strong>옥상형 화재감시시스템</strong>을 구축하고, 산업단지의 재난·안전·교통 및 현장시설물 운영정보를 통합적으로 확인할 수 있는 <strong>통합관제 대시보드</strong>와 <strong>단위시스템 연계 소프트웨어</strong>를 개발</li>
+                    <li>후평일반산업단지 및 퇴계농공단지 2개소에 열화상 화재감시장비 설치 및 운영 소프트웨어 구축</li>
+                    <li>화재감시, 지능형 CCTV, 드론, 스마트제설, 스마트폴, 미디어보드 등 개별 시스템 운영정보를 통합 대시보드에서 조회</li>
+                    <li>기존 춘천시 통합관제센터 환경과 연계하여 통합 모니터링 및 상황관리 환경 구축</li>
+                    <li>발주기관: 아이씨티웨이(주) (민간 SI 기업이 발주하는 사업)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td><ul>
+                    <li><strong>사업 예산</strong>: 806,322,000원 (VAT 포함, 약 8억 632만원) / 관급자재 48,400,000원(망연계솔루션) 별도 발주처 구매·제공</li>
+                    <li><strong>사업 기간</strong>: 착수일로부터 2027년 10월 31일까지 (약 10개월)</li>
+                    <li><strong>사업 범위</strong>: ① 옥상형 화재감시시스템 구축(2개소) ② 통합관제 대시보드 개발(춘천시 통합관제센터) ③ 단위시스템 연계 소프트웨어 개발 ④ 망연계솔루션 연동(관급자재 설치·연동)</li>
+                    <li><strong>주요 일정</strong>: M~M+1 착수·현장조사·설계확인 → M+2~M+3 인허가·자재승인·조달 → M+4~M+6 현장 인프라 구축 → M+7~M+8 연동·종합시험·시범운영 → M+9~M+10 준공검사·교육·인수</li>
+                    <li><strong>계약 방식</strong>: 일반경쟁(협상에 의한 계약), 총액입찰 / 중소기업 전용 (20억원 미만, 대기업·중견기업 참여 불가)</li>
+                    <li><strong>하자보수</strong>: 최종 검수 완료 후 12개월 무상 하자보수</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td><ul>
+                    <li><strong>발주기관</strong>: 아이씨티웨이(주) (민간 사업발주 및 감독)</li>
+                    <li><strong>수요기관</strong>: 춘천시 (통합관제센터 운영기관)</li>
+                    <li><strong>담당 부서/이름/연락처/이메일</strong>: RFP 내 구체적인 담당자 성명, 직통 연락처, 이메일 정보 미기재 (입찰공고문 별도 참조 안내)</li>
+                    <li><strong>제안서 제출처</strong>: 아이씨티웨이(주)</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td><ul>
+                    <li><strong>핵심 기술 요구사항</strong>:
+                        <ul>
+                            <li>옥상형 화재감시시스템: 팬틸트 열화상 카메라 2대, 고정형 열화상 카메라 4대, 화재감시 SW(1식) 구축</li>
+                            <li>통합관제 대시보드 개발: 화재현황, 지능형CCTV, 드론, 스마트폴, 스마트제설, 미디어보드, 교통CCTV 등 통합 표출</li>
+                            <li>단위시스템 연계 소프트웨어 개발: 화재감시, 스마트제설, 스마트폴, 미디어보드, 감시드론, 스마트그늘막, 교통CCTV(망연계솔루션 활용) 등 연계 모듈</li>
+                            <li>전자정부 표준프레임워크 적용 검토, JAVA/JSP 기반 개발언어 우선 검토</li>
+                            <li>웹 기반 대시보드(브라우저 독립적, ActiveX 불사용, Microsoft Edge·Chrome 지원)</li>
+                            <li>보안: 시큐어코딩, SQL인젝션·XSS 등 웹 취약점 차단, 사용자 인증·권한 관리</li>
+                            <li>24시간 365일 연중 무중단 서비스 가용성 확보</li>
+                            <li>응답시간: 온라인 요청 3초 이내 최초 결과값 표출</li>
+                        </ul>
+                    </li>
+                    <li><strong>구매가 명시된 S/W (통합발주)</strong>:
+                        <ul>
+                            <li>화재감시 SW: 1식 (신규 개발, 별도 상용 S/W 품명 미지정 — 개발 용역 범위)</li>
+                            <li>통합관제 대시보드 SW: 1식 (신규 개발)</li>
+                            <li>단위시스템 연계 SW: 1식 (신규 개발)</li>
+                            <li>망연계솔루션: 1식 (관급자재로 발주처 별도 구매·제공, 본 용역 대상 아님)</li>
+                            <li>※ 상용 S/W(DBMS, OS, WAS 등) 별도 구매 품목으로 명시된 항목 없음. RFP 내 특정 상용 S/W 제품명·수량 명시 없이 개발·구축 용역 중심으로 구성됨.</li>
+                        </ul>
+                    </li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td><ul>
+                    <li><strong>S/W 상용 제품 납품 항목 없음</strong>: 본 사업은 소프트웨어 신규 개발·구축 용역 중심이며, OS·미들웨어·컨테이너 플랫폼 등 상용 S/W 별도 구매 품목이 RFP 내 명시되지 않음</li>
+                    <li><strong>Red Hat 제품명 전무</strong>: RFP 전체에 RHEL, OpenShift, Ansible, JBoss, EAP, Satellite 등 Red Hat 상용 제품명 및 동의어가 단 한 건도 등장하지 않음</li>
+                    <li><strong>경쟁·대체 제품 명시 없으나 RH 제안 근거도 없음</strong>: Ubuntu, Rocky Linux, VMware, WildFly, CentOS 등 경쟁 제품도 명시되지 않았으나, Linux·컨테이너·Kubernetes 등 Red Hat 스택 제안 여지가 되는 기술 요구사항도 명확히 언급되지 않음</li>
+                    <li><strong>개발언어 및 프레임워크 중심</strong>: JAVA/JSP, 전자정부 표준프레임워크 기반 웹 애플리케이션 개발이 주요 기술 요구사항으로, 인프라 플랫폼 도입 요소 없음</li>
+                    <li><strong>중소기업 전용 사업</strong>: 20억 미만 사업으로 대기업·중견기업 참여 불가, Red Hat이 직접 참여하거나 파트너를 통한 S/W 납품 기회 구조 자체가 없음</li>
+                    <li><strong>현행 시스템 운영환경 정보 미공개</strong>: 기존 춘천시 통합관제센터의 OS·WAS·DB 등 현행 소프트웨어 환경이 RFP에 구체적으로 명시되지 않아 기존 Red Hat 스택 존재 여부 확인 불가</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td><ul>
+                    <li><strong>RFP 내 Red Hat 제품명 명시 없음</strong>: RHEL, OpenShift, Ansible, JBoss EAP 등 Red Hat 상용 제품이 도입·납품·유지보수 대상으로 명시된 항목이 전혀 없음</li>
+                    <li><strong>제한적 간접 가능성 — 운영서버 환경 협의 여지</strong>: RFP COR-01에서 "운영서버의 운영체제 및 소프트웨어 설치환경"을 현황조사 항목으로 명시하고 있어, 수주 업체가 서버 OS 환경을 제안할 여지가 이론적으로 존재하나, 별도 상용 S/W 구매 항목이 아니므로 직접적인 Red Hat 제품 납품 기회로 보기 어려움</li>
+                    <li><strong>JAVA 기반 WAS 환경 간접 가능성</strong>: JAVA/JSP 개발환경이 명시되어 있어 JBoss EAP 적용 가능성이 이론적으로 존재하나, WAS 도입이 별도 구매 항목으로 명기되지 않고 개발 용역 범위로만 처리됨</li>
+                    <li><strong>종합 판단</strong>: 본 사업은 순수 소프트웨어 개발·구축 용역으로, Red Hat 상용 제품의 도입·납품·구독 갱신 기회가 사실상 없는 사업임. 적극적인 Red Hat 영업 활동 우선순위로 분류하기 어려움</li>
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
