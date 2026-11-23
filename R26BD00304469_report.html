@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00304469 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한국지방재정공제회_LOFA AI 2단계 구축 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="red">낮음<br>S/W 목록에 Ubuntu·Rocky Linux 명시, Red Hat 상용 제품 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>한국지방재정공제회가 추진하는 <strong>LOFA AI 2단계 구축 사업</strong>으로, 1단계 PoC 성과(답변 정확도 93.1%)를 바탕으로 전사적 9대 AI 에이전트를 구축하는 사업</li>
+                        <li>공제회 내부 업무(기획·경영, 감사, 인사, 공제, 손해사정, 자산운용, 지방계약, 재정투자분석, 옥외광고)를 지원하는 AI 에이전트를 온프레미스 환경에서 구축하여 외부 AI 연동 없이 데이터 보안을 확보하고 비용 절감을 목표로 함</li>
+                        <li>컨테이너 기반 클라우드 네이티브 환경, RAG(검색증강생성), LLM 파인튜닝, 개인정보 비식별화(AI Privacy Engine), MCP(Model Context Protocol) 연동, AI 거버넌스(자가개선·킬스위치) 등을 포함한 종합 AI 플랫폼 구축</li>
+                        <li>온프레미스 AI 인프라(NVIDIA H200급 GPU 서버) 도입, 전력공사 수행, 전산실 환경 개선 작업 포함</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 1,700,000,000원 (부가세 포함)</li>
+                        <li><strong>사업 기간</strong>: 계약일로부터 6개월 (2027년 기준, M~M+6)</li>
+                        <li><strong>사업 범위</strong>: ① AI 인프라 구축(GPU 서버·네트워크·전산실 환경 개선) ② LOFA AI 기반 9대 업무지원 에이전트 개발(지식검색, 감사, 인사, 공제컨설턴트, 손해사정사, 자산운용, 지방계약, 재정투자분석, 옥외광고) ③ 지식자산 데이터 표준화 및 AI 거버넌스 구축 ④ OCR/개인정보 비식별화 솔루션, 대화형 AI Agent 솔루션, LLMOps 솔루션 도입·구축</li>
+                        <li><strong>계약 방식</strong>: 제한경쟁입찰 (협상에 의한 계약) / 중소기업자만 입찰 가능 (20억 미만)</li>
+                        <li><strong>주요 일정</strong>: 사전심의규격 의견접수(5일) → 조달청 입찰공고 → 기술평가위원 선정 → 제안서 심사·평가 → 적격업체 선정 → 우선협상대상자 협상·계약체결 → 1단계 인수인계 및 사업개시</li>
+                        <li><strong>평가 비율</strong>: 기술평가 90% + 가격평가 10%</li>
+                        <li><strong>상용SW 직접구매</strong>: 해당 없음 (통합발주 방식)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>발주기관</strong>: 한국지방재정공제회</li>
+                        <li><strong>담당 부서</strong>: AI전략부</li>
+                        <li><strong>AI전략부장</strong>: 박총화 / TEL: 02-3274-2330 / FAX: 02-3274-2008</li>
+                        <li><strong>수석차장</strong>: 최영민 / TEL: 02-3274-2421</li>
+                        <li><strong>문의처(제안서 평가 관련)</strong>: AI전략부 박찬호</li>
+                        <li><strong>이메일</strong>: RFP 내 별도 이메일 주소 미기재</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong>
+                            <ul>
+                                <li>온프레미스 Bare Metal 기반 GPU 서버(NVIDIA H200 NVL 141GB × 2장 이상) 구축 및 전산실 환경 개선(신규 랙 설치, 전원 공사)</li>
+                                <li>컨테이너 기반(Docker 등) 클라우드 네이티브 환경 구성 / 내부망 소프트웨어 공급 체계(컨테이너 이미지·Linux 패키지·Python 패키지 내부 저장소) 구축</li>
+                                <li>오픈소스 LLM(Hugging Face, NVIDIA NIM 등) 지원 및 RAG 플랫폼, LLMOps 솔루션 도입</li>
+                                <li>개인정보 비식별화·OCR 솔루션(1식), 대화형 생성형 AI Agent 솔루션(1식), LLMOps 솔루션(1식) 도입 및 구축</li>
+                                <li>전사 9대 에이전트 구축: 사내 지식검색·일상감사, 보상·사고접수·대조검증, 인사·급여·교육통계, 재정투자분석, 지방계약 Q&A·서식 초안, 옥외광고 법령, 자산운용 회계·잔고대사, e공제 연계 맞춤형 상담</li>
+                                <li>MCP(Model Context Protocol) 표준 인터페이스, Multi-Step Agentic Retrieval 추론 엔진, 자가개선 루프 적용</li>
+                                <li>발주처 전 직원 대상 영구 라이선스 기준 (사용자 수 제한·구독형 불가)</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매 명시 S/W 목록 (통합발주)]</strong>
+                            <ul>
+                                <li>OCR 및 개인정보 비식별화 솔루션: 1식 (ECR-004)</li>
+                                <li>대화형 생성형 AI Agent 솔루션: 1식 (ECR-005)</li>
+                                <li>LLMOps 솔루션: 1식 (ECR-006)</li>
+                                <li>※ 위 3종은 Linux 계열 OS 호환 필수, 영구 라이선스 조건 명시, 제안사가 직접 도입·납품</li>
+                                <li>※ 상용SW 직접구매(구 SW분리발주) 대상 아님 — 통합발주로 일괄 공급</li>
+                                <li>OS: LLM 서버 및 운영 서버에 "Ubuntu 24.XX LTS 또는 Rocky Linux 9.x 등" 명시 (ECR-002)</li>
+                            </ul>
+                        </li>
+                        <li><strong>[비기능 요구사항]</strong>
+                            <ul>
+                                <li>동시 접속 100명 이상, 동시 추론 20명 이상 처리 보장 / 24시간 무중단 운영</li>
+                                <li>답변 정확도 목표치(85% 이상) 달성 및 환각 방지 기능 필수</li>
+                                <li>외부 인터넷 없이 운영·유지보수 가능한 오프라인 환경 구성</li>
+                                <li>국가망 보안체계(N2SF), 개인정보 보호, 소프트웨어 개발보안(시큐어코딩) 준수</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[경쟁 OS 명시]</strong> ECR-002(인프라 및 시스템 구성) 항목에서 LLM 서버 및 운영 서버 OS로 <strong>"Ubuntu 24.XX LTS 또는 Rocky Linux 9.x 등"</strong>을 명시적으로 기재함. RHEL(Red Hat Enterprise Linux)은 Bare Metal 기반 구성 항목에 "RHEL, Ubuntu, Rocky Linux 등을 지원"이라고 나열되어 있으나, 실제 서버 최소 규격 사양에서는 Ubuntu/Rocky Linux가 구체적 버전과 함께 명시되어 있어 사실상 경쟁 OS가 우선 고려됨</li>
+                        <li><strong>[Red Hat 상용 제품 미명시]</strong> RFP 전체에 걸쳐 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품이 도입·구매·유지보수 대상으로 단 한 건도 명시되지 않음</li>
+                        <li><strong>[오픈소스 중심 아키텍처]</strong> 플랫폼은 오픈소스 LLM(Hugging Face, NVIDIA NIM), 컨테이너(Docker), Prometheus/Grafana 모니터링 등 커뮤니티 기반 기술로 구성되며, 영구 라이선스 조건 충족 시 오픈소스 솔루션 제안이 가능하도록 설계됨</li>
+                        <li><strong>[구독형 라이선스 불가 조건]</strong> SFR-002에서 "사용자 수 제한 또는 구독형 라이선스 불가"를 명시하여, Red Hat 상용 제품의 일반적인 구독(Subscription) 방식 라이선스 모델 적용이 제한됨</li>
+                        <li><strong>[중소기업 제한]</strong> 20억 미만 사업으로 중소기업자만 입찰 가능하여 Red Hat이 직접 입찰에 참여할 수 없는 구조이며, 파트너사를 통한 납품도 경쟁 OS가 우선 선택될 가능성이 높음</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[RHEL 제한적 제안 여지]</strong> ECR-002에서 Bare Metal 기반 구성의 기본 운영체제로 "RHEL, Ubuntu, Rocky Linux 등을 지원"이라고 나열하고 있어, 제안사가 RHEL을 선택할 수 있는 여지는 존재함. 단, 서버 최소 규격 사양에서 Ubuntu/Rocky Linux가 구체적으로 명시되어 실질적 채택 가능성은 낮음</li>
+                        <li><strong>[컨테이너·AI 플랫폼 간접 제안 여지]</strong> 모든 AI 서비스를 컨테이너 기반으로 배포·운영하고 내부 컨테이너 이미지 저장소, 내부 Linux 패키지 저장소 구축이 요구되는바, OpenShift(OCP) 또는 Podman 기반 솔루션 제안이 기술적으로 가능한 환경임. 단, RFP에 명시된 제품명 없음</li>
+                        <li><strong>[Ansible 자동화 제안 여지]</strong> 내부망 오프라인 환경에서 컨테이너 자동 배포, 재시작, 복구, 버전 롤백 등 자동화 요구사항(ECR-002)이 있어 Ansible Automation Platform 제안이 기술적으로 적합할 수 있음. 단, RFP에 명시 없음</li>
+                        <li><strong>[RFP 내 Red Hat 명시 제품·수량]</strong> 없음 — RFP 전체에서 Red Hat(레드햇/RedHat) 상용 제품명은 단 한 건도 명시되지 않음</li>
+                        <li><strong>[종합 판단]</strong> 경쟁 OS(Ubuntu, Rocky Linux)가 구체적 버전과 함께 명시되고, 구독형 라이선스 불가 조건이 있으며, Red Hat 상용 제품 도입 근거가 없어 제안 가능성이 낮음. 파트너를 통한 RHEL 또는 OpenShift 제안 시 발주기관 설득이 필요하나 현실적으로 채택 가능성이 매우 제한적임</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
