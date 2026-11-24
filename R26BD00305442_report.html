@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00305442 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>국회사무처_국회방송 네트워크제작/아카이브시스템 유지보수 용역 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="red">낮음<br>S/W 납품 없는 순수 유지보수 용역, Red Hat 제품명 전혀 없음</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>국회방송의 네트워크제작/아카이브 시스템에 대한 정기점검, 수시점검, 보수정비를 실시하여 최상의 장비 상태를 유지하고 안정적인 시스템 운영을 도모하는 사업</li>
+                        <li>네트워크제작/아카이브 시스템의 정상 가동상태 유지, 장애 예방 및 장애·재해 복구를 위한 효과적인 대응체계 확보가 핵심 목적</li>
+                        <li>대상 시스템: 네트워크제작시스템, 의사·의정 중계 수신시스템, 아카이브 시스템, 주조정실 송출시스템, 보도정보 시스템, 방송정보시스템(BIS) 등 국회방송 운영시스템 전반</li>
+                        <li>3년 장기계속계약 형태로, 연도별 연차계약 체결 방식으로 운영</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 총 1,945,733,380원 (부가세 포함) / 1년차(2027): 631,372,460원 / 2년차(2028): 654,360,920원 / 3년차(2029): 660,000,000원</li>
+                        <li><strong>사업 기간</strong>: 2027.1.1. ~ 2029.12.31. (3년)</li>
+                        <li><strong>사업 범위</strong>: 국회방송 네트워크제작/아카이브 시스템 통합 유지보수 (서버 97대, 스토리지 21대, 네트워크 33대, NLE 33대, 기타 40대, S/W 11종 등 총 235개 품목 대상)</li>
+                        <li><strong>주요 일정</strong>: RFP 발행 2026년 11월 / 계약방법: 협상에 의한 계약(제한경쟁입찰) / 사업 개시 2027.1.1. 예정 / 기술능력평가 90% + 입찰가격평가 10%</li>
+                        <li><strong>입찰 자격</strong>: 중소기업자 한정(대기업 참여 제한), 정보통신공사업 등록 및 소프트웨어사업자 자격 필요, 직접생산확인증명서(정보시스템유지관리서비스 8111189901) 보유자</li>
+                        <li><strong>이행 실적 요건</strong>: 최근 3년간 국내 방송사의 네트워크기반 방송제작시스템(NPS) 또는 아카이브시스템 유지보수 실적 인정</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>발주기관</strong>: 국회사무처 (국회방송 주관)</li>
+                        <li><strong>계약 주체</strong>: 국회사무총장 (보안확약서 수취인으로 명시)</li>
+                        <li><strong>담당 부서</strong>: RFP 내 담당자 성명, 직통 연락처, 이메일 주소 등 구체적인 담당자 정보는 별도 입찰공고서에 따름 (본 RFP에 미기재)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong>
+                            <ul>
+                                <li>24시간×365일 장애 접수 및 복구 지원 (접수 후 2시간 내 현장 도착, 8시간 내 복구)</li>
+                                <li>정기점검 월 1회 (주요 시스템 주 1회 현장 방문), 핵심 서비스 상태 점검 주 2회 실시</li>
+                                <li>HW·SW·NW 구성 변경관리, 보안 취약점 및 패치관리, 계정/접근권한 관리</li>
+                                <li>백업·복구 체계 운영, SAN 스토리지/파일시스템/테이프 라이브러리 관리</li>
+                                <li>K2 비디오서버, OMNEON 비디오서버, NPS CMS/검색/아카이브 엔진 등 방송 전용 시스템 유지보수</li>
+                                <li>APC 자동송출제어, SNS 송출서버, WAVVE 송출서버, BIS(방송정보시스템), UHD 서버 등 운영 지원</li>
+                                <li>보안장비(방화벽, 웹방화벽, IPS, DDoS 대응장비) 유지보수 포함</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매·납품 명시 S/W 현황]</strong> — 본 사업은 신규 S/W 도입·납품이 아닌 순수 유지보수 용역이며, 아래는 유지보수 대상 기존 운영 소프트웨어 목록임:
+                            <ul>
+                                <li>CMS (코난테크놀로지): Ingest Engine, Transcoding Engine, Catalog Engine, CMS Engine, Search Engine, Transfer Engine, Bridge Engine, Monitoring Engine, Streaming Engine, Archive Engine, Admin tool, Browser, FTP Ingest Manager, Transcoder, Cataloger, Transfer Manager TX, Monitoring Manager, Plug-in Software</li>
+                                <li>DIVArchive (Telestream): DIVA Manager, DIVA Actors, Manager Failover, MXF op1a Partial File Restore, Storage Plan Manager(SPM), Mixed Drives</li>
+                                <li>파일공유 (Quantum): SNFS Linux For MDC &amp; Failover, SNFS Windows Client</li>
+                                <li>백신 (AVAST): Anti-Virus Business Edition Server, Anti-Virus Business Edition Client</li>
+                                <li>EMS (와치텍): Watchall V11</li>
+                                <li>SNS 송출 (CASTWARE): CAST-Encoder</li>
+                                <li>DBMS (Oracle): Oracle Database Standard Edition</li>
+                                <li>사용자인증 (Microsoft): ActiveDirectory</li>
+                                <li>HA (맨텍): MCCS-WG</li>
+                                <li>BIS (맥스나인): AdLink</li>
+                                <li>UHD (유윈인포시스): uMP UHD</li>
+                            </ul>
+                        </li>
+                        <li><strong>[비즈니스 요구사항]</strong>
+                            <ul>
+                                <li>57개 요구사항(MPR 10개, SER 7개, QUR 4개, COR 2개, PMR 7개, PSR 5개, MHR 2개, SMR 20개) 준수</li>
+                                <li>SLA 기반 서비스 수준 측정 및 월간이행보고서 제출</li>
+                                <li>사업 종료 후 인수인계(H/W, S/W 각 1인 1개월 상주 지원)</li>
+                                <li>계약자 책임 하에 부품 무상 공급 및 유지보수 수행</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[S/W 신규 납품 없음]</strong>: 본 사업은 순수 유지보수·운영 용역 사업으로, Red Hat 제품을 포함한 어떠한 S/W 신규 도입·납품·구독 품목도 명시되어 있지 않음</li>
+                        <li><strong>[Red Hat 제품명 전혀 없음]</strong>: 유지보수 대상 S/W 목록(11종), 서버/스토리지/네트워크 장비 목록(235대) 어디에도 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 단 하나도 명시되어 있지 않음</li>
+                        <li><strong>[경쟁·대체 OS/플랫폼 환경]</strong>: 운영 환경 관련 OS가 명시되지 않았으나, 기존 운영 시스템이 Grass Valley K2, OMNEON, Quantum SNFS 등 방송 전용 플랫폼 중심으로 구성되어 있으며, Linux 관련 언급은 Quantum SNFS Linux For MDC 등 특정 솔루션의 플랫폼으로만 간접 언급됨</li>
+                        <li><strong>[DBMS: Oracle 명시]</strong>: 유지보수 대상 DBMS로 Oracle Database Standard Edition이 명시되어 있어, Red Hat의 Data Grid 등 대체 솔루션 제안 여지 없음</li>
+                        <li><strong>[방송 전문 시스템 중심]</strong>: 유지보수 대상이 방송 제작·송출 전용 솔루션(K2, OMNEON, DIVArchive, APC, CAST-Encoder 등)으로 구성되어 있어 Red Hat 기술 스택과 접점이 거의 없음</li>
+                        <li><strong>[중소기업 한정 입찰]</strong>: 대기업 참여 제한 사업으로, Red Hat코리아가 직접 입찰 불가 (파트너를 통한 접근도 사실상 의미 없음 — 신규 제품 도입 자체가 없으므로)</li>
+                        <li><strong>[일반 문구조차 없음]</strong>: "레드햇", "Red Hat", "Linux", "리눅스", "오픈소스", "공개SW" 등의 일반 문구도 유지보수 대상 품목으로 명시된 사례 없음 (중간 판정 조건도 미충족)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>[사실상 제안 가능 요소 없음]</strong>: RFP 전체에 걸쳐 Red Hat 상용 제품명, 동의어, 일반적인 Linux·오픈소스 관련 유지보수 대상이 전혀 명시되어 있지 않아 Red Hat 제품 제안 기회가 없음</li>
+                        <li><strong>[간접적 가능성 — 미미함]</strong>: Quantum SNFS(스토리지 파일시스템)가 Linux MDC 환경을 사용하고 있으나, 이는 Quantum 솔루션의 내부 구성 요소로서 Red Hat 제품 도입과는 무관함</li>
+                        <li><strong>[향후 기회 모니터링 권고]</strong>: 본 사업 수행 업체가 국회방송 시스템의 노후화 장비 교체 또는 신규 시스템 도입 사업을 진행할 때 연계 기회 발굴 가능 — 향후 별도 구축 사업 발주 시 RHEL, Ansible 등 제안 여지 존재할 수 있음</li>
+                        <li><strong>[RFP 내 Red Hat 제품명 명시 없음]</strong>: RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 어떠한 Red Hat 상용 제품도 품목으로 기재되어 있지 않음 — 현 시점에서 영업 우선순위 낮음</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

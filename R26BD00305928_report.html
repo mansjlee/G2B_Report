@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>R26BD00305928 분석 리포트</title>
+    <link rel="stylesheet" href="https://mansjlee.github.io/G2B_Report/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>한전KDN(주) 사내 업무시스템 클라우드 기반 전환 - 분석 리포트</h2>
+        
+        <table>
+            <tr>
+                <th>레드햇 제안 가능성</th>
+                <td id="AI-summary"><font color="orange">중간<br>오픈소스 기반 SW 스택 적용 요구, OS·WAS 미지정</font></td>
+            </tr>
+            <tr>
+                <th>사업 개요 및 목적</th>
+                <td>
+                    <ul>
+                        <li>한전KDN(주)의 사내 업무시스템(미전환 40여 종)을 K-ECP 클라우드 환경으로 전환하는 사업</li>
+                        <li>공공부문 클라우드 전환 정부 정책 이행 및 IT 환경 변화 대응</li>
+                        <li>온프레미스 기반의 개별 인프라 구성을 통합 클라우드 인프라로 전환하여 서비스 안정성·확장성·유연성 향상</li>
+                        <li>클라우드 네이티브 기반 마련 및 재해복구(DR) 환경 구성으로 업무 연속성 보장</li>
+                        <li>4차에 걸친 단계적 전환(1차 6종 → 2차 10종 → 3차 11종 → 4차 13종, 총 40종) 추진</li>
+                        <li>클라우드 전환 기술 내재화 및 자체 운영 역량 확보</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>주요 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>사업 예산</strong>: 995,390,000원 (VAT 포함, 약 9.95억 원)</li>
+                        <li><strong>사업 기간</strong>: 계약일로부터 6개월 (1차 전환: M월, 2차: M+2, 3차: M+3, 4차: M+5)</li>
+                        <li><strong>사업 범위</strong>: 미전환 업무시스템 전체(40여 종) K-ECP 클라우드 환경 이관 및 재구축(운영/개발계), DB 마이그레이션, 표준 프레임워크 운영환경 전환, 전체 업무시스템 64종 대상 개발환경 구성</li>
+                        <li><strong>발주 기관</strong>: 한전KDN(주) AX사업처 정보관리부</li>
+                        <li><strong>입찰 방법</strong>: 제한경쟁입찰(협상에 의한 낙찰제), 중소기업자 간 경쟁 (20억 미만 대기업·중견기업 참여 제한)</li>
+                        <li><strong>평가 배점</strong>: 기술능력평가 90점 + 입찰가격평가 10점 (총 100점)</li>
+                        <li><strong>주요 일정</strong>: 조달청 나라장터 입찰공고 참조 / 계약 후 10일 이내 착수보고</li>
+                        <li><strong>전환 대상 현황</strong>: WEB/WAS - Tomcat(22), Weblogic(16), 기타(2) / DBMS - Oracle(38), PostgreSQL(2)</li>
+                        <li><strong>특이사항</strong>: 직접구매 대상 상용SW 없음 (BMT 대상 아님), 의무감리 대상 아님, K-ECP MSP 자격 보유 업체 우대(5점)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>담당자 정보</th>
+                <td>
+                    <ul>
+                        <li><strong>발주 부서</strong>: 한전KDN(주) AX사업처 정보관리부</li>
+                        <li><strong>제안서 담당</strong>: 부장 최홍서 / ☎ 061-931-6760</li>
+                        <li><strong>계약 담당</strong>: 한전KDN(주) ESG경영처 공정계약실 / 대리 김지현 / ☎ 061-931-6865</li>
+                        <li><strong>이메일</strong>: RFP 내 미기재</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>핵심 요구사항</th>
+                <td>
+                    <ul>
+                        <li><strong>[기술 요구사항]</strong>
+                            <ul>
+                                <li>K-ECP 클라우드 자원 신청 및 표준 이미지·카탈로그·명명규칙·태깅 기준 준수 (CTR-001)</li>
+                                <li>WEB-WAS-DB 분리 3-Tier 구조, 이중화 및 로드밸런싱 구성 (CTR-002)</li>
+                                <li><strong>벤더 종속(Lock-in) 최소화 및 오픈소스 기반 SW 스택 적용 방안 제시 의무화 (CTR-002)</strong></li>
+                                <li>OS, Web, WAS(Tomcat/JBoss/WebLogic 등), JDK 설치 및 현행 파라미터·튜닝값 이전 (CTR-004)</li>
+                                <li>상용 WAS(WebLogic·JEUS) 라이선스 승계·재발급 협의 (CTR-004)</li>
+                                <li>상용·3rd Party SW 라이선스 승계 및 호환성 검증 (CTR-006)</li>
+                                <li>이기종 DBMS 전환(Oracle → PostgreSQL 등) 수행 (DAR-003)</li>
+                                <li>SSO 에이전트 재설치 및 전사 인증 연동 유지 (SIR-003)</li>
+                                <li>전환 전·후 성능 동등 이상 유지, 부하 및 안정성 시험 수행 (PER-001~003)</li>
+                            </ul>
+                        </li>
+                        <li><strong>[구매 명시 S/W]</strong>
+                            <ul>
+                                <li>본 사업은 클라우드 전환 용역 사업으로, RFP에 별도 통합발주 상용SW 품목 목록 없음</li>
+                                <li>기존 운영 중인 상용SW를 클라우드 환경에 맞게 이관·설치·호환성 검증하는 방식 (직접구매 대상 상용SW 없다고 명시)</li>
+                                <li>현행 운영 WAS: Tomcat 22식, Weblogic 16식, 기타 2식 (이관 대상)</li>
+                                <li>현행 운영 DBMS: Oracle 38식, PostgreSQL 2식 (이관 대상)</li>
+                                <li>상용 WAS(WebLogic·JEUS) 라이선스 승계·재발급 여부 설계 시 협의</li>
+                            </ul>
+                        </li>
+                        <li><strong>[비즈니스 요구사항]</strong>
+                            <ul>
+                                <li>4차에 걸친 단계적·안정적 전환으로 서비스 중단 최소화</li>
+                                <li>전체 64종 업무시스템 대상 운영과 동일한 개발환경 구성</li>
+                                <li>클라우드 전환 기술 내재화 및 운영 담당자 교육·기술이전</li>
+                                <li>K-ECP MSP 자격 보유 업체 우대 (평가 5점 배점)</li>
+                                <li>공공기관 대상 클라우드 전환 구축 사업 실적 보유 업체 우대</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>불가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>상용SW 직접구매 품목 없음</strong>: RFP에 "본 사업은 클라우드 전환 사업으로 직접구매 대상 상용SW제품도 포함되지 않음"으로 명시. 통합발주 SW 품목 리스트 없음</li>
+                        <li><strong>Red Hat 상용 제품명 미명시</strong>: RFP 전반에 걸쳐 RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명이 도입·납품·유지보수 대상으로 명시되지 않음</li>
+                        <li><strong>WAS 환경</strong>: 현행 WAS는 Tomcat(22식)과 Weblogic(16식) 위주로 구성. CTR-004에서 "WAS(Tomcat/JBoss/WebLogic 등)"로 나열되어 있으나, JBoss는 기존 운영 중인 시스템의 예시적 언급으로 도입 품목으로 확정되지 않음 (현행 사양표에 Tomcat·Weblogic만 기재)</li>
+                        <li><strong>경쟁 플랫폼 운영 중</strong>: 현행 상용 WAS로 Oracle WebLogic이 주력(16식) 사용 중이며, DBMS도 Oracle(38식)이 지배적</li>
+                        <li><strong>중소기업 제한 입찰</strong>: 20억 미만 사업으로 대기업·중견기업 참여 제한. Red Hat이 직접 입찰 불가, 파트너사를 통한 간접 제안 필요</li>
+                        <li><strong>K-ECP 종속 환경</strong>: 한전KDN 자체 K-ECP 클라우드 플랫폼 기반으로 전환하는 사업으로, 클라우드 인프라가 K-ECP로 고정됨</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Red Hat 제안 <br>가능 요소</th>
+                <td>
+                    <ul>
+                        <li><strong>오픈소스 기반 SW 스택 적용 의무화 (핵심 기회)</strong>: CTR-002에서 "벤더 종속(Lock-in) 최소화 및 오픈소스 기반 SW 스택 적용 방안을 제시하여야 한다"고 명시. RHEL 및 OpenShift 등 Red Hat 스택 제안의 명분으로 활용 가능</li>
+                        <li><strong>OS 미지정</strong>: 전환 대상 서버의 OS가 특정 제품으로 명시되지 않아 RHEL 제안 가능. 클라우드 전환 시 OS 재설치가 수반되므로 RHEL 구독 제안 여지 존재</li>
+                        <li><strong>WAS 전환 기회</strong>: CTR-004에서 WAS 항목에 "Tomcat/JBoss/WebLogic 등"을 나열하며 JBoss 언급 존재. Weblogic(16식)에서 오픈소스/상용 대안 WAS로 전환 시 JBoss EAP 제안 가능성 존재 (Lock-in 최소화 요구와 연계)</li>
+                        <li><strong>컨테이너·클라우드 네이티브 확장 기반</strong>: RFP에서 "클라우드 네이티브 기술 적용이 가능한 확장형 기반 아키텍처 적용"을 목표로 명시. 향후 OpenShift(OCP) 도입 연계 제안 가능</li>
+                        <li><strong>Ansible 자동화 제안 여지</strong>: 클라우드 전환 과정에서 표준화·자동화 기반 운영체계 구축을 요구하고 있어 Ansible Automation Platform을 활용한 자동화 구성 방안 제안 가능</li>
+                        <li><strong>이기종 DBMS 전환</strong>: Oracle → PostgreSQL 전환(DAR-003)이 명시되어 있어, Red Hat 기반 솔루션과 연계한 데이터 플랫폼 제안 여지 존재</li>
+                        <li><strong>RFP 내 Red Hat 제품명 명시 현황</strong>: RHEL, OpenShift, Ansible, JBoss EAP, Satellite 등 Red Hat 상용 제품명은 도입·구매 품목으로 명시되지 않음. CTR-004에 "JBoss"가 WAS 예시로 언급되나, 현행 운영 사양표(Tomcat/Weblogic)에는 미포함</li>
+                        <li><strong>파트너 연계 영업 전략</strong>: K-ECP MSP 파트너사(수행사)를 통해 RHEL·OpenShift·Ansible 등 Red Hat 스택을 하위 구성 요소로 제안하도록 파트너 지원 가능</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
